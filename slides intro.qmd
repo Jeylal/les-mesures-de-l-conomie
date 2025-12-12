@@ -1,0 +1,78 @@
+---
+title: "Séminaire les mesures de l'économie"
+subtitle: "Printemps 2026"
+author: "Celâl Güney"
+format: 
+  revealjs:
+    theme: style.scss
+editor: visual
+embed-resources: true
+lang: fr
+---
+
+## Présentation du cours
+
+#### Objectif du cours
+
+> > Comprendre et maîtriser les outils indispensables de l'analyse économique
+
+Cela comprend:
+
+-   Les variables économiques (PIB, inflation...)
+-   Les principes de modélisation
+-   La programmation et l'analyse statistique
+
+## Plan du cours
+
+12 séances au total sur 4 thèmes de mesures
+
+1.  Comptabilité nationale
+2.  Inégalités et distribution
+3.  Institutions
+4.  Commerce international
+
+## Perspective du cours
+
+Un cours d'analyse appliquée, nous allons beaucoup travailler directement avec des données et des exemples. L'idée est de vous familiariser avec les données économiques, comment les traiter et les analyser.
+
+Après ce cours, vous devriez être capable de mener vos propres analyses quantitatives pour vos recherches et votre PDR.
+
+==\> Outils inspensable: R(studio) et Quarto
+
+## R & Quarto
+
+En économie, la maîtrise de R est indispensable, car permet:
+
+-   Le traitement et la visualisation de données
+-   La modélisation (régression linéaire, simulation de modèles)
+-   L'analyse
+
+Quarto est un système de publication qui permet de produire des documents directement à partir de Rstudio (exemple: powerpoints, pdf, sites web...) et donc de code en R.
+
+## Évaluation du cours
+
+## À propos de l'intelligence artificielle {.smaller}
+
+#### [*Fortement déconseillé*]{.mark} dans le cadre de ce cours, pour les raisons suivantes:
+
+:::::: columns
+::: {.column width="70%"}
+-   Vous n'aurez pas toujours accès à l'IA quand vous coderez en R (exemple: les tests du SECO)
+
+-   Si les IA sont désormais excellentes en programmation (Python, Stata...), R est une exception et les codes en R générés par les IA sont souvent de mauvaise qualité.
+
+-   R est le langage avec le plus de ressources et de documentations en ligne, pas besoin de passer par une IA
+
+-   Les IA ne comprennent pas toutes les subtilités de la comptabilité nationale et de l'analyse économique.
+:::
+
+:::: {.column width="30%"}
+::: callout-warning
+Je connais et sais reconnaître les IA autant que vous ! Surtout du code généré en R. Hors examen, je ne peux techniquement pas vous en interdire l'utilisation: libre à vous d'en faire usage avec les risques en terme de perte de capacités cognitives qui en résulte.
+:::
+::::
+::::::
+
+## Apprendre l'analyse à travers R
+
+[![https://larmarange.github.io/guide-R/](/images/guideR.png){width="200"}](https://larmarange.github.io/guide-R/)
