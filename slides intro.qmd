@@ -39,6 +39,34 @@ Après ce cours, vous devriez être capable de mener vos propres analyses quanti
 
 ==\> Outils inspensable: R(studio) et Quarto
 
+## Les outils de travail en économie/sciences sociales
+
+::::::: columns
+::: {.column width="25%"}
+![](images/RStudio.jpg){width="190"}
+
+![](images/excel.png){width="193"}
+:::
+
+::: {.column width="25%"}
+![](images/eviews.png){width="190"}
+
+![](images/stata.jpg){width="190"}
+:::
+
+::: {.column width="25%"}
+![](images/matlab.jpg){width="190"}
+
+![](images/python.jpg){width="193"}
+:::
+
+::: {.column width="25%"}
+![](images/julia.png){width="193"}
+
+![](images/quarto.jpg){width="193"}
+:::
+:::::::
+
 ## R & Quarto
 
 En économie, la maîtrise de R est indispensable, car permet:
@@ -48,6 +76,20 @@ En économie, la maîtrise de R est indispensable, car permet:
 -   L'analyse
 
 Quarto est un système de publication qui permet de produire des documents directement à partir de Rstudio (exemple: powerpoints, pdf, sites web...) et donc de code en R.
+
+## Installations
+
+-   R et rstudio (si pas déjà fait) <https://posit.co/download/rstudio-desktop/>
+
+-   Quarto <https://quarto.org/docs/download/>
+
+    Quarto est ensuite utilisable directement sur Rstudio
+
+    Je vous recommande aussi de jeter un oeil à d'autres environnements de développement en plus de Rstudio (surtout si vous envisagez d'apprendre d'autres langages comme python ou julia)
+
+    -   Positron <https://positron.posit.co/>
+
+    -   VSCode <https://code.visualstudio.com/>
 
 ## Évaluation du cours
 
