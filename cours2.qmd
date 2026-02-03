@@ -1,0 +1,226 @@
+---
+title: "Rappels et outils de base de l'analyse économique"
+subtitle: "Séminaire les mesures de l'économie"
+author: "Celâl Güney"
+format: 
+  revealjs:
+    theme: style.scss
+editor: visual
+embed-resources: true
+lang: fr
+---
+
+## Données économiques: principes de base {.smaller}
+
+-   Deux sources principales de données en économie (ainsi qu'en sciences sociales en général)
+
+    1.  Données provenant d'enquêtes au moyen de questionnaires
+        -   ex: données sur la consommation, statistiques du marché du travail...
+    2.  Données administratives
+        -   ex: une partie importante des comptes nationaux, taux d'intérêt, masse monétaire...
+
+Distinction importante, car pour les données d'enquêtes, les principes de la statistique (échantillonage, calculs des marges d'erreurs, tests statistiques) doivent être respectés, ce qui n'est pas (forcément) le cas des données administratives.
+
+::: notes
+Car pour les données administratives, certains principe de la statistique ne sont pas applicable, car les données n'ont pas été récoltées à travers un processus d'échantillonnage
+:::
+
+## Données d'enquête {.smaller}
+
+-   Important de vous rappeler ce que vous avez appris dans vos cours de méthodes quantitatives
+-   Faire attention à la qualité des enquêtes qui dépend de:
+    1.  Le procédé d'échantillonage
+    2.  La taille de l'échantillon et sa représentativité
+    3.  Le taux de réponse (nombre de personnes qui ont répondu à l'enquête / total des personnes appelées à participer à l'enquête)
+
+## Récolte de données d'enquête {.smaller}
+
+#### un problème à ne pas sous-estimer
+
+::::: columns
+::: {.column width="50%"}
+![](images/cours2/dataproblemft1.png)
+:::
+
+::: {.column width="50%"}
+[![](images/cours2/dataproblemft2.png)](https://www.ft.com/content/c046be2c-5496-4e2c-b243-580224e9a459)
+:::
+:::::
+
+Un taux de réponse faible (\<60%) indique que l'enquête a manqué une partie importante de la population ==\> données récoltées ne sont pas représentatives.
+
+## Exemple: crise des données en Grande-Bretagne {.smaller}
+
+:::::: {columns}
+::: {.column width="35%"}
+"Declining response rates to the LFS (labour force surveys) have made the numbers so volatile that it is impossible to be sure whether employment is rising or falling from one quarter to the next — let alone how the labour market has evolved in the years since the pandemic." "How flawed data is leaving the UK in the dark", Financial Times
+:::
+
+:::: {.column width="65%"}
+::: r-stack
+[![](images/cours2/resolutionfoundation.png){width="692"}](https://www.resolutionfoundation.org/our-work/estimates-of-uk-employment/)
+
+[![](images/cours2/hownotfirestatisticchiefft1.png){.fragment}](https://www.ft.com/content/6eb3c205-c473-47b4-bed8-1b9ee99ce658)
+:::
+::::
+::::::
+
+## Exemple: crise des données aux USA
+
+::::: columns
+::: {.column width="50%"}
+[![](images/cours2/hownotfirestatisticchiefft4.png)](https://www.ft.com/content/d3b24f17-96d8-4f07-a169-0d22fab051ef)
+:::
+
+::: {.column width="50%"}
+[![](images/cours2/hownotfirestastisticchief5.png)](https://www.ft.com/content/d3b24f17-96d8-4f07-a169-0d22fab051ef)
+:::
+:::::
+
+## Données administratives {.smaller}
+
+Exemple: données fiscales (qui permettent les mesures de distribution du revenu), certaines données du marché du travail (ex: Seco et le nombre de chômeurs inscrits), données sur les finances publiques...
+
+-   Les données administratives ne sont pas récoltées à travers un processus d'échantillonnage. Par exemple, cela ne fait pas sens de calculer les intervalles de confiance pour le PIB ou la dette publique.
+
+-   Mais cela ne veut pas dire que les données administratives sont exhaustives
+
+    -   D'ou la récurrence de "révisions" des séries de données administratives.
+
+# Notions de base en analyse de séries temporelles
+
+## Séries temporelles
+
+La plupart des mesures de l'économie sont des séries temporelles (PIB, emploi, inflation...).
+
+L'analyse des séries temporelles présente certaines particularités par rapport aux données en coupe (à un point donné dans le temps, aussi appelé "cross-sectional data"), notamment car elles ont une tendance temporelle (par exemple exponentielle).
+
+## Taux de croissance {.smaller}
+
+Les séries temporelles ont la particularité de croître à un taux plus ou moins stable dans le temps.
+
+Cela implique une croissance exponentielle
+
+Exemple: imaginons une variable $x$ qui croît à un taux constant de 3% par an. A $t = 0$, $x =2$. A $t=1$, x augmente de $2*1.03$ (0.03 étant le taux de croissance auquel on additionne 1):
+
+$x_{t=1} = 2*1.03$
+
+Pour $t=2$, $x_{t=2} = 2*1.03*1.03 = 2*(1.03)^2$
+
+Pour $t=3$, $x_{t=3} = 2*1.03*1.03*1.03 = 2*(1.03)^3$
+
+Ainsi de suite, pour la formule générale:
+
+$x_t = 2*(1.03)^t$. Il s'agit de la formule de croissance exponentielle: $x_t = x_0 (1+g)^t$, avec $x_0$ la valeur initiale, $g$ le taux de croissance et $t$ le nombre de périodes.
+
+## Croissance exponentielle
+
+### Exemple dans R
+
+
+
+```{r}
+#| echo: true
+#| output-location: column-fragment
+f = function(x0, g, t){
+  
+  x0*(1+g)^t
+  
+}
+
+x0 = 2
+g = 0.03
+t = 1:150
+
+x = f(x0 = x0, g = g, t = t)
+
+plot(x, type = "l")
+
+
+
+
+```
+
+## Taux de croissance {.smaller}
+
+À partir de la formule pour la croissance exponentielle de X, ont peut trouver le taux de croissance:
+
+$$x_t = x_0(1+g)^t$$
+
+$$g = \left(\frac{x_t}{x_0}\right)^{1/t}-1$$
+
+Il s'agit du *taux de croissance moyen composé* de la série entre $x_t$ (en dernière période) et $x_t$
+
+Lorsque l'on calcule le taux de croissance entre deux périodes seulement (disons $x_0$ et $x_1$), on retrouve la formule habituelle du taux de croissance (car $t=1$):
+
+$$
+g = \frac{x_1 - x_0}{x_0} = \left(\frac{x_1}{x_0}\right)^{1/1}-1
+$$
+
+## Taux de croissance
+
+À ne pas comprendre avec la moyenne des taux de croissance:
+
+$$
+\bar{g} = \frac{1}{t}\sum_{i=1}^t{g_i}
+$$
+
+g et $\bar{g}$ sont identiques seulement si le taux de croissance est constant pour toutes les périodes t.
+
+
+## Transformation en logarithme {.smaller}
+
+::: columns
+
+::: column
+La transformation en logarithme (passer de $x_t$ à $log(x_t)$) est très courante en économie, surtout avec des séries temporelles caractérisées par une croissance exponentielle.
+
+- La transformation log permet de "linéariser" une série exponentielle
+- Lorsque l'on visualise la courbe d'une série en logarithme, *la pente est le taux de croissance*
+:::
+
+::: column
+
+```{r}
+#| echo: true
+plot(x, type = "l")
+```
+
+```{r}
+#| echo: true
+plot(log(x), type = "l")
+```
+
+:::
+:::
+
+## Transformation en logarithme {.smaller}
+
+Si $x_t = x_0(1+g)^t$ est transformé en log et que nous isolons g, nous trouvons:
+
+$$
+log(1+g) = \frac{log(x_t)-log(x_0)}{t}
+$$
+Entre seulement deux période (par exemple d'une année à l'autre), $t = 1$ et donc le taux de croissance peut être approximé facilement en prenant la différence en log. Quand $g$ est petit, $log(1+g)$ est une bonne approximation de $g$.
+
+Dans R:
+```{r}
+#| echo: true
+g = log(x) - lag(log(x))
+
+g[-1]
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
