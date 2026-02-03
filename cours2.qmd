@@ -211,10 +211,25 @@ g = log(x) - lag(log(x))
 g[-1]
 ```
 
+## Exemple: PIB
+
+```{r}
+library(maddison)
+library(tidyverse)
+
+df <- subset(maddison, 
+             year >= 1800 &
+             iso2c %in% c("DE", "FR", "IT", "UK", "US"))
+
+df %>% 
+  filter(country %in% c("United States", "France")) %>% 
+  ggplot(aes(x = year, y = rgdpnapc, color = country)) +
+  geom_line()
 
 
 
 
+```
 
 
 
