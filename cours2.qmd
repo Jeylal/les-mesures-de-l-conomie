@@ -1,5 +1,5 @@
 ---
-title: "Introduction aux séries temporelles et à l'analyse de régression"
+title: "Introduction aux séries temporelles et aux régressions"
 subtitle: "Séminaire les mesures de l'économie"
 author: "Celâl Güney"
 format: 
@@ -11,84 +11,6 @@ embed-resources: true
 lang: fr
 ---
 
-## Données économiques: principes de base {.smaller}
-
--   Deux sources principales de données en économie (ainsi qu'en sciences sociales en général)
-
-    1.  Données provenant d'enquêtes au moyen de questionnaires
-        -   ex: données sur la consommation, statistiques du marché du travail...
-    2.  Données administratives
-        -   ex: une partie importante des comptes nationaux, taux d'intérêt, masse monétaire...
-
-Distinction importante, car pour les données d'enquêtes, les principes de la statistique (échantillonage, calculs des marges d'erreurs, tests statistiques) doivent être respectés, ce qui n'est pas (forcément) le cas des données administratives.
-
-::: notes
-Car pour les données administratives, certains principe de la statistique ne sont pas applicable, car les données n'ont pas été récoltées à travers un processus d'échantillonnage
-:::
-
-## Données d'enquête {.smaller}
-
--   Important de vous rappeler ce que vous avez appris dans vos cours de méthodes quantitatives
--   Faire attention à la qualité des enquêtes qui dépend de:
-    1.  Le procédé d'échantillonage
-    2.  La taille de l'échantillon et sa représentativité
-    3.  Le taux de réponse (nombre de personnes qui ont répondu à l'enquête / total des personnes appelées à participer à l'enquête)
-
-## Récolte de données d'enquête {.smaller}
-
-#### un problème à ne pas sous-estimer
-
-::::: columns
-::: {.column width="50%"}
-![](images/cours2/dataproblemft1.png)
-:::
-
-::: {.column width="50%"}
-[![](images/cours2/dataproblemft2.png)](https://www.ft.com/content/c046be2c-5496-4e2c-b243-580224e9a459)
-:::
-:::::
-
-Un taux de réponse faible (\<60%) indique que l'enquête a manqué une partie importante de la population ==\> données récoltées ne sont pas représentatives.
-
-## Exemple: crise des données en Grande-Bretagne {.smaller}
-
-:::::: {columns}
-::: {.column width="35%"}
-"Declining response rates to the LFS (labour force surveys) have made the numbers so volatile that it is impossible to be sure whether employment is rising or falling from one quarter to the next — let alone how the labour market has evolved in the years since the pandemic." "How flawed data is leaving the UK in the dark", Financial Times
-:::
-
-:::: {.column width="65%"}
-::: r-stack
-[![](images/cours2/resolutionfoundation.png){width="692"}](https://www.resolutionfoundation.org/our-work/estimates-of-uk-employment/)
-
-[![](images/cours2/hownotfirestatisticchiefft1.png){.fragment}](https://www.ft.com/content/6eb3c205-c473-47b4-bed8-1b9ee99ce658)
-:::
-::::
-::::::
-
-## Exemple: crise des données aux USA
-
-::::: columns
-::: {.column width="50%"}
-[![](images/cours2/hownotfirestatisticchiefft4.png)](https://www.ft.com/content/d3b24f17-96d8-4f07-a169-0d22fab051ef)
-:::
-
-::: {.column width="50%"}
-[![](images/cours2/hownotfirestastisticchief5.png)](https://www.ft.com/content/d3b24f17-96d8-4f07-a169-0d22fab051ef)
-:::
-:::::
-
-## Données administratives {.smaller}
-
-Exemple: données fiscales (qui permettent les mesures de distribution du revenu), certaines données du marché du travail (ex: Seco et le nombre de chômeurs inscrits), données sur les finances publiques...
-
--   Les données administratives ne sont pas récoltées à travers un processus d'échantillonnage. Par exemple, cela ne fait pas sens de calculer les intervalles de confiance pour le PIB ou la dette publique.
-
--   Mais cela ne veut pas dire que les données administratives sont exhaustives
-
-    -   D'ou la récurrence de "révisions" des séries de données administratives.
-
-# Notions de base en analyse de séries temporelles
 
 ## Séries temporelles
 
@@ -140,7 +62,7 @@ plot(x, type = "l")
 
 ```
 
-## Taux de croissance {.smaller}
+## Taux de croissance {style="font-size: 1.6rem; line-height:1.6;"}
 
 À partir de la formule pour la croissance exponentielle de X
 
@@ -150,7 +72,7 @@ on peut trouver le taux de croissance:
 
 $$g = \left(\frac{x_t}{x_0}\right)^{1/t}-1$$
 
-Il s'agit du *taux de croissance moyen composé* de la série entre $x_t$ (en dernière période) et $x_t$
+Il s'agit du *taux de croissance moyen composé* de la série entre $x_t$ (en dernière période) et $x_0$
 
 Lorsque l'on calcule le taux de croissance entre deux périodes seulement (disons $x_0$ et $x_1$), on retrouve la formule habituelle du taux de croissance (car $t=1$):
 
@@ -410,7 +332,7 @@ data %>%
 
 ## Vérification des hypothèses du modèle {.smaller}
 
-1. Linéarité et indépendance des erreurs
+1.  Linéarité et indépendance des erreurs
 
 ```{r}
 #| echo: true
@@ -421,11 +343,11 @@ diagnostic_plots = plot(check_model(model, panel = FALSE))
 diagnostic_plots[[2]]
 ```
 
-On voit clairement un pattern dans la distribution des données ==> pas d'indépendance des erreurs, ce qui est typiquement le cas des séries temporelles
+On voit clairement un pattern dans la distribution des données ==\> pas d'indépendance des erreurs, ce qui est typiquement le cas des séries temporelles
 
 ## Vérification des hypothèses du modèle {.smaller}
 
-2. Homoscédasticité
+2.  Homoscédasticité
 
 ```{r}
 #| echo: true
@@ -440,9 +362,9 @@ Il y aussi clairement un problème d'hétéroscédasticité: la variance des err
 
 Le plus souvent, régresser tel quel des séries temporelles (en niveau) va produire des modèles qui ne respectent pas l'hypothèse fondamentale d'indépendance des erreurs. Cela est un problème, car implique que notre coefficient de $\beta_1 = 0.79$ est *biaisé*.
 
-==> Cela vient du fait qu'il a une dimension temporelle dans nos variables, ces dernières sont aussi une fonction du temps $t$, qui n'est pas prise en compte dans $C = c_0 +c_1W + e_i$ (enfait, la dimension temporelle va se voire dans le terme d'erreur $e_i$)
+==\> Cela vient du fait qu'il a une dimension temporelle dans nos variables, ces dernières sont aussi une fonction du temps $t$, qui n'est pas prise en compte dans $C = c_0 +c_1W + e_i$ (enfait, la dimension temporelle va se voire dans le terme d'erreur $e_i$)
 
-==> Autrement pour pouvoir modéliser des séries temporelles avec des régressions, il faut que ces séries soient "stationnaires", c-à-d que leur moyenne doit être stable dans le temps.
+==\> Autrement pour pouvoir modéliser des séries temporelles avec des régressions, il faut que ces séries soient "stationnaires", c-à-d que leur moyenne doit être stable dans le temps.
 
 Il existe des tests afin de tester la stationnarité (Test de Dickey-Fuller, test de Perron...)
 
@@ -483,14 +405,11 @@ cowplot::plot_grid(plot1, plot2)
 
 ```
 
-
 ## Modèle en différences de premier ordre {.smaller}
 
-==> régresser les taux de croissances au lieu des niveaux, pour corriger la non-stationnarité.
+==\> régresser les taux de croissances au lieu des niveaux, pour corriger la non-stationnarité.
 
-Au lieu de $C = \beta_0 + \beta_1W$,
-nous avons:
-$\%\Delta{C} = \beta_0 + \%\Delta\beta1W$
+Au lieu de $C = \beta_0 + \beta_1W$, nous avons: $\%\Delta{C} = \beta_0 + \%\Delta\beta1W$
 
 $\beta_1$ devient *l'élasticité* de la consommation par rapport au revenu: le pourcentage de changement de C quand W augmente de 1 point de pourcentage.
 
@@ -507,34 +426,136 @@ tidy(model3)
 
 ```
 
+## Régression d'une série temporelle sur sa trend {style="font-size: 1.6rem; line-height:1.6;"}
 
-## Régression d'une série temporelle sur sa trend {.smaller}
+Que se passe-t-il si notre régression inclue seulement la dimension temporelle comme variable explicative dans un modèle log-linéaire ? $log(C) = \beta_0 + \beta_{year}year$
 
-Que se passe-t-il si notre régression inclue seulement la dimension temporelle comme variable explicative ?
+```{r}
+#| echo: true
 
+data <- 
+data %>% 
+  mutate(
+    year = 1960:2022,
+  )
 
+model4 = lm(data = data,
+            log(C_real) ~ year)
 
+tidy(model4)
+```
 
+Le coefficient $\beta_{year} = 0.018$ peut être interprété comme le taux de croissance moyen sur l'ensemble de la période, pas seulement entre la première et dernière année (moyenne des taux de croissance, ou le taux de croissance composé).
 
+## Comment interpréter $\beta_0 = -30$ ? {style="font-size: 1.6rem; line-height:1.6;"}
 
+Il s'agit de la valeur de $log(C)$ lorsque $year = 0$, ce qui ne fait pas vraiment sens.
 
+Un moyen de rendre l'ordonnée à l'origine (intercept) $\beta_0$ interprétable est de *centrer* notre variable explicative en lui soustrayant sa moyenne:
 
+```{r}
+#| echo: true
 
+data <- data %>% 
+  mutate(
+    year_centered = year - mean(year)
+  )
 
+model5 = lm(data = data,
+            log(C_real) ~ year_centered)
 
+tidy(model5)
 
+```
 
+Le coefficient $\beta_{year}$ ne change pas. $\beta_0$ devient $5.4$, ce qui correspond à $log(C)$, la valeur de notre variable dépendante, lorsque *year est à sa moyenne* (donc l'année 1991).
 
+## Pourquoi calculer le taux de croissance avec une régression ? {style="font-size: 1.4rem; line-height:1.4;"}
 
+En incluant des *intéractions*, on peut tester si le taux de croissance moyen change de manière significative entre différentes périodes. Dans les régressions, les intéractions permettent au modèle d'avoir différentes ordonnées à l'origine ($\beta_0$) ou bien différentes coefficients pour la mème variable, mais variant selon un groupe pré-établi, par exemple une variable dichotomique séparant la série en deux groupes: avant 1980 et après 1980. Cela se spécifie dans R avec `year*I(year>1980)`
 
+```{r}
+#| echo: true
 
+model6 = lm(data = data,
+            log(C_real) ~ year*I(year>1980))
 
+tidy(model6)
 
+```
 
+On obtient le modèle estimé $log(C) = -57 + 0.03year + 31.9year_{1980} -0.0161year*year_{1980}$. $year$ reste nos années et $year_{1980}$ est une variable binaire 1 si $year>1980$ et 0 autrement.
 
+## $log(C) = -57 + 0.03year + 31.9year_{1980} -0.0161year*year_{1980}$ {style="font-size: 1.4rem; line-height:1.4;"}
 
+```{r}
+#| echo: true
 
+tidy(model6)
+```
 
+Après 1980, $year_{1980} = 1$ et le modèle devient:
 
+$log(c) = -57 + 31.9*1 + 0.03year -0.0161year*1$
 
+\<=\>
 
+$log(c) = -25 - 0.0139year$
+
+Le taux de croissance moyen a diminué de `0.0161`
+
+Avant 1980, $year_{1980} = 0$ et le modèle est simplement:
+
+$log(C) = -57 + 0.03year + 31.9*0 -0.0161year*0$
+
+\<=\>
+
+$log(C) = -57 + 0.03year$ le taux de croissance pour la période 1960-1980 étant donc de `0.03`.
+
+## 
+
+```{r}
+#| echo: true
+#| code-fold: true
+#| code-summary: "Afficher le code"
+
+plot3 <- 
+plot2+
+  labs(title = "",
+       y = "Taux de croissance de C")+
+  geom_segment(aes(x = 1960, xend = 1980, y = 0.03, yend = 0.03), color = "black")+
+  geom_segment(aes(x = 1981, xend = 2022, y = 0.0139, yend = 0.0139), color = "black")+
+  annotate("text", x = 1970, y = 0.025, label = "taux de croissance moyen = 0.03", size = 2.5)+
+  annotate("text", x = 2000, y = 0, label = "taux de croissance moyen = 0,0139", size = 2.5)
+
+library(marginaleffects)
+
+plot4 <- 
+model6 %>% 
+  plot_predictions(condition = "year")+
+  geom_line(data = data, aes(x = year, y = log(C_real)), size = 1.2, color = "darkred")+
+  theme_minimal()+
+  geom_vline(xintercept = 1980, linetype = 2)+
+  annotate("text", label = "log(c) = -57 + 0.03year", x = 1980, y = 5)+
+  annotate("text", label = "log(c) = -25 -0.0139year", x = 2010, y = 5.5)+
+  labs(y = "log(c)")
+
+cowplot::plot_grid(plot3, plot4)
+
+```
+
+## Pour aller plus loin {.smaller}
+
+:::::: columns
+::: {.column width="33%"}
+![](images/cours2/introstats.png){width="261"}
+:::
+
+::: {.column width="33%"}
+![](images/cours2/regressionotherstories.png){width="235"}
+:::
+
+::: {.column width="33%"}
+![](images/cours2/wooldridge.png)
+:::
+::::::
