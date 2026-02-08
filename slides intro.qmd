@@ -24,14 +24,13 @@ Cela comprend:
 
 ## Plan du cours
 
-12 séances au total sur 4 thèmes de mesures
+12 séances au total sur 3 thèmes de mesures
 
 1.  Comptabilité nationale
 2.  Inégalités et distribution
 3.  Institutions
-4.  Commerce international
 
-## Perspective du cours
+## Perspective du cours {.smaller}
 
 Un cours d'analyse appliquée, nous allons beaucoup travailler directement avec des données et des exemples. L'idée est de vous familiariser avec les données économiques, comment les traiter et les analyser.
 
@@ -53,22 +52,24 @@ Quarto est un système de publication qui permet de produire des documents direc
 
 ## À propos de l'intelligence artificielle {.smaller}
 
-#### [*Fortement déconseillé*]{.mark} dans le cadre de ce cours, pour les raisons suivantes:
+#### [*Déconseillé*]{.mark} dans le cadre de ce cours, pour les raisons suivantes:
 
 :::::: columns
 ::: {.column width="70%"}
--   Vous n'aurez pas toujours accès à l'IA quand vous coderez en R (exemple: les tests du SECO)
-
--   Si les IA sont désormais excellentes en programmation (Python, Stata...), R est une exception et les codes en R générés par les IA sont souvent de mauvaise qualité.
+-   Si les IA sont désormais excellentes en programmation (Python, Stata...), les IA les plus utilisées (notamment Chatgpt) produisent du code R qui n'est souvent pas optimale
 
 -   R est le langage avec le plus de ressources et de documentations en ligne, pas besoin de passer par une IA
 
 -   Les IA ne comprennent pas toutes les subtilités de la comptabilité nationale et de l'analyse économique.
+
+-   Risque de ne pas assimiler le contenu du cours si vous dépendez entièrement des IA pour résoudre les exercices
 :::
 
 :::: {.column width="30%"}
 ::: callout-warning
-Je connais et sais reconnaître les IA autant que vous ! Surtout du code généré en R. Hors examen, je ne peux techniquement pas vous en interdire l'utilisation: libre à vous d'en faire usage avec les risques en terme de perte de capacités cognitives qui en résulte.
+
+En dehors des examens en présence, je ne peux pas vous interdire l'utilisation des IA 
+
 :::
 ::::
 ::::::
