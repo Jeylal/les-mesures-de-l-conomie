@@ -16,9 +16,9 @@ lang: fr
 -   Deux sources principales de données en économie (ainsi qu'en sciences sociales en général)
 
     1.  Données provenant d'enquêtes au moyen de questionnaires
-        -   ex: données sur la consommation, statistiques du marché du travail...
+        -   ex: données sur la consommation, statistiques du marché du travail, de la valeur ajouté des entreprises
     2.  Données administratives
-        -   ex: une partie importante des comptes nationaux, taux d'intérêt, masse monétaire...
+        -   ex: comptes publics
 
 Distinction importante, car pour les données d'enquêtes, les principes de la statistique (échantillonage, calculs des marges d'erreurs, tests statistiques) doivent être respectés, ce qui n'est pas (forcément) le cas des données administratives.
 
@@ -88,3 +88,28 @@ Exemple: données fiscales (qui permettent les mesures de distribution du revenu
 
     -   D'ou la récurrence de "révisions" des séries de données administratives.
 
+## La "comptabilité" nationale {.smaller}
+
+Le terme de comptabilité peut être trompeur, car la comptabilité nationale est très différente de la comptabilité en entreprise: - Le comptable d'une entreprise dispose de registres avec une information complète sur les données de l'entreprise - Cela n'est pas possible pour la comptabilité nationale (impliquerait une information exhaustive sur des millions d'individus et d'entreprises) - La comptabilité nationale repose donc fortement sur une information partielle qui nécessite des approximations, des estimations et des révisions
+
+## Comptabilité nationale et statistique {style="font-size: 1.6rem; line-height:1.6;"}
+
+-   Les données provenant des comptes nationaux sont des approximations
+
+-   Ces approximations sont possibles grâce à des données récoltées de manière plus ou moins dissipée selon la qualité du système publique de statistique du pays considéré.
+
+-   Il n'est en outre pas possible de mesurer *statistiquement* ces approximations (ex: intervalle de confiance de l'estimation du PIB), car la comptabilité nationale n'est pas le résultat d'une seule grande enquête.
+
+-   Au contraire, les comptes nationaux sont le résultat de compilation complexe de données provenant d'un grand nombre de sources différentes.
+
+## Exemple: Suisse {.smaller}
+
+::::: columns
+::: {.column width="50%"}
+![](images/cours3/inventairemethodes1.png)
+:::
+
+::: {.column width="50%"}
+[![https://www.bfs.admin.ch/bfs/fr/home/statistiques/economie-nationale/comptes-nationaux/produit-interieur-brut.assetdetail.328585.html](images/cours3/sources_donnees_pib_suisse.png){fig-align="right"}](https://www.bfs.admin.ch/bfs/fr/home/statistiques/economie-nationale/comptes-nationaux/produit-interieur-brut.assetdetail.328585.html)
+:::
+:::::
