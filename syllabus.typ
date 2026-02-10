@@ -11,9 +11,80 @@
 
 #set align(center)
 
-= Séminaire les mesures de l'économie (T208001). 
+= Séminaire les mesures de l'économie (T208001, 3 crédits) 
 
 = Semestre printemps 2026.
 
 == Mardis 12:15-14:00
 == Uni-Mail MR060
+
+=== Celâl Güney (celal.gueney\@unige.ch), bureau 4242 unimail
+
+#set align(left)
+
+= Résumé du cours
+
+Ce séminaire a pour objectif d'enseigner aux étudiants la manière dont les principaux indicateurs économiques tirés de la comptabilité nationale et de l'étude de la distribution du revenu national sont calculés. Un accent particulier sera mis sur la familiarisation avec les principales sources de données en économie et comment traiter ces données en pratique. La première partie du cours portera sur les indicateurs calculables à partir de la comptabilité nationale (comme le taux de profit, la part des salaires dans la valeur ajoutée, les contributions à la croissance etc.). La deuxième partie du cours se concentrera sur les principaux indicateurs d'inégalité ainsi que sur l'étude de la distribution du revenu et du patrimoine. Enfin, la dernière partie du cours sera consacrée aux indicateurs mesurant les institutions socio-économiques. Ce séminaire sera fortement axé sur des exercices pratiques permettant aux étudiants d'apprendre comment développer eux-même leurs propres analyses des dynamiques économiques. Ce séminaire accompagne le cours #text(style: "italic")[les mesures de l'économie] dispensé par Professeur Marc Morgan, mais reste un cours indépendant.
+
+= Évaluation du cours 
+
+- Travaux pratiques (80%)
+- Participation (20%)
+
+Il y aura deux travaux pratiques à réaliser comptant chacun 40% de la note finale. Ces travaux seront axés sur des exercices pratiques de calculs d'indicateurs et de mesures vus en cours. Les exercices devront être réalisés soit sur Excel, soit sur R (avec un script Quarto). La présence au séminaire est obligatoire et sera contrôlée à chaque début de séance.
+
+= Plan du cours
+
+#set heading(numbering: "1.")
+
+= 24 février: introduction au séminaire, rappels de R et introduction à Quarto 
+
+= 3 mars: introduction aux séries temporelles et à l'analyse de régression
+
+= 10 mars: comptabilité nationale (1)
+
+- Le calculs du PIB selon les trois approches (dépense, revenu, consommation)
+
+- Comment calculer les différentes mesures du revenu national: du PIB au revenu national net
+
+- Comparer les évolutions du PIB 
+
+- Calculer les contributions à la croissance
+
+- Mesures de la productivité
+
+= 17 mars: comptabilité nationale (2)
+
+- Indice des prix à la consommation, déflateur, indices en chaîne et parité de pouvoir d'achat.
+
+= 24 mars: comptabilité nationale (3)
+- PIB potentiel
+- Balances sectorielles
+
+= 31 mars: examen pratique: comptabilité nationale
+
+= 7 avril: pas de cours (vacances de Pâques)
+
+= 14 avril: distribution et inégalité (1)
+- Part des salaires et des profits dans la valeur ajoutée
+
+= 21 avril: distribution et inégalité (2)
+- Courbe de Lorenz, coefficient de Gini et les top shares.
+
+= 28 avril: distribution et inégalité (3)
+
+= 5 mai: mesurer les institutions (1)
+
+= 12 mai: mesurer les institutions (2)
+
+= 19 mai: examen pratique final 
+
+
+
+
+
+
+
+
+
+
