@@ -1,11 +1,22 @@
 ---
-title: "Séminaire les mesures de l'économie"
+title: "Introduction au séminaire, rappels de R et introduction à Quarto"
 subtitle: "Printemps 2026"
 author: "Celâl Güney"
 format: 
-  revealjs:
-    theme: style.scss
-editor: visual
+  live-revealjs:
+    theme: serif
+    scrollable: true
+    controls: true
+    engine: knitr
+webr:
+  packages:
+    - cli
+    - tidyverse
+    - gt
+    - Rdatasets
+  repos:
+    - https://r-lib.r-universe.dev
+  render-df: gt-interactive
 embed-resources: true
 lang: fr
 ---
@@ -50,30 +61,54 @@ Quarto est un système de publication qui permet de produire des documents direc
 
 ## Évaluation du cours
 
-## À propos de l'intelligence artificielle {.smaller}
+-   Participation au cours (20%)
+    -   La participation aux séance est obligatoire et sera contrôlée à chaque début de cours
+-   Examens pratiques (80%)
+    -   Deux examens: en milieu et fin de semestre
+    -   Il s'agira de travaux pratiques à réaliser en cours de séance (2h), avec des exercices à réaliser sur R ou excel.
+
+## À propos de l'intelligence artificielle {style="font-size: 1.7rem; line-height:1.6;"}
 
 #### [*Déconseillé*]{.mark} dans le cadre de ce cours, pour les raisons suivantes:
 
 :::::: columns
 ::: {.column width="70%"}
+-   Vous n'aurez pas accès aux IA lors des examens pratiques
+
 -   Si les IA sont désormais excellentes en programmation (Python, Stata...), les IA les plus utilisées (notamment Chatgpt) produisent du code R qui n'est souvent pas optimale
 
--   R est le langage avec le plus de ressources et de documentations en ligne, pas besoin de passer par une IA
+-   Utilisation acceptable dans certains cas, comme pour simplifier des tâches répétitives
 
--   Les IA ne comprennent pas toutes les subtilités de la comptabilité nationale et de l'analyse économique.
+-   R est le langage avec le plus de ressources et de documentations en ligne, pas besoin de passer par une IA
 
 -   Risque de ne pas assimiler le contenu du cours si vous dépendez entièrement des IA pour résoudre les exercices
 :::
 
 :::: {.column width="30%"}
-::: callout-warning
-
-En dehors des examens en présence, je ne peux pas vous interdire l'utilisation des IA 
-
+::: callout-important
+En dehors des examens en présence, je ne peux pas vous interdire l'utilisation des IA. Je vous déconseille l'utilisation de Chatgpt et vous recommande d'utiliser Copilot, dont vous avez une version gratuite avec votre compte Unige. D'autres IA sont meilleures pour R, comme ShinyAssistant.
 :::
 ::::
 ::::::
 
 ## Apprendre l'analyse à travers R
 
-[![https://larmarange.github.io/guide-R/](/images/guideR.png){width="200"}](https://larmarange.github.io/guide-R/)
+[![](images/moodle1.png)](https://moodle.unige.ch/mod/page/view.php?id=1127071)
+
+
+
+
+## R
+
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+
+```{webr}
+library(tidyverse)
+library(gt)
+library(Rdatasets)
+
+pwt = Rdatasets::rddata("pwt_sample")
+glimpse(pwt)
+```
+
+

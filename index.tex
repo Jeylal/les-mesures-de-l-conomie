@@ -1,0 +1,1417 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrreprt}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{241,243,245}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.40,0.45,0.13}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.28,0.35,0.67}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.46,0.62}{#1}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.07,0.07,0.07}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+\ifLuaTeX
+  \usepackage{luacolor}
+  \usepackage[soul]{lua-ul}
+\else
+  \usepackage{soul}
+\fi
+
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
+\definecolor{quarto-callout-color}{HTML}{909090}
+\definecolor{quarto-callout-note-color}{HTML}{0758E5}
+\definecolor{quarto-callout-important-color}{HTML}{CC1914}
+\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
+\definecolor{quarto-callout-tip-color}{HTML}{00A047}
+\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
+\definecolor{quarto-callout-color-frame}{HTML}{acacac}
+\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
+\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
+\makeatother
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Séminaire les mesures de l'économie},
+  pdfauthor={Celâl Güney},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Séminaire les mesures de l'économie}
+\author{Celâl Güney}
+\date{}
+\begin{document}
+\maketitle
+
+\renewcommand*\contentsname{Table of contents}
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+
+\bookmarksetup{startatroot}
+
+\chapter*{Preface}\label{preface}
+\addcontentsline{toc}{chapter}{Preface}
+
+\markboth{Preface}{Preface}
+
+Bienvenue sur la page du séminaire les mesures de l'économie
+
+\bookmarksetup{startatroot}
+
+\chapter{Séminaire les mesures de
+l'économie}\label{suxe9minaire-les-mesures-de-luxe9conomie}
+
+Printemps 2026
+
+\hfill\break
+
+\section{Présentation du cours}\label{pruxe9sentation-du-cours}
+
+\subsubsection{Objectif du cours}\label{objectif-du-cours}
+
+\begin{quote}
+\begin{quote}
+Comprendre et maîtriser les outils indispensables de l'analyse
+économique
+\end{quote}
+\end{quote}
+
+Cela comprend:
+
+\begin{itemize}
+\tightlist
+\item
+  Les variables économiques (PIB, inflation\ldots)
+\item
+  Les principes de modélisation
+\item
+  La programmation et l'analyse statistique
+\end{itemize}
+
+\section{Plan du cours}\label{plan-du-cours}
+
+12 séances au total sur 3 thèmes de mesures
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Comptabilité nationale
+\item
+  Inégalités et distribution
+\item
+  Institutions
+\end{enumerate}
+
+\section{Perspective du cours}\label{perspective-du-cours}
+
+Un cours d'analyse appliquée, nous allons beaucoup travailler
+directement avec des données et des exemples. L'idée est de vous
+familiariser avec les données économiques, comment les traiter et les
+analyser.
+
+Après ce cours, vous devriez être capable de mener vos propres analyses
+quantitatives pour vos recherches et votre PDR.
+
+==\textgreater{} Outils inspensable: R(studio) et Quarto
+
+\section{R \& Quarto}\label{r-quarto}
+
+En économie, la maîtrise de R est indispensable, car permet:
+
+\begin{itemize}
+\tightlist
+\item
+  Le traitement et la visualisation de données
+\item
+  La modélisation (régression linéaire, simulation de modèles)
+\item
+  L'analyse
+\end{itemize}
+
+Quarto est un système de publication qui permet de produire des
+documents directement à partir de Rstudio (exemple: powerpoints, pdf,
+sites web\ldots) et donc de code en R.
+
+\section{Évaluation du cours}\label{uxe9valuation-du-cours}
+
+\begin{itemize}
+\tightlist
+\item
+  Participation au cours (20\%)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    La participation aux séance est obligatoire et sera contrôlée à
+    chaque début de cours
+  \end{itemize}
+\item
+  Examens pratiques (80\%)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Deux examens: en milieu et fin de semestre
+  \item
+    Il s'agira de travaux pratiques à réaliser en cours de séance (2h),
+    avec des exercices à réaliser sur R ou excel.
+  \end{itemize}
+\end{itemize}
+
+\section{À propos de l'intelligence
+artificielle}\label{uxe0-propos-de-lintelligence-artificielle}
+
+\subsubsection{\texorpdfstring{\hl{\emph{Déconseillé}} dans le cadre de
+ce cours, pour les raisons
+suivantes:}{Déconseillé dans le cadre de ce cours, pour les raisons suivantes:}}\label{duxe9conseilluxe9-dans-le-cadre-de-ce-cours-pour-les-raisons-suivantes}
+
+\begin{itemize}
+\item
+  Vous n'aurez pas accès aux IA lors des examens pratiques
+\item
+  Si les IA sont désormais excellentes en programmation (Python,
+  Stata\ldots), les IA les plus utilisées (notamment Chatgpt) produisent
+  du code R qui n'est souvent pas optimale
+\item
+  Utilisation acceptable dans certains cas, comme pour simplifier des
+  tâches répétitives
+\item
+  R est le langage avec le plus de ressources et de documentations en
+  ligne, pas besoin de passer par une IA
+\item
+  Risque de ne pas assimiler le contenu du cours si vous dépendez
+  entièrement des IA pour résoudre les exercices
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomtitle=1mm, toprule=.15mm, leftrule=.75mm, rightrule=.15mm, opacityback=0, left=2mm, opacitybacktitle=0.6, breakable, coltitle=black, colframe=quarto-callout-important-color-frame, titlerule=0mm, colback=white, colbacktitle=quarto-callout-important-color!10!white, toptitle=1mm, bottomrule=.15mm, arc=.35mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Important}]
+
+En dehors des examens en présence, je ne peux pas vous interdire
+l'utilisation des IA. Je vous déconseille l'utilisation de Chatgpt et
+vous recommande d'utiliser Copilot, dont vous avez une version gratuite
+avec votre compte Unige. D'autres IA sont meilleures pour R, comme
+ShinyAssistant.
+
+\end{tcolorbox}
+
+\section{Apprendre l'analyse à travers
+R}\label{apprendre-lanalyse-uxe0-travers-r}
+
+\href{https://moodle.unige.ch/mod/page/view.php?id=1127071}{\pandocbounded{\includegraphics[keepaspectratio]{images/moodle1.png}}}
+
+\section{}\label{section}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{for (x in 1:5) \{}
+\NormalTok{  print(10 + x)}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\bookmarksetup{startatroot}
+
+\chapter{Introduction aux séries temporelles et aux
+régressions}\label{introduction-aux-suxe9ries-temporelles-et-aux-ruxe9gressions}
+
+Séminaire les mesures de l'économie
+
+\hfill\break
+
+\section{Séries temporelles}\label{suxe9ries-temporelles}
+
+La plupart des mesures de l'économie sont des séries temporelles (PIB,
+emploi, inflation\ldots).
+
+L'analyse des séries temporelles présente certaines particularités par
+rapport aux données en coupe (à un point donné dans le temps, aussi
+appelé ``cross-sectional data''), notamment car elles ont une tendance
+temporelle (par exemple exponentielle).
+
+\section{Taux de croissance}\label{taux-de-croissance}
+
+Les séries temporelles ont la particularité de croître à un taux plus ou
+moins stable dans le temps.
+
+Cela implique une croissance exponentielle
+
+Exemple: imaginons une variable \(x\) qui croît à un taux constant de
+3\% par an. A \(t = 0\), \(x =2\). A \(t=1\), x augmente de \(2*1.03\)
+(0.03 étant le taux de croissance auquel on additionne 1):
+
+\(x_{t=1} = 2*1.03\)
+
+Pour \(t=2\), \(x_{t=2} = 2*1.03*1.03 = 2*(1.03)^2\)
+
+Pour \(t=3\), \(x_{t=3} = 2*1.03*1.03*1.03 = 2*(1.03)^3\)
+
+Ainsi de suite, pour la formule générale:
+
+\(x_t = 2*(1.03)^t\). Il s'agit de la formule de croissance
+exponentielle: \(x_t = x_0 (1+g)^t\), avec \(x_0\) la valeur initiale,
+\(g\) le taux de croissance et \(t\) le nombre de périodes.
+
+\section{Croissance exponentielle}\label{croissance-exponentielle}
+
+\subsection{Exemple dans R}\label{exemple-dans-r}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{f }\OtherTok{=} \ControlFlowTok{function}\NormalTok{(x0, g, t)\{}
+  
+\NormalTok{  x0}\SpecialCharTok{*}\NormalTok{(}\DecValTok{1}\SpecialCharTok{+}\NormalTok{g)}\SpecialCharTok{\^{}}\NormalTok{t}
+  
+\NormalTok{\}}
+
+\NormalTok{x0 }\OtherTok{=} \DecValTok{2}
+\NormalTok{g }\OtherTok{=} \FloatTok{0.03}
+\NormalTok{t }\OtherTok{=} \DecValTok{1}\SpecialCharTok{:}\DecValTok{150}
+
+\NormalTok{x }\OtherTok{=} \FunctionTok{f}\NormalTok{(}\AttributeTok{x0 =}\NormalTok{ x0, }\AttributeTok{g =}\NormalTok{ g, }\AttributeTok{t =}\NormalTok{ t)}
+
+\FunctionTok{plot}\NormalTok{(x, }\AttributeTok{type =} \StringTok{"l"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{cours2_files/figure-pdf/unnamed-chunk-1-1.pdf}}
+
+\section{Taux de croissance}\label{taux-de-croissance-1}
+
+À partir de la formule pour la croissance exponentielle de X
+
+\[x_t = x_0(1+g)^t\]
+
+on peut trouver le taux de croissance:
+
+\[g = \left(\frac{x_t}{x_0}\right)^{1/t}-1\]
+
+Il s'agit du \emph{taux de croissance moyen composé} de la série entre
+\(x_t\) (en dernière période) et \(x_0\)
+
+Lorsque l'on calcule le taux de croissance entre deux périodes seulement
+(disons \(x_0\) et \(x_1\)), on retrouve la formule habituelle du taux
+de croissance (car \(t=1\)):
+
+\[
+g = \frac{x_1 - x_0}{x_0} = \left(\frac{x_1}{x_0}\right)^{1/1}-1
+\]
+
+\section{Taux de croissance}\label{taux-de-croissance-2}
+
+À ne pas confondre avec la moyenne des taux de croissance:
+
+\[
+\bar{g} = \frac{1}{t}\sum_{i=1}^t{g_i}
+\]
+
+g et \(\bar{g}\) sont identiques seulement si le taux de croissance est
+constant pour toutes les périodes t.
+
+\section{Transformation en
+logarithme}\label{transformation-en-logarithme}
+
+La transformation en logarithme (passer de \(x_t\) à \(log(x_t)\)) est
+très courante en économie, surtout avec des séries temporelles
+caractérisées par une croissance exponentielle.
+
+\begin{itemize}
+\tightlist
+\item
+  La transformation log permet de ``linéariser'' une série exponentielle
+\item
+  Lorsque l'on visualise la courbe d'une série en logarithme, \emph{la
+  pente est le taux de croissance}
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{plot}\NormalTok{(x, }\AttributeTok{type =} \StringTok{"l"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{cours2_files/figure-pdf/unnamed-chunk-2-1.pdf}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{plot}\NormalTok{(}\FunctionTok{log}\NormalTok{(x), }\AttributeTok{type =} \StringTok{"l"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{cours2_files/figure-pdf/unnamed-chunk-3-1.pdf}}
+
+\section{Transformation en
+logarithme}\label{transformation-en-logarithme-1}
+
+Si \(x_t = x_0(1+g)^t\) est transformé en log et que nous isolons g,
+nous trouvons:
+
+\[
+log(1+g) = \frac{log(x_t)-log(x_0)}{t}
+\] Entre seulement deux période (par exemple d'une année à l'autre),
+\(t = 1\) et donc le taux de croissance peut être approximé facilement
+en prenant la différence en log. Quand \(g\) est entre -0.15 et 0.15,
+\(log(1+g)\) est une bonne approximation de \(g\).
+
+Dans R:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(tidyverse) }\CommentTok{\# la fonction lag() doit être importée avec le package tidyverse}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+-- Attaching core tidyverse packages ------------------------ tidyverse 2.0.0 --
+v dplyr     1.2.0     v readr     2.1.6
+v forcats   1.0.1     v stringr   1.6.0
+v ggplot2   4.0.2     v tibble    3.3.1
+v lubridate 1.9.5     v tidyr     1.3.2
+v purrr     1.2.1     
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{g }\OtherTok{=} \FunctionTok{log}\NormalTok{(x) }\SpecialCharTok{{-}} \FunctionTok{lag}\NormalTok{(}\FunctionTok{log}\NormalTok{(x)) }\CommentTok{\# lag() prend la valeur de x à t{-}1}
+
+\CommentTok{\# Ou bien avec diff() (difference):}
+\NormalTok{g }\OtherTok{=} \FunctionTok{diff}\NormalTok{(}\FunctionTok{log}\NormalTok{(x))}
+\end{Highlighting}
+\end{Shaded}
+
+\section{Pourquoi log(1+g) ≅ g entre -0.15 et
+0.15}\label{pourquoi-log1g-g-entre--0.15-et-0.15}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{g }\OtherTok{=} \FunctionTok{seq}\NormalTok{(}\AttributeTok{from =} \SpecialCharTok{{-}}\FloatTok{0.30}\NormalTok{, }\AttributeTok{to =} \FloatTok{0.30}\NormalTok{, }\AttributeTok{by =} \FloatTok{0.001}\NormalTok{)}
+\StringTok{\textasciigrave{}}\AttributeTok{log(g+1)}\StringTok{\textasciigrave{}} \OtherTok{=} \FunctionTok{log}\NormalTok{(g}\SpecialCharTok{+}\DecValTok{1}\NormalTok{)}
+
+\NormalTok{df }\OtherTok{=} \FunctionTok{tibble}\NormalTok{(}\AttributeTok{g =}\NormalTok{ g, }\StringTok{\textasciigrave{}}\AttributeTok{log(g+1)}\StringTok{\textasciigrave{}} \OtherTok{=} \StringTok{\textasciigrave{}}\AttributeTok{log(g+1)}\StringTok{\textasciigrave{}}\NormalTok{)}
+
+\NormalTok{df }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ g, }\AttributeTok{y =}\NormalTok{ g, }\AttributeTok{color =} \StringTok{"g"}\NormalTok{))}\SpecialCharTok{+}
+  \FunctionTok{geom\_line}\NormalTok{()}\SpecialCharTok{+}
+  \FunctionTok{geom\_line}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ g, }\AttributeTok{y =} \StringTok{\textasciigrave{}}\AttributeTok{log(g+1)}\StringTok{\textasciigrave{}}\NormalTok{, }\AttributeTok{color =} \StringTok{"Log(1+g)"}\NormalTok{))}\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{()}\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{""}\NormalTok{, }\AttributeTok{y =} \StringTok{""}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{cours2_files/figure-pdf/unnamed-chunk-5-1.pdf}}
+
+\section{Exemple avec des données réelles du
+PIB}\label{exemple-avec-des-donnuxe9es-ruxe9elles-du-pib}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(maddison) }\CommentTok{\# le package maddison permet d\textquotesingle{}importer des données de longue durée du PIB par habitant}
+\FunctionTok{library}\NormalTok{(tidyverse) }
+
+\NormalTok{data }\OtherTok{\textless{}{-}} \FunctionTok{subset}\NormalTok{(maddison, }
+\NormalTok{             year }\SpecialCharTok{\textgreater{}=} \DecValTok{1800} \SpecialCharTok{\&}
+\NormalTok{             iso2c }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"FR"}\NormalTok{, }\StringTok{"US"}\NormalTok{))}
+
+\NormalTok{data }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ year, }\AttributeTok{y =}\NormalTok{ rgdpnapc, }\AttributeTok{color =}\NormalTok{ country)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_line}\NormalTok{()}\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{()}\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{""}\NormalTok{,}
+       \AttributeTok{y =} \StringTok{"PIB par habitant (dollar US 2011)"}\NormalTok{,}
+       \AttributeTok{title =} \StringTok{"Échelle normale (non{-}logarithmique)"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{cours2_files/figure-pdf/unnamed-chunk-6-1.pdf}}
+
+\section{Exemple avec des données réelles du
+PIB}\label{exemple-avec-des-donnuxe9es-ruxe9elles-du-pib-1}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{data }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ year, }\AttributeTok{y =} \FunctionTok{log}\NormalTok{(rgdpnapc), }\AttributeTok{color =}\NormalTok{ country)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_line}\NormalTok{()}\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{()}\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{""}\NormalTok{,}
+       \AttributeTok{y =} \StringTok{"PIB par habitant (dollar US 2011)"}\NormalTok{,}
+       \AttributeTok{title =} \StringTok{"Échelle logarithmique"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{cours2_files/figure-pdf/unnamed-chunk-7-1.pdf}}
+
+\bookmarksetup{startatroot}
+
+\chapter{Principes de base de l'analyse de
+régression}\label{principes-de-base-de-lanalyse-de-ruxe9gression}
+
+\section{Pourquoi l'analyse de régression
+?}\label{pourquoi-lanalyse-de-ruxe9gression}
+
+\begin{itemize}
+\tightlist
+\item
+  L'outil principal en économie et en sciences sociales (en méthodes
+  quantitatives)
+\item
+  Permet d'estimer des fonctions provenant de théories économiques
+  (fonction de consommation, d'investissement\ldots)
+\item
+  Permet d'identifier et d'analyser des relations de causalité
+\item
+  Estimation de modèles économiques (par exemple ceux que vous allez
+  voire en macroéconomie)
+\end{itemize}
+
+\section{Exemple: fonction de
+consommation}\label{exemple-fonction-de-consommation}
+
+L'une des fonctions les plus connues et estimées en macroéconomie est la
+fonction de consommation des ménages \(C\):
+
+\[
+C = c_0 + c_1W
+\]
+
+Avec \(C\) le niveau de consommation des ménages (dans la monnaie du
+pays considéré), \(c_0\) le niveau de consommation lorsque les salaires
+\(W\) = 0. \(c_1\) est la propension marginale à consommer, qui est une
+composante clé du multiplicateur keynésien.
+
+\section{Régression linéaire
+simple}\label{ruxe9gression-linuxe9aire-simple}
+
+Cette fonction de consommation peut être estimée au moyen d'un modèle de
+régression linéaire simple. - ``Simple'', car nous avons uniquement une
+variable explicative (les salaire \(W\)). - ``linéaire'', car notre
+variable dépendante est numérique (la consommation \(C\)).
+
+La régression linéaire simple prend la forme suivante:
+
+\[
+E[Y|X] = \beta_0 + \beta_1X_i + e_i
+\]
+
+Avec \(E[Y|X]\) ``l'espérance'' (la moyenne) de Y, notre variable
+dépendante, \emph{en fonction} des valeur de notre variable explicative
+\(X\). \(\beta_0\) l'ordonnée à l'origine et \(e_i\) le terme d'erreur.
+\(E[Y|X]\) est souvent écrit \(Y\) par simplicité.
+
+==\textgreater{} Les régressions peuvent paraître compliquées à première
+vue ==\textgreater{} Une manière simple de ``démistifer'' les régression
+est de comprendre qu'il s'agit simplement de \emph{comparaisons de
+moyennes}
+
+\section{\texorpdfstring{\[E[Y|X] = \beta_0 + \beta_1X_i + e_i\]}{E{[}Y\textbar X{]} = \textbackslash beta\_0 + \textbackslash beta\_1X\_i + e\_i}}\label{eyx-beta_0-beta_1x_i-e_i}
+
+\(\beta_1\) est le paramètre clé du modèle.
+
+L'interprétation la plus courante de ce paramètre, qui est celle qui
+vous est enseignée dans vos cours de quanti, est que \(\beta_1\) est
+l'effet de X sur les valeurs moyennes Y lorsque X augmente de une unité
+Cela veut dire que \(\beta_1\) est l'effet marginal de x sur y, la
+valeur obtenue en prenant la dérivée de Y sur X:
+
+\[
+\frac{\delta E[Y|X]}{\delta X} = \beta_1
+\]
+
+==\textgreater{} Il s'agit de l'interprétation causale du coefficient du
+réggression (\(\beta_1\))
+
+\section{Interprétation en termes de
+comparaison}\label{interpruxe9tation-en-termes-de-comparaison}
+
+Le coefficient \(\beta_1\) peut être aussi compris comme une différence
+de moyenne prédite par le modèle entre deux valeurs de X.
+
+\begin{itemize}
+\tightlist
+\item
+  Si \(X\) est une variable qualitative dichotomique (par exemple homme
+  ou femme), elle ne prend que les valeurs 0 (disons homme) et 1 (disons
+  femme) et que nous ignorons le termes d'erreur \(e_i\):
+\end{itemize}
+
+Si \(X = 1\), \textless=\textgreater{}
+\(E[Y|X = 1] = \beta_0 + \beta_1\)
+
+Et si \(X = 0\), \textless=\textgreater{} \(E[Y|X = 0] = \beta_0\)
+
+Et donc \[E[Y|X=1] - E[Y|X=0] = \beta_0 + \beta_1 - \beta_0 = \beta_1\]
+
+\(\beta_1\) est la différence entre la moyenne prédite des femmes et des
+hommes.
+
+\section{Interprétation en termes de
+comparaison}\label{interpruxe9tation-en-termes-de-comparaison-1}
+
+Même principe si la variable est numérique/continue
+
+Exemple avec \(X_i\) le revenu de la personne \(i\) et \(Y=C\) la
+consommation. Prenons \(X_1 = 5000\) et \(X_2 = 5001\). Le coefficient
+\(\beta1\) est la différence entre \(X_2\) et \(X_1\).
+
+\[E[Y|X_2 = 5001] - E[Y|X_1 = 5000] = \beta_0 + \beta_15001 - \beta_0 - \beta_15000 = \beta_1\]
+
+\(\beta_1\) est donc la différence de consommation moyenne prédite par
+le modèle entre deux personnes ayant un revenu de 5001 et 5000. En
+d'autre termes, la différence de moyenne prédite entre deux personnes
+différant d'une unité.
+
+\section{Interprétation des coefficients de
+régression}\label{interpruxe9tation-des-coefficients-de-ruxe9gression}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Interprétation causale: \(\beta_1\) est l'effet marginal de X (effet
+  lorsque X augmente de 1) sur les valeurs moyennes prédites de Y.
+\item
+  Interprétation en termes de comparaison: \(\beta_1\) est la différence
+  des moyennes prédites de Y entre deux observations différant d'une
+  unité.
+\end{enumerate}
+
+==\textgreater{} L'interprétation en termes de comparaison est plus
+prudente que l'interprétation causale, pour laquelle il faut que les
+hypothèses du modèle soient respectées
+
+\section{\texorpdfstring{Retour à notre exemple
+\[C = c_0 + c_1W\]}{Retour à notre exemple C = c\_0 + c\_1W}}\label{retour-uxe0-notre-exemple-c-c_0-c_1w}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(readr)}
+\NormalTok{macroch }\OtherTok{\textless{}{-}} \FunctionTok{read\_csv}\NormalTok{(}\StringTok{"data/macroch.csv"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+New names:
+Rows: 63 Columns: 25
+-- Column specification
+-------------------------------------------------------- Delimiter: "," dbl
+(25): ...1, GDP_n, GDP_deflator, GDP_real, C_n, C_deflator, C_real, I_n,...
+i Use `spec()` to retrieve the full column specification for this data. i
+Specify the column types or set `show_col_types = FALSE` to quiet this message.
+* `` -> `...1`
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{macroch }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ W\_real, }\AttributeTok{y =}\NormalTok{ C\_real))}\SpecialCharTok{+}
+  \FunctionTok{geom\_point}\NormalTok{()}\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{()}\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Rémunération des salariés (W)"}\NormalTok{,}
+       \AttributeTok{y =} \StringTok{"Consommation (C)"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{cours2_files/figure-pdf/unnamed-chunk-8-1.pdf}}
+
+\section{Estimation simple avec lm()}\label{estimation-simple-avec-lm}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(kableExtra)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+
+Attaching package: 'kableExtra'
+\end{verbatim}
+
+\begin{verbatim}
+The following object is masked from 'package:dplyr':
+
+    group_rows
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(broom)}
+\NormalTok{model }\OtherTok{=} \FunctionTok{lm}\NormalTok{(}\AttributeTok{data =}\NormalTok{ macroch, }\CommentTok{\# préciser le tableau dans lequel les variables sont présentes}
+           \AttributeTok{formula =}\NormalTok{ C\_real }\SpecialCharTok{\textasciitilde{}}\NormalTok{ W\_real) }\CommentTok{\# la formule estimée doit prendre la forme Y \textasciitilde{} X}
+
+\FunctionTok{tidy}\NormalTok{(model) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{kable}\NormalTok{() }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{longtable}[]{@{}lrrrr@{}}
+\toprule\noalign{}
+term & estimate & std.error & statistic & p.value \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+(Intercept) & 43.1846843 & 2.7815089 & 15.52563 & 0 \\
+W\_real & 0.7972749 & 0.0103511 & 77.02329 & 0 \\
+\end{longtable}
+
+La fonction estimée est donc:
+
+\[C = 43 + 0.797W\]
+
+\section{Valeurs prédites}\label{valeurs-pruxe9dites}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{data }\OtherTok{=} \FunctionTok{augment}\NormalTok{(model)}
+
+\NormalTok{data }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ W\_real, }\AttributeTok{y =}\NormalTok{ C\_real, }\AttributeTok{color =} \StringTok{"Valeurs réelles observées"}\NormalTok{))}\SpecialCharTok{+}
+  \FunctionTok{geom\_line}\NormalTok{()}\SpecialCharTok{+}
+  \FunctionTok{geom\_line}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ W\_real, }\AttributeTok{y =}\NormalTok{ .fitted, }\AttributeTok{color =} \StringTok{"Valeurs prédites"}\NormalTok{))}\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{()}\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"C = 43 + 0.797W"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{cours2_files/figure-pdf/unnamed-chunk-10-1.pdf}}
+
+\section{Vérification des hypothèses du
+modèle}\label{vuxe9rification-des-hypothuxe8ses-du-moduxe8le}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Linéarité et indépendance des erreurs
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(performance)}
+
+\NormalTok{diagnostic\_plots }\OtherTok{=} \FunctionTok{plot}\NormalTok{(}\FunctionTok{check\_model}\NormalTok{(model, }\AttributeTok{panel =} \ConstantTok{FALSE}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+For confidence bands, please install `qqplotr`.
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{diagnostic\_plots[[}\DecValTok{2}\NormalTok{]]}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{cours2_files/figure-pdf/unnamed-chunk-11-1.pdf}}
+
+On voit clairement un pattern dans la distribution des données
+==\textgreater{} pas d'indépendance des erreurs, ce qui est typiquement
+le cas des séries temporelles
+
+\section{Vérification des hypothèses du
+modèle}\label{vuxe9rification-des-hypothuxe8ses-du-moduxe8le-1}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Homoscédasticité
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(performance)}
+
+\NormalTok{diagnostic\_plots[[}\DecValTok{3}\NormalTok{]]}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{cours2_files/figure-pdf/unnamed-chunk-12-1.pdf}}
+
+Il y aussi clairement un problème d'hétéroscédasticité: la variance des
+erreurs n'est pas constante
+
+\section{\texorpdfstring{\(C = 43 + 0.797W\)}{C = 43 + 0.797W}}\label{c-43-0.797w}
+
+Le plus souvent, régresser tel quel des séries temporelles (en niveau)
+va produire des modèles qui ne respectent pas l'hypothèse fondamentale
+d'indépendance des erreurs. Cela est un problème, car implique que notre
+coefficient de \(\beta_1 = 0.79\) est \emph{biaisé}.
+
+==\textgreater{} Cela vient du fait qu'il a une dimension temporelle
+dans nos variables, ces dernières sont aussi une fonction du temps
+\(t\), qui n'est pas prise en compte dans \(C = c_0 +c_1W + e_i\)
+(enfait, la dimension temporelle va se voire dans le terme d'erreur
+\(e_i\))
+
+==\textgreater{} Autrement pour pouvoir modéliser des séries temporelles
+avec des régressions, il faut que ces séries soient ``stationnaires'',
+c-à-d que leur moyenne doit être stable dans le temps.
+
+Il existe des tests afin de tester la stationnarité (Test de
+Dickey-Fuller, test de Perron\ldots)
+
+\section{Stationnarité}\label{stationnarituxe9}
+
+La plupart du temps, les séries ayant une tendance temporelle
+(non-stationnaire) doivent être transformées en taux de croissance pour
+pouvoir être incluses dans une régression.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(ggcharts)}
+
+\NormalTok{macroch}\SpecialCharTok{$}\NormalTok{year }\OtherTok{=} \DecValTok{1960}\SpecialCharTok{:}\DecValTok{2022}
+\NormalTok{data\_rates }\OtherTok{=} \FunctionTok{tibble}\NormalTok{(}\AttributeTok{year =} \DecValTok{1961}\SpecialCharTok{:}\DecValTok{2022}\NormalTok{, }\AttributeTok{rate\_c =} \FunctionTok{diff}\NormalTok{(}\FunctionTok{log}\NormalTok{(macroch}\SpecialCharTok{$}\NormalTok{C\_real)), }\AttributeTok{rate\_w =} \FunctionTok{diff}\NormalTok{(}\FunctionTok{log}\NormalTok{(macroch}\SpecialCharTok{$}\NormalTok{W\_real)))}
+
+\NormalTok{plot1 }\OtherTok{\textless{}{-}} 
+\NormalTok{macroch }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ year, }\AttributeTok{y =}\NormalTok{ C\_real, }\AttributeTok{color =} \StringTok{"Consommation (niveau)"}\NormalTok{))}\SpecialCharTok{+}
+  \FunctionTok{geom\_line}\NormalTok{()}\SpecialCharTok{+}
+  \FunctionTok{geom\_line}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ year, }\AttributeTok{y =}\NormalTok{ W\_real, }\AttributeTok{color =} \StringTok{"Revenu des salariés (niveau)"}\NormalTok{))}\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{()}\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Séries non stationnaires"}\NormalTok{)}\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{legend.position =} \StringTok{"top"}\NormalTok{)}
+
+
+
+\NormalTok{plot2 }\OtherTok{\textless{}{-}} 
+\NormalTok{  data\_rates }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ year, }\AttributeTok{y =}\NormalTok{ rate\_c, }\AttributeTok{color =} \StringTok{"Consommation (taux de croissance)"}\NormalTok{))}\SpecialCharTok{+}
+  \FunctionTok{geom\_line}\NormalTok{()}\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Série stationnaire"}\NormalTok{)}\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{()}\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{legend.position =} \StringTok{"top"}\NormalTok{)}
+
+\NormalTok{cowplot}\SpecialCharTok{::}\FunctionTok{plot\_grid}\NormalTok{(plot1, plot2)}
+\end{Highlighting}
+\end{Shaded}
+
+\pandocbounded{\includegraphics[keepaspectratio]{cours2_files/figure-pdf/unnamed-chunk-13-1.pdf}}
+
+\section{Modèle en différences de premier
+ordre}\label{moduxe8le-en-diffuxe9rences-de-premier-ordre}
+
+==\textgreater{} régresser les taux de croissances au lieu des niveaux,
+pour corriger la non-stationnarité.
+
+Au lieu de \(C = \beta_0 + \beta_1W\), nous avons:
+\(\%\Delta{C} = \beta_0 + \%\Delta\beta1W\)
+
+\(\beta_1\) devient \emph{l'élasticité} de la consommation par rapport
+au revenu: le pourcentage de changement de C quand W augmente de 1 point
+de pourcentage.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{model3 }\OtherTok{=} \FunctionTok{lm}\NormalTok{(}\AttributeTok{data =}\NormalTok{ data\_rates,}
+\NormalTok{            rate\_c }\SpecialCharTok{\textasciitilde{}}\NormalTok{ rate\_w)}
+
+\FunctionTok{tidy}\NormalTok{(model3)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+# A tibble: 2 x 5
+  term        estimate std.error statistic  p.value
+  <chr>          <dbl>     <dbl>     <dbl>    <dbl>
+1 (Intercept)  0.00546   0.00191      2.86 5.89e- 3
+2 rate_w       0.558     0.0505      11.0  4.36e-16
+\end{verbatim}
+
+\section{Régression d'une série temporelle sur sa
+trend}\label{ruxe9gression-dune-suxe9rie-temporelle-sur-sa-trend}
+
+Que se passe-t-il si notre régression inclue seulement la dimension
+temporelle comme variable explicative dans un modèle log-linéaire ?
+\(log(C) = \beta_0 + \beta_{year}year\)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{data }\OtherTok{\textless{}{-}} 
+\NormalTok{data }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(}
+    \AttributeTok{year =} \DecValTok{1960}\SpecialCharTok{:}\DecValTok{2022}\NormalTok{,}
+\NormalTok{  )}
+
+\NormalTok{model4 }\OtherTok{=} \FunctionTok{lm}\NormalTok{(}\AttributeTok{data =}\NormalTok{ data,}
+            \FunctionTok{log}\NormalTok{(C\_real) }\SpecialCharTok{\textasciitilde{}}\NormalTok{ year)}
+
+\FunctionTok{tidy}\NormalTok{(model4)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+# A tibble: 2 x 5
+  term        estimate std.error statistic  p.value
+  <chr>          <dbl>     <dbl>     <dbl>    <dbl>
+1 (Intercept) -30.5     0.883        -34.5 9.89e-42
+2 year          0.0180  0.000443      40.7 6.58e-46
+\end{verbatim}
+
+Le coefficient \(\beta_{year} = 0.018\) peut être interprété comme le
+taux de croissance moyen sur l'ensemble de la période, pas seulement
+entre la première et dernière année (moyenne des taux de croissance, ou
+le taux de croissance composé).
+
+\section{\texorpdfstring{Comment interpréter \(\beta_0 = -30\)
+?}{Comment interpréter \textbackslash beta\_0 = -30 ?}}\label{comment-interpruxe9ter-beta_0--30}
+
+Il s'agit de la valeur de \(log(C)\) lorsque \(year = 0\), ce qui ne
+fait pas vraiment sens.
+
+Un moyen de rendre l'ordonnée à l'origine (intercept) \(\beta_0\)
+interprétable est de \emph{centrer} notre variable explicative en lui
+soustrayant sa moyenne:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{data }\OtherTok{\textless{}{-}}\NormalTok{ data }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(}
+    \AttributeTok{year\_centered =}\NormalTok{ year }\SpecialCharTok{{-}} \FunctionTok{mean}\NormalTok{(year)}
+\NormalTok{  )}
+
+\NormalTok{model5 }\OtherTok{=} \FunctionTok{lm}\NormalTok{(}\AttributeTok{data =}\NormalTok{ data,}
+            \FunctionTok{log}\NormalTok{(C\_real) }\SpecialCharTok{\textasciitilde{}}\NormalTok{ year\_centered)}
+
+\FunctionTok{tidy}\NormalTok{(model5)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+# A tibble: 2 x 5
+  term          estimate std.error statistic   p.value
+  <chr>            <dbl>     <dbl>     <dbl>     <dbl>
+1 (Intercept)     5.44    0.00806      675.  7.35e-120
+2 year_centered   0.0180  0.000443      40.7 6.58e- 46
+\end{verbatim}
+
+Le coefficient \(\beta_{year}\) ne change pas. \(\beta_0\) devient
+\(5.4\), ce qui correspond à \(log(C)\), la valeur de notre variable
+dépendante, lorsque \emph{year est à sa moyenne} (donc l'année 1991).
+
+\section{Pourquoi calculer le taux de croissance avec une régression
+?}\label{pourquoi-calculer-le-taux-de-croissance-avec-une-ruxe9gression}
+
+En incluant des \emph{intéractions}, on peut tester si le taux de
+croissance moyen change de manière significative entre différentes
+périodes. Dans les régressions, les intéractions permettent au modèle
+d'avoir différentes ordonnées à l'origine (\(\beta_0\)) ou bien
+différentes coefficients pour la mème variable, mais variant selon un
+groupe pré-établi, par exemple une variable dichotomique séparant la
+série en deux groupes: avant 1980 et après 1980. Cela se spécifie dans R
+avec \texttt{year*I(year\textgreater{}1980)}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{model6 }\OtherTok{=} \FunctionTok{lm}\NormalTok{(}\AttributeTok{data =}\NormalTok{ data,}
+            \FunctionTok{log}\NormalTok{(C\_real) }\SpecialCharTok{\textasciitilde{}}\NormalTok{ year}\SpecialCharTok{*}\FunctionTok{I}\NormalTok{(year}\SpecialCharTok{\textgreater{}}\DecValTok{1980}\NormalTok{))}
+
+\FunctionTok{tidy}\NormalTok{(model6)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+# A tibble: 4 x 5
+  term                    estimate std.error statistic  p.value
+  <chr>                      <dbl>     <dbl>     <dbl>    <dbl>
+1 (Intercept)             -57.1      2.34        -24.4 1.79e-32
+2 year                      0.0315   0.00119      26.5 1.81e-34
+3 I(year > 1980)TRUE       31.9      2.49         12.8 1.13e-18
+4 year:I(year > 1980)TRUE  -0.0161   0.00126     -12.8 1.19e-18
+\end{verbatim}
+
+On obtient le modèle estimé
+\(log(C) = -57 + 0.03year + 31.9year_{1980} -0.0161year*year_{1980}\).
+\(year\) reste nos années et \(year_{1980}\) est une variable binaire 1
+si \(year>1980\) et 0 autrement.
+
+\section{\texorpdfstring{\(log(C) = -57 + 0.03year + 31.9year_{1980} -0.0161year*year_{1980}\)}{log(C) = -57 + 0.03year + 31.9year\_\{1980\} -0.0161year*year\_\{1980\}}}\label{logc--57-0.03year-31.9year_1980--0.0161yearyear_1980}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{tidy}\NormalTok{(model6)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+# A tibble: 4 x 5
+  term                    estimate std.error statistic  p.value
+  <chr>                      <dbl>     <dbl>     <dbl>    <dbl>
+1 (Intercept)             -57.1      2.34        -24.4 1.79e-32
+2 year                      0.0315   0.00119      26.5 1.81e-34
+3 I(year > 1980)TRUE       31.9      2.49         12.8 1.13e-18
+4 year:I(year > 1980)TRUE  -0.0161   0.00126     -12.8 1.19e-18
+\end{verbatim}
+
+Après 1980, \(year_{1980} = 1\) et le modèle devient:
+
+\(log(c) = -57 + 31.9*1 + 0.03year -0.0161year*1\)
+
+\textless=\textgreater{}
+
+\(log(c) = -25 - 0.0139year\)
+
+Le taux de croissance moyen a diminué de \texttt{0.0161}
+
+Avant 1980, \(year_{1980} = 0\) et le modèle est simplement:
+
+\(log(C) = -57 + 0.03year + 31.9*0 -0.0161year*0\)
+
+\textless=\textgreater{}
+
+\(log(C) = -57 + 0.03year\) le taux de croissance pour la période
+1960-1980 étant donc de \texttt{0.03}.
+
+\section{}\label{section-1}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{plot3 }\OtherTok{\textless{}{-}} 
+\NormalTok{plot2}\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{""}\NormalTok{,}
+       \AttributeTok{y =} \StringTok{"Taux de croissance de C"}\NormalTok{)}\SpecialCharTok{+}
+  \FunctionTok{geom\_segment}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =} \DecValTok{1960}\NormalTok{, }\AttributeTok{xend =} \DecValTok{1980}\NormalTok{, }\AttributeTok{y =} \FloatTok{0.03}\NormalTok{, }\AttributeTok{yend =} \FloatTok{0.03}\NormalTok{), }\AttributeTok{color =} \StringTok{"black"}\NormalTok{)}\SpecialCharTok{+}
+  \FunctionTok{geom\_segment}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =} \DecValTok{1981}\NormalTok{, }\AttributeTok{xend =} \DecValTok{2022}\NormalTok{, }\AttributeTok{y =} \FloatTok{0.0139}\NormalTok{, }\AttributeTok{yend =} \FloatTok{0.0139}\NormalTok{), }\AttributeTok{color =} \StringTok{"black"}\NormalTok{)}\SpecialCharTok{+}
+  \FunctionTok{annotate}\NormalTok{(}\StringTok{"text"}\NormalTok{, }\AttributeTok{x =} \DecValTok{1970}\NormalTok{, }\AttributeTok{y =} \FloatTok{0.025}\NormalTok{, }\AttributeTok{label =} \StringTok{"taux de croissance moyen = 0.03"}\NormalTok{, }\AttributeTok{size =} \FloatTok{2.5}\NormalTok{)}\SpecialCharTok{+}
+  \FunctionTok{annotate}\NormalTok{(}\StringTok{"text"}\NormalTok{, }\AttributeTok{x =} \DecValTok{2000}\NormalTok{, }\AttributeTok{y =} \DecValTok{0}\NormalTok{, }\AttributeTok{label =} \StringTok{"taux de croissance moyen = 0,0139"}\NormalTok{, }\AttributeTok{size =} \FloatTok{2.5}\NormalTok{)}
+
+\FunctionTok{library}\NormalTok{(marginaleffects)}
+
+\NormalTok{plot4 }\OtherTok{\textless{}{-}} 
+\NormalTok{model6 }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{plot\_predictions}\NormalTok{(}\AttributeTok{condition =} \StringTok{"year"}\NormalTok{)}\SpecialCharTok{+}
+  \FunctionTok{geom\_line}\NormalTok{(}\AttributeTok{data =}\NormalTok{ data, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ year, }\AttributeTok{y =} \FunctionTok{log}\NormalTok{(C\_real)), }\AttributeTok{size =} \FloatTok{1.2}\NormalTok{, }\AttributeTok{color =} \StringTok{"darkred"}\NormalTok{)}\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{()}\SpecialCharTok{+}
+  \FunctionTok{geom\_vline}\NormalTok{(}\AttributeTok{xintercept =} \DecValTok{1980}\NormalTok{, }\AttributeTok{linetype =} \DecValTok{2}\NormalTok{)}\SpecialCharTok{+}
+  \FunctionTok{annotate}\NormalTok{(}\StringTok{"text"}\NormalTok{, }\AttributeTok{label =} \StringTok{"log(c) = {-}57 + 0.03year"}\NormalTok{, }\AttributeTok{x =} \DecValTok{1980}\NormalTok{, }\AttributeTok{y =} \DecValTok{5}\NormalTok{)}\SpecialCharTok{+}
+  \FunctionTok{annotate}\NormalTok{(}\StringTok{"text"}\NormalTok{, }\AttributeTok{label =} \StringTok{"log(c) = {-}25 {-}0.0139year"}\NormalTok{, }\AttributeTok{x =} \DecValTok{2010}\NormalTok{, }\AttributeTok{y =} \FloatTok{5.5}\NormalTok{)}\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{y =} \StringTok{"log(c)"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+i Please use `linewidth` instead.
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{cowplot}\SpecialCharTok{::}\FunctionTok{plot\_grid}\NormalTok{(plot3, plot4)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+Warning in geom_segment(aes(x = 1960, xend = 1980, y = 0.03, yend = 0.03), : All aesthetics have length 1, but the data has 62 rows.
+i Please consider using `annotate()` or provide this layer with data containing
+  a single row.
+\end{verbatim}
+
+\begin{verbatim}
+Warning in geom_segment(aes(x = 1981, xend = 2022, y = 0.0139, yend = 0.0139), : All aesthetics have length 1, but the data has 62 rows.
+i Please consider using `annotate()` or provide this layer with data containing
+  a single row.
+\end{verbatim}
+
+\pandocbounded{\includegraphics[keepaspectratio]{cours2_files/figure-pdf/unnamed-chunk-19-1.pdf}}
+
+\section{Pour aller plus loin}\label{pour-aller-plus-loin}
+
+\includegraphics[width=2.71875in,height=\textheight,keepaspectratio]{images/cours2/introstats.png}
+
+\includegraphics[width=2.44792in,height=\textheight,keepaspectratio]{images/cours2/regressionotherstories.png}
+
+\pandocbounded{\includegraphics[keepaspectratio]{images/cours2/wooldridge.png}}
+
+\bookmarksetup{startatroot}
+
+\chapter{Comptabilité nationale}\label{comptabilituxe9-nationale}
+
+Séminaire les mesures de l'économie
+
+\hfill\break
+
+\section{Données économiques: principes de
+base}\label{donnuxe9es-uxe9conomiques-principes-de-base}
+
+\begin{itemize}
+\item
+  Deux sources principales de données en économie (ainsi qu'en sciences
+  sociales en général)
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \tightlist
+  \item
+    Données provenant d'enquêtes au moyen de questionnaires
+
+    \begin{itemize}
+    \tightlist
+    \item
+      ex: données sur la consommation, statistiques du marché du
+      travail, de la valeur ajouté des entreprises
+    \end{itemize}
+  \item
+    Données administratives
+
+    \begin{itemize}
+    \tightlist
+    \item
+      ex: comptes publics
+    \end{itemize}
+  \end{enumerate}
+\end{itemize}
+
+Distinction importante, car pour les données d'enquêtes, les principes
+de la statistique (échantillonage, calculs des marges d'erreurs, tests
+statistiques) doivent être respectés, ce qui n'est pas (forcément) le
+cas des données administratives.
+
+Car pour les données administratives, certains principe de la
+statistique ne sont pas applicable, car les données n'ont pas été
+récoltées à travers un processus d'échantillonnage
+
+\section{Données d'enquête}\label{donnuxe9es-denquuxeate}
+
+\begin{itemize}
+\tightlist
+\item
+  Important de vous rappeler ce que vous avez appris dans vos cours de
+  méthodes quantitatives
+\item
+  Faire attention à la qualité des enquêtes qui dépend de:
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \tightlist
+  \item
+    Le procédé d'échantillonage
+  \item
+    La taille de l'échantillon et sa représentativité
+  \item
+    Le taux de réponse (nombre de personnes qui ont répondu à l'enquête
+    / total des personnes appelées à participer à l'enquête)
+  \end{enumerate}
+\end{itemize}
+
+\section{Récolte de données
+d'enquête}\label{ruxe9colte-de-donnuxe9es-denquuxeate}
+
+\subsubsection{un problème à ne pas
+sous-estimer}\label{un-probluxe8me-uxe0-ne-pas-sous-estimer}
+
+\pandocbounded{\includegraphics[keepaspectratio]{images/cours2/dataproblemft1.png}}
+
+\href{https://www.ft.com/content/c046be2c-5496-4e2c-b243-580224e9a459}{\pandocbounded{\includegraphics[keepaspectratio]{images/cours2/dataproblemft2.png}}}
+
+Un taux de réponse faible (\textless60\%) indique que l'enquête a manqué
+une partie importante de la population ==\textgreater{} données
+récoltées ne sont pas représentatives.
+
+\section{Exemple: crise des données en
+Grande-Bretagne}\label{exemple-crise-des-donnuxe9es-en-grande-bretagne}
+
+``Declining response rates to the LFS (labour force surveys) have made
+the numbers so volatile that it is impossible to be sure whether
+employment is rising or falling from one quarter to the next --- let
+alone how the labour market has evolved in the years since the
+pandemic.'' ``How flawed data is leaving the UK in the dark'', Financial
+Times
+
+\href{https://www.resolutionfoundation.org/our-work/estimates-of-uk-employment/}{\includegraphics[width=7.20833in,height=\textheight,keepaspectratio]{images/cours2/resolutionfoundation.png}}
+
+\href{https://www.ft.com/content/6eb3c205-c473-47b4-bed8-1b9ee99ce658}{\pandocbounded{\includegraphics[keepaspectratio]{images/cours2/hownotfirestatisticchiefft1.png}}}
+
+\section{Exemple: crise des données aux
+USA}\label{exemple-crise-des-donnuxe9es-aux-usa}
+
+\href{https://www.ft.com/content/d3b24f17-96d8-4f07-a169-0d22fab051ef}{\pandocbounded{\includegraphics[keepaspectratio]{images/cours2/hownotfirestatisticchiefft4.png}}}
+
+\href{https://www.ft.com/content/d3b24f17-96d8-4f07-a169-0d22fab051ef}{\pandocbounded{\includegraphics[keepaspectratio]{images/cours2/hownotfirestastisticchief5.png}}}
+
+\section{Données administratives}\label{donnuxe9es-administratives}
+
+Exemple: données fiscales (qui permettent les mesures de distribution du
+revenu), certaines données du marché du travail (ex: Seco et le nombre
+de chômeurs inscrits), données sur les finances publiques\ldots{}
+
+\begin{itemize}
+\item
+  Les données administratives ne sont pas récoltées à travers un
+  processus d'échantillonnage. Par exemple, cela ne fait pas sens de
+  calculer les intervalles de confiance pour le PIB ou la dette
+  publique.
+\item
+  Mais cela ne veut pas dire que les données administratives sont
+  exhaustives
+
+  \begin{itemize}
+  \tightlist
+  \item
+    D'ou la récurrence de ``révisions'' des séries de données
+    administratives.
+  \end{itemize}
+\end{itemize}
+
+\section{La ``comptabilité''
+nationale}\label{la-comptabilituxe9-nationale}
+
+Le terme de comptabilité peut être trompeur, car la comptabilité
+nationale est très différente de la comptabilité en entreprise: - Le
+comptable d'une entreprise dispose de registres avec une information
+complète sur les données de l'entreprise - Cela n'est pas possible pour
+la comptabilité nationale (impliquerait une information exhaustive sur
+des millions d'individus et d'entreprises) - La comptabilité nationale
+repose donc fortement sur une information partielle qui nécessite des
+approximations, des estimations et des révisions
+
+\section{Comptabilité nationale et
+statistique}\label{comptabilituxe9-nationale-et-statistique}
+
+\begin{itemize}
+\item
+  Les données provenant des comptes nationaux sont des approximations
+\item
+  Ces approximations sont possibles grâce à des données récoltées de
+  manière plus ou moins dissipée selon la qualité du système publique de
+  statistique du pays considéré.
+\item
+  Il n'est en outre pas possible de mesurer \emph{statistiquement} ces
+  approximations (ex: intervalle de confiance de l'estimation du PIB),
+  car la comptabilité nationale n'est pas le résultat d'une seule grande
+  enquête.
+\item
+  Au contraire, les comptes nationaux sont le résultat de compilation
+  complexe de données provenant d'un grand nombre de sources
+  différentes.
+\end{itemize}
+
+\section{Exemple: Suisse}\label{exemple-suisse}
+
+\pandocbounded{\includegraphics[keepaspectratio]{images/cours3/inventairemethodes1.png}}
+
+\begin{figure}[H]
+
+{\centering \pandocbounded{\includegraphics[keepaspectratio]{images/cours3/sources_donnees_pib_suisse.png}}
+
+}
+
+\caption{https://www.bfs.admin.ch/bfs/fr/home/statistiques/economie-nationale/comptes-nationaux/produit-interieur-brut.assetdetail.328585.html}
+
+\end{figure}%
+
+
+
+
+\end{document}

@@ -3,9 +3,10 @@ title: "Introduction aux séries temporelles et aux régressions"
 subtitle: "Séminaire les mesures de l'économie"
 author: "Celâl Güney"
 format: 
-  revealjs:
-    theme: style.scss
+  live-revealjs:
+    theme: serif
     scrollable: true
+    controls: true
 editor: visual
 embed-resources: true
 lang: fr
