@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.29">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -32,14 +32,15 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-52eac1d0abc2dd6c07a949d959085d41.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6a47fb94e4cf58bc8e3abcee811f21c5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -126,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./cours3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Comptabilité nationale</span></a>
+ <span class="menu-text">Comptabilité nationale (1)</span></a>
   </div>
 </li>
     </ul>
@@ -172,10 +173,19 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Il y aura deux travaux pratiques à réaliser comptant chacun 40% de la note finale. Ces travaux seront axés sur des exercices pratiques de calculs d’indicateurs et de mesures vus en cours. Les exercices devront être réalisés soit sur Excel, soit sur R (avec un script Quarto). La présence au séminaire est obligatoire et sera contrôlée à chaque début de séance.</p>
 </section>
+<section id="objectifs-du-cours" class="level1">
+<h1>Objectifs du cours</h1>
+<ul>
+<li>Apprendre et maîtriser R (et Excel à la marge) pour l’analyse de données macroéconomiques</li>
+<li>Apprendre et maîtriser Quarto afin de pouvoir produire des rapports automatisés</li>
+<li>Comprendre et maîtriser l’analyse des principales variables macroéconomiques comme le PIB et les données provenant de la comptabilité nationale, l’inflation, le chômage, la productivité…</li>
+</ul>
+</section>
 <section id="plan-du-cours" class="level1">
 <h1>Plan du cours</h1>
-<section id="février-introduction-au-séminaire-rappels-de-r-et-introduction-à-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="février-introduction-au-séminaire-rappels-de-r-et-introduction-à-quarto">24 février: introduction au séminaire, rappels de R et introduction à Quarto</h2>
+<section id="février-introduction-au-séminaire" class="level2">
+<h2 class="anchored" data-anchor-id="février-introduction-au-séminaire">24 février: introduction au séminaire</h2>
+<p>Rappels des bases de R, introduction à des packages utiles pour l’analyse macroéconomique. Installation et introduction au codage avec R sur Quarto pour produire des documents html, pdf et powerpoint. Installation et introduction à la plateforme de développement et stockage cloud Github.</p>
 </section>
 <section id="mars-introduction-aux-séries-temporelles-et-à-lanalyse-de-régression" class="level2">
 <h2 class="anchored" data-anchor-id="mars-introduction-aux-séries-temporelles-et-à-lanalyse-de-régression">3 mars: introduction aux séries temporelles et à l’analyse de régression</h2>
@@ -289,13 +299,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

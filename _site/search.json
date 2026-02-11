@@ -638,5 +638,15 @@
     "crumbs": [
       "Introduction au séminaire, rappels de R et introduction à Quarto"
     ]
+  },
+  {
+    "objectID": "index.html#février-introduction-au-séminaire",
+    "href": "index.html#février-introduction-au-séminaire",
+    "title": "Séminaire les mesures de l’économie",
+    "section": "24 février: introduction au séminaire",
+    "text": "24 février: introduction au séminaire\nRappels des bases de R, introduction à des packages utiles pour l’analyse macroéconomique. Installation et introduction au codage avec R sur Quarto pour produire des documents html, pdf et powerpoint. Installation et introduction à la plateforme de développement et stockage cloud Github.",
+    "crumbs": [
+      "Séminaire les mesures de l'économie"
+    ]
   }
 ]
