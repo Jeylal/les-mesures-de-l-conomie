@@ -1,12 +1,14 @@
 ---
-title: "Séminaire les mesures de l'économie"
+title: "Séminaire les mesures de l'économie T208001"
 subtitle: "Semestre printemps 2026
             Mardis 12:15 - 14:00, salle MR060 Unimail"
 author: "Celâl Güney, bureau 4242 Unimail"
 format:
   html:
     theme: flatly
+    toc: true
   pdf: default
+bibliography: references.bib
 ---
 
 # Résumé du cours
@@ -30,21 +32,36 @@ Il y aura deux travaux pratiques à réaliser comptant chacun 40% de la note fin
 
 ## 24 février: introduction au séminaire
 
-Rappels des bases de R, introduction à des packages utiles pour l'analyse macroéconomique. Installation et introduction au codage avec R sur Quarto pour produire des documents html, pdf et powerpoint. Installation et introduction à la plateforme de développement et stockage cloud Github. Sensibilisation à l'usage de l'intelligence artificielle pour le codage en R et l'analyse de données macroéconomiques.
+Rappels des bases de R, introduction à des packages utiles pour l'analyse macroéconomique. Installation et introduction au codage avec R sur Quarto pour produire des documents html, pdf et powerpoint. Installation et introduction à la plateforme de développement et stockage cloud Github. Sensibilisation à l'usage de l'intelligence artificielle pour le codage en R et l'analyse de données macroéconomiques. Introduction aux principales bases de données macroéconomiques.
 
 ## 3 mars: introduction aux séries temporelles et à l'analyse de régression
 
 Introduction au traitement et à l'analyse de séries temporelles en macroéconomie et sur R. Introduction aux régressions linéaires avec des données macroéconomiques.
 
+Sources:
+
+- Gelman, Andrew, Jennifer Hill, and Aki Vehtari. Regression and Other Stories. Cambridge University Press, 2021.
+
+- Hill, R. Carter, William E. Griffiths, and Guay C. Lim. Principles of Econometrics. 5th edition. Wiley, 2018.
+
+
+
 ## 10 mars: comptabilité nationale
 
-Le calculs du PIB selon les trois approches (dépense, revenu, consommation). Comment calculer les différentes mesures du revenu national: du PIB au revenu national net. Comparer les évolutions du PIB. Calculer les contributions à la croissance. PIB potentiel. Balances sectorielles. Exercices sur la visualisation de données macroéconomiques, les différents calculs du revenu national, des contributions à la croissance et des balances sectorielles.
+Le calculs du PIB selon les trois approches (dépense, revenu, consommation). Comment calculer les différentes mesures du revenu national: du PIB au revenu national net. Comparer les évolutions du PIB. Calculer les contributions à la croissance. PIB potentiel. Balances sectorielles. Exercices sur la visualisation de données macroéconomiques, les différents calculs du revenu national, des contributions à la croissance et des balances sectorielles à partir des données de la comptabilité nationale du Secrétariat d'État à l'économie (SECO).
+
+Sources:
+
+- Lequiller, François, and Derek Blades. Understanding National Accounts. Second Edition. OECD, 2014. Chapitre 1
+
 
 ## 17 mars: comptabilité nationale (suite)
 
 ## 24 mars: mesures de l'inflation
 
 Indice des prix à la consommation, déflateur, indices en chaîne et parité de pouvoir d'achat. Exercice sur le calcul des indices de Laspeyre, Paasche et de l'indice en chaîne.
+
+- Lequiller, François, and Derek Blades. Understanding National Accounts. Second Edition. OECD, 2014. Chapitres 2 et 3
 
 ## 31 mars: examen pratique (1)
 
@@ -54,6 +71,12 @@ Indice des prix à la consommation, déflateur, indices en chaîne et parité de
 
 Distribution du revenu national et sa modélisation. Exercice sur la part des salaires et des profits dans la valeur ajoutée.
 
+Sources:
+
+- Cowell, Frank Alan. Measuring Inequality. Third edition. LSE Perspectives in Economic Analysis. University Press, 2011.
+
+
+
 ## 21 avril: distribution et inégalité (2)
 
 Courbe de Lorenz, coefficient de Gini et les top shares. Exercice avec les données fiscales suisses.
@@ -61,6 +84,14 @@ Courbe de Lorenz, coefficient de Gini et les top shares. Exercice avec les donn�
 ## 28 avril: distribution et inégalité (3)
 
 Mesurer les inégalités de classes: comment estimer différentes mesures de classes sociales et les inégalités entre ces classes à partir de données d'enquête. Exercice en utilisant l'enquête panel des ménages suisses.
+
+Sources:
+
+- “Social classes in economics analysis. A brief historical account.” DigClass, March 11, 2022. https://digclass.eu/social-classes-in-economics-analysis-a-brief-historical-account/.
+
+- “Income inequality, top shares of income and social classes in the 21st century.” DigClass, January 13, 2023. https://digclass.eu/income-inequality-top-shares-of-income-and-social-classes-in-the-21st-century/.
+
+
 
 ## 5 mai: mesurer les institutions (1)
 
@@ -70,4 +101,92 @@ Les différentes mesures des formes institutionnelles du capitalisme. Introducti
 
 Exercice sur comment construire des indices composés avec comme exemple la construction d'un indice composé du pouvoir de négociation des salariés aux États-Unis.
 
+Sources: 
+
+- Fontanari, Claudia, Enrico Sergio Levrero, and Davide Romaniello. “A Composite Index for Workers’ Bargaining Power and the Inflation Rate in the United States, 1960–2018.” Structural Change and Economic Dynamics 70 (September 2024): 682–98. https://doi.org/10.1016/j.strueco.2024.05.009.
+
+
 ## 19 mai: examen pratique final
+
+# Ressources
+
+## Quarto
+
+Quarto est un outil permettant d'écrire et faire tourner du code R de manière plus fluide qu'un simple que script R. Il s'agit du principal système de publication de code R, permettant de produire des documents en pdf, html et powerpoint. Un guide et une introduction complète à Quarto est disponible sur la page web de Quarto (quarto.org). Quarto est téléchargeable [ici](https://quarto.org/docs/download/). Je vous recommande de jeter un oeil à la gallerie de Quarto afin d'avoir un aperçu de tout le potentiel de ce logiciel, qui vous sera très utile pour le reste de votre parcours: [Quarto Gallery](https://quarto.org/docs/gallery/).
+
+## Github
+
+Github est site web d'hébergement et de stockage cloud de fichier et de données. Il permet de sauvegarder vos projets de travail et de publier vos résultats et vos documents quarto. Je vous recommande fortement [de vous créer un compte github](https://github.com/) et d'installer [Github desktop](https://desktop.github.com/download/).
+
+## R et l'analyse de régression
+
+-   [Guide-R](https://larmarange.github.io/guide-R/)
+
+-   [R for Data Science](https://r4ds.hadley.nz/)
+
+-   [Time Series Analysis](https://vlyubchich.github.io/tsar/)
+
+-   [R Gallery (visualisation et graphiques)](https://r-graph-gallery.com/)
+
+-   [Models to Meaning](https://marginaleffects.com/)
+
+    Vidéos youtubes:
+
+-   [Playlists d'Andrew Heiss](https://www.youtube.com/watch?v=S4OmWxc3h3Y&list=PLS6tnpTr39sERjvBbJGr9mpqvtiLVPzd4)
+
+-   [Playlists d'Albert Rapp](https://www.youtube.com/@rappa753/playlists)
+
+-   Wedata (en français)
+
+    -   [Bases de R](https://www.youtube.com/watch?v=hWsmaR3Nh6w&list=PLSYhtt87oGAL7YLr8aFpIKueTDX5Xtldk)
+
+    -   [Statistiques avec R](https://www.youtube.com/watch?v=c4WkVrs1rKU&list=PLSYhtt87oGAJi590N7JzclMpJC2IjzPOr)
+
+    -   [ggplot](https://www.youtube.com/watch?v=N7iHe7Fo-P4&list=PLSYhtt87oGAKrswm4j2K102SOgE9tT1vb)
+
+## Bases de données
+
+Bases de données internationales:
+
+-   DBnomics: la base mondiale de données économiques <https://db.nomics.world/>
+
+    -   Il s'agit de la base de données la plus utile, car elle compile une série énorme de données provenant de toutes les organisations majeurs (OCDE, OIT, Banque Mondiale...). De plus, elle offre un package R (RDBnomics) permettant d'importer directement les données dans R: <https://github.com/dbnomics/rdbnomics>
+
+-   Base de données de l'OCDE: <https://data-explorer.oecd.org/?lc=fr>
+
+-   Banque mondiale: <https://data.worldbank.org/>
+
+-   Maddison historical statistics: <https://www.rug.nl/ggdc/historicaldevelopment/maddison/>
+
+-   Ilostat (organisation internationale du travail): <https://ilostat.ilo.org/fr/data/>
+
+-   Ameco (base de données macroéconomiques pour la Commission européenne): <https://economy-finance.ec.europa.eu/economic-research-and-databases/economic-databases/ameco-database_en>
+
+-   Gapminder <https://www.gapminder.org/resources/>
+
+-   Our World in Data: <https://ourworldindata.org/>
+
+-   Penn World Tables: <https://www.rug.nl/ggdc/productivity/pwt/?lang=en>
+
+-   World Inequality Database: <https://wid.world/>
+
+-   Luxembourg Income Study database (LIS): <https://www.lisdatacenter.org/data-access/>
+
+    -   DartFrontend: [https://dart.lisdatacenter.org/dar](https://dart.lisdatacenter.org/dart)
+
+        Pour la Suisse: 
+
+-   Données du PIB selon les trois approches: [https://www.seco.admin.ch/seco/fr/home/wirtschaftslage---wirtschaftspolitik/Wirtschaftslage/bip-quartalsschaetzungen-/daten.htm](https://www.seco.admin.ch/seco/fr/home/wirtschaftslage---wirtschaftspolitik/Wirtschaftslage/bip-quartalsschaetzungen-/daten.html)
+
+-   Statistiques historiques de la Suisse: <https://hsso.ch/fr>
+
+-   Office fédéral de la statistique: <https://www.bfs.admin.ch/bfs/fr/home.html>
+
+-   Statistiques fiscales de l'administration fédérale des contributions: <https://www.estv.admin.ch/fr/statistiques-sur-limpot-federal-direct>
+
+-   Atlas statistique de la Suisse: <https://mapexplorer.bfs.admin.ch/#c=indicator&i=ch_11_02_02_001.ausgabenfrkantpolgstr&s=2023&view=map164>
+
+# Références
+
+::: {#refs}
+:::

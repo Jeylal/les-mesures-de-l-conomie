@@ -19,6 +19,7 @@ webr:
   render-df: gt-interactive
 embed-resources: true
 lang: fr
+footer: <https://jeylal.github.io/les-mesures-de-l-conomie/>
 ---
 
 ## Présentation du cours
@@ -95,9 +96,6 @@ En dehors des examens en présence, je ne peux pas vous interdire l'utilisation 
 
 [![](images/moodle1.png)](https://moodle.unige.ch/mod/page/view.php?id=1127071)
 
-
-
-
 ## R
 
 {{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
@@ -110,5 +108,3 @@ library(Rdatasets)
 pwt = Rdatasets::rddata("pwt_sample")
 glimpse(pwt)
 ```
-
-

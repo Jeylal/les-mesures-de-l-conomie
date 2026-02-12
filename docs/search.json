@@ -312,141 +312,181 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Séminaire les mesures de l’économie",
+    "title": "Séminaire les mesures de l’économie T208001",
     "section": "",
     "text": "Ce séminaire a pour objectif d’enseigner aux étudiants la manière dont les principaux indicateurs économiques tirés de la comptabilité nationale et de l’étude de la distribution du revenu national sont calculés. Un accent particulier sera mis sur la familiarisation avec les principales sources de données en économie et comment traiter ces données en pratique. La première partie du cours portera sur les indicateurs calculables à partir de la comptabilité nationale (comme le taux de profit, la part des salaires dans la valeur ajoutée, les contributions à la croissance etc.). La deuxième partie du cours se concentrera sur les principaux indicateurs d’inégalité ainsi que sur l’étude de la distribution du revenu et du patrimoine. Enfin, la dernière partie du cours sera consacrée aux indicateurs mesurant les institutions socio-économiques. Ce séminaire sera fortement axé sur des exercices pratiques permettant aux étudiants d’apprendre comment développer eux-même leurs propres analyses des dynamiques économiques. Ce séminaire accompagne le cours les mesures de l’économie dispensé par Professeur Marc Morgan, mais reste un cours indépendant.",
     "crumbs": [
-      "Séminaire les mesures de l'économie"
+      "Séminaire les mesures de l'économie T208001"
     ]
   },
   {
     "objectID": "index.html#février-introduction-au-séminaire",
     "href": "index.html#février-introduction-au-séminaire",
-    "title": "Séminaire les mesures de l’économie",
+    "title": "Séminaire les mesures de l’économie T208001",
     "section": "24 février: introduction au séminaire",
-    "text": "24 février: introduction au séminaire\nRappels des bases de R, introduction à des packages utiles pour l’analyse macroéconomique. Installation et introduction au codage avec R sur Quarto pour produire des documents html, pdf et powerpoint. Installation et introduction à la plateforme de développement et stockage cloud Github. Sensibilisation à l’usage de l’intelligence artificielle pour le codage en R et l’analyse de données macroéconomiques.",
+    "text": "24 février: introduction au séminaire\nRappels des bases de R, introduction à des packages utiles pour l’analyse macroéconomique. Installation et introduction au codage avec R sur Quarto pour produire des documents html, pdf et powerpoint. Installation et introduction à la plateforme de développement et stockage cloud Github. Sensibilisation à l’usage de l’intelligence artificielle pour le codage en R et l’analyse de données macroéconomiques. Introduction aux principales bases de données macroéconomiques.",
     "crumbs": [
-      "Séminaire les mesures de l'économie"
+      "Séminaire les mesures de l'économie T208001"
     ]
   },
   {
     "objectID": "index.html#mars-introduction-aux-séries-temporelles-et-à-lanalyse-de-régression",
     "href": "index.html#mars-introduction-aux-séries-temporelles-et-à-lanalyse-de-régression",
-    "title": "Séminaire les mesures de l’économie",
+    "title": "Séminaire les mesures de l’économie T208001",
     "section": "3 mars: introduction aux séries temporelles et à l’analyse de régression",
-    "text": "3 mars: introduction aux séries temporelles et à l’analyse de régression\nIntroduction au traitement et à l’analyse de séries temporelles en macroéconomie et sur R. Introduction aux régressions linéaires avec des données macroéconomiques.",
+    "text": "3 mars: introduction aux séries temporelles et à l’analyse de régression\nIntroduction au traitement et à l’analyse de séries temporelles en macroéconomie et sur R. Introduction aux régressions linéaires avec des données macroéconomiques.\nSources:\n\nGelman, Andrew, Jennifer Hill, and Aki Vehtari. Regression and Other Stories. Cambridge University Press, 2021.\nHill, R. Carter, William E. Griffiths, and Guay C. Lim. Principles of Econometrics. 5th edition. Wiley, 2018.",
     "crumbs": [
-      "Séminaire les mesures de l'économie"
+      "Séminaire les mesures de l'économie T208001"
     ]
   },
   {
     "objectID": "index.html#mars-comptabilité-nationale",
     "href": "index.html#mars-comptabilité-nationale",
-    "title": "Séminaire les mesures de l’économie",
+    "title": "Séminaire les mesures de l’économie T208001",
     "section": "10 mars: comptabilité nationale",
-    "text": "10 mars: comptabilité nationale\nLe calculs du PIB selon les trois approches (dépense, revenu, consommation). Comment calculer les différentes mesures du revenu national: du PIB au revenu national net. Comparer les évolutions du PIB. Calculer les contributions à la croissance. PIB potentiel. Balances sectorielles. Exercices sur la visualisation de données macroéconomiques, les différents calculs du revenu national, des contributions à la croissance et des balances sectorielles.",
+    "text": "10 mars: comptabilité nationale\nLe calculs du PIB selon les trois approches (dépense, revenu, consommation). Comment calculer les différentes mesures du revenu national: du PIB au revenu national net. Comparer les évolutions du PIB. Calculer les contributions à la croissance. PIB potentiel. Balances sectorielles. Exercices sur la visualisation de données macroéconomiques, les différents calculs du revenu national, des contributions à la croissance et des balances sectorielles à partir des données de la comptabilité nationale du Secrétariat d’État à l’économie (SECO).\nSources:\n\nLequiller, François, and Derek Blades. Understanding National Accounts. Second Edition. OECD, 2014. Chapitre 1",
     "crumbs": [
-      "Séminaire les mesures de l'économie"
+      "Séminaire les mesures de l'économie T208001"
     ]
   },
   {
     "objectID": "index.html#mars-comptabilité-nationale-suite",
     "href": "index.html#mars-comptabilité-nationale-suite",
-    "title": "Séminaire les mesures de l’économie",
+    "title": "Séminaire les mesures de l’économie T208001",
     "section": "17 mars: comptabilité nationale (suite)",
     "text": "17 mars: comptabilité nationale (suite)",
     "crumbs": [
-      "Séminaire les mesures de l'économie"
+      "Séminaire les mesures de l'économie T208001"
     ]
   },
   {
     "objectID": "index.html#mars-mesures-de-linflation",
     "href": "index.html#mars-mesures-de-linflation",
-    "title": "Séminaire les mesures de l’économie",
+    "title": "Séminaire les mesures de l’économie T208001",
     "section": "24 mars: mesures de l’inflation",
-    "text": "24 mars: mesures de l’inflation\nIndice des prix à la consommation, déflateur, indices en chaîne et parité de pouvoir d’achat. Exercice sur le calcul des indices de Laspeyre, Paasche et de l’indice en chaîne.",
+    "text": "24 mars: mesures de l’inflation\nIndice des prix à la consommation, déflateur, indices en chaîne et parité de pouvoir d’achat. Exercice sur le calcul des indices de Laspeyre, Paasche et de l’indice en chaîne.\n\nLequiller, François, and Derek Blades. Understanding National Accounts. Second Edition. OECD, 2014. Chapitres 2 et 3",
     "crumbs": [
-      "Séminaire les mesures de l'économie"
+      "Séminaire les mesures de l'économie T208001"
     ]
   },
   {
     "objectID": "index.html#mars-examen-pratique-1",
     "href": "index.html#mars-examen-pratique-1",
-    "title": "Séminaire les mesures de l’économie",
+    "title": "Séminaire les mesures de l’économie T208001",
     "section": "31 mars: examen pratique (1)",
     "text": "31 mars: examen pratique (1)",
     "crumbs": [
-      "Séminaire les mesures de l'économie"
+      "Séminaire les mesures de l'économie T208001"
     ]
   },
   {
     "objectID": "index.html#avril-pas-de-cours-vacances-de-pâques",
     "href": "index.html#avril-pas-de-cours-vacances-de-pâques",
-    "title": "Séminaire les mesures de l’économie",
+    "title": "Séminaire les mesures de l’économie T208001",
     "section": "7 avril: pas de cours (vacances de Pâques)",
     "text": "7 avril: pas de cours (vacances de Pâques)",
     "crumbs": [
-      "Séminaire les mesures de l'économie"
+      "Séminaire les mesures de l'économie T208001"
     ]
   },
   {
     "objectID": "index.html#avril-distribution-et-inégalité-1",
     "href": "index.html#avril-distribution-et-inégalité-1",
-    "title": "Séminaire les mesures de l’économie",
+    "title": "Séminaire les mesures de l’économie T208001",
     "section": "14 avril: distribution et inégalité (1)",
-    "text": "14 avril: distribution et inégalité (1)\nDistribution du revenu national et sa modélisation. Exercice sur la part des salaires et des profits dans la valeur ajoutée.",
+    "text": "14 avril: distribution et inégalité (1)\nDistribution du revenu national et sa modélisation. Exercice sur la part des salaires et des profits dans la valeur ajoutée.\nSources:\n\nCowell, Frank Alan. Measuring Inequality. Third edition. LSE Perspectives in Economic Analysis. University Press, 2011.",
     "crumbs": [
-      "Séminaire les mesures de l'économie"
+      "Séminaire les mesures de l'économie T208001"
     ]
   },
   {
     "objectID": "index.html#avril-distribution-et-inégalité-2",
     "href": "index.html#avril-distribution-et-inégalité-2",
-    "title": "Séminaire les mesures de l’économie",
+    "title": "Séminaire les mesures de l’économie T208001",
     "section": "21 avril: distribution et inégalité (2)",
     "text": "21 avril: distribution et inégalité (2)\nCourbe de Lorenz, coefficient de Gini et les top shares. Exercice avec les données fiscales suisses.",
     "crumbs": [
-      "Séminaire les mesures de l'économie"
+      "Séminaire les mesures de l'économie T208001"
     ]
   },
   {
     "objectID": "index.html#avril-distribution-et-inégalité-3",
     "href": "index.html#avril-distribution-et-inégalité-3",
-    "title": "Séminaire les mesures de l’économie",
+    "title": "Séminaire les mesures de l’économie T208001",
     "section": "28 avril: distribution et inégalité (3)",
-    "text": "28 avril: distribution et inégalité (3)\nMesurer les inégalités de classes: comment estimer différentes mesures de classes sociales et les inégalités entre ces classes à partir de données d’enquête. Exercice en utilisant l’enquête panel des ménages suisses.",
+    "text": "28 avril: distribution et inégalité (3)\nMesurer les inégalités de classes: comment estimer différentes mesures de classes sociales et les inégalités entre ces classes à partir de données d’enquête. Exercice en utilisant l’enquête panel des ménages suisses.\nSources:\n\n“Social classes in economics analysis. A brief historical account.” DigClass, March 11, 2022. https://digclass.eu/social-classes-in-economics-analysis-a-brief-historical-account/.\n“Income inequality, top shares of income and social classes in the 21st century.” DigClass, January 13, 2023. https://digclass.eu/income-inequality-top-shares-of-income-and-social-classes-in-the-21st-century/.",
     "crumbs": [
-      "Séminaire les mesures de l'économie"
+      "Séminaire les mesures de l'économie T208001"
     ]
   },
   {
     "objectID": "index.html#mai-mesurer-les-institutions-1",
     "href": "index.html#mai-mesurer-les-institutions-1",
-    "title": "Séminaire les mesures de l’économie",
+    "title": "Séminaire les mesures de l’économie T208001",
     "section": "5 mai: mesurer les institutions (1)",
     "text": "5 mai: mesurer les institutions (1)\nLes différentes mesures des formes institutionnelles du capitalisme. Introduction à l’analyse multivariée pour l’analyse des institutions.",
     "crumbs": [
-      "Séminaire les mesures de l'économie"
+      "Séminaire les mesures de l'économie T208001"
     ]
   },
   {
     "objectID": "index.html#mai-mesurer-les-institutions-2",
     "href": "index.html#mai-mesurer-les-institutions-2",
-    "title": "Séminaire les mesures de l’économie",
+    "title": "Séminaire les mesures de l’économie T208001",
     "section": "12 mai: mesurer les institutions (2)",
-    "text": "12 mai: mesurer les institutions (2)\nExercice sur comment construire des indices composés avec comme exemple la construction d’un indice composé du pouvoir de négociation des salariés aux États-Unis.",
+    "text": "12 mai: mesurer les institutions (2)\nExercice sur comment construire des indices composés avec comme exemple la construction d’un indice composé du pouvoir de négociation des salariés aux États-Unis.\nSources:\n\nFontanari, Claudia, Enrico Sergio Levrero, and Davide Romaniello. “A Composite Index for Workers’ Bargaining Power and the Inflation Rate in the United States, 1960–2018.” Structural Change and Economic Dynamics 70 (September 2024): 682–98. https://doi.org/10.1016/j.strueco.2024.05.009.",
     "crumbs": [
-      "Séminaire les mesures de l'économie"
+      "Séminaire les mesures de l'économie T208001"
     ]
   },
   {
     "objectID": "index.html#mai-examen-pratique-final",
     "href": "index.html#mai-examen-pratique-final",
-    "title": "Séminaire les mesures de l’économie",
+    "title": "Séminaire les mesures de l’économie T208001",
     "section": "19 mai: examen pratique final",
     "text": "19 mai: examen pratique final",
     "crumbs": [
-      "Séminaire les mesures de l'économie"
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "index.html#quarto",
+    "href": "index.html#quarto",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "Quarto",
+    "text": "Quarto\nQuarto est un outil permettant d’écrire et faire tourner du code R de manière plus fluide qu’un simple que script R. Il s’agit du principal système de publication de code R, permettant de produire des documents en pdf, html et powerpoint. Un guide et une introduction complète à Quarto est disponible sur la page web de Quarto (quarto.org). Quarto est téléchargeable ici. Je vous recommande de jeter un oeil à la gallerie de Quarto afin d’avoir un aperçu de tout le potentiel de ce logiciel, qui vous sera très utile pour le reste de votre parcours: Quarto Gallery.",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "index.html#github",
+    "href": "index.html#github",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "Github",
+    "text": "Github\nGithub est site web d’hébergement et de stockage cloud de fichier et de données. Il permet de sauvegarder vos projets de travail et de publier vos résultats et vos documents quarto. Je vous recommande fortement de vous créer un compte github et d’installer Github desktop.",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "index.html#r-et-lanalyse-de-régression",
+    "href": "index.html#r-et-lanalyse-de-régression",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "R et l’analyse de régression",
+    "text": "R et l’analyse de régression\n\nGuide-R\nR for Data Science\nTime Series Analysis\nR Gallery (visualisation et graphiques)\nModels to Meaning\nVidéos youtubes:\nPlaylists d’Andrew Heiss\nPlaylists d’Albert Rapp\nWedata (en français)\n\nBases de R\nStatistiques avec R\nggplot",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "index.html#bases-de-données",
+    "href": "index.html#bases-de-données",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "Bases de données",
+    "text": "Bases de données\nBases de données internationales:\n\nDBnomics: la base mondiale de données économiques https://db.nomics.world/\n\nIl s’agit de la base de données la plus utile, car elle compile une série énorme de données provenant de toutes les organisations majeurs (OCDE, OIT, Banque Mondiale…). De plus, elle offre un package R (RDBnomics) permettant d’importer directement les données dans R: https://github.com/dbnomics/rdbnomics\n\nBase de données de l’OCDE: https://data-explorer.oecd.org/?lc=fr\nBanque mondiale: https://data.worldbank.org/\nMaddison historical statistics: https://www.rug.nl/ggdc/historicaldevelopment/maddison/\nIlostat (organisation internationale du travail): https://ilostat.ilo.org/fr/data/\nAmeco (base de données macroéconomiques pour la Commission européenne): https://economy-finance.ec.europa.eu/economic-research-and-databases/economic-databases/ameco-database_en\nGapminder https://www.gapminder.org/resources/\nOur World in Data: https://ourworldindata.org/\nPenn World Tables: https://www.rug.nl/ggdc/productivity/pwt/?lang=en\nWorld Inequality Database: https://wid.world/\nLuxembourg Income Study database (LIS): https://www.lisdatacenter.org/data-access/\n\nDartFrontend: https://dart.lisdatacenter.org/dar\nPour la Suisse: \n\nDonnées du PIB selon les trois approches: https://www.seco.admin.ch/seco/fr/home/wirtschaftslage—wirtschaftspolitik/Wirtschaftslage/bip-quartalsschaetzungen-/daten.htm\nStatistiques historiques de la Suisse: https://hsso.ch/fr\nOffice fédéral de la statistique: https://www.bfs.admin.ch/bfs/fr/home.html\nStatistiques fiscales de l’administration fédérale des contributions: https://www.estv.admin.ch/fr/statistiques-sur-limpot-federal-direct\nAtlas statistique de la Suisse: https://mapexplorer.bfs.admin.ch/#c=indicator&i=ch_11_02_02_001.ausgabenfrkantpolgstr&s=2023&view=map164",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
     ]
   },
   {

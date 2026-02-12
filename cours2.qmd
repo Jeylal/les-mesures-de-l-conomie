@@ -10,6 +10,7 @@ format:
 editor: visual
 embed-resources: true
 lang: fr
+footer: <https://jeylal.github.io/les-mesures-de-l-conomie/>
 ---
 
 
