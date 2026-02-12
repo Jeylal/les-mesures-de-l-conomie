@@ -10,8 +10,8 @@ website:
       contents: 
         - index.qmd
         - slides intro.qmd
-        - cours2.qmd
-        - cours3.qmd
+        - 3mars_cours2.qmd
+        - 10mars_cours3.qmd
 format:
   html:
     theme: flatly

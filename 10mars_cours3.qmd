@@ -1,0 +1,128 @@
+---
+title: "10 Mars. Comptabilité nationale (1)"
+subtitle: "Séminaire les mesures de l'économie"
+author: "Celâl Güney"
+format: 
+  live-revealjs:
+    theme: serif
+    scrollable: true
+    controls: true
+editor: visual
+embed-resources: true
+lang: fr
+footer: <https://jeylal.github.io/les-mesures-de-l-conomie/>
+---
+
+## Données économiques: principes de base {.smaller}
+
+-   Deux sources principales de données en économie (ainsi qu'en sciences sociales en général)
+
+    1.  Données provenant d'enquêtes au moyen de questionnaires
+        -   ex: données sur la consommation, statistiques du marché du travail, de la valeur ajouté des entreprises
+    2.  Données administratives
+        -   ex: comptes publics
+
+Distinction importante, car pour les données d'enquêtes, les principes de la statistique (échantillonage, calculs des marges d'erreurs, tests statistiques) doivent être respectés, ce qui n'est pas (forcément) le cas des données administratives.
+
+::: notes
+Car pour les données administratives, certains principe de la statistique ne sont pas applicable, car les données n'ont pas été récoltées à travers un processus d'échantillonnage
+:::
+
+## Données d'enquête {.smaller}
+
+-   Important de vous rappeler ce que vous avez appris dans vos cours de méthodes quantitatives
+-   Faire attention à la qualité des enquêtes qui dépend de:
+    1.  Le procédé d'échantillonage
+    2.  La taille de l'échantillon et sa représentativité
+    3.  Le taux de réponse (nombre de personnes qui ont répondu à l'enquête / total des personnes appelées à participer à l'enquête)
+
+## Récolte de données d'enquête {.smaller}
+
+#### un problème à ne pas sous-estimer
+
+::::: columns
+::: {.column width="50%"}
+![](images/cours2/dataproblemft1.png)
+:::
+
+::: {.column width="50%"}
+[![](images/cours2/dataproblemft2.png)](https://www.ft.com/content/c046be2c-5496-4e2c-b243-580224e9a459)
+:::
+:::::
+
+Un taux de réponse faible (\<60%) indique que l'enquête a manqué une partie importante de la population ==\> données récoltées ne sont pas représentatives.
+
+## Exemple: crise des données en Grande-Bretagne {.smaller}
+
+:::::: {columns}
+::: {.column width="35%"}
+"Declining response rates to the LFS (labour force surveys) have made the numbers so volatile that it is impossible to be sure whether employment is rising or falling from one quarter to the next — let alone how the labour market has evolved in the years since the pandemic." "How flawed data is leaving the UK in the dark", Financial Times
+:::
+
+:::: {.column width="65%"}
+::: r-stack
+[![](images/cours2/resolutionfoundation.png){width="692"}](https://www.resolutionfoundation.org/our-work/estimates-of-uk-employment/)
+
+[![](images/cours2/hownotfirestatisticchiefft1.png){.fragment}](https://www.ft.com/content/6eb3c205-c473-47b4-bed8-1b9ee99ce658)
+:::
+::::
+::::::
+
+## Exemple: crise des données aux USA
+
+::::: columns
+::: {.column width="50%"}
+[![](images/cours2/hownotfirestatisticchiefft4.png)](https://www.ft.com/content/d3b24f17-96d8-4f07-a169-0d22fab051ef)
+:::
+
+::: {.column width="50%"}
+[![](images/cours2/hownotfirestastisticchief5.png)](https://www.ft.com/content/d3b24f17-96d8-4f07-a169-0d22fab051ef)
+:::
+:::::
+
+## Données administratives {.smaller}
+
+Exemple: données fiscales (qui permettent les mesures de distribution du revenu), certaines données du marché du travail (ex: Seco et le nombre de chômeurs inscrits), données sur les finances publiques...
+
+-   Les données administratives ne sont pas récoltées à travers un processus d'échantillonnage. Par exemple, cela ne fait pas sens de calculer les intervalles de confiance pour le PIB ou la dette publique.
+
+-   Mais cela ne veut pas dire que les données administratives sont exhaustives
+
+    -   D'ou la récurrence de "révisions" des séries de données administratives.
+
+## Intérêt de la comptabilité nationale {.smaller}
+
+La comptabilité nationale permet de calculer le produit intérieur brut, défini comme **la somme des valeurs ajoutées** dans un territoire donné (souvent un pays) au cours d'une période donnée (souvent une année).
+
+-   Mais la comptabilité nationale offre aussi
+
+## La "comptabilité" nationale {.smaller}
+
+Le terme de comptabilité peut être trompeur, car la comptabilité nationale est très différente de la comptabilité en entreprise:
+
+-   Le comptable d'une entreprise dispose de registres avec une information complète sur les données de l'entreprise - Cela n'est pas possible pour la comptabilité nationale (impliquerait une information exhaustive sur des millions d'individus et d'entreprises)
+-   La comptabilité nationale repose donc fortement sur une information partielle qui nécessite des approximations, des estimations et des révisions
+
+## Comptabilité nationale et statistique {style="font-size: 1.6rem; line-height:1.6;"}
+
+-   Les données provenant des comptes nationaux sont des approximations
+
+-   Ces approximations sont possibles grâce à des données récoltées de manière plus ou moins dissipée selon la qualité du système publique de statistique du pays considéré.
+
+-   Il n'est en outre pas possible de mesurer *statistiquement* ces approximations (ex: intervalle de confiance de l'estimation du PIB), car la comptabilité nationale n'est pas le résultat d'une seule grande enquête.
+
+-   Au contraire, les comptes nationaux sont le résultat de compilation complexe de données provenant d'un grand nombre de sources différentes.
+
+## Exemple: Suisse {.smaller}
+
+::::: columns
+::: {.column width="50%"}
+![](images/cours3/inventairemethodes1.png)
+:::
+
+::: {.column width="50%"}
+[![https://www.bfs.admin.ch/bfs/fr/home/statistiques/economie-nationale/comptes-nationaux/produit-interieur-brut.assetdetail.328585.html](images/cours3/sources_donnees_pib_suisse.png){fig-align="right"}](https://www.bfs.admin.ch/bfs/fr/home/statistiques/economie-nationale/comptes-nationaux/produit-interieur-brut.assetdetail.328585.html)
+:::
+:::::
+
+## Approche production {.smaller}
