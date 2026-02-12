@@ -2,10 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.7.29">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Celâl Güney, bureau 4242 Unimail">
 
 <title>Séminaire les mesures de l’économie</title>
 <style>
@@ -32,15 +33,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6a47fb94e4cf58bc8e3abcee811f21c5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-52eac1d0abc2dd6c07a949d959085d41.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -72,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar docked fullcontent quarto-light">
+<body class="nav-sidebar docked quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -135,19 +135,28 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Séminaire les mesures de l’économie</h1>
+<p class="subtitle lead">Semestre printemps 2026 Mardis 12:15 - 14:00, salle MR060 Unimail</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Celâl Güney, bureau 4242 Unimail </p>
+          </div>
+  </div>
     
   
     
@@ -158,9 +167,6 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Semestre printemps 2026</p>
-<p>Mardis 12:15-14:00, salle MR060 Unimail</p>
-<p>Celâl Güney, bureau 4242 Unimail</p>
 <section id="résumé-du-cours" class="level1">
 <h1>Résumé du cours</h1>
 <p>Ce séminaire a pour objectif d’enseigner aux étudiants la manière dont les principaux indicateurs économiques tirés de la comptabilité nationale et de l’étude de la distribution du revenu national sont calculés. Un accent particulier sera mis sur la familiarisation avec les principales sources de données en économie et comment traiter ces données en pratique. La première partie du cours portera sur les indicateurs calculables à partir de la comptabilité nationale (comme le taux de profit, la part des salaires dans la valeur ajoutée, les contributions à la croissance etc.). La deuxième partie du cours se concentrera sur les principaux indicateurs d’inégalité ainsi que sur l’étude de la distribution du revenu et du patrimoine. Enfin, la dernière partie du cours sera consacrée aux indicateurs mesurant les institutions socio-économiques. Ce séminaire sera fortement axé sur des exercices pratiques permettant aux étudiants d’apprendre comment développer eux-même leurs propres analyses des dynamiques économiques. Ce séminaire accompagne le cours <em>les mesures de l’économie</em> dispensé par Professeur Marc Morgan, mais reste un cours indépendant.</p>
@@ -178,67 +184,55 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Apprendre et maîtriser R (et Excel à la marge) pour l’analyse de données macroéconomiques</li>
 <li>Apprendre et maîtriser Quarto afin de pouvoir produire des rapports automatisés</li>
-<li>Comprendre et maîtriser l’analyse des principales variables macroéconomiques comme le PIB et les données provenant de la comptabilité nationale, l’inflation, le chômage, la productivité…</li>
+<li>Comprendre et maîtriser l’analyse des principales variables macroéconomiques comme le PIB et les données provenant de la comptabilité nationale, l’inflation, le chômage, la productivité; les différentes mesures des inégalités et des institutions.</li>
 </ul>
 </section>
 <section id="plan-du-cours" class="level1">
 <h1>Plan du cours</h1>
 <section id="février-introduction-au-séminaire" class="level2">
 <h2 class="anchored" data-anchor-id="février-introduction-au-séminaire">24 février: introduction au séminaire</h2>
-<p>Rappels des bases de R, introduction à des packages utiles pour l’analyse macroéconomique. Installation et introduction au codage avec R sur Quarto pour produire des documents html, pdf et powerpoint. Installation et introduction à la plateforme de développement et stockage cloud Github.</p>
+<p>Rappels des bases de R, introduction à des packages utiles pour l’analyse macroéconomique. Installation et introduction au codage avec R sur Quarto pour produire des documents html, pdf et powerpoint. Installation et introduction à la plateforme de développement et stockage cloud Github. Sensibilisation à l’usage de l’intelligence artificielle pour le codage en R et l’analyse de données macroéconomiques.</p>
 </section>
 <section id="mars-introduction-aux-séries-temporelles-et-à-lanalyse-de-régression" class="level2">
 <h2 class="anchored" data-anchor-id="mars-introduction-aux-séries-temporelles-et-à-lanalyse-de-régression">3 mars: introduction aux séries temporelles et à l’analyse de régression</h2>
+<p>Introduction au traitement et à l’analyse de séries temporelles en macroéconomie et sur R. Introduction aux régressions linéaires avec des données macroéconomiques.</p>
 </section>
-<section id="mars-comptabilité-nationale-1" class="level2">
-<h2 class="anchored" data-anchor-id="mars-comptabilité-nationale-1">10 mars: comptabilité nationale (1)</h2>
-<ul>
-<li><p>Le calculs du PIB selon les trois approches (dépense, revenu, consommation)</p></li>
-<li><p>Comment calculer les différentes mesures du revenu national: du PIB au revenu national net</p></li>
-<li><p>Comparer les évolutions du PIB</p></li>
-<li><p>Calculer les contributions à la croissance</p></li>
-<li><p>Mesures de la productivité</p></li>
-</ul>
+<section id="mars-comptabilité-nationale" class="level2">
+<h2 class="anchored" data-anchor-id="mars-comptabilité-nationale">10 mars: comptabilité nationale</h2>
+<p>Le calculs du PIB selon les trois approches (dépense, revenu, consommation). Comment calculer les différentes mesures du revenu national: du PIB au revenu national net. Comparer les évolutions du PIB. Calculer les contributions à la croissance. PIB potentiel. Balances sectorielles. Exercices sur la visualisation de données macroéconomiques, les différents calculs du revenu national, des contributions à la croissance et des balances sectorielles.</p>
 </section>
-<section id="mars-comptabilité-nationale-2" class="level2">
-<h2 class="anchored" data-anchor-id="mars-comptabilité-nationale-2">17 mars: comptabilité nationale (2)</h2>
-<ul>
-<li>Indice des prix à la consommation, déflateur, indices en chaîne et parité de pouvoir d’achat.</li>
-</ul>
+<section id="mars-comptabilité-nationale-suite" class="level2">
+<h2 class="anchored" data-anchor-id="mars-comptabilité-nationale-suite">17 mars: comptabilité nationale (suite)</h2>
 </section>
-<section id="mars-comptabilité-nationale-3" class="level2">
-<h2 class="anchored" data-anchor-id="mars-comptabilité-nationale-3">24 mars: comptabilité nationale (3)</h2>
-<ul>
-<li>PIB potentiel</li>
-<li>Balances sectorielles</li>
-</ul>
+<section id="mars-mesures-de-linflation" class="level2">
+<h2 class="anchored" data-anchor-id="mars-mesures-de-linflation">24 mars: mesures de l’inflation</h2>
+<p>Indice des prix à la consommation, déflateur, indices en chaîne et parité de pouvoir d’achat. Exercice sur le calcul des indices de Laspeyre, Paasche et de l’indice en chaîne.</p>
 </section>
-<section id="mars-examen-pratique-comptabilité-nationale" class="level2">
-<h2 class="anchored" data-anchor-id="mars-examen-pratique-comptabilité-nationale">31 mars: examen pratique: comptabilité nationale</h2>
+<section id="mars-examen-pratique-1" class="level2">
+<h2 class="anchored" data-anchor-id="mars-examen-pratique-1">31 mars: examen pratique (1)</h2>
 </section>
 <section id="avril-pas-de-cours-vacances-de-pâques" class="level2">
 <h2 class="anchored" data-anchor-id="avril-pas-de-cours-vacances-de-pâques">7 avril: pas de cours (vacances de Pâques)</h2>
 </section>
 <section id="avril-distribution-et-inégalité-1" class="level2">
 <h2 class="anchored" data-anchor-id="avril-distribution-et-inégalité-1">14 avril: distribution et inégalité (1)</h2>
-<ul>
-<li>Part des salaires et des profits dans la valeur ajoutée</li>
-</ul>
+<p>Distribution du revenu national et sa modélisation. Exercice sur la part des salaires et des profits dans la valeur ajoutée.</p>
 </section>
 <section id="avril-distribution-et-inégalité-2" class="level2">
 <h2 class="anchored" data-anchor-id="avril-distribution-et-inégalité-2">21 avril: distribution et inégalité (2)</h2>
-<ul>
-<li>Courbe de Lorenz, coefficient de Gini et les top shares.</li>
-</ul>
+<p>Courbe de Lorenz, coefficient de Gini et les top shares. Exercice avec les données fiscales suisses.</p>
 </section>
 <section id="avril-distribution-et-inégalité-3" class="level2">
 <h2 class="anchored" data-anchor-id="avril-distribution-et-inégalité-3">28 avril: distribution et inégalité (3)</h2>
+<p>Mesurer les inégalités de classes: comment estimer différentes mesures de classes sociales et les inégalités entre ces classes à partir de données d’enquête. Exercice en utilisant l’enquête panel des ménages suisses.</p>
 </section>
 <section id="mai-mesurer-les-institutions-1" class="level2">
 <h2 class="anchored" data-anchor-id="mai-mesurer-les-institutions-1">5 mai: mesurer les institutions (1)</h2>
+<p>Les différentes mesures des formes institutionnelles du capitalisme. Introduction à l’analyse multivariée pour l’analyse des institutions.</p>
 </section>
 <section id="mai-mesurer-les-institutions-2" class="level2">
 <h2 class="anchored" data-anchor-id="mai-mesurer-les-institutions-2">12 mai: mesurer les institutions (2)</h2>
+<p>Exercice sur comment construire des indices composés avec comme exemple la construction d’un indice composé du pouvoir de négociation des salariés aux États-Unis.</p>
 </section>
 <section id="mai-examen-pratique-final" class="level2">
 <h2 class="anchored" data-anchor-id="mai-examen-pratique-final">19 mai: examen pratique final</h2>
@@ -299,14 +293,13 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

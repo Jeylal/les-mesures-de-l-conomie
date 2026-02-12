@@ -314,7 +314,7 @@
     "href": "index.html",
     "title": "Séminaire les mesures de l’économie",
     "section": "",
-    "text": "Semestre printemps 2026\nMardis 12:15-14:00, salle MR060 Unimail\nCelâl Güney, bureau 4242 Unimail",
+    "text": "Ce séminaire a pour objectif d’enseigner aux étudiants la manière dont les principaux indicateurs économiques tirés de la comptabilité nationale et de l’étude de la distribution du revenu national sont calculés. Un accent particulier sera mis sur la familiarisation avec les principales sources de données en économie et comment traiter ces données en pratique. La première partie du cours portera sur les indicateurs calculables à partir de la comptabilité nationale (comme le taux de profit, la part des salaires dans la valeur ajoutée, les contributions à la croissance etc.). La deuxième partie du cours se concentrera sur les principaux indicateurs d’inégalité ainsi que sur l’étude de la distribution du revenu et du patrimoine. Enfin, la dernière partie du cours sera consacrée aux indicateurs mesurant les institutions socio-économiques. Ce séminaire sera fortement axé sur des exercices pratiques permettant aux étudiants d’apprendre comment développer eux-même leurs propres analyses des dynamiques économiques. Ce séminaire accompagne le cours les mesures de l’économie dispensé par Professeur Marc Morgan, mais reste un cours indépendant.",
     "crumbs": [
       "Séminaire les mesures de l'économie"
     ]
@@ -323,8 +323,8 @@
     "objectID": "cours3.html#données-économiques-principes-de-base",
     "href": "cours3.html#données-économiques-principes-de-base",
     "title": "Comptabilité nationale (1)",
-    "section": "Données économiques: principes de base",
-    "text": "Données économiques: principes de base\n\nDeux sources principales de données en économie (ainsi qu’en sciences sociales en général)\n\nDonnées provenant d’enquêtes au moyen de questionnaires\n\nex: données sur la consommation, statistiques du marché du travail, de la valeur ajouté des entreprises\n\nDonnées administratives\n\nex: comptes publics\n\n\n\nDistinction importante, car pour les données d’enquêtes, les principes de la statistique (échantillonage, calculs des marges d’erreurs, tests statistiques) doivent être respectés, ce qui n’est pas (forcément) le cas des données administratives.\n\nCar pour les données administratives, certains principe de la statistique ne sont pas applicable, car les données n’ont pas été récoltées à travers un processus d’échantillonnage",
+    "section": "",
+    "text": "Deux sources principales de données en économie (ainsi qu’en sciences sociales en général)\n\nDonnées provenant d’enquêtes au moyen de questionnaires\n\nex: données sur la consommation, statistiques du marché du travail, de la valeur ajouté des entreprises\n\nDonnées administratives\n\nex: comptes publics\n\n\n\nDistinction importante, car pour les données d’enquêtes, les principes de la statistique (échantillonage, calculs des marges d’erreurs, tests statistiques) doivent être respectés, ce qui n’est pas (forcément) le cas des données administratives.\n\nCar pour les données administratives, certains principe de la statistique ne sont pas applicable, car les données n’ont pas été récoltées à travers un processus d’échantillonnage",
     "crumbs": [
       "Comptabilité nationale (1)"
     ]
@@ -344,7 +344,7 @@
     "href": "cours3.html#récolte-de-données-denquête",
     "title": "Comptabilité nationale (1)",
     "section": "Récolte de données d’enquête",
-    "text": "Récolte de données d’enquête\nun problème à ne pas sous-estimer\n\n\n\n\n\n\nUn taux de réponse faible (&lt;60%) indique que l’enquête a manqué une partie importante de la population ==&gt; données récoltées ne sont pas représentatives.",
+    "text": "Récolte de données d’enquête\n\nun problème à ne pas sous-estimer\n\n\n\n\n\n\n\nUn taux de réponse faible (&lt;60%) indique que l’enquête a manqué une partie importante de la population ==&gt; données récoltées ne sont pas représentatives.",
     "crumbs": [
       "Comptabilité nationale (1)"
     ]
@@ -494,7 +494,7 @@
     "href": "index.html#mars-introduction-aux-séries-temporelles-et-à-lanalyse-de-régression",
     "title": "Séminaire les mesures de l’économie",
     "section": "3 mars: introduction aux séries temporelles et à l’analyse de régression",
-    "text": "3 mars: introduction aux séries temporelles et à l’analyse de régression",
+    "text": "3 mars: introduction aux séries temporelles et à l’analyse de régression\nIntroduction au traitement et à l’analyse de séries temporelles en macroéconomie et sur R. Introduction aux régressions linéaires avec des données macroéconomiques.",
     "crumbs": [
       "Séminaire les mesures de l'économie"
     ]
@@ -504,7 +504,7 @@
     "href": "index.html#mars-comptabilité-nationale-1",
     "title": "Séminaire les mesures de l’économie",
     "section": "10 mars: comptabilité nationale (1)",
-    "text": "10 mars: comptabilité nationale (1)\n\nLe calculs du PIB selon les trois approches (dépense, revenu, consommation)\nComment calculer les différentes mesures du revenu national: du PIB au revenu national net\nComparer les évolutions du PIB\nCalculer les contributions à la croissance\nMesures de la productivité",
+    "text": "10 mars: comptabilité nationale (1)\nLe calculs du PIB selon les trois approches (dépense, revenu, consommation). Comment calculer les différentes mesures du revenu national: du PIB au revenu national net. Comparer les évolutions du PIB. Calculer les contributions à la croissance. PIB potentiel. Balances sectorielles.",
     "crumbs": [
       "Séminaire les mesures de l'économie"
     ]
@@ -514,7 +514,7 @@
     "href": "index.html#mars-comptabilité-nationale-2",
     "title": "Séminaire les mesures de l’économie",
     "section": "17 mars: comptabilité nationale (2)",
-    "text": "17 mars: comptabilité nationale (2)\n\nIndice des prix à la consommation, déflateur, indices en chaîne et parité de pouvoir d’achat.",
+    "text": "17 mars: comptabilité nationale (2)\nIndice des prix à la consommation, déflateur, indices en chaîne et parité de pouvoir d’achat.",
     "crumbs": [
       "Séminaire les mesures de l'économie"
     ]
@@ -524,7 +524,7 @@
     "href": "index.html#mars-comptabilité-nationale-3",
     "title": "Séminaire les mesures de l’économie",
     "section": "24 mars: comptabilité nationale (3)",
-    "text": "24 mars: comptabilité nationale (3)\n\nPIB potentiel\nBalances sectorielles",
+    "text": "24 mars: comptabilité nationale (3)\nIndicateurs de la productivité et du marché du travail",
     "crumbs": [
       "Séminaire les mesures de l'économie"
     ]
@@ -554,7 +554,7 @@
     "href": "index.html#avril-distribution-et-inégalité-1",
     "title": "Séminaire les mesures de l’économie",
     "section": "14 avril: distribution et inégalité (1)",
-    "text": "14 avril: distribution et inégalité (1)\n\nPart des salaires et des profits dans la valeur ajoutée",
+    "text": "14 avril: distribution et inégalité (1)\nDistribution du revenu national et sa modélisation. Exercice sur la part des salaires et des profits dans la valeur ajoutée.",
     "crumbs": [
       "Séminaire les mesures de l'économie"
     ]
@@ -564,7 +564,7 @@
     "href": "index.html#avril-distribution-et-inégalité-2",
     "title": "Séminaire les mesures de l’économie",
     "section": "21 avril: distribution et inégalité (2)",
-    "text": "21 avril: distribution et inégalité (2)\n\nCourbe de Lorenz, coefficient de Gini et les top shares.",
+    "text": "21 avril: distribution et inégalité (2)\nCourbe de Lorenz, coefficient de Gini et les top shares. Exercice avec les données fiscales suisses.",
     "crumbs": [
       "Séminaire les mesures de l'économie"
     ]
@@ -574,7 +574,7 @@
     "href": "index.html#avril-distribution-et-inégalité-3",
     "title": "Séminaire les mesures de l’économie",
     "section": "28 avril: distribution et inégalité (3)",
-    "text": "28 avril: distribution et inégalité (3)",
+    "text": "28 avril: distribution et inégalité (3)\nMesurer les inégalités de classes: comment estimer différentes mesures de classes sociales et les inégalités entre ces classes à partir de données d’enquête. Exercice en utilisant l’enquête panel des ménages suisses.",
     "crumbs": [
       "Séminaire les mesures de l'économie"
     ]
@@ -584,7 +584,7 @@
     "href": "index.html#mai-mesurer-les-institutions-1",
     "title": "Séminaire les mesures de l’économie",
     "section": "5 mai: mesurer les institutions (1)",
-    "text": "5 mai: mesurer les institutions (1)",
+    "text": "5 mai: mesurer les institutions (1)\nLes différentes mesures des formes institutionnelles du capitalisme. Introduction à l’analyse multivariée pour l’analyse des institutions.",
     "crumbs": [
       "Séminaire les mesures de l'économie"
     ]
@@ -594,7 +594,7 @@
     "href": "index.html#mai-mesurer-les-institutions-2",
     "title": "Séminaire les mesures de l’économie",
     "section": "12 mai: mesurer les institutions (2)",
-    "text": "12 mai: mesurer les institutions (2)",
+    "text": "12 mai: mesurer les institutions (2)\nExercice sur comment construire des indices composés avec comme exemple la construction d’un indice composé du pouvoir de négociation des salariés aux États-Unis.",
     "crumbs": [
       "Séminaire les mesures de l'économie"
     ]
@@ -644,7 +644,87 @@
     "href": "index.html#février-introduction-au-séminaire",
     "title": "Séminaire les mesures de l’économie",
     "section": "24 février: introduction au séminaire",
-    "text": "24 février: introduction au séminaire\nRappels des bases de R, introduction à des packages utiles pour l’analyse macroéconomique. Installation et introduction au codage avec R sur Quarto pour produire des documents html, pdf et powerpoint. Installation et introduction à la plateforme de développement et stockage cloud Github.",
+    "text": "24 février: introduction au séminaire\nRappels des bases de R, introduction à des packages utiles pour l’analyse macroéconomique. Installation et introduction au codage avec R sur Quarto pour produire des documents html, pdf et powerpoint. Installation et introduction à la plateforme de développement et stockage cloud Github. Sensibilisation à l’usage de l’intelligence artificielle pour le codage en R et l’analyse de données macroéconomiques.",
+    "crumbs": [
+      "Séminaire les mesures de l'économie"
+    ]
+  },
+  {
+    "objectID": "index.html#mars-comptabilité-nationale",
+    "href": "index.html#mars-comptabilité-nationale",
+    "title": "Séminaire les mesures de l’économie",
+    "section": "10 mars: comptabilité nationale",
+    "text": "10 mars: comptabilité nationale\nLe calculs du PIB selon les trois approches (dépense, revenu, consommation). Comment calculer les différentes mesures du revenu national: du PIB au revenu national net. Comparer les évolutions du PIB. Calculer les contributions à la croissance. PIB potentiel. Balances sectorielles. Exercices sur la visualisation de données macroéconomiques, les différents calculs du revenu national, des contributions à la croissance et des balances sectorielles.",
+    "crumbs": [
+      "Séminaire les mesures de l'économie"
+    ]
+  },
+  {
+    "objectID": "index.html#mars-comptabilité-nationale-et-environnement",
+    "href": "index.html#mars-comptabilité-nationale-et-environnement",
+    "title": "Séminaire les mesures de l’économie",
+    "section": "17 mars: comptabilité nationale et environnement",
+    "text": "17 mars: comptabilité nationale et environnement",
+    "crumbs": [
+      "Séminaire les mesures de l'économie"
+    ]
+  },
+  {
+    "objectID": "index.html#mars-mesures-de-linflation",
+    "href": "index.html#mars-mesures-de-linflation",
+    "title": "Séminaire les mesures de l’économie",
+    "section": "24 mars: mesures de l’inflation",
+    "text": "24 mars: mesures de l’inflation\nIndice des prix à la consommation, déflateur, indices en chaîne et parité de pouvoir d’achat. Exercice sur le calcul des indices de Laspeyre, Paasche et de l’indice en chaîne.",
+    "crumbs": [
+      "Séminaire les mesures de l'économie"
+    ]
+  },
+  {
+    "objectID": "index.html#mars-examen-pratique-1",
+    "href": "index.html#mars-examen-pratique-1",
+    "title": "Séminaire les mesures de l’économie",
+    "section": "31 mars: examen pratique (1)",
+    "text": "31 mars: examen pratique (1)",
+    "crumbs": [
+      "Séminaire les mesures de l'économie"
+    ]
+  },
+  {
+    "objectID": "cours3.html",
+    "href": "cours3.html",
+    "title": "Comptabilité nationale (1)",
+    "section": "",
+    "text": "Deux sources principales de données en économie (ainsi qu’en sciences sociales en général)\n\nDonnées provenant d’enquêtes au moyen de questionnaires\n\nex: données sur la consommation, statistiques du marché du travail, de la valeur ajouté des entreprises\n\nDonnées administratives\n\nex: comptes publics\n\n\n\nDistinction importante, car pour les données d’enquêtes, les principes de la statistique (échantillonage, calculs des marges d’erreurs, tests statistiques) doivent être respectés, ce qui n’est pas (forcément) le cas des données administratives.\n\nCar pour les données administratives, certains principe de la statistique ne sont pas applicable, car les données n’ont pas été récoltées à travers un processus d’échantillonnage",
+    "crumbs": [
+      "Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "cours3.html#intérêt-de-la-comptabilité-nationale",
+    "href": "cours3.html#intérêt-de-la-comptabilité-nationale",
+    "title": "Comptabilité nationale (1)",
+    "section": "Intérêt de la comptabilité nationale",
+    "text": "Intérêt de la comptabilité nationale\nLa comptabilité nationale permet de calculer le produit intérieur brut, défini comme la somme des valeurs ajoutées dans un territoire donné (souvent un pays) au cours d’une période donnée (souvent une année).\n\nMais la comptabilité nationale offre aussi",
+    "crumbs": [
+      "Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "cours3.html#approche-production",
+    "href": "cours3.html#approche-production",
+    "title": "Comptabilité nationale (1)",
+    "section": "Approche production",
+    "text": "Approche production",
+    "crumbs": [
+      "Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "index.html#mars-comptabilité-nationale-suite",
+    "href": "index.html#mars-comptabilité-nationale-suite",
+    "title": "Séminaire les mesures de l’économie",
+    "section": "17 mars: comptabilité nationale (suite)",
+    "text": "17 mars: comptabilité nationale (suite)",
     "crumbs": [
       "Séminaire les mesures de l'économie"
     ]

@@ -1,14 +1,13 @@
 ---
 title: "Séminaire les mesures de l'économie"
+subtitle: "Semestre printemps 2026
+            Mardis 12:15 - 14:00, salle MR060 Unimail"
+author: "Celâl Güney, bureau 4242 Unimail"
+format:
+  html:
+    theme: flatly
+  pdf: default
 ---
-
-Semestre printemps 2026
-
-Mardis 12:15-14:00, salle MR060 Unimail
-
-Celâl Güney, bureau 4242 Unimail
-
-
 
 # Résumé du cours
 
@@ -16,73 +15,59 @@ Ce séminaire a pour objectif d'enseigner aux étudiants la manière dont les pr
 
 # Évaluation du cours
 
-- Travaux/examens pratiques (80%)
-- Participation (20%)
+-   Travaux/examens pratiques (80%)
+-   Participation (20%)
 
 Il y aura deux travaux pratiques à réaliser comptant chacun 40% de la note finale. Ces travaux seront axés sur des exercices pratiques de calculs d'indicateurs et de mesures vus en cours. Les exercices devront être réalisés soit sur Excel, soit sur R (avec un script Quarto). La présence au séminaire est obligatoire et sera contrôlée à chaque début de séance.
 
 # Objectifs du cours
 
-- Apprendre et maîtriser R (et Excel à la marge) pour l'analyse de données macroéconomiques
-- Apprendre et maîtriser Quarto afin de pouvoir produire des rapports automatisés
-- Comprendre et maîtriser l'analyse des principales variables macroéconomiques comme le PIB et les données provenant de la comptabilité nationale, l'inflation, le chômage, la productivité...
+-   Apprendre et maîtriser R (et Excel à la marge) pour l'analyse de données macroéconomiques
+-   Apprendre et maîtriser Quarto afin de pouvoir produire des rapports automatisés
+-   Comprendre et maîtriser l'analyse des principales variables macroéconomiques comme le PIB et les données provenant de la comptabilité nationale, l'inflation, le chômage, la productivité; les différentes mesures des inégalités et des institutions.
 
 # Plan du cours
 
 ## 24 février: introduction au séminaire
 
-Rappels des bases de R, introduction à des packages utiles pour l'analyse macroéconomique. Installation et introduction au codage avec R sur Quarto pour produire des documents html, pdf et powerpoint. Installation et introduction à la plateforme de développement et stockage cloud Github.
-
+Rappels des bases de R, introduction à des packages utiles pour l'analyse macroéconomique. Installation et introduction au codage avec R sur Quarto pour produire des documents html, pdf et powerpoint. Installation et introduction à la plateforme de développement et stockage cloud Github. Sensibilisation à l'usage de l'intelligence artificielle pour le codage en R et l'analyse de données macroéconomiques.
 
 ## 3 mars: introduction aux séries temporelles et à l'analyse de régression
 
-## 10 mars: comptabilité nationale (1)
+Introduction au traitement et à l'analyse de séries temporelles en macroéconomie et sur R. Introduction aux régressions linéaires avec des données macroéconomiques.
 
-- Le calculs du PIB selon les trois approches (dépense, revenu, consommation)
+## 10 mars: comptabilité nationale
 
-- Comment calculer les différentes mesures du revenu national: du PIB au revenu national net
+Le calculs du PIB selon les trois approches (dépense, revenu, consommation). Comment calculer les différentes mesures du revenu national: du PIB au revenu national net. Comparer les évolutions du PIB. Calculer les contributions à la croissance. PIB potentiel. Balances sectorielles. Exercices sur la visualisation de données macroéconomiques, les différents calculs du revenu national, des contributions à la croissance et des balances sectorielles.
 
-- Comparer les évolutions du PIB 
+## 17 mars: comptabilité nationale (suite)
 
-- Calculer les contributions à la croissance
+## 24 mars: mesures de l'inflation
 
-- Mesures de la productivité
+Indice des prix à la consommation, déflateur, indices en chaîne et parité de pouvoir d'achat. Exercice sur le calcul des indices de Laspeyre, Paasche et de l'indice en chaîne.
 
-## 17 mars: comptabilité nationale (2)
-
-- Indice des prix à la consommation, déflateur, indices en chaîne et parité de pouvoir d'achat.
-
-## 24 mars: comptabilité nationale (3)
-- PIB potentiel
-- Balances sectorielles
-
-## 31 mars: examen pratique: comptabilité nationale
+## 31 mars: examen pratique (1)
 
 ## 7 avril: pas de cours (vacances de Pâques)
 
 ## 14 avril: distribution et inégalité (1)
-- Part des salaires et des profits dans la valeur ajoutée
+
+Distribution du revenu national et sa modélisation. Exercice sur la part des salaires et des profits dans la valeur ajoutée.
 
 ## 21 avril: distribution et inégalité (2)
-- Courbe de Lorenz, coefficient de Gini et les top shares.
+
+Courbe de Lorenz, coefficient de Gini et les top shares. Exercice avec les données fiscales suisses.
 
 ## 28 avril: distribution et inégalité (3)
 
+Mesurer les inégalités de classes: comment estimer différentes mesures de classes sociales et les inégalités entre ces classes à partir de données d'enquête. Exercice en utilisant l'enquête panel des ménages suisses.
+
 ## 5 mai: mesurer les institutions (1)
+
+Les différentes mesures des formes institutionnelles du capitalisme. Introduction à l'analyse multivariée pour l'analyse des institutions.
 
 ## 12 mai: mesurer les institutions (2)
 
-## 19 mai: examen pratique final 
+Exercice sur comment construire des indices composés avec comme exemple la construction d'un indice composé du pouvoir de négociation des salariés aux États-Unis.
 
-
-
-
-
-
-
-
-
-
-
-
-
+## 19 mai: examen pratique final
