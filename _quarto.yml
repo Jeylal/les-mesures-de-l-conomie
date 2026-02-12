@@ -5,7 +5,7 @@ project:
 website:
   title: "Séminaire les mesures de l'économie"
   sidebar:
-    - title: "Contenu"
+    - title: "Slides"
       style: "docked"
       contents: 
         - index.qmd

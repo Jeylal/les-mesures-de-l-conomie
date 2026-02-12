@@ -96,15 +96,101 @@ En dehors des examens en présence, je ne peux pas vous interdire l'utilisation 
 
 [![](images/moodle1.png)](https://moodle.unige.ch/mod/page/view.php?id=1127071)
 
-## R
+# Atelier: traitement des données des Penn World Tables
+
+## Penn World Tables {.smaller}
+
+La Penn World Table (PWT) est l'une des base de données les plus connues en économie. Elle compile certaines variables clés pour de nombreux pays sur une période de temps assez importante.
+
+La PWT est accessible et téléchargeable [ici](https://www.rug.nl/ggdc/productivity/pwt/?lang=en), mais dans le cadre de cet atelier nous allons utiliser le package `Rdatasets` qui permet d'importer directement le tableau de données dans R
+
+Voici la documentation du tableau de données <https://vincentarelbundock.github.io/Rdatasets/doc/stevedata/pwt_sample.html> et comment l'importer dans R:
+
+## PWT variables {.smaller}
+
+| Variable | Description |
+|---------|-------------|
+| **country** | Nom du pays. |
+| **isocode** | Code ISO du pays. |
+| **year** | Année (numérique). |
+| **pop** | Population (en millions). |
+| **hc** | Indice de capital humain par personne (années de scolarité et rendements). |
+| **rgdpna** | PIB réel à prix nationaux constants de 2011 (en millions USD 2017). |
+| **rgdpo** | PIB réel côté production, en PPA chaînées (en millions USD 2017). |
+| **rgdpe** | PIB réel côté dépenses, en PPA chaînées (en millions USD 2017). |
+| **labsh** | Part de la rémunération du travail dans le PIB à prix courants. |
+| **avh** | Heures annuelles moyennes travaillées par personne engagée. |
+| **emp** | Nombre de personnes engagées (en millions). |
+| **rnna** | Stock de capital à prix constants de 2017 (en millions USD 2017). |
+
+## PWT importation
 
 {{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
 
 ```{webr}
+# copier coller ce code dans votre script quarto
 library(tidyverse)
 library(gt)
 library(Rdatasets)
 
 pwt = Rdatasets::rddata("pwt_sample")
-glimpse(pwt)
+
 ```
+
+
+## R {.smaller}
+
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+
+Importer la PWT en utilisant le package Rdatasets
+```{webr}
+# copier coller ce code dans votre script quarto
+library(tidyverse)
+library(gt)
+library(Rdatasets)
+
+pwt = Rdatasets::rddata("pwt_sample")
+
+# Quelle fonction permettrait d'avoir un aperçu rapide des variables ?
+
+# Comment avoir un aperçu rapide de l'une des variables ?
+
+# En utilisant ggplot et tidyverse, comment je peux faire un graphique simple de toutes les variables du PIB disponible dans le dataset pour la Suisse ?
+
+# Comment peut-on inclure davantage de pays dans ce graphique ?
+
+# Comment peut-on créer une nouvelle variable dans ce dataset ?
+
+
+```
+
+
+## Le package esquisse
+
+Permet d'utiliser une interface permettant d'explorer les données et produire des graphiques sans coder soi-même
+
+```{webr}
+# copier coller ce code dans votre script quarto
+install.packages("esquisse")
+library(esquisse)
+esquisse::esquisser()
+```
+
+## Dbnomics {.smaller}
+
+Dbnomics est une base de données internationale rassembland en une base de nombreuses bases de données indispensables en économie: données de l'OCDE, de la Banque Mondiale, du Fond Monétaire Internationale...
+
+Le package rdbnomics permet d'importer ces données directement dans R.
+
+Exemple: 
+```{webr}
+# copier coller le code dans votre script quarto, installer les packages si besoin
+
+#[RVGDP] Gross domestic product at 2015 reference levels per head of population AMECO/RVGDP/CHE.1.1.0.0.RVGDP, annually, 1000 chf
+library(rdbnomics)
+library(stats)
+
+GDP <- rdb(ids = "AMECO/RVGDP/CHE.1.1.0.0.RVGDP") 
+
+```
+

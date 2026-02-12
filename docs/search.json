@@ -414,7 +414,7 @@
     "href": "index.html#avril-distribution-et-inégalité-3",
     "title": "Séminaire les mesures de l’économie T208001",
     "section": "28 avril: distribution et inégalité (3)",
-    "text": "28 avril: distribution et inégalité (3)\nMesurer les inégalités de classes: comment estimer différentes mesures de classes sociales et les inégalités entre ces classes à partir de données d’enquête. Exercice en utilisant l’enquête panel des ménages suisses.\nSources:\n\n“Social classes in economics analysis. A brief historical account.” DigClass, March 11, 2022. https://digclass.eu/social-classes-in-economics-analysis-a-brief-historical-account/.\n“Income inequality, top shares of income and social classes in the 21st century.” DigClass, January 13, 2023. https://digclass.eu/income-inequality-top-shares-of-income-and-social-classes-in-the-21st-century/.",
+    "text": "28 avril: distribution et inégalité (3)\nMesurer les inégalités de classes: comment estimer différentes mesures de classes sociales et les inégalités entre ces classes à partir de données d’enquête. Exercice en utilisant l’enquête panel des ménages suisses.\nSources:\n\nJ. Gil Hernandez, Carlos. “Wealth Inequality and Stratification by Social Classes in 21st-Century Europe.” DigClass, February 27, 2024. https://digclass.eu/wealth-inequality-and-stratification-by-social-classes-in-21st-century-europe/.\nMunoz de Bustillo, Rafael. “Social classes in economics analysis. A brief historical account.” DigClass, March 11, 2022. https://digclass.eu/social-classes-in-economics-analysis-a-brief-historical-account/.\nOesch, Daniel. “Contemporary Class Analysis.” DigClass, January 4, 2022. https://digclass.eu/contemporary-class-analysis/.\nVillani, Davide. “Income inequality, top shares of income and social classes in the 21st century.” DigClass, January 13, 2023. https://digclass.eu/income-inequality-top-shares-of-income-and-social-classes-in-the-21st-century/.",
     "crumbs": [
       "Séminaire les mesures de l'économie T208001"
     ]
@@ -424,7 +424,7 @@
     "href": "index.html#mai-mesurer-les-institutions-1",
     "title": "Séminaire les mesures de l’économie T208001",
     "section": "5 mai: mesurer les institutions (1)",
-    "text": "5 mai: mesurer les institutions (1)\nLes différentes mesures des formes institutionnelles du capitalisme. Introduction à l’analyse multivariée pour l’analyse des institutions.",
+    "text": "5 mai: mesurer les institutions (1)\nLes différentes mesures des formes institutionnelles du capitalisme. Exemple des institutions de la protection sociale en explorant les données et indicateurs de la CWED (comparative welfare entitlements Datasets http://cwed2.org/)\nSources:\n\nAmable, Bruno. The Diversity of Modern Capitalism. Oxford University Press, 2003.\nCahen-Fourot, Louison. “Contemporary Capitalisms and Their Social Relation to the Environment.” Ecological Economics 172 (June 2020): 106634. https://doi.org/10.1016/j.ecolecon.2020.106634.\nLyle Scruggs (2014). Social Welfare Generosity Scores in CWED 2: A Methodological Genealogy, February 2014.",
     "crumbs": [
       "Séminaire les mesures de l'économie T208001"
     ]
@@ -674,7 +674,67 @@
     "href": "slides intro.html#r",
     "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
     "section": "R",
-    "text": "R",
+    "text": "R\nImporter la PWT en utilisant le package Rdatasets",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#penn-world-tables",
+    "href": "slides intro.html#penn-world-tables",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Penn World Tables",
+    "text": "Penn World Tables\nLa Penn World Table (PWT) est l’une des base de données les plus connues en économie. Elle compile certaines variables clés pour de nombreux pays sur une période de temps assez importante.\nLa PWT est accessible et téléchargeable ici, mais dans le cadre de cet atelier nous allons utiliser le package Rdatasets qui permet d’importer directement le tableau de données dans R\nVoici la documentation du tableau de données https://vincentarelbundock.github.io/Rdatasets/doc/stevedata/pwt_sample.html et comment l’importer dans R:",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#dbnomics",
+    "href": "slides intro.html#dbnomics",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Dbnomics",
+    "text": "Dbnomics\nDbnomics est une base de données internationale rassembland en une base de nombreuses bases de données indispensables en économie: données de l’OCDE, de la Banque Mondiale, du Fond Monétaire Internationale…\nLe package rdbnomics permet d’importer ces données directement dans R.\nExemple:",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#r-1",
+    "href": "slides intro.html#r-1",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "R",
+    "text": "R\nComment avoir un aperçu rapide du jeu de données ?",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#le-package-esquisse",
+    "href": "slides intro.html#le-package-esquisse",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Le package esquisse",
+    "text": "Le package esquisse\nPermet d’utiliser une interface permettant d’explorer les données et produire des graphiques sans coder soi-même",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#pwt-variables",
+    "href": "slides intro.html#pwt-variables",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "PWT variables",
+    "text": "PWT variables\n\n\n\n\n\n\n\nVariable\nDescription\n\n\n\n\ncountry\nNom du pays.\n\n\nisocode\nCode ISO du pays.\n\n\nyear\nAnnée (numérique).\n\n\npop\nPopulation (en millions).\n\n\nhc\nIndice de capital humain par personne (années de scolarité et rendements).\n\n\nrgdpna\nPIB réel à prix nationaux constants de 2011 (en millions USD 2017).\n\n\nrgdpo\nPIB réel côté production, en PPA chaînées (en millions USD 2017).\n\n\nrgdpe\nPIB réel côté dépenses, en PPA chaînées (en millions USD 2017).\n\n\nlabsh\nPart de la rémunération du travail dans le PIB à prix courants.\n\n\navh\nHeures annuelles moyennes travaillées par personne engagée.\n\n\nemp\nNombre de personnes engagées (en millions).\n\n\nrnna\nStock de capital à prix constants de 2017 (en millions USD 2017).",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#pwt-importation",
+    "href": "slides intro.html#pwt-importation",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "PWT importation",
+    "text": "PWT importation",
     "crumbs": [
       "Introduction au séminaire, rappels de R et introduction à Quarto"
     ]

@@ -82,13 +82,26 @@ Mesurer les inégalités de classes: comment estimer différentes mesures de cla
 
 Sources:
 
--   “Social classes in economics analysis. A brief historical account.” DigClass, March 11, 2022. https://digclass.eu/social-classes-in-economics-analysis-a-brief-historical-account/.
+-   J. Gil Hernandez, Carlos. “Wealth Inequality and Stratification by Social Classes in 21st-Century Europe.” *DigClass*, February 27, 2024. <https://digclass.eu/wealth-inequality-and-stratification-by-social-classes-in-21st-century-europe/>.
 
--   “Income inequality, top shares of income and social classes in the 21st century.” DigClass, January 13, 2023. https://digclass.eu/income-inequality-top-shares-of-income-and-social-classes-in-the-21st-century/.
+-   Munoz de Bustillo, Rafael. “Social classes in economics analysis. A brief historical account.” *DigClass*, March 11, 2022. <https://digclass.eu/social-classes-in-economics-analysis-a-brief-historical-account/>.
+
+-   Oesch, Daniel. “Contemporary Class Analysis.” *DigClass*, January 4, 2022. <https://digclass.eu/contemporary-class-analysis/>.
+
+-   Villani, Davide. “Income inequality, top shares of income and social classes in the 21st century.” *DigClass*, January 13, 2023. <https://digclass.eu/income-inequality-top-shares-of-income-and-social-classes-in-the-21st-century/>.
 
 ## 5 mai: mesurer les institutions (1)
 
-Les différentes mesures des formes institutionnelles du capitalisme. Introduction à l'analyse multivariée pour l'analyse des institutions.
+Les différentes mesures des formes institutionnelles du capitalisme. Exemple des institutions de la protection sociale en explorant les données et indicateurs de la CWED (comparative welfare entitlements Datasets <http://cwed2.org/>)
+
+Sources:
+
+- Amable, Bruno. The Diversity of Modern Capitalism. Oxford University Press, 2003.
+
+- Cahen-Fourot, Louison. “Contemporary Capitalisms and Their Social Relation to the Environment.” Ecological Economics 172 (June 2020): 106634. https://doi.org/10.1016/j.ecolecon.2020.106634.
+
+- Lyle Scruggs (2014). Social Welfare Generosity Scores in CWED 2: A Methodological Genealogy, February 2014.
+
 
 ## 12 mai: mesurer les institutions (2)
 
