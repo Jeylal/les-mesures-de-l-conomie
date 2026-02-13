@@ -728,5 +728,85 @@
     "crumbs": [
       "Séminaire les mesures de l'économie T208001"
     ]
+  },
+  {
+    "objectID": "10mars_cours3.html#définition",
+    "href": "10mars_cours3.html#définition",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Définition",
+    "text": "Définition\nPIB = Somme des valeurs ajoutées sur un territoire donné sur une période donnée (le plus souvent dans un pays sur un an)\nLa valeur ajoutée étant la valeur monétaire (aux prix de marché) des biens et services, à laquelle on soustrait la valeur monétaire de la consommation intermédiaire\n\\[PIB = \\sum outputs - \\sum consommations \\ intermédiaires\\]\nPour être précis, il faut mentionner l’ajout des taxes moins les subventions sur les produits et services",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#secteurs-institutionnels",
+    "href": "10mars_cours3.html#secteurs-institutionnels",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Secteurs institutionnels",
+    "text": "Secteurs institutionnels\n\\(PIB = \\sum valeurs \\ ajoutées\\), mais de qui ?\nLes “acteurs” de la comptabilité nationale sont les “secteurs institutionnels” qui incluent:\n\nLes entreprises non-financières\nLes entreprises financières (banques, assurances…)\nLe gouvernement\nLes ménages (dont les “institutions sans but lucratif au service des ménages” ISBLSM)\n\nLes ISBLSM sont des organisations crées par des groupes de ménages afin de fournir un service de manière non-lucrative. Exemple: syndicats, organisations religieuses, associations philantropiques, de charité… (comme la Croix-Rouge). Une telle organisation doit être financée par des donations ou un abonnement régulier afin d’être considéré comme une ISBLSM par la comptabilité nationale (voir UNA, p.141).",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#approche-production-du-pib",
+    "href": "10mars_cours3.html#approche-production-du-pib",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Approche production du PIB",
+    "text": "Approche production du PIB\n\\[PIB = \\sum valeurs\\ ajoutées - \\sum consommations \\ intermédiaires + taxes - subventions \\ sur \\ les \\ produits\\]",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#approche-dépense-du-pib",
+    "href": "10mars_cours3.html#approche-dépense-du-pib",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Approche dépense du PIB",
+    "text": "Approche dépense du PIB\n\\[PIB = C + I + G + X - M\\]\nAvec \\(C\\) la consommation, \\(I\\) l’investissement, \\(G\\) la dépense publique et \\(X-M\\) la balance commerciale.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#c-consommation",
+    "href": "10mars_cours3.html#c-consommation",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "\\(C\\) Consommation",
+    "text": "\\(C\\) Consommation\nLa comptabilité nationale définit \\(C\\), la consommation, comme les dépenses de consommation finale privée des ménages et des ISBLSM. Cela inclut par exemple les dépenses pour la nourriture, le loyer, l’énergie…\n\n\n\n\n\n\nImportant\n\n\nLa consommation finale privée des ménages n’inclut pas toutes les dépenses. Par exemple, l’achat d’une résidence est considéré par les comptes nationaux comme un investissement (donc est compté dans \\(I\\)).",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#lenquête-sur-le-budget-des-ménages",
+    "href": "10mars_cours3.html#lenquête-sur-le-budget-des-ménages",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "L’enquête sur le budget des ménages",
+    "text": "L’enquête sur le budget des ménages\nSur quelles données sont fondées les estimations de \\(C\\) ? Sur les enquêtes sur le budget des ménages.\nEn Suisse, l’OFS mène sa propre enquête sur le budget des ménage chaque année depuis 2000. - Enquête statistique auprès d’un échantillon d’environ 3000 personnes.\nL’enquête sur le budget des ménages permet aussi de définir le panier de bien type utilisé pour le calcul de l’indice des prix à la consommation (IPC), un indicateur important du niveau des prix et de l’inflation.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#ebm-en-suisse",
+    "href": "10mars_cours3.html#ebm-en-suisse",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "EBM en Suisse",
+    "text": "EBM en Suisse\n\n\n\nhttps://www.bfs.admin.ch/bfs/fr/home/statistiques/situation-economique-sociale-population/revenus-consommation-et-fortune/budget-des-menages.html",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#i-investissement",
+    "href": "10mars_cours3.html#i-investissement",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "\\(I\\) Investissement",
+    "text": "\\(I\\) Investissement",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
   }
 ]

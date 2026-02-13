@@ -125,4 +125,80 @@ Le terme de comptabilité peut être trompeur, car la comptabilité nationale es
 :::
 :::::
 
-## Approche production {.smaller}
+# Produit intérieur brut (PIB): principes de base
+
+## Définition {.smaller}
+
+PIB = Somme des valeurs ajoutées sur un territoire donné sur une période donnée (le plus souvent dans un pays sur un an)
+
+La **valeur ajoutée** étant la valeur monétaire (aux prix de marché) des biens et services, à laquelle on soustrait la valeur monétaire de la **consommation intermédiaire**
+
+$$PIB = \sum outputs - \sum consommations \ intermédiaires$$
+
+Pour être précis, il faut mentionner l'ajout des taxes moins les subventions sur les produits et services
+
+## Secteurs institutionnels {.smaller}
+
+$PIB = \sum valeurs \ ajoutées$, mais de qui ?
+
+Les "acteurs" de la comptabilité nationale sont les "secteurs institutionnels" qui incluent:
+
+-   Les entreprises non-financières
+-   Les entreprises financières (banques, assurances...)
+-   Le gouvernement
+-   Les ménages (dont les "institutions sans but lucratif au service des ménages" ISBLSM)
+    -   Les ISBLSM sont des organisations crées par des groupes de ménages afin de fournir un service de manière non-lucrative. Exemple: syndicats, organisations religieuses, associations philantropiques, de charité... (comme la Croix-Rouge). Une telle organisation doit être financée par des donations ou un abonnement régulier afin d'être considéré comme une ISBLSM par la comptabilité nationale (voir UNA, p.141).
+
+## Approche production du PIB
+
+$$PIB = \sum valeurs\ ajoutées - \sum consommations \ intermédiaires + taxes - subventions \ sur \ les \ produits$$
+
+## Approche dépense du PIB
+
+$$PIB = C + I + G + X - M$$
+
+Avec $C$ la consommation, $I$ l'investissement, $G$ la dépense publique et $X-M$ la balance commerciale.
+
+## $C$ Consommation
+
+La comptabilité nationale définit $C$, la consommation, comme les dépenses de consommation finale privée des ménages et des ISBLSM. Cela inclut par exemple les dépenses pour la nourriture, le loyer, l'énergie...
+
+::: callout-important
+La consommation finale privée des ménages n'inclut pas **toutes** les dépenses. Par exemple, l'achat d'une résidence est considéré par les comptes nationaux comme un investissement (donc est compté dans $I$).
+:::
+
+## L'enquête sur le budget des ménages {.smaller}
+
+Sur quelles données sont fondées les estimations de $C$ ? Sur les enquêtes sur le budget des ménages.
+
+En Suisse, l'OFS mène sa propre enquête sur le budget des ménage chaque année depuis 2000. - Enquête statistique auprès d'un échantillon d'environ 3000 personnes.
+
+L'enquête sur le budget des ménages permet aussi de définir le panier de bien type utilisé pour le calcul de l'indice des prix à la consommation (IPC), un indicateur important du niveau des prix et de l'inflation.
+
+## EBM en Suisse
+
+[![https://www.bfs.admin.ch/bfs/fr/home/statistiques/situation-economique-sociale-population/revenus-consommation-et-fortune/budget-des-menages.html](images/cours3/ebm.png)](https://www.bfs.admin.ch/bfs/fr/home/statistiques/situation-economique-sociale-population/revenus-consommation-et-fortune/budget-des-menages.html)
+
+
+## $I$ Investissement
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
