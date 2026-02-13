@@ -440,11 +440,11 @@
     ]
   },
   {
-    "objectID": "10mars_cours3.html#données-économiques-principes-de-base",
-    "href": "10mars_cours3.html#données-économiques-principes-de-base",
+    "objectID": "10mars_cours3.html#données-macroéconomiques-principes-de-base",
+    "href": "10mars_cours3.html#données-macroéconomiques-principes-de-base",
     "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Données économiques: principes de base",
-    "text": "Données économiques: principes de base\n\nDeux sources principales de données en économie (ainsi qu’en sciences sociales en général)\n\nDonnées provenant d’enquêtes au moyen de questionnaires\n\nex: données sur la consommation, statistiques du marché du travail, de la valeur ajouté des entreprises\n\nDonnées administratives\n\nex: comptes publics\n\n\n\nDistinction importante, car pour les données d’enquêtes, les principes de la statistique (échantillonage, calculs des marges d’erreurs, tests statistiques) doivent être respectés, ce qui n’est pas (forcément) le cas des données administratives.\n\nCar pour les données administratives, certains principe de la statistique ne sont pas applicable, car les données n’ont pas été récoltées à travers un processus d’échantillonnage",
+    "section": "Données macroéconomiques: principes de base",
+    "text": "Données macroéconomiques: principes de base\n\nDeux sources principales de données en économie (ainsi qu’en sciences sociales en général)\n\nDonnées provenant d’enquêtes au moyen de questionnaires\n\nex: données sur la consommation, statistiques du marché du travail, de la valeur ajouté des entreprises\n\nDonnées administratives\n\nex: comptes publics\n\n\n\nDistinction importante, car pour les données d’enquêtes, les principes de la statistique (échantillonage, calculs des marges d’erreurs, tests statistiques) doivent être respectés, ce qui n’est pas (forcément) le cas des données administratives.\n\nCar pour les données administratives, certains principe de la statistique ne sont pas applicable, car les données n’ont pas été récoltées à travers un processus d’échantillonnage",
     "crumbs": [
       "10 Mars. Comptabilité nationale (1)"
     ]
@@ -500,21 +500,11 @@
     ]
   },
   {
-    "objectID": "10mars_cours3.html#intérêt-de-la-comptabilité-nationale",
-    "href": "10mars_cours3.html#intérêt-de-la-comptabilité-nationale",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Intérêt de la comptabilité nationale",
-    "text": "Intérêt de la comptabilité nationale\nLa comptabilité nationale permet de calculer le produit intérieur brut, défini comme la somme des valeurs ajoutées dans un territoire donné (souvent un pays) au cours d’une période donnée (souvent une année).\n\nMais la comptabilité nationale offre aussi",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
     "objectID": "10mars_cours3.html#la-comptabilité-nationale",
     "href": "10mars_cours3.html#la-comptabilité-nationale",
     "title": "10 Mars. Comptabilité nationale (1)",
     "section": "La “comptabilité” nationale",
-    "text": "La “comptabilité” nationale\nLe terme de comptabilité peut être trompeur, car la comptabilité nationale est très différente de la comptabilité en entreprise:\n\nLe comptable d’une entreprise dispose de registres avec une information complète sur les données de l’entreprise - Cela n’est pas possible pour la comptabilité nationale (impliquerait une information exhaustive sur des millions d’individus et d’entreprises)\nLa comptabilité nationale repose donc fortement sur une information partielle qui nécessite des approximations, des estimations et des révisions",
+    "text": "La “comptabilité” nationale\nLe terme de comptabilité peut être trompeur, car la comptabilité nationale est très différente de la comptabilité en entreprise:\n\nLe comptable d’une entreprise dispose de registres avec une information complète sur les données de l’entreprise\nCela n’est pas possible pour la comptabilité nationale (impliquerait une information exhaustive sur des millions d’individus et d’entreprises)\nLa comptabilité nationale repose donc forcément sur une information partielle qui nécessite des approximations, des estimations et des révisions",
     "crumbs": [
       "10 Mars. Comptabilité nationale (1)"
     ]
@@ -524,7 +514,7 @@
     "href": "10mars_cours3.html#comptabilité-nationale-et-statistique",
     "title": "10 Mars. Comptabilité nationale (1)",
     "section": "Comptabilité nationale et statistique",
-    "text": "Comptabilité nationale et statistique\n\nLes données provenant des comptes nationaux sont des approximations\nCes approximations sont possibles grâce à des données récoltées de manière plus ou moins dissipée selon la qualité du système publique de statistique du pays considéré.\nIl n’est en outre pas possible de mesurer statistiquement ces approximations (ex: intervalle de confiance de l’estimation du PIB), car la comptabilité nationale n’est pas le résultat d’une seule grande enquête.\nAu contraire, les comptes nationaux sont le résultat de compilation complexe de données provenant d’un grand nombre de sources différentes.",
+    "text": "Comptabilité nationale et statistique\n\nLes données provenant des comptes nationaux sont des approximations\nCes approximations sont possibles grâce à des données récoltées de manière plus ou moins dissipée selon la qualité du système publique de statistique du pays considéré.\nIl n’est en outre pas possible de mesurer statistiquement ces approximations (ex: intervalle de confiance de l’estimation du PIB), car la comptabilité nationale n’est pas le résultat d’une seule grande enquête.\nAu contraire, les comptes nationaux sont le résultat de compilations complexes de données provenant d’un grand nombre de sources différentes.",
     "crumbs": [
       "10 Mars. Comptabilité nationale (1)"
     ]
@@ -540,11 +530,211 @@
     ]
   },
   {
-    "objectID": "10mars_cours3.html#approche-production",
-    "href": "10mars_cours3.html#approche-production",
+    "objectID": "10mars_cours3.html#définition",
+    "href": "10mars_cours3.html#définition",
     "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Approche production",
-    "text": "Approche production",
+    "section": "Définition",
+    "text": "Définition\nPIB = Somme des valeurs ajoutées sur un territoire donné sur une période donnée (le plus souvent dans un pays sur un an)\nLa valeur ajoutée étant la valeur monétaire (aux prix de marché) des biens et services, à laquelle on soustrait la valeur monétaire de la consommation intermédiaire\n\\[PIB = \\sum outputs - \\sum consommations \\ intermédiaires\\]\nPour être précis, il faut mentionner l’ajout des taxes moins les subventions sur les produits et services",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#secteurs-institutionnels",
+    "href": "10mars_cours3.html#secteurs-institutionnels",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Secteurs institutionnels",
+    "text": "Secteurs institutionnels\n\\(PIB = \\sum valeurs \\ ajoutées\\), mais de qui ?\nLes “acteurs” de la comptabilité nationale sont les “secteurs institutionnels” qui incluent:\n\nLes entreprises non-financières\nLes entreprises financières (banques, assurances…)\nLe gouvernement\nLes ménages (dont les “institutions sans but lucratif au service des ménages” ISBLSM)\n\nLes ISBLSM sont des organisations crées par des groupes de ménages afin de fournir un service de manière non-lucrative. Exemple: syndicats, organisations religieuses, associations philantropiques, de charité… (comme la Croix-Rouge). Une telle organisation doit être financée par des donations ou un abonnement régulier afin d’être considéré comme une ISBLSM par la comptabilité nationale (voir UNA, p.141).",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#approche-production-du-pib",
+    "href": "10mars_cours3.html#approche-production-du-pib",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Approche production du PIB",
+    "text": "Approche production du PIB\n\\[PIB = \\sum valeurs\\ ajoutées \\\\ - \\sum consommations \\ intermédiaires\\\\ + taxes \\ sur \\ les \\ produits \\\\ - subventions \\ sur \\ les \\ produits\\]",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#approche-dépense-du-pib",
+    "href": "10mars_cours3.html#approche-dépense-du-pib",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Approche dépense du PIB",
+    "text": "Approche dépense du PIB\n\\[PIB = C + I + G + X - M\\]\nAvec \\(C\\) la consommation, \\(I\\) l’investissement, \\(G\\) la dépense publique et \\(X-M\\) la balance commerciale.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#c-consommation",
+    "href": "10mars_cours3.html#c-consommation",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "\\(C\\) Consommation",
+    "text": "\\(C\\) Consommation\nLa comptabilité nationale définit \\(C\\), la consommation, comme les dépenses de consommation finale privée des ménages et des ISBLSM. Cela inclut par exemple les dépenses pour la nourriture, le loyer, l’énergie…\n\n\n\n\n\n\nImportant\n\n\nLa consommation finale privée des ménages n’inclut pas toutes les dépenses. Par exemple, l’achat d’une résidence est considéré par les comptes nationaux comme un investissement (donc est compté dans \\(I\\)).",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#lenquête-sur-le-budget-des-ménages",
+    "href": "10mars_cours3.html#lenquête-sur-le-budget-des-ménages",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "L’enquête sur le budget des ménages",
+    "text": "L’enquête sur le budget des ménages\nSur quelles données sont fondées les estimations de \\(C\\) ? Sur les enquêtes sur le budget des ménages.\nEn Suisse, l’OFS mène sa propre enquête sur le budget des ménage chaque année depuis 2000. - Enquête statistique auprès d’un échantillon d’environ 3000 personnes.\nL’enquête sur le budget des ménages permet aussi de définir le panier de bien type utilisé pour le calcul de l’indice des prix à la consommation (IPC), un indicateur important du niveau des prix et de l’inflation.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#ebm-en-suisse",
+    "href": "10mars_cours3.html#ebm-en-suisse",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "EBM en Suisse",
+    "text": "EBM en Suisse\n\n\n\nhttps://www.bfs.admin.ch/bfs/fr/home/statistiques/situation-economique-sociale-population/revenus-consommation-et-fortune/budget-des-menages.html",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#les-loyers-imputés",
+    "href": "10mars_cours3.html#les-loyers-imputés",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Les loyers imputés",
+    "text": "Les loyers imputés\nUne imputation très importante qui est ajoutée aux dépenses de consommation finale des ménages est celle des loyers imputés\n\nOn impute aux propriétaires de leur logement le loyer qu’ils payeraient s’il n’étaient pas propriétaires.\n\nPourquoi ces loyers imputés sont-ils nécessaires ?\nCar si on ne prenait pas en compte ces loyers imputés, on verrait une baisse tendancielle du PIB due à l’augmentation structurelle du nombre absolu de propriétaire.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#i-investissement",
+    "href": "10mars_cours3.html#i-investissement",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "\\(I\\) Investissement",
+    "text": "\\(I\\) Investissement\n\nSont définis (dans la comptabilité nationale) comme investissement les achats de machines (logiciels informatiques inclus), les achats immobiliers et la constitution de stocks (inventaires). ==&gt; Formation brut de capital (gross capital formation)\n\nEn ne prenant pas en compte les inventaires: formation brut de capital fixed (gross fixed capital formation)\n\nPourquoi ces termes plutôt que simplement “investissement” ? Car l’usage courant du terme investissement fait souvent référence aux investissements financier dans les marchés d’action ou autre.\nIl est aussi possible et courant d’estimer formation net de capital fixe en prenant en compte la dépréciation du capital, appelée consommation de capital fixe dans les comptes nationaux.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#g-dépense-publique",
+    "href": "10mars_cours3.html#g-dépense-publique",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "\\(G\\) dépense publique",
+    "text": "\\(G\\) dépense publique\nInclut les dépenses générales du gouvernement, notamment les services publiques (éducation, santé, sécurité…).\n\nComme ces biens et services fournis par l’État ne sont pas achetés directement par les autres secteurs institutionnels, leur comptabilisation ne se fait pas à leur valeur marchande comme pour \\(I\\) et \\(C\\).\n\\(G\\) est donc estimé à travers les coûts. En termes de comptabilité, la consommation finale du gouvernement est équivalente à ses coûts\n\nExemple: le service rendu par tous les professeurs d’une école publique équivaut aux salaires qui leur sont versés. Même principe pour tous les autres fonctionnaires (police, administration, armée…).",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#g",
+    "href": "10mars_cours3.html#g",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "\\(G\\)",
+    "text": "\\(G\\)\n\\(G\\) est donc estimé à travers la somme des coûts de:\n\nLes salaires versés aux employés du gouvernement\nPlus l’achat par le gouvernement de matériels et autre consommation (le “C” propre à l’État)\n\nla consommation de capital fixe (le “I” propre à l’État: achats de machines, de biens immobiliers etc.)\n\n\nl’achat de biens et services par le gouvernement au bénéfice des ménages (ex: remboursement des soins de santé)\n\n\nd’autres taxes payés sur la production (marginal)\n\n\nles paiements des ménages et des firmes pour les services fournis par le gouvernement (ex: entrée au musé)\n\n\nle comptre propre de consommation de capital fixe.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#exportations-et-importations-x-m",
+    "href": "10mars_cours3.html#exportations-et-importations-x-m",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Exportations et importations \\(X-M\\)",
+    "text": "Exportations et importations \\(X-M\\)\nLes flux d’exportations et d’importations sont décomposés en quatre parties:\n\nle commerce extérieur de biens\nle commerce extérieur de services\nachats directs par les résidents dans le reste du monde (considéré comme des importations de services)\nachats directs par les non-résidents dans le territoire économique (exportations de services)",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#territoire-résidence-et-reste-du-monde",
+    "href": "10mars_cours3.html#territoire-résidence-et-reste-du-monde",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Territoire, résidence et reste du monde",
+    "text": "Territoire, résidence et reste du monde\nCes trois notions ont une définition bien particulière en comptabilité nationale et sont importantes à comprendre afin de comprendre la balance commerciale:\n\nLa notion de territoire économique se réfère à l’aire géographique d’un État. Cela inclut son espace aérien, ses eaux territorials et ses enclaves territoriales dans le reste du monde. Seule la production prenant place dans le territoire économique est prise en compte dans les comptes nationaux. La production d’un établissement de Novartis situé aux États-Unis n’est pas comptabilisée dans les comptes nationaux suisses, mais dans les comptes étatsuniens.\n\n\nunderstanding national accounts page 153",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#résidence-et-reste-du-monde",
+    "href": "10mars_cours3.html#résidence-et-reste-du-monde",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Résidence et reste du monde",
+    "text": "Résidence et reste du monde\n\nLes résidents d’un territoire économique sont les entités (firmes & ménages) exerçant une activité économique sur le territoire depuis au moins un an.\n\nLes travailleurs saisonniers travaillant seulement quelques mois dans un pays donnés ne sont par exemple par considéré comme résident du pays et leur revenu n’est donc pas comptabilisé.\nAu contraire, un ménage dont les membres travaillent dans pays A mais consomment et vivent dans pays B sont considérés comme résident de B et ne sont pas comptabilisés dans A.\n\n\nLe reste du monde est composé de tous les non-résidents transactant avec le pays considéré. Ces transactions inclues:\n\nLa balance commerciale (exportations et importations)\nLes revenus reçus par les résidents de l’étranger et les revenu versé à l’étranger aux non-résidents (net foreign factor income).",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#balance-commerciale-et-merchant-trade-statistics",
+    "href": "10mars_cours3.html#balance-commerciale-et-merchant-trade-statistics",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Balance commerciale et “merchant trade statistics”",
+    "text": "Balance commerciale et “merchant trade statistics”\nIl existe une différence subtile mais qui peut être significative entre ce qui est considéré comme exportation/importation par le système de comptabilité nationale et les statistiques de commerce marchant.\n\nDans le merchant trade statistics (tel que considéré par l’OMC), sont considérés comme exportations et importations dès qu’une frontière est traversée.\nEn comptabilité nationale, c’est l’échange de propriété entre résidents et non-résidents qui compte.\n\n\nunderstanding national accounts page 154",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#approche-revenu-du-pib",
+    "href": "10mars_cours3.html#approche-revenu-du-pib",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Approche revenu du PIB",
+    "text": "Approche revenu du PIB\n\\[\nPIB \\equiv W + R\n\\]\nLe pib peut aussi est défini comme la somme de tous les revenus d’une économie, répartis entre les salaires \\(W\\) et les profits \\(R\\) (en ignorant les rentes ou bien en les considérant comme partie des profits).\nEn comptabilité nationale:\n\\[\nPIB = compensation \\ des \\ employés + excédent\\ brut \\ d'exploitation\\ et \\ revenu \\ mixte\n\\] La compensation des employés est la variable la plus similaire aux salaires \\(W\\), mais a une conception plus large car est plus globale que les salaires (inclut toutes les rémunérations des salariés).\nL’excédent brut d’exploitation brut est le montant de profit dégagé par les entreprises \\(P\\) (gross operating surplus), le revenu mixte (mixed income) est le revenu des indépendants et auto-entrepreneurs.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#revenu-mixe-et-excédent-brut",
+    "href": "10mars_cours3.html#revenu-mixe-et-excédent-brut",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Revenu mixe et excédent brut",
+    "text": "Revenu mixe et excédent brut\nDans certains pays (comme en Suisse), le revenu mixe et le taux brut d’exploitation sont mélangés dans une seule catégorie.\n\nCela pose problème pour le calcul de la part des salaires et des profits dans la valeur ajoutée, qu’il faut donc ajuster par la part des indépendant et des autoentrepreneurs dans l’emploi.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#calcul-non-ajusté-de-la-part-des-salaires-et-des-profits",
+    "href": "10mars_cours3.html#calcul-non-ajusté-de-la-part-des-salaires-et-des-profits",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Calcul (non ajusté) de la part des salaires et des profits",
+    "text": "Calcul (non ajusté) de la part des salaires et des profits\n\\[\nPIB \\equiv W + R\n\\]\nDivisons par le PIB &lt;=&gt;\n\\[\n1 \\equiv \\frac{W}{PIB} + \\frac{P}{PIB} \\equiv w + r\n\\]\nCette identité comptable montre que le revenu total (1) est partagé entre les salaires et les profits",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#lidentité-fondamentale-du-pib",
+    "href": "10mars_cours3.html#lidentité-fondamentale-du-pib",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "L’identité fondamentale du PIB",
+    "text": "L’identité fondamentale du PIB\nLes trois approches que nous avons passées en revue: approches production, dépenses et revenus, sont équivalentes en termes comptables. Cela repose sur le fait que:\n\nToutes les dépenses sont des revenus et inversements\nToutes les dépenses se font sur des biens et services nécessairement produits",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#équivalence-des-approches",
+    "href": "10mars_cours3.html#équivalence-des-approches",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Équivalence des approches",
+    "text": "Équivalence des approches\n\n\\(PIB \\equiv \\sum{production - consommation \\ intermédiaire}\\)\n\\(PIB \\equiv C+I+G+X-M\\)\n\\(PIB \\equiv W+R\\)",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#lidentité-épargne-investissement",
+    "href": "10mars_cours3.html#lidentité-épargne-investissement",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "L’identité épargne = investissement",
+    "text": "L’identité épargne = investissement\nCertaines identités comptables fondamentales de la macroéconomie sont obtenues en jouant avec ces trois identités comptables.\nC’est le cas pour l’identité \\(S \\equiv I + NX\\), que vous allez voir ou avez déjà vue en macroéconomie.\nC’est aussi le cas des balances sectorielles que vous allez voir dans le cours les mesures de l’économie",
     "crumbs": [
       "10 Mars. Comptabilité nationale (1)"
     ]
@@ -634,7 +824,7 @@
     "href": "index.html#avril-distribution-et-inégalité-1",
     "title": "Séminaire les mesures de l’économie T208001",
     "section": "14 avril: distribution et inégalité (1)",
-    "text": "14 avril: distribution et inégalité (1)\nDistribution du revenu national et sa modélisation. Exercice sur la part des salaires et des profits dans la valeur ajoutée.\nSources:\n\nCowell, Frank Alan. Measuring Inequality. Third edition. LSE Perspectives in Economic Analysis. University Press, 2011.",
+    "text": "14 avril: distribution et inégalité (1)\nCourbe de Lorenz, coefficient de Gini et les top shares. Exercice avec les données fiscales suisses.\nSources:\n\nCowell, Frank Alan. Measuring Inequality. Third edition. LSE Perspectives in Economic Analysis. University Press, 2011.",
     "crumbs": [
       "Séminaire les mesures de l'économie T208001"
     ]
@@ -643,8 +833,8 @@
     "objectID": "index.html#avril-distribution-et-inégalité-2",
     "href": "index.html#avril-distribution-et-inégalité-2",
     "title": "Séminaire les mesures de l’économie T208001",
-    "section": "21 avril: distribution et inégalité (2)",
-    "text": "21 avril: distribution et inégalité (2)\nCourbe de Lorenz, coefficient de Gini et les top shares. Exercice avec les données fiscales suisses.",
+    "section": "28 avril: distribution et inégalité (2)",
+    "text": "28 avril: distribution et inégalité (2)\nMesurer les inégalités de classes: comment estimer différentes mesures de classes sociales et les inégalités entre ces classes à partir de données d’enquête. Exercice en utilisant l’enquête panel des ménages suisses.\nSources:\n\nJ. Gil Hernandez, Carlos. “Wealth Inequality and Stratification by Social Classes in 21st-Century Europe.” DigClass, February 27, 2024. https://digclass.eu/wealth-inequality-and-stratification-by-social-classes-in-21st-century-europe/.\nMunoz de Bustillo, Rafael. “Social classes in economics analysis. A brief historical account.” DigClass, March 11, 2022. https://digclass.eu/social-classes-in-economics-analysis-a-brief-historical-account/.\nOesch, Daniel. “Contemporary Class Analysis.” DigClass, January 4, 2022. https://digclass.eu/contemporary-class-analysis/.\nVillani, Davide. “Income inequality, top shares of income and social classes in the 21st century.” DigClass, January 13, 2023. https://digclass.eu/income-inequality-top-shares-of-income-and-social-classes-in-the-21st-century/.",
     "crumbs": [
       "Séminaire les mesures de l'économie T208001"
     ]
@@ -724,89 +914,29 @@
     "href": "index.html#bases-de-données",
     "title": "Séminaire les mesures de l’économie T208001",
     "section": "Bases de données",
-    "text": "Bases de données\nBases de données internationales:\n\nDBnomics: la base mondiale de données économiques https://db.nomics.world/\n\nIl s’agit de la base de données la plus utile, car elle compile une série énorme de données provenant de toutes les organisations majeurs (OCDE, OIT, Banque Mondiale…). De plus, elle offre un package R (RDBnomics) permettant d’importer directement les données dans R: https://github.com/dbnomics/rdbnomics\n\nBase de données de l’OCDE: https://data-explorer.oecd.org/?lc=fr\nBanque mondiale: https://data.worldbank.org/\nMaddison historical statistics: https://www.rug.nl/ggdc/historicaldevelopment/maddison/\nIlostat (organisation internationale du travail): https://ilostat.ilo.org/fr/data/\nAmeco (base de données macroéconomiques pour la Commission européenne): https://economy-finance.ec.europa.eu/economic-research-and-databases/economic-databases/ameco-database_en\nGapminder https://www.gapminder.org/resources/\nOur World in Data: https://ourworldindata.org/\nPenn World Tables: https://www.rug.nl/ggdc/productivity/pwt/?lang=en\nWorld Inequality Database: https://wid.world/\nLuxembourg Income Study database (LIS): https://www.lisdatacenter.org/data-access/\n\nDartFrontend: https://dart.lisdatacenter.org/dar\nPour la Suisse: \n\nDonnées du PIB selon les trois approches: https://www.seco.admin.ch/seco/fr/home/wirtschaftslage—wirtschaftspolitik/Wirtschaftslage/bip-quartalsschaetzungen-/daten.htm\nStatistiques historiques de la Suisse: https://hsso.ch/fr\nOffice fédéral de la statistique: https://www.bfs.admin.ch/bfs/fr/home.html\nStatistiques fiscales de l’administration fédérale des contributions: https://www.estv.admin.ch/fr/statistiques-sur-limpot-federal-direct\nAtlas statistique de la Suisse: https://mapexplorer.bfs.admin.ch/#c=indicator&i=ch_11_02_02_001.ausgabenfrkantpolgstr&s=2023&view=map164",
+    "text": "Bases de données\nBases de données internationales:\n\nDBnomics: la base mondiale de données économiques https://db.nomics.world/\n\nIl s’agit de la base de données la plus utile, car elle compile une série énorme de données provenant de toutes les organisations majeurs (OCDE, OIT, Banque Mondiale…). De plus, elle offre un package R (RDBnomics) permettant d’importer directement les données dans R: https://github.com/dbnomics/rdbnomics\n\nBase de données de l’OCDE: https://data-explorer.oecd.org/?lc=fr\nBanque mondiale: https://data.worldbank.org/\nMaddison historical statistics: https://www.rug.nl/ggdc/historicaldevelopment/maddison/\nIlostat (organisation internationale du travail): https://ilostat.ilo.org/fr/data/\nAmeco (base de données macroéconomiques pour la Commission européenne): https://economy-finance.ec.europa.eu/economic-research-and-databases/economic-databases/ameco-database_en\nGapminder https://www.gapminder.org/resources/\nOur World in Data: https://ourworldindata.org/\nPenn World Tables: https://www.rug.nl/ggdc/productivity/pwt/?lang=en\nWorld Inequality Database: https://wid.world/\nLuxembourg Income Study database (LIS): https://www.lisdatacenter.org/data-access/\n\nDartFrontend: https://dart.lisdatacenter.org/dar\nPour la Suisse:\n\nDonnées du PIB selon les trois approches: https://www.seco.admin.ch/seco/fr/home/wirtschaftslage—wirtschaftspolitik/Wirtschaftslage/bip-quartalsschaetzungen-/daten.htm\nStatistiques historiques de la Suisse: https://hsso.ch/fr\nOffice fédéral de la statistique: https://www.bfs.admin.ch/bfs/fr/home.html\nStatistiques fiscales de l’administration fédérale des contributions: https://www.estv.admin.ch/fr/statistiques-sur-limpot-federal-direct\nAtlas statistique de la Suisse: https://mapexplorer.bfs.admin.ch/#c=indicator&i=ch_11_02_02_001.ausgabenfrkantpolgstr&s=2023&view=map164",
     "crumbs": [
       "Séminaire les mesures de l'économie T208001"
     ]
   },
   {
-    "objectID": "10mars_cours3.html#définition",
-    "href": "10mars_cours3.html#définition",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Définition",
-    "text": "Définition\nPIB = Somme des valeurs ajoutées sur un territoire donné sur une période donnée (le plus souvent dans un pays sur un an)\nLa valeur ajoutée étant la valeur monétaire (aux prix de marché) des biens et services, à laquelle on soustrait la valeur monétaire de la consommation intermédiaire\n\\[PIB = \\sum outputs - \\sum consommations \\ intermédiaires\\]\nPour être précis, il faut mentionner l’ajout des taxes moins les subventions sur les produits et services",
+    "objectID": "index.html#autres",
+    "href": "index.html#autres",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "Autres",
+    "text": "Autres\n\nGuide sur la comptabilité nationale de Francis Malherbe https://www.comptanat.fr/\nGuide de l’OCDE pour la comptabilité nationale (Understanding National Accounts) https://www.oecd.org/content/dam/oecd/en/publications/reports/2014/10/understanding-national-accounts_g1g43f55/9789264214637-en.pdf",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "Séminaire les mesures de l'économie T208001"
     ]
   },
   {
-    "objectID": "10mars_cours3.html#secteurs-institutionnels",
-    "href": "10mars_cours3.html#secteurs-institutionnels",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Secteurs institutionnels",
-    "text": "Secteurs institutionnels\n\\(PIB = \\sum valeurs \\ ajoutées\\), mais de qui ?\nLes “acteurs” de la comptabilité nationale sont les “secteurs institutionnels” qui incluent:\n\nLes entreprises non-financières\nLes entreprises financières (banques, assurances…)\nLe gouvernement\nLes ménages (dont les “institutions sans but lucratif au service des ménages” ISBLSM)\n\nLes ISBLSM sont des organisations crées par des groupes de ménages afin de fournir un service de manière non-lucrative. Exemple: syndicats, organisations religieuses, associations philantropiques, de charité… (comme la Croix-Rouge). Une telle organisation doit être financée par des donations ou un abonnement régulier afin d’être considéré comme une ISBLSM par la comptabilité nationale (voir UNA, p.141).",
+    "objectID": "index.html#avril-distribution-et-inégalité-suite",
+    "href": "index.html#avril-distribution-et-inégalité-suite",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "21 avril: distribution et inégalité (suite)",
+    "text": "21 avril: distribution et inégalité (suite)",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#approche-production-du-pib",
-    "href": "10mars_cours3.html#approche-production-du-pib",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Approche production du PIB",
-    "text": "Approche production du PIB\n\\[PIB = \\sum valeurs\\ ajoutées - \\sum consommations \\ intermédiaires + taxes - subventions \\ sur \\ les \\ produits\\]",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#approche-dépense-du-pib",
-    "href": "10mars_cours3.html#approche-dépense-du-pib",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Approche dépense du PIB",
-    "text": "Approche dépense du PIB\n\\[PIB = C + I + G + X - M\\]\nAvec \\(C\\) la consommation, \\(I\\) l’investissement, \\(G\\) la dépense publique et \\(X-M\\) la balance commerciale.",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#c-consommation",
-    "href": "10mars_cours3.html#c-consommation",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "\\(C\\) Consommation",
-    "text": "\\(C\\) Consommation\nLa comptabilité nationale définit \\(C\\), la consommation, comme les dépenses de consommation finale privée des ménages et des ISBLSM. Cela inclut par exemple les dépenses pour la nourriture, le loyer, l’énergie…\n\n\n\n\n\n\nImportant\n\n\nLa consommation finale privée des ménages n’inclut pas toutes les dépenses. Par exemple, l’achat d’une résidence est considéré par les comptes nationaux comme un investissement (donc est compté dans \\(I\\)).",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#lenquête-sur-le-budget-des-ménages",
-    "href": "10mars_cours3.html#lenquête-sur-le-budget-des-ménages",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "L’enquête sur le budget des ménages",
-    "text": "L’enquête sur le budget des ménages\nSur quelles données sont fondées les estimations de \\(C\\) ? Sur les enquêtes sur le budget des ménages.\nEn Suisse, l’OFS mène sa propre enquête sur le budget des ménage chaque année depuis 2000. - Enquête statistique auprès d’un échantillon d’environ 3000 personnes.\nL’enquête sur le budget des ménages permet aussi de définir le panier de bien type utilisé pour le calcul de l’indice des prix à la consommation (IPC), un indicateur important du niveau des prix et de l’inflation.",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#ebm-en-suisse",
-    "href": "10mars_cours3.html#ebm-en-suisse",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "EBM en Suisse",
-    "text": "EBM en Suisse\n\n\n\nhttps://www.bfs.admin.ch/bfs/fr/home/statistiques/situation-economique-sociale-population/revenus-consommation-et-fortune/budget-des-menages.html",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#i-investissement",
-    "href": "10mars_cours3.html#i-investissement",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "\\(I\\) Investissement",
-    "text": "\\(I\\) Investissement",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "Séminaire les mesures de l'économie T208001"
     ]
   }
 ]

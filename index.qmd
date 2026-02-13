@@ -66,17 +66,16 @@ Indice des prix à la consommation, déflateur, indices en chaîne et parité de
 
 ## 14 avril: distribution et inégalité (1)
 
-Distribution du revenu national et sa modélisation. Exercice sur la part des salaires et des profits dans la valeur ajoutée.
+Courbe de Lorenz, coefficient de Gini et les top shares. Exercice avec les données fiscales suisses.
 
 Sources:
 
 -   Cowell, Frank Alan. Measuring Inequality. Third edition. LSE Perspectives in Economic Analysis. University Press, 2011.
 
-## 21 avril: distribution et inégalité (2)
+## 21 avril: distribution et inégalité (suite)
 
-Courbe de Lorenz, coefficient de Gini et les top shares. Exercice avec les données fiscales suisses.
 
-## 28 avril: distribution et inégalité (3)
+## 28 avril: distribution et inégalité (2)
 
 Mesurer les inégalités de classes: comment estimer différentes mesures de classes sociales et les inégalités entre ces classes à partir de données d'enquête. Exercice en utilisant l'enquête panel des ménages suisses.
 
@@ -179,7 +178,7 @@ Bases de données internationales:
 
     -   DartFrontend: [https://dart.lisdatacenter.org/dar](https://dart.lisdatacenter.org/dart)
 
-        Pour la Suisse: 
+        Pour la Suisse:
 
 -   Données du PIB selon les trois approches: [https://www.seco.admin.ch/seco/fr/home/wirtschaftslage---wirtschaftspolitik/Wirtschaftslage/bip-quartalsschaetzungen-/daten.htm](https://www.seco.admin.ch/seco/fr/home/wirtschaftslage---wirtschaftspolitik/Wirtschaftslage/bip-quartalsschaetzungen-/daten.html)
 
@@ -191,7 +190,13 @@ Bases de données internationales:
 
 -   Atlas statistique de la Suisse: <https://mapexplorer.bfs.admin.ch/#c=indicator&i=ch_11_02_02_001.ausgabenfrkantpolgstr&s=2023&view=map164>
 
+## Autres
+
+- Guide sur la comptabilité nationale de Francis Malherbe <https://www.comptanat.fr/>
+- Guide de l'OCDE pour la comptabilité nationale (Understanding National Accounts) <https://www.oecd.org/content/dam/oecd/en/publications/reports/2014/10/understanding-national-accounts_g1g43f55/9789264214637-en.pdf>
+
 # Références
 
 ::: {#refs}
 :::
+
