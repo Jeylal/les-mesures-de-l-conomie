@@ -13,14 +13,15 @@ bibliography: references.bib
 
 # Résumé du cours
 
-Ce séminaire a pour objectif d'enseigner aux étudiants la manière dont les principaux indicateurs économiques tirés de la comptabilité nationale et de l'étude de la distribution du revenu national sont calculés. Un accent particulier sera mis sur la familiarisation avec les principales sources de données en économie et comment traiter ces données en pratique. La première partie du cours portera sur les indicateurs calculables à partir de la comptabilité nationale (comme le taux de profit, la part des salaires dans la valeur ajoutée, les contributions à la croissance etc.). La deuxième partie du cours se concentrera sur les principaux indicateurs d'inégalité ainsi que sur l'étude de la distribution du revenu et du patrimoine. Enfin, la dernière partie du cours sera consacrée aux indicateurs mesurant les institutions socio-économiques. Ce séminaire sera fortement axé sur des exercices pratiques permettant aux étudiants d'apprendre comment développer eux-même leurs propres analyses des dynamiques économiques. Ce séminaire accompagne le cours *les mesures de l'économie* dispensé par Professeur Marc Morgan, mais reste un cours indépendant.
+Ce séminaire a pour objectif d'enseigner aux étudiants la manière dont les principaux indicateurs économiques tirés de la comptabilité nationale et de l'étude de la distribution du revenu national sont calculés. Un accent particulier sera mis sur la familiarisation avec les principales sources de données en économie et comment traiter ces données en pratique. La première partie du cours portera sur les indicateurs calculables à partir de la comptabilité nationale (comme le taux de profit, la part des salaires dans la valeur ajoutée, les contributions à la croissance etc.). La deuxième partie du cours se concentrera sur les principaux indicateurs d'inégalité ainsi que sur l'étude de la distribution du revenu. Enfin, la dernière partie du cours sera consacrée aux indicateurs mesurant les institutions socio-économiques. Ce séminaire sera fortement axé sur des exercices pratiques permettant aux étudiants d'apprendre comment développer eux-même leurs propres analyses des dynamiques économiques. Ce séminaire accompagne le cours *les mesures de l'économie* dispensé par Professeur Marc Morgan, mais reste un cours indépendant.
 
 # Évaluation du cours
 
--   Travaux/examens pratiques (80%)
+-   Exercice pratique évalué (bonus)
+-   Examen pratique final (80%)
 -   Participation (20%)
 
-Il y aura deux travaux pratiques à réaliser comptant chacun 40% de la note finale. Ces travaux seront axés sur des exercices pratiques de calculs d'indicateurs et de mesures vus en cours. Les exercices devront être réalisés soit sur Excel, soit sur R (avec un script Quarto). La présence au séminaire est obligatoire et sera contrôlée à chaque début de séance.
+Il y aura deux travaux pratiques évalués. Ces travaux seront axés sur des exercices pratiques de calculs d'indicateurs et de mesures vus en cours. Les exercices devront être réalisés soit sur Excel, soit sur R (avec un script Quarto). La première évaluation prendra place au milieu du semestre environ, il s'agira d'un exercice pratique évalué, dont la note sera un "bonus" au sens où elle comptera si elle améliore la note finale de l'étudiant. L'examen final aura lieu lors de la dernière séance et consistera en un travail pratique englobant tout le contenu et les exercices vus en cours. La participation est évaluée à partir de la présence en cours qui sera vérifiée à chaque séance, ainsi qu'à travers la participation active aux exercices et aux travaux pratiques.
 
 # Objectifs du cours
 
@@ -60,19 +61,19 @@ Indice des prix à la consommation, déflateur, indices en chaîne et parité de
 
 -   Lequiller, François, and Derek Blades. Understanding National Accounts. Second Edition. OECD, 2014. Chapitres 2 et 3
 
-## 31 mars: examen pratique (1)
+## 31 mars: exercice pratique évalué (1)
 
 ## 7 avril: pas de cours (vacances de Pâques)
 
 ## 14 avril: distribution et inégalité (1)
 
-Courbe de Lorenz, coefficient de Gini et les top shares. Exercice avec les données fiscales suisses.
+Sources de données et méthodes pour analyser la distribution du revenu national. Comment calculer la courbe de Lorenz; la relation et le coefficient de Pareto; le coefficient de Gini et les top shares. Exercice avec les données fiscales suisses.
 
 Sources:
 
 -   Cowell, Frank Alan. Measuring Inequality. Third edition. LSE Perspectives in Economic Analysis. University Press, 2011.
 
-## 21 avril: distribution et inégalité (suite)
+## 21 avril: distribution et inégalité: suite de (1)
 
 
 ## 28 avril: distribution et inégalité (2)
@@ -91,7 +92,7 @@ Sources:
 
 ## 5 mai: mesurer les institutions (1)
 
-Les différentes mesures des formes institutionnelles du capitalisme. Exemple des institutions de la protection sociale en explorant les données et indicateurs de la CWED (comparative welfare entitlements Datasets <http://cwed2.org/>)
+Les différentes mesures des formes institutionnelles du capitalisme. Exemple des institutions de la protection sociale en explorant les données et indicateurs de la CWED (comparative welfare entitlements Datasets) (http://cwed2.org/>) et les indicateurs institutionnels de l'OCDE (product market regulation index, employment protection indicators)
 
 Sources:
 
@@ -195,7 +196,6 @@ Bases de données internationales:
 - Guide sur la comptabilité nationale de Francis Malherbe <https://www.comptanat.fr/>
 - Guide de l'OCDE pour la comptabilité nationale (Understanding National Accounts) <https://www.oecd.org/content/dam/oecd/en/publications/reports/2014/10/understanding-national-accounts_g1g43f55/9789264214637-en.pdf>
 
-# Références
 
 ::: {#refs}
 :::

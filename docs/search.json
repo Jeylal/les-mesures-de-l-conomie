@@ -3,8 +3,8 @@
     "objectID": "slides intro.html#présentation-du-cours",
     "href": "slides intro.html#présentation-du-cours",
     "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "Présentation du cours",
-    "text": "Présentation du cours\nObjectif du cours\n\n\nComprendre et maîtriser les outils indispensables de l’analyse économique\n\n\nCela comprend:\n\nLes variables économiques (PIB, inflation…)\nLes principes de modélisation\nLa programmation et l’analyse statistique",
+    "section": "",
+    "text": "Comprendre et maîtriser les outils indispensables de l’analyse économique\n\n\nCela comprend:\n\nLes variables économiques (PIB, inflation…)\nLes principes de modélisation\nLa programmation et l’analyse statistique",
     "crumbs": [
       "Introduction au séminaire, rappels de R et introduction à Quarto"
     ]
@@ -54,7 +54,7 @@
     "href": "slides intro.html#à-propos-de-lintelligence-artificielle",
     "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
     "section": "À propos de l’intelligence artificielle",
-    "text": "À propos de l’intelligence artificielle\nDéconseillé dans le cadre de ce cours, pour les raisons suivantes:\n\n\n\nVous n’aurez pas accès aux IA lors des examens pratiques\nSi les IA sont désormais excellentes en programmation (Python, Stata…), les IA les plus utilisées (notamment Chatgpt) produisent du code R qui n’est souvent pas optimale\nUtilisation acceptable dans certains cas, comme pour simplifier des tâches répétitives\nR est le langage avec le plus de ressources et de documentations en ligne, pas besoin de passer par une IA\nRisque de ne pas assimiler le contenu du cours si vous dépendez entièrement des IA pour résoudre les exercices\n\n\n\n\n\n\n\n\nImportant\n\n\nEn dehors des examens en présence, je ne peux pas vous interdire l’utilisation des IA. Je vous déconseille l’utilisation de Chatgpt et vous recommande d’utiliser Copilot, dont vous avez une version gratuite avec votre compte Unige. D’autres IA sont meilleures pour R, comme ShinyAssistant.",
+    "text": "À propos de l’intelligence artificielle\n\nDéconseillé dans le cadre de ce cours, pour les raisons suivantes:\n\n\n\nVous n’aurez pas accès aux IA lors des examens pratiques\nSi les IA sont désormais excellentes en programmation (Python, Stata…), les IA les plus utilisées (notamment Chatgpt) produisent du code R qui n’est souvent pas optimale\nUtilisation acceptable dans certains cas, comme pour simplifier des tâches répétitives\nR est le langage avec le plus de ressources et de documentations en ligne, pas besoin de passer par une IA\nRisque de ne pas assimiler le contenu du cours si vous dépendez entièrement des IA pour résoudre les exercices\n\n\n\n\n\n\n\n\nImportant\n\n\n\nEn dehors des examens en présence, je ne peux pas vous interdire l’utilisation des IA. Je vous déconseille l’utilisation de Chatgpt et vous recommande d’utiliser Copilot, dont vous avez une version gratuite avec votre compte Unige. D’autres IA sont meilleures pour R, comme ShinyAssistant.",
     "crumbs": [
       "Introduction au séminaire, rappels de R et introduction à Quarto"
     ]
@@ -94,7 +94,7 @@
     "href": "slides intro.html#pwt-importation",
     "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
     "section": "PWT importation",
-    "text": "PWT importation",
+    "text": "PWT importation\n\n# copier coller ce code dans votre script quarto\nlibrary(tidyverse)\nlibrary(gt)\nlibrary(Rdatasets)\n\npwt = Rdatasets::rddata(\"pwt_sample\")",
     "crumbs": [
       "Introduction au séminaire, rappels de R et introduction à Quarto"
     ]
@@ -104,7 +104,7 @@
     "href": "slides intro.html#r",
     "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
     "section": "R",
-    "text": "R\nImporter la PWT en utilisant le package Rdatasets",
+    "text": "R\nImporter la PWT en utilisant le package Rdatasets\n\n# copier coller ce code dans votre script quarto\nlibrary(tidyverse)\nlibrary(gt)\nlibrary(Rdatasets)\n\npwt = Rdatasets::rddata(\"pwt_sample\")\n\n# Quelle fonction permettrait d'avoir un aperçu rapide des variables ?\n\n# Comment avoir un aperçu rapide de l'une des variables ?\n\n# En utilisant ggplot et tidyverse, comment je peux faire un graphique simple de toutes les variables du PIB disponible dans le dataset pour la Suisse ?\n\n# Comment peut-on inclure davantage de pays dans ce graphique ?\n\n# Comment peut-on créer une nouvelle variable dans ce dataset ?",
     "crumbs": [
       "Introduction au séminaire, rappels de R et introduction à Quarto"
     ]
@@ -114,7 +114,7 @@
     "href": "slides intro.html#le-package-esquisse",
     "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
     "section": "Le package esquisse",
-    "text": "Le package esquisse\nPermet d’utiliser une interface permettant d’explorer les données et produire des graphiques sans coder soi-même",
+    "text": "Le package esquisse\nPermet d’utiliser une interface permettant d’explorer les données et produire des graphiques sans coder soi-même\n\n# copier coller ce code dans votre script quarto\ninstall.packages(\"esquisse\")\nlibrary(esquisse)\nesquisse::esquisser()",
     "crumbs": [
       "Introduction au séminaire, rappels de R et introduction à Quarto"
     ]
@@ -124,7 +124,7 @@
     "href": "slides intro.html#dbnomics",
     "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
     "section": "Dbnomics",
-    "text": "Dbnomics\nDbnomics est une base de données internationale rassembland en une base de nombreuses bases de données indispensables en économie: données de l’OCDE, de la Banque Mondiale, du Fond Monétaire Internationale…\nLe package rdbnomics permet d’importer ces données directement dans R.\nExemple:",
+    "text": "Dbnomics\nDbnomics est une base de données internationale rassembland en une base de nombreuses bases de données indispensables en économie: données de l’OCDE, de la Banque Mondiale, du Fond Monétaire Internationale…\nLe package rdbnomics permet d’importer ces données directement dans R.\nExemple:\n\n# copier coller le code dans votre script quarto, installer les packages si besoin\n\n#[RVGDP] Gross domestic product at 2015 reference levels per head of population AMECO/RVGDP/CHE.1.1.0.0.RVGDP, annually, 1000 chf\nlibrary(rdbnomics)\nlibrary(stats)\n\nGDP &lt;- rdb(ids = \"AMECO/RVGDP/CHE.1.1.0.0.RVGDP\")",
     "crumbs": [
       "Introduction au séminaire, rappels de R et introduction à Quarto"
     ]
@@ -744,7 +744,7 @@
     "href": "index.html",
     "title": "Séminaire les mesures de l’économie T208001",
     "section": "",
-    "text": "Ce séminaire a pour objectif d’enseigner aux étudiants la manière dont les principaux indicateurs économiques tirés de la comptabilité nationale et de l’étude de la distribution du revenu national sont calculés. Un accent particulier sera mis sur la familiarisation avec les principales sources de données en économie et comment traiter ces données en pratique. La première partie du cours portera sur les indicateurs calculables à partir de la comptabilité nationale (comme le taux de profit, la part des salaires dans la valeur ajoutée, les contributions à la croissance etc.). La deuxième partie du cours se concentrera sur les principaux indicateurs d’inégalité ainsi que sur l’étude de la distribution du revenu et du patrimoine. Enfin, la dernière partie du cours sera consacrée aux indicateurs mesurant les institutions socio-économiques. Ce séminaire sera fortement axé sur des exercices pratiques permettant aux étudiants d’apprendre comment développer eux-même leurs propres analyses des dynamiques économiques. Ce séminaire accompagne le cours les mesures de l’économie dispensé par Professeur Marc Morgan, mais reste un cours indépendant.",
+    "text": "Ce séminaire a pour objectif d’enseigner aux étudiants la manière dont les principaux indicateurs économiques tirés de la comptabilité nationale et de l’étude de la distribution du revenu national sont calculés. Un accent particulier sera mis sur la familiarisation avec les principales sources de données en économie et comment traiter ces données en pratique. La première partie du cours portera sur les indicateurs calculables à partir de la comptabilité nationale (comme le taux de profit, la part des salaires dans la valeur ajoutée, les contributions à la croissance etc.). La deuxième partie du cours se concentrera sur les principaux indicateurs d’inégalité ainsi que sur l’étude de la distribution du revenu. Enfin, la dernière partie du cours sera consacrée aux indicateurs mesurant les institutions socio-économiques. Ce séminaire sera fortement axé sur des exercices pratiques permettant aux étudiants d’apprendre comment développer eux-même leurs propres analyses des dynamiques économiques. Ce séminaire accompagne le cours les mesures de l’économie dispensé par Professeur Marc Morgan, mais reste un cours indépendant.",
     "crumbs": [
       "Séminaire les mesures de l'économie T208001"
     ]
@@ -824,7 +824,7 @@
     "href": "index.html#avril-distribution-et-inégalité-1",
     "title": "Séminaire les mesures de l’économie T208001",
     "section": "14 avril: distribution et inégalité (1)",
-    "text": "14 avril: distribution et inégalité (1)\nCourbe de Lorenz, coefficient de Gini et les top shares. Exercice avec les données fiscales suisses.\nSources:\n\nCowell, Frank Alan. Measuring Inequality. Third edition. LSE Perspectives in Economic Analysis. University Press, 2011.",
+    "text": "14 avril: distribution et inégalité (1)\nSources de données et méthodes pour analyser la distribution du revenu national. Comment calculer la courbe de Lorenz; la relation et le coefficient de Pareto; le coefficient de Gini et les top shares. Exercice avec les données fiscales suisses.\nSources:\n\nCowell, Frank Alan. Measuring Inequality. Third edition. LSE Perspectives in Economic Analysis. University Press, 2011.",
     "crumbs": [
       "Séminaire les mesures de l'économie T208001"
     ]
@@ -854,7 +854,7 @@
     "href": "index.html#mai-mesurer-les-institutions-1",
     "title": "Séminaire les mesures de l’économie T208001",
     "section": "5 mai: mesurer les institutions (1)",
-    "text": "5 mai: mesurer les institutions (1)\nLes différentes mesures des formes institutionnelles du capitalisme. Exemple des institutions de la protection sociale en explorant les données et indicateurs de la CWED (comparative welfare entitlements Datasets http://cwed2.org/)\nSources:\n\nAmable, Bruno. The Diversity of Modern Capitalism. Oxford University Press, 2003.\nCahen-Fourot, Louison. “Contemporary Capitalisms and Their Social Relation to the Environment.” Ecological Economics 172 (June 2020): 106634. https://doi.org/10.1016/j.ecolecon.2020.106634.\nLyle Scruggs (2014). Social Welfare Generosity Scores in CWED 2: A Methodological Genealogy, February 2014.",
+    "text": "5 mai: mesurer les institutions (1)\nLes différentes mesures des formes institutionnelles du capitalisme. Exemple des institutions de la protection sociale en explorant les données et indicateurs de la CWED (comparative welfare entitlements Datasets) (http://cwed2.org/&gt;) et les indicateurs institutionnels de l’OCDE (product market regulation index, employment protection indicators)\nSources:\n\nAmable, Bruno. The Diversity of Modern Capitalism. Oxford University Press, 2003.\nCahen-Fourot, Louison. “Contemporary Capitalisms and Their Social Relation to the Environment.” Ecological Economics 172 (June 2020): 106634. https://doi.org/10.1016/j.ecolecon.2020.106634.\nLyle Scruggs (2014). Social Welfare Generosity Scores in CWED 2: A Methodological Genealogy, February 2014.",
     "crumbs": [
       "Séminaire les mesures de l'économie T208001"
     ]
@@ -937,6 +937,36 @@
     "text": "21 avril: distribution et inégalité (suite)",
     "crumbs": [
       "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "index.html#mars-exercice-pratique-évalué-1",
+    "href": "index.html#mars-exercice-pratique-évalué-1",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "31 mars: exercice pratique évalué (1)",
+    "text": "31 mars: exercice pratique évalué (1)",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "index.html#avril-distribution-et-inégalité-suite-de-1",
+    "href": "index.html#avril-distribution-et-inégalité-suite-de-1",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "21 avril: distribution et inégalité: suite de (1)",
+    "text": "21 avril: distribution et inégalité: suite de (1)",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "slides intro.html",
+    "href": "slides intro.html",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "",
+    "text": "Comprendre et maîtriser les outils indispensables de l’analyse économique\n\n\nCela comprend:\n\nLes variables économiques (PIB, inflation…)\nLes principes de modélisation\nLa programmation et l’analyse statistique",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
     ]
   }
 ]
