@@ -174,6 +174,19 @@ L'enquête sur le budget des ménages permet aussi de définir le panier de bien
 
 [![https://www.bfs.admin.ch/bfs/fr/home/statistiques/situation-economique-sociale-population/revenus-consommation-et-fortune/budget-des-menages.html](images/cours3/ebm.png)](https://www.bfs.admin.ch/bfs/fr/home/statistiques/situation-economique-sociale-population/revenus-consommation-et-fortune/budget-des-menages.html)
 
+## Exercice avec l'EBM {.smaller}
+
+- Allez sur la pagne de l'enquête sur le budget des ménages de l'OFS <https://www.bfs.admin.ch/bfs/fr/home/statistiques/situation-economique-sociale-population/revenus-consommation-et-fortune/budget-des-menages.html>
+
+- Trouvez le tableau excel "revenus et dépenses des ménages selon la classe de revenu" et téléchargez-le
+
+- Observez et familiarisez-vous avec les données: est-ce que certains chiffres retiennent votre attention ?
+
+- Dans Excel ou dans R, produisez un graphique qui permet de comparer les dépenses de consommation de la première et dernière classe de revenu.
+
+
+
+
 ## Les loyers imputés {.smaller}
 
 Une imputation très importante qui est ajoutée aux dépenses de consommation finale des ménages est celle des loyers imputés
@@ -213,11 +226,11 @@ $G$ est donc estimé à travers la somme des coûts de:
 
   - Les salaires versés aux employés du gouvernement
   - Plus l'achat par le gouvernement de matériels et autre consommation (le "C" propre à l'État)
-  - + la consommation de capital fixe (le "I" propre à l'État: achats de machines, de biens immobiliers etc.)
-  - + l'achat de biens et services par le gouvernement au bénéfice des ménages (ex: remboursement des soins de santé)
-  - + d'autres taxes payés sur la production (marginal)
-  - - les paiements des ménages et des firmes pour les services fournis par le gouvernement (ex: entrée au musé)
-  - - le comptre propre de consommation de capital fixe.
+  - la consommation de capital fixe (le "I" propre à l'État: achats de machines, de biens immobiliers etc.)
+  - l'achat de biens et services par le gouvernement au bénéfice des ménages (ex: remboursement des soins de santé)
+  - d'autres taxes payés sur la production (marginal)
+  - les paiements des ménages et des firmes pour les services fournis par le gouvernement (ex: entrée au musé)
+  - le comptre propre de consommation de capital fixe.
 
 ## Exportations et importations $X-M$ {.smaller}
 
@@ -265,6 +278,18 @@ Il existe une différence subtile mais qui peut être significative entre ce qui
 understanding national accounts page 154
 :::
 
+## Exercice {.smaller}
+
+- Allez sur le site web du secrétariat d'État à l'économie (SECO) <https://www.seco.admin.ch/seco/fr/home.html>
+
+- Trouvez la page sur laquelle le SECO met à disposition les données du PIB suisse selon les trois approches
+
+- Téléchargez le tableau excel "PIB, approche par la dépense, données brutes"
+
+- Calculez la part de chaque composante des dépenses $C$, $G$, $I$, $X$, $M$ dans le PIB. Utilisez les données nominales annuelles.
+
+- Produisez un graphique montrant la part de chacune des composantes des dépenses et leur évolution: comment ces parts ont-elles évolué depuis 1980 ?
+
 
 ## Approche revenu du PIB {.smaller}
 
@@ -285,7 +310,7 @@ L'excédent brut d'exploitation brut est le montant de profit dégagé par les e
 
 ## Revenu mixe et excédent brut
 
-Dans certains pays (comme en Suisse), le revenu mixe et le taux brut d'exploitation sont mélangés dans une seule catégorie. 
+Dans certains pays (comme en Suisse), le revenu mixe et l'excédent brut d'exploitation sont mélangés dans une seule catégorie. 
 
 - Cela pose problème pour le calcul de la part des salaires et des profits dans la valeur ajoutée, qu'il faut donc ajuster par la part des indépendant et des autoentrepreneurs dans l'emploi.
 
@@ -301,7 +326,7 @@ Divisons par le PIB
 <=>
 
 $$
-1 \equiv \frac{W}{PIB} + \frac{P}{PIB} \equiv w + r
+1 \equiv \frac{W}{PIB} + \frac{R}{PIB} \equiv w + r
 $$
 
 Cette identité comptable montre que le revenu total (1) est partagé entre les salaires et les profits 
@@ -322,7 +347,7 @@ Les trois approches que nous avons passées en revue: approches production, dép
 (3) $PIB \equiv W+R$
 
 
-## L'identité épargne = investissement {.smaller}
+## L'identité $épargne \equiv investissement$ {.smaller}
 
 Certaines identités comptables fondamentales de la macroéconomie sont obtenues en jouant avec ces trois identités comptables.
 
@@ -330,13 +355,19 @@ C'est le cas pour l'identité $S \equiv I + NX$, que vous allez voir ou avez dé
 
 C'est aussi le cas des balances sectorielles que vous allez voir dans le cours *les mesures de l'économie*
 
+## Exercice {.smaller}
 
+- Téléchargez le tableau Éxcel des données du PIB selon l'approche revenu sur la page du SECO
 
+- Calculez la part du profit et des salaires dans la valeur ajoutée (PIB) pour chaque année depuis 1990.
 
+- Faites la somme entre la part des salaires et des profits, que remarquez-vous ? En partant de l'équation $PIB \equiv W+R$, quelle devrait normalement être la valeur de cette somme ? Comment expliquer cet écart ?
 
+- Corrigez la série pour qu'elle s'additionne à 1
 
+- Allez sur DBnomics. Sous "providers", allez sur les données de l'AMECO et cherchez les données sur la part des salaires ("adjusted wage share"). Filtrer les données pour n'avoir que la part des salaires pour la Suisse.
 
-
+- Comparez la part des salaires de l'AMECO avec la série que vous avez calculé. Comment expliquer cet écart ?
 
 
 

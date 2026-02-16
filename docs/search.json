@@ -44,7 +44,7 @@
     "href": "slides intro.html#évaluation-du-cours",
     "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
     "section": "Évaluation du cours",
-    "text": "Évaluation du cours\n\nParticipation au cours (20%)\n\nLa participation aux séance est obligatoire et sera contrôlée à chaque début de cours\n\nExamens pratiques (80%)\n\nDeux examens: en milieu et fin de semestre\nIl s’agira de travaux pratiques à réaliser en cours de séance (2h), avec des exercices à réaliser sur R ou excel.",
+    "text": "Évaluation du cours\n\nParticipation au cours (20%)\n\nLa participation aux séance est obligatoire et sera contrôlée à chaque début de cours\n\nExamen pratique en dernière séance (80%)\n\nIl s’agira de travaux pratiques à réaliser en cours de séance (2h), avec des exercices à réaliser sur R ou excel.\n\nExamen blanc après les vacances de pâques: bonus si la note aide à améliorer la note finale",
     "crumbs": [
       "Introduction au séminaire, rappels de R et introduction à Quarto"
     ]
@@ -314,7 +314,7 @@
     "href": "3mars_cours2.html#estimation-simple-avec-lm",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Estimation simple avec lm()",
-    "text": "Estimation simple avec lm()\n\nlibrary(kableExtra)\n\nsystemfonts and textshaping have been compiled with different versions of Freetype. Because of this, textshaping will not use the font cache provided by systemfonts\n\nlibrary(broom)\nmodel = lm(data = macroch, # préciser le tableau dans lequel les variables sont présentes\n           formula = C_real ~ W_real) # la formule estimée doit prendre la forme Y ~ X\n\ntidy(model) %&gt;% \n  kable() \n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n43.1846843\n2.7815089\n15.52563\n0\n\n\nW_real\n0.7972749\n0.0103511\n77.02329\n0\n\n\n\n\n\nLa fonction estimée est donc:\n\\[C = 43 + 0.797W\\]",
+    "text": "Estimation simple avec lm()\n\nlibrary(kableExtra)\nlibrary(broom)\nmodel = lm(data = macroch, # préciser le tableau dans lequel les variables sont présentes\n           formula = C_real ~ W_real) # la formule estimée doit prendre la forme Y ~ X\n\ntidy(model) %&gt;% \n  kable() \n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n43.1846843\n2.7815089\n15.52563\n0\n\n\nW_real\n0.7972749\n0.0103511\n77.02329\n0\n\n\n\n\n\nLa fonction estimée est donc:\n\\[C = 43 + 0.797W\\]",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -634,7 +634,7 @@
     "href": "10mars_cours3.html#g",
     "title": "10 Mars. Comptabilité nationale (1)",
     "section": "\\(G\\)",
-    "text": "\\(G\\)\n\\(G\\) est donc estimé à travers la somme des coûts de:\n\nLes salaires versés aux employés du gouvernement\nPlus l’achat par le gouvernement de matériels et autre consommation (le “C” propre à l’État)\n\nla consommation de capital fixe (le “I” propre à l’État: achats de machines, de biens immobiliers etc.)\n\n\nl’achat de biens et services par le gouvernement au bénéfice des ménages (ex: remboursement des soins de santé)\n\n\nd’autres taxes payés sur la production (marginal)\n\n\nles paiements des ménages et des firmes pour les services fournis par le gouvernement (ex: entrée au musé)\n\n\nle comptre propre de consommation de capital fixe.",
+    "text": "\\(G\\)\n\\(G\\) est donc estimé à travers la somme des coûts de:\n\nLes salaires versés aux employés du gouvernement\nPlus l’achat par le gouvernement de matériels et autre consommation (le “C” propre à l’État)\nla consommation de capital fixe (le “I” propre à l’État: achats de machines, de biens immobiliers etc.)\nl’achat de biens et services par le gouvernement au bénéfice des ménages (ex: remboursement des soins de santé)\nd’autres taxes payés sur la production (marginal)\nles paiements des ménages et des firmes pour les services fournis par le gouvernement (ex: entrée au musé)\nle comptre propre de consommation de capital fixe.",
     "crumbs": [
       "10 Mars. Comptabilité nationale (1)"
     ]
@@ -694,7 +694,7 @@
     "href": "10mars_cours3.html#revenu-mixe-et-excédent-brut",
     "title": "10 Mars. Comptabilité nationale (1)",
     "section": "Revenu mixe et excédent brut",
-    "text": "Revenu mixe et excédent brut\nDans certains pays (comme en Suisse), le revenu mixe et le taux brut d’exploitation sont mélangés dans une seule catégorie.\n\nCela pose problème pour le calcul de la part des salaires et des profits dans la valeur ajoutée, qu’il faut donc ajuster par la part des indépendant et des autoentrepreneurs dans l’emploi.",
+    "text": "Revenu mixe et excédent brut\nDans certains pays (comme en Suisse), le revenu mixe et l’excédent brut d’exploitation sont mélangés dans une seule catégorie.\n\nCela pose problème pour le calcul de la part des salaires et des profits dans la valeur ajoutée, qu’il faut donc ajuster par la part des indépendant et des autoentrepreneurs dans l’emploi.",
     "crumbs": [
       "10 Mars. Comptabilité nationale (1)"
     ]
@@ -704,7 +704,7 @@
     "href": "10mars_cours3.html#calcul-non-ajusté-de-la-part-des-salaires-et-des-profits",
     "title": "10 Mars. Comptabilité nationale (1)",
     "section": "Calcul (non ajusté) de la part des salaires et des profits",
-    "text": "Calcul (non ajusté) de la part des salaires et des profits\n\\[\nPIB \\equiv W + R\n\\]\nDivisons par le PIB &lt;=&gt;\n\\[\n1 \\equiv \\frac{W}{PIB} + \\frac{P}{PIB} \\equiv w + r\n\\]\nCette identité comptable montre que le revenu total (1) est partagé entre les salaires et les profits",
+    "text": "Calcul (non ajusté) de la part des salaires et des profits\n\\[\nPIB \\equiv W + R\n\\]\nDivisons par le PIB &lt;=&gt;\n\\[\n1 \\equiv \\frac{W}{PIB} + \\frac{R}{PIB} \\equiv w + r\n\\]\nCette identité comptable montre que le revenu total (1) est partagé entre les salaires et les profits",
     "crumbs": [
       "10 Mars. Comptabilité nationale (1)"
     ]
@@ -733,8 +733,8 @@
     "objectID": "10mars_cours3.html#lidentité-épargne-investissement",
     "href": "10mars_cours3.html#lidentité-épargne-investissement",
     "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "L’identité épargne = investissement",
-    "text": "L’identité épargne = investissement\nCertaines identités comptables fondamentales de la macroéconomie sont obtenues en jouant avec ces trois identités comptables.\nC’est le cas pour l’identité \\(S \\equiv I + NX\\), que vous allez voir ou avez déjà vue en macroéconomie.\nC’est aussi le cas des balances sectorielles que vous allez voir dans le cours les mesures de l’économie",
+    "section": "L’identité $ épargne investissement $",
+    "text": "L’identité $ épargne investissement $\nCertaines identités comptables fondamentales de la macroéconomie sont obtenues en jouant avec ces trois identités comptables.\nC’est le cas pour l’identité \\(S \\equiv I + NX\\), que vous allez voir ou avez déjà vue en macroéconomie.\nC’est aussi le cas des balances sectorielles que vous allez voir dans le cours les mesures de l’économie",
     "crumbs": [
       "10 Mars. Comptabilité nationale (1)"
     ]
@@ -927,6 +927,136 @@
     "text": "Autres\n\nGuide sur la comptabilité nationale de Francis Malherbe https://www.comptanat.fr/\nGuide de l’OCDE pour la comptabilité nationale (Understanding National Accounts) https://www.oecd.org/content/dam/oecd/en/publications/reports/2014/10/understanding-national-accounts_g1g43f55/9789264214637-en.pdf",
     "crumbs": [
       "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#à-propos-de-moi",
+    "href": "slides intro.html#à-propos-de-moi",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "À propos de moi",
+    "text": "À propos de moi\n\n\n\nBachelor en histoire-économie-société (ancien nom !)\nMaster en économie politique du capitalisme (MAPEC)\nCertificat complémentaire en stastistiques appliquées (Gsem)\nIntérêt particulier à l’analyse du changement institutionnel des modèles socio-économiques européens (surtout la Suisse et la France), sous l’angle de l’économie politique néoréaliste d’Amable et Palombarini\nJe réalise une thèse sur les blocs sociaux et la transformation du mode de régulation et régime d’accumulation suisse depuis l’après-guerre",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#à-propos-de-vous",
+    "href": "slides intro.html#à-propos-de-vous",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "À propos de vous",
+    "text": "À propos de vous\n\nDeuxième ou troisième année de bachelor ou plus ?\nLes cours non-obligatoires que vous avez eus jusqu’à maintenant, et les cours que vous prendrez ce semestre\nLe cours que vous avez le plus apprécié jusqu’à maintenant\nPlutôt quanti ou quali ? Économie politique ou histoire économique ?\nVos connaissances de R, d’excel et en statistiques ?\n\n==&gt; Cela m’aidera à adapter ce séminaire pour qu’il vous soit le plus utile possible !",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#r-un-outil-indispensable-en-économie",
+    "href": "slides intro.html#r-un-outil-indispensable-en-économie",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "R: un outil indispensable en économie",
+    "text": "R: un outil indispensable en économie\n\n\n\n\n\n\n\n\nL’un des logiciels les plus utilisés par les économistes, que ce soit pour la visualisation de données ou l’estimation de modèles économétriques. Grande flexiblité et potentiel énorme.",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#quarto",
+    "href": "slides intro.html#quarto",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Quarto",
+    "text": "Quarto\nQuarto est un système de publication qui permet de produire des documents directement à partir de Rstudio (exemple: powerpoints, pdf, sites web…) et donc de code en R.",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#exercices",
+    "href": "slides intro.html#exercices",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Exercices",
+    "text": "Exercices\n\nInstallez Quarto.\nInstallez tinytex en runnant cette commande dans le terminal quarto install tinytex\nCréez un document quarto pour chaque type de document possible: html pdf, word et powerpoint (avec revealjs)",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#github",
+    "href": "slides intro.html#github",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Github",
+    "text": "Github\n\nLogiciel permettant de développer un dépôt (repository ou “repo”), consistant en un fichier contenant votre code (dans le cadre de ce cours les exercices sur R/quarto et excel)\nPermet de sauvegarder dans un cloud et contrôler de manière minutieuse toutes les modifications\nPermet le contrôle par les paires de votre travail, ou bien de travailler à plusieurs à distance sur le même travail",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#exercice",
+    "href": "slides intro.html#exercice",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Exercice",
+    "text": "Exercice\n\nInstallez Quarto.\nCréez-vous un compte github &lt;github.com&gt; et installez github desktop https://desktop.github.com/download/\nInstallez tinytex en runnant cette commande dans le terminal quarto install tinytex\nCréez un document quarto pour chaque type de document possible: html pdf, word et powerpoint (avec revealjs), faites attention à bien sauvegarder ce document quarto dans un fichier à part entière.\nCréez un repo github à partir de ce fichier.",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "index.html#mars-distribution-et-inégalité-1",
+    "href": "index.html#mars-distribution-et-inégalité-1",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "31 mars: distribution et inégalité (1)",
+    "text": "31 mars: distribution et inégalité (1)\nSources de données et méthodes pour analyser la distribution du revenu national. Comment calculer la courbe de Lorenz; la relation et le coefficient de Pareto; le coefficient de Gini et les top shares. Exercice avec les données fiscales suisses.\nSources:\n\nCowell, Frank Alan. Measuring Inequality. Third edition. LSE Perspectives in Economic Analysis. University Press, 2011.",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "index.html#avril-examen-blanc-bonus",
+    "href": "index.html#avril-examen-blanc-bonus",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "14 avril: examen blanc (bonus)",
+    "text": "14 avril: examen blanc (bonus)\nExamen blanc, bonus pour la note finale si le résultat aide à améliorer cette dernière. Cet examen portera sur le contenu des cinq première séance et consistera en un travail pratique sur excel et R à réaliser lors du cours.",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#exercice-avec-lebm",
+    "href": "10mars_cours3.html#exercice-avec-lebm",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Exercice avec l’EBM",
+    "text": "Exercice avec l’EBM\n\nAllez sur la pagne de l’enquête sur le budget des ménages de l’OFS https://www.bfs.admin.ch/bfs/fr/home/statistiques/situation-economique-sociale-population/revenus-consommation-et-fortune/budget-des-menages.html\nTrouvez le tableau excel “revenus et dépenses des ménages selon la classe de revenu” et téléchargez-le\nObservez et familiarisez-vous avec les données: est-ce que certains chiffres retiennent votre attention ?\nDans Excel ou dans R, produisez un graphique qui permet de comparer les dépenses de consommation de la première et dernière classe de revenu.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#exercice",
+    "href": "10mars_cours3.html#exercice",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Exercice",
+    "text": "Exercice\n\nAllez sur le site web du secrétariat d’État à l’économie (SECO) https://www.seco.admin.ch/seco/fr/home.html\nTrouvez la page sur laquelle le SECO met à disposition les données du PIB suisse selon les trois approches\nTéléchargez le tableau excel “PIB, approche par la dépense, données brutes”\nCalculez la part de chaque composante des dépenses \\(C\\), \\(G\\), \\(I\\), \\(X\\), \\(M\\) dans le PIB. Utilisez les données nominales annuelles.\nProduisez un graphique montrant la part de chacune des composantes des dépenses et leur évolution: comment ces parts ont-elles évolué depuis 1980 ?",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#exercice-1",
+    "href": "10mars_cours3.html#exercice-1",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Exercice",
+    "text": "Exercice\n\nTéléchargez le tableau Éxcel des données du PIB selon l’approche revenu sur la page du SECO\nCalculez la part du profit et des salaires dans la valeur ajoutée (PIB) pour chaque année depuis 1990.\nFaites la somme entre la part des salaires et des profits, que remarquez-vous ? En partant de l’équation \\(PIB \\equiv W+R\\), quelle devrait normalement être la valeur de cette somme ? Comment expliquer cet écart ?\nCorrigez la série pour qu’elle s’additionne à 1\nAllez sur DBnomics. Sous “providers”, allez sur les données de l’AMECO et cherchez les données sur la part des salaires (“adjusted wage share”). Filtrer les données pour n’avoir que la part des salaires pour la Suisse.\nComparez la part des salaires de l’AMECO avec la série que vous avez calculé. Comment expliquer cet écart ?",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#lidentité-épargne-equiv-investissement",
+    "href": "10mars_cours3.html#lidentité-épargne-equiv-investissement",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "L’identité \\(épargne \\equiv investissement\\)",
+    "text": "L’identité \\(épargne \\equiv investissement\\)\nCertaines identités comptables fondamentales de la macroéconomie sont obtenues en jouant avec ces trois identités comptables.\nC’est le cas pour l’identité \\(S \\equiv I + NX\\), que vous allez voir ou avez déjà vue en macroéconomie.\nC’est aussi le cas des balances sectorielles que vous allez voir dans le cours les mesures de l’économie",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
     ]
   }
 ]

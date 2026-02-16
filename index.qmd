@@ -61,17 +61,19 @@ Indice des prix à la consommation, déflateur, indices en chaîne et parité de
 
 -   Lequiller, François, and Derek Blades. Understanding National Accounts. Second Edition. OECD, 2014. Chapitres 2 et 3
 
-## 31 mars: exercice pratique évalué (1)
-
-## 7 avril: pas de cours (vacances de Pâques)
-
-## 14 avril: distribution et inégalité (1)
+## 31 mars: distribution et inégalité (1)
 
 Sources de données et méthodes pour analyser la distribution du revenu national. Comment calculer la courbe de Lorenz; la relation et le coefficient de Pareto; le coefficient de Gini et les top shares. Exercice avec les données fiscales suisses.
 
 Sources:
 
 -   Cowell, Frank Alan. Measuring Inequality. Third edition. LSE Perspectives in Economic Analysis. University Press, 2011.
+
+## 7 avril: pas de cours (vacances de Pâques)
+
+## 14 avril: examen blanc (bonus)
+
+Examen blanc, bonus pour la note finale si le résultat aide à améliorer cette dernière. Cet examen portera sur le contenu des cinq première séance et consistera en un travail pratique sur excel et R à réaliser lors du cours.
 
 ## 21 avril: distribution et inégalité: suite de (1)
 

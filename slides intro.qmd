@@ -34,6 +34,34 @@ Cela comprend:
 -   Les principes de modélisation
 -   La programmation et l'analyse statistique
 
+## À propos de moi {.smaller}
+
+::::: columns
+::: {.column width="65%"}
+-   Bachelor en histoire-économie-société (ancien nom !)
+-   Master en économie politique du capitalisme (MAPEC)
+-   Certificat complémentaire en stastistiques appliquées (Gsem)
+-   Intérêt particulier à l'analyse du changement institutionnel des modèles socio-économiques européens (surtout la Suisse et la France), sous l'angle de l'économie politique néoréaliste d'Amable et Palombarini
+-   Je réalise une thèse sur les blocs sociaux et la transformation du mode de régulation et régime d'accumulation suisse depuis l'après-guerre
+:::
+
+::: {.column width="35%"}
+![](images/these.png){width="416"}
+
+![](images/troisblocs.png){width="423"}
+:::
+:::::
+
+## À propos de vous {.smaller}
+
+-   Deuxième ou troisième année de bachelor ou plus ?
+-   Les cours non-obligatoires que vous avez eus jusqu'à maintenant, et les cours que vous prendrez ce semestre
+-   Le cours que vous avez le plus apprécié jusqu'à maintenant
+-   Plutôt quanti ou quali ? Économie politique ou histoire économique ?
+-   Vos connaissances de R, d'excel et en statistiques ?
+
+==\> Cela m'aidera à adapter ce séminaire pour qu'il vous soit le plus utile possible !
+
 ## Plan du cours
 
 12 séances au total sur 3 thèmes de mesures
@@ -50,23 +78,37 @@ Après ce cours, vous devriez être capable de mener vos propres analyses quanti
 
 ==\> Outils inspensable: R(studio) et Quarto
 
-## R & Quarto
+## R: un outil indispensable en économie {.smaller}
 
-En économie, la maîtrise de R est indispensable, car permet:
+:::::: columns
+:::: {.column width="60%"}
+::: r-stack
+![](images/graph_subventions.png){width="563"}
 
--   Le traitement et la visualisation de données
--   La modélisation (régression linéaire, simulation de modèles)
--   L'analyse
+![](images/carte_allegement_prime_standards.png){.fragment width="495"}
+
+![](images/tbl_model2.png){.fragment width="407"}
+:::
+::::
+
+::: {.column width="40%"}
+L'un des logiciels les plus utilisés par les économistes, que ce soit pour la visualisation de données ou l'estimation de modèles économétriques. Grande flexiblité et potentiel énorme.
+:::
+::::::
+
+## Quarto {.smaller}
 
 Quarto est un système de publication qui permet de produire des documents directement à partir de Rstudio (exemple: powerpoints, pdf, sites web...) et donc de code en R.
+
+![](images/quartoexemple.png){fig-align="center"}
 
 ## Évaluation du cours
 
 -   Participation au cours (20%)
     -   La participation aux séance est obligatoire et sera contrôlée à chaque début de cours
--   Examens pratiques (80%)
-    -   Deux examens: en milieu et fin de semestre
+-   Examen pratique en dernière séance (80%)
     -   Il s'agira de travaux pratiques à réaliser en cours de séance (2h), avec des exercices à réaliser sur R ou excel.
+-   Examen blanc après les vacances de pâques: bonus si la note aide à améliorer la note finale
 
 ## À propos de l'intelligence artificielle {style="font-size: 1.7rem; line-height:1.6;"}
 
@@ -96,6 +138,21 @@ En dehors des examens en présence, je ne peux pas vous interdire l'utilisation 
 
 [![](images/moodle1.png)](https://moodle.unige.ch/mod/page/view.php?id=1127071)
 
+## Github {.smaller}
+
+- Logiciel permettant de développer un dépôt (repository ou "repo"), consistant en un fichier contenant votre code (dans le cadre de ce cours les exercices sur R/quarto et excel)
+- Permet de sauvegarder dans un cloud et contrôler de manière minutieuse toutes les modifications
+- Permet le contrôle par les paires de votre travail, ou bien de travailler à plusieurs à distance sur le même travail
+
+## Exercice {.smaller}
+
+- Installez Quarto.
+- Créez-vous un compte github <github.com> et installez github desktop <https://desktop.github.com/download/> 
+- Installez tinytex en runnant cette commande dans le terminal `quarto install tinytex`
+- Créez un document quarto pour chaque type de document possible: html pdf, word et powerpoint (avec revealjs), faites attention à bien sauvegarder ce document quarto dans un fichier à part entière.
+- Créez un repo github à partir de ce fichier.
+
+
 # Atelier: traitement des données des Penn World Tables
 
 ## Penn World Tables {.smaller}
@@ -109,7 +166,7 @@ Voici la documentation du tableau de données <https://vincentarelbundock.github
 ## PWT variables {.smaller}
 
 | Variable | Description |
-|---------|-------------|
+|------------------------------|------------------------------------------|
 | **country** | Nom du pays. |
 | **isocode** | Code ISO du pays. |
 | **year** | Année (numérique). |
@@ -137,12 +194,12 @@ pwt = Rdatasets::rddata("pwt_sample")
 
 ```
 
-
 ## R {.smaller}
 
 {{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
 
 Importer la PWT en utilisant le package Rdatasets
+
 ```{webr}
 # copier coller ce code dans votre script quarto
 library(tidyverse)
@@ -164,7 +221,6 @@ pwt = Rdatasets::rddata("pwt_sample")
 
 ```
 
-
 ## Le package esquisse
 
 Permet d'utiliser une interface permettant d'explorer les données et produire des graphiques sans coder soi-même
@@ -182,7 +238,8 @@ Dbnomics est une base de données internationale rassembland en une base de nomb
 
 Le package rdbnomics permet d'importer ces données directement dans R.
 
-Exemple: 
+Exemple:
+
 ```{webr}
 # copier coller le code dans votre script quarto, installer les packages si besoin
 
@@ -193,4 +250,14 @@ library(stats)
 GDP <- rdb(ids = "AMECO/RVGDP/CHE.1.1.0.0.RVGDP") 
 
 ```
+
+
+
+
+
+
+
+
+
+
 
