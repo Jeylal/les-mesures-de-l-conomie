@@ -1,0 +1,117 @@
+---
+title: "Exercice AFC 2022 R"
+author: "Celâl Güney"
+format: html
+editor: visual
+---
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(readxl)
+
+exercices_gini_afc2022_r <- read_excel("exercices_gini_afc2022_r.xlsx", 
+    sheet = "CH", skip = 1)
+
+```
+
+Calcul des fréquences relatives cumulées des revenus et des contribuables
+
+```{r cumulative relative frequencies ch}
+#| echo: false
+#| message: false
+#| warning: false
+
+data <- exercices_gini_afc2022_r %>% 
+  mutate(
+    freq_rel_cumul_contr = cumsum(nombre_contribuables)/sum(nombre_contribuables),
+    freq_rel_cumul_revenu = cumsum(revenu_net)/sum(revenu_net)
+  )
+
+```
+
+
+Graphique de la courbe de Lorenz: fréquence relative cumulée du revenu et fréquence relative cumulée des contribuables
+
+```{r lorenz curve ch}
+
+data %>% 
+  ggplot(aes(x = freq_rel_cumul_contr, y = freq_rel_cumul_revenu))+
+  geom_point()+
+  geom_line()+
+  geom_segment(aes(x = 0, y = 0, xend = 1, yend = 1))+
+  theme_minimal()
+```
+
+
+Calcul du coefficient de Gini
+
+```{r gini coefficient}
+
+# first triangle under the Lorenz curve
+
+
+triangle = rep(NA, length(data$freq_rel_cumul_contr))
+
+triangle[1] = (data$freq_rel_cumul_contr[1]*data$freq_rel_cumul_revenu[1])/2
+
+
+for (i in 2:length(data$freq_rel_cumul_contr)) {
+  
+  triangle[i] = (data$freq_rel_cumul_contr[i]-data$freq_rel_cumul_contr[i-1])*(data$freq_rel_cumul_revenu[i]-data$freq_rel_cumul_revenu[i-1])/2
+  
+}
+
+square = rep(NA, length(data$freq_rel_cumul_contr[-1]))
+
+for (i in 1:length(data$freq_rel_cumul_contr)) {
+  
+  square[i] = (data$freq_rel_cumul_contr[i+1]-data$freq_rel_cumul_contr[i])*data$freq_rel_cumul_revenu[i]
+  
+  
+}
+
+# somme des aires des triangles et des carrés
+
+somme_aires = sum(square, na.rm = T)+sum(triangle)
+
+# Gini = 1 - 2*somme_aire
+
+gini = 1-2*somme_aires
+
+```
+
+
+Relation de Pareto
+
+```{r}
+
+plot(data$seuil_revenu_inférieur, 1-data$freq_rel_cumul_contr, type = "l")
+
+data3 <- data %>% 
+  mutate(
+    revenu_moyen_tranche = revenu_net/nombre_contribuables,
+    inv_freq_rel_cumul_contr = 0.999 - freq_rel_cumul_contr,
+    log_revenu_moyen_tranche = log(revenu_moyen_tranche),
+    log_inv_freq_rel_cumul_contr = log(inv_freq_rel_cumul_contr)
+  )
+
+
+data3 %>% 
+  ggplot(aes(x = revenu_moyen_tranche, y = inv_freq_rel_cumul_contr))+
+  geom_point()+
+  geom_line()
+
+
+summary(lm(data = data3,
+           log_inv_freq_rel_cumul_contr ~ log_revenu_moyen_tranche))  
+  
+  
+```
+
+
+
+
