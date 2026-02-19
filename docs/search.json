@@ -684,7 +684,7 @@
     "href": "10mars_cours3.html#approche-revenu-du-pib",
     "title": "10 Mars. Comptabilité nationale (1)",
     "section": "Approche revenu du PIB",
-    "text": "Approche revenu du PIB\n\\[\nPIB \\equiv W + R\n\\]\nLe pib peut aussi est défini comme la somme de tous les revenus d’une économie, répartis entre les salaires \\(W\\) et les profits \\(R\\) (en ignorant les rentes ou bien en les considérant comme partie des profits).\nEn comptabilité nationale:\n\\[\nPIB = compensation \\ des \\ employés + excédent\\ brut \\ d'exploitation\\ et \\ revenu \\ mixte\n\\] La compensation des employés est la variable la plus similaire aux salaires \\(W\\), mais a une conception plus large car est plus globale que les salaires (inclut toutes les rémunérations des salariés).\nL’excédent brut d’exploitation brut est le montant de profit dégagé par les entreprises \\(P\\) (gross operating surplus), le revenu mixte (mixed income) est le revenu des indépendants et auto-entrepreneurs.",
+    "text": "Approche revenu du PIB\n\\[\nPIB \\equiv WL + R\n\\]\nLe pib peut aussi est défini comme la somme de tous les revenus d’une économie, répartis entre tous les salaires versés dans l’économie (\\(W\\) le salaire nominal multiplié par la quantité de travail \\(L\\)) et les profits \\(R\\) (en ignorant les rentes ou bien en les considérant comme partie des profits).\nEn comptabilité nationale:\n\\[\nPIB = compensation \\ des \\ employés + excédent\\ brut \\ d'exploitation\\ et \\ revenu \\ mixte\n\\] La compensation des employés est la variable la plus similaire aux salaires \\(W\\), mais a une conception plus large car est plus globale que les salaires (inclut toutes les rémunérations des salariés).\nL’excédent brut d’exploitation brut est le montant de profit dégagé par les entreprises \\(P\\) (gross operating surplus), le revenu mixte (mixed income) est le revenu des indépendants et auto-entrepreneurs.",
     "crumbs": [
       "10 Mars. Comptabilité nationale (1)"
     ]
@@ -704,7 +704,7 @@
     "href": "10mars_cours3.html#calcul-non-ajusté-de-la-part-des-salaires-et-des-profits",
     "title": "10 Mars. Comptabilité nationale (1)",
     "section": "Calcul (non ajusté) de la part des salaires et des profits",
-    "text": "Calcul (non ajusté) de la part des salaires et des profits\n\\[\nPIB \\equiv W + R\n\\]\nDivisons par le PIB &lt;=&gt;\n\\[\n1 \\equiv \\frac{W}{PIB} + \\frac{R}{PIB} \\equiv w + r\n\\]\nCette identité comptable montre que le revenu total (1) est partagé entre les salaires et les profits",
+    "text": "Calcul (non ajusté) de la part des salaires et des profits\n\\[\nPY \\equiv WL + R\n\\]\nAvec \\(PY\\) le pib nominal (le pib réel P multiplié par le niveau des prix P), \\(W\\) le salaire nominal et \\(L\\) la quantité de travail (soit mesurée en heures de travail, soit par le nombre de personnes employées) et \\(R\\) l’excédent brut d’exploitation (les profits).",
     "crumbs": [
       "10 Mars. Comptabilité nationale (1)"
     ]
@@ -1034,7 +1034,7 @@
     "href": "10mars_cours3.html#exercice",
     "title": "10 Mars. Comptabilité nationale (1)",
     "section": "Exercice",
-    "text": "Exercice\n\nAllez sur le site web du secrétariat d’État à l’économie (SECO) https://www.seco.admin.ch/seco/fr/home.html\nTrouvez la page sur laquelle le SECO met à disposition les données du PIB suisse selon les trois approches\nTéléchargez le tableau excel “PIB, approche par la dépense, données brutes”\nCalculez la part de chaque composante des dépenses \\(C\\), \\(G\\), \\(I\\), \\(X\\), \\(M\\) dans le PIB. Utilisez les données nominales annuelles.\nProduisez un graphique montrant la part de chacune des composantes des dépenses et leur évolution: comment ces parts ont-elles évolué depuis 1980 ?",
+    "text": "Exercice\n\nAllez sur le site web du secrétariat d’État à l’économie (SECO) https://www.seco.admin.ch/seco/fr/home.html\nTrouvez la page sur laquelle le SECO met à disposition les données du PIB suisse selon les trois approches\nTéléchargez le tableau excel “PIB, approche par la dépense, données brutes”, importez la feuille contenant les données nominales annuelles dans R.\nCalculez la part de chaque composante des dépenses \\(C\\), \\(G\\), \\(I\\), \\(X\\), \\(M\\) dans le PIB.\nProduisez un graphique montrant la part de chacune des composantes des dépenses et leur évolution: comment ces parts ont-elles évolué depuis 1980 ?\nCalculez les contributions à la croissance annuelle. Quelle composante des dépense du PIB contribue-t-elle le plus à la croissance ?",
     "crumbs": [
       "10 Mars. Comptabilité nationale (1)"
     ]
@@ -1065,5 +1065,55 @@
     "title": "Exercice AFC 2022 R",
     "section": "",
     "text": "Calcul des fréquences relatives cumulées des revenus et des contribuables\nGraphique de la courbe de Lorenz: fréquence relative cumulée du revenu et fréquence relative cumulée des contribuables\n\ndata %&gt;% \n  ggplot(aes(x = freq_rel_cumul_contr, y = freq_rel_cumul_revenu))+\n  geom_point()+\n  geom_line()+\n  geom_segment(aes(x = 0, y = 0, xend = 1, yend = 1))+\n  theme_minimal()\n\nWarning in geom_segment(aes(x = 0, y = 0, xend = 1, yend = 1)): All aesthetics have length 1, but the data has 26 rows.\nℹ Please consider using `annotate()` or provide this layer with data containing\n  a single row.\n\n\n\n\n\n\n\n\n\nCalcul du coefficient de Gini\n\n# first triangle under the Lorenz curve\n\n\ntriangle = rep(NA, length(data$freq_rel_cumul_contr))\n\ntriangle[1] = (data$freq_rel_cumul_contr[1]*data$freq_rel_cumul_revenu[1])/2\n\n\nfor (i in 2:length(data$freq_rel_cumul_contr)) {\n  \n  triangle[i] = (data$freq_rel_cumul_contr[i]-data$freq_rel_cumul_contr[i-1])*(data$freq_rel_cumul_revenu[i]-data$freq_rel_cumul_revenu[i-1])/2\n  \n}\n\nsquare = rep(NA, length(data$freq_rel_cumul_contr[-1]))\n\nfor (i in 1:length(data$freq_rel_cumul_contr)) {\n  \n  square[i] = (data$freq_rel_cumul_contr[i+1]-data$freq_rel_cumul_contr[i])*data$freq_rel_cumul_revenu[i]\n  \n  \n}\n\n# somme des aires des triangles et des carrés\n\nsomme_aires = sum(square, na.rm = T)+sum(triangle)\n\n# Gini = 1 - 2*somme_aire\n\ngini = 1-2*somme_aires\n\nRelation de Pareto\n\nplot(data$seuil_revenu_inférieur, 1-data$freq_rel_cumul_contr, type = \"l\")\n\n\n\n\n\n\n\ndata3 &lt;- data %&gt;% \n  mutate(\n    revenu_moyen_tranche = revenu_net/nombre_contribuables,\n    inv_freq_rel_cumul_contr = 0.999 - freq_rel_cumul_contr,\n    log_revenu_moyen_tranche = log(revenu_moyen_tranche),\n    log_inv_freq_rel_cumul_contr = log(inv_freq_rel_cumul_contr)\n  )\n\nWarning: There was 1 warning in `mutate()`.\nℹ In argument: `log_inv_freq_rel_cumul_contr = log(inv_freq_rel_cumul_contr)`.\nCaused by warning in `log()`:\n! Production de NaN\n\ndata3 %&gt;% \n  ggplot(aes(x = revenu_moyen_tranche, y = inv_freq_rel_cumul_contr))+\n  geom_point()+\n  geom_line()\n\n\n\n\n\n\n\nsummary(lm(data = data3,\n           log_inv_freq_rel_cumul_contr ~ log_revenu_moyen_tranche))  \n\n\nCall:\nlm(formula = log_inv_freq_rel_cumul_contr ~ log_revenu_moyen_tranche, \n    data = data3)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-2.2311 -0.2960  0.3214  0.5412  0.5727 \n\nCoefficients:\n                         Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)               16.8909     2.0606   8.197 5.56e-08 ***\nlog_revenu_moyen_tranche  -1.6607     0.1837  -9.039 1.10e-08 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 0.7714 on 21 degrees of freedom\n  (3 observations effacées parce que manquantes)\nMultiple R-squared:  0.7955,    Adjusted R-squared:  0.7858 \nF-statistic: 81.71 on 1 and 21 DF,  p-value: 1.102e-08"
+  },
+  {
+    "objectID": "10mars_cours3.html#calcul-non-ajusté-de-la-part-des-salaires-et-des-profits-2",
+    "href": "10mars_cours3.html#calcul-non-ajusté-de-la-part-des-salaires-et-des-profits-2",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Calcul (non ajusté) de la part des salaires et des profits (2)",
+    "text": "Calcul (non ajusté) de la part des salaires et des profits (2)\nDivisons par le PIB\n\\(/PY\\)&lt;=&gt;\n\\[\n1 \\equiv \\frac{WL}{PY} + \\frac{R}{PY} \\equiv wa_0 + r\n\\]\nAvec \\(w\\) le salaire réel (\\(W/P\\)), \\(a_0\\) le ratio travail-output (\\(L/Y\\)) et r la part des profits. \\(wa_0\\) est la part des salaires dans le revenu national (PIB).\n\n\n\n\n\n\nPart des salaires et coût unitaire du travail (Unit labour cost)\n\n\nLa part des salaires \\(wa_0 = \\frac{WL}{PY}\\) mesure la quantité de rémunération des salariés pour chaque unité d’output (\\(PY\\)), c’est pour cela que ce ratio est aussi considéré comme le “coût” unitaire du travail.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#contributions-à-la-croissance",
+    "href": "10mars_cours3.html#contributions-à-la-croissance",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Contributions à la croissance",
+    "text": "Contributions à la croissance\nL’approche dépense du PIB implique que le taux de croissance du PIB peut être décomposé dans ses différentes composantes:\n\\[\n\\frac{Y_t - Y_{t-1}}{Y_{t-1}} = \\frac{C_t - C_{t-1}}{Y_{t-1}} + \\frac{I_t - I_{t-1}}{Y_{t-1}} + \\frac{G_t - G_{t-1}}{Y_{t-1}} + \\frac{NX_t - NX_{t-1}}{Y_{t-1}}\n\\]\nAvec \\(Y_t\\) et \\(NX_t\\) le PIB nominal et les exportations net à la période \\(t\\). Claculer ces contributions à la croissance permet d’identifier si la croissance entre les périodes considérées est principalement tirée par la consommation, l’investissement, la dépense publique ou les exportations nettes.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#exercice-1-enquête-sur-le-budget-des-ménages",
+    "href": "10mars_cours3.html#exercice-1-enquête-sur-le-budget-des-ménages",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Exercice 1: enquête sur le budget des ménages",
+    "text": "Exercice 1: enquête sur le budget des ménages\n\nAllez sur la pagne de l’enquête sur le budget des ménages de l’OFS https://www.bfs.admin.ch/bfs/fr/home/statistiques/situation-economique-sociale-population/revenus-consommation-et-fortune/budget-des-menages.html\nTrouvez le tableau excel “revenus et dépenses des ménages selon la classe de revenu” et téléchargez-le\nObservez et familiarisez-vous avec les données: est-ce que certains chiffres retiennent votre attention ?\nDans Excel ou dans R, produisez un graphique qui permet de comparer les dépenses de consommation de la première et dernière classe de revenu.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#exercice-2",
+    "href": "10mars_cours3.html#exercice-2",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Exercice 2",
+    "text": "Exercice 2\n\nAllez sur le site web du secrétariat d’État à l’économie (SECO) https://www.seco.admin.ch/seco/fr/home.html\nTrouvez la page sur laquelle le SECO met à disposition les données du PIB suisse selon les trois approches\nTéléchargez le tableau excel “PIB, approche par la dépense, données brutes”, importez la feuille contenant les données nominales annuelles dans R.\nCalculez la part de chaque composante des dépenses \\(C\\), \\(G\\), \\(I\\), \\(X\\), \\(M\\) dans le PIB.\nProduisez un graphique montrant la part de chacune des composantes des dépenses et leur évolution: comment ces parts ont-elles évolué depuis 1980 ?\nCalculez les contributions à la croissance annuelle. Quelle composante des dépense du PIB contribue-t-elle le plus à la croissance ?",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#exercice-3",
+    "href": "10mars_cours3.html#exercice-3",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Exercice 3",
+    "text": "Exercice 3\n\nTéléchargez le tableau Éxcel des données du PIB selon l’approche revenu sur la page du SECO\nCalculez la part du profit et des salaires dans la valeur ajoutée (PIB) pour chaque année depuis 1990.\nFaites la somme entre la part des salaires et des profits, que remarquez-vous ? En partant de l’équation \\(PIB \\equiv W+R\\), quelle devrait normalement être la valeur de cette somme ? Comment expliquer cet écart ?\nCorrigez la série pour qu’elle s’additionne à 1\nAllez sur DBnomics. Sous “providers”, allez sur les données de l’AMECO et cherchez les données sur la part des salaires (“adjusted wage share”). Filtrer les données pour n’avoir que la part des salaires pour la Suisse.\nComparez la part des salaires de l’AMECO avec la série que vous avez calculé. Comment expliquer cet écart ?",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
   }
 ]

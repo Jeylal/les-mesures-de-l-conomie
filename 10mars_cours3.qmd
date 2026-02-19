@@ -95,7 +95,7 @@ Exemple: données fiscales (qui permettent les mesures de distribution du revenu
 Le terme de comptabilité peut être trompeur, car la comptabilité nationale est très différente de la comptabilité en entreprise:
 
 -   Le comptable d'une entreprise dispose de registres avec une information complète sur les données de l'entreprise
--    Cela n'est pas possible pour la comptabilité nationale (impliquerait une information exhaustive sur des millions d'individus et d'entreprises)
+-   Cela n'est pas possible pour la comptabilité nationale (impliquerait une information exhaustive sur des millions d'individus et d'entreprises)
 -   La comptabilité nationale repose donc forcément sur une information partielle qui nécessite des approximations, des estimations et des révisions
 
 ## Comptabilité nationale et statistique {style="font-size: 1.6rem; line-height:1.6;"}
@@ -144,7 +144,7 @@ Les "acteurs" de la comptabilité nationale sont les "secteurs institutionnels" 
 -   Les ménages (dont les "institutions sans but lucratif au service des ménages" ISBLSM)
     -   Les ISBLSM sont des organisations crées par des groupes de ménages afin de fournir un service de manière non-lucrative. Exemple: syndicats, organisations religieuses, associations philantropiques, de charité... (comme la Croix-Rouge). Une telle organisation doit être financée par des donations ou un abonnement régulier afin d'être considéré comme une ISBLSM par la comptabilité nationale (voir UNA, p.141).
 
-## Approche production du PIB 
+## Approche production du PIB
 
 $$PIB = \sum valeurs\ ajoutées \\ - \sum consommations \ intermédiaires\\ + taxes \ sur \ les \ produits \\ - subventions \ sur \ les \ produits$$
 
@@ -174,79 +174,72 @@ L'enquête sur le budget des ménages permet aussi de définir le panier de bien
 
 [![https://www.bfs.admin.ch/bfs/fr/home/statistiques/situation-economique-sociale-population/revenus-consommation-et-fortune/budget-des-menages.html](images/cours3/ebm.png)](https://www.bfs.admin.ch/bfs/fr/home/statistiques/situation-economique-sociale-population/revenus-consommation-et-fortune/budget-des-menages.html)
 
-## Exercice avec l'EBM {.smaller}
+## Exercice 1: enquête sur le budget des ménages {.smaller}
 
-- Allez sur la pagne de l'enquête sur le budget des ménages de l'OFS <https://www.bfs.admin.ch/bfs/fr/home/statistiques/situation-economique-sociale-population/revenus-consommation-et-fortune/budget-des-menages.html>
+-   Allez sur la pagne de l'enquête sur le budget des ménages de l'OFS <https://www.bfs.admin.ch/bfs/fr/home/statistiques/situation-economique-sociale-population/revenus-consommation-et-fortune/budget-des-menages.html>
 
-- Trouvez le tableau excel "revenus et dépenses des ménages selon la classe de revenu" et téléchargez-le
+-   Trouvez le tableau excel "revenus et dépenses des ménages selon la classe de revenu" et téléchargez-le
 
-- Observez et familiarisez-vous avec les données: est-ce que certains chiffres retiennent votre attention ?
+-   Observez et familiarisez-vous avec les données: est-ce que certains chiffres retiennent votre attention ?
 
-- Dans Excel ou dans R, produisez un graphique qui permet de comparer les dépenses de consommation de la première et dernière classe de revenu.
-
-
-
+-   Dans Excel ou dans R, produisez un graphique qui permet de comparer les dépenses de consommation de la première et dernière classe de revenu.
 
 ## Les loyers imputés {.smaller}
 
 Une imputation très importante qui est ajoutée aux dépenses de consommation finale des ménages est celle des loyers imputés
 
-- On impute aux propriétaires de leur logement le loyer qu'ils payeraient s'il n'étaient pas propriétaires.
+-   On impute aux propriétaires de leur logement le loyer qu'ils payeraient s'il n'étaient pas propriétaires.
 
 Pourquoi ces loyers imputés sont-ils nécessaires ?
 
 Car si on ne prenait pas en compte ces loyers imputés, on verrait *une baisse tendancielle du PIB* due à l'augmentation structurelle du nombre absolu de propriétaire.
 
-
-
 ## $I$ Investissement {.smaller}
 
-- Sont définis (dans la comptabilité nationale) comme investissement les achats de machines (logiciels informatiques inclus), les achats immobiliers et la constitution de stocks (inventaires).
-  ==> **Formation brut de capital (gross capital formation)**
-  
+-   Sont définis (dans la comptabilité nationale) comme investissement les achats de machines (logiciels informatiques inclus), les achats immobiliers et la constitution de stocks (inventaires). ==\> **Formation brut de capital (gross capital formation)**
+
 En ne prenant pas en compte les inventaires: **formation brut de capital fixed (gross fixed capital formation)**
 
-- Pourquoi ces termes plutôt que simplement "investissement" ? Car l'usage courant du terme investissement fait souvent référence aux investissements financier dans les marchés d'action ou autre.
+-   Pourquoi ces termes plutôt que simplement "investissement" ? Car l'usage courant du terme investissement fait souvent référence aux investissements financier dans les marchés d'action ou autre.
 
-- Il est aussi possible et courant d'estimer formation **net** de capital fixe en prenant en compte la **dépréciation du capital**, appelée **consommation de capital fixe** dans les comptes nationaux.
-
+-   Il est aussi possible et courant d'estimer formation **net** de capital fixe en prenant en compte la **dépréciation du capital**, appelée **consommation de capital fixe** dans les comptes nationaux.
 
 ## $G$ dépense publique {.smaller}
 
 Inclut les dépenses générales du gouvernement, notamment les services publiques (éducation, santé, sécurité...).
 
-- Comme ces biens et services fournis par l'État ne sont pas *achetés* directement par les autres secteurs institutionnels, leur comptabilisation ne se fait pas à leur valeur marchande comme pour $I$ et $C$.
+-   Comme ces biens et services fournis par l'État ne sont pas *achetés* directement par les autres secteurs institutionnels, leur comptabilisation ne se fait pas à leur valeur marchande comme pour $I$ et $C$.
 
-- $G$ est donc estimé à travers les **coûts**. En termes de comptabilité, la consommation finale du gouvernement est équivalente à ses coûts
-    - Exemple: le service rendu par tous les professeurs d'une école publique équivaut aux salaires qui leur sont versés. Même principe pour tous les autres fonctionnaires (police, administration, armée...).
-    
+-   $G$ est donc estimé à travers les **coûts**. En termes de comptabilité, la consommation finale du gouvernement est équivalente à ses coûts
+
+    -   Exemple: le service rendu par tous les professeurs d'une école publique équivaut aux salaires qui leur sont versés. Même principe pour tous les autres fonctionnaires (police, administration, armée...).
+
 ## $G$ {.smaller}
 
 $G$ est donc estimé à travers la somme des coûts de:
 
-  - Les salaires versés aux employés du gouvernement
-  - Plus l'achat par le gouvernement de matériels et autre consommation (le "C" propre à l'État)
-  - la consommation de capital fixe (le "I" propre à l'État: achats de machines, de biens immobiliers etc.)
-  - l'achat de biens et services par le gouvernement au bénéfice des ménages (ex: remboursement des soins de santé)
-  - d'autres taxes payés sur la production (marginal)
-  - les paiements des ménages et des firmes pour les services fournis par le gouvernement (ex: entrée au musé)
-  - le comptre propre de consommation de capital fixe.
+-   Les salaires versés aux employés du gouvernement
+-   Plus l'achat par le gouvernement de matériels et autre consommation (le "C" propre à l'État)
+-   la consommation de capital fixe (le "I" propre à l'État: achats de machines, de biens immobiliers etc.)
+-   l'achat de biens et services par le gouvernement au bénéfice des ménages (ex: remboursement des soins de santé)
+-   d'autres taxes payés sur la production (marginal)
+-   les paiements des ménages et des firmes pour les services fournis par le gouvernement (ex: entrée au musé)
+-   le comptre propre de consommation de capital fixe.
 
 ## Exportations et importations $X-M$ {.smaller}
 
 Les flux d'exportations et d'importations sont décomposés en quatre parties:
 
-  1. le commerce extérieur de biens
-  2. le commerce extérieur de services
-  3. achats directs par les résidents dans le reste du monde (considéré comme des importations de services)
-  4. achats directs par les non-résidents dans le territoire économique (exportations de services)
-
+1.  le commerce extérieur de biens
+2.  le commerce extérieur de services
+3.  achats directs par les résidents dans le reste du monde (considéré comme des importations de services)
+4.  achats directs par les non-résidents dans le territoire économique (exportations de services)
 
 ## Territoire, résidence et reste du monde {.smaller}
 
 Ces trois notions ont une définition bien particulière en comptabilité nationale et sont importantes à comprendre afin de comprendre la balance commerciale:
 
-- La notion de *territoire économique* se réfère à l'aire géographique d'un État. Cela inclut son espace aérien, ses eaux territorials et ses enclaves territoriales dans le reste du monde. Seule la production prenant place dans le territoire économique est prise en compte dans les comptes nationaux. La production d'un établissement de Novartis situé aux États-Unis n'est pas comptabilisée dans les comptes nationaux suisses, mais dans les comptes étatsuniens.
+-   La notion de *territoire économique* se réfère à l'aire géographique d'un État. Cela inclut son espace aérien, ses eaux territorials et ses enclaves territoriales dans le reste du monde. Seule la production prenant place dans le territoire économique est prise en compte dans les comptes nationaux. La production d'un établissement de Novartis situé aux États-Unis n'est pas comptabilisée dans les comptes nationaux suisses, mais dans les comptes étatsuniens.
 
 ::: notes
 understanding national accounts page 153
@@ -254,98 +247,115 @@ understanding national accounts page 153
 
 ## Résidence et reste du monde {.smaller}
 
-- Les *résidents* d'un *territoire économique* sont les entités (firmes & ménages) exerçant une activité économique sur le territoire depuis au moins un an.
+-   Les *résidents* d'un *territoire économique* sont les entités (firmes & ménages) exerçant une activité économique sur le territoire depuis au moins un an.
 
-  - Les travailleurs saisonniers travaillant seulement quelques mois dans un pays donnés ne sont par exemple par considéré comme résident du pays et leur revenu n'est donc pas comptabilisé.
-  - Au contraire, un ménage dont les membres travaillent dans pays A mais consomment et vivent dans pays B sont considérés comme résident de B et ne sont pas comptabilisés dans A.
+    -   Les travailleurs saisonniers travaillant seulement quelques mois dans un pays donnés ne sont par exemple par considéré comme résident du pays et leur revenu n'est donc pas comptabilisé.
+    -   Au contraire, un ménage dont les membres travaillent dans pays A mais consomment et vivent dans pays B sont considérés comme résident de B et ne sont pas comptabilisés dans A.
 
 Le reste du monde est composé de tous les non-résidents transactant avec le pays considéré. Ces transactions inclues:
-  
-  - La balance commerciale (exportations et importations)
-  - Les revenus reçus par les résidents de l'étranger et les revenu versé à l'étranger aux non-résidents (net foreign factor income).
+
+-   La balance commerciale (exportations et importations)
+-   Les revenus reçus par les résidents de l'étranger et les revenu versé à l'étranger aux non-résidents (net foreign factor income).
+
+## Contributions à la croissance {.smaller}
+
+L'approche dépense du PIB implique que le taux de croissance du PIB peut être décomposé dans ses différentes composantes:
+
+$$
+\frac{Y_t - Y_{t-1}}{Y_{t-1}} = \frac{C_t - C_{t-1}}{Y_{t-1}} + \frac{I_t - I_{t-1}}{Y_{t-1}} + \frac{G_t - G_{t-1}}{Y_{t-1}} + \frac{NX_t - NX_{t-1}}{Y_{t-1}}
+$$
+
+Avec $Y_t$ et $NX_t$ le PIB nominal et les exportations net à la période $t$. Claculer ces contributions à la croissance permet d'identifier si la croissance entre les périodes considérées est principalement tirée par la consommation, l'investissement, la dépense publique ou les exportations nettes.
 
 ## Balance commerciale et "merchant trade statistics" {.smaller}
 
 Il existe une différence subtile mais qui peut être significative entre ce qui est considéré comme exportation/importation par le système de comptabilité nationale et les statistiques de commerce marchant.
 
-- Dans le merchant trade statistics (tel que considéré par l'OMC), sont considérés comme exportations et importations dès qu'une frontière est traversée.
+-   Dans le merchant trade statistics (tel que considéré par l'OMC), sont considérés comme exportations et importations dès qu'une frontière est traversée.
 
-- En comptabilité nationale, c'est *l'échange de propriété* entre résidents et non-résidents qui compte.
-
-
+-   En comptabilité nationale, c'est *l'échange de propriété* entre résidents et non-résidents qui compte.
 
 ::: notes
 understanding national accounts page 154
 :::
 
-## Exercice {.smaller}
+## Exercice 2 {.smaller}
 
-- Allez sur le site web du secrétariat d'État à l'économie (SECO) <https://www.seco.admin.ch/seco/fr/home.html>
+-   Allez sur le site web du secrétariat d'État à l'économie (SECO) <https://www.seco.admin.ch/seco/fr/home.html>
 
-- Trouvez la page sur laquelle le SECO met à disposition les données du PIB suisse selon les trois approches
+-   Trouvez la page sur laquelle le SECO met à disposition les données du PIB suisse selon les trois approches
 
-- Téléchargez le tableau excel "PIB, approche par la dépense, données brutes"
+-   Téléchargez le tableau excel "PIB, approche par la dépense, données brutes", importez la feuille contenant les données nominales annuelles dans R.
 
-- Calculez la part de chaque composante des dépenses $C$, $G$, $I$, $X$, $M$ dans le PIB. Utilisez les données nominales annuelles.
+-   Calculez la part de chaque composante des dépenses $C$, $G$, $I$, $X$, $M$ dans le PIB.
 
-- Produisez un graphique montrant la part de chacune des composantes des dépenses et leur évolution: comment ces parts ont-elles évolué depuis 1980 ?
+-   Produisez un graphique montrant la part de chacune des composantes des dépenses et leur évolution: comment ces parts ont-elles évolué depuis 1980 ?
+
+- Calculez les contributions à la croissance annuelle. Quelle composante des dépense du PIB contribue-t-elle le plus à la croissance ?
+
 
 
 ## Approche revenu du PIB {.smaller}
 
 $$
-PIB \equiv W + R
+PIB \equiv WL + R
 $$
 
-Le pib peut aussi est défini comme la somme de tous les revenus d'une économie, répartis entre les salaires $W$ et les profits $R$ (en ignorant les rentes ou bien en les considérant comme partie des profits).
+Le pib peut aussi est défini comme la somme de tous les revenus d'une économie, répartis entre tous les salaires versés dans l'économie ($W$ le salaire nominal multiplié par la quantité de travail $L$) et les profits $R$ (en ignorant les rentes ou bien en les considérant comme partie des profits).
 
 En comptabilité nationale:
 
 $$
 PIB = compensation \ des \ employés + excédent\ brut \ d'exploitation\ et \ revenu \ mixte
-$$
-La compensation des employés est la variable la plus similaire aux salaires $W$, mais a une conception plus large car est plus globale que les salaires (inclut *toutes* les rémunérations des salariés).
+$$ La compensation des employés est la variable la plus similaire aux salaires $W$, mais a une conception plus large car est plus globale que les salaires (inclut *toutes* les rémunérations des salariés).
 
 L'excédent brut d'exploitation brut est le montant de profit dégagé par les entreprises $P$ (gross operating surplus), le revenu mixte (mixed income) est le revenu des indépendants et auto-entrepreneurs.
 
 ## Revenu mixe et excédent brut
 
-Dans certains pays (comme en Suisse), le revenu mixe et l'excédent brut d'exploitation sont mélangés dans une seule catégorie. 
+Dans certains pays (comme en Suisse), le revenu mixe et l'excédent brut d'exploitation sont mélangés dans une seule catégorie.
 
-- Cela pose problème pour le calcul de la part des salaires et des profits dans la valeur ajoutée, qu'il faut donc ajuster par la part des indépendant et des autoentrepreneurs dans l'emploi.
-
+-   Cela pose problème pour le calcul de la part des salaires et des profits dans la valeur ajoutée, qu'il faut donc ajuster par la part des indépendant et des autoentrepreneurs dans l'emploi.
 
 ## Calcul (non ajusté) de la part des salaires et des profits {.smaller}
 
+$$
+PY \equiv WL + R
+$$
 
-$$
-PIB \equiv W + R
-$$
+Avec $PY$ le pib nominal (le pib réel P multiplié par le niveau des prix P), $W$ le salaire nominal et $L$ la quantité de travail (soit mesurée en heures de travail, soit par le nombre de personnes employées) et $R$ l'excédent brut d'exploitation (les profits).
+
+## Calcul (non ajusté) de la part des salaires et des profits (2) {.smaller}
 
 Divisons par le PIB
-<=>
+
+$/PY$\<=\>
 
 $$
-1 \equiv \frac{W}{PIB} + \frac{R}{PIB} \equiv w + r
+1 \equiv \frac{WL}{PY} + \frac{R}{PY} \equiv wa_0 + r
 $$
 
-Cette identité comptable montre que le revenu total (1) est partagé entre les salaires et les profits 
+Avec $w$ le salaire réel ($W/P$), $a_0$ le ratio travail-output ($L/Y$) et r la part des profits. $wa_0$ est la part des salaires dans le revenu national (PIB).
+
+::: callout-note
+## Part des salaires et coût unitaire du travail (*Unit labour cost*)
+
+La part des salaires $wa_0 = \frac{WL}{PY}$ mesure la quantité de rémunération des salariés pour chaque unité d'output ($PY$), c'est pour cela que ce ratio est aussi considéré comme le "coût" unitaire du travail.
+
+:::
 
 ## L'identité fondamentale du PIB {.smaller}
 
 Les trois approches que nous avons passées en revue: approches production, dépenses et revenus, sont *équivalentes* en termes comptables. Cela repose sur le fait que:
 
-- Toutes les dépenses sont des revenus et inversements
-- Toutes les dépenses se font sur des biens et services nécessairement *produits*
-
-
+-   Toutes les dépenses sont des revenus et inversements
+-   Toutes les dépenses se font sur des biens et services nécessairement *produits*
 
 ## Équivalence des approches
 
 (1) $PIB \equiv \sum{production - consommation \ intermédiaire}$
 (2) $PIB \equiv C+I+G+X-M$
 (3) $PIB \equiv W+R$
-
 
 ## L'identité $épargne \equiv investissement$ {.smaller}
 
@@ -355,19 +365,23 @@ C'est le cas pour l'identité $S \equiv I + NX$, que vous allez voir ou avez dé
 
 C'est aussi le cas des balances sectorielles que vous allez voir dans le cours *les mesures de l'économie*
 
-## Exercice {.smaller}
+## Exercice 3 {.smaller}
 
-- Téléchargez le tableau Éxcel des données du PIB selon l'approche revenu sur la page du SECO
+-   Téléchargez le tableau Éxcel des données du PIB selon l'approche revenu sur la page du SECO
 
-- Calculez la part du profit et des salaires dans la valeur ajoutée (PIB) pour chaque année depuis 1990.
+-   Calculez la part du profit et des salaires dans la valeur ajoutée (PIB) pour chaque année depuis 1990.
 
-- Faites la somme entre la part des salaires et des profits, que remarquez-vous ? En partant de l'équation $PIB \equiv W+R$, quelle devrait normalement être la valeur de cette somme ? Comment expliquer cet écart ?
+-   Faites la somme entre la part des salaires et des profits, que remarquez-vous ? En partant de l'équation $PIB \equiv W+R$, quelle devrait normalement être la valeur de cette somme ? Comment expliquer cet écart ?
 
-- Corrigez la série pour qu'elle s'additionne à 1
+-   Corrigez la série pour qu'elle s'additionne à 1
 
-- Allez sur DBnomics. Sous "providers", allez sur les données de l'AMECO et cherchez les données sur la part des salaires ("adjusted wage share"). Filtrer les données pour n'avoir que la part des salaires pour la Suisse.
+-   Allez sur DBnomics. Sous "providers", allez sur les données de l'AMECO et cherchez les données sur la part des salaires ("adjusted wage share"). Filtrer les données pour n'avoir que la part des salaires pour la Suisse.
 
-- Comparez la part des salaires de l'AMECO avec la série que vous avez calculé. Comment expliquer cet écart ?
+-   Comparez la part des salaires de l'AMECO avec la série que vous avez calculé. Comment expliquer cet écart ?
+
+
+
+
 
 
 
