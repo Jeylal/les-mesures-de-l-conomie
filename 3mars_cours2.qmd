@@ -88,6 +88,16 @@ $$
 
 g et $\bar{g}$ sont identiques seulement si le taux de croissance est constant pour toutes les périodes t.
 
+## Rétropolation de séries et taux de croissance {.smaller}
+
+-   Le plus souvent, le taux de croissance est calculé pour des variables en niveau
+-   Mais il est parfois courant en macroéconomie de faire l'inverse: calculer des variables en niveau à partir de son taux de croissance
+    -   Exemple: les séries macroéconomiques suisses avant 1980 sont souvent calculé de cette manière en utilisant les taux de croissance d'anciens systèmes de comptabilité nationale.
+
+$$
+x_t = x_{t-1}*(1+g)
+$$
+
 ## Transformation en logarithme {.smaller}
 
 ::::: columns
@@ -117,7 +127,9 @@ Si $x_t = x_0(1+g)^t$ est transformé en log et que nous isolons g, nous trouvon
 
 $$
 log(1+g) = \frac{log(x_t)-log(x_0)}{t}
-$$ Entre seulement deux période (par exemple d'une année à l'autre), $t = 1$ et donc le taux de croissance peut être approximé facilement en prenant la différence en log. Quand $g$ est entre -0.15 et 0.15, $log(1+g)$ est une bonne approximation de $g$.
+$$ 
+
+Entre seulement deux période (par exemple d'une année à l'autre), $t = 1$ et donc le taux de croissance peut être approximé facilement en prenant la différence en log. Quand $g$ est entre -0.15 et 0.15, $log(1+g)$ est une bonne approximation de $g$.
 
 Dans R:
 

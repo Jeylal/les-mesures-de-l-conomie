@@ -194,7 +194,7 @@
     "href": "3mars_cours2.html#transformation-en-logarithme-1",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Transformation en logarithme",
-    "text": "Transformation en logarithme\nSi \\(x_t = x_0(1+g)^t\\) est transformé en log et que nous isolons g, nous trouvons:\n\\[\nlog(1+g) = \\frac{log(x_t)-log(x_0)}{t}\n\\] Entre seulement deux période (par exemple d’une année à l’autre), \\(t = 1\\) et donc le taux de croissance peut être approximé facilement en prenant la différence en log. Quand \\(g\\) est entre -0.15 et 0.15, \\(log(1+g)\\) est une bonne approximation de \\(g\\).\nDans R:\n\nlibrary(tidyverse) # la fonction lag() doit être importée avec le package tidyverse\n\ng = log(x) - lag(log(x)) # lag() prend la valeur de x à t-1\n\n# Ou bien avec diff() (difference):\ng = diff(log(x))",
+    "text": "Transformation en logarithme\nSi \\(x_t = x_0(1+g)^t\\) est transformé en log et que nous isolons g, nous trouvons:\n\\[\nlog(1+g) = \\frac{log(x_t)-log(x_0)}{t}\n\\]\nEntre seulement deux période (par exemple d’une année à l’autre), \\(t = 1\\) et donc le taux de croissance peut être approximé facilement en prenant la différence en log. Quand \\(g\\) est entre -0.15 et 0.15, \\(log(1+g)\\) est une bonne approximation de \\(g\\).\nDans R:\n\nlibrary(tidyverse) # la fonction lag() doit être importée avec le package tidyverse\n\ng = log(x) - lag(log(x)) # lag() prend la valeur de x à t-1\n\n# Ou bien avec diff() (difference):\ng = diff(log(x))",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -314,7 +314,7 @@
     "href": "3mars_cours2.html#estimation-simple-avec-lm",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Estimation simple avec lm()",
-    "text": "Estimation simple avec lm()\n\nlibrary(kableExtra)\nlibrary(broom)\nmodel = lm(data = macroch, # préciser le tableau dans lequel les variables sont présentes\n           formula = C_real ~ W_real) # la formule estimée doit prendre la forme Y ~ X\n\ntidy(model) %&gt;% \n  kable() \n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n43.1846843\n2.7815089\n15.52563\n0\n\n\nW_real\n0.7972749\n0.0103511\n77.02329\n0\n\n\n\n\n\nLa fonction estimée est donc:\n\\[C = 43 + 0.797W\\]",
+    "text": "Estimation simple avec lm()\n\nlibrary(kableExtra)\n\nsystemfonts and textshaping have been compiled with different versions of Freetype. Because of this, textshaping will not use the font cache provided by systemfonts\n\nlibrary(broom)\nmodel = lm(data = macroch, # préciser le tableau dans lequel les variables sont présentes\n           formula = C_real ~ W_real) # la formule estimée doit prendre la forme Y ~ X\n\ntidy(model) %&gt;% \n  kable() \n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n43.1846843\n2.7815089\n15.52563\n0\n\n\nW_real\n0.7972749\n0.0103511\n77.02329\n0\n\n\n\n\n\nLa fonction estimée est donc:\n\\[C = 43 + 0.797W\\]",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -1114,6 +1114,16 @@
     "text": "Exercice 3\n\nTéléchargez le tableau Éxcel des données du PIB selon l’approche revenu sur la page du SECO\nCalculez la part du profit et des salaires dans la valeur ajoutée (PIB) pour chaque année depuis 1990.\nFaites la somme entre la part des salaires et des profits, que remarquez-vous ? En partant de l’équation \\(PIB \\equiv W+R\\), quelle devrait normalement être la valeur de cette somme ? Comment expliquer cet écart ?\nCorrigez la série pour qu’elle s’additionne à 1\nAllez sur DBnomics. Sous “providers”, allez sur les données de l’AMECO et cherchez les données sur la part des salaires (“adjusted wage share”). Filtrer les données pour n’avoir que la part des salaires pour la Suisse.\nComparez la part des salaires de l’AMECO avec la série que vous avez calculé. Comment expliquer cet écart ?",
     "crumbs": [
       "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#rétropolation-de-séries-et-taux-de-croissance",
+    "href": "3mars_cours2.html#rétropolation-de-séries-et-taux-de-croissance",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Rétropolation de séries et taux de croissance",
+    "text": "Rétropolation de séries et taux de croissance\n\nLe plus souvent, le taux de croissance est calculé pour des variables en niveau\nMais il est parfois courant en macroéconomie de faire l’inverse: calculer des variables en niveau à partir de son taux de croissance\n\nExemple: les séries macroéconomiques suisses avant 1980 sont souvent calculé de cette manière en utilisant les taux de croissance d’anciens systèmes de comptabilité nationale.\n\n\n\\[\nx_t = x_{t-1}*(1+g)\n\\]",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
   }
 ]
