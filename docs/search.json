@@ -14,7 +14,7 @@
     "href": "slides intro.html#plan-du-cours",
     "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
     "section": "Plan du cours",
-    "text": "Plan du cours\n12 séances au total sur 3 thèmes de mesures\n\nComptabilité nationale\nInégalités et distribution\nInstitutions",
+    "text": "Plan du cours\n12 séances au total sur 3 thèmes de mesures\n\nComptabilité nationale\nInégalités et distribution\nInstitutions\n\nhttps://jeylal.github.io/les-mesures-de-l-conomie/",
     "crumbs": [
       "Introduction au séminaire, rappels de R et introduction à Quarto"
     ]
@@ -314,7 +314,7 @@
     "href": "3mars_cours2.html#estimation-simple-avec-lm",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Estimation simple avec lm()",
-    "text": "Estimation simple avec lm()\n\nlibrary(kableExtra)\n\nsystemfonts and textshaping have been compiled with different versions of Freetype. Because of this, textshaping will not use the font cache provided by systemfonts\n\nlibrary(broom)\nmodel = lm(data = macroch, # préciser le tableau dans lequel les variables sont présentes\n           formula = C_real ~ W_real) # la formule estimée doit prendre la forme Y ~ X\n\ntidy(model) %&gt;% \n  kable() \n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n43.1846843\n2.7815089\n15.52563\n0\n\n\nW_real\n0.7972749\n0.0103511\n77.02329\n0\n\n\n\n\n\nLa fonction estimée est donc:\n\\[C = 43 + 0.797W\\]",
+    "text": "Estimation simple avec lm()\n\nlibrary(kableExtra)\nlibrary(broom)\nmodel = lm(data = macroch, # préciser le tableau dans lequel les variables sont présentes\n           formula = C_real ~ W_real) # la formule estimée doit prendre la forme Y ~ X\n\ntidy(model) %&gt;% \n  kable() \n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n43.1846843\n2.7815089\n15.52563\n0\n\n\nW_real\n0.7972749\n0.0103511\n77.02329\n0\n\n\n\n\n\nLa fonction estimée est donc:\n\\[C = 43 + 0.797W\\]",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]

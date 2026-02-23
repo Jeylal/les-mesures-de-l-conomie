@@ -70,6 +70,8 @@ Cela comprend:
 2.  Inégalités et distribution
 3.  Institutions
 
+<https://jeylal.github.io/les-mesures-de-l-conomie/>
+
 ## Perspective du cours {.smaller}
 
 Un cours d'analyse appliquée, nous allons beaucoup travailler directement avec des données et des exemples. L'idée est de vous familiariser avec les données économiques, comment les traiter et les analyser.
