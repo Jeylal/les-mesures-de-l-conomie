@@ -133,8 +133,8 @@
     "objectID": "3mars_cours2.html#séries-temporelles",
     "href": "3mars_cours2.html#séries-temporelles",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Séries temporelles",
-    "text": "Séries temporelles\nLa plupart des mesures de l’économie sont des séries temporelles (PIB, emploi, inflation…).\nL’analyse des séries temporelles présente certaines particularités par rapport aux données en coupe (à un point donné dans le temps, aussi appelé “cross-sectional data”), notamment car elles ont une tendance temporelle (par exemple exponentielle).",
+    "section": "",
+    "text": "La plupart des mesures de l’économie sont des séries temporelles (PIB, emploi, inflation…).\nL’analyse des séries temporelles présente certaines particularités par rapport aux données en coupe (à un point donné dans le temps, aussi appelé “cross-sectional data”), notamment car elles ont une tendance temporelle (par exemple exponentielle).",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -154,7 +154,7 @@
     "href": "3mars_cours2.html#croissance-exponentielle",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Croissance exponentielle",
-    "text": "Croissance exponentielle\nExemple dans R\n\n\nf = function(x0, g, t){\n  \n  x0*(1+g)^t\n  \n}\n\nx0 = 2\ng = 0.03\nt = 1:150\n\nx = f(x0 = x0, g = g, t = t)\n\nplot(x, type = \"l\")",
+    "text": "Croissance exponentielle\n\nExemple dans R\n\nf = function(x0, g, t){\n  \n  x0*(1+g)^t\n  \n}\n\nx0 = 2\ng = 0.03\nt = 1:150\n\nx = f(x0 = x0, g = g, t = t)\n\nplot(x, type = \"l\")",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -194,7 +194,7 @@
     "href": "3mars_cours2.html#transformation-en-logarithme-1",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Transformation en logarithme",
-    "text": "Transformation en logarithme\nSi \\(x_t = x_0(1+g)^t\\) est transformé en log et que nous isolons g, nous trouvons:\n\\[\nlog(1+g) = \\frac{log(x_t)-log(x_0)}{t}\n\\]\nEntre seulement deux période (par exemple d’une année à l’autre), \\(t = 1\\) et donc le taux de croissance peut être approximé facilement en prenant la différence en log. Quand \\(g\\) est entre -0.15 et 0.15, \\(log(1+g)\\) est une bonne approximation de \\(g\\).\nDans R:\n\nlibrary(tidyverse) # la fonction lag() doit être importée avec le package tidyverse\n\ng = log(x) - lag(log(x)) # lag() prend la valeur de x à t-1\n\n# Ou bien avec diff() (difference):\ng = diff(log(x))",
+    "text": "Transformation en logarithme\nSi \\(x_t = x_0(1+g)^t\\) est transformé en log et que nous isolons g, nous trouvons:\n\\[\nlog(1+g) = \\frac{log(x_t)-log(x_0)}{t}\n\\]\nEntre seulement deux période (par exemple d’une année à l’autre), \\(t = 1\\) et donc le taux de croissance peut être approximé facilement en prenant la différence en log. Quand \\(g\\) est entre -0.15 et 0.15, \\(log(1+g)\\) est une bonne approximation de \\(g\\).\nDans R:\n\nlibrary(tidyverse) # la fonction lag() doit être importée avec le package tidyverse\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.2.0     ✔ readr     2.1.6\n✔ forcats   1.0.1     ✔ stringr   1.6.0\n✔ ggplot2   4.0.2     ✔ tibble    3.3.1\n✔ lubridate 1.9.5     ✔ tidyr     1.3.2\n✔ purrr     1.2.1     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\ng = log(x) - lag(log(x)) # lag() prend la valeur de x à t-1\n\n# Ou bien avec diff() (difference):\ng = diff(log(x))",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -204,7 +204,7 @@
     "href": "3mars_cours2.html#pourquoi-log1g-g-entre--0.15-et-0.15",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Pourquoi log(1+g) ≅ g entre -0.15 et 0.15",
-    "text": "Pourquoi log(1+g) ≅ g entre -0.15 et 0.15\n\n\ng = seq(from = -0.30, to = 0.30, by = 0.001)\n`log(g+1)` = log(g+1)\n\ndf = tibble(g = g, `log(g+1)` = `log(g+1)`)\n\ndf %&gt;% \n  ggplot(aes(x = g, y = g, color = \"g\"))+\n  geom_line()+\n  geom_line(aes(x = g, y = `log(g+1)`, color = \"Log(1+g)\"))+\n  theme_minimal()+\n  labs(x = \"\", y = \"\")",
+    "text": "Pourquoi log(1+g) ≅ g entre -0.15 et 0.15\n\ng = seq(from = -0.30, to = 0.30, by = 0.001)\n`log(g+1)` = log(g+1)\n\ndf = tibble(g = g, `log(g+1)` = `log(g+1)`)\n\ndf %&gt;% \n  ggplot(aes(x = g, y = g, color = \"g\"))+\n  geom_line()+\n  geom_line(aes(x = g, y = `log(g+1)`, color = \"Log(1+g)\"))+\n  theme_minimal()+\n  labs(x = \"\", y = \"\")",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -214,7 +214,7 @@
     "href": "3mars_cours2.html#exemple-avec-des-données-réelles-du-pib",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Exemple avec des données réelles du PIB",
-    "text": "Exemple avec des données réelles du PIB\n\n\nlibrary(maddison) # le package maddison permet d'importer des données de longue durée du PIB par habitant\nlibrary(tidyverse) \n\ndata &lt;- subset(maddison, \n             year &gt;= 1800 &\n             iso2c %in% c(\"FR\", \"US\"))\n\ndata %&gt;% \n  ggplot(aes(x = year, y = rgdpnapc, color = country)) +\n  geom_line()+\n  theme_minimal()+\n  labs(x = \"\",\n       y = \"PIB par habitant (dollar US 2011)\",\n       title = \"Échelle normale (non-logarithmique)\")",
+    "text": "Exemple avec des données réelles du PIB\n\nlibrary(maddison) # le package maddison permet d'importer des données de longue durée du PIB par habitant\nlibrary(tidyverse) \n\ndata &lt;- subset(maddison, \n             year &gt;= 1800 &\n             iso2c %in% c(\"FR\", \"US\"))\n\ndata %&gt;% \n  ggplot(aes(x = year, y = rgdpnapc, color = country)) +\n  geom_line()+\n  theme_minimal()+\n  labs(x = \"\",\n       y = \"PIB par habitant (dollar US 2011)\",\n       title = \"Échelle normale (non-logarithmique)\")",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -224,7 +224,7 @@
     "href": "3mars_cours2.html#exemple-avec-des-données-réelles-du-pib-1",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Exemple avec des données réelles du PIB",
-    "text": "Exemple avec des données réelles du PIB\n\n\ndata %&gt;% \n  ggplot(aes(x = year, y = log(rgdpnapc), color = country)) +\n  geom_line()+\n  theme_minimal()+\n  labs(x = \"\",\n       y = \"PIB par habitant (dollar US 2011)\",\n       title = \"Échelle logarithmique\")",
+    "text": "Exemple avec des données réelles du PIB\n\ndata %&gt;% \n  ggplot(aes(x = year, y = log(rgdpnapc), color = country)) +\n  geom_line()+\n  theme_minimal()+\n  labs(x = \"\",\n       y = \"PIB par habitant (dollar US 2011)\",\n       title = \"Échelle logarithmique\")",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -304,7 +304,7 @@
     "href": "3mars_cours2.html#retour-à-notre-exemple-c-c_0-c_1w",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Retour à notre exemple \\[C = c_0 + c_1W\\]",
-    "text": "Retour à notre exemple \\[C = c_0 + c_1W\\]\n\n\nlibrary(readr)\nmacroch &lt;- read_csv(\"data/macroch.csv\")\n\nmacroch %&gt;% \n  ggplot(aes(x = W_real, y = C_real))+\n  geom_point()+\n  theme_minimal()+\n  labs(x = \"Rémunération des salariés (W)\",\n       y = \"Consommation (C)\")",
+    "text": "Retour à notre exemple \\[C = c_0 + c_1W\\]\n\nlibrary(readr)\nmacroch &lt;- read_csv(\"data/macroch.csv\")\n\nNew names:\nRows: 63 Columns: 25\n── Column specification\n──────────────────────────────────────────────────────── Delimiter: \",\" dbl\n(25): ...1, GDP_n, GDP_deflator, GDP_real, C_n, C_deflator, C_real, I_n,...\nℹ Use `spec()` to retrieve the full column specification for this data. ℹ\nSpecify the column types or set `show_col_types = FALSE` to quiet this message.\n• `` -&gt; `...1`\n\nmacroch %&gt;% \n  ggplot(aes(x = W_real, y = C_real))+\n  geom_point()+\n  theme_minimal()+\n  labs(x = \"Rémunération des salariés (W)\",\n       y = \"Consommation (C)\")",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -314,7 +314,7 @@
     "href": "3mars_cours2.html#estimation-simple-avec-lm",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Estimation simple avec lm()",
-    "text": "Estimation simple avec lm()\n\nlibrary(kableExtra)\nlibrary(broom)\nmodel = lm(data = macroch, # préciser le tableau dans lequel les variables sont présentes\n           formula = C_real ~ W_real) # la formule estimée doit prendre la forme Y ~ X\n\ntidy(model) %&gt;% \n  kable() \n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n43.1846843\n2.7815089\n15.52563\n0\n\n\nW_real\n0.7972749\n0.0103511\n77.02329\n0\n\n\n\n\n\nLa fonction estimée est donc:\n\\[C = 43 + 0.797W\\]",
+    "text": "Estimation simple avec lm()\n\nlibrary(kableExtra)\n\n\nAttachement du package : 'kableExtra'\n\n\nL'objet suivant est masqué depuis 'package:dplyr':\n\n    group_rows\n\nlibrary(broom)\nmodel = lm(data = macroch, # préciser le tableau dans lequel les variables sont présentes\n           formula = C_real ~ W_real) # la formule estimée doit prendre la forme Y ~ X\n\ntidy(model) %&gt;% \n  kable() \n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n43.1846843\n2.7815089\n15.52563\n0\n\n\nW_real\n0.7972749\n0.0103511\n77.02329\n0\n\n\n\n\n\nLa fonction estimée est donc:\n\\[C = 43 + 0.797W\\]",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -324,7 +324,7 @@
     "href": "3mars_cours2.html#valeurs-prédites",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Valeurs prédites",
-    "text": "Valeurs prédites\n\n\ndata = augment(model)\n\ndata %&gt;% \n  ggplot(aes(x = W_real, y = C_real, color = \"Valeurs réelles observées\"))+\n  geom_line()+\n  geom_line(aes(x = W_real, y = .fitted, color = \"Valeurs prédites\"))+\n  theme_minimal()+\n  labs(title = \"C = 43 + 0.797W\")",
+    "text": "Valeurs prédites\n\ndata = augment(model)\n\ndata %&gt;% \n  ggplot(aes(x = W_real, y = C_real, color = \"Valeurs réelles observées\"))+\n  geom_line()+\n  geom_line(aes(x = W_real, y = .fitted, color = \"Valeurs prédites\"))+\n  theme_minimal()+\n  labs(title = \"C = 43 + 0.797W\")",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -334,7 +334,7 @@
     "href": "3mars_cours2.html#vérification-des-hypothèses-du-modèle",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Vérification des hypothèses du modèle",
-    "text": "Vérification des hypothèses du modèle\n\nLinéarité et indépendance des erreurs\n\n\n\nlibrary(performance)\n\ndiagnostic_plots = plot(check_model(model, panel = FALSE))\ndiagnostic_plots[[2]]\n\n\n\n\n\n\n\n\n\nOn voit clairement un pattern dans la distribution des données ==&gt; pas d’indépendance des erreurs, ce qui est typiquement le cas des séries temporelles",
+    "text": "Vérification des hypothèses du modèle\n\nLinéarité et indépendance des erreurs\n\n\nlibrary(performance)\n\ndiagnostic_plots = plot(check_model(model, panel = FALSE))\n\nFor confidence bands, please install `qqplotr`.\n\ndiagnostic_plots[[2]]\n\n\n\n\n\n\n\n\nOn voit clairement un pattern dans la distribution des données ==&gt; pas d’indépendance des erreurs, ce qui est typiquement le cas des séries temporelles",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -344,7 +344,7 @@
     "href": "3mars_cours2.html#vérification-des-hypothèses-du-modèle-1",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Vérification des hypothèses du modèle",
-    "text": "Vérification des hypothèses du modèle\n\nHomoscédasticité\n\n\nlibrary(performance)\n\ndiagnostic_plots[[3]]\n\n\nIl y aussi clairement un problème d’hétéroscédasticité: la variance des erreurs n’est pas constante",
+    "text": "Vérification des hypothèses du modèle\n\nHomoscédasticité\n\n\nlibrary(performance)\n\ndiagnostic_plots[[3]]\n\n\n\n\n\n\n\n\nIl y aussi clairement un problème d’hétéroscédasticité: la variance des erreurs n’est pas constante",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -424,7 +424,7 @@
     "href": "3mars_cours2.html#section",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "",
-    "text": "Afficher le code\nplot3 &lt;- \nplot2+\n  labs(title = \"\",\n       y = \"Taux de croissance de C\")+\n  geom_segment(aes(x = 1960, xend = 1980, y = 0.03, yend = 0.03), color = \"black\")+\n  geom_segment(aes(x = 1981, xend = 2022, y = 0.0139, yend = 0.0139), color = \"black\")+\n  annotate(\"text\", x = 1970, y = 0.025, label = \"taux de croissance moyen = 0.03\", size = 2.5)+\n  annotate(\"text\", x = 2000, y = 0, label = \"taux de croissance moyen = 0,0139\", size = 2.5)\n\nlibrary(marginaleffects)\n\nplot4 &lt;- \nmodel6 %&gt;% \n  plot_predictions(condition = \"year\")+\n  geom_line(data = data, aes(x = year, y = log(C_real)), size = 1.2, color = \"darkred\")+\n  theme_minimal()+\n  geom_vline(xintercept = 1980, linetype = 2)+\n  annotate(\"text\", label = \"log(c) = -57 + 0.03year\", x = 1980, y = 5)+\n  annotate(\"text\", label = \"log(c) = -25 -0.0139year\", x = 2010, y = 5.5)+\n  labs(y = \"log(c)\")\n\ncowplot::plot_grid(plot3, plot4)",
+    "text": "Afficher le code\nplot3 &lt;- \nplot2+\n  labs(title = \"\",\n       y = \"Taux de croissance de C\")+\n  geom_segment(aes(x = 1960, xend = 1980, y = 0.03, yend = 0.03), color = \"black\")+\n  geom_segment(aes(x = 1981, xend = 2022, y = 0.0139, yend = 0.0139), color = \"black\")+\n  annotate(\"text\", x = 1970, y = 0.025, label = \"taux de croissance moyen = 0.03\", size = 2.5)+\n  annotate(\"text\", x = 2000, y = 0, label = \"taux de croissance moyen = 0,0139\", size = 2.5)\n\nlibrary(marginaleffects)\n\nplot4 &lt;- \nmodel6 %&gt;% \n  plot_predictions(condition = \"year\")+\n  geom_line(data = data, aes(x = year, y = log(C_real)), size = 1.2, color = \"darkred\")+\n  theme_minimal()+\n  geom_vline(xintercept = 1980, linetype = 2)+\n  annotate(\"text\", label = \"log(c) = -57 + 0.03year\", x = 1980, y = 5)+\n  annotate(\"text\", label = \"log(c) = -25 -0.0139year\", x = 2010, y = 5.5)+\n  labs(y = \"log(c)\")\n\n\nWarning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.\nℹ Please use `linewidth` instead.\n\n\nAfficher le code\ncowplot::plot_grid(plot3, plot4)\n\n\nWarning in geom_segment(aes(x = 1960, xend = 1980, y = 0.03, yend = 0.03), : All aesthetics have length 1, but the data has 62 rows.\nℹ Please consider using `annotate()` or provide this layer with data containing\n  a single row.\n\n\nWarning in geom_segment(aes(x = 1981, xend = 2022, y = 0.0139, yend = 0.0139), : All aesthetics have length 1, but the data has 62 rows.\nℹ Please consider using `annotate()` or provide this layer with data containing\n  a single row.",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -1125,5 +1125,74 @@
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
+  },
+  {
+    "objectID": "exercices/atelier_pwt.html",
+    "href": "exercices/atelier_pwt.html",
+    "title": "Atelier PWT",
+    "section": "",
+    "text": "On importe les données en utilisant la fonction rddata du package Rdatasets dévelopé par Vincent Arel-Bundock (dont je vous recommande d’ailleurs de jeter un oeil à ses travaux). Rdatasets contient de nombreux jeux de données (voir https://vincentarelbundock.github.io/Rdatasets/articles/data.html). Il existe deux manière d’importer des données dans R: soit importer un fichier de données (en format csv, excel, sav, texte, stata ou autre), soit d’utiliser des package comme Rdataset et importer les données directement dans R avec une fonction comme rddata. Pour comprendre comment importer des données de cette manière, il faut toujours se référer à la documentation du package utilisé.\n\nlibrary(tidyverse)\nlibrary(gt)\nlibrary(Rdatasets)\n\npwt = Rdatasets::rddata(\"pwt_sample\")"
+  },
+  {
+    "objectID": "exercices/atelier_pwt.html#importation-des-données",
+    "href": "exercices/atelier_pwt.html#importation-des-données",
+    "title": "Atelier PWT",
+    "section": "",
+    "text": "On importe les données en utilisant la fonction rddata du package Rdatasets dévelopé par Vincent Arel-Bundock (dont je vous recommande d’ailleurs de jeter un oeil à ses travaux). Rdatasets contient de nombreux jeux de données (voir https://vincentarelbundock.github.io/Rdatasets/articles/data.html). Il existe deux manière d’importer des données dans R: soit importer un fichier de données (en format csv, excel, sav, texte, stata ou autre), soit d’utiliser des package comme Rdataset et importer les données directement dans R avec une fonction comme rddata. Pour comprendre comment importer des données de cette manière, il faut toujours se référer à la documentation du package utilisé.\n\nlibrary(tidyverse)\nlibrary(gt)\nlibrary(Rdatasets)\n\npwt = Rdatasets::rddata(\"pwt_sample\")"
+  },
+  {
+    "objectID": "3mars_cours2.html",
+    "href": "3mars_cours2.html",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "",
+    "text": "La plupart des mesures de l’économie sont des séries temporelles (PIB, emploi, inflation…).\nL’analyse des séries temporelles présente certaines particularités par rapport aux données en coupe (à un point donné dans le temps, aussi appelé “cross-sectional data”), notamment car elles ont une tendance temporelle (par exemple exponentielle).",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#utilité-des-régressions",
+    "href": "3mars_cours2.html#utilité-des-régressions",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Utilité des régressions",
+    "text": "Utilité des régressions\n\nPrévisions",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "exercices/atelier_pwt.html#quelle-fonction-permettrait-davoir-un-aperçu-rapide-des-variables",
+    "href": "exercices/atelier_pwt.html#quelle-fonction-permettrait-davoir-un-aperçu-rapide-des-variables",
+    "title": "Atelier PWT",
+    "section": "Quelle fonction permettrait d’avoir un aperçu rapide des variables ?",
+    "text": "Quelle fonction permettrait d’avoir un aperçu rapide des variables ?\n\nglimpse(pwt)\n\nRows: 1,540\nColumns: 13\n$ rownames &lt;int&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18…\n$ country  &lt;chr&gt; \"Australia\", \"Australia\", \"Australia\", \"Australia\", \"Australi…\n$ isocode  &lt;chr&gt; \"AUS\", \"AUS\", \"AUS\", \"AUS\", \"AUS\", \"AUS\", \"AUS\", \"AUS\", \"AUS\"…\n$ year     &lt;int&gt; 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1…\n$ pop      &lt;dbl&gt; 8.354106, 8.599923, 8.782430, 8.950892, 9.159148, 9.374454, 9…\n$ hc       &lt;dbl&gt; 2.667302, 2.674344, 2.681403, 2.688482, 2.695580, 2.702696, 2…\n$ rgdpna   &lt;dbl&gt; 127461.2, 130703.1, 125353.1, 138952.2, 150060.7, 155979.7, 1…\n$ rgdpo    &lt;dbl&gt; 114135.0, 110543.1, 108883.4, 122688.5, 131836.4, 138380.6, 1…\n$ rgdpe    &lt;dbl&gt; 121994.0, 113929.4, 111219.9, 123328.9, 131472.1, 136247.3, 1…\n$ labsh    &lt;dbl&gt; 0.6804925, 0.6804925, 0.6804925, 0.6804925, 0.6804925, 0.6804…\n$ avh      &lt;dbl&gt; 2170.923, 2150.847, 2130.956, 2111.249, 2091.725, 2072.381, 2…\n$ emp      &lt;dbl&gt; 3.429873, 3.523916, 3.591675, 3.653409, 3.731083, 3.811291, 3…\n$ rnna     &lt;dbl&gt; 639991.2, 690113.6, 704562.4, 733107.3, 771454.2, 810403.7, 8…\n\n\nLa fonction glimpse nous renseigne sur les dimensions du jeux de données, à savoir le nombre de lignes (d’observations) et de colonnes (variables). Chaque ligne avec le signe $ sont le nom des variables du jeux de données. Le plus important est de vérifier si chaque variable est bien dans le type qui lui correspond, à savoir &lt;chr&gt; si la variable est catégorielle (comme country), &lt;int&gt; ou &lt;dbl&gt; si la variable est numérique (int pour integer et dbl pour double-digit qui est un format numérique)."
+  },
+  {
+    "objectID": "exercices/atelier_pwt.html#comment-avoir-un-aperçu-rapide-de-lune-des-variables",
+    "href": "exercices/atelier_pwt.html#comment-avoir-un-aperçu-rapide-de-lune-des-variables",
+    "title": "Atelier PWT",
+    "section": "Comment avoir un aperçu rapide de l’une des variables ?",
+    "text": "Comment avoir un aperçu rapide de l’une des variables ?\n\nunique(pwt$country)\n\n [1] \"Australia\"                \"Austria\"                 \n [3] \"Belgium\"                  \"Canada\"                  \n [5] \"Switzerland\"              \"Chile\"                   \n [7] \"Germany\"                  \"Denmark\"                 \n [9] \"Spain\"                    \"Finland\"                 \n[11] \"France\"                   \"United Kingdom\"          \n[13] \"Greece\"                   \"Ireland\"                 \n[15] \"Iceland\"                  \"Italy\"                   \n[17] \"Japan\"                    \"Netherlands\"             \n[19] \"Norway\"                   \"Portugal\"                \n[21] \"Sweden\"                   \"United States of America\"\n\nsummary(pwt$rgdpe)\n\n    Min.  1st Qu.   Median     Mean  3rd Qu.     Max.     NA's \n    1234   117703   295257  1066654   933379 20856496        2 \n\n\nUtiliser unique() si la variable est catégorielle, car elle permet rapidement de voir toutes les valeurs que peut prendre la variable. summary pour les variables numériques."
+  },
+  {
+    "objectID": "exercices/atelier_pwt.html#en-utilisant-ggplot-et-tidyverse-comment-je-peux-faire-un-graphique-simple-de-toutes-les-variables-du-pib-disponible-dans-le-dataset-pour-la-suisse",
+    "href": "exercices/atelier_pwt.html#en-utilisant-ggplot-et-tidyverse-comment-je-peux-faire-un-graphique-simple-de-toutes-les-variables-du-pib-disponible-dans-le-dataset-pour-la-suisse",
+    "title": "Atelier PWT",
+    "section": "En utilisant ggplot et tidyverse, comment je peux faire un graphique simple de toutes les variables du PIB disponible dans le dataset pour la Suisse ?",
+    "text": "En utilisant ggplot et tidyverse, comment je peux faire un graphique simple de toutes les variables du PIB disponible dans le dataset pour la Suisse ?\nggplot est l’un des meilleurs outils pour la visualisation de données. Il est fondé les principes de la grammaire des graphique (voir https://larmarange.github.io/guide-R/analyses/ggplot2.html) qui est axé sur les éléments suivant à spécifier dans chaque graphique ggplot:\n\nles données, à spécier avec ggplot\n\nNote: pwt %&gt;% ggplot() revient à faire ggplot(data = pwt)\n\naes() qui spécifie les “aesthestics”, c-à-d les éléments qui seront dessinés sur le graphiques, cela inclut:\n\nles variables x et y ainsi que différentes mises en forme que peuvent prendre ces variables comme color, size, shape, fill\nle type de graphique à faire, geom_line() pour graphique en ligne, geom_point() pour les graphiques en point, geom_col() ou geom_bar() pour des barplots etc.\nÉventuellement d’autres option pour améliorer l’aspect visuel du graphique\n\n\n\noptions(scipen = 999) # option pour ne pas montrer les nombres en format scientifique\n\npwt %&gt;% \n  filter(country %in% c(\"Switzerland\")) %&gt;% \n  ggplot(aes(x = year, y = rgdpna, color = \"PIB réel à prix nationaux constants de 2011 (en millions USD 2017).\"))+\n  geom_line()+\n  geom_line(aes(x = year, y = rgdpo, color = \"PIB réel côté production, en PPA chaînées (en millions USD 2017)\"))+\n  geom_line(aes(x = year, y = rgdpe, color = \"PIB réel côté dépenses, en PPA chaînées (en millions USD 2017)\"))+\n  theme_minimal(base_size = 12)+\n  labs(title = \"Évolution de différentes mesures du PIB de la Suisse\",\n       x = \"\", y = \"\",\n       caption = \"Source: Penn World Tables\")+\n  theme(\n    legend.title = element_blank(),\n    legend.position = c(0.32, 0.74)\n  )+\n  guides(colour = guide_legend(nrow = 3))"
+  },
+  {
+    "objectID": "exercices/atelier_pwt.html#comment-peut-on-inclure-davantage-de-pays-dans-ce-graphique",
+    "href": "exercices/atelier_pwt.html#comment-peut-on-inclure-davantage-de-pays-dans-ce-graphique",
+    "title": "Atelier PWT",
+    "section": "Comment peut-on inclure davantage de pays dans ce graphique ?",
+    "text": "Comment peut-on inclure davantage de pays dans ce graphique ?\n\npwt %&gt;% \n  filter(country %in% c(\"Switzerland\", \"France\", \"Germany\")) %&gt;% \n  ggplot(aes(x = year, y = rgdpna, color = \"rgdpna\"))+\n  geom_line()+\n  geom_line(aes(x = year, y = rgdpo, color = \"rgdpo\"))+\n  geom_line(aes(x = year, y = rgdpe, color = \"rgdpe\"))+\n  theme_minimal()+\n  labs(title = \"Évolution de différentes mesures du PIB de la Suisse\",\n       x = \"\", y = \"\",\n       caption = \"Source: Penn World Tables\")+\n  theme(\n    legend.title = element_blank()\n  )+\n  facet_wrap(~country)\n\n\n\n\n\n\n\n\nOn pourrait aussi avoir des graphiques séparés selon le type de mesure du PIB, mais pour cela il faut transformer le jeux de données du format large au format long avec pivot_longer() avant de le passer dans la fonction ggplot\n\npwt %&gt;% \n  pivot_longer(cols = 5:13,\n               names_to = \"indicateur\",\n               values_to = \"value\")\n\n# A tibble: 13,860 × 6\n   rownames country   isocode  year indicateur      value\n      &lt;int&gt; &lt;chr&gt;     &lt;chr&gt;   &lt;int&gt; &lt;chr&gt;           &lt;dbl&gt;\n 1        1 Australia AUS      1950 pop             8.35 \n 2        1 Australia AUS      1950 hc              2.67 \n 3        1 Australia AUS      1950 rgdpna     127461.   \n 4        1 Australia AUS      1950 rgdpo      114135.   \n 5        1 Australia AUS      1950 rgdpe      121994.   \n 6        1 Australia AUS      1950 labsh           0.680\n 7        1 Australia AUS      1950 avh          2171.   \n 8        1 Australia AUS      1950 emp             3.43 \n 9        1 Australia AUS      1950 rnna       639991.   \n10        2 Australia AUS      1951 pop             8.60 \n# ℹ 13,850 more rows\n\n\n\npwt %&gt;% \n  pivot_longer(cols = 5:13,\n               names_to = \"indicateur\",\n               values_to = \"value\") %&gt;% \n  filter(country %in% c(\"Switzerland\", \"France\", \"Germany\") & indicateur %in% c(\"rgdpna\", \"rgdpo\", \"rgdpe\")) %&gt;% \n  ggplot(aes(x = year, y = value, color = country))+\n  geom_line()+\n  facet_wrap(~indicateur)"
+  },
+  {
+    "objectID": "exercices/atelier_pwt.html#comment-peut-on-créer-une-nouvelle-variable-dans-ce-dataset",
+    "href": "exercices/atelier_pwt.html#comment-peut-on-créer-une-nouvelle-variable-dans-ce-dataset",
+    "title": "Atelier PWT",
+    "section": "Comment peut-on créer une nouvelle variable dans ce dataset ?",
+    "text": "Comment peut-on créer une nouvelle variable dans ce dataset ?\nIl faut utiliser la fonction mutate. Par exemple, on peut calculer le pib réel par habitant en divisant l’une des variables du PIB réel disponible dans le jeux de données pwt (rgdpna, rgdpo ou rgdpe) par pop, la population en millions\n\npwt2 &lt;- \n  pwt %&gt;% \n  mutate(\n    rgdpna_per_capita = rgdpna/pop\n  )\n\nVoici ce que cela donne:\n\npwt2 %&gt;% \n  filter(country %in% c(\"Switzerland\")) %&gt;% \n  ggplot(aes(x = year, y = rgdpna_per_capita))+\n  geom_line()+\n  theme_minimal(base_size = 14)\n\n\n\n\n\n\n\n\nLa Penn World Table contient aussi d’autres variables permettant de calculer d’autres mesures macroéconomiques d’intérêt on peut calculer deux différentes mesures de la productivité du travail en divisant le PIB par les heures travaillées (avh) ou le nombre de personnes engagées (emp). On peut aussi calculer un proxy du taux de profit en prenant l’inverse de la part de la rémunération du travail dans le PIB (nous verrons pourquoi dans les séances sur la comptabilité nationale)\n\npwt3 &lt;- \n  pwt2 %&gt;% \n  mutate(\n    prod_heure = rgdpna/avh,\n    prod_empl = rgdpna/emp,\n    taux_profit = 1-labsh\n  )"
   }
 ]

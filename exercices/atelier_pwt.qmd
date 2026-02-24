@@ -1,0 +1,182 @@
+---
+title: "Atelier PWT"
+format: 
+  html: default
+  pdf: default
+  docx: default
+editor: visual
+---
+
+## Importation des données
+
+On importe les données en utilisant la fonction `rddata` du package `Rdatasets` dévelopé par Vincent Arel-Bundock (dont je vous recommande d'ailleurs de jeter un oeil à ses travaux). Rdatasets contient de nombreux jeux de données (voir <https://vincentarelbundock.github.io/Rdatasets/articles/data.html>). Il existe deux manière d'importer des données dans R: soit importer un fichier de données (en format csv, excel, sav, texte, stata ou autre), soit d'utiliser des package comme `Rdataset` et importer les données directement dans R avec une fonction comme `rddata`. Pour comprendre comment importer des données de cette manière, il faut toujours se référer à la documentation du package utilisé.
+
+```{r}
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(gt)
+library(Rdatasets)
+
+pwt = Rdatasets::rddata("pwt_sample")
+
+```
+
+
+
+
+## Quelle fonction permettrait d'avoir un aperçu rapide des variables ?
+
+```{r}
+glimpse(pwt)
+```
+
+La fonction `glimpse` nous renseigne sur les dimensions du jeux de données, à savoir le nombre de lignes (d'observations) et de colonnes (variables). Chaque ligne avec le signe `$` sont le nom des variables du jeux de données. Le plus important est de vérifier si chaque variable est bien dans le type qui lui correspond, à savoir `<chr>` si la variable est catégorielle (comme `country`), `<int>` ou `<dbl>` si la variable est numérique (int pour integer et dbl pour double-digit qui est un format numérique).
+
+## Comment avoir un aperçu rapide de l'une des variables ?
+
+```{r}
+unique(pwt$country)
+summary(pwt$rgdpe)
+```
+
+
+Utiliser `unique()` si la variable est catégorielle, car elle permet rapidement de voir toutes les valeurs que peut prendre la variable. `summary` pour les variables numériques.
+
+## En utilisant ggplot et tidyverse, comment je peux faire un graphique simple de toutes les variables du PIB disponible dans le dataset pour la Suisse ?
+
+
+`ggplot` est l'un des meilleurs outils pour la visualisation de données. Il est fondé les principes de la *grammaire des graphique* (voir <https://larmarange.github.io/guide-R/analyses/ggplot2.html>) qui est axé sur les éléments suivant à spécifier dans chaque graphique ggplot:
+
+- les données, à spécier avec `ggplot`
+
+Note: `pwt %>% ggplot()` revient à faire `ggplot(data = pwt)`
+
+- `aes()` qui spécifie les "aesthestics", c-à-d les éléments qui seront dessinés sur le graphiques, cela inclut:
+    + les variables `x` et `y` ainsi que différentes mises en forme que peuvent prendre ces variables comme `color`, `size`, `shape`, `fill`
+    + le type de graphique à faire, `geom_line()` pour graphique en ligne, `geom_point()` pour les graphiques en point, `geom_col()` ou `geom_bar()` pour des barplots etc.
+    + Éventuellement d'autres option pour améliorer l'aspect visuel du graphique
+
+
+```{r}
+
+options(scipen = 999) # option pour ne pas montrer les nombres en format scientifique
+
+pwt %>% 
+  filter(country %in% c("Switzerland")) %>% 
+  ggplot(aes(x = year, y = rgdpna, color = "PIB réel à prix nationaux constants de 2011 (en millions USD 2017)."))+
+  geom_line()+
+  geom_line(aes(x = year, y = rgdpo, color = "PIB réel côté production, en PPA chaînées (en millions USD 2017)"))+
+  geom_line(aes(x = year, y = rgdpe, color = "PIB réel côté dépenses, en PPA chaînées (en millions USD 2017)"))+
+  theme_minimal(base_size = 12)+
+  labs(title = "Évolution de différentes mesures du PIB de la Suisse",
+       x = "", y = "",
+       caption = "Source: Penn World Tables")+
+  theme(
+    legend.title = element_blank(),
+    legend.position = c(0.32, 0.74)
+  )+
+  guides(colour = guide_legend(nrow = 3))
+
+
+```
+
+## Comment peut-on inclure davantage de pays dans ce graphique ?
+
+```{r}
+
+pwt %>% 
+  filter(country %in% c("Switzerland", "France", "Germany")) %>% 
+  ggplot(aes(x = year, y = rgdpna, color = "rgdpna"))+
+  geom_line()+
+  geom_line(aes(x = year, y = rgdpo, color = "rgdpo"))+
+  geom_line(aes(x = year, y = rgdpe, color = "rgdpe"))+
+  theme_minimal()+
+  labs(title = "Évolution de différentes mesures du PIB de la Suisse",
+       x = "", y = "",
+       caption = "Source: Penn World Tables")+
+  theme(
+    legend.title = element_blank()
+  )+
+  facet_wrap(~country)
+
+
+```
+
+
+On pourrait aussi avoir des graphiques séparés selon le type de mesure du PIB, mais pour cela il faut transformer le jeux de données du format large au format long avec `pivot_longer()` avant de le passer dans la fonction ggplot
+
+```{r}
+
+pwt %>% 
+  pivot_longer(cols = 5:13,
+               names_to = "indicateur",
+               values_to = "value")
+```
+
+
+
+```{r}
+
+pwt %>% 
+  pivot_longer(cols = 5:13,
+               names_to = "indicateur",
+               values_to = "value") %>% 
+  filter(country %in% c("Switzerland", "France", "Germany") & indicateur %in% c("rgdpna", "rgdpo", "rgdpe")) %>% 
+  ggplot(aes(x = year, y = value, color = country))+
+  geom_line()+
+  facet_wrap(~indicateur)
+```
+
+
+## Comment peut-on créer une nouvelle variable dans ce dataset ?
+
+Il faut utiliser la fonction `mutate`. Par exemple, on peut calculer le pib réel par habitant en divisant l'une des variables du PIB réel disponible dans le jeux de données pwt (rgdpna, rgdpo ou rgdpe) par `pop`, la population en millions 
+
+```{r}
+
+pwt2 <- 
+  pwt %>% 
+  mutate(
+    rgdpna_per_capita = rgdpna/pop
+  )
+```
+
+
+Voici ce que cela donne:
+
+```{r}
+pwt2 %>% 
+  filter(country %in% c("Switzerland")) %>% 
+  ggplot(aes(x = year, y = rgdpna_per_capita))+
+  geom_line()+
+  theme_minimal(base_size = 14)
+
+
+```
+
+
+La Penn World Table contient aussi d'autres variables permettant de calculer d'autres mesures macroéconomiques d'intérêt on peut calculer deux différentes mesures de la productivité du travail en divisant le PIB par les heures travaillées (`avh`) ou le nombre de personnes engagées (`emp`). On peut aussi calculer un proxy du taux de profit en prenant l'inverse de la part de la rémunération du travail dans le PIB (nous verrons pourquoi dans les séances sur la comptabilité nationale)
+
+```{r}
+pwt3 <- 
+  pwt2 %>% 
+  mutate(
+    prod_heure = rgdpna/avh,
+    prod_empl = rgdpna/emp,
+    taux_profit = 1-labsh
+  )
+```
+
+
+
+
+
+
+
+
+
+
+
+
