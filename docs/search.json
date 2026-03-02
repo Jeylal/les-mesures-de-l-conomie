@@ -133,8 +133,8 @@
     "objectID": "3mars_cours2.html#séries-temporelles",
     "href": "3mars_cours2.html#séries-temporelles",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "",
-    "text": "La plupart des mesures de l’économie sont des séries temporelles (PIB, emploi, inflation…).\nL’analyse des séries temporelles présente certaines particularités par rapport aux données en coupe (à un point donné dans le temps, aussi appelé “cross-sectional data”), notamment car elles ont une tendance temporelle (par exemple exponentielle).",
+    "section": "Séries temporelles",
+    "text": "Séries temporelles\nLa plupart des mesures de l’économie sont des séries temporelles (PIB, emploi, inflation…).\nL’analyse des séries temporelles présente certaines particularités par rapport aux données en coupe (à un point donné dans le temps, aussi appelé “cross-sectional data”), notamment car elles ont une tendance temporelle (par exemple exponentielle).\n\nLorsque l’on veut analyser la relation entre deux variables qui ont tendance à croître avec le temps, il faut faire attention au problème de relation fallacieuse (spurious relationship), une corrélation apparente entre deux variable qui est en fait le résultat d’une 3ème variable “cachée” (ici le temps).",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -154,7 +154,7 @@
     "href": "3mars_cours2.html#croissance-exponentielle",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Croissance exponentielle",
-    "text": "Croissance exponentielle\n\nExemple dans R\n\nf = function(x0, g, t){\n  \n  x0*(1+g)^t\n  \n}\n\nx0 = 2\ng = 0.03\nt = 1:150\n\nx = f(x0 = x0, g = g, t = t)\n\nplot(x, type = \"l\")",
+    "text": "Croissance exponentielle\nExemple dans R\n\n\nf = function(x0, g, t){\n  \n  x0*(1+g)^t\n  \n}\n\nx0 = 2\ng = 0.03\nt = 1:150\n\nx = f(x0 = x0, g = g, t = t)\n\nplot(x, type = \"l\")",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -194,7 +194,7 @@
     "href": "3mars_cours2.html#transformation-en-logarithme-1",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Transformation en logarithme",
-    "text": "Transformation en logarithme\nSi \\(x_t = x_0(1+g)^t\\) est transformé en log et que nous isolons g, nous trouvons:\n\\[\nlog(1+g) = \\frac{log(x_t)-log(x_0)}{t}\n\\]\nEntre seulement deux période (par exemple d’une année à l’autre), \\(t = 1\\) et donc le taux de croissance peut être approximé facilement en prenant la différence en log. Quand \\(g\\) est entre -0.15 et 0.15, \\(log(1+g)\\) est une bonne approximation de \\(g\\).\nDans R:\n\nlibrary(tidyverse) # la fonction lag() doit être importée avec le package tidyverse\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.2.0     ✔ readr     2.1.6\n✔ forcats   1.0.1     ✔ stringr   1.6.0\n✔ ggplot2   4.0.2     ✔ tibble    3.3.1\n✔ lubridate 1.9.5     ✔ tidyr     1.3.2\n✔ purrr     1.2.1     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\ng = log(x) - lag(log(x)) # lag() prend la valeur de x à t-1\n\n# Ou bien avec diff() (difference):\ng = diff(log(x))",
+    "text": "Transformation en logarithme\nSi \\(x_t = x_0(1+g)^t\\) est transformé en log et que nous isolons g, nous trouvons:\n\\[\nlog(1+g) = \\frac{log(x_t)-log(x_0)}{t}\n\\]\nEntre seulement deux période (par exemple d’une année à l’autre), \\(t = 1\\) et donc le taux de croissance peut être approximé facilement en prenant la différence en log. Quand \\(g\\) est entre -0.15 et 0.15, \\(log(1+g)\\) est une bonne approximation de \\(g\\).\nDans R:\n\nlibrary(tidyverse) # la fonction lag() doit être importée avec le package tidyverse\n\ng = log(x) - lag(log(x)) # lag() prend la valeur de x à t-1\n\n# Ou bien avec diff() (difference):\ng = diff(log(x))",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -204,7 +204,7 @@
     "href": "3mars_cours2.html#pourquoi-log1g-g-entre--0.15-et-0.15",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Pourquoi log(1+g) ≅ g entre -0.15 et 0.15",
-    "text": "Pourquoi log(1+g) ≅ g entre -0.15 et 0.15\n\ng = seq(from = -0.30, to = 0.30, by = 0.001)\n`log(g+1)` = log(g+1)\n\ndf = tibble(g = g, `log(g+1)` = `log(g+1)`)\n\ndf %&gt;% \n  ggplot(aes(x = g, y = g, color = \"g\"))+\n  geom_line()+\n  geom_line(aes(x = g, y = `log(g+1)`, color = \"Log(1+g)\"))+\n  theme_minimal()+\n  labs(x = \"\", y = \"\")",
+    "text": "Pourquoi log(1+g) ≅ g entre -0.15 et 0.15\n\n\ng = seq(from = -0.30, to = 0.30, by = 0.001)\n`log(g+1)` = log(g+1)\n\ndf = tibble(g = g, `log(g+1)` = `log(g+1)`)\n\ndf %&gt;% \n  ggplot(aes(x = g, y = g, color = \"g\"))+\n  geom_line()+\n  geom_line(aes(x = g, y = `log(g+1)`, color = \"Log(1+g)\"))+\n  theme_minimal()+\n  labs(x = \"\", y = \"\")",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -214,7 +214,7 @@
     "href": "3mars_cours2.html#exemple-avec-des-données-réelles-du-pib",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Exemple avec des données réelles du PIB",
-    "text": "Exemple avec des données réelles du PIB\n\nlibrary(maddison) # le package maddison permet d'importer des données de longue durée du PIB par habitant\nlibrary(tidyverse) \n\ndata &lt;- subset(maddison, \n             year &gt;= 1800 &\n             iso2c %in% c(\"FR\", \"US\"))\n\ndata %&gt;% \n  ggplot(aes(x = year, y = rgdpnapc, color = country)) +\n  geom_line()+\n  theme_minimal()+\n  labs(x = \"\",\n       y = \"PIB par habitant (dollar US 2011)\",\n       title = \"Échelle normale (non-logarithmique)\")",
+    "text": "Exemple avec des données réelles du PIB\n\n\nlibrary(maddison) # le package maddison permet d'importer des données de longue durée du PIB par habitant\nlibrary(tidyverse) \n\ndata &lt;- subset(maddison, \n             year &gt;= 1800 &\n             iso2c %in% c(\"FR\", \"US\"))\n\ndata %&gt;% \n  ggplot(aes(x = year, y = rgdpnapc, color = country)) +\n  geom_line()+\n  theme_minimal()+\n  labs(x = \"\",\n       y = \"PIB par habitant (dollar US 2011)\",\n       title = \"Échelle normale (non-logarithmique)\")",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -224,7 +224,7 @@
     "href": "3mars_cours2.html#exemple-avec-des-données-réelles-du-pib-1",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Exemple avec des données réelles du PIB",
-    "text": "Exemple avec des données réelles du PIB\n\ndata %&gt;% \n  ggplot(aes(x = year, y = log(rgdpnapc), color = country)) +\n  geom_line()+\n  theme_minimal()+\n  labs(x = \"\",\n       y = \"PIB par habitant (dollar US 2011)\",\n       title = \"Échelle logarithmique\")",
+    "text": "Exemple avec des données réelles du PIB\n\n\ndata %&gt;% \n  ggplot(aes(x = year, y = log(rgdpnapc), color = country)) +\n  geom_line()+\n  theme_minimal()+\n  labs(x = \"\",\n       y = \"PIB par habitant (dollar US 2011)\",\n       title = \"Échelle logarithmique\")",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -254,7 +254,7 @@
     "href": "3mars_cours2.html#régression-linéaire-simple",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Régression linéaire simple",
-    "text": "Régression linéaire simple\nCette fonction de consommation peut être estimée au moyen d’un modèle de régression linéaire simple. - “Simple”, car nous avons uniquement une variable explicative (les salaire \\(W\\)). - “linéaire”, car notre variable dépendante est numérique (la consommation \\(C\\)).\nLa régression linéaire simple prend la forme suivante:\n\\[\nE[Y|X] = \\beta_0 + \\beta_1X_i + e_i\n\\]\nAvec \\(E[Y|X]\\) “l’espérance” (la moyenne) de Y, notre variable dépendante, en fonction des valeur de notre variable explicative \\(X\\). \\(\\beta_0\\) l’ordonnée à l’origine et \\(e_i\\) le terme d’erreur. \\(E[Y|X]\\) est souvent écrit \\(Y\\) par simplicité.\n==&gt; Les régressions peuvent paraître compliquées à première vue ==&gt; Une manière simple de “démistifer” les régression est de comprendre qu’il s’agit simplement de comparaisons de moyennes",
+    "text": "Régression linéaire simple\nCette fonction de consommation peut être estimée au moyen d’un modèle de régression linéaire simple. - “Simple”, car nous avons uniquement une variable explicative (les salaire \\(W\\)). - “linéaire”, car notre variable dépendante est numérique (la consommation \\(C\\)).\nLa régression linéaire simple prend la forme suivante:\n\\[\n\\underbrace{E[Y|X]}_{Valeurs\\ moyennes \\ de \\ Y \\ par \\ rapport \\ à \\ X} = \\underbrace{\\beta_0}_{ordonnée \\ à \\ l'origine} + \\underbrace{\\beta_1 X}_{coefficient*variable\\ explicative} + \\underbrace{e_i}_{termes\\ d'erreur}\n\\]\nAvec \\(E[Y|X]\\) “l’espérance” (la moyenne) de Y, notre variable dépendante, en fonction des valeur de notre variable explicative \\(X\\). \\(\\beta_0\\) l’ordonnée à l’origine et \\(e_i\\) le terme d’erreur. \\(E[Y|X]\\) est souvent écrit \\(Y\\) par simplicité.\n==&gt; Les régressions peuvent paraître compliquées à première vue ==&gt; Une manière simple de “démistifer” les régression est de comprendre qu’il s’agit simplement de comparaisons de moyennes",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -284,7 +284,7 @@
     "href": "3mars_cours2.html#interprétation-en-termes-de-comparaison-1",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Interprétation en termes de comparaison",
-    "text": "Interprétation en termes de comparaison\nMême principe si la variable est numérique/continue\nExemple avec \\(X_i\\) le revenu de la personne \\(i\\) et \\(Y=C\\) la consommation. Prenons \\(X_1 = 5000\\) et \\(X_2 = 5001\\). Le coefficient \\(\\beta1\\) est la différence entre \\(X_2\\) et \\(X_1\\).\n\\[E[Y|X_2 = 5001] - E[Y|X_1 = 5000] = \\beta_0 + \\beta_15001 - \\beta_0 - \\beta_15000 = \\beta_1\\]\n\\(\\beta_1\\) est donc la différence de consommation moyenne prédite par le modèle entre deux personnes ayant un revenu de 5001 et 5000. En d’autre termes, la différence de moyenne prédite entre deux personnes différant d’une unité.",
+    "text": "Interprétation en termes de comparaison\nMême principe si la variable est numérique/continue\nExemple avec \\(X_i\\) le revenu de la personne \\(i\\) et \\(Y=C\\) la consommation. Prenons \\(X_1 = 5000\\) et \\(X_2 = 5001\\). Le coefficient \\(\\beta1\\) est la différence entre les valeurs prédite de Y pour \\(X_2\\) et \\(X_1\\).\n\\[E[Y|X_2 = 5001] - E[Y|X_1 = 5000] = \\beta_0 + \\beta_15001 - \\beta_0 - \\beta_15000 = \\beta_1\\]\n\\(\\beta_1\\) est donc la différence de consommation moyenne prédite par le modèle entre deux personnes ayant un revenu de 5001 et 5000. En d’autre termes, la différence de moyenne prédite entre deux personnes différant d’une unité.",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -304,7 +304,7 @@
     "href": "3mars_cours2.html#retour-à-notre-exemple-c-c_0-c_1w",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Retour à notre exemple \\[C = c_0 + c_1W\\]",
-    "text": "Retour à notre exemple \\[C = c_0 + c_1W\\]\n\nlibrary(readr)\nmacroch &lt;- read_csv(\"data/macroch.csv\")\n\nNew names:\nRows: 63 Columns: 25\n── Column specification\n──────────────────────────────────────────────────────── Delimiter: \",\" dbl\n(25): ...1, GDP_n, GDP_deflator, GDP_real, C_n, C_deflator, C_real, I_n,...\nℹ Use `spec()` to retrieve the full column specification for this data. ℹ\nSpecify the column types or set `show_col_types = FALSE` to quiet this message.\n• `` -&gt; `...1`\n\nmacroch %&gt;% \n  ggplot(aes(x = W_real, y = C_real))+\n  geom_point()+\n  theme_minimal()+\n  labs(x = \"Rémunération des salariés (W)\",\n       y = \"Consommation (C)\")",
+    "text": "Retour à notre exemple \\[C = c_0 + c_1W\\]\n\n\nlibrary(readr)\nmacroch &lt;- read_csv(\"data/macroch.csv\")\n\nmacroch %&gt;% \n  ggplot(aes(x = W_real, y = C_real))+\n  geom_point()+\n  theme_minimal()+\n  labs(x = \"Rémunération des salariés (W)\",\n       y = \"Consommation (C)\")",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -314,7 +314,7 @@
     "href": "3mars_cours2.html#estimation-simple-avec-lm",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Estimation simple avec lm()",
-    "text": "Estimation simple avec lm()\n\nlibrary(kableExtra)\n\n\nAttachement du package : 'kableExtra'\n\n\nL'objet suivant est masqué depuis 'package:dplyr':\n\n    group_rows\n\nlibrary(broom)\nmodel = lm(data = macroch, # préciser le tableau dans lequel les variables sont présentes\n           formula = C_real ~ W_real) # la formule estimée doit prendre la forme Y ~ X\n\ntidy(model) %&gt;% \n  kable() \n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n43.1846843\n2.7815089\n15.52563\n0\n\n\nW_real\n0.7972749\n0.0103511\n77.02329\n0\n\n\n\n\n\nLa fonction estimée est donc:\n\\[C = 43 + 0.797W\\]",
+    "text": "Estimation simple avec lm()\n\nlibrary(kableExtra)\nlibrary(broom)\nmodel = lm(data = macroch, # préciser le tableau dans lequel les variables sont présentes\n           formula = C_real ~ W_real) # la formule estimée doit prendre la forme Y ~ X\n\ntidy(model) %&gt;% \n  kable() \n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n43.1846843\n2.7815089\n15.52563\n0\n\n\nW_real\n0.7972749\n0.0103511\n77.02329\n0\n\n\n\n\n\nLa fonction estimée est donc:\n\\[C = 43 + 0.797W\\]",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -324,7 +324,7 @@
     "href": "3mars_cours2.html#valeurs-prédites",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Valeurs prédites",
-    "text": "Valeurs prédites\n\ndata = augment(model)\n\ndata %&gt;% \n  ggplot(aes(x = W_real, y = C_real, color = \"Valeurs réelles observées\"))+\n  geom_line()+\n  geom_line(aes(x = W_real, y = .fitted, color = \"Valeurs prédites\"))+\n  theme_minimal()+\n  labs(title = \"C = 43 + 0.797W\")",
+    "text": "Valeurs prédites\n\n\ndata = augment(model)\n\ndata %&gt;% \n  ggplot(aes(x = W_real, y = C_real, color = \"Valeurs réelles observées\"))+\n  geom_line()+\n  geom_line(aes(x = W_real, y = .fitted, color = \"Valeurs prédites\"))+\n  theme_minimal()+\n  labs(title = \"C = 43 + 0.797W\")",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -334,7 +334,7 @@
     "href": "3mars_cours2.html#vérification-des-hypothèses-du-modèle",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Vérification des hypothèses du modèle",
-    "text": "Vérification des hypothèses du modèle\n\nLinéarité et indépendance des erreurs\n\n\nlibrary(performance)\n\ndiagnostic_plots = plot(check_model(model, panel = FALSE))\n\nFor confidence bands, please install `qqplotr`.\n\ndiagnostic_plots[[2]]\n\n\n\n\n\n\n\n\nOn voit clairement un pattern dans la distribution des données ==&gt; pas d’indépendance des erreurs, ce qui est typiquement le cas des séries temporelles",
+    "text": "Vérification des hypothèses du modèle\n\nLinéarité et indépendance des erreurs\n\n\n\nlibrary(performance)\n\ndiagnostic_plots = plot(check_model(model, panel = FALSE))\ndiagnostic_plots[[2]]\n\n\n\n\n\n\n\n\n\nOn voit clairement un pattern dans la distribution des données ==&gt; pas d’indépendance des erreurs, ce qui est typiquement le cas des séries temporelles",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -344,7 +344,7 @@
     "href": "3mars_cours2.html#vérification-des-hypothèses-du-modèle-1",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Vérification des hypothèses du modèle",
-    "text": "Vérification des hypothèses du modèle\n\nHomoscédasticité\n\n\nlibrary(performance)\n\ndiagnostic_plots[[3]]\n\n\n\n\n\n\n\n\nIl y aussi clairement un problème d’hétéroscédasticité: la variance des erreurs n’est pas constante",
+    "text": "Vérification des hypothèses du modèle\n\nHomoscédasticité\n\n\nlibrary(performance)\n\ndiagnostic_plots[[3]]\n\n\nIl y aussi clairement un problème d’hétéroscédasticité: la variance des erreurs n’est pas constante",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -384,7 +384,7 @@
     "href": "3mars_cours2.html#régression-dune-série-temporelle-sur-sa-trend",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "Régression d’une série temporelle sur sa trend",
-    "text": "Régression d’une série temporelle sur sa trend\nQue se passe-t-il si notre régression inclue seulement la dimension temporelle comme variable explicative dans un modèle log-linéaire ? \\(log(C) = \\beta_0 + \\beta_{year}year\\)\n\ndata &lt;- \ndata %&gt;% \n  mutate(\n    year = 1960:2022,\n  )\n\nmodel4 = lm(data = data,\n            log(C_real) ~ year)\n\ntidy(model4)\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept) -30.5     0.883        -34.5 9.89e-42\n2 year          0.0180  0.000443      40.7 6.58e-46\n\n\nLe coefficient \\(\\beta_{year} = 0.018\\) peut être interprété comme le taux de croissance moyen sur l’ensemble de la période, pas seulement entre la première et dernière année (moyenne des taux de croissance, ou le taux de croissance composé).",
+    "text": "Régression d’une série temporelle sur sa trend\nQue se passe-t-il si notre régression inclue seulement la dimension temporelle comme variable explicative dans un modèle log-linéaire ? \\(log(C) = \\beta_0 + \\beta_{year}year\\)\n\ndata &lt;- \ndata %&gt;% \n  mutate(\n    year = 1960:2022,\n  )\n\nmodel4 = lm(data = data,\n            log(C_real) ~  year)\n\ntidy(model4)\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept) -30.5     0.883        -34.5 9.89e-42\n2 year          0.0180  0.000443      40.7 6.58e-46\n\n\nLe coefficient \\(\\beta_{year} = 0.018\\) peut être interprété comme le taux de croissance moyen sur l’ensemble de la période, pas seulement entre la première et dernière année (moyenne des taux de croissance, ou le taux de croissance composé).",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -424,7 +424,7 @@
     "href": "3mars_cours2.html#section",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
     "section": "",
-    "text": "Afficher le code\nplot3 &lt;- \nplot2+\n  labs(title = \"\",\n       y = \"Taux de croissance de C\")+\n  geom_segment(aes(x = 1960, xend = 1980, y = 0.03, yend = 0.03), color = \"black\")+\n  geom_segment(aes(x = 1981, xend = 2022, y = 0.0139, yend = 0.0139), color = \"black\")+\n  annotate(\"text\", x = 1970, y = 0.025, label = \"taux de croissance moyen = 0.03\", size = 2.5)+\n  annotate(\"text\", x = 2000, y = 0, label = \"taux de croissance moyen = 0,0139\", size = 2.5)\n\nlibrary(marginaleffects)\n\nplot4 &lt;- \nmodel6 %&gt;% \n  plot_predictions(condition = \"year\")+\n  geom_line(data = data, aes(x = year, y = log(C_real)), size = 1.2, color = \"darkred\")+\n  theme_minimal()+\n  geom_vline(xintercept = 1980, linetype = 2)+\n  annotate(\"text\", label = \"log(c) = -57 + 0.03year\", x = 1980, y = 5)+\n  annotate(\"text\", label = \"log(c) = -25 -0.0139year\", x = 2010, y = 5.5)+\n  labs(y = \"log(c)\")\n\n\nWarning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.\nℹ Please use `linewidth` instead.\n\n\nAfficher le code\ncowplot::plot_grid(plot3, plot4)\n\n\nWarning in geom_segment(aes(x = 1960, xend = 1980, y = 0.03, yend = 0.03), : All aesthetics have length 1, but the data has 62 rows.\nℹ Please consider using `annotate()` or provide this layer with data containing\n  a single row.\n\n\nWarning in geom_segment(aes(x = 1981, xend = 2022, y = 0.0139, yend = 0.0139), : All aesthetics have length 1, but the data has 62 rows.\nℹ Please consider using `annotate()` or provide this layer with data containing\n  a single row.",
+    "text": "Afficher le code\nplot3 &lt;- \nplot2+\n  labs(title = \"\",\n       y = \"Taux de croissance de C\")+\n  geom_segment(aes(x = 1960, xend = 1980, y = 0.03, yend = 0.03), color = \"black\")+\n  geom_segment(aes(x = 1981, xend = 2022, y = 0.0139, yend = 0.0139), color = \"black\")+\n  annotate(\"text\", x = 1970, y = 0.025, label = \"taux de croissance moyen = 0.03\", size = 2.5)+\n  annotate(\"text\", x = 2000, y = 0, label = \"taux de croissance moyen = 0,0139\", size = 2.5)\n\nlibrary(marginaleffects)\n\nplot4 &lt;- \nmodel6 %&gt;% \n  plot_predictions(condition = \"year\")+\n  geom_line(data = data, aes(x = year, y = log(C_real)), size = 1.2, color = \"darkred\")+\n  theme_minimal()+\n  geom_vline(xintercept = 1980, linetype = 2)+\n  annotate(\"text\", label = \"log(c) = -57 + 0.03year\", x = 1980, y = 5)+\n  annotate(\"text\", label = \"log(c) = -25 -0.0139year\", x = 2010, y = 5.5)+\n  labs(y = \"log(c)\")\n\ncowplot::plot_grid(plot3, plot4)",
     "crumbs": [
       "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
@@ -1194,5 +1194,35 @@
     "title": "Atelier PWT",
     "section": "Comment peut-on créer une nouvelle variable dans ce dataset ?",
     "text": "Comment peut-on créer une nouvelle variable dans ce dataset ?\nIl faut utiliser la fonction mutate. Par exemple, on peut calculer le pib réel par habitant en divisant l’une des variables du PIB réel disponible dans le jeux de données pwt (rgdpna, rgdpo ou rgdpe) par pop, la population en millions\n\npwt2 &lt;- \n  pwt %&gt;% \n  mutate(\n    rgdpna_per_capita = rgdpna/pop\n  )\n\nVoici ce que cela donne:\n\npwt2 %&gt;% \n  filter(country %in% c(\"Switzerland\")) %&gt;% \n  ggplot(aes(x = year, y = rgdpna_per_capita))+\n  geom_line()+\n  theme_minimal(base_size = 14)\n\n\n\n\n\n\n\n\nLa Penn World Table contient aussi d’autres variables permettant de calculer d’autres mesures macroéconomiques d’intérêt on peut calculer deux différentes mesures de la productivité du travail en divisant le PIB par les heures travaillées (avh) ou le nombre de personnes engagées (emp). On peut aussi calculer un proxy du taux de profit en prenant l’inverse de la part de la rémunération du travail dans le PIB (nous verrons pourquoi dans les séances sur la comptabilité nationale)\n\npwt3 &lt;- \n  pwt2 %&gt;% \n  mutate(\n    prod_heure = rgdpna/avh,\n    prod_empl = rgdpna/emp,\n    taux_profit = 1-labsh\n  )"
+  },
+  {
+    "objectID": "3mars_cours2.html#moyenne-des-taux-de-croissance-annuel",
+    "href": "3mars_cours2.html#moyenne-des-taux-de-croissance-annuel",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Moyenne des taux de croissance annuel",
+    "text": "Moyenne des taux de croissance annuel\n\\[\n\\bar{g} = \\frac{1}{T}\\sum_{i=1}^t{g_i}\n\\]\nAvec \\(T\\) le nombre total de périodes. g et \\(\\bar{g}\\) sont la plupart du temps relativement identiques (cela dépend de la variation des taux de croissance).",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#comment-interpréter-les-résidus-de-régressions",
+    "href": "3mars_cours2.html#comment-interpréter-les-résidus-de-régressions",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Comment interpréter les résidus de régressions ?",
+    "text": "Comment interpréter les résidus de régressions ?\nLes résidus \\(e_i\\) sont l’écart entre les valeurs observées et les valeurs prédites par notre modèle:\n\\[\ne_i = \\underbrace{Y}_{valeurs \\ observées} - \\underbrace{\\beta_0 + \\beta_1 X}_{valeurs \\ prédites}\n\\]\nDans notre modèle \\(log(C) = \\beta_0 + \\beta_1 year + e_i\\), et pour les séries temporelles non-stationnaire de manière générale, \\(e_i\\) représente l’écart de \\(C\\) par rapport à sa tendance de long-terme.",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "index.html#résumé-du-cours",
+    "href": "index.html#résumé-du-cours",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "",
+    "text": "Ce séminaire a pour objectif d’enseigner aux étudiants la manière dont les principaux indicateurs économiques tirés de la comptabilité nationale et de l’étude de la distribution du revenu national sont calculés. Un accent particulier sera mis sur la familiarisation avec les principales sources de données en économie et comment traiter ces données en pratique. La première partie du cours portera sur les indicateurs calculables à partir de la comptabilité nationale (comme le taux de profit, la part des salaires dans la valeur ajoutée, les contributions à la croissance etc.). La deuxième partie du cours se concentrera sur les principaux indicateurs d’inégalité ainsi que sur l’étude de la distribution du revenu. Enfin, la dernière partie du cours sera consacrée aux indicateurs mesurant les institutions socio-économiques. Ce séminaire sera fortement axé sur des exercices pratiques permettant aux étudiants d’apprendre comment développer eux-même leurs propres analyses des dynamiques économiques. Ce séminaire accompagne le cours les mesures de l’économie dispensé par Professeur Marc Morgan, mais reste un cours indépendant.",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
   }
 ]

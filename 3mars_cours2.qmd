@@ -13,11 +13,15 @@ lang: fr
 footer: <https://jeylal.github.io/les-mesures-de-l-conomie/>
 ---
 
-## Séries temporelles
+
+
+## Séries temporelles {.smaller}
 
 La plupart des mesures de l'économie sont des séries temporelles (PIB, emploi, inflation...).
 
 L'analyse des séries temporelles présente certaines particularités par rapport aux données en coupe (à un point donné dans le temps, aussi appelé "cross-sectional data"), notamment car elles ont une tendance temporelle (par exemple exponentielle).
+
+  - Lorsque l'on veut analyser la relation entre deux variables qui ont tendance à croître avec le temps, il faut faire attention au problème de *relation fallacieuse* (spurious relationship), une corrélation apparente entre deux variable qui est en fait le résultat d'une 3ème variable "cachée" (ici le temps).
 
 ## Taux de croissance {.smaller}
 
@@ -78,15 +82,14 @@ $$
 g = \frac{x_1 - x_0}{x_0} = \left(\frac{x_1}{x_0}\right)^{1/1}-1
 $$
 
-## Taux de croissance
+## Moyenne des taux de croissance annuel
 
-À ne pas confondre avec la moyenne des taux de croissance:
 
 $$
-\bar{g} = \frac{1}{t}\sum_{i=1}^t{g_i}
+\bar{g} = \frac{1}{T}\sum_{i=1}^t{g_i}
 $$
 
-g et $\bar{g}$ sont identiques seulement si le taux de croissance est constant pour toutes les périodes t.
+Avec $T$ le nombre total de périodes. g et $\bar{g}$ sont la plupart du temps relativement identiques (cela dépend de la variation des taux de croissance).
 
 ## Rétropolation de séries et taux de croissance {.smaller}
 
@@ -219,8 +222,7 @@ data %>%
 
 ## Utilité des régressions
 
-- Prévisions
-
+-   Prévisions
 
 ## Exemple: fonction de consommation {.smaller}
 
@@ -239,7 +241,7 @@ Cette fonction de consommation peut être estimée au moyen d'un modèle de rég
 La régression linéaire simple prend la forme suivante:
 
 $$
-E[Y|X] = \beta_0 + \beta_1X_i + e_i
+\underbrace{E[Y|X]}_{Valeurs\ moyennes \ de \ Y \ par \ rapport \ à \ X} = \underbrace{\beta_0}_{ordonnée \ à \ l'origine} + \underbrace{\beta_1 X}_{coefficient*variable\ explicative} + \underbrace{e_i}_{termes\ d'erreur}
 $$
 
 Avec $E[Y|X]$ "l'espérance" (la moyenne) de Y, notre variable dépendante, *en fonction* des valeur de notre variable explicative $X$. $\beta_0$ l'ordonnée à l'origine et $e_i$ le terme d'erreur. $E[Y|X]$ est souvent écrit $Y$ par simplicité.
@@ -276,7 +278,7 @@ $\beta_1$ est la différence entre la moyenne prédite des femmes et des hommes.
 
 Même principe si la variable est numérique/continue
 
-Exemple avec $X_i$ le revenu de la personne $i$ et $Y=C$ la consommation. Prenons $X_1 = 5000$ et $X_2 = 5001$. Le coefficient $\beta1$ est la différence entre $X_2$ et $X_1$.
+Exemple avec $X_i$ le revenu de la personne $i$ et $Y=C$ la consommation. Prenons $X_1 = 5000$ et $X_2 = 5001$. Le coefficient $\beta1$ est la différence entre les valeurs prédite de Y pour $X_2$ et $X_1$.
 
 $$E[Y|X_2 = 5001] - E[Y|X_1 = 5000] = \beta_0 + \beta_15001 - \beta_0 - \beta_15000 = \beta_1$$
 
@@ -356,6 +358,7 @@ library(performance)
 
 diagnostic_plots = plot(check_model(model, panel = FALSE))
 diagnostic_plots[[2]]
+
 ```
 
 On voit clairement un pattern dans la distribution des données ==\> pas d'indépendance des erreurs, ce qui est typiquement le cas des séries temporelles
@@ -455,10 +458,15 @@ data %>%
   )
 
 model4 = lm(data = data,
-            log(C_real) ~ year)
+            log(C_real) ~  year)
 
 tidy(model4)
+
 ```
+
+
+
+
 
 Le coefficient $\beta_{year} = 0.018$ peut être interprété comme le taux de croissance moyen sur l'ensemble de la période, pas seulement entre la première et dernière année (moyenne des taux de croissance, ou le taux de croissance composé).
 
@@ -558,6 +566,16 @@ model6 %>%
 cowplot::plot_grid(plot3, plot4)
 
 ```
+
+## Comment interpréter les résidus de régressions ? {.smaller}
+
+Les résidus $e_i$ sont l'écart entre les valeurs observées et les valeurs prédites par notre modèle:
+
+$$
+e_i = \underbrace{Y}_{valeurs \ observées} - \underbrace{\beta_0 + \beta_1 X}_{valeurs \ prédites} 
+$$
+
+Dans notre modèle $log(C) = \beta_0 + \beta_1 year + e_i$, et pour les séries temporelles non-stationnaire de manière générale, $e_i$ représente l'écart de $C$ par rapport à sa tendance de long-terme.
 
 ## Pour aller plus loin {.smaller}
 
