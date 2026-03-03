@@ -1,0 +1,644 @@
+---
+title: "3 Mars. Introduction aux séries temporelles et aux régressions"
+subtitle: "Séminaire les mesures de l'économie"
+author: "Celâl Güney"
+format: 
+  live-revealjs:
+    theme: serif
+    scrollable: true
+    controls: true
+editor: visual
+embed-resources: true
+lang: fr
+footer: <https://jeylal.github.io/les-mesures-de-l-conomie/>
+---
+
+
+
+## Séries temporelles {.smaller}
+
+La plupart des mesures de l'économie sont des séries temporelles (PIB, emploi, inflation...).
+
+L'analyse des séries temporelles présente certaines particularités par rapport aux données en coupe (à un point donné dans le temps, aussi appelé "cross-sectional data"), notamment car elles ont une tendance temporelle (par exemple exponentielle).
+
+  - Lorsque l'on veut analyser la relation entre deux variables qui ont tendance à croître avec le temps, il faut faire attention au problème de *relation fallacieuse* (spurious relationship), une corrélation apparente entre deux variable qui est en fait le résultat d'une 3ème variable "cachée" (ici le temps).
+
+## Taux de croissance {.smaller}
+
+Les séries temporelles ont la particularité de croître à un taux plus ou moins stable dans le temps.
+
+Cela implique une croissance exponentielle
+
+Exemple: imaginons une variable $x$ qui croît à un taux constant de 3% par an. A $t = 0$, $x =2$. A $t=1$, x augmente de $2*1.03$ (0.03 étant le taux de croissance auquel on additionne 1):
+
+$x_{t=1} = 2*1.03$
+
+Pour $t=2$, $x_{t=2} = 2*1.03*1.03 = 2*(1.03)^2$
+
+Pour $t=3$, $x_{t=3} = 2*1.03*1.03*1.03 = 2*(1.03)^3$
+
+Ainsi de suite, pour la formule générale:
+
+$x_t = 2*(1.03)^t$. Il s'agit de la formule de croissance exponentielle: $x_t = x_0 (1+g)^t$, avec $x_0$ la valeur initiale, $g$ le taux de croissance et $t$ le nombre de périodes.
+
+## Croissance exponentielle
+
+### Exemple dans R
+
+```{r}
+#| echo: true
+#| output-location: column-fragment
+f = function(x0, g, t){
+  
+  x0*(1+g)^t
+  
+}
+
+x0 = 2
+g = 0.03
+t = 1:150
+
+x = f(x0 = x0, g = g, t = t)
+
+plot(x, type = "l")
+
+```
+
+## Taux de croissance {style="font-size: 1.6rem; line-height:1.6;"}
+
+À partir de la formule pour la croissance exponentielle de X
+
+$$x_t = x_0(1+g)^t$$
+
+on peut trouver le taux de croissance:
+
+$$g = \left(\frac{x_t}{x_0}\right)^{1/t}-1$$
+
+Il s'agit du *taux de croissance moyen composé* de la série entre $x_t$ (en dernière période) et $x_0$
+
+Lorsque l'on calcule le taux de croissance entre deux périodes seulement (disons $x_0$ et $x_1$), on retrouve la formule habituelle du taux de croissance (car $t=1$):
+
+$$
+g = \frac{x_1 - x_0}{x_0} = \left(\frac{x_1}{x_0}\right)^{1/1}-1
+$$
+
+## Moyenne des taux de croissance annuel
+
+
+$$
+\bar{g} = \frac{1}{T}\sum_{i=1}^t{g_i}
+$$
+
+Avec $T$ le nombre total de périodes. g et $\bar{g}$ sont la plupart du temps relativement identiques (cela dépend de la variation des taux de croissance).
+
+## Rétropolation de séries et taux de croissance {.smaller}
+
+-   Le plus souvent, le taux de croissance est calculé pour des variables en niveau
+-   Mais il est parfois courant en macroéconomie de faire l'inverse: calculer des variables en niveau à partir de son taux de croissance
+    -   Exemple: les séries macroéconomiques suisses avant 1980 sont souvent calculé de cette manière en utilisant les taux de croissance d'anciens systèmes de comptabilité nationale.
+
+$$
+x_t = x_{t-1}*(1+g)
+$$
+
+## Transformation en logarithme {.smaller}
+
+::::: columns
+::: column
+La transformation en logarithme (passer de $x_t$ à $log(x_t)$) est très courante en économie, surtout avec des séries temporelles caractérisées par une croissance exponentielle.
+
+-   La transformation log permet de "linéariser" une série exponentielle
+-   Lorsque l'on visualise la courbe d'une série en logarithme, *la pente est le taux de croissance*
+:::
+
+::: column
+```{r}
+#| echo: true
+plot(x, type = "l")
+```
+
+```{r}
+#| echo: true
+plot(log(x), type = "l")
+```
+:::
+:::::
+
+## Transformation en logarithme {.smaller}
+
+Si $x_t = x_0(1+g)^t$ est transformé en log et que nous isolons g, nous trouvons:
+
+$$
+log(1+g) = \frac{log(x_t)-log(x_0)}{t}
+$$
+
+Entre seulement deux période (par exemple d'une année à l'autre), $t = 1$ et donc le taux de croissance peut être approximé facilement en prenant la différence en log. Quand $g$ est entre -0.15 et 0.15, $log(1+g)$ est une bonne approximation de $g$.
+
+Dans R:
+
+```{r}
+#| echo: true
+
+library(tidyverse) # la fonction lag() doit être importée avec le package tidyverse
+
+g = log(x) - lag(log(x)) # lag() prend la valeur de x à t-1
+
+# Ou bien avec diff() (difference):
+g = diff(log(x))
+```
+
+## Pourquoi log(1+g) ≅ g entre -0.15 et 0.15
+
+```{r}
+#| echo: true
+#| output-location: column
+g = seq(from = -0.30, to = 0.30, by = 0.001)
+`log(g+1)` = log(g+1)
+
+df = tibble(g = g, `log(g+1)` = `log(g+1)`)
+
+df %>% 
+  ggplot(aes(x = g, y = g, color = "g"))+
+  geom_line()+
+  geom_line(aes(x = g, y = `log(g+1)`, color = "Log(1+g)"))+
+  theme_minimal()+
+  labs(x = "", y = "")
+
+```
+
+## Exemple avec des données réelles du PIB
+
+```{r}
+#| echo: true
+#| output-location: column-fragment
+
+library(maddison) # le package maddison permet d'importer des données de longue durée du PIB par habitant
+library(tidyverse) 
+
+data <- subset(maddison, 
+             year >= 1800 &
+             iso2c %in% c("FR", "US"))
+
+data %>% 
+  ggplot(aes(x = year, y = rgdpnapc, color = country)) +
+  geom_line()+
+  theme_minimal()+
+  labs(x = "",
+       y = "PIB par habitant (dollar US 2011)",
+       title = "Échelle normale (non-logarithmique)")
+
+
+
+
+
+```
+
+## Exemple avec des données réelles du PIB
+
+```{r}
+#| echo: true
+#| output-location: column-fragment
+
+
+data %>% 
+  ggplot(aes(x = year, y = log(rgdpnapc), color = country)) +
+  geom_line()+
+  theme_minimal()+
+  labs(x = "",
+       y = "PIB par habitant (dollar US 2011)",
+       title = "Échelle logarithmique")
+
+
+```
+
+# Principes de base de l'analyse de régression
+
+## Pourquoi l'analyse de régression ?
+
+-   L'outil principal en économie et en sciences sociales (en méthodes quantitatives)
+-   Permet d'estimer des fonctions provenant de théories économiques (fonction de consommation, d'investissement...)
+-   Permet d'identifier et d'analyser des relations de causalité
+-   Estimation de modèles économiques (par exemple ceux que vous allez voire en macroéconomie)
+
+
+## Exemple: fonction de consommation {.smaller}
+
+L'une des fonctions les plus connues et estimées en macroéconomie est la fonction de consommation des ménages $C$:
+
+$$
+C = c_0 + c_1W
+$$
+
+Avec $C$ le niveau de consommation des ménages (dans la monnaie du pays considéré), $c_0$ le niveau de consommation lorsque les salaires $W$ = 0. $c_1$ est la propension marginale à consommer, qui est une composante clé du multiplicateur keynésien.
+
+## Régression linéaire simple {.smaller}
+
+Cette fonction de consommation peut être estimée au moyen d'un modèle de régression linéaire simple. - "Simple", car nous avons uniquement une variable explicative (les salaire $W$). - "linéaire", car notre variable dépendante est numérique (la consommation $C$).
+
+La régression linéaire simple prend la forme suivante:
+
+$$
+\underbrace{E[Y|X]}_{Valeurs\ moyennes \ de \ Y \ par \ rapport \ à \ X} = \underbrace{\beta_0}_{ordonnée \ à \ l'origine} + \underbrace{\beta_1 X}_{coefficient*variable\ explicative} + \underbrace{e_i}_{termes\ d'erreur}
+$$
+
+Avec $E[Y|X]$ "l'espérance" (la moyenne) de Y, notre variable dépendante, *en fonction* des valeur de notre variable explicative $X$. $\beta_0$ l'ordonnée à l'origine et $e_i$ le terme d'erreur. $E[Y|X]$ est souvent écrit $Y$ par simplicité.
+
+==\> Les régressions peuvent paraître compliquées à première vue ==\> Une manière simple de "démistifer" les régression est de comprendre qu'il s'agit simplement de *comparaisons de moyennes*
+
+## $$E[Y|X] = \beta_0 + \beta_1X_i + e_i$$ {.smaller}
+
+$\beta_1$ est le paramètre clé du modèle.
+
+L'interprétation la plus courante de ce paramètre, qui est celle qui vous est enseignée dans vos cours de quanti, est que $\beta_1$ est l'effet de X sur les valeurs moyennes Y lorsque X augmente de une unité Cela veut dire que $\beta_1$ est l'effet marginal de x sur y, la valeur obtenue en prenant la dérivée de Y sur X:
+
+$$
+\frac{\delta E[Y|X]}{\delta X} = \beta_1
+$$
+
+==\> Il s'agit de l'interprétation causale du coefficient du réggression ($\beta_1$)
+
+## Interprétation en termes de comparaison {.smaller}
+
+Le coefficient $\beta_1$ peut être aussi compris comme une différence de moyenne prédite par le modèle entre deux valeurs de X.
+
+-   Si $X$ est une variable qualitative dichotomique (par exemple homme ou femme), elle ne prend que les valeurs 0 (disons homme) et 1 (disons femme) et que nous ignorons le termes d'erreur $e_i$:
+
+Si $X = 1$, \<=\> $E[Y|X = 1] = \beta_0 + \beta_1$
+
+Et si $X = 0$, \<=\> $E[Y|X = 0] = \beta_0$
+
+Et donc $$E[Y|X=1] - E[Y|X=0] = \beta_0 + \beta_1 - \beta_0 = \beta_1$$
+
+$\beta_1$ est la différence entre la moyenne prédite des femmes et des hommes.
+
+## Interprétation en termes de comparaison {.smaller}
+
+Même principe si la variable est numérique/continue
+
+Exemple avec $X_i$ le revenu de la personne $i$ et $Y=C$ la consommation. Prenons $X_1 = 5000$ et $X_2 = 5001$. Le coefficient $\beta1$ est la différence entre les valeurs prédite de Y pour $X_2$ et $X_1$.
+
+$$E[Y|X_2 = 5001] - E[Y|X_1 = 5000] = \beta_0 + \beta_15001 - \beta_0 - \beta_15000 = \beta_1$$
+
+$\beta_1$ est donc la différence de consommation moyenne prédite par le modèle entre deux personnes ayant un revenu de 5001 et 5000. En d'autre termes, la différence de moyenne prédite entre deux personnes différant d'une unité.
+
+## Interprétation des coefficients de régression {.smaller}
+
+1.  Interprétation causale: $\beta_1$ est l'effet marginal de X (effet lorsque X augmente de 1) sur les valeurs moyennes prédites de Y.
+
+2.  Interprétation en termes de comparaison: $\beta_1$ est la différence des moyennes prédites de Y entre deux observations différant d'une unité.
+
+==\> L'interprétation en termes de comparaison est plus prudente que l'interprétation causale, pour laquelle il faut que les hypothèses du modèle soient respectées
+
+## Retour à notre exemple $$C = c_0 + c_1W$$
+
+```{r}
+#| echo: true
+#| output-location: column
+
+library(readr)
+macroch <- read_csv("data/macroch.csv")
+
+macroch %>% 
+  ggplot(aes(x = W_real, y = C_real))+
+  geom_point()+
+  theme_minimal()+
+  labs(x = "Rémunération des salariés (W)",
+       y = "Consommation (C)")
+
+```
+
+## Estimation simple avec lm()
+
+```{r}
+#| echo: true
+#| output-location: default
+
+library(kableExtra)
+library(broom)
+model = lm(data = macroch, # préciser le tableau dans lequel les variables sont présentes
+           formula = C_real ~ W_real) # la formule estimée doit prendre la forme Y ~ X
+
+tidy(model) %>% 
+  kable() 
+
+```
+
+La fonction estimée est donc:
+
+$$C = 43 + 0.797W$$
+
+## Valeurs prédites {.smaller}
+
+```{r}
+#| echo: true
+#| output-location: column
+data = augment(model)
+
+data %>% 
+  ggplot(aes(x = W_real, y = C_real, color = "Valeurs réelles observées"))+
+  geom_line()+
+  geom_line(aes(x = W_real, y = .fitted, color = "Valeurs prédites"))+
+  theme_minimal()+
+  labs(title = "C = 43 + 0.797W")
+
+
+```
+
+## Vérification des hypothèses du modèle {.smaller}
+
+1.  Linéarité et indépendance des erreurs
+
+```{r}
+#| echo: true
+#| output-location: column
+library(performance)
+
+diagnostic_plots = plot(check_model(model, panel = FALSE))
+diagnostic_plots[[2]]
+
+```
+
+On voit clairement un pattern dans la distribution des données ==\> pas d'indépendance des erreurs, ce qui est typiquement le cas des séries temporelles
+
+## Vérification des hypothèses du modèle {.smaller}
+
+2.  Homoscédasticité
+
+```{r}
+#| echo: true
+library(performance)
+
+diagnostic_plots[[3]]
+```
+
+Il y aussi clairement un problème d'hétéroscédasticité: la variance des erreurs n'est pas constante
+
+## $C = 43 + 0.797W$ {.smaller}
+
+Le plus souvent, régresser tel quel des séries temporelles (en niveau) va produire des modèles qui ne respectent pas l'hypothèse fondamentale d'indépendance des erreurs. Cela est un problème, car implique que notre coefficient de $\beta_1 = 0.79$ est *biaisé*.
+
+==\> Cela vient du fait qu'il a une dimension temporelle dans nos variables, ces dernières sont aussi une fonction du temps $t$, qui n'est pas prise en compte dans $C = c_0 +c_1W + e_i$ (enfait, la dimension temporelle va se voire dans le terme d'erreur $e_i$)
+
+==\> Autrement pour pouvoir modéliser des séries temporelles avec des régressions, il faut que ces séries soient "stationnaires", c-à-d que leur moyenne doit être stable dans le temps.
+
+Il existe des tests afin de tester la stationnarité (Test de Dickey-Fuller, test de Perron...)
+
+## Stationnarité {.smaller}
+
+La plupart du temps, les séries ayant une tendance temporelle (non-stationnaire) doivent être transformées en taux de croissance pour pouvoir être incluses dans une régression.
+
+```{r}
+#| echo: true
+#| code-fold: true
+#| code-summary: "Afficher le code"
+
+library(ggcharts)
+
+macroch$year = 1960:2022
+data_rates = tibble(year = 1961:2022, rate_c = diff(log(macroch$C_real)), rate_w = diff(log(macroch$W_real)))
+
+plot1 <- 
+macroch %>% 
+  ggplot(aes(x = year, y = C_real, color = "Consommation (niveau)"))+
+  geom_line()+
+  geom_line(aes(x = year, y = W_real, color = "Revenu des salariés (niveau)"))+
+  theme_minimal()+
+  labs(title = "Séries non stationnaires")+
+  theme(legend.position = "top")
+
+
+
+plot2 <- 
+  data_rates %>%
+  ggplot(aes(x = year, y = rate_c, color = "Consommation (taux de croissance)"))+
+  geom_line()+
+  labs(title = "Série stationnaire")+
+  theme_minimal()+
+  theme(legend.position = "top")
+
+cowplot::plot_grid(plot1, plot2)
+
+```
+
+## Modèle en différences de premier ordre {.smaller}
+
+==\> régresser les taux de croissances au lieu des niveaux, pour corriger la non-stationnarité.
+
+Au lieu de $C = \beta_0 + \beta_1W$, nous avons: $\%\Delta{C} = \beta_0 + \%\Delta\beta1W$
+
+$\beta_1$ devient *l'élasticité* de la consommation par rapport au revenu: le pourcentage de changement de C quand W augmente de 1 point de pourcentage.
+
+```{r}
+#| echo: true
+#| code-fold: true
+#| code-summary: "Afficher le code"
+
+model3 = lm(data = data_rates,
+            rate_c ~ rate_w)
+
+tidy(model3)
+
+
+```
+
+## Régression d'une série temporelle sur sa trend {style="font-size: 1.6rem; line-height:1.6;"}
+
+Que se passe-t-il si notre régression inclue seulement la dimension temporelle comme variable explicative dans un modèle log-linéaire ? $log(C) = \beta_0 + \beta_{year}year$
+
+```{r}
+#| echo: true
+
+data <- 
+data %>% 
+  mutate(
+    year = 1960:2022,
+  )
+
+model4 = lm(data = data,
+            log(C_real) ~  year)
+
+tidy(model4)
+
+```
+
+
+
+
+
+Le coefficient $\beta_{year} = 0.018$ peut être interprété comme le taux de croissance moyen sur l'ensemble de la période, pas seulement entre la première et dernière année (moyenne des taux de croissance, ou le taux de croissance composé).
+
+## Comment interpréter $\beta_0 = -30$ ? {style="font-size: 1.6rem; line-height:1.6;"}
+
+Il s'agit de la valeur de $log(C)$ lorsque $year = 0$, ce qui ne fait pas vraiment sens.
+
+Un moyen de rendre l'ordonnée à l'origine (intercept) $\beta_0$ interprétable est de *centrer* notre variable explicative en lui soustrayant sa moyenne:
+
+```{r}
+#| echo: true
+
+data <- data %>% 
+  mutate(
+    year_centered = year - mean(year)
+  )
+
+model5 = lm(data = data,
+            log(C_real) ~ year_centered)
+
+tidy(model5)
+
+```
+
+Le coefficient $\beta_{year}$ ne change pas. $\beta_0$ devient $5.4$, ce qui correspond à $log(C)$, la valeur de notre variable dépendante, lorsque *year est à sa moyenne* (donc l'année 1991).
+
+## Pourquoi calculer le taux de croissance avec une régression ? {style="font-size: 1.4rem; line-height:1.4;"}
+
+En incluant des *intéractions*, on peut tester si le taux de croissance moyen change de manière significative entre différentes périodes. Dans les régressions, les intéractions permettent au modèle d'avoir différentes ordonnées à l'origine ($\beta_0$) ou bien différentes coefficients pour la mème variable, mais variant selon un groupe pré-établi, par exemple une variable dichotomique séparant la série en deux groupes: avant 1980 et après 1980. Cela se spécifie dans R avec `year*I(year>1980)`
+
+```{r}
+#| echo: true
+
+model6 = lm(data = data,
+            log(C_real) ~ year*I(year>1980))
+
+tidy(model6)
+
+```
+
+On obtient le modèle estimé $log(C) = -57 + 0.03year + 31.9year_{1980} -0.0161year*year_{1980}$. $year$ reste nos années et $year_{1980}$ est une variable binaire 1 si $year>1980$ et 0 autrement.
+
+## $log(C) = -57 + 0.03year + 31.9year_{1980} -0.0161year*year_{1980}$ {style="font-size: 1.4rem; line-height:1.4;"}
+
+```{r}
+#| echo: true
+
+tidy(model6)
+```
+
+Après 1980, $year_{1980} = 1$ et le modèle devient:
+
+$log(c) = -57 + 31.9*1 + 0.03year -0.0161year*1$
+
+\<=\>
+
+$log(c) = -25 - 0.0139year$
+
+Le taux de croissance moyen a diminué de `0.0161`
+
+Avant 1980, $year_{1980} = 0$ et le modèle est simplement:
+
+$log(C) = -57 + 0.03year + 31.9*0 -0.0161year*0$
+
+\<=\>
+
+$log(C) = -57 + 0.03year$ le taux de croissance pour la période 1960-1980 étant donc de `0.03`.
+
+## 
+
+```{r}
+#| echo: true
+#| code-fold: true
+#| code-summary: "Afficher le code"
+
+plot3 <- 
+plot2+
+  labs(title = "",
+       y = "Taux de croissance de C")+
+  geom_segment(aes(x = 1960, xend = 1980, y = 0.03, yend = 0.03), color = "black")+
+  geom_segment(aes(x = 1981, xend = 2022, y = 0.0139, yend = 0.0139), color = "black")+
+  annotate("text", x = 1970, y = 0.025, label = "taux de croissance moyen = 0.03", size = 2.5)+
+  annotate("text", x = 2000, y = 0, label = "taux de croissance moyen = 0,0139", size = 2.5)
+
+library(marginaleffects)
+
+plot4 <- 
+model6 %>% 
+  plot_predictions(condition = "year")+
+  geom_line(data = data, aes(x = year, y = log(C_real)), size = 1.2, color = "darkred")+
+  theme_minimal()+
+  geom_vline(xintercept = 1980, linetype = 2)+
+  annotate("text", label = "log(c) = -57 + 0.03year", x = 1980, y = 5)+
+  annotate("text", label = "log(c) = -25 -0.0139year", x = 2010, y = 5.5)+
+  labs(y = "log(c)")
+
+cowplot::plot_grid(plot3, plot4)
+
+```
+
+## Comment interpréter les résidus de régressions ? {.smaller}
+
+Les résidus $e_i$ sont l'écart entre les valeurs observées et les valeurs prédites par notre modèle:
+
+$$
+e_i = \underbrace{Y}_{valeurs \ observées} - \underbrace{\beta_0 + \beta_1 X}_{valeurs \ prédites} 
+$$
+
+Dans notre modèle $log(C) = \beta_0 + \beta_1 year + e_i$, et pour les séries temporelles non-stationnaire de manière générale, $e_i$ représente l'écart de $C$ ( en %) par rapport à sa tendance de long-terme.
+
+## $e_i$ comme déviation en % par rapport à la tendance de long-terme {.smaller}
+
+```{r}
+#| code-fold: true
+#| code-summary: "Afficher le code"
+
+data %>% 
+  ggplot(aes(x = year, y = .resid))+
+  geom_point()+
+  geom_line()+
+  theme_minimal(base_size = 16)+
+  geom_hline(yintercept = 0)+
+  labs(title = "Résidus du modèle log(C) = -30 + 0.018*year + e_i")
+```
+
+## PIB potentiel et output gap {.smaller}
+
+Si, à la place de $C$, nous avions le PIB, la tendance générale serait le *PIB potentiel*, et les résidus le *output gap* qui est une mesure fondamentale des cycles économiques.
+
+- Le PIB potentiel est une variable clé en macroéconomie, aussi bien dans la théorie économique mainstream qu'hétérodoxe, mais la définition varie entre ces deux approches
+
+- Pour la théorie mainstream, le PIB potentiel est le PIB lorsque le taux de chômage est à son taux "naturel" (le NAIRU)
+
+- En macroéconomie hétérodoxe, le PIB potentiel est le PIB maximal qui est atteint lorsque tout le capital ou tout le travail est employé à ses pleines capacités
+
+## PIB potentiel et output gap (2) {.smaller}
+
+- Le PIB potentiel mesure le PIB à "pleine capacité d'utilisation des ressources" c'est-à-dire s'il y avait le plein emploi et une utilisation maximale du capital.
+
+- Le modèle log-linéaire simple $log(PIB) = \beta_0 + \beta_1year$ nous donne:
+    - Une estimation du PIB potentiel (en logarithme), à travers les valeurs estimées (fitted values)
+    - Une estimation de *l'output gap*, càd de la déviation du PIB actuel/observé par rapport au PIB potentiel.
+
+## PIB potentiel et output gap (3) {.smaller}
+
+- L'output gap est une variable considérée comme très importante pour la politique économique:
+  - Si l'output gap > 0 ==> l'économie est dite en "surcapacité", le taux de chomage est moins élevé que son taux naturel
+  - Si < 0 ==> l'économie est dite en "sous-capacité", le taux de chômage est plus élevé que son taux naturel
+  
+- Le modèle log-linéaire simple $log(PIB) = \beta_0 + \beta_1year$ est l'estimation du PIB potentiel la plus basique. En pratiques, les instituts de statistiques ont recours à des méthodes bien plus complexes, mais l'idée de base reste la même.
+  
+## À retenir {.smaller}
+
+- Formule de la croissance exponentielle
+- Pouvoir calculer des taux de croissance
+- Calcul de la rétropolation d'une série à partir du taux de croissance
+- À quoi servent les transformations en logarithme
+- Interprétation des coefficients d'une régression linéaire
+- Les informations que nous donne un modèle log-linéaire avec la trend (le temps) comme variable explicative (savoir intreprétér le coefficient, les résidus...)
+
+Retenez aussi comment faire tout cela dans R (référez-vous au code dans les slides) ! Nous ferons davantage d'exercices appliqués à partir des séances sur la comptabilité nationale.
+
+
+## Pour aller plus loin {.smaller}
+
+:::::: columns
+::: {.column width="33%"}
+![](images/cours2/introstats.png){width="261"}
+:::
+
+::: {.column width="33%"}
+![](images/cours2/regressionotherstories.png){width="235"}
+:::
+
+::: {.column width="33%"}
+![](images/cours2/wooldridge.png)
+:::
+::::::

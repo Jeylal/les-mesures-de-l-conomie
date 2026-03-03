@@ -291,9 +291,7 @@ understanding national accounts page 154
 
 -   Produisez un graphique montrant la part de chacune des composantes des dépenses et leur évolution: comment ces parts ont-elles évolué depuis 1980 ?
 
-- Calculez les contributions à la croissance annuelle. Quelle composante des dépense du PIB contribue-t-elle le plus à la croissance ?
-
-
+-   Calculez les contributions à la croissance annuelle. Quelle composante des dépense du PIB contribue-t-elle le plus à la croissance ?
 
 ## Approche revenu du PIB {.smaller}
 
@@ -341,7 +339,6 @@ Avec $w$ le salaire réel ($W/P$), $a_0$ le ratio travail-output ($L/Y$) et r la
 ## Part des salaires et coût unitaire du travail (*Unit labour cost*)
 
 La part des salaires $wa_0 = \frac{WL}{PY}$ mesure la quantité de rémunération des salariés pour chaque unité d'output ($PY$), c'est pour cela que ce ratio est aussi considéré comme le "coût" unitaire du travail.
-
 :::
 
 ## L'identité fondamentale du PIB {.smaller}
@@ -378,10 +375,3 @@ C'est aussi le cas des balances sectorielles que vous allez voir dans le cours *
 -   Allez sur DBnomics. Sous "providers", allez sur les données de l'AMECO et cherchez les données sur la part des salaires ("adjusted wage share"). Filtrer les données pour n'avoir que la part des salaires pour la Suisse.
 
 -   Comparez la part des salaires de l'AMECO avec la série que vous avez calculé. Comment expliquer cet écart ?
-
-
-
-
-
-
-
