@@ -220,9 +220,6 @@ data %>%
 -   Permet d'identifier et d'analyser des relations de causalité
 -   Estimation de modèles économiques (par exemple ceux que vous allez voire en macroéconomie)
 
-## Utilité des régressions
-
--   Prévisions
 
 ## Exemple: fonction de consommation {.smaller}
 
@@ -575,7 +572,60 @@ $$
 e_i = \underbrace{Y}_{valeurs \ observées} - \underbrace{\beta_0 + \beta_1 X}_{valeurs \ prédites} 
 $$
 
-Dans notre modèle $log(C) = \beta_0 + \beta_1 year + e_i$, et pour les séries temporelles non-stationnaire de manière générale, $e_i$ représente l'écart de $C$ par rapport à sa tendance de long-terme.
+Dans notre modèle $log(C) = \beta_0 + \beta_1 year + e_i$, et pour les séries temporelles non-stationnaire de manière générale, $e_i$ représente l'écart de $C$ ( en %) par rapport à sa tendance de long-terme.
+
+## $e_i$ comme déviation en % par rapport à la tendance de long-terme {.smaller}
+
+```{r}
+#| code-fold: true
+#| code-summary: "Afficher le code"
+
+data %>% 
+  ggplot(aes(x = year, y = .resid))+
+  geom_point()+
+  geom_line()+
+  theme_minimal(base_size = 16)+
+  geom_hline(yintercept = 0)+
+  labs(title = "Résidus du modèle log(C) = -30 + 0.018*year + e_i")
+```
+
+## PIB potentiel et output gap {.smaller}
+
+Si, à la place de $C$, nous avions le PIB, la tendance générale serait le *PIB potentiel*, et les résidus le *output gap* qui est une mesure fondamentale des cycles économiques.
+
+- Le PIB potentiel est une variable clé en macroéconomie, aussi bien dans la théorie économique mainstream qu'hétérodoxe, mais la définition varie entre ces deux approches
+
+- Pour la théorie mainstream, le PIB potentiel est le PIB lorsque le taux de chômage est à son taux "naturel" (le NAIRU)
+
+- En macroéconomie hétérodoxe, le PIB potentiel est le PIB maximal qui est atteint lorsque tout le capital ou tout le travail est employé à ses pleines capacités
+
+## PIB potentiel et output gap (2) {.smaller}
+
+- Le PIB potentiel mesure le PIB à "pleine capacité d'utilisation des ressources" c'est-à-dire s'il y avait le plein emploi et une utilisation maximale du capital.
+
+- Le modèle log-linéaire simple $log(PIB) = \beta_0 + \beta_1year$ nous donne:
+    - Une estimation du PIB potentiel (en logarithme), à travers les valeurs estimées (fitted values)
+    - Une estimation de *l'output gap*, càd de la déviation du PIB actuel/observé par rapport au PIB potentiel.
+
+## PIB potentiel et output gap (3) {.smaller}
+
+- L'output gap est une variable considérée comme très importante pour la politique économique:
+  - Si l'output gap > 0 ==> l'économie est dite en "surcapacité", le taux de chomage est moins élevé que son taux naturel
+  - Si < 0 ==> l'économie est dite en "sous-capacité", le taux de chômage est plus élevé que son taux naturel
+  
+- Le modèle log-linéaire simple $log(PIB) = \beta_0 + \beta_1year$ est l'estimation du PIB potentiel la plus basique. En pratiques, les instituts de statistiques ont recours à des méthodes bien plus complexes, mais l'idée de base reste la même.
+  
+## À retenir {.smaller}
+
+- Formule de la croissance exponentielle
+- Pouvoir calculer des taux de croissance
+- Calcul de la rétropolation d'une série à partir du taux de croissance
+- À quoi servent les transformations en logarithme
+- Interprétation des coefficients d'une régression linéaire
+- Les informations que nous donne un modèle log-linéaire avec la trend (le temps) comme variable explicative (savoir intreprétér le coefficient, les résidus...)
+
+Retenez aussi comment faire tout cela dans R (référez-vous au code dans les slides) ! Nous ferons davantage d'exercices appliqués à partir des séances sur la comptabilité nationale.
+
 
 ## Pour aller plus loin {.smaller}
 
