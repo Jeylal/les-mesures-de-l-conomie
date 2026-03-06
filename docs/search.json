@@ -1164,5 +1164,145 @@
     "crumbs": [
       "Séminaire les mesures de l'économie T208001"
     ]
+  },
+  {
+    "objectID": "inflation.html#linflation-dans-la-longue-durée",
+    "href": "inflation.html#linflation-dans-la-longue-durée",
+    "title": "Les mesures des prix",
+    "section": "L’inflation dans la longue durée",
+    "text": "L’inflation dans la longue durée\n\nshaikh (2016, p.62)"
+  },
+  {
+    "objectID": "inflation.html#en-suisse",
+    "href": "inflation.html#en-suisse",
+    "title": "Les mesures des prix",
+    "section": "En Suisse",
+    "text": "En Suisse"
+  },
+  {
+    "objectID": "inflation.html#avant-1940",
+    "href": "inflation.html#avant-1940",
+    "title": "Les mesures des prix",
+    "section": "Avant 1940",
+    "text": "Avant 1940"
+  },
+  {
+    "objectID": "inflation.html#linflation-un-phénomène-moderne",
+    "href": "inflation.html#linflation-un-phénomène-moderne",
+    "title": "Les mesures des prix",
+    "section": "L’inflation: un phénomène moderne ?",
+    "text": "L’inflation: un phénomène moderne ?\nChangement fondamental dans l’évolution des prix à partir de 1940\n\nSource: statistiques historiques de la Suisse"
+  },
+  {
+    "objectID": "inflation.html#cycles-inflationdéflation",
+    "href": "inflation.html#cycles-inflationdéflation",
+    "title": "Les mesures des prix",
+    "section": "Cycles inflation/déflation",
+    "text": "Cycles inflation/déflation\n\nshaikh (2016, p.62)"
+  },
+  {
+    "objectID": "inflation.html#la-quête-pour-un-indice-idéal-des-prix",
+    "href": "inflation.html#la-quête-pour-un-indice-idéal-des-prix",
+    "title": "Les mesures des prix",
+    "section": "La quête pour un indice idéal des prix",
+    "text": "La quête pour un indice idéal des prix\n\nLes historiens de la pensée économiques font généralement remonter l’origine de l’institutionalisation indices des prix aux années 1920, notamment avec la publication de The Making of Index Numbers par Irving Fisher en 1922\nDans The Making of Index Numbers, Fisher teste environ 134 indices des prix et propose son propre indice, qu’il estimait pouvoir résumer à elle seule l’évolution générale des prix dans une économie donnée.\nLa publication de ce livre et l’activisme scientifique de Fisher va donner lieu à un vif débat sur la construction et l’usage des indices des prix"
+  },
+  {
+    "objectID": "inflation.html#le-débat-sur-lindice-idéal-des-prix",
+    "href": "inflation.html#le-débat-sur-lindice-idéal-des-prix",
+    "title": "Les mesures des prix",
+    "section": "Le débat sur l’indice idéal des prix",
+    "text": "Le débat sur l’indice idéal des prix\n\nApproche néoclassique (Fisher) vs approche institutionaliste (Wesley Clair Mitchell) de l’économie, qui reflètent deux visions différentes de la science (économique)\nCe débat autour de l’indice idéal de Fisher marque le début du calcul systématique d’indices de prix dans les administrations publiques (par exemple au National Bureau of Economic Research et au Bureau of Labor Statistics)."
+  },
+  {
+    "objectID": "inflation.html#principes-généraux-des-indices",
+    "href": "inflation.html#principes-généraux-des-indices",
+    "title": "Les mesures des prix",
+    "section": "Principes généraux des indices",
+    "text": "Principes généraux des indices\nIndices élémentaires\nTous les indices de prix sont fondés sur l’aggrégation des indices élémentaires de prix, qui prennent la forme suivante:\n\\[\nI(p_{i})_{t/0} = \\frac{p_{it}}{p_{i0}}\n\\]\nAvec \\(I(p_i)_{t/0}\\) L’indice élémentaire du bien \\(i\\), \\(p_{it}\\) le prix du bien \\(i\\) à la période \\(t\\) et \\(p_{i0}\\) le prix du bien \\(i\\) à la période dîte de “référence” \\(0\\). Le calcul des indices élémentaires permet de normaliser le prix de différents bien et services, permettant leur aggrégation à travers le calcul d’une moyenne.\nÉtant donné qu’en pratique il est impossible de récolter une liste exhaustive de tous les prix, sont récoltés les prix d’un “panier de biens” constitués de \\(k\\) biens et services représentatifs d’un ménage “moyen”."
+  },
+  {
+    "objectID": "inflation.html#les-différents-types-dindice",
+    "href": "inflation.html#les-différents-types-dindice",
+    "title": "Les mesures des prix",
+    "section": "Les différents types d’indice",
+    "text": "Les différents types d’indice\n\n\n\nIndice\nPrincipe\nCol3\n\n\n\n\nIndice de Laspeyres\n\n\n\n\nIndice de Paasche\n\n\n\n\nIndice de Jevons"
+  },
+  {
+    "objectID": "inflation.html#coefficient-budgétaire",
+    "href": "inflation.html#coefficient-budgétaire",
+    "title": "Les mesures des prix",
+    "section": "Coefficient budgétaire",
+    "text": "Coefficient budgétaire\n\nQue se passe-t-il si l’on fait directement la moyenne de tous les indices élémentaires \\(I(p_i)_{t/0}\\) ? Nous aurions un indice des prix dans lequel tous les biens du panier ont la même importance. Or, tous les biens n’ont pas la même importance dans les dépenses totales des ménages.\nLes enquêtes sur le budget des ménages permettent d’évaluer la part des biens et services dans les dépenses totales des ménages, à savoir le coefficient budgétaire \\(w_i\\)\nLe coefficient budgétaire sert de coefficient de pondération pour chaque bien du panier-type."
+  },
+  {
+    "objectID": "inflation.html#pondération-des-indices-élémentaires",
+    "href": "inflation.html#pondération-des-indices-élémentaires",
+    "title": "Les mesures des prix",
+    "section": "Pondération des indices élémentaires",
+    "text": "Pondération des indices élémentaires\nC’est le coefficient budgétaire \\(w_i\\) qui sert à pondérer les indices élémentaires:\n\\[\nI(p)_{t/0} = \\sum^k_{i=1}w_i I(p_{it})\n\\]\nLes indices, par exemple de Laspeyres et Paasche, diffèrent dans leur conception des coefficients budgétaires \\(w_i\\)"
+  },
+  {
+    "objectID": "inflation.html#lindice-de-laspeyres",
+    "href": "inflation.html#lindice-de-laspeyres",
+    "title": "Les mesures des prix",
+    "section": "L’indice de Laspeyres",
+    "text": "L’indice de Laspeyres\n\nl’indice de Laspeyres consiste à pondérer les indices élémentaires par les coefficients budgétaires fixés à la période de base. Cela revient à fixer les quantités à la période de base et faire varier les prix:\n\n\\[\nL(p)_{t/i} = \\frac{\\sum^k_{i=1}p_{it}q_{i0}}{\\sum^k_{i=1}p_{i0}q_{i0}}\n\\]\n\nCela implique des coefficent budgétaires \\(w_i\\) fixé à l’année de base \\(0\\), l’indice de Laspeyres fait l’hypothèse que la structure de la consommation du panier de bien est fixe à travers le temps\nL’avantage de cet indice est qu’il est le moins couteux à calculer: on a seulement besoin des quantités à la période de base et des prix au temps de base et au temps courant\n\n==&gt; La plupart des indices des prix à la consommation sont des indices Laspeyriens"
+  },
+  {
+    "objectID": "inflation.html#indice-de-paasche",
+    "href": "inflation.html#indice-de-paasche",
+    "title": "Les mesures des prix",
+    "section": "Indice de Paasche",
+    "text": "Indice de Paasche\nL’indice de Paasche consiste à pondérer les indices élémentaires par les coefficients budgétaires de l’année courantes (et non pas de l’année de base). Cela revient à fixer les prix à l’année de base et faire varier les quantités:\n\\[\nP(p)_{t/i} = \\frac{\\sum^k_{i=1}p_{it}q_{it}}{\\sum^k_{i=1}p_{i0}q_{it}}\n\\]"
+  },
+  {
+    "objectID": "inflation.html#déflateur-du-pib",
+    "href": "inflation.html#déflateur-du-pib",
+    "title": "Les mesures des prix",
+    "section": "Déflateur du PIB",
+    "text": "Déflateur du PIB\nLe déflateur du PIB est un indice de Paasche, étendu à tous les biens et services considérés dans le calcul du PIB\n\nEn outre, le dénominateur de l’indice de Paasche est le PIB réel\n\n\\[\nPIB_{déflateur} = \\frac{PIB_{nominal}}{PIB_{réel}}\n\\]"
+  },
+  {
+    "objectID": "inflation.html#indice-idéal-de-fisher",
+    "href": "inflation.html#indice-idéal-de-fisher",
+    "title": "Les mesures des prix",
+    "section": "Indice “idéal” de Fisher",
+    "text": "Indice “idéal” de Fisher\n\nL’indice de Laspeyres fixe la structure (pondération) de la consommation à la période de base et donc surestime l’inflation, car les ménages peuvent adapter leur consommation par substitution des biens devenus trop chers\nL’indice de Paasche, au contraire, s’adapte directement aux effets de substitutions et donc sous-estime l’inflation\nFisher considérait par conséquent que “l’indice idéal” était la moyenne géométrique entre ces deux indices:\n\n\\[\nF(p)_{t/0} = (L(p)_{t/i} * P(p)_{t/i})^\\frac{1}{2}\n\\]"
+  },
+  {
+    "objectID": "inflation.html#indices-chaînes",
+    "href": "inflation.html#indices-chaînes",
+    "title": "Les mesures des prix",
+    "section": "Indices chaînes",
+    "text": "Indices chaînes\n\nLes indices de prix (Laspeyres, Paasche, Fisher) sont très sensibles à la période de base retenue\nHypothèse que le panier-type de bien de change pas au cours du temps\nAu cours du temps, de nouvelles habitudes de consommation apparaissent\nLes indice-chaînes permettent de mettre annuellement à jour les habitudes de consommations:\n\nOn part d’une année de base, mais au lieu de fixer prix ou quantités à cette année de base, chaque indice est calculé aux prix ou quantités de l’année précédente"
+  },
+  {
+    "objectID": "inflation.html#exemple-indices-chaînes-laspeyres-2",
+    "href": "inflation.html#exemple-indices-chaînes-laspeyres-2",
+    "title": "Les mesures des prix",
+    "section": "Exemple Indices chaînes Laspeyres (2)",
+    "text": "Exemple Indices chaînes Laspeyres (2)\nPour un indice en chaîne Laspeyres partant de l’année \\(0\\):\n\\[\nIC(p)_{t/0} = L(p)_{t/t-1}*L(p)_{t-1/0}\n\\] Néanmoins, le défaut des indices en chaîne est la perte d’addivité: il n’est pas conseillé par exemple de calculer les contributions à la croissance avec des comptes nationaux déflatés par un indice en chaîne."
+  },
+  {
+    "objectID": "inflation.html#calculs-des-indices-paasche-et-laspeyres",
+    "href": "inflation.html#calculs-des-indices-paasche-et-laspeyres",
+    "title": "Les mesures des prix",
+    "section": "Calculs des indices Paasche et Laspeyres",
+    "text": "Calculs des indices Paasche et Laspeyres"
+  },
+  {
+    "objectID": "inflation.html#parité-de-pouvoir-dachat-ipp",
+    "href": "inflation.html#parité-de-pouvoir-dachat-ipp",
+    "title": "Les mesures des prix",
+    "section": "Parité de pouvoir d’achat (IPP)",
+    "text": "Parité de pouvoir d’achat (IPP)"
+  },
+  {
+    "objectID": "inflation.html#le-débat-sur-lindice-idéal-des-prix-1",
+    "href": "inflation.html#le-débat-sur-lindice-idéal-des-prix-1",
+    "title": "Les mesures des prix",
+    "section": "Le débat sur l’indice idéal des prix",
+    "text": "Le débat sur l’indice idéal des prix\n\n\nNéoclassique (Fisher) Organisation: société d’économétrie, principales revues scientifiques d’économie\n\nL’économie est une science purement mathématique\nDévoilement des mécanismes économiques à travers le raisonnement déductif\nIl est possible de trouver un indice “idéal” à travers des tests mathématiques et statistiques qui pourrait être appliqué dans toute société et se focaliserait entièrement sur les prix\n\n\nInstitutionaliste (Mitchell)\n\nPriorité accordés aux faits historiques et aux observations empiriques, sans recours à priori à des théories\nPluralité des indicateurs, pas d’indice “idéal”\nDifférentes réalités et structures économiques requièrent différentes données et indicateurs, il n’existe pas de vérité universelle applicable en tout lieu en tout temps."
   }
 ]
