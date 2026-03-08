@@ -30,7 +30,6 @@ Car pour les données administratives, certains principe de la statistique ne so
 
 ## Données d'enquête {.smaller}
 
--   Important de vous rappeler ce que vous avez appris dans vos cours de méthodes quantitatives
 -   Faire attention à la qualité des enquêtes qui dépend de:
     1.  Le procédé d'échantillonage
     2.  La taille de l'échantillon et sa représentativité
