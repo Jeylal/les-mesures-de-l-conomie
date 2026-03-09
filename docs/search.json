@@ -581,7 +581,7 @@
     "href": "10mars_cours3.html#données-denquête",
     "title": "10 Mars. Comptabilité nationale (1)",
     "section": "Données d’enquête",
-    "text": "Données d’enquête\n\nImportant de vous rappeler ce que vous avez appris dans vos cours de méthodes quantitatives\nFaire attention à la qualité des enquêtes qui dépend de:\n\nLe procédé d’échantillonage\nLa taille de l’échantillon et sa représentativité\nLe taux de réponse (nombre de personnes qui ont répondu à l’enquête / total des personnes appelées à participer à l’enquête)",
+    "text": "Données d’enquête\n\nFaire attention à la qualité des enquêtes qui dépend de:\n\nLe procédé d’échantillonage\nLa taille de l’échantillon et sa représentativité\nLe taux de réponse (nombre de personnes qui ont répondu à l’enquête / total des personnes appelées à participer à l’enquête)",
     "crumbs": [
       "10 Mars. Comptabilité nationale (1)"
     ]
@@ -801,7 +801,7 @@
     "href": "10mars_cours3.html#résidence-et-reste-du-monde",
     "title": "10 Mars. Comptabilité nationale (1)",
     "section": "Résidence et reste du monde",
-    "text": "Résidence et reste du monde\n\nLes résidents d’un territoire économique sont les entités (firmes & ménages) exerçant une activité économique sur le territoire depuis au moins un an.\n\nLes travailleurs saisonniers travaillant seulement quelques mois dans un pays donnés ne sont par exemple par considéré comme résident du pays et leur revenu n’est donc pas comptabilisé.\nAu contraire, un ménage dont les membres travaillent dans pays A mais consomment et vivent dans pays B sont considérés comme résident de B et ne sont pas comptabilisés dans A.\n\n\nLe reste du monde est composé de tous les non-résidents transactant avec le pays considéré. Ces transactions inclues:\n\nLa balance commerciale (exportations et importations)\nLes revenus reçus par les résidents de l’étranger et les revenu versé à l’étranger aux non-résidents (net foreign factor income).",
+    "text": "Résidence et reste du monde\n\nLes résidents d’un territoire économique sont les entités (firmes & ménages) exerçant une activité économique sur le territoire depuis au moins un an.\n\nLes travailleurs saisonniers travaillant seulement quelques mois dans un pays donnés ne sont par exemple par considéré comme résident du pays et leur revenu n’est donc pas comptabilisé.\nAu contraire, un ménage dont les membres travaillent dans pays A mais consomment et vivent dans pays B sont considérés comme résident de B et ne sont pas comptabilisés dans A.\n\n\nLe reste du monde est composé de tous les non-résidents transactant avec le pays considéré. Ces transactions inclues:\n\nLa balance commerciale (exportations et importations)\nLes revenus reçus par les résidents de l’étranger et les revenu versé à l’étranger aux non-résidents (net external income flows ou flux de revenus extérieur net).",
     "crumbs": [
       "10 Mars. Comptabilité nationale (1)"
     ]
@@ -811,7 +811,7 @@
     "href": "10mars_cours3.html#contributions-à-la-croissance",
     "title": "10 Mars. Comptabilité nationale (1)",
     "section": "Contributions à la croissance",
-    "text": "Contributions à la croissance\nL’approche dépense du PIB implique que le taux de croissance du PIB peut être décomposé dans ses différentes composantes:\n\\[\n\\frac{Y_t - Y_{t-1}}{Y_{t-1}} = \\frac{C_t - C_{t-1}}{Y_{t-1}} + \\frac{I_t - I_{t-1}}{Y_{t-1}} + \\frac{G_t - G_{t-1}}{Y_{t-1}} + \\frac{NX_t - NX_{t-1}}{Y_{t-1}}\n\\]\nAvec \\(Y_t\\) et \\(NX_t\\) le PIB nominal et les exportations net à la période \\(t\\). Claculer ces contributions à la croissance permet d’identifier si la croissance entre les périodes considérées est principalement tirée par la consommation, l’investissement, la dépense publique ou les exportations nettes.",
+    "text": "Contributions à la croissance\nL’approche dépense du PIB implique que le taux de croissance du PIB peut être décomposé dans ses différentes composantes:\n\\[\n\\frac{Y_t - Y_{t-1}}{Y_{t-1}} = \\frac{C_t - C_{t-1}}{Y_{t-1}} + \\frac{I_t - I_{t-1}}{Y_{t-1}} + \\frac{G_t - G_{t-1}}{Y_{t-1}} + \\frac{NX_t - NX_{t-1}}{Y_{t-1}}\n\\]\nAvec \\(Y_t\\) et \\(NX_t\\) le PIB nominal et les exportations net à la période \\(t\\). Calculer ces contributions à la croissance permet d’identifier si la croissance entre les périodes considérées est principalement tirée par la consommation, l’investissement, la dépense publique ou les exportations nettes.",
     "crumbs": [
       "10 Mars. Comptabilité nationale (1)"
     ]
@@ -831,7 +831,7 @@
     "href": "10mars_cours3.html#exercice-2",
     "title": "10 Mars. Comptabilité nationale (1)",
     "section": "Exercice 2",
-    "text": "Exercice 2\n\nAllez sur le site web du secrétariat d’État à l’économie (SECO) https://www.seco.admin.ch/seco/fr/home.html\nTrouvez la page sur laquelle le SECO met à disposition les données du PIB suisse selon les trois approches\nTéléchargez le tableau excel “PIB, approche par la dépense, données brutes”, importez la feuille contenant les données nominales annuelles dans R.\nCalculez la part de chaque composante des dépenses \\(C\\), \\(G\\), \\(I\\), \\(X\\), \\(M\\) dans le PIB.\nProduisez un graphique montrant la part de chacune des composantes des dépenses et leur évolution: comment ces parts ont-elles évolué depuis 1980 ?\nCalculez les contributions à la croissance annuelle. Quelle composante des dépense du PIB contribue-t-elle le plus à la croissance ?",
+    "text": "Exercice 2\n\nAllez sur le site web du secrétariat d’État à l’économie (SECO) https://www.seco.admin.ch/seco/fr/home.html\nTrouvez la page sur laquelle le SECO met à disposition les données du PIB suisse selon les trois approches\nTéléchargez le tableau excel “PIB, approche par la dépense, données brutes”, importez la feuille contenant les données nominales annuelles dans R.\nCalculez la part de chaque composante des dépenses \\(C\\), \\(G\\), \\(I\\), \\(X\\), \\(M\\) dans le PIB. Quelle est la part la plus importante sur l’ensemble de la période ? Qu’est-ce que cela implique ?\nCalculez les contributions à la croissance annuelle pour chacune de ces composantes. À partir de ces contributions, calculez la moyenne générale des contributions sur l’ensemble de la période.\nCalculez et comparez les moyennes des contributions avant et après la crise financière de 2008.",
     "crumbs": [
       "10 Mars. Comptabilité nationale (1)"
     ]
@@ -841,7 +841,7 @@
     "href": "10mars_cours3.html#approche-revenu-du-pib",
     "title": "10 Mars. Comptabilité nationale (1)",
     "section": "Approche revenu du PIB",
-    "text": "Approche revenu du PIB\n\\[\nPIB \\equiv WL + R\n\\]\nLe pib peut aussi est défini comme la somme de tous les revenus d’une économie, répartis entre tous les salaires versés dans l’économie (\\(W\\) le salaire nominal multiplié par la quantité de travail \\(L\\)) et les profits \\(R\\) (en ignorant les rentes ou bien en les considérant comme partie des profits).\nEn comptabilité nationale:\n\\[\nPIB = compensation \\ des \\ employés + excédent\\ brut \\ d'exploitation\\ et \\ revenu \\ mixte\n\\] La compensation des employés est la variable la plus similaire aux salaires \\(W\\), mais a une conception plus large car est plus globale que les salaires (inclut toutes les rémunérations des salariés).\nL’excédent brut d’exploitation brut est le montant de profit dégagé par les entreprises \\(P\\) (gross operating surplus), le revenu mixte (mixed income) est le revenu des indépendants et auto-entrepreneurs.",
+    "text": "Approche revenu du PIB\n\\[\nPIB \\equiv WL + R\n\\]\nLe pib peut aussi est défini comme la somme de tous les revenus d’une économie, répartis entre tous les salaires versés dans l’économie (\\(W\\) le salaire nominal multiplié par la quantité de travail \\(L\\)) et les profits \\(R\\) (en ignorant les rentes ou bien en les considérant comme partie des profits).\nEn comptabilité nationale:\n\\[\nPIB = compensation \\ des \\ employés + excédent\\ brut \\ d'exploitation\\ et \\ revenu \\ mixte\n\\]\nLa compensation des employés est la variable la plus similaire aux salaires \\(W\\), mais a une conception plus large car est plus globale que les salaires (inclut toutes les rémunérations des salariés).\nL’excédent brut d’exploitation brut est le montant de profit dégagé par les entreprises \\(R\\) (gross operating surplus), le revenu mixte (mixed income) est le revenu des indépendants et auto-entrepreneurs.",
     "crumbs": [
       "10 Mars. Comptabilité nationale (1)"
     ]
@@ -1304,5 +1304,165 @@
     "title": "Les mesures des prix",
     "section": "Le débat sur l’indice idéal des prix",
     "text": "Le débat sur l’indice idéal des prix\n\n\nNéoclassique (Fisher) Organisation: société d’économétrie, principales revues scientifiques d’économie\n\nL’économie est une science purement mathématique\nDévoilement des mécanismes économiques à travers le raisonnement déductif\nIl est possible de trouver un indice “idéal” à travers des tests mathématiques et statistiques qui pourrait être appliqué dans toute société et se focaliserait entièrement sur les prix\n\n\nInstitutionaliste (Mitchell)\n\nPriorité accordés aux faits historiques et aux observations empiriques, sans recours à priori à des théories\nPluralité des indicateurs, pas d’indice “idéal”\nDifférentes réalités et structures économiques requièrent différentes données et indicateurs, il n’existe pas de vérité universelle applicable en tout lieu en tout temps."
+  },
+  {
+    "objectID": "10mars_cours3.html#exercice-1-enquête-sur-le-budget-des-ménages-facultatif",
+    "href": "10mars_cours3.html#exercice-1-enquête-sur-le-budget-des-ménages-facultatif",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Exercice 1: enquête sur le budget des ménages (facultatif)",
+    "text": "Exercice 1: enquête sur le budget des ménages (facultatif)\n\nAllez sur la pagne de l’enquête sur le budget des ménages de l’OFS https://www.bfs.admin.ch/bfs/fr/home/statistiques/situation-economique-sociale-population/revenus-consommation-et-fortune/budget-des-menages.html\nTrouvez le tableau excel “revenus et dépenses des ménages selon la classe de revenu” et téléchargez-le\nObservez et familiarisez-vous avec les données: est-ce que certains chiffres retiennent votre attention ?\nDans Excel ou dans R, produisez un graphique qui permet de comparer les dépenses de consommation de la première et dernière classe de revenu.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#utilité-des-contributions-à-la-croissance",
+    "href": "10mars_cours3.html#utilité-des-contributions-à-la-croissance",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Utilité des contributions à la croissance",
+    "text": "Utilité des contributions à la croissance\n==&gt; Il est très courant de calculer ces contributions à la croissance et ces dernières sont souvent publiés dans les rapports officiels.\n==&gt; En macroéconomie post-Keynésienne, une classification des “régimes de croissance” est fondée sur une typologie des pays selon les différents poids des contributions à la croissance",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#la-perspective-de-décomposition-du-revenu-national",
+    "href": "10mars_cours3.html#la-perspective-de-décomposition-du-revenu-national",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "La perspective de décomposition du revenu national",
+    "text": "La perspective de décomposition du revenu national",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#flux-de-revenus-extérieurs-nets-fni",
+    "href": "10mars_cours3.html#flux-de-revenus-extérieurs-nets-fni",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Flux de revenus extérieurs nets (FNI)",
+    "text": "Flux de revenus extérieurs nets (FNI)\n\nSert à mesurer le revenu national brut (RNB, aciennement produit national brut PNB) en l’additionnant au PIB\n\n\\[\nRNB = PIB + FNI\n\\]\nLes données du FNI sont généralement trouvable dans les tableaux du PIB dans l’approche revenu",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#usages-des-contributions-à-la-croissance",
+    "href": "10mars_cours3.html#usages-des-contributions-à-la-croissance",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Usages des contributions à la croissance",
+    "text": "Usages des contributions à la croissance\n\n\n==&gt; En macroéconomie, une littérature très large s’est développée autour d’une typologie des régimes de croissance à partir du calculs de contributions à la croissance",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#contributions-à-la-croissance-2",
+    "href": "10mars_cours3.html#contributions-à-la-croissance-2",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Contributions à la croissance (2)",
+    "text": "Contributions à la croissance (2)\nLes contributions à la croissance peuvent aussi être calculées comme suit, à partir du poids des différentes composantes dans le PIB:\n\\[\n\\frac{Y_t - Y_{t-1}}{Y_{t-1}} = c_t \\frac{C_{t-1}}{Y_{t-1}} + i_t \\frac{I_{t-1}}{Y_{t-1}} + g_t \\frac{G_{t-1}}{Y_{t-1}} + nx_t \\frac{NX_{t-1}}{Y_{t-1}}\n\\]\navec \\(c, i, g, nx\\) le taux de croissance de la consommation, de l’investissement, des dépenses publiques et des exportations nettes",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#contributions-relatives-à-la-croissance",
+    "href": "10mars_cours3.html#contributions-relatives-à-la-croissance",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Contributions relatives à la croissance",
+    "text": "Contributions relatives à la croissance\nLe désavantage des deux formules de contributions à la croissance ci-dessus est que les contributions ne sont pas comparables entre pays. Pour y remédier, il faut diviser les contributions par le taux de croissance (afin de normaliser les contributions), avec \\(y_t\\) le taux de croissance \\(y_t = \\frac{Y_t - Y_{t-1}}{Y_{t-1}}\\)\n\\[\n1 = \\frac{c_t}{y_t} \\frac{C_{t-1}}{Y_{t-1}} + \\frac{i_t}{y_t} \\frac{I_{t-1}}{Y_{t-1}} + \\frac{g_t}{y_t} \\frac{G_{t-1}}{Y_{t-1}} + \\frac{nx_t}{y_t} \\frac{NX_{t-1}}{Y_{t-1}}\n\\]\nEn simplifiant, on trouve:\n\\[\n1 = \\frac{C_t - C_{t-1}}{Y_t -Y_{t-1}} + \\frac{I_t - I_{t-1}}{Y_t -Y_{t-1}} + \\frac{G_t - G_{t-1}}{Y_t -Y_{t-1}} + \\frac{NX_t - NX_{t-1}}{Y_t -Y_{t-1}}\n\\]",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#balances-sectorielles",
+    "href": "10mars_cours3.html#balances-sectorielles",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Balances sectorielles",
+    "text": "Balances sectorielles\n\\[\n\\underbrace{(S - I)}_{surplus\\ secteur \\ privé} + \\underbrace{(T-G)}_{surplus\\ secteur\\ public} +  \\underbrace{(-CAB)}_{surplus\\ du \\ reste \\ du \\ monde} \\equiv 0\n\\]",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#exercice-2-notes-sur-limportation-de-données-excel",
+    "href": "10mars_cours3.html#exercice-2-notes-sur-limportation-de-données-excel",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Exercice 2: notes sur l’importation de données excel",
+    "text": "Exercice 2: notes sur l’importation de données excel\nPour importer correctement les données dans R, il faut faire un peu de nettoyage dans le fichier excel. La meilleur manière de procéder est de copier-coller les colonnes d’intérêt dans une nouvelle feuille. La fonction read_excel ou le panel files permettent de spécifier la feuille à importer.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#limites-des-contributions-à-la-croissance",
+    "href": "10mars_cours3.html#limites-des-contributions-à-la-croissance",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Limites des contributions à la croissance",
+    "text": "Limites des contributions à la croissance\n\nLes contributions à la croissance des exportations sont surestimées, car ne corrige pas pour la part des ré-exportation (les biens qui sont importés puis ré-exportés)\n\nPrendre en compte la part des ré-exportations demande des calculs bien plus complexes en utilisant notamment les tables input-output.\n\nLe calcul des contributions relatives pose problème quand le taux de croissance est très proche de 0 (diviser par un nombre proche de 0 donne un résultat infini)\nLes contributions à la croissance ne nous renseigne pas sur pourquoi les composantes contribuent différemment à la croissance\nNi sur comment sont financés les différentes dépenses\n\nEn macro post-Keynésienne, les contributions à la croissance sont donc souvent complémentées par une analyse des balances sectorielles",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#définition-du-pib",
+    "href": "10mars_cours3.html#définition-du-pib",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Définition du PIB",
+    "text": "Définition du PIB\nPIB = Somme des valeurs ajoutées sur un territoire donné sur une période donnée (le plus souvent dans un pays sur un an)\nLa valeur ajoutée étant la valeur monétaire (aux prix de marché) des biens et services, à laquelle on soustrait la valeur monétaire de la consommation intermédiaire\n\\[PIB = \\sum outputs - \\sum consommations \\ intermédiaires\\]\nPour être précis, il faut mentionner l’ajout des taxes moins les subventions sur les produits et services",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#exercice-1",
+    "href": "10mars_cours3.html#exercice-1",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Exercice 1",
+    "text": "Exercice 1\n\nAllez sur le site web du secrétariat d’État à l’économie (SECO) https://www.seco.admin.ch/seco/fr/home.html\nTrouvez la page sur laquelle le SECO met à disposition les données du PIB suisse selon les trois approches\nTéléchargez le tableau excel “PIB, approche par la dépense, données brutes”\nDans la feuille contenant les données nominales annuelles, identifiez les variables suivantes: dépenses de consommation privée des ménages (\\(C\\)), des administrations publiques (\\(G\\)), des investissement (\\(I\\)), des exportations et importation (\\(X\\) et \\(M\\)).\nOuvrez une nouvelle feuille et copier-collez y ces variables. N’oubliez pas d’ajouter une variables pour les années et de mettre le nom des variables en première ligne. Importer cette feuille dans R.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#exercice-1-notes-sur-limportation-de-données-excel",
+    "href": "10mars_cours3.html#exercice-1-notes-sur-limportation-de-données-excel",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Exercice 1: notes sur l’importation de données excel",
+    "text": "Exercice 1: notes sur l’importation de données excel\nPour importer correctement les données dans R, il faut faire un peu de nettoyage dans le fichier excel. La meilleur manière de procéder est de copier-coller les colonnes d’intérêt dans une nouvelle feuille. La fonction read_excel ou le panel files permettent de spécifier la feuille à importer.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#typologie-des-régimes-de-croissance",
+    "href": "10mars_cours3.html#typologie-des-régimes-de-croissance",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Typologie des régimes de croissance",
+    "text": "Typologie des régimes de croissance",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#exercice-1-suite",
+    "href": "10mars_cours3.html#exercice-1-suite",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Exercice 1 (suite)",
+    "text": "Exercice 1 (suite)\n\nCalculez la part de chaque composante des dépenses \\(C\\), \\(G\\), \\(I\\), \\(X\\), \\(M\\) dans le PIB. Comment ces différentes parts ont-elles évolué ?\nCalculez les contributions à la croissance annuelle pour chacune de ces composantes. Produisez un graphique montrant l’évolution des contribution chaque année depuis 1980.\nÀ partir de ces contributions, calculez la moyenne générale des contributions sur l’ensemble de la période. Calculez et comparez les moyennes des contributions avant et après la crise financière de 2008.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#balance-des-comptes-courants-et-flux-de-revenus-extérieurs-net",
+    "href": "10mars_cours3.html#balance-des-comptes-courants-et-flux-de-revenus-extérieurs-net",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Balance des comptes courants et flux de revenus extérieurs net",
+    "text": "Balance des comptes courants et flux de revenus extérieurs net\nLa balance des comptes courants (current acount balance CAB) est définie comme la somme des exportations nettes et des flux de revenus reçus de l’étranger moins les flux de revenus versés à l’étrangers:\n$$\nCAB = NX + FNI\n$$\nSi \\(CAB&gt;0\\), le pays considéré est en surplus vis-à-vis du reste du monde et inversement",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
   }
 ]

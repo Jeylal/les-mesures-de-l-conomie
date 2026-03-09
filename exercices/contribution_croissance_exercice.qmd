@@ -1,0 +1,261 @@
+---
+title: "Exercice: contributions à la croissance"
+format: html
+editor: visual
+---
+
+## Consignes
+
+-   Allez sur le site web du secrétariat d'État à l'économie (SECO) <https://www.seco.admin.ch/seco/fr/home.html>
+
+-   Trouvez la page sur laquelle le SECO met à disposition les données du PIB suisse selon les trois approches
+
+-   Téléchargez le tableau excel "PIB, approche par la dépense, données brutes", importez la feuille contenant les données nominales annuelles dans R.
+
+-   Calculez la part de chaque composante des dépenses $C$, $G$, $I$, $X$, $M$ dans le PIB. Quelle est la part la plus importante sur l'ensemble de la période ? Qu'est-ce que cela implique ?
+
+-   Calculez les contributions à la croissance annuelle pour chacune de ces composantes. À partir de ces contributions, calculez la moyenne générale des contributions sur l'ensemble de la période.
+
+- Calculez et comparez les moyennes des contributions avant et après la crise financière de 2008.
+
+
+## Importation des données
+
+```{r}
+library(readxl)
+data <- read_excel("exercices/exercices_contributions_croissance.xlsx", 
+    sheet = "tableauR")
+```
+
+
+## Calculer la part de chaque composante des dépenses dans le PIB
+
+
+```{r}
+library(tidyverse)
+
+data2 <- data %>% 
+  mutate(
+    C_part = C/Y,
+    I_part = I/Y,
+    G_part = G/Y,
+    X_part = X/Y,
+    M_part = M/Y
+  )
+
+```
+
+Pour produire un graphique pour visualiser les différentes parts:
+
+```{r}
+data2 %>% 
+  ggplot(aes(x = annees, y = C_part, color = "Part de la consommation"))+
+  geom_line()+
+  geom_line(aes(x = annees, y = I_part, color = "Part de investissements"))+
+  geom_line(aes(x = annees, y = G_part, color = "Part des dépenses publiques"))+
+  geom_line(aes(x = annees, y = X_part, color = "Part des exportations"))+
+  geom_line(aes(x = annees, y = M_part, color = "Part des importations"))+
+  theme_minimal()+
+  labs(title = "Part des différentes composantes dans le PIB Suisse",
+       x = "", y = "")
+
+
+```
+
+## Calcule des contributions à la croissance
+
+Il faut tout d'abord calculer les taux de croissances du PIB et de chaque composante
+
+```{r}
+
+# Calcule des taux de croissance avec diff(log(x)), comme cela produit 45 valeurs au lieu de 46 (taux de croissance donc on "perd" la première valeur), il faut préciser que la première valeur est manquante, on le fait en combinant (C()), NA et nos valeurs de taux de croissance.
+
+data3 <- 
+  data2 %>% 
+  mutate(
+    y = c(NA, diff(log(Y))),
+    c = c(NA, diff(log(C))),
+    i = c(NA, diff(log(I))),
+    g = c(NA, diff(log(G))),
+    x = c(NA, diff(log(X))),
+    m = c(NA, diff(log(M)))
+  )
+
+
+```
+
+Pour le calcule des contributions (non relatives) à la croissance: on multiplie les taux de croissance par la part de chaque composante dans le pib:
+
+```{r}
+data4 <- 
+  data3 %>% 
+  mutate(
+    contr_c = c*lag(C_part),
+    contr_i = i*lag(I_part),
+    contr_g = g*lag(G_part),
+    contr_x = x*lag(X_part),
+    contr_m = -m*lag(M_part)
+  )
+
+```
+
+Il n'y a pas de manière unique de visualiser les contributions à la croissance. Le plus souvent, elles sont représentées dans un "stacked barplot", c'est-à-dire un graphique en bar avec en x les années et y les contributions superposées de chaque composante:
+
+```{r}
+library(viridis)
+data4 %>% 
+  select(annees, matches("contr_*")) %>% # choisir les années et les variables contributions
+  pivot_longer(cols = -1) %>% # pivoter le jeux de données 
+  drop_na() %>% # enlever les valeurs manquantes de la première année
+  ggplot(aes(x = annees, y = value, fill = name))+
+  geom_col(alpha = 0.9)+
+  theme_minimal()+
+  scale_fill_viridis(discrete = T, option = "turbo")+
+  geom_line(data = data4, aes(x = annees, y = y, color = "taux de croissance du PIB"), inherit.aes = F, size = 1.4)+
+  labs(x = "", y = "")
+```
+
+
+Il est aussi très courant de calculer la moyenne des contributions sur une période donnée:
+
+```{r}
+
+moyennes_contributions = data4 %>% 
+  drop_na() %>% 
+  summarise(
+    "Consommation" = mean(contr_c),
+    "Iinvestissement" = mean(contr_i),
+    "Dépenses publiques" = mean(contr_g),
+    "Exportations" = mean(contr_x),
+    "Importations" = mean(contr_c)
+  ) %>% 
+  pivot_longer(everything(),values_to = "Contributions moyennes 1980-2025", names_to = "Composante")
+
+library(gt)
+
+moyennes_contributions %>% 
+  gt()
+
+```
+
+
+
+Calculons maintenant les contributions moyennes avant et après la crise financière de 2008:
+
+```{r}
+
+moyennes_contributions_1980_2008 = data4 %>% 
+  drop_na() %>% 
+  filter(annees %in% c(1980:2008)) %>% 
+  summarise(
+    "Consommation" = mean(contr_c),
+    "Iinvestissement" = mean(contr_i),
+    "Dépenses publiques" = mean(contr_g),
+    "Exportations" = mean(contr_x),
+    "Importations" = mean(contr_c)
+  ) %>% 
+  pivot_longer(everything(),values_to = "Contributions moyennes 1980-2008", names_to = "Composante")
+
+moyennes_contributions_2009_2025 = data4 %>% 
+  drop_na() %>% 
+  filter(annees %in% c(2009:2025)) %>% 
+  summarise(
+    "Consommation" = mean(contr_c),
+    "Iinvestissement" = mean(contr_i),
+    "Dépenses publiques" = mean(contr_g),
+    "Exportations" = mean(contr_x),
+    "Importations" = mean(contr_c)
+  ) %>% 
+  pivot_longer(everything(), values_to = "Contributions moyennes 2009-2025", names_to = "Composante")
+
+library(gt)
+
+moyennes_contributions2 <- 
+  moyennes_contributions_1980_2008 %>% 
+  left_join(moyennes_contributions_2009_2025, by = "Composante")
+
+moyennes_contributions2 %>% 
+  gt()
+
+```
+
+
+## Contributions relatives à la croissance
+
+
+```{r}
+data4 <- 
+  data3 %>% 
+  mutate(
+    contr_c = (c*lag(C_part))/y,
+    contr_i = (i*lag(I_part))/y,
+    contr_g = (g*lag(G_part))/y,
+    contr_x = (x*lag(X_part))/y,
+    contr_m = (-m*lag(M_part))/y
+  )
+
+```
+
+
+
+
+```{r}
+library(operator.tools) # pour l'opérateur %!in%
+
+data4 %>% 
+  select(annees, matches("contr_*")) %>% # choisir les années et les variables contributions
+  pivot_longer(cols = -1) %>% # pivoter le jeux de données 
+  drop_na() %>% # enlever les valeurs manquantes de la première année
+  # filter(annees %!in% c(2002, 2015)) %>%
+  ggplot(aes(x = annees, y = value, fill = name))+
+  geom_col(alpha = 0.9)+
+  theme_minimal()+
+  scale_fill_viridis(discrete = T, option = "turbo")+
+  geom_line(data = data4, aes(x = annees, y = y, color = "taux de croissance du PIB"), inherit.aes = F, size = 1.4)+
+  labs(x = "", y = "")
+```
+
+
+
+
+```{r}
+moyennes_contributions_1980_2008 = data4 %>% 
+  drop_na() %>% 
+  filter(annees %in% c(1980:2008)) %>% 
+  summarise(
+    "Consommation" = mean(contr_c),
+    "Iinvestissement" = mean(contr_i),
+    "Dépenses publiques" = mean(contr_g),
+    "Exportations" = mean(contr_x),
+    "Importations" = mean(contr_c)
+  ) %>% 
+  pivot_longer(everything(),values_to = "Contributions moyennes 1980-2008", names_to = "Composante")
+
+moyennes_contributions_2009_2025 = data4 %>% 
+  drop_na() %>% 
+  filter(annees %in% c(2009:2025)) %>% 
+  summarise(
+    "Consommation" = mean(contr_c),
+    "Iinvestissement" = mean(contr_i),
+    "Dépenses publiques" = mean(contr_g),
+    "Exportations" = mean(contr_x),
+    "Importations" = mean(contr_c)
+  ) %>% 
+  pivot_longer(everything(), values_to = "Contributions moyennes 2009-2025", names_to = "Composante")
+
+library(gt)
+
+moyennes_contributions2 <- 
+  moyennes_contributions_1980_2008 %>% 
+  left_join(moyennes_contributions_2009_2025, by = "Composante")
+
+moyennes_contributions2 %>% 
+  gt()
+
+```
+
+
+
+
+
+

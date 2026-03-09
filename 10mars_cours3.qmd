@@ -13,6 +13,8 @@ lang: fr
 footer: <https://jeylal.github.io/les-mesures-de-l-conomie/>
 ---
 
+# Comment sont récoltées les données de la comptabilité nationale ?
+
 ## Données macroéconomiques: principes de base {.smaller}
 
 -   Deux sources principales de données en économie (ainsi qu'en sciences sociales en général)
@@ -119,9 +121,9 @@ Le terme de comptabilité peut être trompeur, car la comptabilité nationale es
 :::
 :::::
 
-# Produit intérieur brut (PIB): principes de base
+# Principes de la comptabilité nationale
 
-## Définition {.smaller}
+## Définition du PIB {.smaller}
 
 PIB = Somme des valeurs ajoutées sur un territoire donné sur une période donnée (le plus souvent dans un pays sur un an)
 
@@ -173,16 +175,6 @@ L'enquête sur le budget des ménages permet aussi de définir le panier de bien
 
 [![https://www.bfs.admin.ch/bfs/fr/home/statistiques/situation-economique-sociale-population/revenus-consommation-et-fortune/budget-des-menages.html](images/cours3/ebm.png)](https://www.bfs.admin.ch/bfs/fr/home/statistiques/situation-economique-sociale-population/revenus-consommation-et-fortune/budget-des-menages.html)
 
-## Exercice 1: enquête sur le budget des ménages {.smaller}
-
--   Allez sur la pagne de l'enquête sur le budget des ménages de l'OFS <https://www.bfs.admin.ch/bfs/fr/home/statistiques/situation-economique-sociale-population/revenus-consommation-et-fortune/budget-des-menages.html>
-
--   Trouvez le tableau excel "revenus et dépenses des ménages selon la classe de revenu" et téléchargez-le
-
--   Observez et familiarisez-vous avec les données: est-ce que certains chiffres retiennent votre attention ?
-
--   Dans Excel ou dans R, produisez un graphique qui permet de comparer les dépenses de consommation de la première et dernière classe de revenu.
-
 ## Les loyers imputés {.smaller}
 
 Une imputation très importante qui est ajoutée aux dépenses de consommation finale des ménages est celle des loyers imputés
@@ -192,16 +184,6 @@ Une imputation très importante qui est ajoutée aux dépenses de consommation f
 Pourquoi ces loyers imputés sont-ils nécessaires ?
 
 Car si on ne prenait pas en compte ces loyers imputés, on verrait *une baisse tendancielle du PIB* due à l'augmentation structurelle du nombre absolu de propriétaire.
-
-## $I$ Investissement {.smaller}
-
--   Sont définis (dans la comptabilité nationale) comme investissement les achats de machines (logiciels informatiques inclus), les achats immobiliers et la constitution de stocks (inventaires). ==\> **Formation brut de capital (gross capital formation)**
-
-En ne prenant pas en compte les inventaires: **formation brut de capital fixed (gross fixed capital formation)**
-
--   Pourquoi ces termes plutôt que simplement "investissement" ? Car l'usage courant du terme investissement fait souvent référence aux investissements financier dans les marchés d'action ou autre.
-
--   Il est aussi possible et courant d'estimer formation **net** de capital fixe en prenant en compte la **dépréciation du capital**, appelée **consommation de capital fixe** dans les comptes nationaux.
 
 ## $G$ dépense publique {.smaller}
 
@@ -224,6 +206,16 @@ $G$ est donc estimé à travers la somme des coûts de:
 -   d'autres taxes payés sur la production (marginal)
 -   les paiements des ménages et des firmes pour les services fournis par le gouvernement (ex: entrée au musé)
 -   le comptre propre de consommation de capital fixe.
+
+## $I$ Investissement {.smaller}
+
+-   Sont définis (dans la comptabilité nationale) comme investissement les achats de machines (logiciels informatiques inclus), les achats immobiliers et la constitution de stocks (inventaires). ==\> **Formation brut de capital (gross capital formation)**
+
+En ne prenant pas en compte les inventaires: **formation brut de capital fixed (gross fixed capital formation)**
+
+-   Pourquoi ces termes plutôt que simplement "investissement" ? Car l'usage courant du terme investissement fait souvent référence aux investissements financier dans les marchés d'action ou autre.
+
+-   Il est aussi possible et courant d'estimer formation **net** de capital fixe en prenant en compte la **dépréciation du capital**, appelée **consommation de capital fixe** dans les comptes nationaux.
 
 ## Exportations et importations $X-M$ {.smaller}
 
@@ -254,7 +246,31 @@ understanding national accounts page 153
 Le reste du monde est composé de tous les non-résidents transactant avec le pays considéré. Ces transactions inclues:
 
 -   La balance commerciale (exportations et importations)
--   Les revenus reçus par les résidents de l'étranger et les revenu versé à l'étranger aux non-résidents (net foreign factor income).
+-   Les revenus reçus par les résidents de l'étranger et les revenu versé à l'étranger aux non-résidents (net external income flows ou flux de revenus extérieur net).
+
+## Flux de revenus extérieurs nets (FNI) {.smaller}
+
+-   Sert à mesurer le revenu national brut (RNB, aciennement produit national brut PNB) en l'additionnant au PIB
+
+$$
+RNB = PIB + FNI
+$$
+
+Les données du FNI sont généralement trouvable dans les tableaux du PIB dans l'approche revenu
+
+![](images/cours3/fni_seco.png){fig-align="center"}
+
+## Balance des comptes courants et flux de revenus extérieurs net {.smaller}
+
+La balance des comptes courants (current acount balance CAB) est définie comme la somme des exportations nettes et des flux de revenus reçus de l'étranger moins les flux de revenus versés à l'étrangers:
+
+$$
+
+CAB = NX + FNI
+
+$$
+
+Si $CAB>0$, le pays considéré est en surplus vis-à-vis du reste du monde et inversement
 
 ## Contributions à la croissance {.smaller}
 
@@ -264,33 +280,91 @@ $$
 \frac{Y_t - Y_{t-1}}{Y_{t-1}} = \frac{C_t - C_{t-1}}{Y_{t-1}} + \frac{I_t - I_{t-1}}{Y_{t-1}} + \frac{G_t - G_{t-1}}{Y_{t-1}} + \frac{NX_t - NX_{t-1}}{Y_{t-1}}
 $$
 
-Avec $Y_t$ et $NX_t$ le PIB nominal et les exportations net à la période $t$. Claculer ces contributions à la croissance permet d'identifier si la croissance entre les périodes considérées est principalement tirée par la consommation, l'investissement, la dépense publique ou les exportations nettes.
+Avec $Y_t$ et $NX_t$ le PIB nominal et les exportations net à la période $t$. Calculer ces contributions à la croissance permet d'identifier si la croissance entre les périodes considérées est principalement tirée par la consommation, l'investissement, la dépense publique ou les exportations nettes.
 
-## Balance commerciale et "merchant trade statistics" {.smaller}
+## Contributions à la croissance (2) {.smaller}
 
-Il existe une différence subtile mais qui peut être significative entre ce qui est considéré comme exportation/importation par le système de comptabilité nationale et les statistiques de commerce marchant.
+Les contributions à la croissance peuvent aussi être calculées comme suit, à partir du poids des différentes composantes dans le PIB:
 
--   Dans le merchant trade statistics (tel que considéré par l'OMC), sont considérés comme exportations et importations dès qu'une frontière est traversée.
+$$
+\frac{Y_t - Y_{t-1}}{Y_{t-1}} = c_t \frac{C_{t-1}}{Y_{t-1}} + i_t \frac{I_{t-1}}{Y_{t-1}} + g_t \frac{G_{t-1}}{Y_{t-1}} + nx_t \frac{NX_{t-1}}{Y_{t-1}}
+$$
 
--   En comptabilité nationale, c'est *l'échange de propriété* entre résidents et non-résidents qui compte.
+avec $c, i, g, nx$ le taux de croissance de la consommation, de l'investissement, des dépenses publiques et des exportations nettes
 
-::: notes
-understanding national accounts page 154
+## Contributions relatives à la croissance {.smaller}
+
+Le désavantage des deux formules de contributions à la croissance ci-dessus est que les contributions ne sont pas comparables entre pays. Pour y remédier, il faut diviser les contributions par le taux de croissance (afin de normaliser les contributions), avec $y_t$ le taux de croissance $y_t = \frac{Y_t - Y_{t-1}}{Y_{t-1}}$
+
+$$
+1 = \frac{c_t}{y_t} \frac{C_{t-1}}{Y_{t-1}} + \frac{i_t}{y_t} \frac{I_{t-1}}{Y_{t-1}} + \frac{g_t}{y_t} \frac{G_{t-1}}{Y_{t-1}} + \frac{nx_t}{y_t} \frac{NX_{t-1}}{Y_{t-1}}
+$$
+
+En simplifiant, on trouve:
+
+$$
+1 = \frac{C_t - C_{t-1}}{Y_t -Y_{t-1}} + \frac{I_t - I_{t-1}}{Y_t -Y_{t-1}} + \frac{G_t - G_{t-1}}{Y_t -Y_{t-1}} + \frac{NX_t - NX_{t-1}}{Y_t -Y_{t-1}}
+$$
+
+## Usages des contributions à la croissance {.smaller}
+
+::::: columns
+::: {.column width="40%"}
+==\> En macroéconomie, une littérature très large s'est développée autour d'une typologie des régimes de croissance à partir du calculs de contributions à la croissance
 :::
 
-## Exercice 2 {.smaller}
+::: {.column width="60%"}
+![](images/cours3/hein_typology.png){fig-align="right" width="400"}
+:::
+:::::
+
+## Typologie des régimes de croissance
+
+![](images/cours3/akcayheinjungmann2022.png){fig-align="center"}
+
+## Exercice 1 {.smaller}
 
 -   Allez sur le site web du secrétariat d'État à l'économie (SECO) <https://www.seco.admin.ch/seco/fr/home.html>
 
 -   Trouvez la page sur laquelle le SECO met à disposition les données du PIB suisse selon les trois approches
 
--   Téléchargez le tableau excel "PIB, approche par la dépense, données brutes", importez la feuille contenant les données nominales annuelles dans R.
+-   Téléchargez le tableau excel "PIB, approche par la dépense, données brutes"
 
--   Calculez la part de chaque composante des dépenses $C$, $G$, $I$, $X$, $M$ dans le PIB.
+- Dans la feuille contenant les données nominales annuelles, identifiez les variables suivantes: dépenses de consommation privée des ménages ($C$), des administrations publiques ($G$), des investissement ($I$), des exportations et importation ($X$ et $M$).
 
--   Produisez un graphique montrant la part de chacune des composantes des dépenses et leur évolution: comment ces parts ont-elles évolué depuis 1980 ?
+- Ouvrez une nouvelle feuille et copier-collez y ces variables. N'oubliez pas d'ajouter une variables pour les années et de mettre le nom des variables en première ligne. Importer cette feuille dans R.
 
--   Calculez les contributions à la croissance annuelle. Quelle composante des dépense du PIB contribue-t-elle le plus à la croissance ?
+## Exercice 1 (suite) {.smaller}
+
+-   Calculez la part de chaque composante des dépenses $C$, $G$, $I$, $X$, $M$ dans le PIB. Comment ces différentes parts ont-elles évolué ?
+
+-   Calculez les contributions à la croissance annuelle pour chacune de ces composantes. Produisez un graphique montrant l'évolution des contribution chaque année depuis 1980.
+
+-   À partir de ces contributions, calculez la moyenne générale des contributions sur l'ensemble de la période. Calculez et comparez les moyennes des contributions avant et après la crise financière de 2008.
+
+
+
+## Limites des contributions à la croissance {.smaller}
+
+-   Les contributions à la croissance des exportations sont surestimées, car ne corrige pas pour la part des ré-exportation (les biens qui sont importés puis ré-exportés)
+
+    -   Prendre en compte la part des ré-exportations demande des calculs bien plus complexes en utilisant notamment les tables input-output.
+
+-   Le calcul des contributions relatives pose problème quand le taux de croissance est très proche de 0 (diviser par un nombre proche de 0 donne un résultat infini)
+
+-   Les contributions à la croissance ne nous renseigne pas sur *pourquoi* les composantes contribuent différemment à la croissance
+
+-   Ni sur comment sont financés les différentes dépenses
+
+    -   En macro post-Keynésienne, les contributions à la croissance sont donc souvent complémentées par une analyse des *balances sectorielles*
+
+## Balances sectorielles
+
+$$
+\underbrace{(S - I)}_{surplus\ secteur \ privé} + \underbrace{(T-G)}_{surplus\ secteur\ public} +  \underbrace{(-CAB)}_{surplus\ du \ reste \ du \ monde} \equiv 0
+$$
+
+![](images/cours3/balances_sectorielles_suisse.png){fig-align="center"}
 
 ## Approche revenu du PIB {.smaller}
 
@@ -304,9 +378,11 @@ En comptabilité nationale:
 
 $$
 PIB = compensation \ des \ employés + excédent\ brut \ d'exploitation\ et \ revenu \ mixte
-$$ La compensation des employés est la variable la plus similaire aux salaires $W$, mais a une conception plus large car est plus globale que les salaires (inclut *toutes* les rémunérations des salariés).
+$$
 
-L'excédent brut d'exploitation brut est le montant de profit dégagé par les entreprises $P$ (gross operating surplus), le revenu mixte (mixed income) est le revenu des indépendants et auto-entrepreneurs.
+La compensation des employés est la variable la plus similaire aux salaires $W$, mais a une conception plus large car est plus globale que les salaires (inclut *toutes* les rémunérations des salariés).
+
+L'excédent brut d'exploitation brut est le montant de profit dégagé par les entreprises $R$ (gross operating surplus), le revenu mixte (mixed income) est le revenu des indépendants et auto-entrepreneurs.
 
 ## Revenu mixe et excédent brut
 
