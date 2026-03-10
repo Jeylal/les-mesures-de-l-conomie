@@ -1064,7 +1064,7 @@
     "href": "10mars_cours3.html#usages-des-contributions-à-la-croissance",
     "title": "10 Mars. Comptabilité nationale (1)",
     "section": "Usages des contributions à la croissance",
-    "text": "Usages des contributions à la croissance\n\n\n==&gt; En macroéconomie, une littérature très large s’est développée autour d’une typologie des régimes de croissance à partir du calculs de contributions à la croissance",
+    "text": "Usages des contributions à la croissance\n\n\n\nRapport 2026 des tendances conjoncturelles de l’économie suisse publié par le SECO",
     "crumbs": [
       "10 Mars. Comptabilité nationale (1)"
     ]
@@ -1195,6 +1195,16 @@
     "title": "10 Mars. Comptabilité nationale (1)",
     "section": "Exercice 3",
     "text": "Exercice 3\n\nTéléchargez le tableau Éxcel des données du PIB selon l’approche revenu sur la page du SECO\nCalculez la part du profit et des salaires dans la valeur ajoutée (PIB) pour chaque année depuis 1990.\nFaites la somme entre la part des salaires et des profits, que remarquez-vous ? En partant de l’équation \\(PIB \\equiv W+R\\), quelle devrait normalement être la valeur de cette somme ? Comment expliquer cet écart ?\nCorrigez la série pour qu’elle s’additionne à 1\nAllez sur DBnomics. Sous “providers”, allez sur les données de l’AMECO et cherchez les données sur la part des salaires (“adjusted wage share”). Filtrer les données pour n’avoir que la part des salaires pour la Suisse.\nComparez la part des salaires de l’AMECO avec la série que vous avez calculé. Comment expliquer cet écart ?",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#usages-des-contributions-à-la-croissance-1",
+    "href": "10mars_cours3.html#usages-des-contributions-à-la-croissance-1",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Usages des contributions à la croissance",
+    "text": "Usages des contributions à la croissance\n\n\n==&gt; En macroéconomie, une littérature très large s’est développée autour d’une typologie des régimes de croissance à partir du calculs de contributions à la croissance",
     "crumbs": [
       "10 Mars. Comptabilité nationale (1)"
     ]

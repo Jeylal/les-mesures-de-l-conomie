@@ -172,9 +172,7 @@ En Suisse, l'OFS mène sa propre enquête sur le budget des ménage chaque anné
 L'enquête sur le budget des ménages permet aussi d'estimer les *coefficients budgétaires* servant à pondérer le prix élémentaire des biens et services pris en compte dans le panier-type servant à calculer l'indice des prix à la consommation (IPC).
 
 ::: callout-note
-
 Le coefficient budgétaire d'un bien $i$ est la somme dépensé pour ce bien divisé par la somme totale des dépenses. Le prix élémentaire d'un bien est son prix à l'année $t$ divisé par son prix à une année de base.
-
 :::
 
 ## EBM en Suisse
@@ -215,12 +213,11 @@ $G$ est donc estimé à travers la somme des coûts de:
 
 ## La sous-estimation de $G$
 
-- Cette estimation de la valeur ajoutée des services publiques à travers les coûts implique que cette dernière est *sous-estimée* dans les comptes nationaux.
+-   Cette estimation de la valeur ajoutée des services publiques à travers les coûts implique que cette dernière est *sous-estimée* dans les comptes nationaux.
 
-- Contrairement aux entreprises privées, les services publiques n'appliquent pas de taux de marge
+-   Contrairement aux entreprises privées, les services publiques n'appliquent pas de taux de marge
 
-- Toute chose égale par ailleurs, la privatisation d'un service publique (par exemple un hôpital) aboutirait à une augmentation du PIB, mais cette augmentation est "artificelle" dans le sens où l'augmentation est uniquement due à l'ajout d'un taux de marge, la valeur ajoutée des services n'ayant pas changé.
-
+-   Toute chose égale par ailleurs, la privatisation d'un service publique (par exemple un hôpital) aboutirait à une augmentation du PIB, mais cette augmentation est "artificelle" dans le sens où l'augmentation est uniquement due à l'ajout d'un taux de marge, la valeur ajoutée des services n'ayant pas changé.
 
 ## $I$ Investissement {.smaller}
 
@@ -279,11 +276,11 @@ Les données du FNI sont généralement trouvables dans les tableaux du PIB dans
 
 La balance des comptes courants (current acount balance CAB) est définie comme la somme des exportations nettes et des flux de revenus reçus de l'étranger moins les flux de revenus versés à l'étrangers:
 
-$$
+\$\$
 
 CAB = NX + FNI
 
-$$
+\$\$
 
 Si $CAB>0$, le pays considéré est en surplus vis-à-vis du reste du monde et inversement
 
@@ -321,7 +318,11 @@ $$
 1 = \frac{C_t - C_{t-1}}{Y_t -Y_{t-1}} + \frac{I_t - I_{t-1}}{Y_t -Y_{t-1}} + \frac{G_t - G_{t-1}}{Y_t -Y_{t-1}} + \frac{NX_t - NX_{t-1}}{Y_t -Y_{t-1}}
 $$
 
-## Usages des contributions à la croissance {.smaller}
+## Usages des contributions à la croissance
+
+[![Rapport 2026 des tendances conjoncturelles de l'économie suisse publié par le SECO](images/cours3/tendanceconjoncturelle2025.png){width="579"}](https://www.seco.admin.ch/seco/fr/home/Publikationen_Dienstleistungen/Publikationen_und_Formulare/konjunkturtendenz/fruehjar2026.html)
+
+## Usages des contributions à la croissance
 
 ::::: columns
 ::: {.column width="40%"}
@@ -345,14 +346,12 @@ $$
 
 -   Téléchargez le tableau excel "PIB, approche par la dépense, données brutes"
 
-- Dans la feuille contenant les données nominales annuelles, identifiez les variables suivantes: dépenses de consommation privée des ménages ($C$), des administrations publiques ($G$), des investissement ($I$), des exportations et importation ($X$ et $M$).
+-   Dans la feuille contenant les données nominales annuelles, identifiez les variables suivantes: dépenses de consommation privée des ménages ($C$), des administrations publiques ($G$), des investissement ($I$), des exportations et importation ($X$ et $M$).
 
-- Ouvrez une nouvelle feuille et copier-collez y ces variables. N'oubliez pas d'ajouter une variables pour les années et de mettre le nom des variables en première ligne. Importer cette feuille dans R.
+-   Ouvrez une nouvelle feuille et copier-collez y ces variables. N'oubliez pas d'ajouter une variables pour les années et de mettre le nom des variables en première ligne. Importer cette feuille dans R.
 
 ::: callout-note
-
 pour importer la feuille excel, utilisez la fonction `read_excel()`, pour créer une nouvelle variable, la fonction `mutate()`, `diff()` et `log()` pour calculer les taux de croissance et `lag()` pour prendre la valeur d'une variable à $t-1$
-
 :::
 
 ## Exercice 1 (suite) {.smaller}
@@ -362,8 +361,6 @@ pour importer la feuille excel, utilisez la fonction `read_excel()`, pour créer
 -   Calculez les contributions à la croissance annuelle pour chacune de ces composantes. Produisez un graphique montrant l'évolution des contribution chaque année depuis 1980.
 
 -   À partir de ces contributions, calculez la moyenne générale des contributions sur l'ensemble de la période. Calculez et comparez les moyennes des contributions avant et après la crise financière de 2008.
-
-
 
 ## Limites des contributions à la croissance {.smaller}
 
