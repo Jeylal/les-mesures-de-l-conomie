@@ -1,192 +1,5 @@
 [
   {
-    "objectID": "slides intro.html#présentation-du-cours",
-    "href": "slides intro.html#présentation-du-cours",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "Présentation du cours",
-    "text": "Présentation du cours\nObjectif du cours\n\n\nComprendre et maîtriser les outils indispensables de l’analyse économique\n\n\nCela comprend:\n\nLes variables économiques (PIB, inflation…)\nLes principes de modélisation\nLa programmation et l’analyse statistique",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#à-propos-de-moi",
-    "href": "slides intro.html#à-propos-de-moi",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "À propos de moi",
-    "text": "À propos de moi\n\n\n\nBachelor en histoire-économie-société (ancien nom !)\nMaster en économie politique du capitalisme (MAPEC)\nCertificat complémentaire en stastistiques appliquées (Gsem)\nIntérêt particulier à l’analyse du changement institutionnel des modèles socio-économiques européens (surtout la Suisse et la France), sous l’angle de l’économie politique néoréaliste d’Amable et Palombarini\nJe réalise une thèse sur les blocs sociaux et la transformation du mode de régulation et régime d’accumulation suisse depuis l’après-guerre",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#à-propos-de-vous",
-    "href": "slides intro.html#à-propos-de-vous",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "À propos de vous",
-    "text": "À propos de vous\n\nDeuxième ou troisième année de bachelor ou plus ?\nLes cours non-obligatoires que vous avez eus jusqu’à maintenant, et les cours que vous prendrez ce semestre\nLe cours que vous avez le plus apprécié jusqu’à maintenant\nPlutôt quanti ou quali ? Économie politique ou histoire économique ?\nVos connaissances de R, d’excel et en statistiques ?\n\n==&gt; Cela m’aidera à adapter ce séminaire pour qu’il vous soit le plus utile possible !",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#plan-du-cours",
-    "href": "slides intro.html#plan-du-cours",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "Plan du cours",
-    "text": "Plan du cours\n12 séances au total sur 3 thèmes de mesures\n\nComptabilité nationale\nInégalités et distribution\nInstitutions\n\nhttps://jeylal.github.io/les-mesures-de-l-conomie/",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#perspective-du-cours",
-    "href": "slides intro.html#perspective-du-cours",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "Perspective du cours",
-    "text": "Perspective du cours\nUn cours d’analyse appliquée, nous allons beaucoup travailler directement avec des données et des exemples. L’idée est de vous familiariser avec les données économiques, comment les traiter et les analyser.\nAprès ce cours, vous devriez être capable de mener vos propres analyses quantitatives pour vos recherches et votre PDR.\n==&gt; Outils inspensable: R(studio) et Quarto",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#r-un-outil-indispensable-en-économie",
-    "href": "slides intro.html#r-un-outil-indispensable-en-économie",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "R: un outil indispensable en économie",
-    "text": "R: un outil indispensable en économie\n\n\n\n\n\n\n\n\nL’un des logiciels les plus utilisés par les économistes, que ce soit pour la visualisation de données ou l’estimation de modèles économétriques. Grande flexiblité et potentiel énorme.",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#quarto",
-    "href": "slides intro.html#quarto",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "Quarto",
-    "text": "Quarto\nQuarto est un système de publication qui permet de produire des documents directement à partir de Rstudio (exemple: powerpoints, pdf, sites web…) et donc de code en R.",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#évaluation-du-cours",
-    "href": "slides intro.html#évaluation-du-cours",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "Évaluation du cours",
-    "text": "Évaluation du cours\n\nParticipation au cours (20%)\n\nLa participation aux séance est obligatoire et sera contrôlée à chaque début de cours\n\nExamen pratique en dernière séance (80%)\n\nIl s’agira de travaux pratiques à réaliser en cours de séance (2h), avec des exercices à réaliser sur R ou excel.\n\nExamen blanc après les vacances de pâques: bonus si la note aide à améliorer la note finale",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#à-propos-de-lintelligence-artificielle",
-    "href": "slides intro.html#à-propos-de-lintelligence-artificielle",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "À propos de l’intelligence artificielle",
-    "text": "À propos de l’intelligence artificielle\nDéconseillé dans le cadre de ce cours, pour les raisons suivantes:\n\n\n\nVous n’aurez pas accès aux IA lors des examens pratiques\nSi les IA sont désormais excellentes en programmation (Python, Stata…), les IA les plus utilisées (notamment Chatgpt) produisent du code R qui n’est souvent pas optimale\nUtilisation acceptable dans certains cas, comme pour simplifier des tâches répétitives\nR est le langage avec le plus de ressources et de documentations en ligne, pas besoin de passer par une IA\nRisque de ne pas assimiler le contenu du cours si vous dépendez entièrement des IA pour résoudre les exercices\n\n\n\n\n\n\n\n\nImportant\n\n\nEn dehors des examens en présence, je ne peux pas vous interdire l’utilisation des IA. Je vous déconseille l’utilisation de Chatgpt et vous recommande d’utiliser Copilot, dont vous avez une version gratuite avec votre compte Unige. D’autres IA sont meilleures pour R, comme ShinyAssistant.",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#apprendre-lanalyse-à-travers-r",
-    "href": "slides intro.html#apprendre-lanalyse-à-travers-r",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "Apprendre l’analyse à travers R",
-    "text": "Apprendre l’analyse à travers R",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#github",
-    "href": "slides intro.html#github",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "Github",
-    "text": "Github\n\nLogiciel permettant de développer un dépôt (repository ou “repo”), consistant en un fichier contenant votre code (dans le cadre de ce cours les exercices sur R/quarto et excel)\nPermet de sauvegarder dans un cloud et contrôler de manière minutieuse toutes les modifications\nPermet le contrôle par les paires de votre travail, ou bien de travailler à plusieurs à distance sur le même travail",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#exercice",
-    "href": "slides intro.html#exercice",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "Exercice",
-    "text": "Exercice\n\nInstallez Quarto.\nCréez-vous un compte github &lt;github.com&gt; et installez github desktop https://desktop.github.com/download/\nInstallez tinytex en runnant cette commande dans le terminal quarto install tinytex\nCréez un document quarto pour chaque type de document possible: html pdf, word et powerpoint (avec revealjs), faites attention à bien sauvegarder ce document quarto dans un fichier à part entière.\nCréez un repo github à partir de ce fichier.",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#penn-world-tables",
-    "href": "slides intro.html#penn-world-tables",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "Penn World Tables",
-    "text": "Penn World Tables\nLa Penn World Table (PWT) est l’une des base de données les plus connues en économie. Elle compile certaines variables clés pour de nombreux pays sur une période de temps assez importante.\nLa PWT est accessible et téléchargeable ici, mais dans le cadre de cet atelier nous allons utiliser le package Rdatasets qui permet d’importer directement le tableau de données dans R\nVoici la documentation du tableau de données https://vincentarelbundock.github.io/Rdatasets/doc/stevedata/pwt_sample.html et comment l’importer dans R:",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#pwt-variables",
-    "href": "slides intro.html#pwt-variables",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "PWT variables",
-    "text": "PWT variables\n\n\n\n\n\n\n\nVariable\nDescription\n\n\n\n\ncountry\nNom du pays.\n\n\nisocode\nCode ISO du pays.\n\n\nyear\nAnnée (numérique).\n\n\npop\nPopulation (en millions).\n\n\nhc\nIndice de capital humain par personne (années de scolarité et rendements).\n\n\nrgdpna\nPIB réel à prix nationaux constants de 2011 (en millions USD 2017).\n\n\nrgdpo\nPIB réel côté production, en PPA chaînées (en millions USD 2017).\n\n\nrgdpe\nPIB réel côté dépenses, en PPA chaînées (en millions USD 2017).\n\n\nlabsh\nPart de la rémunération du travail dans le PIB à prix courants.\n\n\navh\nHeures annuelles moyennes travaillées par personne engagée.\n\n\nemp\nNombre de personnes engagées (en millions).\n\n\nrnna\nStock de capital à prix constants de 2017 (en millions USD 2017).",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#pwt-importation",
-    "href": "slides intro.html#pwt-importation",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "PWT importation",
-    "text": "PWT importation",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#r",
-    "href": "slides intro.html#r",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "R",
-    "text": "R\nImporter la PWT en utilisant le package Rdatasets",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#le-package-esquisse",
-    "href": "slides intro.html#le-package-esquisse",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "Le package esquisse",
-    "text": "Le package esquisse\nPermet d’utiliser une interface permettant d’explorer les données et produire des graphiques sans coder soi-même",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#dbnomics",
-    "href": "slides intro.html#dbnomics",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "Dbnomics",
-    "text": "Dbnomics\nDbnomics est une base de données internationale rassembland en une base de nombreuses bases de données indispensables en économie: données de l’OCDE, de la Banque Mondiale, du Fond Monétaire Internationale…\nLe package rdbnomics permet d’importer ces données directement dans R.\nExemple:",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "exercices/exercices_afc_2022_r.html",
-    "href": "exercices/exercices_afc_2022_r.html",
-    "title": "Exercice AFC 2022 R",
-    "section": "",
-    "text": "Calcul des fréquences relatives cumulées des revenus et des contribuables\nGraphique de la courbe de Lorenz: fréquence relative cumulée du revenu et fréquence relative cumulée des contribuables\n\ndata %&gt;% \n  ggplot(aes(x = freq_rel_cumul_contr, y = freq_rel_cumul_revenu))+\n  geom_point()+\n  geom_line()+\n  geom_segment(aes(x = 0, y = 0, xend = 1, yend = 1))+\n  theme_minimal()\n\nWarning in geom_segment(aes(x = 0, y = 0, xend = 1, yend = 1)): All aesthetics have length 1, but the data has 26 rows.\nℹ Please consider using `annotate()` or provide this layer with data containing\n  a single row.\n\n\n\n\n\n\n\n\n\nCalcul du coefficient de Gini\n\n# first triangle under the Lorenz curve\n\n\ntriangle = rep(NA, length(data$freq_rel_cumul_contr))\n\ntriangle[1] = (data$freq_rel_cumul_contr[1]*data$freq_rel_cumul_revenu[1])/2\n\n\nfor (i in 2:length(data$freq_rel_cumul_contr)) {\n  \n  triangle[i] = (data$freq_rel_cumul_contr[i]-data$freq_rel_cumul_contr[i-1])*(data$freq_rel_cumul_revenu[i]-data$freq_rel_cumul_revenu[i-1])/2\n  \n}\n\nsquare = rep(NA, length(data$freq_rel_cumul_contr[-1]))\n\nfor (i in 1:length(data$freq_rel_cumul_contr)) {\n  \n  square[i] = (data$freq_rel_cumul_contr[i+1]-data$freq_rel_cumul_contr[i])*data$freq_rel_cumul_revenu[i]\n  \n  \n}\n\n# somme des aires des triangles et des carrés\n\nsomme_aires = sum(square, na.rm = T)+sum(triangle)\n\n# Gini = 1 - 2*somme_aire\n\ngini = 1-2*somme_aires\n\nRelation de Pareto\n\nplot(data$seuil_revenu_inférieur, 1-data$freq_rel_cumul_contr, type = \"l\")\n\n\n\n\n\n\n\ndata3 &lt;- data %&gt;% \n  mutate(\n    revenu_moyen_tranche = revenu_net/nombre_contribuables,\n    inv_freq_rel_cumul_contr = 0.999 - freq_rel_cumul_contr,\n    log_revenu_moyen_tranche = log(revenu_moyen_tranche),\n    log_inv_freq_rel_cumul_contr = log(inv_freq_rel_cumul_contr)\n  )\n\nWarning: There was 1 warning in `mutate()`.\nℹ In argument: `log_inv_freq_rel_cumul_contr = log(inv_freq_rel_cumul_contr)`.\nCaused by warning in `log()`:\n! Production de NaN\n\ndata3 %&gt;% \n  ggplot(aes(x = revenu_moyen_tranche, y = inv_freq_rel_cumul_contr))+\n  geom_point()+\n  geom_line()\n\n\n\n\n\n\n\nsummary(lm(data = data3,\n           log_inv_freq_rel_cumul_contr ~ log_revenu_moyen_tranche))  \n\n\nCall:\nlm(formula = log_inv_freq_rel_cumul_contr ~ log_revenu_moyen_tranche, \n    data = data3)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-2.2311 -0.2960  0.3214  0.5412  0.5727 \n\nCoefficients:\n                         Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)               16.8909     2.0606   8.197 5.56e-08 ***\nlog_revenu_moyen_tranche  -1.6607     0.1837  -9.039 1.10e-08 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 0.7714 on 21 degrees of freedom\n  (3 observations effacées parce que manquantes)\nMultiple R-squared:  0.7955,    Adjusted R-squared:  0.7858 \nF-statistic: 81.71 on 1 and 21 DF,  p-value: 1.102e-08"
-  },
-  {
     "objectID": "3mars_cours2.html#séries-temporelles",
     "href": "3mars_cours2.html#séries-temporelles",
     "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
@@ -567,405 +380,6 @@
     ]
   },
   {
-    "objectID": "10mars_cours3.html#données-macroéconomiques-principes-de-base",
-    "href": "10mars_cours3.html#données-macroéconomiques-principes-de-base",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Données macroéconomiques: principes de base",
-    "text": "Données macroéconomiques: principes de base\n\nDeux sources principales de données en économie (ainsi qu’en sciences sociales en général)\n\nDonnées provenant d’enquêtes au moyen de questionnaires\n\nex: données sur la consommation, statistiques du marché du travail, de la valeur ajouté des entreprises\n\nDonnées administratives\n\nex: comptes publics\n\n\n\nDistinction importante, car pour les données d’enquêtes, les principes de la statistique (échantillonage, calculs des marges d’erreurs, tests statistiques) doivent être respectés, ce qui n’est pas (forcément) le cas des données administratives.\n\nCar pour les données administratives, certains principe de la statistique ne sont pas applicable, car les données n’ont pas été récoltées à travers un processus d’échantillonnage",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#données-denquête",
-    "href": "10mars_cours3.html#données-denquête",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Données d’enquête",
-    "text": "Données d’enquête\n\nFaire attention à la qualité des enquêtes qui dépend de:\n\nLe procédé d’échantillonage\nLa taille de l’échantillon et sa représentativité\nLe taux de réponse (nombre de personnes qui ont répondu à l’enquête / total des personnes appelées à participer à l’enquête)",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#récolte-de-données-denquête",
-    "href": "10mars_cours3.html#récolte-de-données-denquête",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Récolte de données d’enquête",
-    "text": "Récolte de données d’enquête\nun problème à ne pas sous-estimer\n\n\n\n\n\n\nUn taux de réponse faible (&lt;60%) indique que l’enquête a manqué une partie importante de la population ==&gt; données récoltées ne sont pas représentatives.",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#exemple-crise-des-données-en-grande-bretagne",
-    "href": "10mars_cours3.html#exemple-crise-des-données-en-grande-bretagne",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Exemple: crise des données en Grande-Bretagne",
-    "text": "Exemple: crise des données en Grande-Bretagne\n\n\n“Declining response rates to the LFS (labour force surveys) have made the numbers so volatile that it is impossible to be sure whether employment is rising or falling from one quarter to the next — let alone how the labour market has evolved in the years since the pandemic.” “How flawed data is leaving the UK in the dark”, Financial Times",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#exemple-crise-des-données-aux-usa",
-    "href": "10mars_cours3.html#exemple-crise-des-données-aux-usa",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Exemple: crise des données aux USA",
-    "text": "Exemple: crise des données aux USA",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#données-administratives",
-    "href": "10mars_cours3.html#données-administratives",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Données administratives",
-    "text": "Données administratives\nExemple: données fiscales (qui permettent les mesures de distribution du revenu), certaines données du marché du travail (ex: Seco et le nombre de chômeurs inscrits), données sur les finances publiques…\n\nLes données administratives ne sont pas récoltées à travers un processus d’échantillonnage. Par exemple, cela ne fait pas sens de calculer les intervalles de confiance pour le PIB ou la dette publique.\nMais cela ne veut pas dire que les données administratives sont exhaustives\n\nD’ou la récurrence de “révisions” des séries de données administratives.",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#la-comptabilité-nationale",
-    "href": "10mars_cours3.html#la-comptabilité-nationale",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "La “comptabilité” nationale",
-    "text": "La “comptabilité” nationale\nLe terme de comptabilité peut être trompeur, car la comptabilité nationale est très différente de la comptabilité en entreprise:\n\nLe comptable d’une entreprise dispose de registres avec une information complète sur les données de l’entreprise\nCela n’est pas possible pour la comptabilité nationale (impliquerait une information exhaustive sur des millions d’individus et d’entreprises)\nLa comptabilité nationale repose donc forcément sur une information partielle qui nécessite des approximations, des estimations et des révisions",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#comptabilité-nationale-et-statistique",
-    "href": "10mars_cours3.html#comptabilité-nationale-et-statistique",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Comptabilité nationale et statistique",
-    "text": "Comptabilité nationale et statistique\n\nLes données provenant des comptes nationaux sont des approximations\nCes approximations sont possibles grâce à des données récoltées de manière plus ou moins dissipée selon la qualité du système publique de statistique du pays considéré.\nIl n’est en outre pas possible de mesurer statistiquement ces approximations (ex: intervalle de confiance de l’estimation du PIB), car la comptabilité nationale n’est pas le résultat d’une seule grande enquête.\nAu contraire, les comptes nationaux sont le résultat de compilations complexes de données provenant d’un grand nombre de sources différentes.",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#exemple-suisse",
-    "href": "10mars_cours3.html#exemple-suisse",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Exemple: Suisse",
-    "text": "Exemple: Suisse\n\n\n\n\n\n\n\n\n\n\n\nhttps://www.bfs.admin.ch/bfs/fr/home/statistiques/economie-nationale/comptes-nationaux/produit-interieur-brut.assetdetail.328585.html",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#définition",
-    "href": "10mars_cours3.html#définition",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Définition",
-    "text": "Définition\nPIB = Somme des valeurs ajoutées sur un territoire donné sur une période donnée (le plus souvent dans un pays sur un an)\nLa valeur ajoutée étant la valeur monétaire (aux prix de marché) des biens et services, à laquelle on soustrait la valeur monétaire de la consommation intermédiaire\n\\[PIB = \\sum outputs - \\sum consommations \\ intermédiaires\\]\nPour être précis, il faut mentionner l’ajout des taxes moins les subventions sur les produits et services",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#secteurs-institutionnels",
-    "href": "10mars_cours3.html#secteurs-institutionnels",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Secteurs institutionnels",
-    "text": "Secteurs institutionnels\n\\(PIB = \\sum valeurs \\ ajoutées\\), mais de qui ?\nLes “acteurs” de la comptabilité nationale sont les “secteurs institutionnels” qui incluent:\n\nLes entreprises non-financières\nLes entreprises financières (banques, assurances…)\nLe gouvernement\nLes ménages (dont les “institutions sans but lucratif au service des ménages” ISBLSM)\n\nLes ISBLSM sont des organisations crées par des groupes de ménages afin de fournir un service de manière non-lucrative. Exemple: syndicats, organisations religieuses, associations philantropiques, de charité… (comme la Croix-Rouge). Une telle organisation doit être financée par des donations ou un abonnement régulier afin d’être considéré comme une ISBLSM par la comptabilité nationale (voir UNA, p.141).",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#approche-production-du-pib",
-    "href": "10mars_cours3.html#approche-production-du-pib",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Approche production du PIB",
-    "text": "Approche production du PIB\n\\[PIB = \\sum valeurs\\ ajoutées \\\\ - \\sum consommations \\ intermédiaires\\\\ + taxes \\ sur \\ les \\ produits \\\\ - subventions \\ sur \\ les \\ produits\\]",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#approche-dépense-du-pib",
-    "href": "10mars_cours3.html#approche-dépense-du-pib",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Approche dépense du PIB",
-    "text": "Approche dépense du PIB\n\\[PIB = C + I + G + X - M\\]\nAvec \\(C\\) la consommation, \\(I\\) l’investissement, \\(G\\) la dépense publique et \\(X-M\\) la balance commerciale.",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#c-consommation",
-    "href": "10mars_cours3.html#c-consommation",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "\\(C\\) Consommation",
-    "text": "\\(C\\) Consommation\nLa comptabilité nationale définit \\(C\\), la consommation, comme les dépenses de consommation finale privée des ménages et des ISBLSM. Cela inclut par exemple les dépenses pour la nourriture, le loyer, l’énergie…\n\n\n\n\n\n\nImportant\n\n\nLa consommation finale privée des ménages n’inclut pas toutes les dépenses. Par exemple, l’achat d’une résidence est considéré par les comptes nationaux comme un investissement (donc est compté dans \\(I\\)).",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#lenquête-sur-le-budget-des-ménages",
-    "href": "10mars_cours3.html#lenquête-sur-le-budget-des-ménages",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "L’enquête sur le budget des ménages",
-    "text": "L’enquête sur le budget des ménages\nSur quelles données sont fondées les estimations de \\(C\\) ? Sur les enquêtes sur le budget des ménages.\nEn Suisse, l’OFS mène sa propre enquête sur le budget des ménage chaque année depuis 2000. - Enquête statistique auprès d’un échantillon d’environ 3000 personnes.\nL’enquête sur le budget des ménages permet aussi de définir le panier de bien type utilisé pour le calcul de l’indice des prix à la consommation (IPC), un indicateur important du niveau des prix et de l’inflation.",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#ebm-en-suisse",
-    "href": "10mars_cours3.html#ebm-en-suisse",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "EBM en Suisse",
-    "text": "EBM en Suisse\n\n\n\nhttps://www.bfs.admin.ch/bfs/fr/home/statistiques/situation-economique-sociale-population/revenus-consommation-et-fortune/budget-des-menages.html",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#exercice-1-enquête-sur-le-budget-des-ménages",
-    "href": "10mars_cours3.html#exercice-1-enquête-sur-le-budget-des-ménages",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Exercice 1: enquête sur le budget des ménages",
-    "text": "Exercice 1: enquête sur le budget des ménages\n\nAllez sur la pagne de l’enquête sur le budget des ménages de l’OFS https://www.bfs.admin.ch/bfs/fr/home/statistiques/situation-economique-sociale-population/revenus-consommation-et-fortune/budget-des-menages.html\nTrouvez le tableau excel “revenus et dépenses des ménages selon la classe de revenu” et téléchargez-le\nObservez et familiarisez-vous avec les données: est-ce que certains chiffres retiennent votre attention ?\nDans Excel ou dans R, produisez un graphique qui permet de comparer les dépenses de consommation de la première et dernière classe de revenu.",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#les-loyers-imputés",
-    "href": "10mars_cours3.html#les-loyers-imputés",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Les loyers imputés",
-    "text": "Les loyers imputés\nUne imputation très importante qui est ajoutée aux dépenses de consommation finale des ménages est celle des loyers imputés\n\nOn impute aux propriétaires de leur logement le loyer qu’ils payeraient s’il n’étaient pas propriétaires.\n\nPourquoi ces loyers imputés sont-ils nécessaires ?\nCar si on ne prenait pas en compte ces loyers imputés, on verrait une baisse tendancielle du PIB due à l’augmentation structurelle du nombre absolu de propriétaire.",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#i-investissement",
-    "href": "10mars_cours3.html#i-investissement",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "\\(I\\) Investissement",
-    "text": "\\(I\\) Investissement\n\nSont définis (dans la comptabilité nationale) comme investissement les achats de machines (logiciels informatiques inclus), les achats immobiliers et la constitution de stocks (inventaires). ==&gt; Formation brut de capital (gross capital formation)\n\nEn ne prenant pas en compte les inventaires: formation brut de capital fixed (gross fixed capital formation)\n\nPourquoi ces termes plutôt que simplement “investissement” ? Car l’usage courant du terme investissement fait souvent référence aux investissements financier dans les marchés d’action ou autre.\nIl est aussi possible et courant d’estimer formation net de capital fixe en prenant en compte la dépréciation du capital, appelée consommation de capital fixe dans les comptes nationaux.",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#g-dépense-publique",
-    "href": "10mars_cours3.html#g-dépense-publique",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "\\(G\\) dépense publique",
-    "text": "\\(G\\) dépense publique\nInclut les dépenses générales du gouvernement, notamment les services publiques (éducation, santé, sécurité…).\n\nComme ces biens et services fournis par l’État ne sont pas achetés directement par les autres secteurs institutionnels, leur comptabilisation ne se fait pas à leur valeur marchande comme pour \\(I\\) et \\(C\\).\n\\(G\\) est donc estimé à travers les coûts. En termes de comptabilité, la consommation finale du gouvernement est équivalente à ses coûts\n\nExemple: le service rendu par tous les professeurs d’une école publique équivaut aux salaires qui leur sont versés. Même principe pour tous les autres fonctionnaires (police, administration, armée…).",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#g",
-    "href": "10mars_cours3.html#g",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "\\(G\\)",
-    "text": "\\(G\\)\n\\(G\\) est donc estimé à travers la somme des coûts de:\n\nLes salaires versés aux employés du gouvernement\nPlus l’achat par le gouvernement de matériels et autre consommation (le “C” propre à l’État)\nla consommation de capital fixe (le “I” propre à l’État: achats de machines, de biens immobiliers etc.)\nl’achat de biens et services par le gouvernement au bénéfice des ménages (ex: remboursement des soins de santé)\nd’autres taxes payés sur la production (marginal)\nles paiements des ménages et des firmes pour les services fournis par le gouvernement (ex: entrée au musé)\nle comptre propre de consommation de capital fixe.",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#exportations-et-importations-x-m",
-    "href": "10mars_cours3.html#exportations-et-importations-x-m",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Exportations et importations \\(X-M\\)",
-    "text": "Exportations et importations \\(X-M\\)\nLes flux d’exportations et d’importations sont décomposés en quatre parties:\n\nle commerce extérieur de biens\nle commerce extérieur de services\nachats directs par les résidents dans le reste du monde (considéré comme des importations de services)\nachats directs par les non-résidents dans le territoire économique (exportations de services)",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#territoire-résidence-et-reste-du-monde",
-    "href": "10mars_cours3.html#territoire-résidence-et-reste-du-monde",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Territoire, résidence et reste du monde",
-    "text": "Territoire, résidence et reste du monde\nCes trois notions ont une définition bien particulière en comptabilité nationale et sont importantes à comprendre afin de comprendre la balance commerciale:\n\nLa notion de territoire économique se réfère à l’aire géographique d’un État. Cela inclut son espace aérien, ses eaux territorials et ses enclaves territoriales dans le reste du monde. Seule la production prenant place dans le territoire économique est prise en compte dans les comptes nationaux. La production d’un établissement de Novartis situé aux États-Unis n’est pas comptabilisée dans les comptes nationaux suisses, mais dans les comptes étatsuniens.\n\n\nunderstanding national accounts page 153",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#résidence-et-reste-du-monde",
-    "href": "10mars_cours3.html#résidence-et-reste-du-monde",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Résidence et reste du monde",
-    "text": "Résidence et reste du monde\n\nLes résidents d’un territoire économique sont les entités (firmes & ménages) exerçant une activité économique sur le territoire depuis au moins un an.\n\nLes travailleurs saisonniers travaillant seulement quelques mois dans un pays donnés ne sont par exemple par considéré comme résident du pays et leur revenu n’est donc pas comptabilisé.\nAu contraire, un ménage dont les membres travaillent dans pays A mais consomment et vivent dans pays B sont considérés comme résident de B et ne sont pas comptabilisés dans A.\n\n\nLe reste du monde est composé de tous les non-résidents transactant avec le pays considéré. Ces transactions inclues:\n\nLa balance commerciale (exportations et importations)\nLes revenus reçus par les résidents de l’étranger et les revenu versé à l’étranger aux non-résidents (net external income flows ou flux de revenus extérieur net).",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#contributions-à-la-croissance",
-    "href": "10mars_cours3.html#contributions-à-la-croissance",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Contributions à la croissance",
-    "text": "Contributions à la croissance\nL’approche dépense du PIB implique que le taux de croissance du PIB peut être décomposé dans ses différentes composantes:\n\\[\n\\frac{Y_t - Y_{t-1}}{Y_{t-1}} = \\frac{C_t - C_{t-1}}{Y_{t-1}} + \\frac{I_t - I_{t-1}}{Y_{t-1}} + \\frac{G_t - G_{t-1}}{Y_{t-1}} + \\frac{NX_t - NX_{t-1}}{Y_{t-1}}\n\\]\nAvec \\(Y_t\\) et \\(NX_t\\) le PIB nominal et les exportations net à la période \\(t\\). Calculer ces contributions à la croissance permet d’identifier si la croissance entre les périodes considérées est principalement tirée par la consommation, l’investissement, la dépense publique ou les exportations nettes.",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#balance-commerciale-et-merchant-trade-statistics",
-    "href": "10mars_cours3.html#balance-commerciale-et-merchant-trade-statistics",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Balance commerciale et “merchant trade statistics”",
-    "text": "Balance commerciale et “merchant trade statistics”\nIl existe une différence subtile mais qui peut être significative entre ce qui est considéré comme exportation/importation par le système de comptabilité nationale et les statistiques de commerce marchant.\n\nDans le merchant trade statistics (tel que considéré par l’OMC), sont considérés comme exportations et importations dès qu’une frontière est traversée.\nEn comptabilité nationale, c’est l’échange de propriété entre résidents et non-résidents qui compte.\n\n\nunderstanding national accounts page 154",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#exercice-2",
-    "href": "10mars_cours3.html#exercice-2",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Exercice 2",
-    "text": "Exercice 2\n\nAllez sur le site web du secrétariat d’État à l’économie (SECO) https://www.seco.admin.ch/seco/fr/home.html\nTrouvez la page sur laquelle le SECO met à disposition les données du PIB suisse selon les trois approches\nTéléchargez le tableau excel “PIB, approche par la dépense, données brutes”, importez la feuille contenant les données nominales annuelles dans R.\nCalculez la part de chaque composante des dépenses \\(C\\), \\(G\\), \\(I\\), \\(X\\), \\(M\\) dans le PIB. Quelle est la part la plus importante sur l’ensemble de la période ? Qu’est-ce que cela implique ?\nCalculez les contributions à la croissance annuelle pour chacune de ces composantes. À partir de ces contributions, calculez la moyenne générale des contributions sur l’ensemble de la période.\nCalculez et comparez les moyennes des contributions avant et après la crise financière de 2008.",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#approche-revenu-du-pib",
-    "href": "10mars_cours3.html#approche-revenu-du-pib",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Approche revenu du PIB",
-    "text": "Approche revenu du PIB\n\\[\nPIB \\equiv WL + R\n\\]\nLe pib peut aussi est défini comme la somme de tous les revenus d’une économie, répartis entre tous les salaires versés dans l’économie (\\(W\\) le salaire nominal multiplié par la quantité de travail \\(L\\)) et les profits \\(R\\) (en ignorant les rentes ou bien en les considérant comme partie des profits).\nEn comptabilité nationale:\n\\[\nPIB = compensation \\ des \\ employés + excédent\\ brut \\ d'exploitation\\ et \\ revenu \\ mixte\n\\]\nLa compensation des employés est la variable la plus similaire aux salaires \\(W\\), mais a une conception plus large car est plus globale que les salaires (inclut toutes les rémunérations des salariés).\nL’excédent brut d’exploitation brut est le montant de profit dégagé par les entreprises \\(R\\) (gross operating surplus), le revenu mixte (mixed income) est le revenu des indépendants et auto-entrepreneurs.",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#revenu-mixe-et-excédent-brut",
-    "href": "10mars_cours3.html#revenu-mixe-et-excédent-brut",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Revenu mixe et excédent brut",
-    "text": "Revenu mixe et excédent brut\nDans certains pays (comme en Suisse), le revenu mixe et l’excédent brut d’exploitation sont mélangés dans une seule catégorie.\n\nCela pose problème pour le calcul de la part des salaires et des profits dans la valeur ajoutée, qu’il faut donc ajuster par la part des indépendant et des autoentrepreneurs dans l’emploi.",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#calcul-non-ajusté-de-la-part-des-salaires-et-des-profits",
-    "href": "10mars_cours3.html#calcul-non-ajusté-de-la-part-des-salaires-et-des-profits",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Calcul (non ajusté) de la part des salaires et des profits",
-    "text": "Calcul (non ajusté) de la part des salaires et des profits\n\\[\nPY \\equiv WL + R\n\\]\nAvec \\(PY\\) le pib nominal (le pib réel P multiplié par le niveau des prix P), \\(W\\) le salaire nominal et \\(L\\) la quantité de travail (soit mesurée en heures de travail, soit par le nombre de personnes employées) et \\(R\\) l’excédent brut d’exploitation (les profits).",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#calcul-non-ajusté-de-la-part-des-salaires-et-des-profits-2",
-    "href": "10mars_cours3.html#calcul-non-ajusté-de-la-part-des-salaires-et-des-profits-2",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Calcul (non ajusté) de la part des salaires et des profits (2)",
-    "text": "Calcul (non ajusté) de la part des salaires et des profits (2)\nDivisons par le PIB\n\\(/PY\\)&lt;=&gt;\n\\[\n1 \\equiv \\frac{WL}{PY} + \\frac{R}{PY} \\equiv wa_0 + r\n\\]\nAvec \\(w\\) le salaire réel (\\(W/P\\)), \\(a_0\\) le ratio travail-output (\\(L/Y\\)) et r la part des profits. \\(wa_0\\) est la part des salaires dans le revenu national (PIB).\n\n\n\n\n\n\nPart des salaires et coût unitaire du travail (Unit labour cost)\n\n\nLa part des salaires \\(wa_0 = \\frac{WL}{PY}\\) mesure la quantité de rémunération des salariés pour chaque unité d’output (\\(PY\\)), c’est pour cela que ce ratio est aussi considéré comme le “coût” unitaire du travail.",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#lidentité-fondamentale-du-pib",
-    "href": "10mars_cours3.html#lidentité-fondamentale-du-pib",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "L’identité fondamentale du PIB",
-    "text": "L’identité fondamentale du PIB\nLes trois approches que nous avons passées en revue: approches production, dépenses et revenus, sont équivalentes en termes comptables. Cela repose sur le fait que:\n\nToutes les dépenses sont des revenus et inversements\nToutes les dépenses se font sur des biens et services nécessairement produits",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#équivalence-des-approches",
-    "href": "10mars_cours3.html#équivalence-des-approches",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Équivalence des approches",
-    "text": "Équivalence des approches\n\n\\(PIB \\equiv \\sum{production - consommation \\ intermédiaire}\\)\n\\(PIB \\equiv C+I+G+X-M\\)\n\\(PIB \\equiv W+R\\)",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#lidentité-épargne-equiv-investissement",
-    "href": "10mars_cours3.html#lidentité-épargne-equiv-investissement",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "L’identité \\(épargne \\equiv investissement\\)",
-    "text": "L’identité \\(épargne \\equiv investissement\\)\nCertaines identités comptables fondamentales de la macroéconomie sont obtenues en jouant avec ces trois identités comptables.\nC’est le cas pour l’identité \\(S \\equiv I + NX\\), que vous allez voir ou avez déjà vue en macroéconomie.\nC’est aussi le cas des balances sectorielles que vous allez voir dans le cours les mesures de l’économie",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#exercice-3",
-    "href": "10mars_cours3.html#exercice-3",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Exercice 3",
-    "text": "Exercice 3\n\nTéléchargez le tableau Éxcel des données du PIB selon l’approche revenu sur la page du SECO\nCalculez la part du profit et des salaires dans la valeur ajoutée (PIB) pour chaque année depuis 1990.\nFaites la somme entre la part des salaires et des profits, que remarquez-vous ? En partant de l’équation \\(PIB \\equiv W+R\\), quelle devrait normalement être la valeur de cette somme ? Comment expliquer cet écart ?\nCorrigez la série pour qu’elle s’additionne à 1\nAllez sur DBnomics. Sous “providers”, allez sur les données de l’AMECO et cherchez les données sur la part des salaires (“adjusted wage share”). Filtrer les données pour n’avoir que la part des salaires pour la Suisse.\nComparez la part des salaires de l’AMECO avec la série que vous avez calculé. Comment expliquer cet écart ?",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "exercices/atelier_pwt.html",
-    "href": "exercices/atelier_pwt.html",
-    "title": "Atelier PWT",
-    "section": "",
-    "text": "On importe les données en utilisant la fonction rddata du package Rdatasets dévelopé par Vincent Arel-Bundock (dont je vous recommande d’ailleurs de jeter un oeil à ses travaux). Rdatasets contient de nombreux jeux de données (voir https://vincentarelbundock.github.io/Rdatasets/articles/data.html). Il existe deux manière d’importer des données dans R: soit importer un fichier de données (en format csv, excel, sav, texte, stata ou autre), soit d’utiliser des package comme Rdataset et importer les données directement dans R avec une fonction comme rddata. Pour comprendre comment importer des données de cette manière, il faut toujours se référer à la documentation du package utilisé.\n\nlibrary(tidyverse)\nlibrary(gt)\nlibrary(Rdatasets)\n\npwt = Rdatasets::rddata(\"pwt_sample\")"
-  },
-  {
-    "objectID": "exercices/atelier_pwt.html#importation-des-données",
-    "href": "exercices/atelier_pwt.html#importation-des-données",
-    "title": "Atelier PWT",
-    "section": "",
-    "text": "On importe les données en utilisant la fonction rddata du package Rdatasets dévelopé par Vincent Arel-Bundock (dont je vous recommande d’ailleurs de jeter un oeil à ses travaux). Rdatasets contient de nombreux jeux de données (voir https://vincentarelbundock.github.io/Rdatasets/articles/data.html). Il existe deux manière d’importer des données dans R: soit importer un fichier de données (en format csv, excel, sav, texte, stata ou autre), soit d’utiliser des package comme Rdataset et importer les données directement dans R avec une fonction comme rddata. Pour comprendre comment importer des données de cette manière, il faut toujours se référer à la documentation du package utilisé.\n\nlibrary(tidyverse)\nlibrary(gt)\nlibrary(Rdatasets)\n\npwt = Rdatasets::rddata(\"pwt_sample\")"
-  },
-  {
-    "objectID": "exercices/atelier_pwt.html#quelle-fonction-permettrait-davoir-un-aperçu-rapide-des-variables",
-    "href": "exercices/atelier_pwt.html#quelle-fonction-permettrait-davoir-un-aperçu-rapide-des-variables",
-    "title": "Atelier PWT",
-    "section": "Quelle fonction permettrait d’avoir un aperçu rapide des variables ?",
-    "text": "Quelle fonction permettrait d’avoir un aperçu rapide des variables ?\n\nglimpse(pwt)\n\nRows: 1,540\nColumns: 13\n$ rownames &lt;int&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18…\n$ country  &lt;chr&gt; \"Australia\", \"Australia\", \"Australia\", \"Australia\", \"Australi…\n$ isocode  &lt;chr&gt; \"AUS\", \"AUS\", \"AUS\", \"AUS\", \"AUS\", \"AUS\", \"AUS\", \"AUS\", \"AUS\"…\n$ year     &lt;int&gt; 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1…\n$ pop      &lt;dbl&gt; 8.354106, 8.599923, 8.782430, 8.950892, 9.159148, 9.374454, 9…\n$ hc       &lt;dbl&gt; 2.667302, 2.674344, 2.681403, 2.688482, 2.695580, 2.702696, 2…\n$ rgdpna   &lt;dbl&gt; 127461.2, 130703.1, 125353.1, 138952.2, 150060.7, 155979.7, 1…\n$ rgdpo    &lt;dbl&gt; 114135.0, 110543.1, 108883.4, 122688.5, 131836.4, 138380.6, 1…\n$ rgdpe    &lt;dbl&gt; 121994.0, 113929.4, 111219.9, 123328.9, 131472.1, 136247.3, 1…\n$ labsh    &lt;dbl&gt; 0.6804925, 0.6804925, 0.6804925, 0.6804925, 0.6804925, 0.6804…\n$ avh      &lt;dbl&gt; 2170.923, 2150.847, 2130.956, 2111.249, 2091.725, 2072.381, 2…\n$ emp      &lt;dbl&gt; 3.429873, 3.523916, 3.591675, 3.653409, 3.731083, 3.811291, 3…\n$ rnna     &lt;dbl&gt; 639991.2, 690113.6, 704562.4, 733107.3, 771454.2, 810403.7, 8…\n\n\nLa fonction glimpse nous renseigne sur les dimensions du jeux de données, à savoir le nombre de lignes (d’observations) et de colonnes (variables). Chaque ligne avec le signe $ sont le nom des variables du jeux de données. Le plus important est de vérifier si chaque variable est bien dans le type qui lui correspond, à savoir &lt;chr&gt; si la variable est catégorielle (comme country), &lt;int&gt; ou &lt;dbl&gt; si la variable est numérique (int pour integer et dbl pour double-digit qui est un format numérique)."
-  },
-  {
-    "objectID": "exercices/atelier_pwt.html#comment-avoir-un-aperçu-rapide-de-lune-des-variables",
-    "href": "exercices/atelier_pwt.html#comment-avoir-un-aperçu-rapide-de-lune-des-variables",
-    "title": "Atelier PWT",
-    "section": "Comment avoir un aperçu rapide de l’une des variables ?",
-    "text": "Comment avoir un aperçu rapide de l’une des variables ?\n\nunique(pwt$country)\n\n [1] \"Australia\"                \"Austria\"                 \n [3] \"Belgium\"                  \"Canada\"                  \n [5] \"Switzerland\"              \"Chile\"                   \n [7] \"Germany\"                  \"Denmark\"                 \n [9] \"Spain\"                    \"Finland\"                 \n[11] \"France\"                   \"United Kingdom\"          \n[13] \"Greece\"                   \"Ireland\"                 \n[15] \"Iceland\"                  \"Italy\"                   \n[17] \"Japan\"                    \"Netherlands\"             \n[19] \"Norway\"                   \"Portugal\"                \n[21] \"Sweden\"                   \"United States of America\"\n\nsummary(pwt$rgdpe)\n\n    Min.  1st Qu.   Median     Mean  3rd Qu.     Max.     NA's \n    1234   117703   295257  1066654   933379 20856496        2 \n\n\nUtiliser unique() si la variable est catégorielle, car elle permet rapidement de voir toutes les valeurs que peut prendre la variable. summary pour les variables numériques."
-  },
-  {
-    "objectID": "exercices/atelier_pwt.html#en-utilisant-ggplot-et-tidyverse-comment-je-peux-faire-un-graphique-simple-de-toutes-les-variables-du-pib-disponible-dans-le-dataset-pour-la-suisse",
-    "href": "exercices/atelier_pwt.html#en-utilisant-ggplot-et-tidyverse-comment-je-peux-faire-un-graphique-simple-de-toutes-les-variables-du-pib-disponible-dans-le-dataset-pour-la-suisse",
-    "title": "Atelier PWT",
-    "section": "En utilisant ggplot et tidyverse, comment je peux faire un graphique simple de toutes les variables du PIB disponible dans le dataset pour la Suisse ?",
-    "text": "En utilisant ggplot et tidyverse, comment je peux faire un graphique simple de toutes les variables du PIB disponible dans le dataset pour la Suisse ?\nggplot est l’un des meilleurs outils pour la visualisation de données. Il est fondé les principes de la grammaire des graphique (voir https://larmarange.github.io/guide-R/analyses/ggplot2.html) qui est axé sur les éléments suivant à spécifier dans chaque graphique ggplot:\n\nles données, à spécier avec ggplot\n\nNote: pwt %&gt;% ggplot() revient à faire ggplot(data = pwt)\n\naes() qui spécifie les “aesthestics”, c-à-d les éléments qui seront dessinés sur le graphiques, cela inclut:\n\nles variables x et y ainsi que différentes mises en forme que peuvent prendre ces variables comme color, size, shape, fill\nle type de graphique à faire, geom_line() pour graphique en ligne, geom_point() pour les graphiques en point, geom_col() ou geom_bar() pour des barplots etc.\nÉventuellement d’autres option pour améliorer l’aspect visuel du graphique\n\n\n\noptions(scipen = 999) # option pour ne pas montrer les nombres en format scientifique\n\npwt %&gt;% \n  filter(country %in% c(\"Switzerland\")) %&gt;% \n  ggplot(aes(x = year, y = rgdpna, color = \"PIB réel à prix nationaux constants de 2011 (en millions USD 2017).\"))+\n  geom_line()+\n  geom_line(aes(x = year, y = rgdpo, color = \"PIB réel côté production, en PPA chaînées (en millions USD 2017)\"))+\n  geom_line(aes(x = year, y = rgdpe, color = \"PIB réel côté dépenses, en PPA chaînées (en millions USD 2017)\"))+\n  theme_minimal(base_size = 12)+\n  labs(title = \"Évolution de différentes mesures du PIB de la Suisse\",\n       x = \"\", y = \"\",\n       caption = \"Source: Penn World Tables\")+\n  theme(\n    legend.title = element_blank(),\n    legend.position = c(0.32, 0.74)\n  )+\n  guides(colour = guide_legend(nrow = 3))"
-  },
-  {
-    "objectID": "exercices/atelier_pwt.html#comment-peut-on-inclure-davantage-de-pays-dans-ce-graphique",
-    "href": "exercices/atelier_pwt.html#comment-peut-on-inclure-davantage-de-pays-dans-ce-graphique",
-    "title": "Atelier PWT",
-    "section": "Comment peut-on inclure davantage de pays dans ce graphique ?",
-    "text": "Comment peut-on inclure davantage de pays dans ce graphique ?\n\npwt %&gt;% \n  filter(country %in% c(\"Switzerland\", \"France\", \"Germany\")) %&gt;% \n  ggplot(aes(x = year, y = rgdpna, color = \"rgdpna\"))+\n  geom_line()+\n  geom_line(aes(x = year, y = rgdpo, color = \"rgdpo\"))+\n  geom_line(aes(x = year, y = rgdpe, color = \"rgdpe\"))+\n  theme_minimal()+\n  labs(title = \"Évolution de différentes mesures du PIB de la Suisse\",\n       x = \"\", y = \"\",\n       caption = \"Source: Penn World Tables\")+\n  theme(\n    legend.title = element_blank()\n  )+\n  facet_wrap(~country)\n\n\n\n\n\n\n\n\nOn pourrait aussi avoir des graphiques séparés selon le type de mesure du PIB, mais pour cela il faut transformer le jeux de données du format large au format long avec pivot_longer() avant de le passer dans la fonction ggplot\n\npwt %&gt;% \n  pivot_longer(cols = 5:13,\n               names_to = \"indicateur\",\n               values_to = \"value\")\n\n# A tibble: 13,860 × 6\n   rownames country   isocode  year indicateur      value\n      &lt;int&gt; &lt;chr&gt;     &lt;chr&gt;   &lt;int&gt; &lt;chr&gt;           &lt;dbl&gt;\n 1        1 Australia AUS      1950 pop             8.35 \n 2        1 Australia AUS      1950 hc              2.67 \n 3        1 Australia AUS      1950 rgdpna     127461.   \n 4        1 Australia AUS      1950 rgdpo      114135.   \n 5        1 Australia AUS      1950 rgdpe      121994.   \n 6        1 Australia AUS      1950 labsh           0.680\n 7        1 Australia AUS      1950 avh          2171.   \n 8        1 Australia AUS      1950 emp             3.43 \n 9        1 Australia AUS      1950 rnna       639991.   \n10        2 Australia AUS      1951 pop             8.60 \n# ℹ 13,850 more rows\n\n\n\npwt %&gt;% \n  pivot_longer(cols = 5:13,\n               names_to = \"indicateur\",\n               values_to = \"value\") %&gt;% \n  filter(country %in% c(\"Switzerland\", \"France\", \"Germany\") & indicateur %in% c(\"rgdpna\", \"rgdpo\", \"rgdpe\")) %&gt;% \n  ggplot(aes(x = year, y = value, color = country))+\n  geom_line()+\n  facet_wrap(~indicateur)"
-  },
-  {
-    "objectID": "exercices/atelier_pwt.html#comment-peut-on-créer-une-nouvelle-variable-dans-ce-dataset",
-    "href": "exercices/atelier_pwt.html#comment-peut-on-créer-une-nouvelle-variable-dans-ce-dataset",
-    "title": "Atelier PWT",
-    "section": "Comment peut-on créer une nouvelle variable dans ce dataset ?",
-    "text": "Comment peut-on créer une nouvelle variable dans ce dataset ?\nIl faut utiliser la fonction mutate. Par exemple, on peut calculer le pib réel par habitant en divisant l’une des variables du PIB réel disponible dans le jeux de données pwt (rgdpna, rgdpo ou rgdpe) par pop, la population en millions\n\npwt2 &lt;- \n  pwt %&gt;% \n  mutate(\n    rgdpna_per_capita = rgdpna/pop\n  )\n\nVoici ce que cela donne:\n\npwt2 %&gt;% \n  filter(country %in% c(\"Switzerland\")) %&gt;% \n  ggplot(aes(x = year, y = rgdpna_per_capita))+\n  geom_line()+\n  theme_minimal(base_size = 14)\n\n\n\n\n\n\n\n\nLa Penn World Table contient aussi d’autres variables permettant de calculer d’autres mesures macroéconomiques d’intérêt on peut calculer deux différentes mesures de la productivité du travail en divisant le PIB par les heures travaillées (avh) ou le nombre de personnes engagées (emp). On peut aussi calculer un proxy du taux de profit en prenant l’inverse de la part de la rémunération du travail dans le PIB (nous verrons pourquoi dans les séances sur la comptabilité nationale)\n\npwt3 &lt;- \n  pwt2 %&gt;% \n  mutate(\n    prod_heure = rgdpna/avh,\n    prod_empl = rgdpna/emp,\n    taux_profit = 1-labsh\n  )"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Séminaire les mesures de l’économie T208001",
@@ -1166,191 +580,461 @@
     ]
   },
   {
-    "objectID": "inflation.html#linflation-dans-la-longue-durée",
-    "href": "inflation.html#linflation-dans-la-longue-durée",
-    "title": "Les mesures des prix",
-    "section": "L’inflation dans la longue durée",
-    "text": "L’inflation dans la longue durée\n\nshaikh (2016, p.62)"
+    "objectID": "slides intro.html",
+    "href": "slides intro.html",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "",
+    "text": "Comprendre et maîtriser les outils indispensables de l’analyse économique\n\n\nCela comprend:\n\nLes variables économiques (PIB, inflation…)\nLes principes de modélisation\nLa programmation et l’analyse statistique",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
   },
   {
-    "objectID": "inflation.html#en-suisse",
-    "href": "inflation.html#en-suisse",
-    "title": "Les mesures des prix",
-    "section": "En Suisse",
-    "text": "En Suisse"
+    "objectID": "slides intro.html#présentation-du-cours",
+    "href": "slides intro.html#présentation-du-cours",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "",
+    "text": "Comprendre et maîtriser les outils indispensables de l’analyse économique\n\n\nCela comprend:\n\nLes variables économiques (PIB, inflation…)\nLes principes de modélisation\nLa programmation et l’analyse statistique",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
   },
   {
-    "objectID": "inflation.html#avant-1940",
-    "href": "inflation.html#avant-1940",
-    "title": "Les mesures des prix",
-    "section": "Avant 1940",
-    "text": "Avant 1940"
+    "objectID": "slides intro.html#à-propos-de-moi",
+    "href": "slides intro.html#à-propos-de-moi",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "À propos de moi",
+    "text": "À propos de moi\n\n\n\nBachelor en histoire-économie-société (ancien nom !)\nMaster en économie politique du capitalisme (MAPEC)\nCertificat complémentaire en stastistiques appliquées (Gsem)\nIntérêt particulier à l’analyse du changement institutionnel des modèles socio-économiques européens (surtout la Suisse et la France), sous l’angle de l’économie politique néoréaliste d’Amable et Palombarini\nJe réalise une thèse sur les blocs sociaux et la transformation du mode de régulation et régime d’accumulation suisse depuis l’après-guerre",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
   },
   {
-    "objectID": "inflation.html#linflation-un-phénomène-moderne",
-    "href": "inflation.html#linflation-un-phénomène-moderne",
-    "title": "Les mesures des prix",
-    "section": "L’inflation: un phénomène moderne ?",
-    "text": "L’inflation: un phénomène moderne ?\nChangement fondamental dans l’évolution des prix à partir de 1940\n\nSource: statistiques historiques de la Suisse"
+    "objectID": "slides intro.html#à-propos-de-vous",
+    "href": "slides intro.html#à-propos-de-vous",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "À propos de vous",
+    "text": "À propos de vous\n\nDeuxième ou troisième année de bachelor ou plus ?\nLes cours non-obligatoires que vous avez eus jusqu’à maintenant, et les cours que vous prendrez ce semestre\nLe cours que vous avez le plus apprécié jusqu’à maintenant\nPlutôt quanti ou quali ? Économie politique ou histoire économique ?\nVos connaissances de R, d’excel et en statistiques ?\n\n==&gt; Cela m’aidera à adapter ce séminaire pour qu’il vous soit le plus utile possible !",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
   },
   {
-    "objectID": "inflation.html#cycles-inflationdéflation",
-    "href": "inflation.html#cycles-inflationdéflation",
-    "title": "Les mesures des prix",
-    "section": "Cycles inflation/déflation",
-    "text": "Cycles inflation/déflation\n\nshaikh (2016, p.62)"
+    "objectID": "slides intro.html#plan-du-cours",
+    "href": "slides intro.html#plan-du-cours",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Plan du cours",
+    "text": "Plan du cours\n12 séances au total sur 3 thèmes de mesures\n\nComptabilité nationale\nInégalités et distribution\nInstitutions\n\nhttps://jeylal.github.io/les-mesures-de-l-conomie/",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
   },
   {
-    "objectID": "inflation.html#la-quête-pour-un-indice-idéal-des-prix",
-    "href": "inflation.html#la-quête-pour-un-indice-idéal-des-prix",
-    "title": "Les mesures des prix",
-    "section": "La quête pour un indice idéal des prix",
-    "text": "La quête pour un indice idéal des prix\n\nLes historiens de la pensée économiques font généralement remonter l’origine de l’institutionalisation indices des prix aux années 1920, notamment avec la publication de The Making of Index Numbers par Irving Fisher en 1922\nDans The Making of Index Numbers, Fisher teste environ 134 indices des prix et propose son propre indice, qu’il estimait pouvoir résumer à elle seule l’évolution générale des prix dans une économie donnée.\nLa publication de ce livre et l’activisme scientifique de Fisher va donner lieu à un vif débat sur la construction et l’usage des indices des prix"
+    "objectID": "slides intro.html#perspective-du-cours",
+    "href": "slides intro.html#perspective-du-cours",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Perspective du cours",
+    "text": "Perspective du cours\nUn cours d’analyse appliquée, nous allons beaucoup travailler directement avec des données et des exemples. L’idée est de vous familiariser avec les données économiques, comment les traiter et les analyser.\nAprès ce cours, vous devriez être capable de mener vos propres analyses quantitatives pour vos recherches et votre PDR.\n==&gt; Outils inspensable: R(studio) et Quarto",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
   },
   {
-    "objectID": "inflation.html#le-débat-sur-lindice-idéal-des-prix",
-    "href": "inflation.html#le-débat-sur-lindice-idéal-des-prix",
-    "title": "Les mesures des prix",
-    "section": "Le débat sur l’indice idéal des prix",
-    "text": "Le débat sur l’indice idéal des prix\n\nApproche néoclassique (Fisher) vs approche institutionaliste (Wesley Clair Mitchell) de l’économie, qui reflètent deux visions différentes de la science (économique)\nCe débat autour de l’indice idéal de Fisher marque le début du calcul systématique d’indices de prix dans les administrations publiques (par exemple au National Bureau of Economic Research et au Bureau of Labor Statistics)."
+    "objectID": "slides intro.html#r-un-outil-indispensable-en-économie",
+    "href": "slides intro.html#r-un-outil-indispensable-en-économie",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "R: un outil indispensable en économie",
+    "text": "R: un outil indispensable en économie\n\n\n\n\n\n\n\n\nL’un des logiciels les plus utilisés par les économistes, que ce soit pour la visualisation de données ou l’estimation de modèles économétriques. Grande flexiblité et potentiel énorme.",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
   },
   {
-    "objectID": "inflation.html#principes-généraux-des-indices",
-    "href": "inflation.html#principes-généraux-des-indices",
-    "title": "Les mesures des prix",
-    "section": "Principes généraux des indices",
-    "text": "Principes généraux des indices\nIndices élémentaires\nTous les indices de prix sont fondés sur l’aggrégation des indices élémentaires de prix, qui prennent la forme suivante:\n\\[\nI(p_{i})_{t/0} = \\frac{p_{it}}{p_{i0}}\n\\]\nAvec \\(I(p_i)_{t/0}\\) L’indice élémentaire du bien \\(i\\), \\(p_{it}\\) le prix du bien \\(i\\) à la période \\(t\\) et \\(p_{i0}\\) le prix du bien \\(i\\) à la période dîte de “référence” \\(0\\). Le calcul des indices élémentaires permet de normaliser le prix de différents bien et services, permettant leur aggrégation à travers le calcul d’une moyenne.\nÉtant donné qu’en pratique il est impossible de récolter une liste exhaustive de tous les prix, sont récoltés les prix d’un “panier de biens” constitués de \\(k\\) biens et services représentatifs d’un ménage “moyen”."
+    "objectID": "slides intro.html#quarto",
+    "href": "slides intro.html#quarto",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Quarto",
+    "text": "Quarto\nQuarto est un système de publication qui permet de produire des documents directement à partir de Rstudio (exemple: powerpoints, pdf, sites web…) et donc de code en R.",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
   },
   {
-    "objectID": "inflation.html#les-différents-types-dindice",
-    "href": "inflation.html#les-différents-types-dindice",
-    "title": "Les mesures des prix",
-    "section": "Les différents types d’indice",
-    "text": "Les différents types d’indice\n\n\n\nIndice\nPrincipe\nCol3\n\n\n\n\nIndice de Laspeyres\n\n\n\n\nIndice de Paasche\n\n\n\n\nIndice de Jevons"
+    "objectID": "slides intro.html#évaluation-du-cours",
+    "href": "slides intro.html#évaluation-du-cours",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Évaluation du cours",
+    "text": "Évaluation du cours\n\nParticipation au cours (20%)\n\nLa participation aux séance est obligatoire et sera contrôlée à chaque début de cours\n\nExamen pratique en dernière séance (80%)\n\nIl s’agira de travaux pratiques à réaliser en cours de séance (2h), avec des exercices à réaliser sur R ou excel.\n\nExamen blanc après les vacances de pâques: bonus si la note aide à améliorer la note finale",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
   },
   {
-    "objectID": "inflation.html#coefficient-budgétaire",
-    "href": "inflation.html#coefficient-budgétaire",
-    "title": "Les mesures des prix",
-    "section": "Coefficient budgétaire",
-    "text": "Coefficient budgétaire\n\nQue se passe-t-il si l’on fait directement la moyenne de tous les indices élémentaires \\(I(p_i)_{t/0}\\) ? Nous aurions un indice des prix dans lequel tous les biens du panier ont la même importance. Or, tous les biens n’ont pas la même importance dans les dépenses totales des ménages.\nLes enquêtes sur le budget des ménages permettent d’évaluer la part des biens et services dans les dépenses totales des ménages, à savoir le coefficient budgétaire \\(w_i\\)\nLe coefficient budgétaire sert de coefficient de pondération pour chaque bien du panier-type."
+    "objectID": "slides intro.html#à-propos-de-lintelligence-artificielle",
+    "href": "slides intro.html#à-propos-de-lintelligence-artificielle",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "À propos de l’intelligence artificielle",
+    "text": "À propos de l’intelligence artificielle\n\nDéconseillé dans le cadre de ce cours, pour les raisons suivantes:\n\n\n\nVous n’aurez pas accès aux IA lors des examens pratiques\nSi les IA sont désormais excellentes en programmation (Python, Stata…), les IA les plus utilisées (notamment Chatgpt) produisent du code R qui n’est souvent pas optimale\nUtilisation acceptable dans certains cas, comme pour simplifier des tâches répétitives\nR est le langage avec le plus de ressources et de documentations en ligne, pas besoin de passer par une IA\nRisque de ne pas assimiler le contenu du cours si vous dépendez entièrement des IA pour résoudre les exercices\n\n\n\n\n\n\n\n\nImportant\n\n\n\nEn dehors des examens en présence, je ne peux pas vous interdire l’utilisation des IA. Je vous déconseille l’utilisation de Chatgpt et vous recommande d’utiliser Copilot, dont vous avez une version gratuite avec votre compte Unige. D’autres IA sont meilleures pour R, comme ShinyAssistant.",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
   },
   {
-    "objectID": "inflation.html#pondération-des-indices-élémentaires",
-    "href": "inflation.html#pondération-des-indices-élémentaires",
-    "title": "Les mesures des prix",
-    "section": "Pondération des indices élémentaires",
-    "text": "Pondération des indices élémentaires\nC’est le coefficient budgétaire \\(w_i\\) qui sert à pondérer les indices élémentaires:\n\\[\nI(p)_{t/0} = \\sum^k_{i=1}w_i I(p_{it})\n\\]\nLes indices, par exemple de Laspeyres et Paasche, diffèrent dans leur conception des coefficients budgétaires \\(w_i\\)"
+    "objectID": "slides intro.html#apprendre-lanalyse-à-travers-r",
+    "href": "slides intro.html#apprendre-lanalyse-à-travers-r",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Apprendre l’analyse à travers R",
+    "text": "Apprendre l’analyse à travers R",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
   },
   {
-    "objectID": "inflation.html#lindice-de-laspeyres",
-    "href": "inflation.html#lindice-de-laspeyres",
-    "title": "Les mesures des prix",
-    "section": "L’indice de Laspeyres",
-    "text": "L’indice de Laspeyres\n\nl’indice de Laspeyres consiste à pondérer les indices élémentaires par les coefficients budgétaires fixés à la période de base. Cela revient à fixer les quantités à la période de base et faire varier les prix:\n\n\\[\nL(p)_{t/i} = \\frac{\\sum^k_{i=1}p_{it}q_{i0}}{\\sum^k_{i=1}p_{i0}q_{i0}}\n\\]\n\nCela implique des coefficent budgétaires \\(w_i\\) fixé à l’année de base \\(0\\), l’indice de Laspeyres fait l’hypothèse que la structure de la consommation du panier de bien est fixe à travers le temps\nL’avantage de cet indice est qu’il est le moins couteux à calculer: on a seulement besoin des quantités à la période de base et des prix au temps de base et au temps courant\n\n==&gt; La plupart des indices des prix à la consommation sont des indices Laspeyriens"
+    "objectID": "slides intro.html#github",
+    "href": "slides intro.html#github",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Github",
+    "text": "Github\n\nLogiciel permettant de développer un dépôt (repository ou “repo”), consistant en un fichier contenant votre code (dans le cadre de ce cours les exercices sur R/quarto et excel)\nPermet de sauvegarder dans un cloud et contrôler de manière minutieuse toutes les modifications\nPermet le contrôle par les paires de votre travail, ou bien de travailler à plusieurs à distance sur le même travail",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
   },
   {
-    "objectID": "inflation.html#indice-de-paasche",
-    "href": "inflation.html#indice-de-paasche",
-    "title": "Les mesures des prix",
-    "section": "Indice de Paasche",
-    "text": "Indice de Paasche\nL’indice de Paasche consiste à pondérer les indices élémentaires par les coefficients budgétaires de l’année courantes (et non pas de l’année de base). Cela revient à fixer les prix à l’année de base et faire varier les quantités:\n\\[\nP(p)_{t/i} = \\frac{\\sum^k_{i=1}p_{it}q_{it}}{\\sum^k_{i=1}p_{i0}q_{it}}\n\\]"
+    "objectID": "slides intro.html#exercice",
+    "href": "slides intro.html#exercice",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Exercice",
+    "text": "Exercice\n\nInstallez Quarto.\nCréez-vous un compte github &lt;github.com&gt; et installez github desktop https://desktop.github.com/download/\nInstallez tinytex en runnant cette commande dans le terminal quarto install tinytex\nCréez un document quarto pour chaque type de document possible: html pdf, word et powerpoint (avec revealjs), faites attention à bien sauvegarder ce document quarto dans un fichier à part entière.\nCréez un repo github à partir de ce fichier.",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
   },
   {
-    "objectID": "inflation.html#déflateur-du-pib",
-    "href": "inflation.html#déflateur-du-pib",
-    "title": "Les mesures des prix",
-    "section": "Déflateur du PIB",
-    "text": "Déflateur du PIB\nLe déflateur du PIB est un indice de Paasche, étendu à tous les biens et services considérés dans le calcul du PIB\n\nEn outre, le dénominateur de l’indice de Paasche est le PIB réel\n\n\\[\nPIB_{déflateur} = \\frac{PIB_{nominal}}{PIB_{réel}}\n\\]"
+    "objectID": "slides intro.html#penn-world-tables",
+    "href": "slides intro.html#penn-world-tables",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Penn World Tables",
+    "text": "Penn World Tables\nLa Penn World Table (PWT) est l’une des base de données les plus connues en économie. Elle compile certaines variables clés pour de nombreux pays sur une période de temps assez importante.\nLa PWT est accessible et téléchargeable ici, mais dans le cadre de cet atelier nous allons utiliser le package Rdatasets qui permet d’importer directement le tableau de données dans R\nVoici la documentation du tableau de données https://vincentarelbundock.github.io/Rdatasets/doc/stevedata/pwt_sample.html et comment l’importer dans R:",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
   },
   {
-    "objectID": "inflation.html#indice-idéal-de-fisher",
-    "href": "inflation.html#indice-idéal-de-fisher",
-    "title": "Les mesures des prix",
-    "section": "Indice “idéal” de Fisher",
-    "text": "Indice “idéal” de Fisher\n\nL’indice de Laspeyres fixe la structure (pondération) de la consommation à la période de base et donc surestime l’inflation, car les ménages peuvent adapter leur consommation par substitution des biens devenus trop chers\nL’indice de Paasche, au contraire, s’adapte directement aux effets de substitutions et donc sous-estime l’inflation\nFisher considérait par conséquent que “l’indice idéal” était la moyenne géométrique entre ces deux indices:\n\n\\[\nF(p)_{t/0} = (L(p)_{t/i} * P(p)_{t/i})^\\frac{1}{2}\n\\]"
+    "objectID": "slides intro.html#pwt-variables",
+    "href": "slides intro.html#pwt-variables",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "PWT variables",
+    "text": "PWT variables\n\n\n\n\n\n\n\nVariable\nDescription\n\n\n\n\ncountry\nNom du pays.\n\n\nisocode\nCode ISO du pays.\n\n\nyear\nAnnée (numérique).\n\n\npop\nPopulation (en millions).\n\n\nhc\nIndice de capital humain par personne (années de scolarité et rendements).\n\n\nrgdpna\nPIB réel à prix nationaux constants de 2011 (en millions USD 2017).\n\n\nrgdpo\nPIB réel côté production, en PPA chaînées (en millions USD 2017).\n\n\nrgdpe\nPIB réel côté dépenses, en PPA chaînées (en millions USD 2017).\n\n\nlabsh\nPart de la rémunération du travail dans le PIB à prix courants.\n\n\navh\nHeures annuelles moyennes travaillées par personne engagée.\n\n\nemp\nNombre de personnes engagées (en millions).\n\n\nrnna\nStock de capital à prix constants de 2017 (en millions USD 2017).",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
   },
   {
-    "objectID": "inflation.html#indices-chaînes",
-    "href": "inflation.html#indices-chaînes",
-    "title": "Les mesures des prix",
-    "section": "Indices chaînes",
-    "text": "Indices chaînes\n\nLes indices de prix (Laspeyres, Paasche, Fisher) sont très sensibles à la période de base retenue\nHypothèse que le panier-type de bien de change pas au cours du temps\nAu cours du temps, de nouvelles habitudes de consommation apparaissent\nLes indice-chaînes permettent de mettre annuellement à jour les habitudes de consommations:\n\nOn part d’une année de base, mais au lieu de fixer prix ou quantités à cette année de base, chaque indice est calculé aux prix ou quantités de l’année précédente"
+    "objectID": "slides intro.html#pwt-importation",
+    "href": "slides intro.html#pwt-importation",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "PWT importation",
+    "text": "PWT importation\n\n# copier coller ce code dans votre script quarto\nlibrary(tidyverse)\nlibrary(gt)\nlibrary(Rdatasets)\n\npwt = Rdatasets::rddata(\"pwt_sample\")",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
   },
   {
-    "objectID": "inflation.html#exemple-indices-chaînes-laspeyres-2",
-    "href": "inflation.html#exemple-indices-chaînes-laspeyres-2",
-    "title": "Les mesures des prix",
-    "section": "Exemple Indices chaînes Laspeyres (2)",
-    "text": "Exemple Indices chaînes Laspeyres (2)\nPour un indice en chaîne Laspeyres partant de l’année \\(0\\):\n\\[\nIC(p)_{t/0} = L(p)_{t/t-1}*L(p)_{t-1/0}\n\\] Néanmoins, le défaut des indices en chaîne est la perte d’addivité: il n’est pas conseillé par exemple de calculer les contributions à la croissance avec des comptes nationaux déflatés par un indice en chaîne."
+    "objectID": "slides intro.html#r",
+    "href": "slides intro.html#r",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "R",
+    "text": "R\nImporter la PWT en utilisant le package Rdatasets\n\n# copier coller ce code dans votre script quarto\nlibrary(tidyverse)\nlibrary(gt)\nlibrary(Rdatasets)\n\npwt = Rdatasets::rddata(\"pwt_sample\")\n\n# Quelle fonction permettrait d'avoir un aperçu rapide des variables ?\n\n# Comment avoir un aperçu rapide de l'une des variables ?\n\n# En utilisant ggplot et tidyverse, comment je peux faire un graphique simple de toutes les variables du PIB disponible dans le dataset pour la Suisse ?\n\n# Comment peut-on inclure davantage de pays dans ce graphique ?\n\n# Comment peut-on créer une nouvelle variable dans ce dataset ?",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
   },
   {
-    "objectID": "inflation.html#calculs-des-indices-paasche-et-laspeyres",
-    "href": "inflation.html#calculs-des-indices-paasche-et-laspeyres",
-    "title": "Les mesures des prix",
-    "section": "Calculs des indices Paasche et Laspeyres",
-    "text": "Calculs des indices Paasche et Laspeyres"
+    "objectID": "slides intro.html#le-package-esquisse",
+    "href": "slides intro.html#le-package-esquisse",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Le package esquisse",
+    "text": "Le package esquisse\nPermet d’utiliser une interface permettant d’explorer les données et produire des graphiques sans coder soi-même\n\n# copier coller ce code dans votre script quarto\ninstall.packages(\"esquisse\")\nlibrary(esquisse)\nesquisse::esquisser()",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
   },
   {
-    "objectID": "inflation.html#parité-de-pouvoir-dachat-ipp",
-    "href": "inflation.html#parité-de-pouvoir-dachat-ipp",
-    "title": "Les mesures des prix",
-    "section": "Parité de pouvoir d’achat (IPP)",
-    "text": "Parité de pouvoir d’achat (IPP)"
+    "objectID": "slides intro.html#dbnomics",
+    "href": "slides intro.html#dbnomics",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Dbnomics",
+    "text": "Dbnomics\nDbnomics est une base de données internationale rassembland en une base de nombreuses bases de données indispensables en économie: données de l’OCDE, de la Banque Mondiale, du Fond Monétaire Internationale…\nLe package rdbnomics permet d’importer ces données directement dans R.\nExemple:\n\n# copier coller le code dans votre script quarto, installer les packages si besoin\n\n#[RVGDP] Gross domestic product at 2015 reference levels per head of population AMECO/RVGDP/CHE.1.1.0.0.RVGDP, annually, 1000 chf\nlibrary(rdbnomics)\nlibrary(stats)\n\nGDP &lt;- rdb(ids = \"AMECO/RVGDP/CHE.1.1.0.0.RVGDP\")",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
   },
   {
-    "objectID": "inflation.html#le-débat-sur-lindice-idéal-des-prix-1",
-    "href": "inflation.html#le-débat-sur-lindice-idéal-des-prix-1",
-    "title": "Les mesures des prix",
-    "section": "Le débat sur l’indice idéal des prix",
-    "text": "Le débat sur l’indice idéal des prix\n\n\nNéoclassique (Fisher) Organisation: société d’économétrie, principales revues scientifiques d’économie\n\nL’économie est une science purement mathématique\nDévoilement des mécanismes économiques à travers le raisonnement déductif\nIl est possible de trouver un indice “idéal” à travers des tests mathématiques et statistiques qui pourrait être appliqué dans toute société et se focaliserait entièrement sur les prix\n\n\nInstitutionaliste (Mitchell)\n\nPriorité accordés aux faits historiques et aux observations empiriques, sans recours à priori à des théories\nPluralité des indicateurs, pas d’indice “idéal”\nDifférentes réalités et structures économiques requièrent différentes données et indicateurs, il n’existe pas de vérité universelle applicable en tout lieu en tout temps."
-  },
-  {
-    "objectID": "10mars_cours3.html#exercice-1-enquête-sur-le-budget-des-ménages-facultatif",
-    "href": "10mars_cours3.html#exercice-1-enquête-sur-le-budget-des-ménages-facultatif",
+    "objectID": "10mars_cours3.html#données-macroéconomiques-principes-de-base",
+    "href": "10mars_cours3.html#données-macroéconomiques-principes-de-base",
     "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Exercice 1: enquête sur le budget des ménages (facultatif)",
-    "text": "Exercice 1: enquête sur le budget des ménages (facultatif)\n\nAllez sur la pagne de l’enquête sur le budget des ménages de l’OFS https://www.bfs.admin.ch/bfs/fr/home/statistiques/situation-economique-sociale-population/revenus-consommation-et-fortune/budget-des-menages.html\nTrouvez le tableau excel “revenus et dépenses des ménages selon la classe de revenu” et téléchargez-le\nObservez et familiarisez-vous avec les données: est-ce que certains chiffres retiennent votre attention ?\nDans Excel ou dans R, produisez un graphique qui permet de comparer les dépenses de consommation de la première et dernière classe de revenu.",
+    "section": "Données macroéconomiques: principes de base",
+    "text": "Données macroéconomiques: principes de base\n\nDeux sources principales de données en économie (ainsi qu’en sciences sociales en général)\n\nDonnées provenant d’enquêtes au moyen de questionnaires\n\nex: données sur la consommation, statistiques du marché du travail, de la valeur ajouté des entreprises\n\nDonnées administratives\n\nex: comptes publics\n\n\n\nDistinction importante, car pour les données d’enquêtes, les principes de la statistique (échantillonage, calculs des marges d’erreurs, tests statistiques) doivent être respectés, ce qui n’est pas (forcément) le cas des données administratives.\n\nCar pour les données administratives, certains principe de la statistique ne sont pas applicable, car les données n’ont pas été récoltées à travers un processus d’échantillonnage",
     "crumbs": [
       "10 Mars. Comptabilité nationale (1)"
     ]
   },
   {
-    "objectID": "10mars_cours3.html#utilité-des-contributions-à-la-croissance",
-    "href": "10mars_cours3.html#utilité-des-contributions-à-la-croissance",
+    "objectID": "10mars_cours3.html#données-denquête",
+    "href": "10mars_cours3.html#données-denquête",
     "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Utilité des contributions à la croissance",
-    "text": "Utilité des contributions à la croissance\n==&gt; Il est très courant de calculer ces contributions à la croissance et ces dernières sont souvent publiés dans les rapports officiels.\n==&gt; En macroéconomie post-Keynésienne, une classification des “régimes de croissance” est fondée sur une typologie des pays selon les différents poids des contributions à la croissance",
+    "section": "Données d’enquête",
+    "text": "Données d’enquête\n\nFaire attention à la qualité des enquêtes qui dépend de:\n\nLe procédé d’échantillonage\nLa taille de l’échantillon et sa représentativité\nLe taux de réponse (nombre de personnes qui ont répondu à l’enquête / total des personnes appelées à participer à l’enquête)",
     "crumbs": [
       "10 Mars. Comptabilité nationale (1)"
     ]
   },
   {
-    "objectID": "10mars_cours3.html#la-perspective-de-décomposition-du-revenu-national",
-    "href": "10mars_cours3.html#la-perspective-de-décomposition-du-revenu-national",
+    "objectID": "10mars_cours3.html#récolte-de-données-denquête",
+    "href": "10mars_cours3.html#récolte-de-données-denquête",
     "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "La perspective de décomposition du revenu national",
-    "text": "La perspective de décomposition du revenu national",
+    "section": "Récolte de données d’enquête",
+    "text": "Récolte de données d’enquête\nun problème à ne pas sous-estimer\n\n\n\n\n\n\nUn taux de réponse faible (&lt;60%) indique que l’enquête a manqué une partie importante de la population ==&gt; données récoltées ne sont pas représentatives.",
     "crumbs": [
       "10 Mars. Comptabilité nationale (1)"
     ]
   },
   {
-    "objectID": "10mars_cours3.html#flux-de-revenus-extérieurs-nets-fni",
-    "href": "10mars_cours3.html#flux-de-revenus-extérieurs-nets-fni",
+    "objectID": "10mars_cours3.html#exemple-crise-des-données-en-grande-bretagne",
+    "href": "10mars_cours3.html#exemple-crise-des-données-en-grande-bretagne",
     "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Flux de revenus extérieurs nets (FNI)",
-    "text": "Flux de revenus extérieurs nets (FNI)\n\nSert à mesurer le revenu national brut (RNB, aciennement produit national brut PNB) en l’additionnant au PIB\n\n\\[\nRNB = PIB + FNI\n\\]\nLes données du FNI sont généralement trouvable dans les tableaux du PIB dans l’approche revenu",
+    "section": "Exemple: crise des données en Grande-Bretagne",
+    "text": "Exemple: crise des données en Grande-Bretagne\n\n\n“Declining response rates to the LFS (labour force surveys) have made the numbers so volatile that it is impossible to be sure whether employment is rising or falling from one quarter to the next — let alone how the labour market has evolved in the years since the pandemic.” “How flawed data is leaving the UK in the dark”, Financial Times",
     "crumbs": [
       "10 Mars. Comptabilité nationale (1)"
     ]
   },
   {
-    "objectID": "10mars_cours3.html#usages-des-contributions-à-la-croissance",
-    "href": "10mars_cours3.html#usages-des-contributions-à-la-croissance",
+    "objectID": "10mars_cours3.html#exemple-crise-des-données-aux-usa",
+    "href": "10mars_cours3.html#exemple-crise-des-données-aux-usa",
     "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Usages des contributions à la croissance",
-    "text": "Usages des contributions à la croissance\n\n\n==&gt; En macroéconomie, une littérature très large s’est développée autour d’une typologie des régimes de croissance à partir du calculs de contributions à la croissance",
+    "section": "Exemple: crise des données aux USA",
+    "text": "Exemple: crise des données aux USA",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#données-administratives",
+    "href": "10mars_cours3.html#données-administratives",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Données administratives",
+    "text": "Données administratives\nExemple: données fiscales (qui permettent les mesures de distribution du revenu), certaines données du marché du travail (ex: Seco et le nombre de chômeurs inscrits), données sur les finances publiques…\n\nLes données administratives ne sont pas récoltées à travers un processus d’échantillonnage. Par exemple, cela ne fait pas sens de calculer les intervalles de confiance pour la dette publique ou les dépenses publiques.\nMais cela ne veut pas dire que les données administratives sont exhaustives\n\nD’ou la récurrence de “révisions” des séries de données administratives.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#la-comptabilité-nationale",
+    "href": "10mars_cours3.html#la-comptabilité-nationale",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "La “comptabilité” nationale",
+    "text": "La “comptabilité” nationale\nLe terme de comptabilité peut être trompeur, car la comptabilité nationale est très différente de la comptabilité en entreprise:\n\nLe comptable d’une entreprise dispose de registres avec une information complète sur les données de l’entreprise\nCela n’est pas possible pour la comptabilité nationale (impliquerait une information exhaustive sur des millions d’individus et d’entreprises)\nLa comptabilité nationale repose donc forcément sur une information partielle qui nécessite des approximations, des estimations et des révisions",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#comptabilité-nationale-et-statistique",
+    "href": "10mars_cours3.html#comptabilité-nationale-et-statistique",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Comptabilité nationale et statistique",
+    "text": "Comptabilité nationale et statistique\n\nLes données provenant des comptes nationaux sont des approximations\nCes approximations sont possibles grâce à des données récoltées de manière plus ou moins dissipée selon la qualité du système publique de statistique du pays considéré.\nIl n’est en outre pas possible de mesurer statistiquement ces approximations (ex: intervalle de confiance de l’estimation du PIB), car la comptabilité nationale n’est pas le résultat d’une seule grande enquête.\nAu contraire, les comptes nationaux sont le résultat de compilations complexes de données provenant d’un grand nombre de sources différentes.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#exemple-suisse",
+    "href": "10mars_cours3.html#exemple-suisse",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Exemple: Suisse",
+    "text": "Exemple: Suisse\n\n\n\n\n\n\n\n\n\n\n\nhttps://www.bfs.admin.ch/bfs/fr/home/statistiques/economie-nationale/comptes-nationaux/produit-interieur-brut.assetdetail.328585.html",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#définition-du-pib",
+    "href": "10mars_cours3.html#définition-du-pib",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Définition du PIB",
+    "text": "Définition du PIB\nPIB = Somme des valeurs ajoutées sur un territoire donné sur une période donnée (le plus souvent dans un pays sur un an)\nLa valeur ajoutée étant la valeur monétaire (aux prix de marché) des biens et services, à laquelle on soustrait la valeur monétaire de la consommation intermédiaire\n\\[PIB = \\sum outputs - \\sum consommations \\ intermédiaires\\]\nPour être précis, il faut mentionner l’ajout des taxes moins les subventions sur les produits et services",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#secteurs-institutionnels",
+    "href": "10mars_cours3.html#secteurs-institutionnels",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Secteurs institutionnels",
+    "text": "Secteurs institutionnels\n\\(PIB = \\sum valeurs \\ ajoutées\\), mais de qui ?\nLes “acteurs” de la comptabilité nationale sont les “secteurs institutionnels” qui incluent:\n\nLes entreprises non-financières\nLes entreprises financières (banques, assurances…)\nLe gouvernement\nLes ménages (dont les “institutions sans but lucratif au service des ménages” ISBLSM)\n\nLes ISBLSM sont des organisations crées par des groupes de ménages afin de fournir un service de manière non-lucrative. Exemple: syndicats, organisations religieuses, associations philantropiques, de charité… (comme la Croix-Rouge). Une telle organisation doit être financée par des donations ou un abonnement régulier afin d’être considéré comme une ISBLSM par la comptabilité nationale (voir UNA, p.141).",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#approche-production-du-pib",
+    "href": "10mars_cours3.html#approche-production-du-pib",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Approche production du PIB",
+    "text": "Approche production du PIB\n\\[PIB = \\sum valeurs\\ ajoutées \\\\ - \\sum consommations \\ intermédiaires\\\\ + taxes \\ sur \\ les \\ produits \\\\ - subventions \\ sur \\ les \\ produits\\]",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#approche-dépense-du-pib",
+    "href": "10mars_cours3.html#approche-dépense-du-pib",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Approche dépense du PIB",
+    "text": "Approche dépense du PIB\n\\[PIB = C + I + G + X - M\\]\nAvec \\(C\\) la consommation, \\(I\\) l’investissement, \\(G\\) la dépense publique et \\(X-M\\) la balance commerciale (exportations-importations de biens et services).",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#c-consommation",
+    "href": "10mars_cours3.html#c-consommation",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "\\(C\\) Consommation",
+    "text": "\\(C\\) Consommation\nLa comptabilité nationale définit \\(C\\), la consommation, comme les dépenses de consommation finale privée des ménages et des ISBLSM. Cela inclut par exemple les dépenses pour la nourriture, le loyer, l’énergie…\n\n\n\n\n\n\nImportant\n\n\nLa consommation finale privée des ménages n’inclut pas toutes les dépenses. Par exemple, l’achat d’une résidence est considéré par les comptes nationaux comme un investissement (donc est compté dans \\(I\\)).",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#lenquête-sur-le-budget-des-ménages",
+    "href": "10mars_cours3.html#lenquête-sur-le-budget-des-ménages",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "L’enquête sur le budget des ménages",
+    "text": "L’enquête sur le budget des ménages\nSur quelles données sont fondées les estimations de \\(C\\) ? Sur les enquêtes sur le budget des ménages.\nEn Suisse, l’OFS mène sa propre enquête sur le budget des ménage chaque année depuis 2000. - Enquête statistique auprès d’un échantillon d’environ 3000 personnes.\nL’enquête sur le budget des ménages permet aussi d’estimer les coefficients budgétaires servant à pondérer le prix élémentaire des biens et services pris en compte dans le panier-type servant à calculer l’indice des prix à la consommation (IPC).\n\n\n\n\n\n\nNote\n\n\nLe coefficient budgétaire d’un bien \\(i\\) est la somme dépensé pour ce bien divisé par la somme totale des dépenses. Le prix élémentaire d’un bien est son prix à l’année \\(t\\) divisé par son prix à une année de base.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#ebm-en-suisse",
+    "href": "10mars_cours3.html#ebm-en-suisse",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "EBM en Suisse",
+    "text": "EBM en Suisse\n\n\n\nhttps://www.bfs.admin.ch/bfs/fr/home/statistiques/situation-economique-sociale-population/revenus-consommation-et-fortune/budget-des-menages.html",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#les-loyers-imputés",
+    "href": "10mars_cours3.html#les-loyers-imputés",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Les loyers imputés",
+    "text": "Les loyers imputés\nUne imputation très importante qui est ajoutée aux dépenses de consommation finale des ménages est celle des loyers imputés\n\nOn impute aux propriétaires de leur logement le loyer qu’ils payeraient s’il n’étaient pas propriétaires.\n\nPourquoi ces loyers imputés sont-ils nécessaires ?\nCar si on ne prenait pas en compte ces loyers imputés, on verrait une baisse tendancielle du PIB due à l’augmentation structurelle du nombre absolu de propriétaire.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#g-dépense-publique",
+    "href": "10mars_cours3.html#g-dépense-publique",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "\\(G\\) dépense publique",
+    "text": "\\(G\\) dépense publique\nInclut les dépenses générales du gouvernement, notamment les services publiques (éducation, santé, sécurité…).\n\nComme ces biens et services fournis par l’État ne sont pas achetés directement par les autres secteurs institutionnels, leur comptabilisation ne se fait pas à leur valeur marchande comme pour \\(I\\) et \\(C\\).\n\\(G\\) est donc estimé à travers les coûts. En termes de comptabilité, la consommation finale du gouvernement est équivalente à ses coûts\n\nExemple: le service rendu par tous les professeurs d’une école publique équivaut aux salaires qui leur sont versés. Même principe pour tous les autres fonctionnaires (police, administration, armée…).",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#g",
+    "href": "10mars_cours3.html#g",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "\\(G\\)",
+    "text": "\\(G\\)\n\\(G\\) est donc estimé à travers la somme des coûts de:\n\nLes salaires versés aux employés du gouvernement\nPlus l’achat par le gouvernement de matériels et autre consommation (le “C” propre à l’État)\nla consommation de capital fixe (le “I” propre à l’État: achats de machines, de biens immobiliers etc.)\nl’achat de biens et services par le gouvernement au bénéfice des ménages (ex: remboursement des soins de santé)\nd’autres taxes payés sur la production (marginal)\nles paiements des ménages et des firmes pour les services fournis par le gouvernement (ex: entrée au musé)\nle comptre propre de consommation de capital fixe.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#la-sous-estimation-de-g",
+    "href": "10mars_cours3.html#la-sous-estimation-de-g",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "La sous-estimation de \\(G\\)",
+    "text": "La sous-estimation de \\(G\\)\n\nCette estimation de la valeur ajoutée des services publiques à travers les coûts implique que cette dernière est sous-estimée dans les comptes nationaux.\nContrairement aux entreprises privées, les services publiques n’appliquent pas de taux de marge\nToute chose égale par ailleurs, la privatisation d’un service publique (par exemple un hôpital) aboutirait à une augmentation du PIB, mais cette augmentation est “artificelle” dans le sens où l’augmentation est uniquement due à l’ajout d’un taux de marge, la valeur ajoutée des services n’ayant pas changé.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#i-investissement",
+    "href": "10mars_cours3.html#i-investissement",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "\\(I\\) Investissement",
+    "text": "\\(I\\) Investissement\n\nSont définis (dans la comptabilité nationale) comme investissement les achats de machines (logiciels informatiques inclus), les achats immobiliers et la constitution de stocks (inventaires). ==&gt; Formation brut de capital (gross capital formation)\n\nEn ne prenant pas en compte les inventaires: formation brut de capital fixe (gross fixed capital formation)\n\nPourquoi ces termes plutôt que simplement “investissement” ? Car l’usage courant du terme investissement fait souvent référence aux investissements financier dans les marchés d’action ou autre.\nIl est aussi possible et courant d’estimer formation net de capital fixe en prenant en compte la dépréciation du capital, appelée consommation de capital fixe dans les comptes nationaux.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#exportations-et-importations-x-m",
+    "href": "10mars_cours3.html#exportations-et-importations-x-m",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Exportations et importations \\(X-M\\)",
+    "text": "Exportations et importations \\(X-M\\)\nLes flux d’exportations et d’importations sont décomposés en quatre parties:\n\nle commerce extérieur de biens\nle commerce extérieur de services\nachats directs par les résidents dans le reste du monde (considéré comme des importations de services)\nachats directs par les non-résidents dans le territoire économique (exportations de services)",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#territoire-résidence-et-reste-du-monde",
+    "href": "10mars_cours3.html#territoire-résidence-et-reste-du-monde",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Territoire, résidence et reste du monde",
+    "text": "Territoire, résidence et reste du monde\nCes trois notions ont une définition bien particulière en comptabilité nationale et sont importantes à comprendre afin de comprendre la balance commerciale:\n\nLa notion de territoire économique se réfère à l’aire géographique d’un État. Cela inclut son espace aérien, ses eaux territorials et ses enclaves territoriales dans le reste du monde. Seule la production prenant place dans le territoire économique est prise en compte dans les comptes nationaux. La production d’un établissement de Novartis situé aux États-Unis n’est pas comptabilisée dans les comptes nationaux suisses, mais dans les comptes étatsuniens.\n\n\nunderstanding national accounts page 153",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#résidence-et-reste-du-monde",
+    "href": "10mars_cours3.html#résidence-et-reste-du-monde",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Résidence et reste du monde",
+    "text": "Résidence et reste du monde\n\nLes résidents d’un territoire économique sont les entités (firmes & ménages) exerçant une activité économique sur le territoire depuis au moins un an.\n\nLes travailleurs saisonniers travaillant seulement quelques mois dans un pays donné ne sont par exemple par considéré comme résident du pays et leur revenu n’est donc pas comptabilisé.\nAu contraire, un ménage dont les membres travaillent dans le pays A mais consomment et vivent dans le pays B sont considérés comme résident de B et ne sont pas comptabilisés dans A.\n\n\nLe reste du monde est composé de tous les non-résidents transactant avec le pays considéré. Ces transactions inclues:\n\nLa balance commerciale (exportations et importations)\nLes revenus reçus par les résidents de l’étranger et les revenu versé à l’étranger aux non-résidents (foreign net income ou flux de revenus extérieur net).",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#flux-de-revenus-extérieurs-nets-foreign-net-income-fni",
+    "href": "10mars_cours3.html#flux-de-revenus-extérieurs-nets-foreign-net-income-fni",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Flux de revenus extérieurs nets (foreign net income FNI)",
+    "text": "Flux de revenus extérieurs nets (foreign net income FNI)\n\nSert à mesurer le revenu national brut (RNB, aciennement produit national brut PNB) en l’additionnant au PIB\n\n\\[\nRNB = PIB + FNI\n\\]\nLes données du FNI sont généralement trouvables dans les tableaux du PIB dans l’approche revenu",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#balance-des-comptes-courants-et-flux-de-revenus-extérieurs-net",
+    "href": "10mars_cours3.html#balance-des-comptes-courants-et-flux-de-revenus-extérieurs-net",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Balance des comptes courants et flux de revenus extérieurs net",
+    "text": "Balance des comptes courants et flux de revenus extérieurs net\nLa balance des comptes courants (current acount balance CAB) est définie comme la somme des exportations nettes et des flux de revenus reçus de l’étranger moins les flux de revenus versés à l’étrangers:\n$$\nCAB = NX + FNI\n$$\nSi \\(CAB&gt;0\\), le pays considéré est en surplus vis-à-vis du reste du monde et inversement",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#contributions-à-la-croissance",
+    "href": "10mars_cours3.html#contributions-à-la-croissance",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Contributions à la croissance",
+    "text": "Contributions à la croissance\nL’approche dépense du PIB implique que le taux de croissance du PIB peut être décomposé dans ses différentes composantes:\n\\[\n\\frac{Y_t - Y_{t-1}}{Y_{t-1}} = \\frac{C_t - C_{t-1}}{Y_{t-1}} + \\frac{I_t - I_{t-1}}{Y_{t-1}} + \\frac{G_t - G_{t-1}}{Y_{t-1}} + \\frac{NX_t - NX_{t-1}}{Y_{t-1}}\n\\]\nAvec \\(Y_t\\) et \\(NX_t\\) le PIB nominal et les exportations net à la période \\(t\\). Calculer ces contributions à la croissance permet d’identifier si la croissance entre les périodes considérées est principalement tirée par la consommation, l’investissement, la dépense publique ou les exportations nettes.",
     "crumbs": [
       "10 Mars. Comptabilité nationale (1)"
     ]
@@ -1376,61 +1060,11 @@
     ]
   },
   {
-    "objectID": "10mars_cours3.html#balances-sectorielles",
-    "href": "10mars_cours3.html#balances-sectorielles",
+    "objectID": "10mars_cours3.html#usages-des-contributions-à-la-croissance",
+    "href": "10mars_cours3.html#usages-des-contributions-à-la-croissance",
     "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Balances sectorielles",
-    "text": "Balances sectorielles\n\\[\n\\underbrace{(S - I)}_{surplus\\ secteur \\ privé} + \\underbrace{(T-G)}_{surplus\\ secteur\\ public} +  \\underbrace{(-CAB)}_{surplus\\ du \\ reste \\ du \\ monde} \\equiv 0\n\\]",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#exercice-2-notes-sur-limportation-de-données-excel",
-    "href": "10mars_cours3.html#exercice-2-notes-sur-limportation-de-données-excel",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Exercice 2: notes sur l’importation de données excel",
-    "text": "Exercice 2: notes sur l’importation de données excel\nPour importer correctement les données dans R, il faut faire un peu de nettoyage dans le fichier excel. La meilleur manière de procéder est de copier-coller les colonnes d’intérêt dans une nouvelle feuille. La fonction read_excel ou le panel files permettent de spécifier la feuille à importer.",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#limites-des-contributions-à-la-croissance",
-    "href": "10mars_cours3.html#limites-des-contributions-à-la-croissance",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Limites des contributions à la croissance",
-    "text": "Limites des contributions à la croissance\n\nLes contributions à la croissance des exportations sont surestimées, car ne corrige pas pour la part des ré-exportation (les biens qui sont importés puis ré-exportés)\n\nPrendre en compte la part des ré-exportations demande des calculs bien plus complexes en utilisant notamment les tables input-output.\n\nLe calcul des contributions relatives pose problème quand le taux de croissance est très proche de 0 (diviser par un nombre proche de 0 donne un résultat infini)\nLes contributions à la croissance ne nous renseigne pas sur pourquoi les composantes contribuent différemment à la croissance\nNi sur comment sont financés les différentes dépenses\n\nEn macro post-Keynésienne, les contributions à la croissance sont donc souvent complémentées par une analyse des balances sectorielles",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#définition-du-pib",
-    "href": "10mars_cours3.html#définition-du-pib",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Définition du PIB",
-    "text": "Définition du PIB\nPIB = Somme des valeurs ajoutées sur un territoire donné sur une période donnée (le plus souvent dans un pays sur un an)\nLa valeur ajoutée étant la valeur monétaire (aux prix de marché) des biens et services, à laquelle on soustrait la valeur monétaire de la consommation intermédiaire\n\\[PIB = \\sum outputs - \\sum consommations \\ intermédiaires\\]\nPour être précis, il faut mentionner l’ajout des taxes moins les subventions sur les produits et services",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#exercice-1",
-    "href": "10mars_cours3.html#exercice-1",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Exercice 1",
-    "text": "Exercice 1\n\nAllez sur le site web du secrétariat d’État à l’économie (SECO) https://www.seco.admin.ch/seco/fr/home.html\nTrouvez la page sur laquelle le SECO met à disposition les données du PIB suisse selon les trois approches\nTéléchargez le tableau excel “PIB, approche par la dépense, données brutes”\nDans la feuille contenant les données nominales annuelles, identifiez les variables suivantes: dépenses de consommation privée des ménages (\\(C\\)), des administrations publiques (\\(G\\)), des investissement (\\(I\\)), des exportations et importation (\\(X\\) et \\(M\\)).\nOuvrez une nouvelle feuille et copier-collez y ces variables. N’oubliez pas d’ajouter une variables pour les années et de mettre le nom des variables en première ligne. Importer cette feuille dans R.",
-    "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
-    ]
-  },
-  {
-    "objectID": "10mars_cours3.html#exercice-1-notes-sur-limportation-de-données-excel",
-    "href": "10mars_cours3.html#exercice-1-notes-sur-limportation-de-données-excel",
-    "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Exercice 1: notes sur l’importation de données excel",
-    "text": "Exercice 1: notes sur l’importation de données excel\nPour importer correctement les données dans R, il faut faire un peu de nettoyage dans le fichier excel. La meilleur manière de procéder est de copier-coller les colonnes d’intérêt dans une nouvelle feuille. La fonction read_excel ou le panel files permettent de spécifier la feuille à importer.",
+    "section": "Usages des contributions à la croissance",
+    "text": "Usages des contributions à la croissance\n\n\n==&gt; En macroéconomie, une littérature très large s’est développée autour d’une typologie des régimes de croissance à partir du calculs de contributions à la croissance",
     "crumbs": [
       "10 Mars. Comptabilité nationale (1)"
     ]
@@ -1446,6 +1080,16 @@
     ]
   },
   {
+    "objectID": "10mars_cours3.html#exercice-1",
+    "href": "10mars_cours3.html#exercice-1",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Exercice 1",
+    "text": "Exercice 1\n\nAllez sur le site web du secrétariat d’État à l’économie (SECO) https://www.seco.admin.ch/seco/fr/home.html\nTrouvez la page sur laquelle le SECO met à disposition les données du PIB suisse selon les trois approches\nTéléchargez le tableau excel “PIB, approche par la dépense, données brutes”\nDans la feuille contenant les données nominales annuelles, identifiez les variables suivantes: dépenses de consommation privée des ménages (\\(C\\)), des administrations publiques (\\(G\\)), des investissement (\\(I\\)), des exportations et importation (\\(X\\) et \\(M\\)).\nOuvrez une nouvelle feuille et copier-collez y ces variables. N’oubliez pas d’ajouter une variables pour les années et de mettre le nom des variables en première ligne. Importer cette feuille dans R.\n\n\n\n\n\n\n\nNote\n\n\npour importer la feuille excel, utilisez la fonction read_excel(), pour créer une nouvelle variable, la fonction mutate(), diff() et log() pour calculer les taux de croissance et lag() pour prendre la valeur d’une variable à \\(t-1\\)",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
     "objectID": "10mars_cours3.html#exercice-1-suite",
     "href": "10mars_cours3.html#exercice-1-suite",
     "title": "10 Mars. Comptabilité nationale (1)",
@@ -1456,11 +1100,101 @@
     ]
   },
   {
-    "objectID": "10mars_cours3.html#balance-des-comptes-courants-et-flux-de-revenus-extérieurs-net",
-    "href": "10mars_cours3.html#balance-des-comptes-courants-et-flux-de-revenus-extérieurs-net",
+    "objectID": "10mars_cours3.html#limites-des-contributions-à-la-croissance",
+    "href": "10mars_cours3.html#limites-des-contributions-à-la-croissance",
     "title": "10 Mars. Comptabilité nationale (1)",
-    "section": "Balance des comptes courants et flux de revenus extérieurs net",
-    "text": "Balance des comptes courants et flux de revenus extérieurs net\nLa balance des comptes courants (current acount balance CAB) est définie comme la somme des exportations nettes et des flux de revenus reçus de l’étranger moins les flux de revenus versés à l’étrangers:\n$$\nCAB = NX + FNI\n$$\nSi \\(CAB&gt;0\\), le pays considéré est en surplus vis-à-vis du reste du monde et inversement",
+    "section": "Limites des contributions à la croissance",
+    "text": "Limites des contributions à la croissance\n\nLes contributions à la croissance des exportations sont surestimées, car ne corrige pas pour la part des ré-exportation (les biens qui sont importés puis ré-exportés)\n\nPrendre en compte la part des ré-exportations demande des calculs bien plus complexes en utilisant notamment les tables input-output.\n\nLe calcul des contributions relatives pose problème quand le taux de croissance est très proche de 0 (diviser par un nombre proche de 0 donne un résultat infini)\nLes contributions à la croissance ne nous renseigne pas sur pourquoi les composantes contribuent différemment à la croissance\nNi sur comment sont financés les différentes dépenses\n\nEn macro post-Keynésienne, les contributions à la croissance sont donc souvent complémentées par une analyse des balances sectorielles",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#balances-sectorielles",
+    "href": "10mars_cours3.html#balances-sectorielles",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Balances sectorielles",
+    "text": "Balances sectorielles\n\\[\n\\underbrace{(S - I)}_{surplus\\ secteur \\ privé} + \\underbrace{(T-G)}_{surplus\\ secteur\\ public} +  \\underbrace{(-CAB)}_{surplus\\ du \\ reste \\ du \\ monde} \\equiv 0\n\\]",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#approche-revenu-du-pib",
+    "href": "10mars_cours3.html#approche-revenu-du-pib",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Approche revenu du PIB",
+    "text": "Approche revenu du PIB\n\\[\nPIB \\equiv WL + R\n\\]\nLe pib peut aussi est défini comme la somme de tous les revenus d’une économie, répartis entre tous les salaires versés dans l’économie (\\(W\\) le salaire nominal multiplié par la quantité de travail \\(L\\)) et les profits \\(R\\) (en ignorant les rentes ou bien en les considérant comme partie des profits).\nEn comptabilité nationale:\n\\[\nPIB = compensation \\ des \\ employés + excédent\\ brut \\ d'exploitation\\ et \\ revenu \\ mixte\n\\]\nLa compensation des employés est la variable la plus similaire aux salaires \\(W\\), mais a une conception plus large car est plus globale que les salaires (inclut toutes les rémunérations des salariés).\nL’excédent brut d’exploitation brut est le montant de profit dégagé par les entreprises \\(R\\) (gross operating surplus), le revenu mixte (mixed income) est le revenu des indépendants et auto-entrepreneurs.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#revenu-mixe-et-excédent-brut",
+    "href": "10mars_cours3.html#revenu-mixe-et-excédent-brut",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Revenu mixe et excédent brut",
+    "text": "Revenu mixe et excédent brut\nDans certains pays (comme en Suisse), le revenu mixe et l’excédent brut d’exploitation sont mélangés dans une seule catégorie.\n\nCela pose problème pour le calcul de la part des salaires et des profits dans la valeur ajoutée, qu’il faut donc ajuster par la part des indépendant et des autoentrepreneurs dans l’emploi.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#calcul-non-ajusté-de-la-part-des-salaires-et-des-profits",
+    "href": "10mars_cours3.html#calcul-non-ajusté-de-la-part-des-salaires-et-des-profits",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Calcul (non ajusté) de la part des salaires et des profits",
+    "text": "Calcul (non ajusté) de la part des salaires et des profits\n\\[\nPY \\equiv WL + R\n\\]\nAvec \\(PY\\) le pib nominal (le pib réel P multiplié par le niveau des prix P), \\(W\\) le salaire nominal et \\(L\\) la quantité de travail (soit mesurée en heures de travail, soit par le nombre de personnes employées) et \\(R\\) l’excédent brut d’exploitation (les profits).",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#calcul-non-ajusté-de-la-part-des-salaires-et-des-profits-2",
+    "href": "10mars_cours3.html#calcul-non-ajusté-de-la-part-des-salaires-et-des-profits-2",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Calcul (non ajusté) de la part des salaires et des profits (2)",
+    "text": "Calcul (non ajusté) de la part des salaires et des profits (2)\nDivisons par le PIB\n\\(/PY\\)&lt;=&gt;\n\\[\n1 \\equiv \\frac{WL}{PY} + \\frac{R}{PY} \\equiv wa_0 + r\n\\]\nAvec \\(w\\) le salaire réel (\\(W/P\\)), \\(a_0\\) le ratio travail-output (\\(L/Y\\)) et r la part des profits. \\(wa_0\\) est la part des salaires dans le revenu national (PIB).\n\n\n\n\n\n\nPart des salaires et coût unitaire du travail (Unit labour cost)\n\n\nLa part des salaires \\(wa_0 = \\frac{WL}{PY}\\) mesure la quantité de rémunération des salariés pour chaque unité d’output (\\(PY\\)), c’est pour cela que ce ratio est aussi considéré comme le “coût” unitaire du travail.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#lidentité-fondamentale-du-pib",
+    "href": "10mars_cours3.html#lidentité-fondamentale-du-pib",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "L’identité fondamentale du PIB",
+    "text": "L’identité fondamentale du PIB\nLes trois approches que nous avons passées en revue: approches production, dépenses et revenus, sont équivalentes en termes comptables. Cela repose sur le fait que:\n\nToutes les dépenses sont des revenus et inversements\nToutes les dépenses se font sur des biens et services nécessairement produits",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#équivalence-des-approches",
+    "href": "10mars_cours3.html#équivalence-des-approches",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Équivalence des approches",
+    "text": "Équivalence des approches\n\n\\(PIB \\equiv \\sum{production - consommation \\ intermédiaire}\\)\n\\(PIB \\equiv C+I+G+X-M\\)\n\\(PIB \\equiv W+R\\)",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#lidentité-épargne-equiv-investissement",
+    "href": "10mars_cours3.html#lidentité-épargne-equiv-investissement",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "L’identité \\(épargne \\equiv investissement\\)",
+    "text": "L’identité \\(épargne \\equiv investissement\\)\nCertaines identités comptables fondamentales de la macroéconomie sont obtenues en jouant avec ces trois identités comptables.\nC’est le cas pour l’identité \\(S \\equiv I + NX\\), que vous allez voir ou avez déjà vue en macroéconomie.\nC’est aussi le cas des balances sectorielles que vous allez voir dans le cours les mesures de l’économie",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale (1)"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#exercice-3",
+    "href": "10mars_cours3.html#exercice-3",
+    "title": "10 Mars. Comptabilité nationale (1)",
+    "section": "Exercice 3",
+    "text": "Exercice 3\n\nTéléchargez le tableau Éxcel des données du PIB selon l’approche revenu sur la page du SECO\nCalculez la part du profit et des salaires dans la valeur ajoutée (PIB) pour chaque année depuis 1990.\nFaites la somme entre la part des salaires et des profits, que remarquez-vous ? En partant de l’équation \\(PIB \\equiv W+R\\), quelle devrait normalement être la valeur de cette somme ? Comment expliquer cet écart ?\nCorrigez la série pour qu’elle s’additionne à 1\nAllez sur DBnomics. Sous “providers”, allez sur les données de l’AMECO et cherchez les données sur la part des salaires (“adjusted wage share”). Filtrer les données pour n’avoir que la part des salaires pour la Suisse.\nComparez la part des salaires de l’AMECO avec la série que vous avez calculé. Comment expliquer cet écart ?",
     "crumbs": [
       "10 Mars. Comptabilité nationale (1)"
     ]

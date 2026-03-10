@@ -85,7 +85,7 @@ Un taux de réponse faible (\<60%) indique que l'enquête a manqué une partie i
 
 Exemple: données fiscales (qui permettent les mesures de distribution du revenu), certaines données du marché du travail (ex: Seco et le nombre de chômeurs inscrits), données sur les finances publiques...
 
--   Les données administratives ne sont pas récoltées à travers un processus d'échantillonnage. Par exemple, cela ne fait pas sens de calculer les intervalles de confiance pour le PIB ou la dette publique.
+-   Les données administratives ne sont pas récoltées à travers un processus d'échantillonnage. Par exemple, cela ne fait pas sens de calculer les intervalles de confiance pour la dette publique ou les dépenses publiques.
 
 -   Mais cela ne veut pas dire que les données administratives sont exhaustives
 
@@ -153,7 +153,7 @@ $$PIB = \sum valeurs\ ajoutées \\ - \sum consommations \ intermédiaires\\ + ta
 
 $$PIB = C + I + G + X - M$$
 
-Avec $C$ la consommation, $I$ l'investissement, $G$ la dépense publique et $X-M$ la balance commerciale.
+Avec $C$ la consommation, $I$ l'investissement, $G$ la dépense publique et $X-M$ la balance commerciale (exportations-importations de biens et services).
 
 ## $C$ Consommation
 
@@ -169,7 +169,13 @@ Sur quelles données sont fondées les estimations de $C$ ? Sur les enquêtes su
 
 En Suisse, l'OFS mène sa propre enquête sur le budget des ménage chaque année depuis 2000. - Enquête statistique auprès d'un échantillon d'environ 3000 personnes.
 
-L'enquête sur le budget des ménages permet aussi de définir le panier de bien type utilisé pour le calcul de l'indice des prix à la consommation (IPC), un indicateur important du niveau des prix et de l'inflation.
+L'enquête sur le budget des ménages permet aussi d'estimer les *coefficients budgétaires* servant à pondérer le prix élémentaire des biens et services pris en compte dans le panier-type servant à calculer l'indice des prix à la consommation (IPC).
+
+::: callout-note
+
+Le coefficient budgétaire d'un bien $i$ est la somme dépensé pour ce bien divisé par la somme totale des dépenses. Le prix élémentaire d'un bien est son prix à l'année $t$ divisé par son prix à une année de base.
+
+:::
 
 ## EBM en Suisse
 
@@ -207,11 +213,20 @@ $G$ est donc estimé à travers la somme des coûts de:
 -   les paiements des ménages et des firmes pour les services fournis par le gouvernement (ex: entrée au musé)
 -   le comptre propre de consommation de capital fixe.
 
+## La sous-estimation de $G$
+
+- Cette estimation de la valeur ajoutée des services publiques à travers les coûts implique que cette dernière est *sous-estimée* dans les comptes nationaux.
+
+- Contrairement aux entreprises privées, les services publiques n'appliquent pas de taux de marge
+
+- Toute chose égale par ailleurs, la privatisation d'un service publique (par exemple un hôpital) aboutirait à une augmentation du PIB, mais cette augmentation est "artificelle" dans le sens où l'augmentation est uniquement due à l'ajout d'un taux de marge, la valeur ajoutée des services n'ayant pas changé.
+
+
 ## $I$ Investissement {.smaller}
 
 -   Sont définis (dans la comptabilité nationale) comme investissement les achats de machines (logiciels informatiques inclus), les achats immobiliers et la constitution de stocks (inventaires). ==\> **Formation brut de capital (gross capital formation)**
 
-En ne prenant pas en compte les inventaires: **formation brut de capital fixed (gross fixed capital formation)**
+En ne prenant pas en compte les inventaires: **formation brut de capital fixe (gross fixed capital formation)**
 
 -   Pourquoi ces termes plutôt que simplement "investissement" ? Car l'usage courant du terme investissement fait souvent référence aux investissements financier dans les marchés d'action ou autre.
 
@@ -240,15 +255,15 @@ understanding national accounts page 153
 
 -   Les *résidents* d'un *territoire économique* sont les entités (firmes & ménages) exerçant une activité économique sur le territoire depuis au moins un an.
 
-    -   Les travailleurs saisonniers travaillant seulement quelques mois dans un pays donnés ne sont par exemple par considéré comme résident du pays et leur revenu n'est donc pas comptabilisé.
-    -   Au contraire, un ménage dont les membres travaillent dans pays A mais consomment et vivent dans pays B sont considérés comme résident de B et ne sont pas comptabilisés dans A.
+    -   Les travailleurs saisonniers travaillant seulement quelques mois dans un pays donné ne sont par exemple par considéré comme résident du pays et leur revenu n'est donc pas comptabilisé.
+    -   Au contraire, un ménage dont les membres travaillent dans le pays A mais consomment et vivent dans le pays B sont considérés comme résident de B et ne sont pas comptabilisés dans A.
 
 Le reste du monde est composé de tous les non-résidents transactant avec le pays considéré. Ces transactions inclues:
 
 -   La balance commerciale (exportations et importations)
--   Les revenus reçus par les résidents de l'étranger et les revenu versé à l'étranger aux non-résidents (net external income flows ou flux de revenus extérieur net).
+-   Les revenus reçus par les résidents de l'étranger et les revenu versé à l'étranger aux non-résidents (foreign net income ou flux de revenus extérieur net).
 
-## Flux de revenus extérieurs nets (FNI) {.smaller}
+## Flux de revenus extérieurs nets (foreign net income FNI) {.smaller}
 
 -   Sert à mesurer le revenu national brut (RNB, aciennement produit national brut PNB) en l'additionnant au PIB
 
@@ -256,7 +271,7 @@ $$
 RNB = PIB + FNI
 $$
 
-Les données du FNI sont généralement trouvable dans les tableaux du PIB dans l'approche revenu
+Les données du FNI sont généralement trouvables dans les tableaux du PIB dans l'approche revenu
 
 ![](images/cours3/fni_seco.png){fig-align="center"}
 
@@ -333,6 +348,12 @@ $$
 - Dans la feuille contenant les données nominales annuelles, identifiez les variables suivantes: dépenses de consommation privée des ménages ($C$), des administrations publiques ($G$), des investissement ($I$), des exportations et importation ($X$ et $M$).
 
 - Ouvrez une nouvelle feuille et copier-collez y ces variables. N'oubliez pas d'ajouter une variables pour les années et de mettre le nom des variables en première ligne. Importer cette feuille dans R.
+
+::: callout-note
+
+pour importer la feuille excel, utilisez la fonction `read_excel()`, pour créer une nouvelle variable, la fonction `mutate()`, `diff()` et `log()` pour calculer les taux de croissance et `lag()` pour prendre la valeur d'une variable à $t-1$
+
+:::
 
 ## Exercice 1 (suite) {.smaller}
 

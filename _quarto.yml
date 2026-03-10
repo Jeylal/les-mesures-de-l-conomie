@@ -1,6 +1,12 @@
 project:
   type: website
   output-dir: docs
+  render: 
+    - index.qmd
+    - slides intro.qmd
+    - 3mars_cours2.qmd
+    - 10mars_cours3.qmd
+
 
 website:
   title: "Séminaire les mesures de l'économie"
