@@ -453,7 +453,7 @@ Certaines identités comptables fondamentales de la macroéconomie sont obtenues
 
 C'est le cas pour l'identité $S \equiv I + NX$, que vous allez voir ou avez déjà vue en macroéconomie.
 
-C'est aussi le cas des balances sectorielles que vous allez voir dans le cours *les mesures de l'économie*
+C'est aussi le cas des balances sectorielles
 
 ## Exercice 3 {.smaller}
 
