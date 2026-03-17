@@ -1,5 +1,5 @@
 ---
-title: "10 Mars. Comptabilité nationale (1)"
+title: "10 Mars. Comptabilité nationale"
 subtitle: "Séminaire les mesures de l'économie"
 author: "Celâl Güney"
 format: 
@@ -11,6 +11,7 @@ editor: visual
 embed-resources: true
 lang: fr
 footer: <https://jeylal.github.io/les-mesures-de-l-conomie/>
+bibliography: references.bib
 ---
 
 # Comment sont récoltées les données de la comptabilité nationale ?
@@ -276,11 +277,9 @@ Les données du FNI sont généralement trouvables dans les tableaux du PIB dans
 
 La balance des comptes courants (current acount balance CAB) est définie comme la somme des exportations nettes et des flux de revenus reçus de l'étranger moins les flux de revenus versés à l'étrangers:
 
-\$\$
-
+$$
 CAB = NX + FNI
-
-\$\$
+$$
 
 Si $CAB>0$, le pays considéré est en surplus vis-à-vis du reste du monde et inversement
 
@@ -364,10 +363,6 @@ pour importer la feuille excel, utilisez la fonction `read_excel()`, pour créer
 
 ## Limites des contributions à la croissance {.smaller}
 
--   Les contributions à la croissance des exportations sont surestimées, car ne corrige pas pour la part des ré-exportation (les biens qui sont importés puis ré-exportés)
-
-    -   Prendre en compte la part des ré-exportations demande des calculs bien plus complexes en utilisant notamment les tables input-output.
-
 -   Le calcul des contributions relatives pose problème quand le taux de croissance est très proche de 0 (diviser par un nombre proche de 0 donne un résultat infini)
 
 -   Les contributions à la croissance ne nous renseigne pas sur *pourquoi* les composantes contribuent différemment à la croissance
@@ -375,6 +370,18 @@ pour importer la feuille excel, utilisez la fonction `read_excel()`, pour créer
 -   Ni sur comment sont financés les différentes dépenses
 
     -   En macro post-Keynésienne, les contributions à la croissance sont donc souvent complémentées par une analyse des *balances sectorielles*
+
+## Limites des contributions à la croissance (2) {.smaller}
+
+-   Tendance à surestimer la contribution à la croissance du secteur domestique et à sous-estimer celle des exportations
+
+-   Pour comprendre pourquoi, il faut faire une distinction entre la part des importations qui sont absorbées par les exportations (par exemple les biens intermédiaires et matières premières) et la part des importations consomées par le secteur domestique (notamment $C$).
+
+-   Dans le calcul traditionnel des contributions à la croissance, on soustrait *toutes* les importations aux exportations alors qu'il faudrait seulement soustraire la part des importations "consommée" par les exportations.
+
+-   Idéalement, il faudrait donc aussi soustraire aux composantes du secteur domestique (C,I,G), la part des importations qu'elles consomment.
+
+-   Ce genre de calculs de contributions ajustées pour les importations sont possibles, mais seulement avec les tables input-output, voire @baccaro_operationalizing_2024
 
 ## Balances sectorielles
 
@@ -447,13 +454,6 @@ Les trois approches que nous avons passées en revue: approches production, dép
 (2) $PIB \equiv C+I+G+X-M$
 (3) $PIB \equiv W+R$
 
-## L'identité $épargne \equiv investissement$ {.smaller}
-
-Certaines identités comptables fondamentales de la macroéconomie sont obtenues en jouant avec ces trois identités comptables.
-
-C'est le cas pour l'identité $S \equiv I + NX$, que vous allez voir ou avez déjà vue en macroéconomie.
-
-C'est aussi le cas des balances sectorielles
 
 ## Exercice 3 {.smaller}
 
@@ -468,3 +468,8 @@ C'est aussi le cas des balances sectorielles
 -   Allez sur DBnomics. Sous "providers", allez sur les données de l'AMECO et cherchez les données sur la part des salaires ("adjusted wage share"). Filtrer les données pour n'avoir que la part des salaires pour la Suisse.
 
 -   Comparez la part des salaires de l'AMECO avec la série que vous avez calculé. Comment expliquer cet écart ?
+
+## 
+
+::: references
+:::

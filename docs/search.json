@@ -772,411 +772,411 @@
   {
     "objectID": "10mars_cours3.html#données-macroéconomiques-principes-de-base",
     "href": "10mars_cours3.html#données-macroéconomiques-principes-de-base",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Données macroéconomiques: principes de base",
     "text": "Données macroéconomiques: principes de base\n\nDeux sources principales de données en économie (ainsi qu’en sciences sociales en général)\n\nDonnées provenant d’enquêtes au moyen de questionnaires\n\nex: données sur la consommation, statistiques du marché du travail, de la valeur ajouté des entreprises\n\nDonnées administratives\n\nex: comptes publics\n\n\n\nDistinction importante, car pour les données d’enquêtes, les principes de la statistique (échantillonage, calculs des marges d’erreurs, tests statistiques) doivent être respectés, ce qui n’est pas (forcément) le cas des données administratives.\n\nCar pour les données administratives, certains principe de la statistique ne sont pas applicable, car les données n’ont pas été récoltées à travers un processus d’échantillonnage",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#données-denquête",
     "href": "10mars_cours3.html#données-denquête",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Données d’enquête",
     "text": "Données d’enquête\n\nFaire attention à la qualité des enquêtes qui dépend de:\n\nLe procédé d’échantillonage\nLa taille de l’échantillon et sa représentativité\nLe taux de réponse (nombre de personnes qui ont répondu à l’enquête / total des personnes appelées à participer à l’enquête)",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#récolte-de-données-denquête",
     "href": "10mars_cours3.html#récolte-de-données-denquête",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Récolte de données d’enquête",
     "text": "Récolte de données d’enquête\nun problème à ne pas sous-estimer\n\n\n\n\n\n\nUn taux de réponse faible (&lt;60%) indique que l’enquête a manqué une partie importante de la population ==&gt; données récoltées ne sont pas représentatives.",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#exemple-crise-des-données-en-grande-bretagne",
     "href": "10mars_cours3.html#exemple-crise-des-données-en-grande-bretagne",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Exemple: crise des données en Grande-Bretagne",
     "text": "Exemple: crise des données en Grande-Bretagne\n\n\n“Declining response rates to the LFS (labour force surveys) have made the numbers so volatile that it is impossible to be sure whether employment is rising or falling from one quarter to the next — let alone how the labour market has evolved in the years since the pandemic.” “How flawed data is leaving the UK in the dark”, Financial Times",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#exemple-crise-des-données-aux-usa",
     "href": "10mars_cours3.html#exemple-crise-des-données-aux-usa",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Exemple: crise des données aux USA",
     "text": "Exemple: crise des données aux USA",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#données-administratives",
     "href": "10mars_cours3.html#données-administratives",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Données administratives",
     "text": "Données administratives\nExemple: données fiscales (qui permettent les mesures de distribution du revenu), certaines données du marché du travail (ex: Seco et le nombre de chômeurs inscrits), données sur les finances publiques…\n\nLes données administratives ne sont pas récoltées à travers un processus d’échantillonnage. Par exemple, cela ne fait pas sens de calculer les intervalles de confiance pour la dette publique ou les dépenses publiques.\nMais cela ne veut pas dire que les données administratives sont exhaustives\n\nD’ou la récurrence de “révisions” des séries de données administratives.",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#la-comptabilité-nationale",
     "href": "10mars_cours3.html#la-comptabilité-nationale",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "La “comptabilité” nationale",
     "text": "La “comptabilité” nationale\nLe terme de comptabilité peut être trompeur, car la comptabilité nationale est très différente de la comptabilité en entreprise:\n\nLe comptable d’une entreprise dispose de registres avec une information complète sur les données de l’entreprise\nCela n’est pas possible pour la comptabilité nationale (impliquerait une information exhaustive sur des millions d’individus et d’entreprises)\nLa comptabilité nationale repose donc forcément sur une information partielle qui nécessite des approximations, des estimations et des révisions",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#comptabilité-nationale-et-statistique",
     "href": "10mars_cours3.html#comptabilité-nationale-et-statistique",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Comptabilité nationale et statistique",
     "text": "Comptabilité nationale et statistique\n\nLes données provenant des comptes nationaux sont des approximations\nCes approximations sont possibles grâce à des données récoltées de manière plus ou moins dissipée selon la qualité du système publique de statistique du pays considéré.\nIl n’est en outre pas possible de mesurer statistiquement ces approximations (ex: intervalle de confiance de l’estimation du PIB), car la comptabilité nationale n’est pas le résultat d’une seule grande enquête.\nAu contraire, les comptes nationaux sont le résultat de compilations complexes de données provenant d’un grand nombre de sources différentes.",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#exemple-suisse",
     "href": "10mars_cours3.html#exemple-suisse",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Exemple: Suisse",
     "text": "Exemple: Suisse\n\n\n\n\n\n\n\n\n\n\n\nhttps://www.bfs.admin.ch/bfs/fr/home/statistiques/economie-nationale/comptes-nationaux/produit-interieur-brut.assetdetail.328585.html",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#définition-du-pib",
     "href": "10mars_cours3.html#définition-du-pib",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Définition du PIB",
     "text": "Définition du PIB\nPIB = Somme des valeurs ajoutées sur un territoire donné sur une période donnée (le plus souvent dans un pays sur un an)\nLa valeur ajoutée étant la valeur monétaire (aux prix de marché) des biens et services, à laquelle on soustrait la valeur monétaire de la consommation intermédiaire\n\\[PIB = \\sum outputs - \\sum consommations \\ intermédiaires\\]\nPour être précis, il faut mentionner l’ajout des taxes moins les subventions sur les produits et services",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#secteurs-institutionnels",
     "href": "10mars_cours3.html#secteurs-institutionnels",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Secteurs institutionnels",
     "text": "Secteurs institutionnels\n\\(PIB = \\sum valeurs \\ ajoutées\\), mais de qui ?\nLes “acteurs” de la comptabilité nationale sont les “secteurs institutionnels” qui incluent:\n\nLes entreprises non-financières\nLes entreprises financières (banques, assurances…)\nLe gouvernement\nLes ménages (dont les “institutions sans but lucratif au service des ménages” ISBLSM)\n\nLes ISBLSM sont des organisations crées par des groupes de ménages afin de fournir un service de manière non-lucrative. Exemple: syndicats, organisations religieuses, associations philantropiques, de charité… (comme la Croix-Rouge). Une telle organisation doit être financée par des donations ou un abonnement régulier afin d’être considéré comme une ISBLSM par la comptabilité nationale (voir UNA, p.141).",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#approche-production-du-pib",
     "href": "10mars_cours3.html#approche-production-du-pib",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Approche production du PIB",
     "text": "Approche production du PIB\n\\[PIB = \\sum valeurs\\ ajoutées \\\\ - \\sum consommations \\ intermédiaires\\\\ + taxes \\ sur \\ les \\ produits \\\\ - subventions \\ sur \\ les \\ produits\\]",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#approche-dépense-du-pib",
     "href": "10mars_cours3.html#approche-dépense-du-pib",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Approche dépense du PIB",
     "text": "Approche dépense du PIB\n\\[PIB = C + I + G + X - M\\]\nAvec \\(C\\) la consommation, \\(I\\) l’investissement, \\(G\\) la dépense publique et \\(X-M\\) la balance commerciale (exportations-importations de biens et services).",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#c-consommation",
     "href": "10mars_cours3.html#c-consommation",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "\\(C\\) Consommation",
     "text": "\\(C\\) Consommation\nLa comptabilité nationale définit \\(C\\), la consommation, comme les dépenses de consommation finale privée des ménages et des ISBLSM. Cela inclut par exemple les dépenses pour la nourriture, le loyer, l’énergie…\n\n\n\n\n\n\nImportant\n\n\nLa consommation finale privée des ménages n’inclut pas toutes les dépenses. Par exemple, l’achat d’une résidence est considéré par les comptes nationaux comme un investissement (donc est compté dans \\(I\\)).",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#lenquête-sur-le-budget-des-ménages",
     "href": "10mars_cours3.html#lenquête-sur-le-budget-des-ménages",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "L’enquête sur le budget des ménages",
     "text": "L’enquête sur le budget des ménages\nSur quelles données sont fondées les estimations de \\(C\\) ? Sur les enquêtes sur le budget des ménages.\nEn Suisse, l’OFS mène sa propre enquête sur le budget des ménage chaque année depuis 2000. - Enquête statistique auprès d’un échantillon d’environ 3000 personnes.\nL’enquête sur le budget des ménages permet aussi d’estimer les coefficients budgétaires servant à pondérer le prix élémentaire des biens et services pris en compte dans le panier-type servant à calculer l’indice des prix à la consommation (IPC).\n\n\n\n\n\n\nNote\n\n\nLe coefficient budgétaire d’un bien \\(i\\) est la somme dépensé pour ce bien divisé par la somme totale des dépenses. Le prix élémentaire d’un bien est son prix à l’année \\(t\\) divisé par son prix à une année de base.",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#ebm-en-suisse",
     "href": "10mars_cours3.html#ebm-en-suisse",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "EBM en Suisse",
     "text": "EBM en Suisse\n\n\n\nhttps://www.bfs.admin.ch/bfs/fr/home/statistiques/situation-economique-sociale-population/revenus-consommation-et-fortune/budget-des-menages.html",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#les-loyers-imputés",
     "href": "10mars_cours3.html#les-loyers-imputés",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Les loyers imputés",
     "text": "Les loyers imputés\nUne imputation très importante qui est ajoutée aux dépenses de consommation finale des ménages est celle des loyers imputés\n\nOn impute aux propriétaires de leur logement le loyer qu’ils payeraient s’il n’étaient pas propriétaires.\n\nPourquoi ces loyers imputés sont-ils nécessaires ?\nCar si on ne prenait pas en compte ces loyers imputés, on verrait une baisse tendancielle du PIB due à l’augmentation structurelle du nombre absolu de propriétaire.",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#g-dépense-publique",
     "href": "10mars_cours3.html#g-dépense-publique",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "\\(G\\) dépense publique",
     "text": "\\(G\\) dépense publique\nInclut les dépenses générales du gouvernement, notamment les services publiques (éducation, santé, sécurité…).\n\nComme ces biens et services fournis par l’État ne sont pas achetés directement par les autres secteurs institutionnels, leur comptabilisation ne se fait pas à leur valeur marchande comme pour \\(I\\) et \\(C\\).\n\\(G\\) est donc estimé à travers les coûts. En termes de comptabilité, la consommation finale du gouvernement est équivalente à ses coûts\n\nExemple: le service rendu par tous les professeurs d’une école publique équivaut aux salaires qui leur sont versés. Même principe pour tous les autres fonctionnaires (police, administration, armée…).",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#g",
     "href": "10mars_cours3.html#g",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "\\(G\\)",
     "text": "\\(G\\)\n\\(G\\) est donc estimé à travers la somme des coûts de:\n\nLes salaires versés aux employés du gouvernement\nPlus l’achat par le gouvernement de matériels et autre consommation (le “C” propre à l’État)\nla consommation de capital fixe (le “I” propre à l’État: achats de machines, de biens immobiliers etc.)\nl’achat de biens et services par le gouvernement au bénéfice des ménages (ex: remboursement des soins de santé)\nd’autres taxes payés sur la production (marginal)\nles paiements des ménages et des firmes pour les services fournis par le gouvernement (ex: entrée au musé)\nle comptre propre de consommation de capital fixe.",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#la-sous-estimation-de-g",
     "href": "10mars_cours3.html#la-sous-estimation-de-g",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "La sous-estimation de \\(G\\)",
     "text": "La sous-estimation de \\(G\\)\n\nCette estimation de la valeur ajoutée des services publiques à travers les coûts implique que cette dernière est sous-estimée dans les comptes nationaux.\nContrairement aux entreprises privées, les services publiques n’appliquent pas de taux de marge\nToute chose égale par ailleurs, la privatisation d’un service publique (par exemple un hôpital) aboutirait à une augmentation du PIB, mais cette augmentation est “artificelle” dans le sens où l’augmentation est uniquement due à l’ajout d’un taux de marge, la valeur ajoutée des services n’ayant pas changé.",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#i-investissement",
     "href": "10mars_cours3.html#i-investissement",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "\\(I\\) Investissement",
     "text": "\\(I\\) Investissement\n\nSont définis (dans la comptabilité nationale) comme investissement les achats de machines (logiciels informatiques inclus), les achats immobiliers et la constitution de stocks (inventaires). ==&gt; Formation brut de capital (gross capital formation)\n\nEn ne prenant pas en compte les inventaires: formation brut de capital fixe (gross fixed capital formation)\n\nPourquoi ces termes plutôt que simplement “investissement” ? Car l’usage courant du terme investissement fait souvent référence aux investissements financier dans les marchés d’action ou autre.\nIl est aussi possible et courant d’estimer formation net de capital fixe en prenant en compte la dépréciation du capital, appelée consommation de capital fixe dans les comptes nationaux.",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#exportations-et-importations-x-m",
     "href": "10mars_cours3.html#exportations-et-importations-x-m",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Exportations et importations \\(X-M\\)",
     "text": "Exportations et importations \\(X-M\\)\nLes flux d’exportations et d’importations sont décomposés en quatre parties:\n\nle commerce extérieur de biens\nle commerce extérieur de services\nachats directs par les résidents dans le reste du monde (considéré comme des importations de services)\nachats directs par les non-résidents dans le territoire économique (exportations de services)",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#territoire-résidence-et-reste-du-monde",
     "href": "10mars_cours3.html#territoire-résidence-et-reste-du-monde",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Territoire, résidence et reste du monde",
     "text": "Territoire, résidence et reste du monde\nCes trois notions ont une définition bien particulière en comptabilité nationale et sont importantes à comprendre afin de comprendre la balance commerciale:\n\nLa notion de territoire économique se réfère à l’aire géographique d’un État. Cela inclut son espace aérien, ses eaux territorials et ses enclaves territoriales dans le reste du monde. Seule la production prenant place dans le territoire économique est prise en compte dans les comptes nationaux. La production d’un établissement de Novartis situé aux États-Unis n’est pas comptabilisée dans les comptes nationaux suisses, mais dans les comptes étatsuniens.\n\n\nunderstanding national accounts page 153",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#résidence-et-reste-du-monde",
     "href": "10mars_cours3.html#résidence-et-reste-du-monde",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Résidence et reste du monde",
     "text": "Résidence et reste du monde\n\nLes résidents d’un territoire économique sont les entités (firmes & ménages) exerçant une activité économique sur le territoire depuis au moins un an.\n\nLes travailleurs saisonniers travaillant seulement quelques mois dans un pays donné ne sont par exemple par considéré comme résident du pays et leur revenu n’est donc pas comptabilisé.\nAu contraire, un ménage dont les membres travaillent dans le pays A mais consomment et vivent dans le pays B sont considérés comme résident de B et ne sont pas comptabilisés dans A.\n\n\nLe reste du monde est composé de tous les non-résidents transactant avec le pays considéré. Ces transactions inclues:\n\nLa balance commerciale (exportations et importations)\nLes revenus reçus par les résidents de l’étranger et les revenu versé à l’étranger aux non-résidents (foreign net income ou flux de revenus extérieur net).",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#flux-de-revenus-extérieurs-nets-foreign-net-income-fni",
     "href": "10mars_cours3.html#flux-de-revenus-extérieurs-nets-foreign-net-income-fni",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Flux de revenus extérieurs nets (foreign net income FNI)",
     "text": "Flux de revenus extérieurs nets (foreign net income FNI)\n\nSert à mesurer le revenu national brut (RNB, aciennement produit national brut PNB) en l’additionnant au PIB\n\n\\[\nRNB = PIB + FNI\n\\]\nLes données du FNI sont généralement trouvables dans les tableaux du PIB dans l’approche revenu",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#balance-des-comptes-courants-et-flux-de-revenus-extérieurs-net",
     "href": "10mars_cours3.html#balance-des-comptes-courants-et-flux-de-revenus-extérieurs-net",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Balance des comptes courants et flux de revenus extérieurs net",
-    "text": "Balance des comptes courants et flux de revenus extérieurs net\nLa balance des comptes courants (current acount balance CAB) est définie comme la somme des exportations nettes et des flux de revenus reçus de l’étranger moins les flux de revenus versés à l’étrangers:\n$$\nCAB = NX + FNI\n$$\nSi \\(CAB&gt;0\\), le pays considéré est en surplus vis-à-vis du reste du monde et inversement",
+    "text": "Balance des comptes courants et flux de revenus extérieurs net\nLa balance des comptes courants (current acount balance CAB) est définie comme la somme des exportations nettes et des flux de revenus reçus de l’étranger moins les flux de revenus versés à l’étrangers:\n\\[\nCAB = NX + FNI\n\\]\nSi \\(CAB&gt;0\\), le pays considéré est en surplus vis-à-vis du reste du monde et inversement",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#contributions-à-la-croissance",
     "href": "10mars_cours3.html#contributions-à-la-croissance",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Contributions à la croissance",
     "text": "Contributions à la croissance\nL’approche dépense du PIB implique que le taux de croissance du PIB peut être décomposé dans ses différentes composantes:\n\\[\n\\frac{Y_t - Y_{t-1}}{Y_{t-1}} = \\frac{C_t - C_{t-1}}{Y_{t-1}} + \\frac{I_t - I_{t-1}}{Y_{t-1}} + \\frac{G_t - G_{t-1}}{Y_{t-1}} + \\frac{NX_t - NX_{t-1}}{Y_{t-1}}\n\\]\nAvec \\(Y_t\\) et \\(NX_t\\) le PIB nominal et les exportations net à la période \\(t\\). Calculer ces contributions à la croissance permet d’identifier si la croissance entre les périodes considérées est principalement tirée par la consommation, l’investissement, la dépense publique ou les exportations nettes.",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#contributions-à-la-croissance-2",
     "href": "10mars_cours3.html#contributions-à-la-croissance-2",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Contributions à la croissance (2)",
     "text": "Contributions à la croissance (2)\nLes contributions à la croissance peuvent aussi être calculées comme suit, à partir du poids des différentes composantes dans le PIB:\n\\[\n\\frac{Y_t - Y_{t-1}}{Y_{t-1}} = c_t \\frac{C_{t-1}}{Y_{t-1}} + i_t \\frac{I_{t-1}}{Y_{t-1}} + g_t \\frac{G_{t-1}}{Y_{t-1}} + nx_t \\frac{NX_{t-1}}{Y_{t-1}}\n\\]\navec \\(c, i, g, nx\\) le taux de croissance de la consommation, de l’investissement, des dépenses publiques et des exportations nettes",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#contributions-relatives-à-la-croissance",
     "href": "10mars_cours3.html#contributions-relatives-à-la-croissance",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Contributions relatives à la croissance",
     "text": "Contributions relatives à la croissance\nLe désavantage des deux formules de contributions à la croissance ci-dessus est que les contributions ne sont pas comparables entre pays. Pour y remédier, il faut diviser les contributions par le taux de croissance (afin de normaliser les contributions), avec \\(y_t\\) le taux de croissance \\(y_t = \\frac{Y_t - Y_{t-1}}{Y_{t-1}}\\)\n\\[\n1 = \\frac{c_t}{y_t} \\frac{C_{t-1}}{Y_{t-1}} + \\frac{i_t}{y_t} \\frac{I_{t-1}}{Y_{t-1}} + \\frac{g_t}{y_t} \\frac{G_{t-1}}{Y_{t-1}} + \\frac{nx_t}{y_t} \\frac{NX_{t-1}}{Y_{t-1}}\n\\]\nEn simplifiant, on trouve:\n\\[\n1 = \\frac{C_t - C_{t-1}}{Y_t -Y_{t-1}} + \\frac{I_t - I_{t-1}}{Y_t -Y_{t-1}} + \\frac{G_t - G_{t-1}}{Y_t -Y_{t-1}} + \\frac{NX_t - NX_{t-1}}{Y_t -Y_{t-1}}\n\\]",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#usages-des-contributions-à-la-croissance",
     "href": "10mars_cours3.html#usages-des-contributions-à-la-croissance",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Usages des contributions à la croissance",
     "text": "Usages des contributions à la croissance\n\n\n\nRapport 2026 des tendances conjoncturelles de l’économie suisse publié par le SECO",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#typologie-des-régimes-de-croissance",
     "href": "10mars_cours3.html#typologie-des-régimes-de-croissance",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Typologie des régimes de croissance",
     "text": "Typologie des régimes de croissance",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#exercice-1",
     "href": "10mars_cours3.html#exercice-1",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Exercice 1",
     "text": "Exercice 1\n\nAllez sur le site web du secrétariat d’État à l’économie (SECO) https://www.seco.admin.ch/seco/fr/home.html\nTrouvez la page sur laquelle le SECO met à disposition les données du PIB suisse selon les trois approches\nTéléchargez le tableau excel “PIB, approche par la dépense, données brutes”\nDans la feuille contenant les données nominales annuelles, identifiez les variables suivantes: dépenses de consommation privée des ménages (\\(C\\)), des administrations publiques (\\(G\\)), des investissement (\\(I\\)), des exportations et importation (\\(X\\) et \\(M\\)).\nOuvrez une nouvelle feuille et copier-collez y ces variables. N’oubliez pas d’ajouter une variables pour les années et de mettre le nom des variables en première ligne. Importer cette feuille dans R.\n\n\n\n\n\n\n\nNote\n\n\npour importer la feuille excel, utilisez la fonction read_excel(), pour créer une nouvelle variable, la fonction mutate(), diff() et log() pour calculer les taux de croissance et lag() pour prendre la valeur d’une variable à \\(t-1\\)",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#exercice-1-suite",
     "href": "10mars_cours3.html#exercice-1-suite",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Exercice 1 (suite)",
     "text": "Exercice 1 (suite)\n\nCalculez la part de chaque composante des dépenses \\(C\\), \\(G\\), \\(I\\), \\(X\\), \\(M\\) dans le PIB. Comment ces différentes parts ont-elles évolué ?\nCalculez les contributions à la croissance annuelle pour chacune de ces composantes. Produisez un graphique montrant l’évolution des contribution chaque année depuis 1980.\nÀ partir de ces contributions, calculez la moyenne générale des contributions sur l’ensemble de la période. Calculez et comparez les moyennes des contributions avant et après la crise financière de 2008.",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#limites-des-contributions-à-la-croissance",
     "href": "10mars_cours3.html#limites-des-contributions-à-la-croissance",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Limites des contributions à la croissance",
-    "text": "Limites des contributions à la croissance\n\nLes contributions à la croissance des exportations sont surestimées, car ne corrige pas pour la part des ré-exportation (les biens qui sont importés puis ré-exportés)\n\nPrendre en compte la part des ré-exportations demande des calculs bien plus complexes en utilisant notamment les tables input-output.\n\nLe calcul des contributions relatives pose problème quand le taux de croissance est très proche de 0 (diviser par un nombre proche de 0 donne un résultat infini)\nLes contributions à la croissance ne nous renseigne pas sur pourquoi les composantes contribuent différemment à la croissance\nNi sur comment sont financés les différentes dépenses\n\nEn macro post-Keynésienne, les contributions à la croissance sont donc souvent complémentées par une analyse des balances sectorielles",
+    "text": "Limites des contributions à la croissance\n\nLe calcul des contributions relatives pose problème quand le taux de croissance est très proche de 0 (diviser par un nombre proche de 0 donne un résultat infini)\nLes contributions à la croissance ne nous renseigne pas sur pourquoi les composantes contribuent différemment à la croissance\nNi sur comment sont financés les différentes dépenses\n\nEn macro post-Keynésienne, les contributions à la croissance sont donc souvent complémentées par une analyse des balances sectorielles",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#balances-sectorielles",
     "href": "10mars_cours3.html#balances-sectorielles",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Balances sectorielles",
     "text": "Balances sectorielles\n\\[\n\\underbrace{(S - I)}_{surplus\\ secteur \\ privé} + \\underbrace{(T-G)}_{surplus\\ secteur\\ public} +  \\underbrace{(-CAB)}_{surplus\\ du \\ reste \\ du \\ monde} \\equiv 0\n\\]",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#approche-revenu-du-pib",
     "href": "10mars_cours3.html#approche-revenu-du-pib",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Approche revenu du PIB",
     "text": "Approche revenu du PIB\n\\[\nPIB \\equiv WL + R\n\\]\nLe pib peut aussi est défini comme la somme de tous les revenus d’une économie, répartis entre tous les salaires versés dans l’économie (\\(W\\) le salaire nominal multiplié par la quantité de travail \\(L\\)) et les profits \\(R\\) (en ignorant les rentes ou bien en les considérant comme partie des profits).\nEn comptabilité nationale:\n\\[\nPIB = compensation \\ des \\ employés + excédent\\ brut \\ d'exploitation\\ et \\ revenu \\ mixte\n\\]\nLa compensation des employés est la variable la plus similaire aux salaires \\(W\\), mais a une conception plus large car est plus globale que les salaires (inclut toutes les rémunérations des salariés).\nL’excédent brut d’exploitation brut est le montant de profit dégagé par les entreprises \\(R\\) (gross operating surplus), le revenu mixte (mixed income) est le revenu des indépendants et auto-entrepreneurs.",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#revenu-mixe-et-excédent-brut",
     "href": "10mars_cours3.html#revenu-mixe-et-excédent-brut",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Revenu mixe et excédent brut",
     "text": "Revenu mixe et excédent brut\nDans certains pays (comme en Suisse), le revenu mixe et l’excédent brut d’exploitation sont mélangés dans une seule catégorie.\n\nCela pose problème pour le calcul de la part des salaires et des profits dans la valeur ajoutée, qu’il faut donc ajuster par la part des indépendant et des autoentrepreneurs dans l’emploi.",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#calcul-non-ajusté-de-la-part-des-salaires-et-des-profits",
     "href": "10mars_cours3.html#calcul-non-ajusté-de-la-part-des-salaires-et-des-profits",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Calcul (non ajusté) de la part des salaires et des profits",
     "text": "Calcul (non ajusté) de la part des salaires et des profits\n\\[\nPY \\equiv WL + R\n\\]\nAvec \\(PY\\) le pib nominal (le pib réel P multiplié par le niveau des prix P), \\(W\\) le salaire nominal et \\(L\\) la quantité de travail (soit mesurée en heures de travail, soit par le nombre de personnes employées) et \\(R\\) l’excédent brut d’exploitation (les profits).",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#calcul-non-ajusté-de-la-part-des-salaires-et-des-profits-2",
     "href": "10mars_cours3.html#calcul-non-ajusté-de-la-part-des-salaires-et-des-profits-2",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Calcul (non ajusté) de la part des salaires et des profits (2)",
     "text": "Calcul (non ajusté) de la part des salaires et des profits (2)\nDivisons par le PIB\n\\(/PY\\)&lt;=&gt;\n\\[\n1 \\equiv \\frac{WL}{PY} + \\frac{R}{PY} \\equiv wa_0 + r\n\\]\nAvec \\(w\\) le salaire réel (\\(W/P\\)), \\(a_0\\) le ratio travail-output (\\(L/Y\\)) et r la part des profits. \\(wa_0\\) est la part des salaires dans le revenu national (PIB).\n\n\n\n\n\n\nPart des salaires et coût unitaire du travail (Unit labour cost)\n\n\nLa part des salaires \\(wa_0 = \\frac{WL}{PY}\\) mesure la quantité de rémunération des salariés pour chaque unité d’output (\\(PY\\)), c’est pour cela que ce ratio est aussi considéré comme le “coût” unitaire du travail.",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#lidentité-fondamentale-du-pib",
     "href": "10mars_cours3.html#lidentité-fondamentale-du-pib",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "L’identité fondamentale du PIB",
     "text": "L’identité fondamentale du PIB\nLes trois approches que nous avons passées en revue: approches production, dépenses et revenus, sont équivalentes en termes comptables. Cela repose sur le fait que:\n\nToutes les dépenses sont des revenus et inversements\nToutes les dépenses se font sur des biens et services nécessairement produits",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#équivalence-des-approches",
     "href": "10mars_cours3.html#équivalence-des-approches",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Équivalence des approches",
     "text": "Équivalence des approches\n\n\\(PIB \\equiv \\sum{production - consommation \\ intermédiaire}\\)\n\\(PIB \\equiv C+I+G+X-M\\)\n\\(PIB \\equiv W+R\\)",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
@@ -1192,21 +1192,41 @@
   {
     "objectID": "10mars_cours3.html#exercice-3",
     "href": "10mars_cours3.html#exercice-3",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Exercice 3",
     "text": "Exercice 3\n\nTéléchargez le tableau Éxcel des données du PIB selon l’approche revenu sur la page du SECO\nCalculez la part du profit et des salaires dans la valeur ajoutée (PIB) pour chaque année depuis 1990.\nFaites la somme entre la part des salaires et des profits, que remarquez-vous ? En partant de l’équation \\(PIB \\equiv W+R\\), quelle devrait normalement être la valeur de cette somme ? Comment expliquer cet écart ?\nCorrigez la série pour qu’elle s’additionne à 1\nAllez sur DBnomics. Sous “providers”, allez sur les données de l’AMECO et cherchez les données sur la part des salaires (“adjusted wage share”). Filtrer les données pour n’avoir que la part des salaires pour la Suisse.\nComparez la part des salaires de l’AMECO avec la série que vous avez calculé. Comment expliquer cet écart ?",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
     ]
   },
   {
     "objectID": "10mars_cours3.html#usages-des-contributions-à-la-croissance-1",
     "href": "10mars_cours3.html#usages-des-contributions-à-la-croissance-1",
-    "title": "10 Mars. Comptabilité nationale (1)",
+    "title": "10 Mars. Comptabilité nationale",
     "section": "Usages des contributions à la croissance",
     "text": "Usages des contributions à la croissance\n\n\n==&gt; En macroéconomie, une littérature très large s’est développée autour d’une typologie des régimes de croissance à partir du calculs de contributions à la croissance",
     "crumbs": [
-      "10 Mars. Comptabilité nationale (1)"
+      "10 Mars. Comptabilité nationale"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#limites-des-contributions-à-la-croissance-2",
+    "href": "10mars_cours3.html#limites-des-contributions-à-la-croissance-2",
+    "title": "10 Mars. Comptabilité nationale",
+    "section": "Limites des contributions à la croissance (2)",
+    "text": "Limites des contributions à la croissance (2)\n\nTendance à surestimer la contribution à la croissance du secteur domestique et à sous-estimer celle des exportations\nPour comprendre pourquoi, il faut faire une distinction entre la part des importations qui sont absorbées par les exportations (par exemple les biens intermédiaires et matières premières) et la part des importations consomées par le secteur domestique (notamment \\(C\\)).\nDans le calcul traditionnel des contributions à la croissance, on soustrait toutes les importations aux exportations alors qu’il faudrait seulement soustraire la part des importations “consommée” par les exportations.\nIdéalement, il faudrait donc aussi soustraire aux composantes du secteur domestique (C,I,G), la part des importations qu’elles consomment.\nCe genre de calculs de contributions ajustées pour les importations sont possibles, mais seulement avec les tables input-output, voire Baccaro et Hadziabdic (2024)",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#section",
+    "href": "10mars_cours3.html#section",
+    "title": "10 Mars. Comptabilité nationale",
+    "section": "",
+    "text": "Baccaro, Lucio, et Sinisa Hadziabdic. 2024. « Operationalizing Growth Models ». Quality & Quantity 58 (2): 1325‑60. https://doi.org/10.1007/s11135-023-01685-w.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale"
     ]
   }
 ]
