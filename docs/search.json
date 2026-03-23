@@ -1194,7 +1194,7 @@
     "href": "10mars_cours3.html#exercice-3",
     "title": "10 Mars. Comptabilité nationale",
     "section": "Exercice 3",
-    "text": "Exercice 3\n\nTéléchargez le tableau Éxcel des données du PIB selon l’approche revenu sur la page du SECO\nCalculez la part du profit et des salaires dans la valeur ajoutée (PIB) pour chaque année depuis 1990.\nFaites la somme entre la part des salaires et des profits, que remarquez-vous ? En partant de l’équation \\(PIB \\equiv W+R\\), quelle devrait normalement être la valeur de cette somme ? Comment expliquer cet écart ?\nCorrigez la série pour qu’elle s’additionne à 1\nAllez sur DBnomics. Sous “providers”, allez sur les données de l’AMECO et cherchez les données sur la part des salaires (“adjusted wage share”). Filtrer les données pour n’avoir que la part des salaires pour la Suisse.\nComparez la part des salaires de l’AMECO avec la série que vous avez calculé. Comment expliquer cet écart ?",
+    "text": "Exercice 3\n\nTéléchargez le tableau Éxcel des données du PIB selon l’approche revenu sur la page du SECO\nCalculez la part du profit et des salaires dans la valeur ajoutée (PIB) pour chaque année depuis 1990 (vous pouvez le faire directement dans excel, copier coller la feuille nom_y entièrement dans une nouvelle feuille)\nFaites la somme entre la part des salaires et des profits, que remarquez-vous ? En partant de l’équation \\(PIB \\equiv W+R\\), quelle devrait normalement être la valeur de cette somme ? Comment expliquer cet écart ?\nCorrigez la série pour qu’elle s’additionne à 1\nAllez sur DBnomics. Sous “providers”, allez sur les données de l’AMECO et cherchez les données sur la part des salaires (“adjusted wage share”). Filtrer les données pour n’avoir que la part des salaires pour la Suisse. (voir slides suivantes pour une intro a dbnomics)\nComparez la part des salaires de l’AMECO avec la série que vous avez calculé. Comment expliquer cet écart ?",
     "crumbs": [
       "10 Mars. Comptabilité nationale"
     ]
@@ -1225,6 +1225,56 @@
     "title": "10 Mars. Comptabilité nationale",
     "section": "",
     "text": "Baccaro, Lucio, et Sinisa Hadziabdic. 2024. « Operationalizing Growth Models ». Quality & Quantity 58 (2): 1325‑60. https://doi.org/10.1007/s11135-023-01685-w.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#dbnomics",
+    "href": "10mars_cours3.html#dbnomics",
+    "title": "10 Mars. Comptabilité nationale",
+    "section": "Dbnomics",
+    "text": "Dbnomics\n\nDbnomics recense en une seule plateforme les principales bases de données macroéconomiques (de l’OCDE, du FMI, de la Banque Mondiale, d’EUROSTAT…) ==&gt; très utile pour trouver rapidement des données\nLe package rdbnomics permet d’importer ces données directement dans R (installation nécessaire install.packages(\"rdbnomics\"))\nL’importation de données se fait avec la fonction rdb dans laquelle il faut préciser le nom de code de la variable",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#dbnomics-1",
+    "href": "10mars_cours3.html#dbnomics-1",
+    "title": "10 Mars. Comptabilité nationale",
+    "section": "dbnomics",
+    "text": "dbnomics\n\nIl faut préciser le chemin vers la variable, qui contient le nom de la base de données (AMECO) le code la variable (UQGD) et le pays concerné (CHE.1.0.0.0.UQGD)",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#dbnomics-2",
+    "href": "10mars_cours3.html#dbnomics-2",
+    "title": "10 Mars. Comptabilité nationale",
+    "section": "dbnomics",
+    "text": "dbnomics\n\nlibrary(tidyverse)\nlibrary(rdbnomics)\n\ndata = rdb(ids = \"AMECO/UQGD/CHE.1.0.0.0.UQGD\")\nglimpse(data)\n\nRows: 68\nColumns: 17\n$ `@frequency`    &lt;chr&gt; \"annual\", \"annual\", \"annual\", \"annual\", \"annual\", \"ann…\n$ Country         &lt;chr&gt; \"Switzerland\", \"Switzerland\", \"Switzerland\", \"Switzerl…\n$ dataset_code    &lt;chr&gt; \"UQGD\", \"UQGD\", \"UQGD\", \"UQGD\", \"UQGD\", \"UQGD\", \"UQGD\"…\n$ dataset_name    &lt;chr&gt; \"Gross operating surplus: total economy :- Adjusted fo…\n$ freq            &lt;chr&gt; \"a\", \"a\", \"a\", \"a\", \"a\", \"a\", \"a\", \"a\", \"a\", \"a\", \"a\",…\n$ Frequency       &lt;chr&gt; \"Annually\", \"Annually\", \"Annually\", \"Annually\", \"Annua…\n$ geo             &lt;chr&gt; \"che\", \"che\", \"che\", \"che\", \"che\", \"che\", \"che\", \"che\"…\n$ indexed_at      &lt;dttm&gt; 2025-11-18 01:13:10, 2025-11-18 01:13:10, 2025-11-18 …\n$ original_period &lt;chr&gt; \"1960\", \"1961\", \"1962\", \"1963\", \"1964\", \"1965\", \"1966\"…\n$ original_value  &lt;chr&gt; \"NA\", \"NA\", \"NA\", \"NA\", \"NA\", \"NA\", \"NA\", \"NA\", \"NA\", …\n$ period          &lt;date&gt; 1960-01-01, 1961-01-01, 1962-01-01, 1963-01-01, 1964-…\n$ provider_code   &lt;chr&gt; \"AMECO\", \"AMECO\", \"AMECO\", \"AMECO\", \"AMECO\", \"AMECO\", …\n$ series_code     &lt;chr&gt; \"CHE.1.0.0.0.UQGD\", \"CHE.1.0.0.0.UQGD\", \"CHE.1.0.0.0.U…\n$ series_name     &lt;chr&gt; \"Annually – Mrd CHF – Switzerland\", \"Annually – Mrd CH…\n$ unit            &lt;chr&gt; \"mrd-chf\", \"mrd-chf\", \"mrd-chf\", \"mrd-chf\", \"mrd-chf\",…\n$ Unit            &lt;chr&gt; \"Mrd CHF\", \"Mrd CHF\", \"Mrd CHF\", \"Mrd CHF\", \"Mrd CHF\",…\n$ value           &lt;dbl&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…\n\n\nSeules les variables original_period (les années) et value (la valeur de la variable, ici le revenu brut d’exploitation) nous intéresse ==&gt; selectionner ces deux colonnes avec select(). On peut aussi remarquer que original_period est reconnue (codée) en tant que variable catégorielle (chr), on peut éventuellement la transformer en variable numérique.",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#dbnomics-3",
+    "href": "10mars_cours3.html#dbnomics-3",
+    "title": "10 Mars. Comptabilité nationale",
+    "section": "Dbnomics",
+    "text": "Dbnomics\n\n\nlibrary(tidyverse)\nlibrary(rdbnomics)\n\ndata = rdb(ids = \"AMECO/UQGD/CHE.1.0.0.0.UQGD\") %&gt;% \n  select(original_period, value) %&gt;% \n  drop_na() %&gt;% # enlever les valeurs manquantes\n  rename(\n    year = original_period,\n    gross_op_surplus = value\n  )\n\ndata$year = as.numeric(data$year)\n\ndata\n\n\n     year gross_op_surplus\n    &lt;num&gt;            &lt;num&gt;\n 1:  1991         131.4259\n 2:  1992         132.3560\n 3:  1993         135.1540\n 4:  1994         143.3292\n 5:  1995         139.8211\n 6:  1996         141.6656\n 7:  1997         143.3909\n 8:  1998         149.3735\n 9:  1999         148.0316\n10:  2000         160.3972\n11:  2001         157.7087\n12:  2002         151.1652\n13:  2003         157.6683\n14:  2004         169.9141\n15:  2005         179.9093\n16:  2006         198.0149\n17:  2007         211.6183\n18:  2008         219.5090\n19:  2009         203.4236\n20:  2010         219.1491\n21:  2011         217.2874\n22:  2012         217.1144\n23:  2013         217.8670\n24:  2014         223.0713\n25:  2015         220.6816\n26:  2016         226.2993\n27:  2017         226.7867\n28:  2018         242.9762\n29:  2019         239.5447\n30:  2020         227.3129\n31:  2021         257.9451\n32:  2022         273.0110\n33:  2023         267.8472\n34:  2024         272.5324\n35:  2025         272.8377\n36:  2026         277.6783\n37:  2027         281.8809\n     year gross_op_surplus\n    &lt;num&gt;            &lt;num&gt;",
+    "crumbs": [
+      "10 Mars. Comptabilité nationale"
+    ]
+  },
+  {
+    "objectID": "10mars_cours3.html#dbnomics-4",
+    "href": "10mars_cours3.html#dbnomics-4",
+    "title": "10 Mars. Comptabilité nationale",
+    "section": "Dbnomics",
+    "text": "Dbnomics\n\ndata %&gt;% \n  ggplot(aes(x = year, y = gross_op_surplus))+\n  geom_point()+ \n  geom_line()+\n  theme_minimal(base_size = 13)",
     "crumbs": [
       "10 Mars. Comptabilité nationale"
     ]

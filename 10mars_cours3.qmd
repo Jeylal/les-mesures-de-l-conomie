@@ -454,20 +454,84 @@ Les trois approches que nous avons passées en revue: approches production, dép
 (2) $PIB \equiv C+I+G+X-M$
 (3) $PIB \equiv W+R$
 
-
 ## Exercice 3 {.smaller}
 
 -   Téléchargez le tableau Éxcel des données du PIB selon l'approche revenu sur la page du SECO
 
--   Calculez la part du profit et des salaires dans la valeur ajoutée (PIB) pour chaque année depuis 1990.
+-   Calculez la part du profit et des salaires dans la valeur ajoutée (PIB) pour chaque année depuis 1990 (vous pouvez le faire directement dans excel, copier coller la feuille nom_y entièrement dans une nouvelle feuille)
 
 -   Faites la somme entre la part des salaires et des profits, que remarquez-vous ? En partant de l'équation $PIB \equiv W+R$, quelle devrait normalement être la valeur de cette somme ? Comment expliquer cet écart ?
 
 -   Corrigez la série pour qu'elle s'additionne à 1
 
--   Allez sur DBnomics. Sous "providers", allez sur les données de l'AMECO et cherchez les données sur la part des salaires ("adjusted wage share"). Filtrer les données pour n'avoir que la part des salaires pour la Suisse.
+-   Allez sur DBnomics. Sous "providers", allez sur les données de l'AMECO et cherchez les données sur la part des salaires ("adjusted wage share"). Filtrer les données pour n'avoir que la part des salaires pour la Suisse. (voir slides suivantes pour une intro a dbnomics)
 
 -   Comparez la part des salaires de l'AMECO avec la série que vous avez calculé. Comment expliquer cet écart ?
+
+## Dbnomics
+
+-   Dbnomics recense en une seule plateforme les principales bases de données macroéconomiques (de l'OCDE, du FMI, de la Banque Mondiale, d'EUROSTAT...) ==\> très utile pour trouver rapidement des données
+
+-   Le package rdbnomics permet d'importer ces données directement dans R (installation nécessaire `install.packages("rdbnomics")`)
+
+-   L'importation de données se fait avec la fonction `rdb` dans laquelle il faut préciser le nom de code de la variable
+
+## dbnomics
+
+[![](images/dbnomicsexample.png){width="706"}](https://db.nomics.world/AMECO/UQGD?dimensions=%7B%22geo%22%3A%5B%22che%22%5D%7D)
+
+Il faut préciser le chemin vers la variable, qui contient le nom de la base de données (AMECO) le code la variable (UQGD) et le pays concerné (CHE.1.0.0.0.UQGD)
+
+## dbnomics {.smaller}
+
+```{r}
+#| echo: true
+
+library(tidyverse)
+library(rdbnomics)
+
+data = rdb(ids = "AMECO/UQGD/CHE.1.0.0.0.UQGD")
+glimpse(data)
+```
+
+Seules les variables original_period (les années) et value (la valeur de la variable, ici le revenu brut d'exploitation) nous intéresse ==> selectionner ces deux colonnes avec `select()`. On peut aussi remarquer que original_period est reconnue (codée) en tant que variable catégorielle (chr), on peut éventuellement la transformer en variable numérique.
+
+## Dbnomics
+
+```{r}
+#| echo: true
+#| output-location: column-fragment
+
+library(tidyverse)
+library(rdbnomics)
+
+data = rdb(ids = "AMECO/UQGD/CHE.1.0.0.0.UQGD") %>% 
+  select(original_period, value) %>% 
+  drop_na() %>% # enlever les valeurs manquantes
+  rename(
+    year = original_period,
+    gross_op_surplus = value
+  )
+
+data$year = as.numeric(data$year)
+
+data
+```
+
+## Dbnomics
+
+```{r}
+#| echo: true
+
+
+data %>% 
+  ggplot(aes(x = year, y = gross_op_surplus))+
+  geom_point()+ 
+  geom_line()+
+  theme_minimal(base_size = 13)
+
+```
+
 
 ## 
 
