@@ -123,8 +123,6 @@ data4 %>%
 data5
 ```
 
-
-
 ```{r}
 library(viridis)
 
@@ -146,10 +144,10 @@ moyennes_contributions = data4 %>%
   drop_na() %>% 
   summarise(
     "Consommation" = mean(contr_c),
-    "Iinvestissement" = mean(contr_i),
+    "Investissement" = mean(contr_i),
     "Dépenses publiques" = mean(contr_g),
     "Exportations" = mean(contr_x),
-    "Importations" = mean(contr_c)
+    "Importations" = mean(contr_m)
   ) %>% 
   pivot_longer(everything(),values_to = "Contributions moyennes 1980-2025", names_to = "Composante")
 
@@ -172,7 +170,7 @@ moyennes_contributions_1980_2008 = data4 %>%
     "Iinvestissement" = mean(contr_i),
     "Dépenses publiques" = mean(contr_g),
     "Exportations" = mean(contr_x),
-    "Importations" = mean(contr_c),
+    "Importations" = mean(contr_m),
     "Taux de croissance moyen" = mean(y)
   ) %>% 
   pivot_longer(everything(),values_to = "Contributions moyennes 1980-2008", names_to = "Composante")
@@ -185,7 +183,7 @@ moyennes_contributions_2009_2025 = data4 %>%
     "Iinvestissement" = mean(contr_i),
     "Dépenses publiques" = mean(contr_g),
     "Exportations" = mean(contr_x),
-    "Importations" = mean(contr_c),
+    "Importations" = mean(contr_m),
     "Taux de croissance moyen" = mean(y)
   ) %>% 
   pivot_longer(everything(), values_to = "Contributions moyennes 2009-2025", names_to = "Composante")
@@ -240,8 +238,6 @@ Nous pouvons voir que, pour certaines périodes, les contributions relatives pre
 
 Voici comment l'on peut identifier les années qui posent problème dans le calcul des contributions relatives:
 
-
-
 ```{r}
 
 moyennes_contributions_1980_2008 = data5 %>% 
@@ -252,7 +248,7 @@ moyennes_contributions_1980_2008 = data5 %>%
     "Iinvestissement" = mean(contr_i),
     "Dépenses publiques" = mean(contr_g),
     "Exportations" = mean(contr_x),
-    "Importations" = mean(contr_c)
+    "Importations" = mean(contr_m)
   ) %>% 
   pivot_longer(everything(),values_to = "Contributions moyennes 1980-2008", names_to = "Composante")
 
@@ -261,10 +257,10 @@ moyennes_contributions_2009_2025 = data5 %>%
   filter(annees %in% c(2009:2025)) %>% 
   summarise(
     "Consommation" = mean(contr_c),
-    "Iinvestissement" = mean(contr_i),
+    "Investissement" = mean(contr_i),
     "Dépenses publiques" = mean(contr_g),
     "Exportations" = mean(contr_x),
-    "Importations" = mean(contr_c)
+    "Importations" = mean(contr_m)
   ) %>% 
   pivot_longer(everything(), values_to = "Contributions moyennes 2009-2025", names_to = "Composante")
 
@@ -278,21 +274,3 @@ moyennes_contributions2 %>%
   gt()
 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

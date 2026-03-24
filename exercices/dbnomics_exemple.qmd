@@ -1,0 +1,29 @@
+---
+title: "Part salaire AMECO"
+format: html
+editor: visual
+---
+
+```{r}
+library(rdbnomics)
+library(tidyverse)
+
+data <- rdb(ids = "AMECO/ALCD0/CHE.1.0.0.0.ALCD0") %>% 
+  select(original_period, value) %>% 
+  drop_na() %>% 
+  rename(
+    year = original_period,
+    part_salaire_ameco = value
+  ) 
+
+glimpse(data)
+
+data$year = as.numeric(data$year)
+
+
+data %>% 
+  ggplot(aes(x = year, y = part_salaire_ameco))+
+  geom_line()
+
+```
+
