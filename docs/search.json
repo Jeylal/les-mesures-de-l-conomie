@@ -884,7 +884,7 @@
     "href": "10mars_cours3.html#approche-production-du-pib",
     "title": "10 Mars. Comptabilité nationale",
     "section": "Approche production du PIB",
-    "text": "Approche production du PIB\n\\[PIB = \\sum valeurs\\ ajoutées \\\\ - \\sum consommations \\ intermédiaires\\\\ + taxes \\ sur \\ les \\ produits \\\\ - subventions \\ sur \\ les \\ produits\\]",
+    "text": "Approche production du PIB\n\\[PIB = \\sum output \\\\ - \\sum consommations \\ intermédiaires\\\\ + taxes \\ sur \\ les \\ produits \\\\ - subventions \\ sur \\ les \\ produits\\]",
     "crumbs": [
       "10 Mars. Comptabilité nationale"
     ]
