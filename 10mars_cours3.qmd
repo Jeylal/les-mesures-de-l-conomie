@@ -148,7 +148,7 @@ Les "acteurs" de la comptabilité nationale sont les "secteurs institutionnels" 
 
 ## Approche production du PIB
 
-$$PIB = \sum valeurs\ ajoutées \\ - \sum consommations \ intermédiaires\\ + taxes \ sur \ les \ produits \\ - subventions \ sur \ les \ produits$$
+$$PIB = \sum output \\ - \sum consommations \ intermédiaires\\ + taxes \ sur \ les \ produits \\ - subventions \ sur \ les \ produits$$
 
 ## Approche dépense du PIB
 
