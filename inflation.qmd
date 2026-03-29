@@ -51,19 +51,19 @@ ipc_stathistsuisse %>%
 
 -   Dans *The Making of Index Numbers*, Fisher teste environ 134 indices des prix et propose son propre indice, qu'il estimait pouvoir résumer à elle seule l'évolution générale des prix dans une économie donnée.
 
-- La publication de ce livre et l'activisme scientifique de Fisher va donner lieu à un vif débat sur la construction et l'usage des indices des prix
+-   La publication de ce livre et l'activisme scientifique de Fisher va donner lieu à un vif débat sur la construction et l'usage des indices des prix
 
 ## Le débat sur l'indice idéal des prix
 
-- Approche néoclassique (Fisher) vs approche institutionaliste (Wesley Clair Mitchell) de l'économie, qui reflètent deux visions différentes de la science (économique)
+-   Approche néoclassique (Fisher) vs approche institutionaliste (Wesley Clair Mitchell) de l'économie, qui reflètent deux visions différentes de la science (économique)
 
-- Ce débat autour de l'indice idéal de Fisher marque le début du calcul systématique d'indices de prix dans les administrations publiques (par exemple au National Bureau of Economic Research et au Bureau of Labor Statistics).
+-   Ce débat autour de l'indice idéal de Fisher marque le début du calcul systématique d'indices de prix dans les administrations publiques (par exemple au National Bureau of Economic Research et au Bureau of Labor Statistics).
 
 ## Le débat sur l'indice idéal des prix {.smaller}
 
 ::::: columns
 ::: column
-Néoclassique (Fisher) Organisation: société d'économétrie, principales revues scientifiques d'économie
+Néoclassique (Fisher)
 
 -   L'économie est une science purement mathématique
 
@@ -83,12 +83,11 @@ Institutionaliste (Mitchell)
 :::
 :::::
 
-
 ## Principes généraux des indices {.smaller}
 
 ### Indices élémentaires
 
-Tous les indices de prix sont fondés sur l'aggrégation des indices élémentaires de prix, qui prennent la forme suivante: 
+Tous les indices de prix sont fondés sur l'aggrégation des indices élémentaires de prix, qui prennent la forme suivante:
 
 $$
 I(p_{i})_{t/0} = \frac{p_{it}}{p_{i0}}
@@ -98,14 +97,13 @@ Avec $I(p_i)_{t/0}$ L'indice élémentaire du bien $i$, $p_{it}$ le prix du bien
 
 Étant donné qu'en pratique il est impossible de récolter une liste exhaustive de tous les prix, sont récoltés les prix d'un "panier de biens" constitués de $k$ biens et services représentatifs d'un ménage "moyen".
 
-
 ## Coefficient budgétaire {.smaller}
 
-- Que se passe-t-il si l'on fait directement la moyenne de tous les indices élémentaires $I(p_i)_{t/0}$ ? Nous aurions un indice des prix dans lequel tous les biens du panier ont la même importance. Or, tous les biens n'ont pas la même importance dans les dépenses totales des ménages.
+-   Que se passe-t-il si l'on fait directement la moyenne de tous les indices élémentaires $I(p_i)_{t/0}$ ? Nous aurions un indice des prix dans lequel tous les biens du panier ont la même importance. Or, tous les biens n'ont pas la même importance dans les dépenses totales des ménages.
 
-- Les enquêtes sur le budget des ménages permettent d'évaluer la part des biens et services dans les dépenses totales des ménages, à savoir le coefficient budgétaire $w_i$
+-   Les enquêtes sur le budget des ménages permettent d'évaluer la part des biens et services dans les dépenses totales des ménages, à savoir le coefficient budgétaire $w_i$
 
-- Le coefficient budgétaire sert de coefficient de pondération pour chaque bien du panier-type.
+-   Le coefficient budgétaire sert de coefficient de pondération pour chaque bien du panier-type.
 
 ## Pondération des indices élémentaires {.smaller}
 
@@ -117,19 +115,23 @@ $$
 
 Les indices, par exemple de Laspeyres et Paasche, diffèrent dans leur conception des coefficients budgétaires $w_i$
 
+-   Le coefficent budgétaire de l'indice de Laspeyres $w_{i0} = \frac{p_{i0}q_{i0}}{\sum^k_{i = 1}p_{i0}q_{i0}}$ définit la pondération du bien $i$ par sa part dans les dépenses totales à l'année de base $0$. Les coefficients budgétaires sont donc fixés à l'année de base.
+
+-   L'indice de Paasche utilise quant à lui les coefficients budgétaires de l'année courante: $w_{it} = \frac{p_{it}q_{it}}{\sum^k_{i = 1}p_{it}q_{it}}$
+
 ## L'indice de Laspeyres {.smaller}
 
-- l'indice de Laspeyres consiste à pondérer les indices élémentaires par les coefficients budgétaires fixés à la période de base. Cela revient à fixer les quantités à la période de base et faire varier les prix:
+-   l'indice de Laspeyres consiste à pondérer les indices élémentaires par les coefficients budgétaires fixés à la période de base. Cela revient à fixer les quantités à la période de base et faire varier les prix:
 
 $$
 L(p)_{t/i} = \frac{\sum^k_{i=1}p_{it}q_{i0}}{\sum^k_{i=1}p_{i0}q_{i0}}
 $$
 
-- Cela implique des coefficent budgétaires $w_i$ fixé à l'année de base $0$, l'indice de Laspeyres fait l'hypothèse que la structure de la consommation du panier de bien est fixe à travers le temps
+-   Cela implique des coefficent budgétaires $w_i$ fixé à l'année de base $0$, l'indice de Laspeyres fait l'hypothèse que la structure de la consommation du panier de bien est fixe à travers le temps
 
-- L'avantage de cet indice est qu'il est le moins couteux à calculer: on a seulement besoin des quantités à la période de base et des prix au temps de base et au temps courant
+-   L'avantage de cet indice est qu'il est le moins couteux à calculer: on a seulement besoin des quantités à la période de base et des prix au temps de base et au temps courant
 
-==> La plupart des indices des prix à la consommation sont des indices Laspeyriens
+==\> La plupart des indices des prix à la consommation sont des indices Laspeyriens
 
 ## Indice de Paasche
 
@@ -143,7 +145,7 @@ $$
 
 Le déflateur du PIB est un indice de Paasche, étendu à tous les biens et services considérés dans le calcul du PIB
 
-- En outre, le dénominateur de l'indice de Paasche est le PIB réel
+-   En outre, le dénominateur de l'indice de Paasche est le PIB réel
 
 $$
 PIB_{déflateur} = \frac{PIB_{nominal}}{PIB_{réel}}
@@ -151,11 +153,11 @@ $$
 
 ## Indice "idéal" de Fisher {.smaller}
 
-- L'indice de Laspeyres fixe la structure (pondération) de la consommation à la période de base et donc surestime l'inflation, car les ménages peuvent adapter leur consommation par substitution des biens devenus trop chers
+-   L'indice de Laspeyres fixe la structure (pondération) de la consommation à la période de base et donc surestime l'inflation, car les ménages peuvent adapter leur consommation par substitution des biens devenus trop chers
 
-- L'indice de Paasche, au contraire, s'adapte directement aux effets de substitutions et donc sous-estime l'inflation
+-   L'indice de Paasche, au contraire, s'adapte directement aux effets de substitutions et donc sous-estime l'inflation
 
-- Fisher considérait par conséquent que "l'indice idéal" était la moyenne géométrique entre ces deux indices:
+-   Fisher considérait par conséquent que "l'indice idéal" était la moyenne géométrique entre ces deux indices:
 
 $$
 F(p)_{t/0} = (L(p)_{t/i} * P(p)_{t/i})^\frac{1}{2}
@@ -163,11 +165,11 @@ $$
 
 ## Indices chaînes {.smaller}
 
-- Les indices de prix (Laspeyres, Paasche, Fisher) sont très sensibles à la période de base retenue
-- Hypothèse que le panier-type de bien de change pas au cours du temps
-- Au cours du temps, de nouvelles habitudes de consommation apparaissent
-- Les indice-chaînes permettent de mettre annuellement à jour les habitudes de consommations:
-    1. On part d'une année de base, mais au lieu de fixer prix ou quantités à cette année de base, chaque indice est calculé aux prix ou quantités de l'année précédente
+-   Les indices de prix (Laspeyres, Paasche, Fisher) sont très sensibles à la période de base retenue
+-   Hypothèse que le panier-type de bien de change pas au cours du temps
+-   Au cours du temps, de nouvelles habitudes de consommation apparaissent
+-   Les indice-chaînes permettent de mettre annuellement à jour les habitudes de consommations:
+    1.  On part d'une année de base, mais au lieu de fixer prix ou quantités à cette année de base, chaque indice est calculé aux prix ou quantités de l'année précédente
 
 ## Exemple Indices chaînes Laspeyres (2) {.smaller}
 
@@ -175,26 +177,134 @@ Pour un indice en chaîne Laspeyres partant de l'année $0$:
 
 $$
 IC(p)_{t/0} = L(p)_{t/t-1}*L(p)_{t-1/0}
-$$
-Néanmoins, le défaut des indices en chaîne est la *perte d'addivité*: il n'est pas conseillé par exemple de calculer les contributions à la croissance avec des comptes nationaux déflatés par un indice en chaîne.
+$$ Néanmoins, le défaut des indices en chaîne est la *perte d'addivité*: il n'est pas conseillé par exemple de calculer les contributions à la croissance avec des comptes nationaux déflatés par un indice en chaîne.
 
-# Exercice
+## Les indices reflètent-ils vraiment l'expérience des consommateurs ?
 
-## Calculs des indices Paasche et Laspeyres
+[![https://fr.comparis.ch/finanzen/wirtschaft/konjunktur/konsumentenpreisindex](images/inflation/inflation_ressentie_suisse.png){fig-align="center" width="516"}](https://fr.comparis.ch/finanzen/wirtschaft/konjunktur/konsumentenpreisindex)
 
+## L'écart entre IPC et inflation percue
 
-# Comparaison internationale du coût de la vie
+[![https://shs.cairn.info/l-indice-des-prix-a-la-consommation--9782707199317-page-53?lang=fr#](images/inflation/catrice1.png){fig-align="center" width="538"}](https://shs.cairn.info/l-indice-des-prix-a-la-consommation--9782707199317-page-53?lang=fr#)
 
-## Parité de pouvoir d'achat (IPP)
+## Indices alternatifs
 
+[![https://shs.cairn.info/l-indice-des-prix-a-la-consommation--9782707199317-page-53?lang=fr#](images/inflation/catrice2.png){width="557"}](https://shs.cairn.info/l-indice-des-prix-a-la-consommation--9782707199317-page-53?lang=fr#)
 
+## Effet qualité {.smaller}
 
+-   Ces dernières décennies, un débat important sur le calcul de l'indice des prix porte sur la prise en compte des effets qualités.
 
+-   En effet, imaginons que le prix d'un ordinateur portable augmente de 10% d'une année à l'autre: cette augmentation est-elle uniquement due a une augmentation "pure" du prix, ou reflète-t-elle aussi une augmentation dans la qualité de l'ordinateur ?
 
+-   Si on reconnait que l'augmentation du prix d'un bien reflète aussi une amélioration qualitative du bien, cela veut dire que l'inflation du bien est surestimée (si on ne prend en compte l'effet qualité)
 
+-   La prise en compte ou non de l'effet qualité suscite de nombreux débats. Elle est principalement critiquée comme un moyen de rendre l'inflation moins importante qu'elle ne le serait réellement.
 
+## Débats sur les effets qualité {.smaller}
 
+-   Les premièrs débats visant à prendre en compte l'effet qualité dans les statistiques remontent à la période de la deuxième guerre mondiale aux USA
 
+-   Dans un contexte de déterioration des produits à cause de la guerre, les syndicats des travailleurs étatsuniens critiquaient la non-prise en compte de la *déterioration* de la qualité par le Bureau de la Statistique, menant selon eux à une sous-estimation de l'inflation
 
+-   Situation inverse à la fin du 19eme avec la commission Boskin (1996): l'inflation est surestimée par la non-prise en compte de l'amélioration qualitative des biens et service
+
+## Effet qualité: exemple de méthode {.smaller}
+
+::::: columns
+-   Chainage par chevauchement
+
+::: column
+Deux biens A et B ayant la même fonction et que l'on peut observer en même temps, mais B étant récemment introduit et étant de meilleure qualité (par exemple la passage à la télévision en couleur).
+
+-   B est introduit dans le panier-type et remplace A, mais on soustrait à B la différence de valeur qu'il a avec A
+:::
+
+::: column
+[![](images/inflation/substitution_chevauchement.png){fig-align="right" width="482"}](https://www.bfs.admin.ch/bfs/fr/home/statistiques/prix/indice-prix-consommation.assetdetail.20984926.html)
+:::
+:::::
+
+## Effet qualité: exemple de méthode {.smaller}
+
+::::: columns
+Chainage par chevauchement
+
+::: column
+Deux biens A et B ayant la même fonction et que l'on peut observer en même temps, mais B étant récemment introduit et étant de meilleure qualité (par exemple la passage à la télévision en couleur).
+
+-   B est introduit dans le panier-type et remplace A, mais on soustrait à B la différence de valeur qu'il a avec A
+:::
+
+::: column
+[![](images/inflation/substitution_chevauchement.png){fig-align="right" width="482"}](https://www.bfs.admin.ch/bfs/fr/home/statistiques/prix/indice-prix-consommation.assetdetail.20984926.html)
+:::
+:::::
+
+## Imputation par la moyenne de classe {.smaller}
+
+::::: columns
+::: column
+Lorsque l'on n'a pas eu l'occasion d'observer les prix de A et B simultanément, il faut estimer ce qu'aurait été le prix de B juste avant qu'il ne remplace A. Si les statisticiens estiment que le prix de B suit le prix de biens similaires (de la même "variété"), ils estiment le prix de B à partir du taux de croissance des prix des biens similaire (indice de la variété à droite).
+:::
+
+::: column
+[![](images/inflation/moyenneclasse.png){fig-align="right" width="482"}](https://www.bfs.admin.ch/bfs/fr/home/statistiques/prix/indice-prix-consommation.assetdetail.20984926.html)
+:::
+:::::
+
+## Imputation par estimation de fonction hédonique {.smaller}
+
+::::: columns
+::: column
+Lorsque l'on n'a pas eu l'occasion d'observer les prix de A et B simultanément, on peut estimer ce qu'aurait été le prix de B juste avant qu'il ne remplace A en faisant une estimation à partir de ses caractéristiques. Concrètement, cela se fait à travers l'analyse de régression: on estime une "fonction hédonique": le prix du bien B en fonction de ses caractéristiques.
+:::
+
+::: column
+[![](images/inflation/hedonique.png){fig-align="right" width="482"}](https://www.bfs.admin.ch/bfs/fr/home/statistiques/prix/indice-prix-consommation.assetdetail.20984926.html)
+:::
+:::::
+
+# Indice des prix à la consommation en Suisse
+
+## Intérêt de l'IPC {.smaller}
+
+-   L'un des indicateurs les plus fréquemment solicités, que ce soit par les acteurs politiques, les institutions et milieux économiques ou encore les ménages.
+
+-   Les résultats de l'IPC servent par exemple à:
+
+    -   L'indexation des salaires, des rentes, des pensions...
+    -   La politique monétaire de la banque centrale
+    -   Déflater les principales variables économiques (par exemple les salaires ou la consommation)
+
+==\> Il est donc important de connaitre la méthodologie derrière le calcul de l'IPC
+
+## Le panier-type {.smaller}
+
+::::: columns
+::: column
+-   L'IPC couvre les dépenses de consommation des ménages privés qui résident en Suisse de manière permanente en définissant un panier-type regroupant tous les biens et services représentatifs de la consommation d'un ménage suisse.
+
+-   Le panier-type est construit à partir des résultats de l'enquête sur le budget des ménages (EBM) et est mis à jour à chaque révision de l'indice (en général tous les 5 ans)
+:::
+
+::: column
+[![](images/inflation/ponderations.png){width="553"}](https://www.bfs.admin.ch/bfs/fr/home/statistiques/prix/indice-prix-consommation.assetdetail.20984926.html)
+:::
+:::::
+
+## Récolte des données {.smaller}
+
+::::: columns
+::: column
+-   Relevé régional: récolte de prix par un institut de sondage privé dans environ 8000 points de vente répartis dans onze régions
+
+-   Relevé centralisé: concerne les prix administrés ou semi administrés (transport, télecommunications, santé...). Récolte par les collaborateurs de l'OFS dans 7000 points de vente.
+:::
+
+::: column
+![](images/inflation/cantons.png){width="487"}
+:::
+:::::
 
 
