@@ -176,10 +176,10 @@ $$
 Pour un indice en chaîne Laspeyres partant de l'année $0$:
 
 $$
-IC(L)_{t/0} = L(p)_{t/t-1}*L(p)_{t-1/0}
-$$
+IC(p)_{t/0} = L(p)_{t/t-1}*L(p)_{t-1/0}
+$$ 
 
-Néanmoins, le défaut des indices en chaîne est la *perte d'addivité*: il n'est pas conseillé par exemple de calculer les contributions à la croissance avec des comptes nationaux déflatés par un indice en chaîne.
+Pour la comptabilité nationale, le défaut des indices en chaîne est la *perte d'addivité*: si l'on applique les indice en chaine à $Y = C+I+G+NX$, les composantes ne s'additionnent plus au PIB (Y).
 
 ## Les indices reflètent-ils vraiment l'expérience des consommateurs ?
 
@@ -210,6 +210,22 @@ Néanmoins, le défaut des indices en chaîne est la *perte d'addivité*: il n'e
 -   Dans un contexte de déterioration des produits à cause de la guerre, les syndicats des travailleurs étatsuniens critiquaient la non-prise en compte de la *déterioration* de la qualité par le Bureau de la Statistique, menant selon eux à une sous-estimation de l'inflation
 
 -   Situation inverse à la fin du 19eme avec la commission Boskin (1996): l'inflation est surestimée par la non-prise en compte de l'amélioration qualitative des biens et service
+
+## Effet qualité: exemple de méthode {.smaller}
+
+::::: columns
+-   Chainage par chevauchement
+
+::: column
+Deux biens A et B ayant la même fonction et que l'on peut observer en même temps, mais B étant récemment introduit et étant de meilleure qualité (par exemple la passage à la télévision en couleur).
+
+-   B est introduit dans le panier-type et remplace A, mais on soustrait à B la différence de valeur qu'il a avec A
+:::
+
+::: column
+[![](images/inflation/substitution_chevauchement.png){fig-align="right" width="482"}](https://www.bfs.admin.ch/bfs/fr/home/statistiques/prix/indice-prix-consommation.assetdetail.20984926.html)
+:::
+:::::
 
 ## Effet qualité: exemple de méthode {.smaller}
 
@@ -289,162 +305,8 @@ Lorsque l'on n'a pas eu l'occasion d'observer les prix de A et B simultanément,
 :::
 
 ::: column
-![](images/inflation/cantons.png){width="439"}
+![](images/inflation/cantons.png){width="487"}
 :::
 :::::
 
-## Calculs et aggrégation
 
-::::: columns
-::: column
-[![](images/inflation/ecipc.png)](https://www.bfs.admin.ch/bfs/fr/home/statistiques/prix/indice-prix-consommation.assetdetail.20984926.html)
-:::
-
-::: column
-[![](images/inflation/tableau_ipc_suisse.png)](https://www.bfs.admin.ch/bfs/fr/home/statistiques/prix/indice-prix-consommation.assetdetail.20984926.html)
-:::
-:::::
-
-# Parité de pouvoir d'achat ("Purchasing Power Parity" PPP)
-
-## Intérêt {.smaller}
-
--   La PPA sert à mesurer le pouvoir d'achat réel d'une monnaie nationale et donc rendre comparable les variables macroéconomiques (notamment le PIB) entre pays et régions en corrigeant les différences de niveau des prix
-
--   Sert aussi à évaluer si une monnaie est sous-évaluée ou sur-évaluée
-
--   Même principe que pour les indices des prix, mais au lieu d'une comparaison dans le temps ==\> comparaison dans l'espace
-
-## Exemple {.smaller}
-
--   Reprenons l'indice de Paasche, en faisant l'hypothèse que nous avons qu'un seul bien $Q$. Au lieu d'une période de base 0, on choisit un pays de base de comparaison (les USA) et au lieu de t on choisit un pays dans lequel on veut corriger le niveau des prix (la Suisse).
-
-L'indice de Paasche devient:
-
-$$
-PPP = \frac{P_{ch}Q_{usa}}{P_{usa}Q_{usa}} = \frac{P_{ch}}{P_{usa}}
-$$
-
-La PPA mesure le montant de francs devant être dépensé (en Suisse) afin d'obtenir ce que 1 dollar pourrait acheter du même bien aux USA.
-
--   La PPP est un "déflateur spatial" du PIB: $PIB_{ch} = P_{ch} Q_{ch}$ \<=\> $PIB_{ch/ppp} = \frac{P_{ch} Q_{ch}}{\frac{P_{ch}}{P_{usa}}} = P_{usa}Q_{ch}$ ==\> PIB suisse exprimé en dollar
-
-## PPA et taux de changes en Suisse {.smaller}
-
--   Taux de change: combien d'unité de monnaie nationale pour une unité de monnaie étrangère $#CHF = 1USD$ , en ratio: $E = \frac{CHF}{USD}$ ==\> prix relatif des deux monnaies
-
--   PPA: combien couterait un même panier de bien $Q$ aux USA ($Q_{USA}$) s'il était consommé en Suisse $Q_{CH}$ ==\> $ppp = \frac{P_{CH}}{P_{USA}} \frac{Q_{CH}}{Q_{USA}}$ ==\> prix d'un même panier dans les deux pays, à quantité égale $Q_{CH} = Q_{USA}$
-
--   Taux de change réel $e$: combien de quantité du panier-type suisse s'échange contre une unité de ce même panier-type aux USA.
-
-$e = E/PPP = \frac{EP_{US}}{P_{CH}} = \frac{CHF *P_{US}}{USD*P_{CH}}$
-
-## PPA et taux de change {.smaller}
-
-```{r}
-#| echo: true
-#| code-fold: true
-#| code-summary: "Afficher le code"
-library(tidyverse)
-library(rdbnomics)
-
-exch = rdb("OECD/DSD_EO@DF_EO/CHE.EXCH.A") %>% 
-  select(original_period, value, REF_AREA) %>% 
-  rename(
-    year = original_period, 
-  ) %>% 
-  mutate(
-    "chf/usd" = 1/value
-  ) %>% 
-  select(year, `chf/usd`) 
-
-ppp = rdb("OECD/DSD_EO@DF_EO/CHE.PPP.A") %>% 
-  select(value) %>% 
-  rename(ppp_chf_usd = value)
-
-data = cbind(exch, ppp)
-data$year = as.numeric(data$year)
-
-
-data %>% 
-  ggplot(aes(x = year, y = ppp_chf_usd, color = "PPP= P_CH/P_US"))+
-  geom_line()+
-  geom_line(aes(x = year, y = `chf/usd`, color = "Taux de change: E = CHF/USD"))+
-  geom_line(aes(x = year, y = `chf/usd`/ppp_chf_usd, color = "Taux de change réel = E/PPP"))+
-  theme_minimal()+
-  theme(legend.position = "top",
-        legend.title = element_blank())+
-  guides(
-    color = guide_legend(nrow = 2))+
-  labs(x = "", y = "")
-```
-
-## PIB en PPA {.smaller}
-
-```{r}
-#| echo: true
-#| code-fold: true
-#| code-summary: "Afficher le code"
-
-gdp = rdb("OECD/DSD_EO@DF_EO/CHE.GDP.A") %>% 
-  select(value) %>% 
-  mutate(year = 1965:2027) %>% 
-  rename(gdp_nominal = value)
-
-data = data %>% 
-  left_join(gdp, by = "year")
-
-
-data %>% 
-  filter(year %in% c(1965:2025)) %>% 
-  ggplot(aes(x = year, y = log(gdp_nominal), color = "PIB nominal"))+
-  geom_line()+
-  geom_line(aes(x = year, y = log(gdp_nominal/ppp_chf_usd), color = "PIB nominal /PPP"))+
-  theme_minimal()+
-  labs(y = "échelle log", x = "",
-       title = "PIB nominal (en CHF) et PIB en PPP",
-       subtitle = "Suisse, 1965-2025")
-```
-
--   On obtient un PIB suisse comparable avec celui des Etats-Unis (ainsi que celui des autres pays pour lesquels on a aussi diviser le PIB par la même PPA)
-
--   Attention: cela corrige uniquement les différents niveaux de prix, pas de l'inflation à l'intérieur du pays
-
-## Combiner indice des prix et PPA {.smaller}
-
-```{r}
-#| echo: true
-#| code-fold: true
-#| code-summary: "Afficher le code"
-
-deflator_pib2020 = rdb("OECD/DSD_EO@DF_EO/CHE.PGDP.A") %>% 
-  select(value) %>% 
-  mutate(year = 1965:2027) %>% 
-  rename(deflator_gdp2020 = value) # importation du déflateur du PIB suisse 
-
-data = data %>% 
-  left_join(deflator_pib2020, by = "year")
-
-
-data = data %>% 
-  mutate(gdp_deflated = gdp_nominal/deflator_gdp2020, # obtenir le pib réel suisse en franc constant de 2020 ==> diviser le pib nominal par le déflateur du PIB
-         gdp_deflated_ppp = gdp_deflated/ppp_chf_usd) # obtenir le PIB réel suisse en franc constant, corrigé de la PPA ==> diviser le PIB réel constant par la PPA
-
-
-data %>% 
-  ggplot(aes(x = year, y = gdp_nominal, color = "PIB nominal"))+
-  geom_line()+
-  geom_line(aes(x = year, y = gdp_deflated, color = "PIB constant 2020"))+
-  geom_line(aes(x = year, y = gdp_deflated_ppp, color = "PIB constant 2020, PPA"))+
-  theme_minimal(base_size = 14)+
-  labs(x = "", y = "")+
-  theme(legend.position = "top")
-
-```
-
--   Afin d'obtenir une série en volume, le PIB par exemple, qui soit comparable entre pays/région il faut:
-
-1.  Déflater le PIB par le déflateur du PIB (par exemple en franc constant de 2020)
-2.  Déflater par la PPA
-
-==\> On obtient ainsi la série en volume, corrigée de la PPA
