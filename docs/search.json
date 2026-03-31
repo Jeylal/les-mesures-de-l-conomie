@@ -1,5 +1,1145 @@
 [
   {
+    "objectID": "inflation.html#linflation-dans-la-longue-durée",
+    "href": "inflation.html#linflation-dans-la-longue-durée",
+    "title": "Les mesures des prix",
+    "section": "L’inflation dans la longue durée",
+    "text": "L’inflation dans la longue durée\n\nshaikh (2016, p.62)",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#linflation-un-phénomène-moderne",
+    "href": "inflation.html#linflation-un-phénomène-moderne",
+    "title": "Les mesures des prix",
+    "section": "L’inflation: un phénomène moderne ?",
+    "text": "L’inflation: un phénomène moderne ?\nChangement fondamental dans l’évolution des prix à partir de 1940\n\nSource: statistiques historiques de la Suisse",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#cycles-inflationdéflation",
+    "href": "inflation.html#cycles-inflationdéflation",
+    "title": "Les mesures des prix",
+    "section": "Cycles inflation/déflation",
+    "text": "Cycles inflation/déflation\n\nshaikh (2016, p.62)",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#intérêt-des-indices-des-prix",
+    "href": "inflation.html#intérêt-des-indices-des-prix",
+    "title": "Les mesures des prix",
+    "section": "Intérêt des indices des prix",
+    "text": "Intérêt des indices des prix\n\nParmi des indicateurs les plus fréquemment solicités, que ce soit par les acteurs politiques, les institutions et milieux économiques, les marchés financiers ou encore les ménages.\nLes résultats de l’indice des prix à la consommation servent par exemple à:\n\nL’indexation des salaires, des rentes, des pensions…\nLa politique monétaire de la banque centrale\nDéflater les principales variables économiques (par exemple les salaires ou la consommation)\nLa prise de décision d’achat/vente de titres financiers (actions, obligations)\n\n\n==&gt; Il est donc important de connaitre la méthodologie derrière le calcul de ces indices",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#la-quête-pour-un-indice-idéal-des-prix",
+    "href": "inflation.html#la-quête-pour-un-indice-idéal-des-prix",
+    "title": "Les mesures des prix",
+    "section": "La quête pour un indice idéal des prix",
+    "text": "La quête pour un indice idéal des prix\n\nLes historiens de la pensée économiques font généralement remonter l’origine de l’institutionalisation indices des prix aux années 1920, notamment avec la publication de The Making of Index Numbers par Irving Fisher en 1922\nDans The Making of Index Numbers, Fisher teste environ 134 indices des prix et propose son propre indice, qu’il estimait pouvoir résumer à elle seule l’évolution générale des prix dans une économie donnée.\nLa publication de ce livre et l’activisme scientifique de Fisher va donner lieu à un vif débat sur la construction et l’usage des indices des prix",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#le-débat-sur-lindice-idéal-des-prix",
+    "href": "inflation.html#le-débat-sur-lindice-idéal-des-prix",
+    "title": "Les mesures des prix",
+    "section": "Le débat sur l’indice idéal des prix",
+    "text": "Le débat sur l’indice idéal des prix\n\nApproche néoclassique (Fisher) vs approche institutionaliste (Wesley Clair Mitchell) de l’économie, qui reflètent deux visions différentes de la science (économique)\nCe débat autour de l’indice idéal de Fisher marque le début du calcul systématique d’indices de prix dans les administrations publiques (par exemple au National Bureau of Economic Research et au Bureau of Labor Statistics).",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#le-débat-sur-lindice-idéal-des-prix-1",
+    "href": "inflation.html#le-débat-sur-lindice-idéal-des-prix-1",
+    "title": "Les mesures des prix",
+    "section": "Le débat sur l’indice idéal des prix",
+    "text": "Le débat sur l’indice idéal des prix\n\n\nNéoclassique (Fisher)\n\nL’économie est une science purement mathématique\nDévoilement des mécanismes économiques à travers le raisonnement déductif\nIl est possible de trouver un indice “idéal” à travers des tests mathématiques et statistiques qui pourrait être appliqué dans toute société et se focaliserait entièrement sur les prix\n\n\nInstitutionaliste (Mitchell)\n\nPriorité accordés aux faits historiques et aux observations empiriques, sans recours à priori à des théories\nPluralité des indicateurs, pas d’indice “idéal”\nDifférentes réalités et structures économiques requièrent différentes données et indicateurs, il n’existe pas de vérité universelle applicable en tout lieu en tout temps.",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#principes-généraux-des-indices",
+    "href": "inflation.html#principes-généraux-des-indices",
+    "title": "Les mesures des prix",
+    "section": "Principes généraux des indices",
+    "text": "Principes généraux des indices\nIndices élémentaires\nTous les indices de prix sont fondés sur l’aggrégation des indices élémentaires de prix, qui prennent la forme suivante:\n\\[\nI_{t/0} = \\frac{p_{it}}{p_{i0}}\n\\]\nAvec \\(I(p_i)_{t/0}\\) L’indice élémentaire du bien \\(i\\), \\(p_{it}\\) le prix du bien \\(i\\) à la période \\(t\\) et \\(p_{i0}\\) le prix du bien \\(i\\) à la période dîte de “référence” \\(0\\). Le calcul des indices élémentaires permet de normaliser le prix de différents bien et services, permettant leur aggrégation à travers le calcul d’une moyenne.\nÉtant donné qu’en pratique il est impossible de récolter une liste exhaustive de tous les prix, sont récoltés les prix d’un “panier de biens” constitués de \\(k\\) biens et services représentatifs d’un ménage “moyen”.",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#indice-de-jevons",
+    "href": "inflation.html#indice-de-jevons",
+    "title": "Les mesures des prix",
+    "section": "Indice de Jevons",
+    "text": "Indice de Jevons\nLe premier niveau d’aggrégation des indices élémentaires se fait au niveau d’un bien, d’une catégorie de bien ou d’un “poste de dépense”.\n\\[\nJ_{t/0}\n= \\left( \\prod_{i=1}^{n} \\frac{p_{it}}{p_{i0}} \\right)^{\\frac{1}{n}}\n\\]\nOn obtient l’indice élémentaire aggrégé de prix au niveau du poste de dépense (de la catégorie du bien) en faisant la moyenne géométrique des indices élémentaires. La classification et définition des différents niveaux de poste de dépense est établie par la COIOP (classification of expenditure according to purpose).\nPour simplifier, dans les slides suivantes (surout calculs des indices Laspeyres et Paasche), nous ne ferons pas de distinction entre indice élémentaire et indice élémentaire aggrégé de Jevons (donc \\(I = J\\))",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#indice-jevons",
+    "href": "inflation.html#indice-jevons",
+    "title": "Les mesures des prix",
+    "section": "Indice Jevons",
+    "text": "Indice Jevons\nPourquoi la moyenne géométrique au lieu de la moyenne arithmétique couramment utilisée ? On retrouve l’influence néoclassique ==&gt; il ne faut pas donner trop de poids dans les valeurs extrême dans la moyenne (par exemple une forte augmentation de prix) pour prendre en compte les effets de substitutions.\nHypothèse de consommateurs rationnels adaptant automatiquement leur choix de consommation en fonction de changement de prix\nMathématiquement, la moyenne géometrique est toujours moins élevée que la moyenne arithmétique",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#exemple-et-comparaison-dans-r",
+    "href": "inflation.html#exemple-et-comparaison-dans-r",
+    "title": "Les mesures des prix",
+    "section": "Exemple et comparaison dans R",
+    "text": "Exemple et comparaison dans R\n\n# Comparaison indice de Jevons et indice à partir de la moyenne arithmétique\n\np0 = c(4, 2, 9) # Trois différents prix de biens de la même catégorie\np1 = c(4.05, 2.12, 9.1) # Prix à la 1ère période\np2 = c(4.1, 2.3, 8.9) # prix à la 2ème période\n\nI0 = p0/p0*100 # indice élémentaire période de base (100)\nI1 = p1/p0*100 # indice élémentaire période 1\nI2 = p2/p0*100 # indice élémentaire période 2\n\n#Indice Jevons = moyenne géométrique des indices élémentaires\nexp(mean(log(I0))) # indice de Jevons à la période de base\n\n[1] 100\n\nexp(mean(log(I1))) # indice de Jevons à la période 1\n\n[1] 102.7622\n\nexp(mean(log(I2))) # Indice de Jevons à la période 2\n\n[1] 105.2422\n\n# Indice si l'on prenait la moyenne arithémtique\nmean(I0)\n\n[1] 100\n\nmean(I1)\n\n[1] 102.787\n\nmean(I2)\n\n[1] 105.463",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#coefficient-budgétaire",
+    "href": "inflation.html#coefficient-budgétaire",
+    "title": "Les mesures des prix",
+    "section": "Coefficient budgétaire",
+    "text": "Coefficient budgétaire\n\nComme tous les postes de dépense n’ont pas la même importance, il faut pondérer ces derniers. Les statisticiens/économistes utilisent un “coefficient budgétaire”, à savoir la part de dépense d’un bien/catégorie de biens/poste de dépense dans les dépenses totales des ménages.\nLes enquêtes sur le budget des ménages permettent d’évaluer la part des biens et services dans les dépenses totales des ménages, à savoir le coefficient budgétaire \\(w_i\\). En Suisse, l’EBM est réalisée tous les cinq ans environ.",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#pondération-et-coefficents-budgétaires",
+    "href": "inflation.html#pondération-et-coefficents-budgétaires",
+    "title": "Les mesures des prix",
+    "section": "Pondération et coefficents budgétaires",
+    "text": "Pondération et coefficents budgétaires\nC’est le coefficient budgétaire \\(w_i\\) qui sert à pondérer les indices élémentaires (ou aggrégé):\n\\[\nI(p)_{t/0} = \\sum^k_{i=1}w_i I(p_{it})\n\\]\nLes indices, par exemple de Laspeyres et Paasche, diffèrent dans leur conception des coefficients budgétaires \\(w_i\\)\n\nLe coefficent budgétaire de l’indice de Laspeyres \\(w_{i0} = \\frac{p_{i0}q_{i0}}{\\sum^k_{i = 1}p_{i0}q_{i0}}\\) définit la pondération du bien \\(i\\) par sa part dans les dépenses totales à l’année de base \\(0\\). Les coefficients budgétaires sont donc fixés à l’année de base.\nL’indice de Paasche utilise quant à lui les coefficients budgétaires de l’année courante: \\(w_{it} = \\frac{p_{it}q_{it}}{\\sum^k_{i = 1}p_{it}q_{it}}\\)",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#lindice-de-laspeyres",
+    "href": "inflation.html#lindice-de-laspeyres",
+    "title": "Les mesures des prix",
+    "section": "L’indice de Laspeyres",
+    "text": "L’indice de Laspeyres\n\nl’indice de Laspeyres consiste à pondérer les indices élémentaires par les coefficients budgétaires fixés à la période de base. Cela revient à fixer les quantités à la période de base et faire varier les prix:\n\n\\[\nL(p)_{t/i} = \\frac{\\sum^k_{i=1}p_{it}q_{i0}}{\\sum^k_{i=1}p_{i0}q_{i0}}\n\\]\n\nCela implique des coefficent budgétaires \\(w_i\\) fixé à l’année de base \\(0\\), l’indice de Laspeyres fait l’hypothèse que la structure de la consommation du panier de bien est fixe à travers le temps\nL’avantage de cet indice est qu’il est le moins couteux à calculer: on a seulement besoin des quantités à la période de base et des prix au temps de base et au temps courant\n\n==&gt; La plupart des indices des prix à la consommation, calculés mensuellement, prennent le format de l’indice de Laspeyres (ou de Lowe, mais qui est juste un dérivé de Laspeyres dans lequel on prend les quantités à chaque enquête sur le budget des ménages, pas seulement à une année de base)",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#indice-de-paasche",
+    "href": "inflation.html#indice-de-paasche",
+    "title": "Les mesures des prix",
+    "section": "Indice de Paasche",
+    "text": "Indice de Paasche\nL’indice de Paasche consiste à pondérer les indices élémentaires par les coefficients budgétaires de l’année courantes (et non pas de l’année de base). Cela revient à fixer les prix à l’année de base et faire varier les quantités:\n\\[\nP(p)_{t/i} = \\frac{\\sum^k_{i=1}p_{it}q_{it}}{\\sum^k_{i=1}p_{i0}q_{it}}\n\\]",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#déflateur-du-pib",
+    "href": "inflation.html#déflateur-du-pib",
+    "title": "Les mesures des prix",
+    "section": "Déflateur du PIB",
+    "text": "Déflateur du PIB\nLe déflateur du PIB peut être considéré comme un indice de Paasche. En outre, le dénominateur de l’indice de Paasche est le PIB réel\n\\[\nPIB_{déflateur} = \\frac{PIB_{nominal}}{PIB_{réel}}\n\\]\nPour obtenir le PIB réel, on divise le PIB nominal par le déflateur du PIB\n\\[\nPIB_{réel} = \\frac{PIB_{nominal}}{déflateur}\n\\]",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#indice-idéal-de-fisher",
+    "href": "inflation.html#indice-idéal-de-fisher",
+    "title": "Les mesures des prix",
+    "section": "Indice “idéal” de Fisher",
+    "text": "Indice “idéal” de Fisher\n\nL’indice de Laspeyres fixe la structure (pondération) de la consommation à la période de base et donc surestime l’inflation, car les ménages peuvent adapter leur consommation par substitution des biens devenus trop chers\nL’indice de Paasche, au contraire, s’adapte directement aux effets de substitutions et donc sous-estime l’inflation\nFisher considérait par conséquent que “l’indice idéal” était la moyenne géométrique entre ces deux indices:\n\n\\[\nF(p)_{t/0} = (L(p)_{t/i} * P(p)_{t/i})^\\frac{1}{2}\n\\]",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#indices-chaînes",
+    "href": "inflation.html#indices-chaînes",
+    "title": "Les mesures des prix",
+    "section": "Indices chaînes",
+    "text": "Indices chaînes\n\nLes indices de prix (Laspeyres, Paasche, Fisher) sont très sensibles à la période de base retenue\nHypothèse que le panier-type de bien de change pas au cours du temps\nAu cours du temps, de nouvelles habitudes de consommation apparaissent\nLes indice-chaînes permettent de mettre annuellement à jour les habitudes de consommations:\n\nOn part d’une année de base, mais au lieu de fixer prix ou quantités à cette année de base, chaque indice est calculé aux prix ou quantités de l’année précédente",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#exemple-indices-chaînes-laspeyres-2",
+    "href": "inflation.html#exemple-indices-chaînes-laspeyres-2",
+    "title": "Les mesures des prix",
+    "section": "Exemple Indices chaînes Laspeyres (2)",
+    "text": "Exemple Indices chaînes Laspeyres (2)\nPour un indice en chaîne Laspeyres partant de l’année \\(0\\):\n\\[\nIC(p)_{t/0} = L(p)_{t/t-1}*L(p)_{t-1/0}\n\\]\nPour la comptabilité nationale, le défaut des indices en chaîne est la perte d’addivité: si l’on applique les indice en chaine à \\(Y = C+I+G+NX\\), les composantes ne s’additionnent plus au PIB (Y).",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#les-indices-reflètent-ils-vraiment-lexpérience-des-consommateurs",
+    "href": "inflation.html#les-indices-reflètent-ils-vraiment-lexpérience-des-consommateurs",
+    "title": "Les mesures des prix",
+    "section": "Les indices reflètent-ils vraiment l’expérience des consommateurs ?",
+    "text": "Les indices reflètent-ils vraiment l’expérience des consommateurs ?\n\n\n\n\n\n\n\nhttps://fr.comparis.ch/finanzen/wirtschaft/konjunktur/konsumentenpreisindex",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#lécart-entre-ipc-et-inflation-percue",
+    "href": "inflation.html#lécart-entre-ipc-et-inflation-percue",
+    "title": "Les mesures des prix",
+    "section": "L’écart entre IPC et inflation percue",
+    "text": "L’écart entre IPC et inflation percue\n\n\n\n\n\n\n\nhttps://shs.cairn.info/l-indice-des-prix-a-la-consommation–9782707199317-page-53?lang=fr#",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#indices-alternatifs",
+    "href": "inflation.html#indices-alternatifs",
+    "title": "Les mesures des prix",
+    "section": "Indices alternatifs",
+    "text": "Indices alternatifs\n\n\n\nhttps://shs.cairn.info/l-indice-des-prix-a-la-consommation–9782707199317-page-53?lang=fr#",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#effet-qualité",
+    "href": "inflation.html#effet-qualité",
+    "title": "Les mesures des prix",
+    "section": "Effet qualité",
+    "text": "Effet qualité\n\nCes dernières décennies, un débat important sur le calcul de l’indice des prix porte sur la prise en compte des effets qualités.\nEn effet, imaginons que le prix d’un ordinateur portable augmente de 10% d’une année à l’autre: cette augmentation est-elle uniquement due a une augmentation “pure” du prix, ou reflète-t-elle aussi une augmentation dans la qualité de l’ordinateur ?\nSi on reconnait que l’augmentation du prix d’un bien reflète aussi une amélioration qualitative du bien, cela veut dire que l’inflation du bien est surestimée (si on ne prend en compte l’effet qualité)\nLa prise en compte ou non de l’effet qualité suscite de nombreux débats. Elle est principalement critiquée comme un moyen de rendre l’inflation moins importante qu’elle ne le serait réellement.",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#débats-sur-les-effets-qualité",
+    "href": "inflation.html#débats-sur-les-effets-qualité",
+    "title": "Les mesures des prix",
+    "section": "Débats sur les effets qualité",
+    "text": "Débats sur les effets qualité\n\nLes premièrs débats visant à prendre en compte l’effet qualité dans les statistiques remontent à la période de la deuxième guerre mondiale aux USA\nDans un contexte de déterioration des produits à cause de la guerre, les syndicats des travailleurs étatsuniens critiquaient la non-prise en compte de la déterioration de la qualité par le Bureau de la Statistique, menant selon eux à une sous-estimation de l’inflation\nSituation inverse à la fin du 19eme avec la commission Boskin (1996): l’inflation est surestimée par la non-prise en compte de l’amélioration qualitative des biens et service",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#effet-qualité-exemple-de-méthode",
+    "href": "inflation.html#effet-qualité-exemple-de-méthode",
+    "title": "Les mesures des prix",
+    "section": "Effet qualité: exemple de méthode",
+    "text": "Effet qualité: exemple de méthode\n\nChainage par chevauchement\nDeux biens A et B ayant la même fonction et que l’on peut observer en même temps, mais B étant récemment introduit et étant de meilleure qualité (par exemple la passage à la télévision en couleur).\n\nB est introduit dans le panier-type et remplace A, mais on soustrait à B la différence de valeur qu’il a avec A",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#effet-qualité-exemple-de-méthode-1",
+    "href": "inflation.html#effet-qualité-exemple-de-méthode-1",
+    "title": "Les mesures des prix",
+    "section": "Effet qualité: exemple de méthode",
+    "text": "Effet qualité: exemple de méthode\n\nChainage par chevauchement\nDeux biens A et B ayant la même fonction et que l’on peut observer en même temps, mais B étant récemment introduit et étant de meilleure qualité (par exemple la passage à la télévision en couleur).\n\nB est introduit dans le panier-type et remplace A, mais on soustrait à B la différence de valeur qu’il a avec A",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#imputation-par-la-moyenne-de-classe",
+    "href": "inflation.html#imputation-par-la-moyenne-de-classe",
+    "title": "Les mesures des prix",
+    "section": "Imputation par la moyenne de classe",
+    "text": "Imputation par la moyenne de classe\n\n\nLorsque l’on n’a pas eu l’occasion d’observer les prix de A et B simultanément, il faut estimer ce qu’aurait été le prix de B juste avant qu’il ne remplace A. Si les statisticiens estiment que le prix de B suit le prix de biens similaires (de la même “variété”), ils estiment le prix de B à partir du taux de croissance des prix des biens similaire (indice de la variété à droite).",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#imputation-par-estimation-de-fonction-hédonique",
+    "href": "inflation.html#imputation-par-estimation-de-fonction-hédonique",
+    "title": "Les mesures des prix",
+    "section": "Imputation par estimation de fonction hédonique",
+    "text": "Imputation par estimation de fonction hédonique\n\n\nLorsque l’on n’a pas eu l’occasion d’observer les prix de A et B simultanément, on peut estimer ce qu’aurait été le prix de B juste avant qu’il ne remplace A en faisant une estimation à partir de ses caractéristiques. Concrètement, cela se fait à travers l’analyse de régression: on estime une “fonction hédonique”: le prix du bien B en fonction de ses caractéristiques.",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#le-panier-type",
+    "href": "inflation.html#le-panier-type",
+    "title": "Les mesures des prix",
+    "section": "Le panier-type",
+    "text": "Le panier-type\n\n\n\nL’IPC couvre les dépenses de consommation des ménages privés qui résident en Suisse de manière permanente en définissant un panier-type regroupant tous les biens et services représentatifs de la consommation d’un ménage suisse.\nLe panier-type est construit à partir des résultats de l’enquête sur le budget des ménages (EBM) et est mis à jour à chaque révision de l’indice (en général tous les 5 ans)",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#récolte-des-données",
+    "href": "inflation.html#récolte-des-données",
+    "title": "Les mesures des prix",
+    "section": "Récolte des données",
+    "text": "Récolte des données\n\n\n\nRelevé régional: récolte de prix par un institut de sondage privé dans environ 8000 points de vente répartis dans onze régions\nRelevé centralisé: concerne les prix administrés ou semi administrés (transport, télecommunications, santé…). Récolte par les collaborateurs de l’OFS dans 7000 points de vente.",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#calculs-et-aggrégation",
+    "href": "inflation.html#calculs-et-aggrégation",
+    "title": "Les mesures des prix",
+    "section": "Calculs et aggrégation",
+    "text": "Calculs et aggrégation",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#intérêt",
+    "href": "inflation.html#intérêt",
+    "title": "Les mesures des prix",
+    "section": "Intérêt",
+    "text": "Intérêt\n\nLa PPA sert à mesurer le pouvoir d’achat réel d’une monnaie nationale et donc rendre comparable les variables macroéconomiques (notamment le PIB) entre pays et régions en corrigeant les différences de niveau des prix\nSert aussi à évaluer si une monnaie est sous-évaluée ou sur-évaluée\nMême principe que pour les indices des prix, mais au lieu d’une comparaison dans le temps ==&gt; comparaison dans l’espace",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#exemple",
+    "href": "inflation.html#exemple",
+    "title": "Les mesures des prix",
+    "section": "Exemple",
+    "text": "Exemple\n\nReprenons l’indice de Paasche, en faisant l’hypothèse que nous avons qu’un seul bien \\(Q\\). Au lieu d’une période de base 0, on choisit un pays de base de comparaison (les USA) et au lieu de t on choisit un pays dans lequel on veut corriger le niveau des prix (la Suisse).\n\nL’indice de Paasche devient:\n\\[\nPPP = \\frac{P_{ch}Q_{usa}}{P_{usa}Q_{usa}} = \\frac{P_{ch}}{P_{usa}}\n\\]\nLa PPA mesure le montant de francs devant être dépensé (en Suisse) afin d’obtenir ce que 1 dollar pourrait acheter du même bien aux USA.\n\nLa PPP est un “déflateur spatial” du PIB: \\(PIB_{ch} = P_{ch} Q_{ch}\\) &lt;=&gt; \\(PIB_{ch/ppp} = \\frac{P_{ch} Q_{ch}}{\\frac{P_{ch}}{P_{usa}}} = P_{usa}Q_{ch}\\) ==&gt; PIB suisse exprimé en dollar",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#ppa-et-taux-de-changes-en-suisse",
+    "href": "inflation.html#ppa-et-taux-de-changes-en-suisse",
+    "title": "Les mesures des prix",
+    "section": "PPA et taux de changes en Suisse",
+    "text": "PPA et taux de changes en Suisse\n\nTaux de change: combien d’unité de monnaie nationale pour une unité de monnaie étrangère \\(#CHF = 1USD\\) , en ratio: \\(E = \\frac{CHF}{USD}\\) ==&gt; prix relatif des deux monnaies\nPPA: combien couterait un même panier de bien \\(Q\\) aux USA (\\(Q_{USA}\\)) s’il était consommé en Suisse \\(Q_{CH}\\)\n\n==&gt; \\(ppp = \\frac{P_{CH}}{P_{USA}} \\frac{Q_{CH}}{Q_{USA}}\\) ==&gt; prix d’un même panier dans les deux pays, à quantité égale \\(Q_{CH} = Q_{USA}\\)\n\nTaux de change réel \\(e\\): combien de quantité du panier-type suisse s’échange contre une unité de ce même panier-type aux USA.\n\n\\(e = E/PPP = \\frac{EP_{US}}{P_{CH}} = \\frac{CHF *P_{US}}{USD*P_{CH}}\\)",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#ppa-et-taux-de-change",
+    "href": "inflation.html#ppa-et-taux-de-change",
+    "title": "Les mesures des prix",
+    "section": "PPA et taux de change",
+    "text": "PPA et taux de change\n\n\nAfficher le code\nlibrary(tidyverse)\nlibrary(rdbnomics)\n\nexch = rdb(\"OECD/DSD_EO@DF_EO/CHE.EXCH.A\") %&gt;% \n  select(original_period, value, REF_AREA) %&gt;% \n  rename(\n    year = original_period, \n  ) %&gt;% \n  mutate(\n    \"chf/usd\" = 1/value\n  ) %&gt;% \n  select(year, `chf/usd`) \n\nppp = rdb(\"OECD/DSD_EO@DF_EO/CHE.PPP.A\") %&gt;% \n  select(value) %&gt;% \n  rename(ppp_chf_usd = value)\n\ndata = cbind(exch, ppp)\ndata$year = as.numeric(data$year)\n\n\ndata %&gt;% \n  ggplot(aes(x = year, y = ppp_chf_usd, color = \"PPP= P_CH/P_US\"))+\n  geom_line()+\n  geom_line(aes(x = year, y = `chf/usd`, color = \"Taux de change: E = CHF/USD\"))+\n  geom_line(aes(x = year, y = `chf/usd`/ppp_chf_usd, color = \"Taux de change réel = E/PPP\"))+\n  theme_minimal()+\n  theme(legend.position = \"top\",\n        legend.title = element_blank())+\n  guides(\n    color = guide_legend(nrow = 2))+\n  labs(x = \"\", y = \"\")",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#pib-en-ppa",
+    "href": "inflation.html#pib-en-ppa",
+    "title": "Les mesures des prix",
+    "section": "PIB en PPA",
+    "text": "PIB en PPA\n\n\nAfficher le code\ngdp = rdb(\"OECD/DSD_EO@DF_EO/CHE.GDP.A\") %&gt;% \n  select(value) %&gt;% \n  mutate(year = 1965:2027) %&gt;% \n  rename(gdp_nominal = value)\n\ndata = data %&gt;% \n  left_join(gdp, by = \"year\")\n\n\ndata %&gt;% \n  filter(year %in% c(1965:2025)) %&gt;% \n  ggplot(aes(x = year, y = log(gdp_nominal), color = \"PIB nominal\"))+\n  geom_line()+\n  geom_line(aes(x = year, y = log(gdp_nominal/ppp_chf_usd), color = \"PIB nominal /PPP\"))+\n  theme_minimal()+\n  labs(y = \"échelle log\", x = \"\",\n       title = \"PIB nominal (en CHF) et PIB en PPP\",\n       subtitle = \"Suisse, 1965-2025\")\n\n\n\n\nOn obtient un PIB suisse comparable avec celui des Etats-Unis (ainsi que celui des autres pays pour lesquels on a aussi diviser le PIB par la même PPA)\nAttention: cela corrige uniquement les différents niveaux de prix, pas de l’inflation à l’intérieur du pays",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#combiner-indice-des-prix-et-ppa",
+    "href": "inflation.html#combiner-indice-des-prix-et-ppa",
+    "title": "Les mesures des prix",
+    "section": "Combiner indice des prix et PPA",
+    "text": "Combiner indice des prix et PPA\n\n\nAfficher le code\ndeflator_pib2020 = rdb(\"OECD/DSD_EO@DF_EO/CHE.PGDP.A\") %&gt;% \n  select(value) %&gt;% \n  mutate(year = 1965:2027) %&gt;% \n  rename(deflator_gdp2020 = value) # importation du déflateur du PIB suisse \n\ndata = data %&gt;% \n  left_join(deflator_pib2020, by = \"year\")\n\n\ndata = data %&gt;% \n  mutate(gdp_deflated = gdp_nominal/deflator_gdp2020, # obtenir le pib réel suisse en franc constant de 2020 ==&gt; diviser le pib nominal par le déflateur du PIB\n         gdp_deflated_ppp = gdp_deflated/ppp_chf_usd) # obtenir le PIB réel suisse en franc constant, corrigé de la PPA ==&gt; diviser le PIB réel constant par la PPA\n\n\ndata %&gt;% \n  ggplot(aes(x = year, y = gdp_nominal, color = \"PIB nominal\"))+\n  geom_line()+\n  geom_line(aes(x = year, y = gdp_deflated, color = \"PIB constant 2020\"))+\n  geom_line(aes(x = year, y = gdp_deflated_ppp, color = \"PIB constant 2020, PPA\"))+\n  theme_minimal(base_size = 14)+\n  labs(x = \"\", y = \"\")+\n  theme(legend.position = \"top\")\n\n\n\n\nAfin d’obtenir une série en volume, le PIB par exemple, qui soit comparable entre pays/région il faut:\n\n\nDéflater le PIB par le déflateur du PIB (par exemple en franc constant de 2020)\nDéflater par la PPA\n\n==&gt; On obtient ainsi la série en volume, corrigée de la PPA",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#conclusion",
+    "href": "inflation.html#conclusion",
+    "title": "Les mesures des prix",
+    "section": "Conclusion",
+    "text": "Conclusion\nA retenir pour l’examen blanc\n\nCalculs des taux de croissance et la rétropolation de série à partir de leur taux de croissance\nLes trois approches du PIB\nCalcul des contributions à la croissance, de la part des salaires et profits dans la valeur ajoutée\nIndices de Laspeyres et de Paasche\nSavoir utiliser les déflateurs et la PPA pour obtenir des séries macroéconomiques (par exemple PIB et ses composantes) en volume et comparables géographiquement.\n\nLes exercices auront le même style que les exercices effectués et vus en cours. Ils seront à réaliser sur excel et/ou R",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#séries-temporelles",
+    "href": "3mars_cours2.html#séries-temporelles",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Séries temporelles",
+    "text": "Séries temporelles\nLa plupart des mesures de l’économie sont des séries temporelles (PIB, emploi, inflation…).\nL’analyse des séries temporelles présente certaines particularités par rapport aux données en coupe (à un point donné dans le temps, aussi appelé “cross-sectional data”), notamment car elles ont une tendance temporelle (par exemple exponentielle).\n\nLorsque l’on veut analyser la relation entre deux variables qui ont tendance à croître avec le temps, il faut faire attention au problème de relation fallacieuse (spurious relationship), une corrélation apparente entre deux variable qui est en fait le résultat d’une 3ème variable “cachée” (ici le temps).",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#taux-de-croissance",
+    "href": "3mars_cours2.html#taux-de-croissance",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Taux de croissance",
+    "text": "Taux de croissance\nLes séries temporelles ont la particularité de croître à un taux plus ou moins stable dans le temps.\nCela implique une croissance exponentielle\nExemple: imaginons une variable \\(x\\) qui croît à un taux constant de 3% par an. A \\(t = 0\\), \\(x =2\\). A \\(t=1\\), x augmente de \\(2*1.03\\) (0.03 étant le taux de croissance auquel on additionne 1):\n\\(x_{t=1} = 2*1.03\\)\nPour \\(t=2\\), \\(x_{t=2} = 2*1.03*1.03 = 2*(1.03)^2\\)\nPour \\(t=3\\), \\(x_{t=3} = 2*1.03*1.03*1.03 = 2*(1.03)^3\\)\nAinsi de suite, pour la formule générale:\n\\(x_t = 2*(1.03)^t\\). Il s’agit de la formule de croissance exponentielle: \\(x_t = x_0 (1+g)^t\\), avec \\(x_0\\) la valeur initiale, \\(g\\) le taux de croissance et \\(t\\) le nombre de périodes.",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#croissance-exponentielle",
+    "href": "3mars_cours2.html#croissance-exponentielle",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Croissance exponentielle",
+    "text": "Croissance exponentielle\nExemple dans R\n\n\nf = function(x0, g, t){\n  \n  x0*(1+g)^t\n  \n}\n\nx0 = 2\ng = 0.03\nt = 1:150\n\nx = f(x0 = x0, g = g, t = t)\n\nplot(x, type = \"l\")",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#taux-de-croissance-1",
+    "href": "3mars_cours2.html#taux-de-croissance-1",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Taux de croissance",
+    "text": "Taux de croissance\nÀ partir de la formule pour la croissance exponentielle de X\n\\[x_t = x_0(1+g)^t\\]\non peut trouver le taux de croissance:\n\\[g = \\left(\\frac{x_t}{x_0}\\right)^{1/t}-1\\]\nIl s’agit du taux de croissance moyen composé de la série entre \\(x_t\\) (en dernière période) et \\(x_0\\)\nLorsque l’on calcule le taux de croissance entre deux périodes seulement (disons \\(x_0\\) et \\(x_1\\)), on retrouve la formule habituelle du taux de croissance (car \\(t=1\\)):\n\\[\ng = \\frac{x_1 - x_0}{x_0} = \\left(\\frac{x_1}{x_0}\\right)^{1/1}-1\n\\]",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#moyenne-des-taux-de-croissance-annuel",
+    "href": "3mars_cours2.html#moyenne-des-taux-de-croissance-annuel",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Moyenne des taux de croissance annuel",
+    "text": "Moyenne des taux de croissance annuel\n\\[\n\\bar{g} = \\frac{1}{T}\\sum_{i=1}^t{g_i}\n\\]\nAvec \\(T\\) le nombre total de périodes. g et \\(\\bar{g}\\) sont la plupart du temps relativement identiques (cela dépend de la variation des taux de croissance).",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#rétropolation-de-séries-et-taux-de-croissance",
+    "href": "3mars_cours2.html#rétropolation-de-séries-et-taux-de-croissance",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Rétropolation de séries et taux de croissance",
+    "text": "Rétropolation de séries et taux de croissance\n\nLe plus souvent, le taux de croissance est calculé pour des variables en niveau\nMais il est parfois courant en macroéconomie de faire l’inverse: calculer des variables en niveau à partir de son taux de croissance\n\nExemple: les séries macroéconomiques suisses avant 1980 sont souvent calculé de cette manière en utilisant les taux de croissance d’anciens systèmes de comptabilité nationale.\n\n\n\\[\nx_t = x_{t-1}*(1+g)\n\\]",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#transformation-en-logarithme",
+    "href": "3mars_cours2.html#transformation-en-logarithme",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Transformation en logarithme",
+    "text": "Transformation en logarithme\n\n\nLa transformation en logarithme (passer de \\(x_t\\) à \\(log(x_t)\\)) est très courante en économie, surtout avec des séries temporelles caractérisées par une croissance exponentielle.\n\nLa transformation log permet de “linéariser” une série exponentielle\nLorsque l’on visualise la courbe d’une série en logarithme, la pente est le taux de croissance\n\n\n\nplot(x, type = \"l\")\n\n\n\n\n\n\n\n\n\nplot(log(x), type = \"l\")",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#transformation-en-logarithme-1",
+    "href": "3mars_cours2.html#transformation-en-logarithme-1",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Transformation en logarithme",
+    "text": "Transformation en logarithme\nSi \\(x_t = x_0(1+g)^t\\) est transformé en log et que nous isolons g, nous trouvons:\n\\[\nlog(1+g) = \\frac{log(x_t)-log(x_0)}{t}\n\\]\nEntre seulement deux période (par exemple d’une année à l’autre), \\(t = 1\\) et donc le taux de croissance peut être approximé facilement en prenant la différence en log. Quand \\(g\\) est entre -0.15 et 0.15, \\(log(1+g)\\) est une bonne approximation de \\(g\\).\nDans R:\n\nlibrary(tidyverse) # la fonction lag() doit être importée avec le package tidyverse\n\ng = log(x) - lag(log(x)) # lag() prend la valeur de x à t-1\n\n# Ou bien avec diff() (difference):\ng = diff(log(x))",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#pourquoi-log1g-g-entre--0.15-et-0.15",
+    "href": "3mars_cours2.html#pourquoi-log1g-g-entre--0.15-et-0.15",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Pourquoi log(1+g) ≅ g entre -0.15 et 0.15",
+    "text": "Pourquoi log(1+g) ≅ g entre -0.15 et 0.15\n\n\ng = seq(from = -0.30, to = 0.30, by = 0.001)\n`log(g+1)` = log(g+1)\n\ndf = tibble(g = g, `log(g+1)` = `log(g+1)`)\n\ndf %&gt;% \n  ggplot(aes(x = g, y = g, color = \"g\"))+\n  geom_line()+\n  geom_line(aes(x = g, y = `log(g+1)`, color = \"Log(1+g)\"))+\n  theme_minimal()+\n  labs(x = \"\", y = \"\")",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#exemple-avec-des-données-réelles-du-pib",
+    "href": "3mars_cours2.html#exemple-avec-des-données-réelles-du-pib",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Exemple avec des données réelles du PIB",
+    "text": "Exemple avec des données réelles du PIB\n\n\nlibrary(maddison) # le package maddison permet d'importer des données de longue durée du PIB par habitant\nlibrary(tidyverse) \n\ndata &lt;- subset(maddison, \n             year &gt;= 1800 &\n             iso2c %in% c(\"FR\", \"US\"))\n\ndata %&gt;% \n  ggplot(aes(x = year, y = rgdpnapc, color = country)) +\n  geom_line()+\n  theme_minimal()+\n  labs(x = \"\",\n       y = \"PIB par habitant (dollar US 2011)\",\n       title = \"Échelle normale (non-logarithmique)\")",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#exemple-avec-des-données-réelles-du-pib-1",
+    "href": "3mars_cours2.html#exemple-avec-des-données-réelles-du-pib-1",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Exemple avec des données réelles du PIB",
+    "text": "Exemple avec des données réelles du PIB\n\n\ndata %&gt;% \n  ggplot(aes(x = year, y = log(rgdpnapc), color = country)) +\n  geom_line()+\n  theme_minimal()+\n  labs(x = \"\",\n       y = \"PIB par habitant (dollar US 2011)\",\n       title = \"Échelle logarithmique\")",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#pourquoi-lanalyse-de-régression",
+    "href": "3mars_cours2.html#pourquoi-lanalyse-de-régression",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Pourquoi l’analyse de régression ?",
+    "text": "Pourquoi l’analyse de régression ?\n\nL’outil principal en économie et en sciences sociales (en méthodes quantitatives)\nPermet d’estimer des fonctions provenant de théories économiques (fonction de consommation, d’investissement…)\nPermet d’identifier et d’analyser des relations de causalité\nEstimation de modèles économiques (par exemple ceux que vous allez voire en macroéconomie)",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#exemple-fonction-de-consommation",
+    "href": "3mars_cours2.html#exemple-fonction-de-consommation",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Exemple: fonction de consommation",
+    "text": "Exemple: fonction de consommation\nL’une des fonctions les plus connues et estimées en macroéconomie est la fonction de consommation des ménages \\(C\\):\n\\[\nC = c_0 + c_1W\n\\]\nAvec \\(C\\) le niveau de consommation des ménages (dans la monnaie du pays considéré), \\(c_0\\) le niveau de consommation lorsque les salaires \\(W\\) = 0. \\(c_1\\) est la propension marginale à consommer, qui est une composante clé du multiplicateur keynésien.",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#régression-linéaire-simple",
+    "href": "3mars_cours2.html#régression-linéaire-simple",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Régression linéaire simple",
+    "text": "Régression linéaire simple\nCette fonction de consommation peut être estimée au moyen d’un modèle de régression linéaire simple. - “Simple”, car nous avons uniquement une variable explicative (les salaire \\(W\\)). - “linéaire”, car notre variable dépendante est numérique (la consommation \\(C\\)).\nLa régression linéaire simple prend la forme suivante:\n\\[\n\\underbrace{E[Y|X]}_{Valeurs\\ moyennes \\ de \\ Y \\ par \\ rapport \\ à \\ X} = \\underbrace{\\beta_0}_{ordonnée \\ à \\ l'origine} + \\underbrace{\\beta_1 X}_{coefficient*variable\\ explicative} + \\underbrace{e_i}_{termes\\ d'erreur}\n\\]\nAvec \\(E[Y|X]\\) “l’espérance” (la moyenne) de Y, notre variable dépendante, en fonction des valeur de notre variable explicative \\(X\\). \\(\\beta_0\\) l’ordonnée à l’origine et \\(e_i\\) le terme d’erreur. \\(E[Y|X]\\) est souvent écrit \\(Y\\) par simplicité.\n==&gt; Les régressions peuvent paraître compliquées à première vue ==&gt; Une manière simple de “démistifer” les régression est de comprendre qu’il s’agit simplement de comparaisons de moyennes",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#eyx-beta_0-beta_1x_i-e_i",
+    "href": "3mars_cours2.html#eyx-beta_0-beta_1x_i-e_i",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "\\[E[Y|X] = \\beta_0 + \\beta_1X_i + e_i\\]",
+    "text": "\\[E[Y|X] = \\beta_0 + \\beta_1X_i + e_i\\]\n\\(\\beta_1\\) est le paramètre clé du modèle.\nL’interprétation la plus courante de ce paramètre, qui est celle qui vous est enseignée dans vos cours de quanti, est que \\(\\beta_1\\) est l’effet de X sur les valeurs moyennes Y lorsque X augmente de une unité Cela veut dire que \\(\\beta_1\\) est l’effet marginal de x sur y, la valeur obtenue en prenant la dérivée de Y sur X:\n\\[\n\\frac{\\delta E[Y|X]}{\\delta X} = \\beta_1\n\\]\n==&gt; Il s’agit de l’interprétation causale du coefficient du réggression (\\(\\beta_1\\))",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#interprétation-en-termes-de-comparaison",
+    "href": "3mars_cours2.html#interprétation-en-termes-de-comparaison",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Interprétation en termes de comparaison",
+    "text": "Interprétation en termes de comparaison\nLe coefficient \\(\\beta_1\\) peut être aussi compris comme une différence de moyenne prédite par le modèle entre deux valeurs de X.\n\nSi \\(X\\) est une variable qualitative dichotomique (par exemple homme ou femme), elle ne prend que les valeurs 0 (disons homme) et 1 (disons femme) et que nous ignorons le termes d’erreur \\(e_i\\):\n\nSi \\(X = 1\\), &lt;=&gt; \\(E[Y|X = 1] = \\beta_0 + \\beta_1\\)\nEt si \\(X = 0\\), &lt;=&gt; \\(E[Y|X = 0] = \\beta_0\\)\nEt donc \\[E[Y|X=1] - E[Y|X=0] = \\beta_0 + \\beta_1 - \\beta_0 = \\beta_1\\]\n\\(\\beta_1\\) est la différence entre la moyenne prédite des femmes et des hommes.",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#interprétation-en-termes-de-comparaison-1",
+    "href": "3mars_cours2.html#interprétation-en-termes-de-comparaison-1",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Interprétation en termes de comparaison",
+    "text": "Interprétation en termes de comparaison\nMême principe si la variable est numérique/continue\nExemple avec \\(X_i\\) le revenu de la personne \\(i\\) et \\(Y=C\\) la consommation. Prenons \\(X_1 = 5000\\) et \\(X_2 = 5001\\). Le coefficient \\(\\beta1\\) est la différence entre les valeurs prédite de Y pour \\(X_2\\) et \\(X_1\\).\n\\[E[Y|X_2 = 5001] - E[Y|X_1 = 5000] = \\beta_0 + \\beta_15001 - \\beta_0 - \\beta_15000 = \\beta_1\\]\n\\(\\beta_1\\) est donc la différence de consommation moyenne prédite par le modèle entre deux personnes ayant un revenu de 5001 et 5000. En d’autre termes, la différence de moyenne prédite entre deux personnes différant d’une unité.",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#interprétation-des-coefficients-de-régression",
+    "href": "3mars_cours2.html#interprétation-des-coefficients-de-régression",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Interprétation des coefficients de régression",
+    "text": "Interprétation des coefficients de régression\n\nInterprétation causale: \\(\\beta_1\\) est l’effet marginal de X (effet lorsque X augmente de 1) sur les valeurs moyennes prédites de Y.\nInterprétation en termes de comparaison: \\(\\beta_1\\) est la différence des moyennes prédites de Y entre deux observations différant d’une unité.\n\n==&gt; L’interprétation en termes de comparaison est plus prudente que l’interprétation causale, pour laquelle il faut que les hypothèses du modèle soient respectées",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#retour-à-notre-exemple-c-c_0-c_1w",
+    "href": "3mars_cours2.html#retour-à-notre-exemple-c-c_0-c_1w",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Retour à notre exemple \\[C = c_0 + c_1W\\]",
+    "text": "Retour à notre exemple \\[C = c_0 + c_1W\\]\n\n\nlibrary(readr)\nmacroch &lt;- read_csv(\"data/macroch.csv\")\n\nmacroch %&gt;% \n  ggplot(aes(x = W_real, y = C_real))+\n  geom_point()+\n  theme_minimal()+\n  labs(x = \"Rémunération des salariés (W)\",\n       y = \"Consommation (C)\")",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#estimation-simple-avec-lm",
+    "href": "3mars_cours2.html#estimation-simple-avec-lm",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Estimation simple avec lm()",
+    "text": "Estimation simple avec lm()\n\nlibrary(kableExtra)\nlibrary(broom)\nmodel = lm(data = macroch, # préciser le tableau dans lequel les variables sont présentes\n           formula = C_real ~ W_real) # la formule estimée doit prendre la forme Y ~ X\n\ntidy(model) %&gt;% \n  kable() \n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n43.1846843\n2.7815089\n15.52563\n0\n\n\nW_real\n0.7972749\n0.0103511\n77.02329\n0\n\n\n\n\n\nLa fonction estimée est donc:\n\\[C = 43 + 0.797W\\]",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#valeurs-prédites",
+    "href": "3mars_cours2.html#valeurs-prédites",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Valeurs prédites",
+    "text": "Valeurs prédites\n\n\ndata = augment(model)\n\ndata %&gt;% \n  ggplot(aes(x = W_real, y = C_real, color = \"Valeurs réelles observées\"))+\n  geom_line()+\n  geom_line(aes(x = W_real, y = .fitted, color = \"Valeurs prédites\"))+\n  theme_minimal()+\n  labs(title = \"C = 43 + 0.797W\")",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#vérification-des-hypothèses-du-modèle",
+    "href": "3mars_cours2.html#vérification-des-hypothèses-du-modèle",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Vérification des hypothèses du modèle",
+    "text": "Vérification des hypothèses du modèle\n\nLinéarité et indépendance des erreurs\n\n\n\nlibrary(performance)\n\ndiagnostic_plots = plot(check_model(model, panel = FALSE))\ndiagnostic_plots[[2]]\n\n\n\n\n\n\n\n\n\nOn voit clairement un pattern dans la distribution des données ==&gt; pas d’indépendance des erreurs, ce qui est typiquement le cas des séries temporelles",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#vérification-des-hypothèses-du-modèle-1",
+    "href": "3mars_cours2.html#vérification-des-hypothèses-du-modèle-1",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Vérification des hypothèses du modèle",
+    "text": "Vérification des hypothèses du modèle\n\nHomoscédasticité\n\n\nlibrary(performance)\n\ndiagnostic_plots[[3]]\n\n\nIl y aussi clairement un problème d’hétéroscédasticité: la variance des erreurs n’est pas constante",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#c-43-0.797w",
+    "href": "3mars_cours2.html#c-43-0.797w",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "\\(C = 43 + 0.797W\\)",
+    "text": "\\(C = 43 + 0.797W\\)\nLe plus souvent, régresser tel quel des séries temporelles (en niveau) va produire des modèles qui ne respectent pas l’hypothèse fondamentale d’indépendance des erreurs. Cela est un problème, car implique que notre coefficient de \\(\\beta_1 = 0.79\\) est biaisé.\n==&gt; Cela vient du fait qu’il a une dimension temporelle dans nos variables, ces dernières sont aussi une fonction du temps \\(t\\), qui n’est pas prise en compte dans \\(C = c_0 +c_1W + e_i\\) (enfait, la dimension temporelle va se voire dans le terme d’erreur \\(e_i\\))\n==&gt; Autrement pour pouvoir modéliser des séries temporelles avec des régressions, il faut que ces séries soient “stationnaires”, c-à-d que leur moyenne doit être stable dans le temps.\nIl existe des tests afin de tester la stationnarité (Test de Dickey-Fuller, test de Perron…)",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#stationnarité",
+    "href": "3mars_cours2.html#stationnarité",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Stationnarité",
+    "text": "Stationnarité\nLa plupart du temps, les séries ayant une tendance temporelle (non-stationnaire) doivent être transformées en taux de croissance pour pouvoir être incluses dans une régression.\n\n\nAfficher le code\nlibrary(ggcharts)\n\nmacroch$year = 1960:2022\ndata_rates = tibble(year = 1961:2022, rate_c = diff(log(macroch$C_real)), rate_w = diff(log(macroch$W_real)))\n\nplot1 &lt;- \nmacroch %&gt;% \n  ggplot(aes(x = year, y = C_real, color = \"Consommation (niveau)\"))+\n  geom_line()+\n  geom_line(aes(x = year, y = W_real, color = \"Revenu des salariés (niveau)\"))+\n  theme_minimal()+\n  labs(title = \"Séries non stationnaires\")+\n  theme(legend.position = \"top\")\n\n\n\nplot2 &lt;- \n  data_rates %&gt;%\n  ggplot(aes(x = year, y = rate_c, color = \"Consommation (taux de croissance)\"))+\n  geom_line()+\n  labs(title = \"Série stationnaire\")+\n  theme_minimal()+\n  theme(legend.position = \"top\")\n\ncowplot::plot_grid(plot1, plot2)",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#modèle-en-différences-de-premier-ordre",
+    "href": "3mars_cours2.html#modèle-en-différences-de-premier-ordre",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Modèle en différences de premier ordre",
+    "text": "Modèle en différences de premier ordre\n==&gt; régresser les taux de croissances au lieu des niveaux, pour corriger la non-stationnarité.\nAu lieu de \\(C = \\beta_0 + \\beta_1W\\), nous avons: \\(\\%\\Delta{C} = \\beta_0 + \\%\\Delta\\beta1W\\)\n\\(\\beta_1\\) devient l’élasticité de la consommation par rapport au revenu: le pourcentage de changement de C quand W augmente de 1 point de pourcentage.\n\n\nAfficher le code\nmodel3 = lm(data = data_rates,\n            rate_c ~ rate_w)\n\ntidy(model3)\n\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)  0.00546   0.00191      2.86 5.89e- 3\n2 rate_w       0.558     0.0505      11.0  4.36e-16",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#régression-dune-série-temporelle-sur-sa-trend",
+    "href": "3mars_cours2.html#régression-dune-série-temporelle-sur-sa-trend",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Régression d’une série temporelle sur sa trend",
+    "text": "Régression d’une série temporelle sur sa trend\nQue se passe-t-il si notre régression inclue seulement la dimension temporelle comme variable explicative dans un modèle log-linéaire ? \\(log(C) = \\beta_0 + \\beta_{year}year\\)\n\ndata &lt;- \ndata %&gt;% \n  mutate(\n    year = 1960:2022,\n  )\n\nmodel4 = lm(data = data,\n            log(C_real) ~  year)\n\ntidy(model4)\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept) -30.5     0.883        -34.5 9.89e-42\n2 year          0.0180  0.000443      40.7 6.58e-46\n\n\nLe coefficient \\(\\beta_{year} = 0.018\\) peut être interprété comme le taux de croissance moyen sur l’ensemble de la période, pas seulement entre la première et dernière année (moyenne des taux de croissance, ou le taux de croissance composé).",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#comment-interpréter-beta_0--30",
+    "href": "3mars_cours2.html#comment-interpréter-beta_0--30",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Comment interpréter \\(\\beta_0 = -30\\) ?",
+    "text": "Comment interpréter \\(\\beta_0 = -30\\) ?\nIl s’agit de la valeur de \\(log(C)\\) lorsque \\(year = 0\\), ce qui ne fait pas vraiment sens.\nUn moyen de rendre l’ordonnée à l’origine (intercept) \\(\\beta_0\\) interprétable est de centrer notre variable explicative en lui soustrayant sa moyenne:\n\ndata &lt;- data %&gt;% \n  mutate(\n    year_centered = year - mean(year)\n  )\n\nmodel5 = lm(data = data,\n            log(C_real) ~ year_centered)\n\ntidy(model5)\n\n# A tibble: 2 × 5\n  term          estimate std.error statistic   p.value\n  &lt;chr&gt;            &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)     5.44    0.00806      675.  7.35e-120\n2 year_centered   0.0180  0.000443      40.7 6.58e- 46\n\n\nLe coefficient \\(\\beta_{year}\\) ne change pas. \\(\\beta_0\\) devient \\(5.4\\), ce qui correspond à \\(log(C)\\), la valeur de notre variable dépendante, lorsque year est à sa moyenne (donc l’année 1991).",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#pourquoi-calculer-le-taux-de-croissance-avec-une-régression",
+    "href": "3mars_cours2.html#pourquoi-calculer-le-taux-de-croissance-avec-une-régression",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Pourquoi calculer le taux de croissance avec une régression ?",
+    "text": "Pourquoi calculer le taux de croissance avec une régression ?\nEn incluant des intéractions, on peut tester si le taux de croissance moyen change de manière significative entre différentes périodes. Dans les régressions, les intéractions permettent au modèle d’avoir différentes ordonnées à l’origine (\\(\\beta_0\\)) ou bien différentes coefficients pour la mème variable, mais variant selon un groupe pré-établi, par exemple une variable dichotomique séparant la série en deux groupes: avant 1980 et après 1980. Cela se spécifie dans R avec year*I(year&gt;1980)\n\nmodel6 = lm(data = data,\n            log(C_real) ~ year*I(year&gt;1980))\n\ntidy(model6)\n\n# A tibble: 4 × 5\n  term                    estimate std.error statistic  p.value\n  &lt;chr&gt;                      &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)             -57.1      2.34        -24.4 1.79e-32\n2 year                      0.0315   0.00119      26.5 1.81e-34\n3 I(year &gt; 1980)TRUE       31.9      2.49         12.8 1.13e-18\n4 year:I(year &gt; 1980)TRUE  -0.0161   0.00126     -12.8 1.19e-18\n\n\nOn obtient le modèle estimé \\(log(C) = -57 + 0.03year + 31.9year_{1980} -0.0161year*year_{1980}\\). \\(year\\) reste nos années et \\(year_{1980}\\) est une variable binaire 1 si \\(year&gt;1980\\) et 0 autrement.",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#logc--57-0.03year-31.9year_1980--0.0161yearyear_1980",
+    "href": "3mars_cours2.html#logc--57-0.03year-31.9year_1980--0.0161yearyear_1980",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "\\(log(C) = -57 + 0.03year + 31.9year_{1980} -0.0161year*year_{1980}\\)",
+    "text": "\\(log(C) = -57 + 0.03year + 31.9year_{1980} -0.0161year*year_{1980}\\)\n\ntidy(model6)\n\n# A tibble: 4 × 5\n  term                    estimate std.error statistic  p.value\n  &lt;chr&gt;                      &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)             -57.1      2.34        -24.4 1.79e-32\n2 year                      0.0315   0.00119      26.5 1.81e-34\n3 I(year &gt; 1980)TRUE       31.9      2.49         12.8 1.13e-18\n4 year:I(year &gt; 1980)TRUE  -0.0161   0.00126     -12.8 1.19e-18\n\n\nAprès 1980, \\(year_{1980} = 1\\) et le modèle devient:\n\\(log(c) = -57 + 31.9*1 + 0.03year -0.0161year*1\\)\n&lt;=&gt;\n\\(log(c) = -25 - 0.0139year\\)\nLe taux de croissance moyen a diminué de 0.0161\nAvant 1980, \\(year_{1980} = 0\\) et le modèle est simplement:\n\\(log(C) = -57 + 0.03year + 31.9*0 -0.0161year*0\\)\n&lt;=&gt;\n\\(log(C) = -57 + 0.03year\\) le taux de croissance pour la période 1960-1980 étant donc de 0.03.",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#section",
+    "href": "3mars_cours2.html#section",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "",
+    "text": "Afficher le code\nplot3 &lt;- \nplot2+\n  labs(title = \"\",\n       y = \"Taux de croissance de C\")+\n  geom_segment(aes(x = 1960, xend = 1980, y = 0.03, yend = 0.03), color = \"black\")+\n  geom_segment(aes(x = 1981, xend = 2022, y = 0.0139, yend = 0.0139), color = \"black\")+\n  annotate(\"text\", x = 1970, y = 0.025, label = \"taux de croissance moyen = 0.03\", size = 2.5)+\n  annotate(\"text\", x = 2000, y = 0, label = \"taux de croissance moyen = 0,0139\", size = 2.5)\n\nlibrary(marginaleffects)\n\nplot4 &lt;- \nmodel6 %&gt;% \n  plot_predictions(condition = \"year\")+\n  geom_line(data = data, aes(x = year, y = log(C_real)), size = 1.2, color = \"darkred\")+\n  theme_minimal()+\n  geom_vline(xintercept = 1980, linetype = 2)+\n  annotate(\"text\", label = \"log(c) = -57 + 0.03year\", x = 1980, y = 5)+\n  annotate(\"text\", label = \"log(c) = -25 -0.0139year\", x = 2010, y = 5.5)+\n  labs(y = \"log(c)\")\n\ncowplot::plot_grid(plot3, plot4)",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#comment-interpréter-les-résidus-de-régressions",
+    "href": "3mars_cours2.html#comment-interpréter-les-résidus-de-régressions",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Comment interpréter les résidus de régressions ?",
+    "text": "Comment interpréter les résidus de régressions ?\nLes résidus \\(e_i\\) sont l’écart entre les valeurs observées et les valeurs prédites par notre modèle:\n\\[\ne_i = \\underbrace{Y}_{valeurs \\ observées} - \\underbrace{\\beta_0 + \\beta_1 X}_{valeurs \\ prédites}\n\\]\nDans notre modèle \\(log(C) = \\beta_0 + \\beta_1 year + e_i\\), et pour les séries temporelles non-stationnaire de manière générale, \\(e_i\\) représente l’écart de \\(C\\) ( en %) par rapport à sa tendance de long-terme.",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#e_i-comme-déviation-en-par-rapport-à-la-tendance-de-long-terme",
+    "href": "3mars_cours2.html#e_i-comme-déviation-en-par-rapport-à-la-tendance-de-long-terme",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "\\(e_i\\) comme déviation en % par rapport à la tendance de long-terme",
+    "text": "\\(e_i\\) comme déviation en % par rapport à la tendance de long-terme",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#pib-potentiel-et-output-gap",
+    "href": "3mars_cours2.html#pib-potentiel-et-output-gap",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "PIB potentiel et output gap",
+    "text": "PIB potentiel et output gap\nSi, à la place de \\(C\\), nous avions le PIB, la tendance générale serait le PIB potentiel, et les résidus le output gap qui est une mesure fondamentale des cycles économiques.\n\nLe PIB potentiel est une variable clé en macroéconomie, aussi bien dans la théorie économique mainstream qu’hétérodoxe, mais la définition varie entre ces deux approches\nPour la théorie mainstream, le PIB potentiel est le PIB lorsque le taux de chômage est à son taux “naturel” (le NAIRU)\nEn macroéconomie hétérodoxe, le PIB potentiel est le PIB maximal qui est atteint lorsque tout le capital ou tout le travail est employé à ses pleines capacités",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#pib-potentiel-et-output-gap-2",
+    "href": "3mars_cours2.html#pib-potentiel-et-output-gap-2",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "PIB potentiel et output gap (2)",
+    "text": "PIB potentiel et output gap (2)\n\nLe PIB potentiel mesure le PIB à “pleine capacité d’utilisation des ressources” c’est-à-dire s’il y avait le plein emploi et une utilisation maximale du capital.\nLe modèle log-linéaire simple \\(log(PIB) = \\beta_0 + \\beta_1year\\) nous donne:\n\nUne estimation du PIB potentiel (en logarithme), à travers les valeurs estimées (fitted values)\nUne estimation de l’output gap, càd de la déviation du PIB actuel/observé par rapport au PIB potentiel.",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#pib-potentiel-et-output-gap-3",
+    "href": "3mars_cours2.html#pib-potentiel-et-output-gap-3",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "PIB potentiel et output gap (3)",
+    "text": "PIB potentiel et output gap (3)\n\nL’output gap est une variable considérée comme très importante pour la politique économique:\n\nSi l’output gap &gt; 0 ==&gt; l’économie est dite en “surcapacité”, le taux de chomage est moins élevé que son taux naturel\nSi &lt; 0 ==&gt; l’économie est dite en “sous-capacité”, le taux de chômage est plus élevé que son taux naturel\n\nLe modèle log-linéaire simple \\(log(PIB) = \\beta_0 + \\beta_1year\\) est l’estimation du PIB potentiel la plus basique. En pratiques, les instituts de statistiques ont recours à des méthodes bien plus complexes, mais l’idée de base reste la même.",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#à-retenir",
+    "href": "3mars_cours2.html#à-retenir",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "À retenir",
+    "text": "À retenir\n\nFormule de la croissance exponentielle\nPouvoir calculer des taux de croissance\nCalcul de la rétropolation d’une série à partir du taux de croissance\nÀ quoi servent les transformations en logarithme\nInterprétation des coefficients d’une régression linéaire\nLes informations que nous donne un modèle log-linéaire avec la trend (le temps) comme variable explicative (savoir intreprétér le coefficient, les résidus…)\n\nRetenez aussi comment faire tout cela dans R (référez-vous au code dans les slides) ! Nous ferons davantage d’exercices appliqués à partir des séances sur la comptabilité nationale.",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "3mars_cours2.html#pour-aller-plus-loin",
+    "href": "3mars_cours2.html#pour-aller-plus-loin",
+    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
+    "section": "Pour aller plus loin",
+    "text": "Pour aller plus loin",
+    "crumbs": [
+      "3 Mars. Introduction aux séries temporelles et aux régressions"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "",
+    "text": "Heures de réception, bureau 4242 unimail: mardi 14h-17h, jeudi 14h-17h",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "index.html#résumé-du-cours",
+    "href": "index.html#résumé-du-cours",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "Résumé du cours",
+    "text": "Résumé du cours\nCe séminaire a pour objectif d’enseigner aux étudiants la manière dont les principaux indicateurs économiques tirés de la comptabilité nationale et de l’étude de la distribution du revenu national sont calculés. Un accent particulier sera mis sur la familiarisation avec les principales sources de données en économie et comment traiter ces données en pratique. La première partie du cours portera sur les indicateurs calculables à partir de la comptabilité nationale (comme le taux de profit, la part des salaires dans la valeur ajoutée, les contributions à la croissance etc.). La deuxième partie du cours se concentrera sur les principaux indicateurs d’inégalité ainsi que sur l’étude de la distribution du revenu. Enfin, la dernière partie du cours sera consacrée aux indicateurs mesurant les institutions socio-économiques. Ce séminaire sera fortement axé sur des exercices pratiques permettant aux étudiants d’apprendre comment développer eux-même leurs propres analyses des dynamiques économiques. Ce séminaire accompagne le cours les mesures de l’économie dispensé par Professeur Marc Morgan, mais reste un cours indépendant.",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "index.html#février-introduction-au-séminaire",
+    "href": "index.html#février-introduction-au-séminaire",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "24 février: introduction au séminaire",
+    "text": "24 février: introduction au séminaire\nRappels des bases de R, introduction à des packages utiles pour l’analyse macroéconomique. Installation et introduction au codage avec R sur Quarto pour produire des documents html, pdf et powerpoint. Installation et introduction à la plateforme de développement et stockage cloud Github. Sensibilisation à l’usage de l’intelligence artificielle pour le codage en R et l’analyse de données macroéconomiques. Introduction aux principales bases de données macroéconomiques.",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "index.html#mars-introduction-aux-séries-temporelles-et-à-lanalyse-de-régression",
+    "href": "index.html#mars-introduction-aux-séries-temporelles-et-à-lanalyse-de-régression",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "3 mars: introduction aux séries temporelles et à l’analyse de régression",
+    "text": "3 mars: introduction aux séries temporelles et à l’analyse de régression\nIntroduction au traitement et à l’analyse de séries temporelles en macroéconomie et sur R. Introduction aux régressions linéaires avec des données macroéconomiques.\nSources:\n\nGelman, Andrew, Jennifer Hill, and Aki Vehtari. Regression and Other Stories. Cambridge University Press, 2021.\nHill, R. Carter, William E. Griffiths, and Guay C. Lim. Principles of Econometrics. 5th edition. Wiley, 2018.",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "index.html#mars-comptabilité-nationale",
+    "href": "index.html#mars-comptabilité-nationale",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "10 mars: comptabilité nationale",
+    "text": "10 mars: comptabilité nationale\nLe calculs du PIB selon les trois approches (dépense, revenu, consommation). Comment calculer les différentes mesures du revenu national: du PIB au revenu national net. Comparer les évolutions du PIB. Calculer les contributions à la croissance. PIB potentiel. Balances sectorielles. Exercices sur la visualisation de données macroéconomiques, les différents calculs du revenu national, des contributions à la croissance et des balances sectorielles à partir des données de la comptabilité nationale du Secrétariat d’État à l’économie (SECO).\nSources:\n\nLequiller, François, and Derek Blades. Understanding National Accounts. Second Edition. OECD, 2014. Chapitre 1",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "index.html#mars-comptabilité-nationale-suite",
+    "href": "index.html#mars-comptabilité-nationale-suite",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "17 mars: comptabilité nationale (suite)",
+    "text": "17 mars: comptabilité nationale (suite)",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "index.html#mars-mesures-de-linflation",
+    "href": "index.html#mars-mesures-de-linflation",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "24 mars: mesures de l’inflation",
+    "text": "24 mars: mesures de l’inflation\nIndice des prix à la consommation, déflateur, indices en chaîne et parité de pouvoir d’achat. Exercice sur le calcul des indices de Laspeyre, Paasche et de l’indice en chaîne.\n\nLequiller, François, and Derek Blades. Understanding National Accounts. Second Edition. OECD, 2014. Chapitres 2 et 3",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "index.html#mars-distribution-et-inégalité-1",
+    "href": "index.html#mars-distribution-et-inégalité-1",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "31 mars: distribution et inégalité (1)",
+    "text": "31 mars: distribution et inégalité (1)\nSources de données et méthodes pour analyser la distribution du revenu national. Comment calculer la courbe de Lorenz; la relation et le coefficient de Pareto; le coefficient de Gini et les top shares. Exercice avec les données fiscales suisses.\nSources:\n\nCowell, Frank Alan. Measuring Inequality. Third edition. LSE Perspectives in Economic Analysis. University Press, 2011.",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "index.html#avril-pas-de-cours-vacances-de-pâques",
+    "href": "index.html#avril-pas-de-cours-vacances-de-pâques",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "7 avril: pas de cours (vacances de Pâques)",
+    "text": "7 avril: pas de cours (vacances de Pâques)",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "index.html#avril-examen-blanc-bonus",
+    "href": "index.html#avril-examen-blanc-bonus",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "14 avril: examen blanc (bonus)",
+    "text": "14 avril: examen blanc (bonus)\nExamen blanc, bonus pour la note finale si le résultat aide à améliorer cette dernière. Cet examen portera sur le contenu des cinq première séance et consistera en un travail pratique sur excel et R à réaliser lors du cours.",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "index.html#avril-distribution-et-inégalité-suite-de-1",
+    "href": "index.html#avril-distribution-et-inégalité-suite-de-1",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "21 avril: distribution et inégalité: suite de (1)",
+    "text": "21 avril: distribution et inégalité: suite de (1)",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "index.html#avril-distribution-et-inégalité-2",
+    "href": "index.html#avril-distribution-et-inégalité-2",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "28 avril: distribution et inégalité (2)",
+    "text": "28 avril: distribution et inégalité (2)\nMesurer les inégalités de classes: comment estimer différentes mesures de classes sociales et les inégalités entre ces classes à partir de données d’enquête. Exercice en utilisant l’enquête panel des ménages suisses.\nSources:\n\nJ. Gil Hernandez, Carlos. “Wealth Inequality and Stratification by Social Classes in 21st-Century Europe.” DigClass, February 27, 2024. https://digclass.eu/wealth-inequality-and-stratification-by-social-classes-in-21st-century-europe/.\nMunoz de Bustillo, Rafael. “Social classes in economics analysis. A brief historical account.” DigClass, March 11, 2022. https://digclass.eu/social-classes-in-economics-analysis-a-brief-historical-account/.\nOesch, Daniel. “Contemporary Class Analysis.” DigClass, January 4, 2022. https://digclass.eu/contemporary-class-analysis/.\nVillani, Davide. “Income inequality, top shares of income and social classes in the 21st century.” DigClass, January 13, 2023. https://digclass.eu/income-inequality-top-shares-of-income-and-social-classes-in-the-21st-century/.",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "index.html#mai-mesurer-les-institutions-1",
+    "href": "index.html#mai-mesurer-les-institutions-1",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "5 mai: mesurer les institutions (1)",
+    "text": "5 mai: mesurer les institutions (1)\nLes différentes mesures des formes institutionnelles du capitalisme. Exemple des institutions de la protection sociale en explorant les données et indicateurs de la CWED (comparative welfare entitlements Datasets) (http://cwed2.org/&gt;) et les indicateurs institutionnels de l’OCDE (product market regulation index, employment protection indicators)\nSources:\n\nAmable, Bruno. The Diversity of Modern Capitalism. Oxford University Press, 2003.\nCahen-Fourot, Louison. “Contemporary Capitalisms and Their Social Relation to the Environment.” Ecological Economics 172 (June 2020): 106634. https://doi.org/10.1016/j.ecolecon.2020.106634.\nLyle Scruggs (2014). Social Welfare Generosity Scores in CWED 2: A Methodological Genealogy, February 2014.",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "index.html#mai-mesurer-les-institutions-2",
+    "href": "index.html#mai-mesurer-les-institutions-2",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "12 mai: mesurer les institutions (2)",
+    "text": "12 mai: mesurer les institutions (2)\nExercice sur comment construire des indices composés avec comme exemple la construction d’un indice composé du pouvoir de négociation des salariés aux États-Unis.\nSources:\n\nFontanari, Claudia, Enrico Sergio Levrero, and Davide Romaniello. “A Composite Index for Workers’ Bargaining Power and the Inflation Rate in the United States, 1960–2018.” Structural Change and Economic Dynamics 70 (September 2024): 682–98. https://doi.org/10.1016/j.strueco.2024.05.009.",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "index.html#mai-examen-pratique-final",
+    "href": "index.html#mai-examen-pratique-final",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "19 mai: examen pratique final",
+    "text": "19 mai: examen pratique final",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "index.html#quarto",
+    "href": "index.html#quarto",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "Quarto",
+    "text": "Quarto\nQuarto est un outil permettant d’écrire et faire tourner du code R de manière plus fluide qu’un simple que script R. Il s’agit du principal système de publication de code R, permettant de produire des documents en pdf, html et powerpoint. Un guide et une introduction complète à Quarto est disponible sur la page web de Quarto (quarto.org). Quarto est téléchargeable ici. Je vous recommande de jeter un oeil à la gallerie de Quarto afin d’avoir un aperçu de tout le potentiel de ce logiciel, qui vous sera très utile pour le reste de votre parcours: Quarto Gallery.",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "index.html#github",
+    "href": "index.html#github",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "Github",
+    "text": "Github\nGithub est site web d’hébergement et de stockage cloud de fichier et de données. Il permet de sauvegarder vos projets de travail (similaire à OneDrive) et de publier vos résultats et vos documents quarto. Je vous recommande fortement de vous créer un compte github et d’installer Github desktop. Je vous recommande ce tutoriel youtube pour vous aidez dans l’installation et l’utilisation de Github.",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "index.html#r-et-lanalyse-de-régression",
+    "href": "index.html#r-et-lanalyse-de-régression",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "R et l’analyse de régression",
+    "text": "R et l’analyse de régression\n\nGuide-R\nR for Data Science\nTime Series Analysis\nR Gallery (visualisation et graphiques)\nModels to Meaning\nVidéos youtubes:\nPlaylists d’Andrew Heiss\nPlaylists d’Albert Rapp\nWedata (en français)\n\nBases de R\nStatistiques avec R\nggplot",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "index.html#bases-de-données",
+    "href": "index.html#bases-de-données",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "Bases de données",
+    "text": "Bases de données\nBases de données internationales:\n\nDBnomics: la base mondiale de données économiques https://db.nomics.world/\n\nIl s’agit de la base de données la plus utile, car elle compile une série énorme de données provenant de toutes les organisations majeurs (OCDE, OIT, Banque Mondiale…). De plus, elle offre un package R (RDBnomics) permettant d’importer directement les données dans R: https://github.com/dbnomics/rdbnomics\n\nBase de données de l’OCDE: https://data-explorer.oecd.org/?lc=fr\nBanque mondiale: https://data.worldbank.org/\nMaddison historical statistics: https://www.rug.nl/ggdc/historicaldevelopment/maddison/\nIlostat (organisation internationale du travail): https://ilostat.ilo.org/fr/data/\nAmeco (base de données macroéconomiques pour la Commission européenne): https://economy-finance.ec.europa.eu/economic-research-and-databases/economic-databases/ameco-database_en\nGapminder https://www.gapminder.org/resources/\nOur World in Data: https://ourworldindata.org/\nPenn World Tables: https://www.rug.nl/ggdc/productivity/pwt/?lang=en\nWorld Inequality Database: https://wid.world/\nLuxembourg Income Study database (LIS): https://www.lisdatacenter.org/data-access/\n\nDartFrontend: https://dart.lisdatacenter.org/dar\nPour la Suisse:\n\nDonnées du PIB selon les trois approches: https://www.seco.admin.ch/seco/fr/home/wirtschaftslage—wirtschaftspolitik/Wirtschaftslage/bip-quartalsschaetzungen-/daten.htm\nStatistiques historiques de la Suisse: https://hsso.ch/fr\nOffice fédéral de la statistique: https://www.bfs.admin.ch/bfs/fr/home.html\nStatistiques fiscales de l’administration fédérale des contributions: https://www.estv.admin.ch/fr/statistiques-sur-limpot-federal-direct\nAtlas statistique de la Suisse: https://mapexplorer.bfs.admin.ch/#c=indicator&i=ch_11_02_02_001.ausgabenfrkantpolgstr&s=2023&view=map164",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "index.html#autres",
+    "href": "index.html#autres",
+    "title": "Séminaire les mesures de l’économie T208001",
+    "section": "Autres",
+    "text": "Autres\n\nGuide sur la comptabilité nationale de Francis Malherbe https://www.comptanat.fr/\nGuide de l’OCDE pour la comptabilité nationale (Understanding National Accounts) https://www.oecd.org/content/dam/oecd/en/publications/reports/2014/10/understanding-national-accounts_g1g43f55/9789264214637-en.pdf\n\nCode accès aux enregistrements mediaserver: slme2026 (utilisateur et mot de passe)",
+    "crumbs": [
+      "Séminaire les mesures de l'économie T208001"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#présentation-du-cours",
+    "href": "slides intro.html#présentation-du-cours",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Présentation du cours",
+    "text": "Présentation du cours\nObjectif du cours\n\n\nComprendre et maîtriser les outils indispensables de l’analyse économique\n\n\nCela comprend:\n\nLes variables économiques (PIB, inflation…)\nLes principes de modélisation\nLa programmation et l’analyse statistique",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#à-propos-de-moi",
+    "href": "slides intro.html#à-propos-de-moi",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "À propos de moi",
+    "text": "À propos de moi\n\n\n\nBachelor en histoire-économie-société (ancien nom !)\nMaster en économie politique du capitalisme (MAPEC)\nCertificat complémentaire en stastistiques appliquées (Gsem)\nIntérêt particulier à l’analyse du changement institutionnel des modèles socio-économiques européens (surtout la Suisse et la France), sous l’angle de l’économie politique néoréaliste d’Amable et Palombarini\nJe réalise une thèse sur les blocs sociaux et la transformation du mode de régulation et régime d’accumulation suisse depuis l’après-guerre",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#à-propos-de-vous",
+    "href": "slides intro.html#à-propos-de-vous",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "À propos de vous",
+    "text": "À propos de vous\n\nDeuxième ou troisième année de bachelor ou plus ?\nLes cours non-obligatoires que vous avez eus jusqu’à maintenant, et les cours que vous prendrez ce semestre\nLe cours que vous avez le plus apprécié jusqu’à maintenant\nPlutôt quanti ou quali ? Économie politique ou histoire économique ?\nVos connaissances de R, d’excel et en statistiques ?\n\n==&gt; Cela m’aidera à adapter ce séminaire pour qu’il vous soit le plus utile possible !",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#plan-du-cours",
+    "href": "slides intro.html#plan-du-cours",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Plan du cours",
+    "text": "Plan du cours\n12 séances au total sur 3 thèmes de mesures\n\nComptabilité nationale\nInégalités et distribution\nInstitutions\n\nhttps://jeylal.github.io/les-mesures-de-l-conomie/",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#perspective-du-cours",
+    "href": "slides intro.html#perspective-du-cours",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Perspective du cours",
+    "text": "Perspective du cours\nUn cours d’analyse appliquée, nous allons beaucoup travailler directement avec des données et des exemples. L’idée est de vous familiariser avec les données économiques, comment les traiter et les analyser.\nAprès ce cours, vous devriez être capable de mener vos propres analyses quantitatives pour vos recherches et votre PDR.\n==&gt; Outils inspensable: R(studio) et Quarto",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#r-un-outil-indispensable-en-économie",
+    "href": "slides intro.html#r-un-outil-indispensable-en-économie",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "R: un outil indispensable en économie",
+    "text": "R: un outil indispensable en économie\n\n\n\n\n\n\n\n\nL’un des logiciels les plus utilisés par les économistes, que ce soit pour la visualisation de données ou l’estimation de modèles économétriques. Grande flexiblité et potentiel énorme.",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#quarto",
+    "href": "slides intro.html#quarto",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Quarto",
+    "text": "Quarto\nQuarto est un système de publication qui permet de produire des documents directement à partir de Rstudio (exemple: powerpoints, pdf, sites web…) et donc de code en R.",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#évaluation-du-cours",
+    "href": "slides intro.html#évaluation-du-cours",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Évaluation du cours",
+    "text": "Évaluation du cours\n\nParticipation au cours (20%)\n\nLa participation aux séance est obligatoire et sera contrôlée à chaque début de cours\n\nExamen pratique en dernière séance (80%)\n\nIl s’agira de travaux pratiques à réaliser en cours de séance (2h), avec des exercices à réaliser sur R ou excel.\n\nExamen blanc après les vacances de pâques: bonus si la note aide à améliorer la note finale",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#à-propos-de-lintelligence-artificielle",
+    "href": "slides intro.html#à-propos-de-lintelligence-artificielle",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "À propos de l’intelligence artificielle",
+    "text": "À propos de l’intelligence artificielle\nDéconseillé dans le cadre de ce cours, pour les raisons suivantes:\n\n\n\nVous n’aurez pas accès aux IA lors des examens pratiques\nSi les IA sont désormais excellentes en programmation (Python, Stata…), les IA les plus utilisées (notamment Chatgpt) produisent du code R qui n’est souvent pas optimale\nUtilisation acceptable dans certains cas, comme pour simplifier des tâches répétitives\nR est le langage avec le plus de ressources et de documentations en ligne, pas besoin de passer par une IA\nRisque de ne pas assimiler le contenu du cours si vous dépendez entièrement des IA pour résoudre les exercices\n\n\n\n\n\n\n\n\nImportant\n\n\nEn dehors des examens en présence, je ne peux pas vous interdire l’utilisation des IA. Je vous déconseille l’utilisation de Chatgpt et vous recommande d’utiliser Copilot, dont vous avez une version gratuite avec votre compte Unige. D’autres IA sont meilleures pour R, comme ShinyAssistant.",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#apprendre-lanalyse-à-travers-r",
+    "href": "slides intro.html#apprendre-lanalyse-à-travers-r",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Apprendre l’analyse à travers R",
+    "text": "Apprendre l’analyse à travers R",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#github",
+    "href": "slides intro.html#github",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Github",
+    "text": "Github\n\nLogiciel permettant de développer un dépôt (repository ou “repo”), consistant en un fichier contenant votre code (dans le cadre de ce cours les exercices sur R/quarto et excel)\nPermet de sauvegarder dans un cloud et contrôler de manière minutieuse toutes les modifications\nPermet le contrôle par les paires de votre travail, ou bien de travailler à plusieurs à distance sur le même travail",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#exercice",
+    "href": "slides intro.html#exercice",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Exercice",
+    "text": "Exercice\n\nInstallez Quarto.\nCréez-vous un compte github &lt;github.com&gt; et installez github desktop https://desktop.github.com/download/\nInstallez tinytex en runnant cette commande dans le terminal quarto install tinytex\nCréez un document quarto pour chaque type de document possible: html pdf, word et powerpoint (avec revealjs), faites attention à bien sauvegarder ce document quarto dans un fichier à part entière.\nCréez un repo github à partir de ce fichier.",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#penn-world-tables",
+    "href": "slides intro.html#penn-world-tables",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Penn World Tables",
+    "text": "Penn World Tables\nLa Penn World Table (PWT) est l’une des base de données les plus connues en économie. Elle compile certaines variables clés pour de nombreux pays sur une période de temps assez importante.\nLa PWT est accessible et téléchargeable ici, mais dans le cadre de cet atelier nous allons utiliser le package Rdatasets qui permet d’importer directement le tableau de données dans R\nVoici la documentation du tableau de données https://vincentarelbundock.github.io/Rdatasets/doc/stevedata/pwt_sample.html et comment l’importer dans R:",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#pwt-variables",
+    "href": "slides intro.html#pwt-variables",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "PWT variables",
+    "text": "PWT variables\n\n\n\n\n\n\n\nVariable\nDescription\n\n\n\n\ncountry\nNom du pays.\n\n\nisocode\nCode ISO du pays.\n\n\nyear\nAnnée (numérique).\n\n\npop\nPopulation (en millions).\n\n\nhc\nIndice de capital humain par personne (années de scolarité et rendements).\n\n\nrgdpna\nPIB réel à prix nationaux constants de 2011 (en millions USD 2017).\n\n\nrgdpo\nPIB réel côté production, en PPA chaînées (en millions USD 2017).\n\n\nrgdpe\nPIB réel côté dépenses, en PPA chaînées (en millions USD 2017).\n\n\nlabsh\nPart de la rémunération du travail dans le PIB à prix courants.\n\n\navh\nHeures annuelles moyennes travaillées par personne engagée.\n\n\nemp\nNombre de personnes engagées (en millions).\n\n\nrnna\nStock de capital à prix constants de 2017 (en millions USD 2017).",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#pwt-importation",
+    "href": "slides intro.html#pwt-importation",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "PWT importation",
+    "text": "PWT importation",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#r",
+    "href": "slides intro.html#r",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "R",
+    "text": "R\nImporter la PWT en utilisant le package Rdatasets",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#le-package-esquisse",
+    "href": "slides intro.html#le-package-esquisse",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Le package esquisse",
+    "text": "Le package esquisse\nPermet d’utiliser une interface permettant d’explorer les données et produire des graphiques sans coder soi-même",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
+    "objectID": "slides intro.html#dbnomics",
+    "href": "slides intro.html#dbnomics",
+    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
+    "section": "Dbnomics",
+    "text": "Dbnomics\nDbnomics est une base de données internationale rassembland en une base de nombreuses bases de données indispensables en économie: données de l’OCDE, de la Banque Mondiale, du Fond Monétaire Internationale…\nLe package rdbnomics permet d’importer ces données directement dans R.\nExemple:",
+    "crumbs": [
+      "Introduction au séminaire, rappels de R et introduction à Quarto"
+    ]
+  },
+  {
     "objectID": "10mars_cours3.html#données-macroéconomiques-principes-de-base",
     "href": "10mars_cours3.html#données-macroéconomiques-principes-de-base",
     "title": "10 Mars. Comptabilité nationale",
@@ -497,766 +1637,6 @@
     "text": "Baccaro, Lucio, et Sinisa Hadziabdic. 2024. « Operationalizing Growth Models ». Quality & Quantity 58 (2): 1325‑60. https://doi.org/10.1007/s11135-023-01685-w.",
     "crumbs": [
       "10 Mars. Comptabilité nationale"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#présentation-du-cours",
-    "href": "slides intro.html#présentation-du-cours",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "Présentation du cours",
-    "text": "Présentation du cours\nObjectif du cours\n\n\nComprendre et maîtriser les outils indispensables de l’analyse économique\n\n\nCela comprend:\n\nLes variables économiques (PIB, inflation…)\nLes principes de modélisation\nLa programmation et l’analyse statistique",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#à-propos-de-moi",
-    "href": "slides intro.html#à-propos-de-moi",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "À propos de moi",
-    "text": "À propos de moi\n\n\n\nBachelor en histoire-économie-société (ancien nom !)\nMaster en économie politique du capitalisme (MAPEC)\nCertificat complémentaire en stastistiques appliquées (Gsem)\nIntérêt particulier à l’analyse du changement institutionnel des modèles socio-économiques européens (surtout la Suisse et la France), sous l’angle de l’économie politique néoréaliste d’Amable et Palombarini\nJe réalise une thèse sur les blocs sociaux et la transformation du mode de régulation et régime d’accumulation suisse depuis l’après-guerre",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#à-propos-de-vous",
-    "href": "slides intro.html#à-propos-de-vous",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "À propos de vous",
-    "text": "À propos de vous\n\nDeuxième ou troisième année de bachelor ou plus ?\nLes cours non-obligatoires que vous avez eus jusqu’à maintenant, et les cours que vous prendrez ce semestre\nLe cours que vous avez le plus apprécié jusqu’à maintenant\nPlutôt quanti ou quali ? Économie politique ou histoire économique ?\nVos connaissances de R, d’excel et en statistiques ?\n\n==&gt; Cela m’aidera à adapter ce séminaire pour qu’il vous soit le plus utile possible !",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#plan-du-cours",
-    "href": "slides intro.html#plan-du-cours",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "Plan du cours",
-    "text": "Plan du cours\n12 séances au total sur 3 thèmes de mesures\n\nComptabilité nationale\nInégalités et distribution\nInstitutions\n\nhttps://jeylal.github.io/les-mesures-de-l-conomie/",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#perspective-du-cours",
-    "href": "slides intro.html#perspective-du-cours",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "Perspective du cours",
-    "text": "Perspective du cours\nUn cours d’analyse appliquée, nous allons beaucoup travailler directement avec des données et des exemples. L’idée est de vous familiariser avec les données économiques, comment les traiter et les analyser.\nAprès ce cours, vous devriez être capable de mener vos propres analyses quantitatives pour vos recherches et votre PDR.\n==&gt; Outils inspensable: R(studio) et Quarto",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#r-un-outil-indispensable-en-économie",
-    "href": "slides intro.html#r-un-outil-indispensable-en-économie",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "R: un outil indispensable en économie",
-    "text": "R: un outil indispensable en économie\n\n\n\n\n\n\n\n\nL’un des logiciels les plus utilisés par les économistes, que ce soit pour la visualisation de données ou l’estimation de modèles économétriques. Grande flexiblité et potentiel énorme.",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#quarto",
-    "href": "slides intro.html#quarto",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "Quarto",
-    "text": "Quarto\nQuarto est un système de publication qui permet de produire des documents directement à partir de Rstudio (exemple: powerpoints, pdf, sites web…) et donc de code en R.",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#évaluation-du-cours",
-    "href": "slides intro.html#évaluation-du-cours",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "Évaluation du cours",
-    "text": "Évaluation du cours\n\nParticipation au cours (20%)\n\nLa participation aux séance est obligatoire et sera contrôlée à chaque début de cours\n\nExamen pratique en dernière séance (80%)\n\nIl s’agira de travaux pratiques à réaliser en cours de séance (2h), avec des exercices à réaliser sur R ou excel.\n\nExamen blanc après les vacances de pâques: bonus si la note aide à améliorer la note finale",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#à-propos-de-lintelligence-artificielle",
-    "href": "slides intro.html#à-propos-de-lintelligence-artificielle",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "À propos de l’intelligence artificielle",
-    "text": "À propos de l’intelligence artificielle\nDéconseillé dans le cadre de ce cours, pour les raisons suivantes:\n\n\n\nVous n’aurez pas accès aux IA lors des examens pratiques\nSi les IA sont désormais excellentes en programmation (Python, Stata…), les IA les plus utilisées (notamment Chatgpt) produisent du code R qui n’est souvent pas optimale\nUtilisation acceptable dans certains cas, comme pour simplifier des tâches répétitives\nR est le langage avec le plus de ressources et de documentations en ligne, pas besoin de passer par une IA\nRisque de ne pas assimiler le contenu du cours si vous dépendez entièrement des IA pour résoudre les exercices\n\n\n\n\n\n\n\n\nImportant\n\n\nEn dehors des examens en présence, je ne peux pas vous interdire l’utilisation des IA. Je vous déconseille l’utilisation de Chatgpt et vous recommande d’utiliser Copilot, dont vous avez une version gratuite avec votre compte Unige. D’autres IA sont meilleures pour R, comme ShinyAssistant.",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#apprendre-lanalyse-à-travers-r",
-    "href": "slides intro.html#apprendre-lanalyse-à-travers-r",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "Apprendre l’analyse à travers R",
-    "text": "Apprendre l’analyse à travers R",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#github",
-    "href": "slides intro.html#github",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "Github",
-    "text": "Github\n\nLogiciel permettant de développer un dépôt (repository ou “repo”), consistant en un fichier contenant votre code (dans le cadre de ce cours les exercices sur R/quarto et excel)\nPermet de sauvegarder dans un cloud et contrôler de manière minutieuse toutes les modifications\nPermet le contrôle par les paires de votre travail, ou bien de travailler à plusieurs à distance sur le même travail",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#exercice",
-    "href": "slides intro.html#exercice",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "Exercice",
-    "text": "Exercice\n\nInstallez Quarto.\nCréez-vous un compte github &lt;github.com&gt; et installez github desktop https://desktop.github.com/download/\nInstallez tinytex en runnant cette commande dans le terminal quarto install tinytex\nCréez un document quarto pour chaque type de document possible: html pdf, word et powerpoint (avec revealjs), faites attention à bien sauvegarder ce document quarto dans un fichier à part entière.\nCréez un repo github à partir de ce fichier.",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#penn-world-tables",
-    "href": "slides intro.html#penn-world-tables",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "Penn World Tables",
-    "text": "Penn World Tables\nLa Penn World Table (PWT) est l’une des base de données les plus connues en économie. Elle compile certaines variables clés pour de nombreux pays sur une période de temps assez importante.\nLa PWT est accessible et téléchargeable ici, mais dans le cadre de cet atelier nous allons utiliser le package Rdatasets qui permet d’importer directement le tableau de données dans R\nVoici la documentation du tableau de données https://vincentarelbundock.github.io/Rdatasets/doc/stevedata/pwt_sample.html et comment l’importer dans R:",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#pwt-variables",
-    "href": "slides intro.html#pwt-variables",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "PWT variables",
-    "text": "PWT variables\n\n\n\n\n\n\n\nVariable\nDescription\n\n\n\n\ncountry\nNom du pays.\n\n\nisocode\nCode ISO du pays.\n\n\nyear\nAnnée (numérique).\n\n\npop\nPopulation (en millions).\n\n\nhc\nIndice de capital humain par personne (années de scolarité et rendements).\n\n\nrgdpna\nPIB réel à prix nationaux constants de 2011 (en millions USD 2017).\n\n\nrgdpo\nPIB réel côté production, en PPA chaînées (en millions USD 2017).\n\n\nrgdpe\nPIB réel côté dépenses, en PPA chaînées (en millions USD 2017).\n\n\nlabsh\nPart de la rémunération du travail dans le PIB à prix courants.\n\n\navh\nHeures annuelles moyennes travaillées par personne engagée.\n\n\nemp\nNombre de personnes engagées (en millions).\n\n\nrnna\nStock de capital à prix constants de 2017 (en millions USD 2017).",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#pwt-importation",
-    "href": "slides intro.html#pwt-importation",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "PWT importation",
-    "text": "PWT importation",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#r",
-    "href": "slides intro.html#r",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "R",
-    "text": "R\nImporter la PWT en utilisant le package Rdatasets",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#le-package-esquisse",
-    "href": "slides intro.html#le-package-esquisse",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "Le package esquisse",
-    "text": "Le package esquisse\nPermet d’utiliser une interface permettant d’explorer les données et produire des graphiques sans coder soi-même",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "slides intro.html#dbnomics",
-    "href": "slides intro.html#dbnomics",
-    "title": "Introduction au séminaire, rappels de R et introduction à Quarto",
-    "section": "Dbnomics",
-    "text": "Dbnomics\nDbnomics est une base de données internationale rassembland en une base de nombreuses bases de données indispensables en économie: données de l’OCDE, de la Banque Mondiale, du Fond Monétaire Internationale…\nLe package rdbnomics permet d’importer ces données directement dans R.\nExemple:",
-    "crumbs": [
-      "Introduction au séminaire, rappels de R et introduction à Quarto"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Séminaire les mesures de l’économie T208001",
-    "section": "",
-    "text": "Heures de réception, bureau 4242 unimail: mardi 14h-17h, jeudi 14h-17h",
-    "crumbs": [
-      "Séminaire les mesures de l'économie T208001"
-    ]
-  },
-  {
-    "objectID": "index.html#résumé-du-cours",
-    "href": "index.html#résumé-du-cours",
-    "title": "Séminaire les mesures de l’économie T208001",
-    "section": "Résumé du cours",
-    "text": "Résumé du cours\nCe séminaire a pour objectif d’enseigner aux étudiants la manière dont les principaux indicateurs économiques tirés de la comptabilité nationale et de l’étude de la distribution du revenu national sont calculés. Un accent particulier sera mis sur la familiarisation avec les principales sources de données en économie et comment traiter ces données en pratique. La première partie du cours portera sur les indicateurs calculables à partir de la comptabilité nationale (comme le taux de profit, la part des salaires dans la valeur ajoutée, les contributions à la croissance etc.). La deuxième partie du cours se concentrera sur les principaux indicateurs d’inégalité ainsi que sur l’étude de la distribution du revenu. Enfin, la dernière partie du cours sera consacrée aux indicateurs mesurant les institutions socio-économiques. Ce séminaire sera fortement axé sur des exercices pratiques permettant aux étudiants d’apprendre comment développer eux-même leurs propres analyses des dynamiques économiques. Ce séminaire accompagne le cours les mesures de l’économie dispensé par Professeur Marc Morgan, mais reste un cours indépendant.",
-    "crumbs": [
-      "Séminaire les mesures de l'économie T208001"
-    ]
-  },
-  {
-    "objectID": "index.html#février-introduction-au-séminaire",
-    "href": "index.html#février-introduction-au-séminaire",
-    "title": "Séminaire les mesures de l’économie T208001",
-    "section": "24 février: introduction au séminaire",
-    "text": "24 février: introduction au séminaire\nRappels des bases de R, introduction à des packages utiles pour l’analyse macroéconomique. Installation et introduction au codage avec R sur Quarto pour produire des documents html, pdf et powerpoint. Installation et introduction à la plateforme de développement et stockage cloud Github. Sensibilisation à l’usage de l’intelligence artificielle pour le codage en R et l’analyse de données macroéconomiques. Introduction aux principales bases de données macroéconomiques.",
-    "crumbs": [
-      "Séminaire les mesures de l'économie T208001"
-    ]
-  },
-  {
-    "objectID": "index.html#mars-introduction-aux-séries-temporelles-et-à-lanalyse-de-régression",
-    "href": "index.html#mars-introduction-aux-séries-temporelles-et-à-lanalyse-de-régression",
-    "title": "Séminaire les mesures de l’économie T208001",
-    "section": "3 mars: introduction aux séries temporelles et à l’analyse de régression",
-    "text": "3 mars: introduction aux séries temporelles et à l’analyse de régression\nIntroduction au traitement et à l’analyse de séries temporelles en macroéconomie et sur R. Introduction aux régressions linéaires avec des données macroéconomiques.\nSources:\n\nGelman, Andrew, Jennifer Hill, and Aki Vehtari. Regression and Other Stories. Cambridge University Press, 2021.\nHill, R. Carter, William E. Griffiths, and Guay C. Lim. Principles of Econometrics. 5th edition. Wiley, 2018.",
-    "crumbs": [
-      "Séminaire les mesures de l'économie T208001"
-    ]
-  },
-  {
-    "objectID": "index.html#mars-comptabilité-nationale",
-    "href": "index.html#mars-comptabilité-nationale",
-    "title": "Séminaire les mesures de l’économie T208001",
-    "section": "10 mars: comptabilité nationale",
-    "text": "10 mars: comptabilité nationale\nLe calculs du PIB selon les trois approches (dépense, revenu, consommation). Comment calculer les différentes mesures du revenu national: du PIB au revenu national net. Comparer les évolutions du PIB. Calculer les contributions à la croissance. PIB potentiel. Balances sectorielles. Exercices sur la visualisation de données macroéconomiques, les différents calculs du revenu national, des contributions à la croissance et des balances sectorielles à partir des données de la comptabilité nationale du Secrétariat d’État à l’économie (SECO).\nSources:\n\nLequiller, François, and Derek Blades. Understanding National Accounts. Second Edition. OECD, 2014. Chapitre 1",
-    "crumbs": [
-      "Séminaire les mesures de l'économie T208001"
-    ]
-  },
-  {
-    "objectID": "index.html#mars-comptabilité-nationale-suite",
-    "href": "index.html#mars-comptabilité-nationale-suite",
-    "title": "Séminaire les mesures de l’économie T208001",
-    "section": "17 mars: comptabilité nationale (suite)",
-    "text": "17 mars: comptabilité nationale (suite)",
-    "crumbs": [
-      "Séminaire les mesures de l'économie T208001"
-    ]
-  },
-  {
-    "objectID": "index.html#mars-mesures-de-linflation",
-    "href": "index.html#mars-mesures-de-linflation",
-    "title": "Séminaire les mesures de l’économie T208001",
-    "section": "24 mars: mesures de l’inflation",
-    "text": "24 mars: mesures de l’inflation\nIndice des prix à la consommation, déflateur, indices en chaîne et parité de pouvoir d’achat. Exercice sur le calcul des indices de Laspeyre, Paasche et de l’indice en chaîne.\n\nLequiller, François, and Derek Blades. Understanding National Accounts. Second Edition. OECD, 2014. Chapitres 2 et 3",
-    "crumbs": [
-      "Séminaire les mesures de l'économie T208001"
-    ]
-  },
-  {
-    "objectID": "index.html#mars-distribution-et-inégalité-1",
-    "href": "index.html#mars-distribution-et-inégalité-1",
-    "title": "Séminaire les mesures de l’économie T208001",
-    "section": "31 mars: distribution et inégalité (1)",
-    "text": "31 mars: distribution et inégalité (1)\nSources de données et méthodes pour analyser la distribution du revenu national. Comment calculer la courbe de Lorenz; la relation et le coefficient de Pareto; le coefficient de Gini et les top shares. Exercice avec les données fiscales suisses.\nSources:\n\nCowell, Frank Alan. Measuring Inequality. Third edition. LSE Perspectives in Economic Analysis. University Press, 2011.",
-    "crumbs": [
-      "Séminaire les mesures de l'économie T208001"
-    ]
-  },
-  {
-    "objectID": "index.html#avril-pas-de-cours-vacances-de-pâques",
-    "href": "index.html#avril-pas-de-cours-vacances-de-pâques",
-    "title": "Séminaire les mesures de l’économie T208001",
-    "section": "7 avril: pas de cours (vacances de Pâques)",
-    "text": "7 avril: pas de cours (vacances de Pâques)",
-    "crumbs": [
-      "Séminaire les mesures de l'économie T208001"
-    ]
-  },
-  {
-    "objectID": "index.html#avril-examen-blanc-bonus",
-    "href": "index.html#avril-examen-blanc-bonus",
-    "title": "Séminaire les mesures de l’économie T208001",
-    "section": "14 avril: examen blanc (bonus)",
-    "text": "14 avril: examen blanc (bonus)\nExamen blanc, bonus pour la note finale si le résultat aide à améliorer cette dernière. Cet examen portera sur le contenu des cinq première séance et consistera en un travail pratique sur excel et R à réaliser lors du cours.",
-    "crumbs": [
-      "Séminaire les mesures de l'économie T208001"
-    ]
-  },
-  {
-    "objectID": "index.html#avril-distribution-et-inégalité-suite-de-1",
-    "href": "index.html#avril-distribution-et-inégalité-suite-de-1",
-    "title": "Séminaire les mesures de l’économie T208001",
-    "section": "21 avril: distribution et inégalité: suite de (1)",
-    "text": "21 avril: distribution et inégalité: suite de (1)",
-    "crumbs": [
-      "Séminaire les mesures de l'économie T208001"
-    ]
-  },
-  {
-    "objectID": "index.html#avril-distribution-et-inégalité-2",
-    "href": "index.html#avril-distribution-et-inégalité-2",
-    "title": "Séminaire les mesures de l’économie T208001",
-    "section": "28 avril: distribution et inégalité (2)",
-    "text": "28 avril: distribution et inégalité (2)\nMesurer les inégalités de classes: comment estimer différentes mesures de classes sociales et les inégalités entre ces classes à partir de données d’enquête. Exercice en utilisant l’enquête panel des ménages suisses.\nSources:\n\nJ. Gil Hernandez, Carlos. “Wealth Inequality and Stratification by Social Classes in 21st-Century Europe.” DigClass, February 27, 2024. https://digclass.eu/wealth-inequality-and-stratification-by-social-classes-in-21st-century-europe/.\nMunoz de Bustillo, Rafael. “Social classes in economics analysis. A brief historical account.” DigClass, March 11, 2022. https://digclass.eu/social-classes-in-economics-analysis-a-brief-historical-account/.\nOesch, Daniel. “Contemporary Class Analysis.” DigClass, January 4, 2022. https://digclass.eu/contemporary-class-analysis/.\nVillani, Davide. “Income inequality, top shares of income and social classes in the 21st century.” DigClass, January 13, 2023. https://digclass.eu/income-inequality-top-shares-of-income-and-social-classes-in-the-21st-century/.",
-    "crumbs": [
-      "Séminaire les mesures de l'économie T208001"
-    ]
-  },
-  {
-    "objectID": "index.html#mai-mesurer-les-institutions-1",
-    "href": "index.html#mai-mesurer-les-institutions-1",
-    "title": "Séminaire les mesures de l’économie T208001",
-    "section": "5 mai: mesurer les institutions (1)",
-    "text": "5 mai: mesurer les institutions (1)\nLes différentes mesures des formes institutionnelles du capitalisme. Exemple des institutions de la protection sociale en explorant les données et indicateurs de la CWED (comparative welfare entitlements Datasets) (http://cwed2.org/&gt;) et les indicateurs institutionnels de l’OCDE (product market regulation index, employment protection indicators)\nSources:\n\nAmable, Bruno. The Diversity of Modern Capitalism. Oxford University Press, 2003.\nCahen-Fourot, Louison. “Contemporary Capitalisms and Their Social Relation to the Environment.” Ecological Economics 172 (June 2020): 106634. https://doi.org/10.1016/j.ecolecon.2020.106634.\nLyle Scruggs (2014). Social Welfare Generosity Scores in CWED 2: A Methodological Genealogy, February 2014.",
-    "crumbs": [
-      "Séminaire les mesures de l'économie T208001"
-    ]
-  },
-  {
-    "objectID": "index.html#mai-mesurer-les-institutions-2",
-    "href": "index.html#mai-mesurer-les-institutions-2",
-    "title": "Séminaire les mesures de l’économie T208001",
-    "section": "12 mai: mesurer les institutions (2)",
-    "text": "12 mai: mesurer les institutions (2)\nExercice sur comment construire des indices composés avec comme exemple la construction d’un indice composé du pouvoir de négociation des salariés aux États-Unis.\nSources:\n\nFontanari, Claudia, Enrico Sergio Levrero, and Davide Romaniello. “A Composite Index for Workers’ Bargaining Power and the Inflation Rate in the United States, 1960–2018.” Structural Change and Economic Dynamics 70 (September 2024): 682–98. https://doi.org/10.1016/j.strueco.2024.05.009.",
-    "crumbs": [
-      "Séminaire les mesures de l'économie T208001"
-    ]
-  },
-  {
-    "objectID": "index.html#mai-examen-pratique-final",
-    "href": "index.html#mai-examen-pratique-final",
-    "title": "Séminaire les mesures de l’économie T208001",
-    "section": "19 mai: examen pratique final",
-    "text": "19 mai: examen pratique final",
-    "crumbs": [
-      "Séminaire les mesures de l'économie T208001"
-    ]
-  },
-  {
-    "objectID": "index.html#quarto",
-    "href": "index.html#quarto",
-    "title": "Séminaire les mesures de l’économie T208001",
-    "section": "Quarto",
-    "text": "Quarto\nQuarto est un outil permettant d’écrire et faire tourner du code R de manière plus fluide qu’un simple que script R. Il s’agit du principal système de publication de code R, permettant de produire des documents en pdf, html et powerpoint. Un guide et une introduction complète à Quarto est disponible sur la page web de Quarto (quarto.org). Quarto est téléchargeable ici. Je vous recommande de jeter un oeil à la gallerie de Quarto afin d’avoir un aperçu de tout le potentiel de ce logiciel, qui vous sera très utile pour le reste de votre parcours: Quarto Gallery.",
-    "crumbs": [
-      "Séminaire les mesures de l'économie T208001"
-    ]
-  },
-  {
-    "objectID": "index.html#github",
-    "href": "index.html#github",
-    "title": "Séminaire les mesures de l’économie T208001",
-    "section": "Github",
-    "text": "Github\nGithub est site web d’hébergement et de stockage cloud de fichier et de données. Il permet de sauvegarder vos projets de travail (similaire à OneDrive) et de publier vos résultats et vos documents quarto. Je vous recommande fortement de vous créer un compte github et d’installer Github desktop. Je vous recommande ce tutoriel youtube pour vous aidez dans l’installation et l’utilisation de Github.",
-    "crumbs": [
-      "Séminaire les mesures de l'économie T208001"
-    ]
-  },
-  {
-    "objectID": "index.html#r-et-lanalyse-de-régression",
-    "href": "index.html#r-et-lanalyse-de-régression",
-    "title": "Séminaire les mesures de l’économie T208001",
-    "section": "R et l’analyse de régression",
-    "text": "R et l’analyse de régression\n\nGuide-R\nR for Data Science\nTime Series Analysis\nR Gallery (visualisation et graphiques)\nModels to Meaning\nVidéos youtubes:\nPlaylists d’Andrew Heiss\nPlaylists d’Albert Rapp\nWedata (en français)\n\nBases de R\nStatistiques avec R\nggplot",
-    "crumbs": [
-      "Séminaire les mesures de l'économie T208001"
-    ]
-  },
-  {
-    "objectID": "index.html#bases-de-données",
-    "href": "index.html#bases-de-données",
-    "title": "Séminaire les mesures de l’économie T208001",
-    "section": "Bases de données",
-    "text": "Bases de données\nBases de données internationales:\n\nDBnomics: la base mondiale de données économiques https://db.nomics.world/\n\nIl s’agit de la base de données la plus utile, car elle compile une série énorme de données provenant de toutes les organisations majeurs (OCDE, OIT, Banque Mondiale…). De plus, elle offre un package R (RDBnomics) permettant d’importer directement les données dans R: https://github.com/dbnomics/rdbnomics\n\nBase de données de l’OCDE: https://data-explorer.oecd.org/?lc=fr\nBanque mondiale: https://data.worldbank.org/\nMaddison historical statistics: https://www.rug.nl/ggdc/historicaldevelopment/maddison/\nIlostat (organisation internationale du travail): https://ilostat.ilo.org/fr/data/\nAmeco (base de données macroéconomiques pour la Commission européenne): https://economy-finance.ec.europa.eu/economic-research-and-databases/economic-databases/ameco-database_en\nGapminder https://www.gapminder.org/resources/\nOur World in Data: https://ourworldindata.org/\nPenn World Tables: https://www.rug.nl/ggdc/productivity/pwt/?lang=en\nWorld Inequality Database: https://wid.world/\nLuxembourg Income Study database (LIS): https://www.lisdatacenter.org/data-access/\n\nDartFrontend: https://dart.lisdatacenter.org/dar\nPour la Suisse:\n\nDonnées du PIB selon les trois approches: https://www.seco.admin.ch/seco/fr/home/wirtschaftslage—wirtschaftspolitik/Wirtschaftslage/bip-quartalsschaetzungen-/daten.htm\nStatistiques historiques de la Suisse: https://hsso.ch/fr\nOffice fédéral de la statistique: https://www.bfs.admin.ch/bfs/fr/home.html\nStatistiques fiscales de l’administration fédérale des contributions: https://www.estv.admin.ch/fr/statistiques-sur-limpot-federal-direct\nAtlas statistique de la Suisse: https://mapexplorer.bfs.admin.ch/#c=indicator&i=ch_11_02_02_001.ausgabenfrkantpolgstr&s=2023&view=map164",
-    "crumbs": [
-      "Séminaire les mesures de l'économie T208001"
-    ]
-  },
-  {
-    "objectID": "index.html#autres",
-    "href": "index.html#autres",
-    "title": "Séminaire les mesures de l’économie T208001",
-    "section": "Autres",
-    "text": "Autres\n\nGuide sur la comptabilité nationale de Francis Malherbe https://www.comptanat.fr/\nGuide de l’OCDE pour la comptabilité nationale (Understanding National Accounts) https://www.oecd.org/content/dam/oecd/en/publications/reports/2014/10/understanding-national-accounts_g1g43f55/9789264214637-en.pdf\n\nCode accès aux enregistrements mediaserver: slme2026 (utilisateur et mot de passe)",
-    "crumbs": [
-      "Séminaire les mesures de l'économie T208001"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#séries-temporelles",
-    "href": "3mars_cours2.html#séries-temporelles",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Séries temporelles",
-    "text": "Séries temporelles\nLa plupart des mesures de l’économie sont des séries temporelles (PIB, emploi, inflation…).\nL’analyse des séries temporelles présente certaines particularités par rapport aux données en coupe (à un point donné dans le temps, aussi appelé “cross-sectional data”), notamment car elles ont une tendance temporelle (par exemple exponentielle).\n\nLorsque l’on veut analyser la relation entre deux variables qui ont tendance à croître avec le temps, il faut faire attention au problème de relation fallacieuse (spurious relationship), une corrélation apparente entre deux variable qui est en fait le résultat d’une 3ème variable “cachée” (ici le temps).",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#taux-de-croissance",
-    "href": "3mars_cours2.html#taux-de-croissance",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Taux de croissance",
-    "text": "Taux de croissance\nLes séries temporelles ont la particularité de croître à un taux plus ou moins stable dans le temps.\nCela implique une croissance exponentielle\nExemple: imaginons une variable \\(x\\) qui croît à un taux constant de 3% par an. A \\(t = 0\\), \\(x =2\\). A \\(t=1\\), x augmente de \\(2*1.03\\) (0.03 étant le taux de croissance auquel on additionne 1):\n\\(x_{t=1} = 2*1.03\\)\nPour \\(t=2\\), \\(x_{t=2} = 2*1.03*1.03 = 2*(1.03)^2\\)\nPour \\(t=3\\), \\(x_{t=3} = 2*1.03*1.03*1.03 = 2*(1.03)^3\\)\nAinsi de suite, pour la formule générale:\n\\(x_t = 2*(1.03)^t\\). Il s’agit de la formule de croissance exponentielle: \\(x_t = x_0 (1+g)^t\\), avec \\(x_0\\) la valeur initiale, \\(g\\) le taux de croissance et \\(t\\) le nombre de périodes.",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#croissance-exponentielle",
-    "href": "3mars_cours2.html#croissance-exponentielle",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Croissance exponentielle",
-    "text": "Croissance exponentielle\nExemple dans R\n\n\nf = function(x0, g, t){\n  \n  x0*(1+g)^t\n  \n}\n\nx0 = 2\ng = 0.03\nt = 1:150\n\nx = f(x0 = x0, g = g, t = t)\n\nplot(x, type = \"l\")",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#taux-de-croissance-1",
-    "href": "3mars_cours2.html#taux-de-croissance-1",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Taux de croissance",
-    "text": "Taux de croissance\nÀ partir de la formule pour la croissance exponentielle de X\n\\[x_t = x_0(1+g)^t\\]\non peut trouver le taux de croissance:\n\\[g = \\left(\\frac{x_t}{x_0}\\right)^{1/t}-1\\]\nIl s’agit du taux de croissance moyen composé de la série entre \\(x_t\\) (en dernière période) et \\(x_0\\)\nLorsque l’on calcule le taux de croissance entre deux périodes seulement (disons \\(x_0\\) et \\(x_1\\)), on retrouve la formule habituelle du taux de croissance (car \\(t=1\\)):\n\\[\ng = \\frac{x_1 - x_0}{x_0} = \\left(\\frac{x_1}{x_0}\\right)^{1/1}-1\n\\]",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#moyenne-des-taux-de-croissance-annuel",
-    "href": "3mars_cours2.html#moyenne-des-taux-de-croissance-annuel",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Moyenne des taux de croissance annuel",
-    "text": "Moyenne des taux de croissance annuel\n\\[\n\\bar{g} = \\frac{1}{T}\\sum_{i=1}^t{g_i}\n\\]\nAvec \\(T\\) le nombre total de périodes. g et \\(\\bar{g}\\) sont la plupart du temps relativement identiques (cela dépend de la variation des taux de croissance).",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#rétropolation-de-séries-et-taux-de-croissance",
-    "href": "3mars_cours2.html#rétropolation-de-séries-et-taux-de-croissance",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Rétropolation de séries et taux de croissance",
-    "text": "Rétropolation de séries et taux de croissance\n\nLe plus souvent, le taux de croissance est calculé pour des variables en niveau\nMais il est parfois courant en macroéconomie de faire l’inverse: calculer des variables en niveau à partir de son taux de croissance\n\nExemple: les séries macroéconomiques suisses avant 1980 sont souvent calculé de cette manière en utilisant les taux de croissance d’anciens systèmes de comptabilité nationale.\n\n\n\\[\nx_t = x_{t-1}*(1+g)\n\\]",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#transformation-en-logarithme",
-    "href": "3mars_cours2.html#transformation-en-logarithme",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Transformation en logarithme",
-    "text": "Transformation en logarithme\n\n\nLa transformation en logarithme (passer de \\(x_t\\) à \\(log(x_t)\\)) est très courante en économie, surtout avec des séries temporelles caractérisées par une croissance exponentielle.\n\nLa transformation log permet de “linéariser” une série exponentielle\nLorsque l’on visualise la courbe d’une série en logarithme, la pente est le taux de croissance\n\n\n\nplot(x, type = \"l\")\n\n\n\n\n\n\n\n\n\nplot(log(x), type = \"l\")",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#transformation-en-logarithme-1",
-    "href": "3mars_cours2.html#transformation-en-logarithme-1",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Transformation en logarithme",
-    "text": "Transformation en logarithme\nSi \\(x_t = x_0(1+g)^t\\) est transformé en log et que nous isolons g, nous trouvons:\n\\[\nlog(1+g) = \\frac{log(x_t)-log(x_0)}{t}\n\\]\nEntre seulement deux période (par exemple d’une année à l’autre), \\(t = 1\\) et donc le taux de croissance peut être approximé facilement en prenant la différence en log. Quand \\(g\\) est entre -0.15 et 0.15, \\(log(1+g)\\) est une bonne approximation de \\(g\\).\nDans R:\n\nlibrary(tidyverse) # la fonction lag() doit être importée avec le package tidyverse\n\ng = log(x) - lag(log(x)) # lag() prend la valeur de x à t-1\n\n# Ou bien avec diff() (difference):\ng = diff(log(x))",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#pourquoi-log1g-g-entre--0.15-et-0.15",
-    "href": "3mars_cours2.html#pourquoi-log1g-g-entre--0.15-et-0.15",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Pourquoi log(1+g) ≅ g entre -0.15 et 0.15",
-    "text": "Pourquoi log(1+g) ≅ g entre -0.15 et 0.15\n\n\ng = seq(from = -0.30, to = 0.30, by = 0.001)\n`log(g+1)` = log(g+1)\n\ndf = tibble(g = g, `log(g+1)` = `log(g+1)`)\n\ndf %&gt;% \n  ggplot(aes(x = g, y = g, color = \"g\"))+\n  geom_line()+\n  geom_line(aes(x = g, y = `log(g+1)`, color = \"Log(1+g)\"))+\n  theme_minimal()+\n  labs(x = \"\", y = \"\")",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#exemple-avec-des-données-réelles-du-pib",
-    "href": "3mars_cours2.html#exemple-avec-des-données-réelles-du-pib",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Exemple avec des données réelles du PIB",
-    "text": "Exemple avec des données réelles du PIB\n\n\nlibrary(maddison) # le package maddison permet d'importer des données de longue durée du PIB par habitant\nlibrary(tidyverse) \n\ndata &lt;- subset(maddison, \n             year &gt;= 1800 &\n             iso2c %in% c(\"FR\", \"US\"))\n\ndata %&gt;% \n  ggplot(aes(x = year, y = rgdpnapc, color = country)) +\n  geom_line()+\n  theme_minimal()+\n  labs(x = \"\",\n       y = \"PIB par habitant (dollar US 2011)\",\n       title = \"Échelle normale (non-logarithmique)\")",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#exemple-avec-des-données-réelles-du-pib-1",
-    "href": "3mars_cours2.html#exemple-avec-des-données-réelles-du-pib-1",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Exemple avec des données réelles du PIB",
-    "text": "Exemple avec des données réelles du PIB\n\n\ndata %&gt;% \n  ggplot(aes(x = year, y = log(rgdpnapc), color = country)) +\n  geom_line()+\n  theme_minimal()+\n  labs(x = \"\",\n       y = \"PIB par habitant (dollar US 2011)\",\n       title = \"Échelle logarithmique\")",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#pourquoi-lanalyse-de-régression",
-    "href": "3mars_cours2.html#pourquoi-lanalyse-de-régression",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Pourquoi l’analyse de régression ?",
-    "text": "Pourquoi l’analyse de régression ?\n\nL’outil principal en économie et en sciences sociales (en méthodes quantitatives)\nPermet d’estimer des fonctions provenant de théories économiques (fonction de consommation, d’investissement…)\nPermet d’identifier et d’analyser des relations de causalité\nEstimation de modèles économiques (par exemple ceux que vous allez voire en macroéconomie)",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#exemple-fonction-de-consommation",
-    "href": "3mars_cours2.html#exemple-fonction-de-consommation",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Exemple: fonction de consommation",
-    "text": "Exemple: fonction de consommation\nL’une des fonctions les plus connues et estimées en macroéconomie est la fonction de consommation des ménages \\(C\\):\n\\[\nC = c_0 + c_1W\n\\]\nAvec \\(C\\) le niveau de consommation des ménages (dans la monnaie du pays considéré), \\(c_0\\) le niveau de consommation lorsque les salaires \\(W\\) = 0. \\(c_1\\) est la propension marginale à consommer, qui est une composante clé du multiplicateur keynésien.",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#régression-linéaire-simple",
-    "href": "3mars_cours2.html#régression-linéaire-simple",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Régression linéaire simple",
-    "text": "Régression linéaire simple\nCette fonction de consommation peut être estimée au moyen d’un modèle de régression linéaire simple. - “Simple”, car nous avons uniquement une variable explicative (les salaire \\(W\\)). - “linéaire”, car notre variable dépendante est numérique (la consommation \\(C\\)).\nLa régression linéaire simple prend la forme suivante:\n\\[\n\\underbrace{E[Y|X]}_{Valeurs\\ moyennes \\ de \\ Y \\ par \\ rapport \\ à \\ X} = \\underbrace{\\beta_0}_{ordonnée \\ à \\ l'origine} + \\underbrace{\\beta_1 X}_{coefficient*variable\\ explicative} + \\underbrace{e_i}_{termes\\ d'erreur}\n\\]\nAvec \\(E[Y|X]\\) “l’espérance” (la moyenne) de Y, notre variable dépendante, en fonction des valeur de notre variable explicative \\(X\\). \\(\\beta_0\\) l’ordonnée à l’origine et \\(e_i\\) le terme d’erreur. \\(E[Y|X]\\) est souvent écrit \\(Y\\) par simplicité.\n==&gt; Les régressions peuvent paraître compliquées à première vue ==&gt; Une manière simple de “démistifer” les régression est de comprendre qu’il s’agit simplement de comparaisons de moyennes",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#eyx-beta_0-beta_1x_i-e_i",
-    "href": "3mars_cours2.html#eyx-beta_0-beta_1x_i-e_i",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "\\[E[Y|X] = \\beta_0 + \\beta_1X_i + e_i\\]",
-    "text": "\\[E[Y|X] = \\beta_0 + \\beta_1X_i + e_i\\]\n\\(\\beta_1\\) est le paramètre clé du modèle.\nL’interprétation la plus courante de ce paramètre, qui est celle qui vous est enseignée dans vos cours de quanti, est que \\(\\beta_1\\) est l’effet de X sur les valeurs moyennes Y lorsque X augmente de une unité Cela veut dire que \\(\\beta_1\\) est l’effet marginal de x sur y, la valeur obtenue en prenant la dérivée de Y sur X:\n\\[\n\\frac{\\delta E[Y|X]}{\\delta X} = \\beta_1\n\\]\n==&gt; Il s’agit de l’interprétation causale du coefficient du réggression (\\(\\beta_1\\))",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#interprétation-en-termes-de-comparaison",
-    "href": "3mars_cours2.html#interprétation-en-termes-de-comparaison",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Interprétation en termes de comparaison",
-    "text": "Interprétation en termes de comparaison\nLe coefficient \\(\\beta_1\\) peut être aussi compris comme une différence de moyenne prédite par le modèle entre deux valeurs de X.\n\nSi \\(X\\) est une variable qualitative dichotomique (par exemple homme ou femme), elle ne prend que les valeurs 0 (disons homme) et 1 (disons femme) et que nous ignorons le termes d’erreur \\(e_i\\):\n\nSi \\(X = 1\\), &lt;=&gt; \\(E[Y|X = 1] = \\beta_0 + \\beta_1\\)\nEt si \\(X = 0\\), &lt;=&gt; \\(E[Y|X = 0] = \\beta_0\\)\nEt donc \\[E[Y|X=1] - E[Y|X=0] = \\beta_0 + \\beta_1 - \\beta_0 = \\beta_1\\]\n\\(\\beta_1\\) est la différence entre la moyenne prédite des femmes et des hommes.",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#interprétation-en-termes-de-comparaison-1",
-    "href": "3mars_cours2.html#interprétation-en-termes-de-comparaison-1",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Interprétation en termes de comparaison",
-    "text": "Interprétation en termes de comparaison\nMême principe si la variable est numérique/continue\nExemple avec \\(X_i\\) le revenu de la personne \\(i\\) et \\(Y=C\\) la consommation. Prenons \\(X_1 = 5000\\) et \\(X_2 = 5001\\). Le coefficient \\(\\beta1\\) est la différence entre les valeurs prédite de Y pour \\(X_2\\) et \\(X_1\\).\n\\[E[Y|X_2 = 5001] - E[Y|X_1 = 5000] = \\beta_0 + \\beta_15001 - \\beta_0 - \\beta_15000 = \\beta_1\\]\n\\(\\beta_1\\) est donc la différence de consommation moyenne prédite par le modèle entre deux personnes ayant un revenu de 5001 et 5000. En d’autre termes, la différence de moyenne prédite entre deux personnes différant d’une unité.",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#interprétation-des-coefficients-de-régression",
-    "href": "3mars_cours2.html#interprétation-des-coefficients-de-régression",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Interprétation des coefficients de régression",
-    "text": "Interprétation des coefficients de régression\n\nInterprétation causale: \\(\\beta_1\\) est l’effet marginal de X (effet lorsque X augmente de 1) sur les valeurs moyennes prédites de Y.\nInterprétation en termes de comparaison: \\(\\beta_1\\) est la différence des moyennes prédites de Y entre deux observations différant d’une unité.\n\n==&gt; L’interprétation en termes de comparaison est plus prudente que l’interprétation causale, pour laquelle il faut que les hypothèses du modèle soient respectées",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#retour-à-notre-exemple-c-c_0-c_1w",
-    "href": "3mars_cours2.html#retour-à-notre-exemple-c-c_0-c_1w",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Retour à notre exemple \\[C = c_0 + c_1W\\]",
-    "text": "Retour à notre exemple \\[C = c_0 + c_1W\\]\n\n\nlibrary(readr)\nmacroch &lt;- read_csv(\"data/macroch.csv\")\n\nmacroch %&gt;% \n  ggplot(aes(x = W_real, y = C_real))+\n  geom_point()+\n  theme_minimal()+\n  labs(x = \"Rémunération des salariés (W)\",\n       y = \"Consommation (C)\")",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#estimation-simple-avec-lm",
-    "href": "3mars_cours2.html#estimation-simple-avec-lm",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Estimation simple avec lm()",
-    "text": "Estimation simple avec lm()\n\nlibrary(kableExtra)\nlibrary(broom)\nmodel = lm(data = macroch, # préciser le tableau dans lequel les variables sont présentes\n           formula = C_real ~ W_real) # la formule estimée doit prendre la forme Y ~ X\n\ntidy(model) %&gt;% \n  kable() \n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n43.1846843\n2.7815089\n15.52563\n0\n\n\nW_real\n0.7972749\n0.0103511\n77.02329\n0\n\n\n\n\n\nLa fonction estimée est donc:\n\\[C = 43 + 0.797W\\]",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#valeurs-prédites",
-    "href": "3mars_cours2.html#valeurs-prédites",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Valeurs prédites",
-    "text": "Valeurs prédites\n\n\ndata = augment(model)\n\ndata %&gt;% \n  ggplot(aes(x = W_real, y = C_real, color = \"Valeurs réelles observées\"))+\n  geom_line()+\n  geom_line(aes(x = W_real, y = .fitted, color = \"Valeurs prédites\"))+\n  theme_minimal()+\n  labs(title = \"C = 43 + 0.797W\")",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#vérification-des-hypothèses-du-modèle",
-    "href": "3mars_cours2.html#vérification-des-hypothèses-du-modèle",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Vérification des hypothèses du modèle",
-    "text": "Vérification des hypothèses du modèle\n\nLinéarité et indépendance des erreurs\n\n\n\nlibrary(performance)\n\ndiagnostic_plots = plot(check_model(model, panel = FALSE))\ndiagnostic_plots[[2]]\n\n\n\n\n\n\n\n\n\nOn voit clairement un pattern dans la distribution des données ==&gt; pas d’indépendance des erreurs, ce qui est typiquement le cas des séries temporelles",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#vérification-des-hypothèses-du-modèle-1",
-    "href": "3mars_cours2.html#vérification-des-hypothèses-du-modèle-1",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Vérification des hypothèses du modèle",
-    "text": "Vérification des hypothèses du modèle\n\nHomoscédasticité\n\n\nlibrary(performance)\n\ndiagnostic_plots[[3]]\n\n\nIl y aussi clairement un problème d’hétéroscédasticité: la variance des erreurs n’est pas constante",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#c-43-0.797w",
-    "href": "3mars_cours2.html#c-43-0.797w",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "\\(C = 43 + 0.797W\\)",
-    "text": "\\(C = 43 + 0.797W\\)\nLe plus souvent, régresser tel quel des séries temporelles (en niveau) va produire des modèles qui ne respectent pas l’hypothèse fondamentale d’indépendance des erreurs. Cela est un problème, car implique que notre coefficient de \\(\\beta_1 = 0.79\\) est biaisé.\n==&gt; Cela vient du fait qu’il a une dimension temporelle dans nos variables, ces dernières sont aussi une fonction du temps \\(t\\), qui n’est pas prise en compte dans \\(C = c_0 +c_1W + e_i\\) (enfait, la dimension temporelle va se voire dans le terme d’erreur \\(e_i\\))\n==&gt; Autrement pour pouvoir modéliser des séries temporelles avec des régressions, il faut que ces séries soient “stationnaires”, c-à-d que leur moyenne doit être stable dans le temps.\nIl existe des tests afin de tester la stationnarité (Test de Dickey-Fuller, test de Perron…)",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#stationnarité",
-    "href": "3mars_cours2.html#stationnarité",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Stationnarité",
-    "text": "Stationnarité\nLa plupart du temps, les séries ayant une tendance temporelle (non-stationnaire) doivent être transformées en taux de croissance pour pouvoir être incluses dans une régression.\n\n\nAfficher le code\nlibrary(ggcharts)\n\nmacroch$year = 1960:2022\ndata_rates = tibble(year = 1961:2022, rate_c = diff(log(macroch$C_real)), rate_w = diff(log(macroch$W_real)))\n\nplot1 &lt;- \nmacroch %&gt;% \n  ggplot(aes(x = year, y = C_real, color = \"Consommation (niveau)\"))+\n  geom_line()+\n  geom_line(aes(x = year, y = W_real, color = \"Revenu des salariés (niveau)\"))+\n  theme_minimal()+\n  labs(title = \"Séries non stationnaires\")+\n  theme(legend.position = \"top\")\n\n\n\nplot2 &lt;- \n  data_rates %&gt;%\n  ggplot(aes(x = year, y = rate_c, color = \"Consommation (taux de croissance)\"))+\n  geom_line()+\n  labs(title = \"Série stationnaire\")+\n  theme_minimal()+\n  theme(legend.position = \"top\")\n\ncowplot::plot_grid(plot1, plot2)",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#modèle-en-différences-de-premier-ordre",
-    "href": "3mars_cours2.html#modèle-en-différences-de-premier-ordre",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Modèle en différences de premier ordre",
-    "text": "Modèle en différences de premier ordre\n==&gt; régresser les taux de croissances au lieu des niveaux, pour corriger la non-stationnarité.\nAu lieu de \\(C = \\beta_0 + \\beta_1W\\), nous avons: \\(\\%\\Delta{C} = \\beta_0 + \\%\\Delta\\beta1W\\)\n\\(\\beta_1\\) devient l’élasticité de la consommation par rapport au revenu: le pourcentage de changement de C quand W augmente de 1 point de pourcentage.\n\n\nAfficher le code\nmodel3 = lm(data = data_rates,\n            rate_c ~ rate_w)\n\ntidy(model3)\n\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)  0.00546   0.00191      2.86 5.89e- 3\n2 rate_w       0.558     0.0505      11.0  4.36e-16",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#régression-dune-série-temporelle-sur-sa-trend",
-    "href": "3mars_cours2.html#régression-dune-série-temporelle-sur-sa-trend",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Régression d’une série temporelle sur sa trend",
-    "text": "Régression d’une série temporelle sur sa trend\nQue se passe-t-il si notre régression inclue seulement la dimension temporelle comme variable explicative dans un modèle log-linéaire ? \\(log(C) = \\beta_0 + \\beta_{year}year\\)\n\ndata &lt;- \ndata %&gt;% \n  mutate(\n    year = 1960:2022,\n  )\n\nmodel4 = lm(data = data,\n            log(C_real) ~  year)\n\ntidy(model4)\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept) -30.5     0.883        -34.5 9.89e-42\n2 year          0.0180  0.000443      40.7 6.58e-46\n\n\nLe coefficient \\(\\beta_{year} = 0.018\\) peut être interprété comme le taux de croissance moyen sur l’ensemble de la période, pas seulement entre la première et dernière année (moyenne des taux de croissance, ou le taux de croissance composé).",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#comment-interpréter-beta_0--30",
-    "href": "3mars_cours2.html#comment-interpréter-beta_0--30",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Comment interpréter \\(\\beta_0 = -30\\) ?",
-    "text": "Comment interpréter \\(\\beta_0 = -30\\) ?\nIl s’agit de la valeur de \\(log(C)\\) lorsque \\(year = 0\\), ce qui ne fait pas vraiment sens.\nUn moyen de rendre l’ordonnée à l’origine (intercept) \\(\\beta_0\\) interprétable est de centrer notre variable explicative en lui soustrayant sa moyenne:\n\ndata &lt;- data %&gt;% \n  mutate(\n    year_centered = year - mean(year)\n  )\n\nmodel5 = lm(data = data,\n            log(C_real) ~ year_centered)\n\ntidy(model5)\n\n# A tibble: 2 × 5\n  term          estimate std.error statistic   p.value\n  &lt;chr&gt;            &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)     5.44    0.00806      675.  7.35e-120\n2 year_centered   0.0180  0.000443      40.7 6.58e- 46\n\n\nLe coefficient \\(\\beta_{year}\\) ne change pas. \\(\\beta_0\\) devient \\(5.4\\), ce qui correspond à \\(log(C)\\), la valeur de notre variable dépendante, lorsque year est à sa moyenne (donc l’année 1991).",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#pourquoi-calculer-le-taux-de-croissance-avec-une-régression",
-    "href": "3mars_cours2.html#pourquoi-calculer-le-taux-de-croissance-avec-une-régression",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Pourquoi calculer le taux de croissance avec une régression ?",
-    "text": "Pourquoi calculer le taux de croissance avec une régression ?\nEn incluant des intéractions, on peut tester si le taux de croissance moyen change de manière significative entre différentes périodes. Dans les régressions, les intéractions permettent au modèle d’avoir différentes ordonnées à l’origine (\\(\\beta_0\\)) ou bien différentes coefficients pour la mème variable, mais variant selon un groupe pré-établi, par exemple une variable dichotomique séparant la série en deux groupes: avant 1980 et après 1980. Cela se spécifie dans R avec year*I(year&gt;1980)\n\nmodel6 = lm(data = data,\n            log(C_real) ~ year*I(year&gt;1980))\n\ntidy(model6)\n\n# A tibble: 4 × 5\n  term                    estimate std.error statistic  p.value\n  &lt;chr&gt;                      &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)             -57.1      2.34        -24.4 1.79e-32\n2 year                      0.0315   0.00119      26.5 1.81e-34\n3 I(year &gt; 1980)TRUE       31.9      2.49         12.8 1.13e-18\n4 year:I(year &gt; 1980)TRUE  -0.0161   0.00126     -12.8 1.19e-18\n\n\nOn obtient le modèle estimé \\(log(C) = -57 + 0.03year + 31.9year_{1980} -0.0161year*year_{1980}\\). \\(year\\) reste nos années et \\(year_{1980}\\) est une variable binaire 1 si \\(year&gt;1980\\) et 0 autrement.",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#logc--57-0.03year-31.9year_1980--0.0161yearyear_1980",
-    "href": "3mars_cours2.html#logc--57-0.03year-31.9year_1980--0.0161yearyear_1980",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "\\(log(C) = -57 + 0.03year + 31.9year_{1980} -0.0161year*year_{1980}\\)",
-    "text": "\\(log(C) = -57 + 0.03year + 31.9year_{1980} -0.0161year*year_{1980}\\)\n\ntidy(model6)\n\n# A tibble: 4 × 5\n  term                    estimate std.error statistic  p.value\n  &lt;chr&gt;                      &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)             -57.1      2.34        -24.4 1.79e-32\n2 year                      0.0315   0.00119      26.5 1.81e-34\n3 I(year &gt; 1980)TRUE       31.9      2.49         12.8 1.13e-18\n4 year:I(year &gt; 1980)TRUE  -0.0161   0.00126     -12.8 1.19e-18\n\n\nAprès 1980, \\(year_{1980} = 1\\) et le modèle devient:\n\\(log(c) = -57 + 31.9*1 + 0.03year -0.0161year*1\\)\n&lt;=&gt;\n\\(log(c) = -25 - 0.0139year\\)\nLe taux de croissance moyen a diminué de 0.0161\nAvant 1980, \\(year_{1980} = 0\\) et le modèle est simplement:\n\\(log(C) = -57 + 0.03year + 31.9*0 -0.0161year*0\\)\n&lt;=&gt;\n\\(log(C) = -57 + 0.03year\\) le taux de croissance pour la période 1960-1980 étant donc de 0.03.",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#section",
-    "href": "3mars_cours2.html#section",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "",
-    "text": "Afficher le code\nplot3 &lt;- \nplot2+\n  labs(title = \"\",\n       y = \"Taux de croissance de C\")+\n  geom_segment(aes(x = 1960, xend = 1980, y = 0.03, yend = 0.03), color = \"black\")+\n  geom_segment(aes(x = 1981, xend = 2022, y = 0.0139, yend = 0.0139), color = \"black\")+\n  annotate(\"text\", x = 1970, y = 0.025, label = \"taux de croissance moyen = 0.03\", size = 2.5)+\n  annotate(\"text\", x = 2000, y = 0, label = \"taux de croissance moyen = 0,0139\", size = 2.5)\n\nlibrary(marginaleffects)\n\nplot4 &lt;- \nmodel6 %&gt;% \n  plot_predictions(condition = \"year\")+\n  geom_line(data = data, aes(x = year, y = log(C_real)), size = 1.2, color = \"darkred\")+\n  theme_minimal()+\n  geom_vline(xintercept = 1980, linetype = 2)+\n  annotate(\"text\", label = \"log(c) = -57 + 0.03year\", x = 1980, y = 5)+\n  annotate(\"text\", label = \"log(c) = -25 -0.0139year\", x = 2010, y = 5.5)+\n  labs(y = \"log(c)\")\n\ncowplot::plot_grid(plot3, plot4)",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#comment-interpréter-les-résidus-de-régressions",
-    "href": "3mars_cours2.html#comment-interpréter-les-résidus-de-régressions",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Comment interpréter les résidus de régressions ?",
-    "text": "Comment interpréter les résidus de régressions ?\nLes résidus \\(e_i\\) sont l’écart entre les valeurs observées et les valeurs prédites par notre modèle:\n\\[\ne_i = \\underbrace{Y}_{valeurs \\ observées} - \\underbrace{\\beta_0 + \\beta_1 X}_{valeurs \\ prédites}\n\\]\nDans notre modèle \\(log(C) = \\beta_0 + \\beta_1 year + e_i\\), et pour les séries temporelles non-stationnaire de manière générale, \\(e_i\\) représente l’écart de \\(C\\) ( en %) par rapport à sa tendance de long-terme.",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#e_i-comme-déviation-en-par-rapport-à-la-tendance-de-long-terme",
-    "href": "3mars_cours2.html#e_i-comme-déviation-en-par-rapport-à-la-tendance-de-long-terme",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "\\(e_i\\) comme déviation en % par rapport à la tendance de long-terme",
-    "text": "\\(e_i\\) comme déviation en % par rapport à la tendance de long-terme",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#pib-potentiel-et-output-gap",
-    "href": "3mars_cours2.html#pib-potentiel-et-output-gap",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "PIB potentiel et output gap",
-    "text": "PIB potentiel et output gap\nSi, à la place de \\(C\\), nous avions le PIB, la tendance générale serait le PIB potentiel, et les résidus le output gap qui est une mesure fondamentale des cycles économiques.\n\nLe PIB potentiel est une variable clé en macroéconomie, aussi bien dans la théorie économique mainstream qu’hétérodoxe, mais la définition varie entre ces deux approches\nPour la théorie mainstream, le PIB potentiel est le PIB lorsque le taux de chômage est à son taux “naturel” (le NAIRU)\nEn macroéconomie hétérodoxe, le PIB potentiel est le PIB maximal qui est atteint lorsque tout le capital ou tout le travail est employé à ses pleines capacités",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#pib-potentiel-et-output-gap-2",
-    "href": "3mars_cours2.html#pib-potentiel-et-output-gap-2",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "PIB potentiel et output gap (2)",
-    "text": "PIB potentiel et output gap (2)\n\nLe PIB potentiel mesure le PIB à “pleine capacité d’utilisation des ressources” c’est-à-dire s’il y avait le plein emploi et une utilisation maximale du capital.\nLe modèle log-linéaire simple \\(log(PIB) = \\beta_0 + \\beta_1year\\) nous donne:\n\nUne estimation du PIB potentiel (en logarithme), à travers les valeurs estimées (fitted values)\nUne estimation de l’output gap, càd de la déviation du PIB actuel/observé par rapport au PIB potentiel.",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#pib-potentiel-et-output-gap-3",
-    "href": "3mars_cours2.html#pib-potentiel-et-output-gap-3",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "PIB potentiel et output gap (3)",
-    "text": "PIB potentiel et output gap (3)\n\nL’output gap est une variable considérée comme très importante pour la politique économique:\n\nSi l’output gap &gt; 0 ==&gt; l’économie est dite en “surcapacité”, le taux de chomage est moins élevé que son taux naturel\nSi &lt; 0 ==&gt; l’économie est dite en “sous-capacité”, le taux de chômage est plus élevé que son taux naturel\n\nLe modèle log-linéaire simple \\(log(PIB) = \\beta_0 + \\beta_1year\\) est l’estimation du PIB potentiel la plus basique. En pratiques, les instituts de statistiques ont recours à des méthodes bien plus complexes, mais l’idée de base reste la même.",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#à-retenir",
-    "href": "3mars_cours2.html#à-retenir",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "À retenir",
-    "text": "À retenir\n\nFormule de la croissance exponentielle\nPouvoir calculer des taux de croissance\nCalcul de la rétropolation d’une série à partir du taux de croissance\nÀ quoi servent les transformations en logarithme\nInterprétation des coefficients d’une régression linéaire\nLes informations que nous donne un modèle log-linéaire avec la trend (le temps) comme variable explicative (savoir intreprétér le coefficient, les résidus…)\n\nRetenez aussi comment faire tout cela dans R (référez-vous au code dans les slides) ! Nous ferons davantage d’exercices appliqués à partir des séances sur la comptabilité nationale.",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
-    ]
-  },
-  {
-    "objectID": "3mars_cours2.html#pour-aller-plus-loin",
-    "href": "3mars_cours2.html#pour-aller-plus-loin",
-    "title": "3 Mars. Introduction aux séries temporelles et aux régressions",
-    "section": "Pour aller plus loin",
-    "text": "Pour aller plus loin",
-    "crumbs": [
-      "3 Mars. Introduction aux séries temporelles et aux régressions"
     ]
   }
 ]

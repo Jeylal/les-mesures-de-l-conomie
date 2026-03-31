@@ -45,6 +45,20 @@ ipc_stathistsuisse %>%
 
 # Les indices de prix
 
+## Intérêt des indices des prix {.smaller}
+
+-   Parmi des indicateurs les plus fréquemment solicités, que ce soit par les acteurs politiques, les institutions et milieux économiques, les marchés financiers ou encore les ménages.
+
+-   Les résultats de l'indice des prix à la consommation servent par exemple à:
+
+    -   L'indexation des salaires, des rentes, des pensions...
+    -   La politique monétaire de la banque centrale
+    -   Déflater les principales variables économiques (par exemple les salaires ou la consommation)
+    -   La prise de décision d'achat/vente de titres financiers (actions, obligations)
+
+==\> Il est donc important de connaitre la méthodologie derrière le calcul de ces indices
+
+
 ## La quête pour un indice idéal des prix {.smaller}
 
 -   Les historiens de la pensée économiques font généralement remonter l'origine de *l'institutionalisation* indices des prix aux années 1920, notamment avec la publication de *The Making of Index Numbers* par Irving Fisher en 1922
@@ -90,24 +104,73 @@ Institutionaliste (Mitchell)
 Tous les indices de prix sont fondés sur l'aggrégation des indices élémentaires de prix, qui prennent la forme suivante:
 
 $$
-I(p_{i})_{t/0} = \frac{p_{it}}{p_{i0}}
+I_{t/0} = \frac{p_{it}}{p_{i0}}
 $$
 
 Avec $I(p_i)_{t/0}$ L'indice élémentaire du bien $i$, $p_{it}$ le prix du bien $i$ à la période $t$ et $p_{i0}$ le prix du bien $i$ à la période dîte de "référence" $0$. Le calcul des indices élémentaires permet de normaliser le prix de différents bien et services, permettant leur aggrégation à travers le calcul d'une moyenne.
 
 Étant donné qu'en pratique il est impossible de récolter une liste exhaustive de tous les prix, sont récoltés les prix d'un "panier de biens" constitués de $k$ biens et services représentatifs d'un ménage "moyen".
 
+## Indice de Jevons {.smaller}
+
+Le premier niveau d'aggrégation des indices élémentaires se fait au niveau d'un bien, d'une catégorie de bien ou d'un "poste de dépense".
+
+
+$$
+J_{t/0}
+= \left( \prod_{i=1}^{n} \frac{p_{it}}{p_{i0}} \right)^{\frac{1}{n}}
+$$
+
+On obtient l'indice élémentaire aggrégé de prix au niveau du poste de dépense (de la catégorie du bien) en faisant la moyenne géométrique des indices élémentaires. La classification et définition des différents niveaux de poste de dépense est établie par la COIOP (classification of expenditure according to purpose).
+
+Pour simplifier, dans les slides suivantes (surout calculs des indices Laspeyres et Paasche), nous ne ferons pas de distinction entre indice élémentaire et indice élémentaire aggrégé de Jevons (donc $I = J$)
+
+## Indice Jevons {.smaller}
+
+Pourquoi la moyenne géométrique au lieu de la moyenne arithmétique couramment utilisée ? On retrouve l'influence néoclassique ==> il ne faut pas donner trop de poids dans les valeurs extrême dans la moyenne (par exemple une forte augmentation de prix) pour prendre en compte les effets de substitutions.
+
+Hypothèse de consommateurs rationnels adaptant automatiquement leur choix de consommation en fonction de changement de prix
+
+Mathématiquement, la moyenne géometrique est toujours moins élevée que la moyenne arithmétique 
+
+## Exemple et comparaison dans R {.smaller}
+
+```{r}
+#| echo: true
+
+# Comparaison indice de Jevons et indice à partir de la moyenne arithmétique
+
+p0 = c(4, 2, 9) # Trois différents prix de biens de la même catégorie
+p1 = c(4.05, 2.12, 9.1) # Prix à la 1ère période
+p2 = c(4.1, 2.3, 8.9) # prix à la 2ème période
+
+I0 = p0/p0*100 # indice élémentaire période de base (100)
+I1 = p1/p0*100 # indice élémentaire période 1
+I2 = p2/p0*100 # indice élémentaire période 2
+
+#Indice Jevons = moyenne géométrique des indices élémentaires
+exp(mean(log(I0))) # indice de Jevons à la période de base
+exp(mean(log(I1))) # indice de Jevons à la période 1
+exp(mean(log(I2))) # Indice de Jevons à la période 2
+
+# Indice si l'on prenait la moyenne arithémtique
+mean(I0)
+mean(I1)
+mean(I2)
+
+```
+
+
 ## Coefficient budgétaire {.smaller}
 
--   Que se passe-t-il si l'on fait directement la moyenne de tous les indices élémentaires $I(p_i)_{t/0}$ ? Nous aurions un indice des prix dans lequel tous les biens du panier ont la même importance. Or, tous les biens n'ont pas la même importance dans les dépenses totales des ménages.
+- Comme tous les postes de dépense n'ont pas la même importance, il faut pondérer ces derniers. Les statisticiens/économistes utilisent un "coefficient budgétaire", à savoir la part de dépense d'un bien/catégorie de biens/poste de dépense dans les dépenses totales des ménages.
 
--   Les enquêtes sur le budget des ménages permettent d'évaluer la part des biens et services dans les dépenses totales des ménages, à savoir le coefficient budgétaire $w_i$
+-   Les enquêtes sur le budget des ménages permettent d'évaluer la part des biens et services dans les dépenses totales des ménages, à savoir le coefficient budgétaire $w_i$. En Suisse, l'EBM est réalisée tous les cinq ans environ.
 
--   Le coefficient budgétaire sert de coefficient de pondération pour chaque bien du panier-type.
 
-## Pondération des indices élémentaires {.smaller}
+## Pondération et coefficents budgétaires {.smaller style="font-size: 60%;"}
 
-C'est le coefficient budgétaire $w_i$ qui sert à pondérer les indices élémentaires:
+C'est le coefficient budgétaire $w_i$ qui sert à pondérer les indices élémentaires (ou aggrégé):
 
 $$
 I(p)_{t/0} = \sum^k_{i=1}w_i I(p_{it})
@@ -119,7 +182,7 @@ Les indices, par exemple de Laspeyres et Paasche, diffèrent dans leur conceptio
 
 -   L'indice de Paasche utilise quant à lui les coefficients budgétaires de l'année courante: $w_{it} = \frac{p_{it}q_{it}}{\sum^k_{i = 1}p_{it}q_{it}}$
 
-## L'indice de Laspeyres {.smaller}
+## L'indice de Laspeyres {.smaller style="font-size: 60%;"}
 
 -   l'indice de Laspeyres consiste à pondérer les indices élémentaires par les coefficients budgétaires fixés à la période de base. Cela revient à fixer les quantités à la période de base et faire varier les prix:
 
@@ -131,7 +194,7 @@ $$
 
 -   L'avantage de cet indice est qu'il est le moins couteux à calculer: on a seulement besoin des quantités à la période de base et des prix au temps de base et au temps courant
 
-==\> La plupart des indices des prix à la consommation sont des indices Laspeyriens
+==\> La plupart des indices des prix à la consommation, calculés mensuellement, prennent le format de l'indice de Laspeyres (ou de Lowe, mais qui est juste un dérivé de Laspeyres dans lequel on prend les quantités à chaque enquête sur le budget des ménages, pas seulement à une année de base)
 
 ## Indice de Paasche
 
@@ -143,12 +206,17 @@ $$
 
 ## Déflateur du PIB
 
-Le déflateur du PIB est un indice de Paasche, étendu à tous les biens et services considérés dans le calcul du PIB
-
--   En outre, le dénominateur de l'indice de Paasche est le PIB réel
+Le déflateur du PIB peut être considéré comme un indice de Paasche.
+En outre, le dénominateur de l'indice de Paasche est le PIB réel
 
 $$
 PIB_{déflateur} = \frac{PIB_{nominal}}{PIB_{réel}}
+$$
+
+Pour obtenir le PIB réel, on divise le PIB nominal par le déflateur du PIB
+
+$$
+PIB_{réel} = \frac{PIB_{nominal}}{déflateur}
 $$
 
 ## Indice "idéal" de Fisher {.smaller}
@@ -177,7 +245,7 @@ Pour un indice en chaîne Laspeyres partant de l'année $0$:
 
 $$
 IC(p)_{t/0} = L(p)_{t/t-1}*L(p)_{t-1/0}
-$$ 
+$$
 
 Pour la comptabilité nationale, le défaut des indices en chaîne est la *perte d'addivité*: si l'on applique les indice en chaine à $Y = C+I+G+NX$, les composantes ne s'additionnent plus au PIB (Y).
 
@@ -214,7 +282,7 @@ Pour la comptabilité nationale, le défaut des indices en chaîne est la *perte
 ## Effet qualité: exemple de méthode {.smaller}
 
 ::::: columns
--   Chainage par chevauchement
+Chainage par chevauchement
 
 ::: column
 Deux biens A et B ayant la même fonction et que l'on peut observer en même temps, mais B étant récemment introduit et étant de meilleure qualité (par exemple la passage à la télévision en couleur).
@@ -268,18 +336,6 @@ Lorsque l'on n'a pas eu l'occasion d'observer les prix de A et B simultanément,
 :::::
 
 # Indice des prix à la consommation en Suisse
-
-## Intérêt de l'IPC {.smaller}
-
--   L'un des indicateurs les plus fréquemment solicités, que ce soit par les acteurs politiques, les institutions et milieux économiques ou encore les ménages.
-
--   Les résultats de l'IPC servent par exemple à:
-
-    -   L'indexation des salaires, des rentes, des pensions...
-    -   La politique monétaire de la banque centrale
-    -   Déflater les principales variables économiques (par exemple les salaires ou la consommation)
-
-==\> Il est donc important de connaitre la méthodologie derrière le calcul de l'IPC
 
 ## Le panier-type {.smaller}
 
@@ -349,7 +405,9 @@ La PPA mesure le montant de francs devant être dépensé (en Suisse) afin d'obt
 
 -   Taux de change: combien d'unité de monnaie nationale pour une unité de monnaie étrangère $#CHF = 1USD$ , en ratio: $E = \frac{CHF}{USD}$ ==\> prix relatif des deux monnaies
 
--   PPA: combien couterait un même panier de bien $Q$ aux USA ($Q_{USA}$) s'il était consommé en Suisse $Q_{CH}$ ==\> $ppp = \frac{P_{CH}}{P_{USA}} \frac{Q_{CH}}{Q_{USA}}$ ==\> prix d'un même panier dans les deux pays, à quantité égale $Q_{CH} = Q_{USA}$
+-   PPA: combien couterait un même panier de bien $Q$ aux USA ($Q_{USA}$) s'il était consommé en Suisse $Q_{CH}$
+
+==\> $ppp = \frac{P_{CH}}{P_{USA}} \frac{Q_{CH}}{Q_{USA}}$ ==\> prix d'un même panier dans les deux pays, à quantité égale $Q_{CH} = Q_{USA}$
 
 -   Taux de change réel $e$: combien de quantité du panier-type suisse s'échange contre une unité de ce même panier-type aux USA.
 
@@ -464,3 +522,24 @@ data %>%
 2.  Déflater par la PPA
 
 ==\> On obtient ainsi la série en volume, corrigée de la PPA
+
+## Conclusion {.smaller}
+
+### A retenir pour l'examen blanc
+
+- Calculs des taux de croissance et la rétropolation de série à partir de leur taux de croissance
+- Les trois approches du PIB
+- Calcul des contributions à la croissance, de la part des salaires et profits dans la valeur ajoutée
+- Indices de Laspeyres et de Paasche
+- Savoir utiliser les déflateurs et la PPA pour obtenir des séries macroéconomiques (par exemple PIB et ses composantes) en volume et comparables géographiquement.
+
+
+Les exercices auront le même style que les exercices effectués et vus en cours. Ils seront à réaliser sur excel et/ou R
+
+
+
+
+
+
+
+
