@@ -58,7 +58,6 @@ ipc_stathistsuisse %>%
 
 ==\> Il est donc important de connaitre la méthodologie derrière le calcul de ces indices
 
-
 ## La quête pour un indice idéal des prix {.smaller}
 
 -   Les historiens de la pensée économiques font généralement remonter l'origine de *l'institutionalisation* indices des prix aux années 1920, notamment avec la publication de *The Making of Index Numbers* par Irving Fisher en 1922
@@ -115,7 +114,6 @@ Avec $I(p_i)_{t/0}$ L'indice élémentaire du bien $i$, $p_{it}$ le prix du bien
 
 Le premier niveau d'aggrégation des indices élémentaires se fait au niveau d'un bien, d'une catégorie de bien ou d'un "poste de dépense".
 
-
 $$
 J_{t/0}
 = \left( \prod_{i=1}^{n} \frac{p_{it}}{p_{i0}} \right)^{\frac{1}{n}}
@@ -127,11 +125,11 @@ Pour simplifier, dans les slides suivantes (surout calculs des indices Laspeyres
 
 ## Indice Jevons {.smaller}
 
-Pourquoi la moyenne géométrique au lieu de la moyenne arithmétique couramment utilisée ? On retrouve l'influence néoclassique ==> il ne faut pas donner trop de poids dans les valeurs extrême dans la moyenne (par exemple une forte augmentation de prix) pour prendre en compte les effets de substitutions.
+Pourquoi la moyenne géométrique au lieu de la moyenne arithmétique couramment utilisée ? On retrouve l'influence néoclassique ==\> il ne faut pas donner trop de poids dans les valeurs extrême dans la moyenne (par exemple une forte augmentation de prix) pour prendre en compte les effets de substitutions.
 
 Hypothèse de consommateurs rationnels adaptant automatiquement leur choix de consommation en fonction de changement de prix
 
-Mathématiquement, la moyenne géometrique est toujours moins élevée que la moyenne arithmétique 
+Mathématiquement, la moyenne géometrique est toujours moins élevée que la moyenne arithmétique
 
 ## Exemple et comparaison dans R {.smaller}
 
@@ -160,13 +158,11 @@ mean(I2)
 
 ```
 
-
 ## Coefficient budgétaire {.smaller}
 
-- Comme tous les postes de dépense n'ont pas la même importance, il faut pondérer ces derniers. Les statisticiens/économistes utilisent un "coefficient budgétaire", à savoir la part de dépense d'un bien/catégorie de biens/poste de dépense dans les dépenses totales des ménages.
+-   Comme tous les postes de dépense n'ont pas la même importance, il faut pondérer ces derniers. Les statisticiens/économistes utilisent un "coefficient budgétaire", à savoir la part de dépense d'un bien/catégorie de biens/poste de dépense dans les dépenses totales des ménages.
 
 -   Les enquêtes sur le budget des ménages permettent d'évaluer la part des biens et services dans les dépenses totales des ménages, à savoir le coefficient budgétaire $w_i$. En Suisse, l'EBM est réalisée tous les cinq ans environ.
-
 
 ## Pondération et coefficents budgétaires {.smaller style="font-size: 60%;"}
 
@@ -206,8 +202,7 @@ $$
 
 ## Déflateur du PIB
 
-Le déflateur du PIB peut être considéré comme un indice de Paasche.
-En outre, le dénominateur de l'indice de Paasche est le PIB réel
+Le déflateur du PIB peut être considéré comme un indice de Paasche. En outre, le dénominateur de l'indice de Paasche est le PIB réel
 
 $$
 PIB_{déflateur} = \frac{PIB_{nominal}}{PIB_{réel}}
@@ -502,7 +497,7 @@ data = data %>%
 
 data = data %>% 
   mutate(gdp_deflated = gdp_nominal/deflator_gdp2020, # obtenir le pib réel suisse en franc constant de 2020 ==> diviser le pib nominal par le déflateur du PIB
-         gdp_deflated_ppp = gdp_deflated/ppp_chf_usd) # obtenir le PIB réel suisse en franc constant, corrigé de la PPA ==> diviser le PIB réel constant par la PPA
+         gdp_deflated_ppp = gdp_deflated/ppp_chf_usd[year == 2020]) # obtenir le PIB réel suisse en franc constant, corrigé de la PPA ==> diviser le PIB réel constant par la PPA
 
 
 data %>% 
@@ -518,8 +513,8 @@ data %>%
 
 -   Afin d'obtenir une série en volume, le PIB par exemple, qui soit comparable entre pays/région il faut:
 
-1.  Déflater le PIB par le déflateur du PIB (par exemple en franc constant de 2020)
-2.  Déflater par la PPA
+1.  Déflater le PIB par le déflateur du PIB (par exemple en franc constant de 2020) ==> diviser par le déflateur
+2.  Déflater par la PPA ==> Diviser par la PPA, mais UNIQUEMENT à l'année de base du déflateur du PIB (donc 2020). 
 
 ==\> On obtient ainsi la série en volume, corrigée de la PPA
 
@@ -527,19 +522,10 @@ data %>%
 
 ### A retenir pour l'examen blanc
 
-- Calculs des taux de croissance et la rétropolation de série à partir de leur taux de croissance
-- Les trois approches du PIB
-- Calcul des contributions à la croissance, de la part des salaires et profits dans la valeur ajoutée
-- Indices de Laspeyres et de Paasche
-- Savoir utiliser les déflateurs et la PPA pour obtenir des séries macroéconomiques (par exemple PIB et ses composantes) en volume et comparables géographiquement.
-
+-   Calculs des taux de croissance et la rétropolation de série à partir de leur taux de croissance
+-   Les trois approches du PIB
+-   Calcul des contributions à la croissance, de la part des salaires et profits dans la valeur ajoutée
+-   Indices de Laspeyres et de Paasche
+-   Savoir utiliser les déflateurs et la PPA pour obtenir des séries macroéconomiques (par exemple PIB et ses composantes) en volume et comparables géographiquement.
 
 Les exercices auront le même style que les exercices effectués et vus en cours. Ils seront à réaliser sur excel et/ou R
-
-
-
-
-
-
-
-
