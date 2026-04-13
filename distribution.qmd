@@ -483,48 +483,40 @@ Les travaux de Piketty et ses collaborateurs ont popularisé les mesures dites d
 
 Par exemple: la part du 10% ==\> la part du revenu que gagnent les personnes ayant un revenu supérieur au 10ème décile
 
-
 ## Calcul des top shares {.smaller}
 
 Formellement, ces parts sont définies comme suit, avec $y_i$ le revenu de l'individu i (exemple pour la part des 10%):
-
 
 $$
 \text{part}_{10\%} = \frac{\sum_{i \in \text{top } 10\%} y_i}{\sum_{i=1}^{N} y_i}
 $$
 
-
 En pratique, on n'observe pas exactement le revenu correspondant au décile de la part (le revenu définissant le 10ème décile, le 1er etc). Les données (fiscales, micro...) ne nous permettent pas de calculer exactement ces parts.
 
-
-==> Il faut donc reconstruire ces parts en utilisant des méthodes d'interpolation
-
+==\> Il faut donc reconstruire ces parts en utilisant des méthodes d'interpolation
 
 ## Interpolation linéaire {style="font-size: 1.4rem; line-height:1.6;"}
 
-- Les statistiques ne donnent pas exactement ces parts, il faut les **reconstruire**.
-- Par **interpolation** : procédure qui consiste à estimer les points inconnus à partir de valeurs connues.
+-   Les statistiques ne donnent pas exactement ces parts, il faut les **reconstruire**.
+-   Par **interpolation** : procédure qui consiste à estimer les points inconnus à partir de valeurs connues.
 
-::: {style="display:flex; justify-content:center; align-items:center; gap:2em; margin:1em 0;"}
-
+::::: {style="display:flex; justify-content:center; align-items:center; gap:2em; margin:1em 0;"}
 ::: {style="text-align:right; font-size:0.75em; max-width:160px; color:#c0392b;"}
 Le 1% se situe entre ces deux valeurs…
 :::
 
 | Proportion de contribuables ayant un revenu supérieure au seuil inférieur du groupe | Proportion du revenu total possédée |
-|---|---|
+|----|----|
 | 1,06% | 47,3% |
 | 0,87% | 44,4% |
 
 ::: {style="text-align:left; font-size:0.75em; max-width:180px; color:#c0392b;"}
 Le top 1% possède entre 47,3 et 44,4% du revenu total Mais combien exactement ?
 :::
+:::::
 
-:::
-
-- Il existe **plusieurs méthodes d'interpolation**, à utiliser en fonction de la nature de la distribution des variables.
-- Dans le cadre du cours, on utilisera l' **interpolation linéaire**. En pratique, **l'interpolation de Pareto** est la méthode la plus utilisée.
-
+-   Il existe **plusieurs méthodes d'interpolation**, à utiliser en fonction de la nature de la distribution des variables.
+-   Dans le cadre du cours, on utilisera l' **interpolation linéaire**. En pratique, **l'interpolation de Pareto** est la méthode la plus utilisée.
 
 ## Formule d'interpolation linéaire {.smaller}
 
@@ -560,7 +552,6 @@ ggplot() +
 
 ```
 
-- Formule de l'interpolation linéaire pour trouver le $x$ :
+-   Formule de l'interpolation linéaire pour trouver le $x$ :
 
 $$x = d + \frac{(e - d) \times (b - c)}{a - c}$$
-

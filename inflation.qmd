@@ -15,7 +15,7 @@ footer: <https://jeylal.github.io/les-mesures-de-l-conomie/>
 
 ## L'inflation dans la longue durée
 
-![shaikh (2016, p.62)](images/inflation/shaikh20161.png)
+![![](images/clipboard-3013050817.png)shaikh (2016, p.62)](images/inflation/shaikh20161.png)
 
 ## L'inflation: un phénomène moderne ?
 
@@ -374,6 +374,7 @@ Lorsque l'on n'a pas eu l'occasion d'observer les prix de A et B simultanément,
 
 # Parité de pouvoir d'achat ("Purchasing Power Parity" PPP)
 
+
 ## Intérêt {.smaller}
 
 -   La PPA sert à mesurer le pouvoir d'achat réel d'une monnaie nationale et donc rendre comparable les variables macroéconomiques (notamment le PIB) entre pays et régions en corrigeant les différences de niveau des prix
@@ -382,7 +383,9 @@ Lorsque l'on n'a pas eu l'occasion d'observer les prix de A et B simultanément,
 
 -   Même principe que pour les indices des prix, mais au lieu d'une comparaison dans le temps ==\> comparaison dans l'espace
 
-## Exemple {.smaller}
+- La PPA représente le nombre d'unité d'une monnaie (par exemple le franc) requis afin d'acheter la même quantité de biens et services qui peut être acheté avec une unité de la monnaie de base/référence (souvent le dollar étatsunien).
+
+## Similarité avec les indices de prix {.smaller}
 
 -   Reprenons l'indice de Paasche, en faisant l'hypothèse que nous avons qu'un seul bien $Q$. Au lieu d'une période de base 0, on choisit un pays de base de comparaison (les USA) et au lieu de t on choisit un pays dans lequel on veut corriger le niveau des prix (la Suisse).
 
@@ -396,17 +399,44 @@ La PPA mesure le montant de francs devant être dépensé (en Suisse) afin d'obt
 
 -   La PPP est un "déflateur spatial" du PIB: $PIB_{ch} = P_{ch} Q_{ch}$ \<=\> $PIB_{ch/ppp} = \frac{P_{ch} Q_{ch}}{\frac{P_{ch}}{P_{usa}}} = P_{usa}Q_{ch}$ ==\> PIB suisse exprimé en dollar
 
-## PPA et taux de changes en Suisse {.smaller}
+
+## PPA et taux de change {.smaller}
 
 -   Taux de change: combien d'unité de monnaie nationale pour une unité de monnaie étrangère $#CHF = 1USD$ , en ratio: $E = \frac{CHF}{USD}$ ==\> prix relatif des deux monnaies
 
--   PPA: combien couterait un même panier de bien $Q$ aux USA ($Q_{USA}$) s'il était consommé en Suisse $Q_{CH}$
+-   PPA: combien coute un même panier de biens et services aux USA et en Suisse
 
-==\> $ppp = \frac{P_{CH}}{P_{USA}} \frac{Q_{CH}}{Q_{USA}}$ ==\> prix d'un même panier dans les deux pays, à quantité égale $Q_{CH} = Q_{USA}$
+==\> $ppp = \frac{P_{CH}}{P_{USA}} \frac{Q_{CH}}{Q_{USA}}$ ==\> prix d'un même panier dans les deux pays, à quantité égale $Q_{CH} = Q_{USA}$ et donc $ppp = \frac{P_{CH}}{P_{USA}} \frac{Q_{CH}}{Q_{USA}}$ devient simplement $ppp = \frac{P_{CH}}{P_{USA}}$
 
--   Taux de change réel $e$: combien de quantité du panier-type suisse s'échange contre une unité de ce même panier-type aux USA.
+-   Taux de change réel $e = \frac{EP_{US}}{P_{CH}}$: combien de quantité du panier-type suisse s'échange contre une unité de ce même panier-type aux USA.
 
-$e = E/PPP = \frac{EP_{US}}{P_{CH}} = \frac{CHF *P_{US}}{USD*P_{CH}}$
+
+
+## PPA et loi du prix unique {.smaller}
+
+- La théorie de la PPA (loi du prix unique) mise en avant par Cassel (1918) considère la PPA comme un taux de change d'équilibre, ce qui est désormais une vision répandue en macroéconomie. 
+
+- Toutefois, les taux de change nominaux ne convergent que très rarement vers leur PPA car les hypothèses de la loi du prix unique ne sont pas très réalistes (aucune barrière à au commerce, aux flux de capitaux, information parfaite, taux de change uniquement déterminés par la demande de devise pour financer l'échange de biens et service...). 
+
+- Les organisations internationales en charge de calculer la PPA (FMI, Banque Mondiale) mettent en avant elles-même que leur PPA ne peut pas être considéré comme un taux de change ni réel ni d'équilibre.
+
+- Le rapport entre la PPA et le taux de change nominal n'est pas le taux de change réel, mais un indice de niveau des prix (voir slide suivante)
+
+## PPA et indice des prix {.smaller}
+
+- La PPA est donc très similaire aux indices de prix
+- Toutefois, la magnitude de la PPA a une dimension monétaire et ne peut donc pas directement être considéré comme un indice des prix (à part si les régions comparées ont la même monnaie par exemple les pays de la zone euro).
+
+- Une mesure du niveau des prix dans un pays donné pour un panier de biens et services est le ratio entre la PPA et le taux de change (#monnaie nationale = 1 unité monnaie de référence (USA)):
+
+$$
+Indice\ niveau \ prix_{CH} = \frac{PPA_{CH}}{E_{CH}}  
+$$
+
+
+Par exemple, disons que la PPA pour la Suisse par rapport aux USA est de 1\$ = 0.65chf et que le taux de change est de 1\$ = 0.55chf. Si un touriste en provenance des USA échange 10 dollars pour 5.5chf, il devrait dépenser 6.5chf pour acheter ce qui lui aurait coûté 10 dollars aux USA. Les prix en Suisses sont donc 18% plus élevé par rapport aux USA (0.65/0.55 = 1.18).
+
+
 
 ## PPA et taux de change {.smaller}
 
@@ -438,8 +468,8 @@ data$year = as.numeric(data$year)
 data %>% 
   ggplot(aes(x = year, y = ppp_chf_usd, color = "PPP= P_CH/P_US"))+
   geom_line()+
-  geom_line(aes(x = year, y = `chf/usd`, color = "Taux de change: E = CHF/USD"))+
-  geom_line(aes(x = year, y = `chf/usd`/ppp_chf_usd, color = "Taux de change réel = E/PPP"))+
+  geom_line(aes(x = year, y = `chf/usd`, color = "Taux de change: E = #CHF/USD"))+
+  geom_line(aes(x = year, y = ppp_chf_usd/`chf/usd`, color = "indice du niveau des prix en Suisse = PPP/E"))+
   theme_minimal()+
   theme(legend.position = "top",
         legend.title = element_blank())+
@@ -513,8 +543,8 @@ data %>%
 
 -   Afin d'obtenir une série en volume, le PIB par exemple, qui soit comparable entre pays/région il faut:
 
-1.  Déflater le PIB par le déflateur du PIB (par exemple en franc constant de 2020) ==> diviser par le déflateur
-2.  Déflater par la PPA ==> Diviser par la PPA, mais UNIQUEMENT à l'année de base du déflateur du PIB (donc 2020). 
+1.  Déflater le PIB par le déflateur du PIB (par exemple en franc constant de 2020) ==\> diviser par le déflateur
+2.  Déflater par la PPA ==\> Diviser par la PPA, mais UNIQUEMENT à l'année de base du déflateur du PIB (donc 2020).
 
 ==\> On obtient ainsi la série en volume, corrigée de la PPA
 

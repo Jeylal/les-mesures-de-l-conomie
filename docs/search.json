@@ -4,7 +4,7 @@
     "href": "inflation.html#linflation-dans-la-longue-durée",
     "title": "Les mesures des prix",
     "section": "L’inflation dans la longue durée",
-    "text": "L’inflation dans la longue durée\n\nshaikh (2016, p.62)",
+    "text": "L’inflation dans la longue durée\n\n\n\nshaikh (2016, p.62)",
     "crumbs": [
       "Les mesures des prix"
     ]
@@ -314,7 +314,7 @@
     "href": "inflation.html#intérêt",
     "title": "Les mesures des prix",
     "section": "Intérêt",
-    "text": "Intérêt\n\nLa PPA sert à mesurer le pouvoir d’achat réel d’une monnaie nationale et donc rendre comparable les variables macroéconomiques (notamment le PIB) entre pays et régions en corrigeant les différences de niveau des prix\nSert aussi à évaluer si une monnaie est sous-évaluée ou sur-évaluée\nMême principe que pour les indices des prix, mais au lieu d’une comparaison dans le temps ==&gt; comparaison dans l’espace",
+    "text": "Intérêt\n\nLa PPA sert à mesurer le pouvoir d’achat réel d’une monnaie nationale et donc rendre comparable les variables macroéconomiques (notamment le PIB) entre pays et régions en corrigeant les différences de niveau des prix\nSert aussi à évaluer si une monnaie est sous-évaluée ou sur-évaluée\nMême principe que pour les indices des prix, mais au lieu d’une comparaison dans le temps ==&gt; comparaison dans l’espace\nLa PPA représente le nombre d’unité d’une monnaie (par exemple le franc) requis afin d’acheter la même quantité de biens et services qui peut être acheté avec une unité de la monnaie de base/référence (souvent le dollar étatsunien).",
     "crumbs": [
       "Les mesures des prix"
     ]
@@ -344,7 +344,7 @@
     "href": "inflation.html#ppa-et-taux-de-change",
     "title": "Les mesures des prix",
     "section": "PPA et taux de change",
-    "text": "PPA et taux de change\n\n\nAfficher le code\nlibrary(tidyverse)\nlibrary(rdbnomics)\n\nexch = rdb(\"OECD/DSD_EO@DF_EO/CHE.EXCH.A\") %&gt;% \n  select(original_period, value, REF_AREA) %&gt;% \n  rename(\n    year = original_period, \n  ) %&gt;% \n  mutate(\n    \"chf/usd\" = 1/value\n  ) %&gt;% \n  select(year, `chf/usd`) \n\nppp = rdb(\"OECD/DSD_EO@DF_EO/CHE.PPP.A\") %&gt;% \n  select(value) %&gt;% \n  rename(ppp_chf_usd = value)\n\ndata = cbind(exch, ppp)\ndata$year = as.numeric(data$year)\n\n\ndata %&gt;% \n  ggplot(aes(x = year, y = ppp_chf_usd, color = \"PPP= P_CH/P_US\"))+\n  geom_line()+\n  geom_line(aes(x = year, y = `chf/usd`, color = \"Taux de change: E = CHF/USD\"))+\n  geom_line(aes(x = year, y = `chf/usd`/ppp_chf_usd, color = \"Taux de change réel = E/PPP\"))+\n  theme_minimal()+\n  theme(legend.position = \"top\",\n        legend.title = element_blank())+\n  guides(\n    color = guide_legend(nrow = 2))+\n  labs(x = \"\", y = \"\")",
+    "text": "PPA et taux de change\n\nTaux de change: combien d’unité de monnaie nationale pour une unité de monnaie étrangère \\(#CHF = 1USD\\) , en ratio: \\(E = \\frac{CHF}{USD}\\) ==&gt; prix relatif des deux monnaies\nPPA: combien coute un même panier de biens et services aux USA et en Suisse\n\n==&gt; \\(ppp = \\frac{P_{CH}}{P_{USA}} \\frac{Q_{CH}}{Q_{USA}}\\) ==&gt; prix d’un même panier dans les deux pays, à quantité égale \\(Q_{CH} = Q_{USA}\\) et donc \\(ppp = \\frac{P_{CH}}{P_{USA}} \\frac{Q_{CH}}{Q_{USA}}\\) devient simplement \\(ppp = \\frac{P_{CH}}{P_{USA}}\\)\n\nTaux de change réel \\(e = \\frac{EP_{US}}{P_{CH}}\\): combien de quantité du panier-type suisse s’échange contre une unité de ce même panier-type aux USA.",
     "crumbs": [
       "Les mesures des prix"
     ]
@@ -1637,6 +1637,46 @@
     "text": "Baccaro, Lucio, et Sinisa Hadziabdic. 2024. « Operationalizing Growth Models ». Quality & Quantity 58 (2): 1325‑60. https://doi.org/10.1007/s11135-023-01685-w.",
     "crumbs": [
       "10 Mars. Comptabilité nationale"
+    ]
+  },
+  {
+    "objectID": "inflation.html#similarité-avec-les-indices-de-prix",
+    "href": "inflation.html#similarité-avec-les-indices-de-prix",
+    "title": "Les mesures des prix",
+    "section": "Similarité avec les indices de prix",
+    "text": "Similarité avec les indices de prix\n\nReprenons l’indice de Paasche, en faisant l’hypothèse que nous avons qu’un seul bien \\(Q\\). Au lieu d’une période de base 0, on choisit un pays de base de comparaison (les USA) et au lieu de t on choisit un pays dans lequel on veut corriger le niveau des prix (la Suisse).\n\nL’indice de Paasche devient:\n\\[\nPPP = \\frac{P_{ch}Q_{usa}}{P_{usa}Q_{usa}} = \\frac{P_{ch}}{P_{usa}}\n\\]\nLa PPA mesure le montant de francs devant être dépensé (en Suisse) afin d’obtenir ce que 1 dollar pourrait acheter du même bien aux USA.\n\nLa PPP est un “déflateur spatial” du PIB: \\(PIB_{ch} = P_{ch} Q_{ch}\\) &lt;=&gt; \\(PIB_{ch/ppp} = \\frac{P_{ch} Q_{ch}}{\\frac{P_{ch}}{P_{usa}}} = P_{usa}Q_{ch}\\) ==&gt; PIB suisse exprimé en dollar",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#ppa-et-loi-du-prix-unique",
+    "href": "inflation.html#ppa-et-loi-du-prix-unique",
+    "title": "Les mesures des prix",
+    "section": "PPA et loi du prix unique",
+    "text": "PPA et loi du prix unique\n\nLa théorie de la PPA (loi du prix unique) mise en avant par Cassel (1918) considère la PPA comme un taux de change d’équilibre, ce qui est désormais une vision répandue en macroéconomie.\nToutefois, les taux de change nominaux ne convergent que très rarement vers leur PPA car les hypothèses de la loi du prix unique ne sont pas très réalistes (aucune barrière à au commerce, aux flux de capitaux, information parfaite, taux de change uniquement déterminés par la demande de devise pour financer l’échange de biens et service…).\nLes organisations internationales en charge de calculer la PPA (FMI, Banque Mondiale) mettent en avant elles-même que leur PPA ne peut pas être considéré comme un taux de change ni réel ni d’équilibre.\nLe rapport entre la PPA et le taux de change nominal n’est pas le taux de change réel, mais un indice de niveau des prix (voir slide suivante)",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#ppa-et-indice-des-prix",
+    "href": "inflation.html#ppa-et-indice-des-prix",
+    "title": "Les mesures des prix",
+    "section": "PPA et indice des prix",
+    "text": "PPA et indice des prix\n\nLa PPA est donc très similaire aux indices de prix\nToutefois, la magnitude de la PPA a une dimension monétaire et ne peut donc pas directement être considéré comme un indice des prix (à part si les régions comparées ont la même monnaie par exemple les pays de la zone euro).\nUne mesure du niveau des prix dans un pays donné pour un panier de biens et services est le ratio entre la PPA et le taux de change (#monnaie nationale = 1 unité monnaie de référence (USA)):\n\n\\[\nIndice\\ niveau \\ prix_{CH} = \\frac{PPA_{CH}}{E_{CH}}  \n\\]\nPar exemple, disons que la PPA pour la Suisse par rapport aux USA est de 1$ = 0.65chf et que le taux de change est de 1$ = 0.55chf. Si un touriste en provenance des USA échange 10 dollars pour 5.5chf, il devrait dépenser 6.5chf pour acheter ce qui lui aurait coûté 10 dollars aux USA. Les prix en Suisses sont donc 18% plus élevé par rapport aux USA (0.65/0.55 = 1.18).",
+    "crumbs": [
+      "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "inflation.html#ppa-et-taux-de-change-1",
+    "href": "inflation.html#ppa-et-taux-de-change-1",
+    "title": "Les mesures des prix",
+    "section": "PPA et taux de change",
+    "text": "PPA et taux de change\n\n\nAfficher le code\nlibrary(tidyverse)\nlibrary(rdbnomics)\n\nexch = rdb(\"OECD/DSD_EO@DF_EO/CHE.EXCH.A\") %&gt;% \n  select(original_period, value, REF_AREA) %&gt;% \n  rename(\n    year = original_period, \n  ) %&gt;% \n  mutate(\n    \"chf/usd\" = 1/value\n  ) %&gt;% \n  select(year, `chf/usd`) \n\nppp = rdb(\"OECD/DSD_EO@DF_EO/CHE.PPP.A\") %&gt;% \n  select(value) %&gt;% \n  rename(ppp_chf_usd = value)\n\ndata = cbind(exch, ppp)\ndata$year = as.numeric(data$year)\n\n\ndata %&gt;% \n  ggplot(aes(x = year, y = ppp_chf_usd, color = \"PPP= P_CH/P_US\"))+\n  geom_line()+\n  geom_line(aes(x = year, y = `chf/usd`, color = \"Taux de change: E = #CHF/USD\"))+\n  geom_line(aes(x = year, y = ppp_chf_usd/`chf/usd`, color = \"indice du niveau des prix en Suisse = PPP/E\"))+\n  theme_minimal()+\n  theme(legend.position = \"top\",\n        legend.title = element_blank())+\n  guides(\n    color = guide_legend(nrow = 2))+\n  labs(x = \"\", y = \"\")",
+    "crumbs": [
+      "Les mesures des prix"
     ]
   }
 ]
