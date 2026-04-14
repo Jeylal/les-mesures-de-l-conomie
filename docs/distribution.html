@@ -444,7 +444,7 @@
   <meta name="generator" content="quarto-1.8.27">
 
   <meta name="author" content="Celâl Güney">
-  <title>Distribution et inégalité</title>
+  <title>Séminaire les mesures de l&#39;économie – Distribution et inégalité</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -25256,23 +25256,23 @@ Celâl Güney
 <div class="column">
 <details class="code-fold">
 <summary>Afficher le code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb1-2"><a href></a></span>
-<span id="cb1-3"><a href></a>data_pareto_angleterre <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb1-4"><a href></a>  <span class="at">seuil_revenu =</span> <span class="fu">c</span>(<span class="dv">150</span>, <span class="dv">200</span>, <span class="dv">300</span>, <span class="dv">400</span>, <span class="dv">500</span>, <span class="dv">600</span>, <span class="dv">700</span>, <span class="dv">800</span>, <span class="dv">900</span>,</span>
-<span id="cb1-5"><a href></a>         <span class="dv">1000</span>, <span class="dv">2000</span>, <span class="dv">3000</span>, <span class="dv">4000</span>, <span class="dv">5000</span>, <span class="dv">10000</span>, <span class="dv">50000</span>),</span>
-<span id="cb1-6"><a href></a>  <span class="at">N_1843 =</span> <span class="fu">c</span>(<span class="dv">106637</span>, <span class="dv">67271</span>, <span class="dv">38901</span>, <span class="dv">25472</span>, <span class="dv">18694</span>, <span class="dv">13911</span>, <span class="dv">11239</span>,</span>
-<span id="cb1-7"><a href></a>              <span class="dv">9365</span>, <span class="dv">7923</span>, <span class="dv">7029</span>, <span class="dv">2801</span>, <span class="dv">1566</span>, <span class="dv">1040</span>, <span class="dv">701</span>, <span class="dv">208</span>, <span class="dv">8</span>),</span>
-<span id="cb1-8"><a href></a>  <span class="at">N_1879_80 =</span> <span class="fu">c</span>(<span class="dv">320162</span>, <span class="dv">190061</span>, <span class="dv">101616</span>, <span class="dv">61720</span>, <span class="dv">45219</span>, <span class="dv">33902</span>, <span class="dv">27008</span>,</span>
-<span id="cb1-9"><a href></a>                 <span class="dv">22954</span>, <span class="dv">19359</span>, <span class="dv">17963</span>, <span class="dv">7611</span>, <span class="dv">4480</span>, <span class="dv">3050</span>, <span class="dv">2292</span>, <span class="dv">853</span>, <span class="dv">68</span>)</span>
-<span id="cb1-10"><a href></a>)</span>
-<span id="cb1-11"><a href></a></span>
-<span id="cb1-12"><a href></a>data_pareto_italie <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb1-13"><a href></a>  <span class="at">seuil_revenu =</span> <span class="fu">c</span>(<span class="dv">1000</span>, <span class="dv">2000</span>, <span class="dv">4000</span>, <span class="dv">7000</span>, <span class="dv">10000</span>, <span class="dv">15000</span>, <span class="dv">25000</span>),</span>
-<span id="cb1-14"><a href></a>  <span class="at">N =</span> <span class="fu">c</span>(<span class="dv">59486</span>, <span class="dv">26968</span>, <span class="dv">9766</span>, <span class="dv">4264</span>, <span class="dv">2397</span>, <span class="dv">1310</span>, <span class="dv">645</span>)</span>
-<span id="cb1-15"><a href></a>)</span>
-<span id="cb1-16"><a href></a></span>
-<span id="cb1-17"><a href></a>data_pareto_angleterre </span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a></a></span>
+<span id="cb1-3"><a></a>data_pareto_angleterre <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb1-4"><a></a>  <span class="at">seuil_revenu =</span> <span class="fu">c</span>(<span class="dv">150</span>, <span class="dv">200</span>, <span class="dv">300</span>, <span class="dv">400</span>, <span class="dv">500</span>, <span class="dv">600</span>, <span class="dv">700</span>, <span class="dv">800</span>, <span class="dv">900</span>,</span>
+<span id="cb1-5"><a></a>         <span class="dv">1000</span>, <span class="dv">2000</span>, <span class="dv">3000</span>, <span class="dv">4000</span>, <span class="dv">5000</span>, <span class="dv">10000</span>, <span class="dv">50000</span>),</span>
+<span id="cb1-6"><a></a>  <span class="at">N_1843 =</span> <span class="fu">c</span>(<span class="dv">106637</span>, <span class="dv">67271</span>, <span class="dv">38901</span>, <span class="dv">25472</span>, <span class="dv">18694</span>, <span class="dv">13911</span>, <span class="dv">11239</span>,</span>
+<span id="cb1-7"><a></a>              <span class="dv">9365</span>, <span class="dv">7923</span>, <span class="dv">7029</span>, <span class="dv">2801</span>, <span class="dv">1566</span>, <span class="dv">1040</span>, <span class="dv">701</span>, <span class="dv">208</span>, <span class="dv">8</span>),</span>
+<span id="cb1-8"><a></a>  <span class="at">N_1879_80 =</span> <span class="fu">c</span>(<span class="dv">320162</span>, <span class="dv">190061</span>, <span class="dv">101616</span>, <span class="dv">61720</span>, <span class="dv">45219</span>, <span class="dv">33902</span>, <span class="dv">27008</span>,</span>
+<span id="cb1-9"><a></a>                 <span class="dv">22954</span>, <span class="dv">19359</span>, <span class="dv">17963</span>, <span class="dv">7611</span>, <span class="dv">4480</span>, <span class="dv">3050</span>, <span class="dv">2292</span>, <span class="dv">853</span>, <span class="dv">68</span>)</span>
+<span id="cb1-10"><a></a>)</span>
+<span id="cb1-11"><a></a></span>
+<span id="cb1-12"><a></a>data_pareto_italie <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb1-13"><a></a>  <span class="at">seuil_revenu =</span> <span class="fu">c</span>(<span class="dv">1000</span>, <span class="dv">2000</span>, <span class="dv">4000</span>, <span class="dv">7000</span>, <span class="dv">10000</span>, <span class="dv">15000</span>, <span class="dv">25000</span>),</span>
+<span id="cb1-14"><a></a>  <span class="at">N =</span> <span class="fu">c</span>(<span class="dv">59486</span>, <span class="dv">26968</span>, <span class="dv">9766</span>, <span class="dv">4264</span>, <span class="dv">2397</span>, <span class="dv">1310</span>, <span class="dv">645</span>)</span>
+<span id="cb1-15"><a></a>)</span>
+<span id="cb1-16"><a></a></span>
+<span id="cb1-17"><a></a>data_pareto_angleterre </span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div><div class="column">
 <div class="cell-output cell-output-stdout">
@@ -25308,50 +25308,50 @@ Celâl Güney
 <div class="cell">
 <details class="code-fold">
 <summary>Afficher le code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href></a><span class="co"># Estimation des modèles</span></span>
-<span id="cb3-2"><a href></a>lm_1843  <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="fu">log</span>(N_1843) <span class="sc">~</span> <span class="fu">log</span>(seuil_revenu), <span class="at">data =</span> data_pareto_angleterre)</span>
-<span id="cb3-3"><a href></a>lm_1880  <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="fu">log</span>(N_1879_80) <span class="sc">~</span> <span class="fu">log</span>(seuil_revenu), <span class="at">data =</span> data_pareto_angleterre)</span>
-<span id="cb3-4"><a href></a>lm_italie <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="fu">log</span>(N) <span class="sc">~</span> <span class="fu">log</span>(seuil_revenu), <span class="at">data =</span> data_pareto_italie)</span>
-<span id="cb3-5"><a href></a></span>
-<span id="cb3-6"><a href></a><span class="co"># Labels avec les coefficients estimés</span></span>
-<span id="cb3-7"><a href></a>label_1843  <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">&quot;Angleterre 1843</span><span class="sc">\n</span><span class="st">log(N) = %.2f %+.2f·log(Y)&quot;</span>,</span>
-<span id="cb3-8"><a href></a>                        <span class="fu">coef</span>(lm_1843)[<span class="dv">1</span>],  <span class="fu">coef</span>(lm_1843)[<span class="dv">2</span>])</span>
-<span id="cb3-9"><a href></a>label_1880  <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">&quot;Angleterre 1879-80</span><span class="sc">\n</span><span class="st">log(N) = %.2f %+.2f·log(Y)&quot;</span>,</span>
-<span id="cb3-10"><a href></a>                        <span class="fu">coef</span>(lm_1880)[<span class="dv">1</span>],  <span class="fu">coef</span>(lm_1880)[<span class="dv">2</span>])</span>
-<span id="cb3-11"><a href></a>label_italie <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">&quot;Villes italiennes</span><span class="sc">\n</span><span class="st">log(N) = %.2f %+.2f·log(Y)&quot;</span>,</span>
-<span id="cb3-12"><a href></a>                        <span class="fu">coef</span>(lm_italie)[<span class="dv">1</span>], <span class="fu">coef</span>(lm_italie)[<span class="dv">2</span>])</span>
-<span id="cb3-13"><a href></a></span>
-<span id="cb3-14"><a href></a>data_pareto_angleterre <span class="sc">%&gt;%</span></span>
-<span id="cb3-15"><a href></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">log</span>(seuil_revenu), <span class="at">y =</span> <span class="fu">log</span>(N_1843))) <span class="sc">+</span></span>
-<span id="cb3-16"><a href></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> label_1843), <span class="at">shape =</span> <span class="dv">16</span>, <span class="at">size =</span> <span class="fl">2.5</span>) <span class="sc">+</span></span>
-<span id="cb3-17"><a href></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">y =</span> <span class="fu">log</span>(N_1879_80), <span class="at">color =</span> label_1880), <span class="at">shape =</span> <span class="dv">17</span>, <span class="at">size =</span> <span class="fl">2.5</span>) <span class="sc">+</span></span>
-<span id="cb3-18"><a href></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> data_pareto_italie,</span>
-<span id="cb3-19"><a href></a>             <span class="fu">aes</span>(<span class="at">y =</span> <span class="fu">log</span>(N), <span class="at">color =</span> label_italie), <span class="at">shape =</span> <span class="dv">15</span>, <span class="at">size =</span> <span class="fl">2.5</span>) <span class="sc">+</span></span>
-<span id="cb3-20"><a href></a></span>
-<span id="cb3-21"><a href></a>  <span class="fu">geom_smooth</span>(<span class="fu">aes</span>(<span class="at">color =</span> label_1843),</span>
-<span id="cb3-22"><a href></a>              <span class="at">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">linewidth =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
-<span id="cb3-23"><a href></a>  <span class="fu">geom_smooth</span>(<span class="fu">aes</span>(<span class="at">y =</span> <span class="fu">log</span>(N_1879_80), <span class="at">color =</span> label_1880),</span>
-<span id="cb3-24"><a href></a>              <span class="at">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">linewidth =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
-<span id="cb3-25"><a href></a>  <span class="fu">geom_smooth</span>(<span class="at">data =</span> data_pareto_italie,</span>
-<span id="cb3-26"><a href></a>              <span class="fu">aes</span>(<span class="at">y =</span> <span class="fu">log</span>(N), <span class="at">color =</span> label_italie),</span>
-<span id="cb3-27"><a href></a>              <span class="at">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">linewidth =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
-<span id="cb3-28"><a href></a></span>
-<span id="cb3-29"><a href></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">setNames</span>(</span>
-<span id="cb3-30"><a href></a>    <span class="fu">c</span>(<span class="st">&quot;#378ADD&quot;</span>, <span class="st">&quot;#1D9E75&quot;</span>, <span class="st">&quot;#D85A30&quot;</span>),</span>
-<span id="cb3-31"><a href></a>    <span class="fu">c</span>(label_1843, label_1880, label_italie)</span>
-<span id="cb3-32"><a href></a>  )) <span class="sc">+</span></span>
-<span id="cb3-33"><a href></a>  <span class="fu">labs</span>(</span>
-<span id="cb3-34"><a href></a>    <span class="at">x     =</span> <span class="st">&quot;Seuil de revenu (log)&quot;</span>,</span>
-<span id="cb3-35"><a href></a>    <span class="at">y     =</span> <span class="st">&quot;Nombre de personnes au dessus du seuil (log)&quot;</span>,</span>
-<span id="cb3-36"><a href></a>    <span class="at">color =</span> <span class="cn">NULL</span>,</span>
-<span id="cb3-37"><a href></a>    <span class="at">title =</span> <span class="st">&quot;Les `courbes de répartition de richesse` selon Pareto&quot;</span></span>
-<span id="cb3-38"><a href></a>  ) <span class="sc">+</span></span>
-<span id="cb3-39"><a href></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">12</span>) <span class="sc">+</span></span>
-<span id="cb3-40"><a href></a>  <span class="fu">theme</span>(</span>
-<span id="cb3-41"><a href></a>    <span class="at">legend.position  =</span> <span class="st">&quot;bottom&quot;</span>,</span>
-<span id="cb3-42"><a href></a>    <span class="at">legend.text      =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">9</span>),</span>
-<span id="cb3-43"><a href></a>    <span class="at">legend.key.width =</span> <span class="fu">unit</span>(<span class="fl">1.5</span>, <span class="st">&quot;cm&quot;</span>)</span>
-<span id="cb3-44"><a href></a>  )</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="co"># Estimation des modèles</span></span>
+<span id="cb3-2"><a></a>lm_1843  <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="fu">log</span>(N_1843) <span class="sc">~</span> <span class="fu">log</span>(seuil_revenu), <span class="at">data =</span> data_pareto_angleterre)</span>
+<span id="cb3-3"><a></a>lm_1880  <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="fu">log</span>(N_1879_80) <span class="sc">~</span> <span class="fu">log</span>(seuil_revenu), <span class="at">data =</span> data_pareto_angleterre)</span>
+<span id="cb3-4"><a></a>lm_italie <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="fu">log</span>(N) <span class="sc">~</span> <span class="fu">log</span>(seuil_revenu), <span class="at">data =</span> data_pareto_italie)</span>
+<span id="cb3-5"><a></a></span>
+<span id="cb3-6"><a></a><span class="co"># Labels avec les coefficients estimés</span></span>
+<span id="cb3-7"><a></a>label_1843  <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">&quot;Angleterre 1843</span><span class="sc">\n</span><span class="st">log(N) = %.2f %+.2f·log(Y)&quot;</span>,</span>
+<span id="cb3-8"><a></a>                        <span class="fu">coef</span>(lm_1843)[<span class="dv">1</span>],  <span class="fu">coef</span>(lm_1843)[<span class="dv">2</span>])</span>
+<span id="cb3-9"><a></a>label_1880  <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">&quot;Angleterre 1879-80</span><span class="sc">\n</span><span class="st">log(N) = %.2f %+.2f·log(Y)&quot;</span>,</span>
+<span id="cb3-10"><a></a>                        <span class="fu">coef</span>(lm_1880)[<span class="dv">1</span>],  <span class="fu">coef</span>(lm_1880)[<span class="dv">2</span>])</span>
+<span id="cb3-11"><a></a>label_italie <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">&quot;Villes italiennes</span><span class="sc">\n</span><span class="st">log(N) = %.2f %+.2f·log(Y)&quot;</span>,</span>
+<span id="cb3-12"><a></a>                        <span class="fu">coef</span>(lm_italie)[<span class="dv">1</span>], <span class="fu">coef</span>(lm_italie)[<span class="dv">2</span>])</span>
+<span id="cb3-13"><a></a></span>
+<span id="cb3-14"><a></a>data_pareto_angleterre <span class="sc">%&gt;%</span></span>
+<span id="cb3-15"><a></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">log</span>(seuil_revenu), <span class="at">y =</span> <span class="fu">log</span>(N_1843))) <span class="sc">+</span></span>
+<span id="cb3-16"><a></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> label_1843), <span class="at">shape =</span> <span class="dv">16</span>, <span class="at">size =</span> <span class="fl">2.5</span>) <span class="sc">+</span></span>
+<span id="cb3-17"><a></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">y =</span> <span class="fu">log</span>(N_1879_80), <span class="at">color =</span> label_1880), <span class="at">shape =</span> <span class="dv">17</span>, <span class="at">size =</span> <span class="fl">2.5</span>) <span class="sc">+</span></span>
+<span id="cb3-18"><a></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> data_pareto_italie,</span>
+<span id="cb3-19"><a></a>             <span class="fu">aes</span>(<span class="at">y =</span> <span class="fu">log</span>(N), <span class="at">color =</span> label_italie), <span class="at">shape =</span> <span class="dv">15</span>, <span class="at">size =</span> <span class="fl">2.5</span>) <span class="sc">+</span></span>
+<span id="cb3-20"><a></a></span>
+<span id="cb3-21"><a></a>  <span class="fu">geom_smooth</span>(<span class="fu">aes</span>(<span class="at">color =</span> label_1843),</span>
+<span id="cb3-22"><a></a>              <span class="at">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">linewidth =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb3-23"><a></a>  <span class="fu">geom_smooth</span>(<span class="fu">aes</span>(<span class="at">y =</span> <span class="fu">log</span>(N_1879_80), <span class="at">color =</span> label_1880),</span>
+<span id="cb3-24"><a></a>              <span class="at">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">linewidth =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb3-25"><a></a>  <span class="fu">geom_smooth</span>(<span class="at">data =</span> data_pareto_italie,</span>
+<span id="cb3-26"><a></a>              <span class="fu">aes</span>(<span class="at">y =</span> <span class="fu">log</span>(N), <span class="at">color =</span> label_italie),</span>
+<span id="cb3-27"><a></a>              <span class="at">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">linewidth =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb3-28"><a></a></span>
+<span id="cb3-29"><a></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">setNames</span>(</span>
+<span id="cb3-30"><a></a>    <span class="fu">c</span>(<span class="st">&quot;#378ADD&quot;</span>, <span class="st">&quot;#1D9E75&quot;</span>, <span class="st">&quot;#D85A30&quot;</span>),</span>
+<span id="cb3-31"><a></a>    <span class="fu">c</span>(label_1843, label_1880, label_italie)</span>
+<span id="cb3-32"><a></a>  )) <span class="sc">+</span></span>
+<span id="cb3-33"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb3-34"><a></a>    <span class="at">x     =</span> <span class="st">&quot;Seuil de revenu (log)&quot;</span>,</span>
+<span id="cb3-35"><a></a>    <span class="at">y     =</span> <span class="st">&quot;Nombre de personnes au dessus du seuil (log)&quot;</span>,</span>
+<span id="cb3-36"><a></a>    <span class="at">color =</span> <span class="cn">NULL</span>,</span>
+<span id="cb3-37"><a></a>    <span class="at">title =</span> <span class="st">&quot;Les `courbes de répartition de richesse` selon Pareto&quot;</span></span>
+<span id="cb3-38"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb3-39"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">12</span>) <span class="sc">+</span></span>
+<span id="cb3-40"><a></a>  <span class="fu">theme</span>(</span>
+<span id="cb3-41"><a></a>    <span class="at">legend.position  =</span> <span class="st">&quot;bottom&quot;</span>,</span>
+<span id="cb3-42"><a></a>    <span class="at">legend.text      =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">9</span>),</span>
+<span id="cb3-43"><a></a>    <span class="at">legend.key.width =</span> <span class="fu">unit</span>(<span class="fl">1.5</span>, <span class="st">&quot;cm&quot;</span>)</span>
+<span id="cb3-44"><a></a>  )</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 
 </div>
@@ -25443,29 +25443,29 @@ Celâl Güney
 <div class="cell">
 <details class="code-fold">
 <summary>Afficher le code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href></a><span class="co"># calcule du nombre de contribuables entre chaque tranche</span></span>
-<span id="cb5-2"><a href></a>data_lorenz <span class="ot">=</span> data_pareto_angleterre <span class="sc">%&gt;%</span> </span>
-<span id="cb5-3"><a href></a>  <span class="fu">mutate</span>(</span>
-<span id="cb5-4"><a href></a>    <span class="at">freq_N_1843 =</span> N_1843 <span class="sc">-</span> <span class="fu">lead</span>(N_1843),</span>
-<span id="cb5-5"><a href></a>    <span class="at">freq_N_1879_80 =</span> N_1879_80 <span class="sc">-</span> <span class="fu">lead</span>(N_1879_80)</span>
-<span id="cb5-6"><a href></a>  )</span>
-<span id="cb5-7"><a href></a></span>
-<span id="cb5-8"><a href></a><span class="co"># Comme lead() retourne un NA pour les dernières valeurs, il faut la calculer manuellement et l&#39;ajouter</span></span>
-<span id="cb5-9"><a href></a></span>
-<span id="cb5-10"><a href></a>data_lorenz<span class="sc">$</span>freq_N_1843[<span class="dv">16</span>] <span class="ot">=</span> <span class="dv">8</span></span>
-<span id="cb5-11"><a href></a>data_lorenz<span class="sc">$</span>freq_N_1879_80[<span class="dv">16</span>] <span class="ot">=</span> <span class="dv">785</span></span>
-<span id="cb5-12"><a href></a></span>
-<span id="cb5-13"><a href></a><span class="co"># Calcul des proportions cumulées des contribuables</span></span>
-<span id="cb5-14"><a href></a></span>
-<span id="cb5-15"><a href></a>data_lorenz <span class="ot">=</span> data_lorenz <span class="sc">%&gt;%</span> </span>
-<span id="cb5-16"><a href></a>  <span class="fu">mutate</span>(</span>
-<span id="cb5-17"><a href></a>    <span class="at">cumsumprop_n_1843 =</span> <span class="fu">cumsum</span>(freq_N_1843<span class="sc">/</span><span class="fu">sum</span>(freq_N_1843)),</span>
-<span id="cb5-18"><a href></a>     <span class="at">cumsumprop_n_1879 =</span> <span class="fu">cumsum</span>(freq_N_1879_80<span class="sc">/</span><span class="fu">sum</span>(freq_N_1879_80))</span>
-<span id="cb5-19"><a href></a>  )</span>
-<span id="cb5-20"><a href></a></span>
-<span id="cb5-21"><a href></a></span>
-<span id="cb5-22"><a href></a>data_lorenz <span class="sc">%&gt;%</span> </span>
-<span id="cb5-23"><a href></a>  <span class="fu">select</span>(seuil_revenu, N_1843) </span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="co"># calcule du nombre de contribuables entre chaque tranche</span></span>
+<span id="cb5-2"><a></a>data_lorenz <span class="ot">=</span> data_pareto_angleterre <span class="sc">%&gt;%</span> </span>
+<span id="cb5-3"><a></a>  <span class="fu">mutate</span>(</span>
+<span id="cb5-4"><a></a>    <span class="at">freq_N_1843 =</span> N_1843 <span class="sc">-</span> <span class="fu">lead</span>(N_1843),</span>
+<span id="cb5-5"><a></a>    <span class="at">freq_N_1879_80 =</span> N_1879_80 <span class="sc">-</span> <span class="fu">lead</span>(N_1879_80)</span>
+<span id="cb5-6"><a></a>  )</span>
+<span id="cb5-7"><a></a></span>
+<span id="cb5-8"><a></a><span class="co"># Comme lead() retourne un NA pour les dernières valeurs, il faut la calculer manuellement et l&#39;ajouter</span></span>
+<span id="cb5-9"><a></a></span>
+<span id="cb5-10"><a></a>data_lorenz<span class="sc">$</span>freq_N_1843[<span class="dv">16</span>] <span class="ot">=</span> <span class="dv">8</span></span>
+<span id="cb5-11"><a></a>data_lorenz<span class="sc">$</span>freq_N_1879_80[<span class="dv">16</span>] <span class="ot">=</span> <span class="dv">785</span></span>
+<span id="cb5-12"><a></a></span>
+<span id="cb5-13"><a></a><span class="co"># Calcul des proportions cumulées des contribuables</span></span>
+<span id="cb5-14"><a></a></span>
+<span id="cb5-15"><a></a>data_lorenz <span class="ot">=</span> data_lorenz <span class="sc">%&gt;%</span> </span>
+<span id="cb5-16"><a></a>  <span class="fu">mutate</span>(</span>
+<span id="cb5-17"><a></a>    <span class="at">cumsumprop_n_1843 =</span> <span class="fu">cumsum</span>(freq_N_1843<span class="sc">/</span><span class="fu">sum</span>(freq_N_1843)),</span>
+<span id="cb5-18"><a></a>     <span class="at">cumsumprop_n_1879 =</span> <span class="fu">cumsum</span>(freq_N_1879_80<span class="sc">/</span><span class="fu">sum</span>(freq_N_1879_80))</span>
+<span id="cb5-19"><a></a>  )</span>
+<span id="cb5-20"><a></a></span>
+<span id="cb5-21"><a></a></span>
+<span id="cb5-22"><a></a>data_lorenz <span class="sc">%&gt;%</span> </span>
+<span id="cb5-23"><a></a>  <span class="fu">select</span>(seuil_revenu, N_1843) </span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>   seuil_revenu N_1843
@@ -25514,10 +25514,10 @@ Celâl Güney
 <div class="cell">
 <details class="code-fold">
 <summary>Afficher le code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href></a>data_lorenz <span class="sc">%&gt;%</span> </span>
-<span id="cb7-2"><a href></a>  <span class="fu">select</span>(cumsumprop_n_1843, cumsumprop_revenu_pareto) <span class="sc">%&gt;%</span> </span>
-<span id="cb7-3"><a href></a>  <span class="fu">rename</span>(<span class="st">&quot;proportion cumulée des contribuables&quot;</span> <span class="ot">=</span> cumsumprop_n_1843,</span>
-<span id="cb7-4"><a href></a>         <span class="st">&quot;proportion cumulée du revenu&quot;</span> <span class="ot">=</span> cumsumprop_revenu_pareto)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>data_lorenz <span class="sc">%&gt;%</span> </span>
+<span id="cb7-2"><a></a>  <span class="fu">select</span>(cumsumprop_n_1843, cumsumprop_revenu_pareto) <span class="sc">%&gt;%</span> </span>
+<span id="cb7-3"><a></a>  <span class="fu">rename</span>(<span class="st">&quot;proportion cumulée des contribuables&quot;</span> <span class="ot">=</span> cumsumprop_n_1843,</span>
+<span id="cb7-4"><a></a>         <span class="st">&quot;proportion cumulée du revenu&quot;</span> <span class="ot">=</span> cumsumprop_revenu_pareto)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>   proportion cumulée des contribuables proportion cumulée du revenu
@@ -25546,21 +25546,21 @@ Celâl Güney
 <div class="cell">
 <details class="code-fold">
 <summary>Afficher le code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href></a>plot_lorenz <span class="ot">&lt;-</span> </span>
-<span id="cb9-2"><a href></a>data_lorenz <span class="sc">%&gt;%</span> </span>
-<span id="cb9-3"><a href></a>  <span class="fu">add_row</span>(<span class="at">cumsumprop_n_1843 =</span> <span class="dv">0</span>, <span class="at">cumsumprop_revenu_pareto =</span> <span class="dv">0</span>, <span class="at">cumsumprop_revenu_mediane =</span> <span class="dv">0</span>, <span class="at">.before =</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb9-4"><a href></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> cumsumprop_n_1843, <span class="at">y =</span> cumsumprop_revenu_pareto, <span class="at">color =</span> <span class="st">&quot;estimation Pareto&quot;</span>))<span class="sc">+</span></span>
-<span id="cb9-5"><a href></a>  <span class="fu">geom_point</span>()<span class="sc">+</span></span>
-<span id="cb9-6"><a href></a>  <span class="fu">geom_line</span>()<span class="sc">+</span></span>
-<span id="cb9-7"><a href></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> cumsumprop_n_1843, <span class="at">y =</span> cumsumprop_revenu_mediane, <span class="at">color =</span> <span class="st">&quot;estimation médiane&quot;</span>))<span class="sc">+</span></span>
-<span id="cb9-8"><a href></a>  <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">0</span>, <span class="at">y =</span> <span class="dv">0</span>, <span class="at">xend =</span> <span class="dv">1</span>, <span class="at">yend =</span> <span class="dv">1</span>, <span class="at">colour =</span> <span class="st">&quot;Courbe d&#39;égalité&quot;</span>))<span class="sc">+</span></span>
-<span id="cb9-9"><a href></a>  <span class="fu">theme_minimal</span>()<span class="sc">+</span></span>
-<span id="cb9-10"><a href></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Courbe de Lorenz (données Pareto 1896)&quot;</span>,</span>
-<span id="cb9-11"><a href></a>       <span class="at">x =</span> <span class="st">&quot;Proportion cumulée des contribuables&quot;</span>,</span>
-<span id="cb9-12"><a href></a>       <span class="at">y =</span> <span class="st">&quot;Proportion cumulée estimée du revenu&quot;</span>)<span class="sc">+</span></span>
-<span id="cb9-13"><a href></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;bottom&quot;</span>)</span>
-<span id="cb9-14"><a href></a></span>
-<span id="cb9-15"><a href></a>plot_lorenz</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>plot_lorenz <span class="ot">&lt;-</span> </span>
+<span id="cb9-2"><a></a>data_lorenz <span class="sc">%&gt;%</span> </span>
+<span id="cb9-3"><a></a>  <span class="fu">add_row</span>(<span class="at">cumsumprop_n_1843 =</span> <span class="dv">0</span>, <span class="at">cumsumprop_revenu_pareto =</span> <span class="dv">0</span>, <span class="at">cumsumprop_revenu_mediane =</span> <span class="dv">0</span>, <span class="at">.before =</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-4"><a></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> cumsumprop_n_1843, <span class="at">y =</span> cumsumprop_revenu_pareto, <span class="at">color =</span> <span class="st">&quot;estimation Pareto&quot;</span>))<span class="sc">+</span></span>
+<span id="cb9-5"><a></a>  <span class="fu">geom_point</span>()<span class="sc">+</span></span>
+<span id="cb9-6"><a></a>  <span class="fu">geom_line</span>()<span class="sc">+</span></span>
+<span id="cb9-7"><a></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> cumsumprop_n_1843, <span class="at">y =</span> cumsumprop_revenu_mediane, <span class="at">color =</span> <span class="st">&quot;estimation médiane&quot;</span>))<span class="sc">+</span></span>
+<span id="cb9-8"><a></a>  <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">0</span>, <span class="at">y =</span> <span class="dv">0</span>, <span class="at">xend =</span> <span class="dv">1</span>, <span class="at">yend =</span> <span class="dv">1</span>, <span class="at">colour =</span> <span class="st">&quot;Courbe d&#39;égalité&quot;</span>))<span class="sc">+</span></span>
+<span id="cb9-9"><a></a>  <span class="fu">theme_minimal</span>()<span class="sc">+</span></span>
+<span id="cb9-10"><a></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Courbe de Lorenz (données Pareto 1896)&quot;</span>,</span>
+<span id="cb9-11"><a></a>       <span class="at">x =</span> <span class="st">&quot;Proportion cumulée des contribuables&quot;</span>,</span>
+<span id="cb9-12"><a></a>       <span class="at">y =</span> <span class="st">&quot;Proportion cumulée estimée du revenu&quot;</span>)<span class="sc">+</span></span>
+<span id="cb9-13"><a></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;bottom&quot;</span>)</span>
+<span id="cb9-14"><a></a></span>
+<span id="cb9-15"><a></a>plot_lorenz</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 
 </div>
@@ -25570,37 +25570,37 @@ Celâl Güney
 <div class="cell">
 <details class="code-fold">
 <summary>Afficher le code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href></a>plot_lorenz_B <span class="ot">&lt;-</span> </span>
-<span id="cb10-2"><a href></a>data_lorenz <span class="sc">%&gt;%</span> </span>
-<span id="cb10-3"><a href></a>  <span class="fu">add_row</span>(<span class="at">cumsumprop_n_1843 =</span> <span class="dv">0</span>, <span class="at">cumsumprop_revenu_pareto =</span> <span class="dv">0</span>, <span class="at">cumsumprop_revenu_mediane =</span> <span class="dv">0</span>, <span class="at">.before =</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb10-4"><a href></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> cumsumprop_n_1843, <span class="at">y =</span> cumsumprop_revenu_pareto, <span class="at">color =</span> <span class="st">&quot;estimation Pareto&quot;</span>)) <span class="sc">+</span></span>
-<span id="cb10-5"><a href></a>  <span class="fu">geom_ribbon</span>(<span class="fu">aes</span>(<span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> cumsumprop_revenu_pareto),</span>
-<span id="cb10-6"><a href></a>              <span class="at">fill =</span> <span class="st">&quot;coral&quot;</span>, <span class="at">alpha =</span> <span class="fl">0.2</span>, <span class="at">color =</span> <span class="cn">NA</span>) <span class="sc">+</span></span>
-<span id="cb10-7"><a href></a><span class="fu">geom_ribbon</span>(<span class="fu">aes</span>(<span class="at">ymin =</span> cumsumprop_revenu_pareto, <span class="at">ymax =</span> cumsumprop_n_1843),</span>
-<span id="cb10-8"><a href></a>            <span class="at">fill =</span> <span class="st">&quot;steelblue&quot;</span>, <span class="at">alpha =</span> <span class="fl">0.2</span>, <span class="at">color =</span> <span class="cn">NA</span>) <span class="sc">+</span></span>
-<span id="cb10-9"><a href></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
-<span id="cb10-10"><a href></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb10-11"><a href></a>  <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">0</span>, <span class="at">y =</span> <span class="dv">0</span>, <span class="at">xend =</span> <span class="dv">1</span>, <span class="at">yend =</span> <span class="dv">1</span>, <span class="at">colour =</span> <span class="st">&quot;Courbe d&#39;égalité&quot;</span>)) <span class="sc">+</span></span>
-<span id="cb10-12"><a href></a>  <span class="fu">annotate</span>(<span class="st">&quot;text&quot;</span>, <span class="at">x =</span> <span class="fl">0.75</span>, <span class="at">y =</span> <span class="fl">0.2</span>,</span>
-<span id="cb10-13"><a href></a>           <span class="at">label =</span> <span class="st">&quot;B = aire sous la</span><span class="sc">\n</span><span class="st">courbe de Lorenz&quot;</span>,</span>
-<span id="cb10-14"><a href></a>           <span class="at">size =</span> <span class="fl">3.2</span>, <span class="at">color =</span> <span class="st">&quot;coral4&quot;</span>, <span class="at">hjust =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
-<span id="cb10-15"><a href></a>  <span class="fu">annotate</span>(<span class="st">&quot;text&quot;</span>, <span class="at">x =</span> <span class="fl">0.45</span>, <span class="at">y =</span> <span class="fl">0.75</span>,</span>
-<span id="cb10-16"><a href></a>           <span class="at">label =</span> <span class="st">&quot;Gini = A/(A+B) = 1 - 2B&quot;</span>,</span>
-<span id="cb10-17"><a href></a>           <span class="at">size =</span> <span class="fl">3.8</span>, <span class="at">fontface =</span> <span class="st">&quot;bold&quot;</span>, <span class="at">color =</span> <span class="st">&quot;black&quot;</span>) <span class="sc">+</span></span>
-<span id="cb10-18"><a href></a>    <span class="fu">annotate</span>(<span class="st">&quot;text&quot;</span>, <span class="at">x =</span> <span class="fl">0.63</span>, <span class="at">y =</span> <span class="fl">0.50</span>,</span>
-<span id="cb10-19"><a href></a>           <span class="at">label =</span> <span class="st">&quot;A = aire entre courbe </span><span class="sc">\n</span><span class="st">d&#39;égalité et de Lorenz&quot;</span>,</span>
-<span id="cb10-20"><a href></a>           <span class="at">size =</span> <span class="fl">3.2</span>, <span class="at">color =</span> <span class="st">&quot;steelblue&quot;</span>, <span class="at">hjust =</span> <span class="dv">0</span>)<span class="sc">+</span></span>
-<span id="cb10-21"><a href></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">&quot;estimation Pareto&quot;</span> <span class="ot">=</span> <span class="st">&quot;black&quot;</span>, <span class="st">&quot;Courbe d&#39;égalité&quot;</span> <span class="ot">=</span> <span class="st">&quot;grey50&quot;</span>)) <span class="sc">+</span></span>
-<span id="cb10-22"><a href></a>  <span class="fu">scale_x_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
-<span id="cb10-23"><a href></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
-<span id="cb10-24"><a href></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb10-25"><a href></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;&quot;</span>,</span>
-<span id="cb10-26"><a href></a>       <span class="at">x =</span> <span class="st">&quot;Proportion cumulée des contribuables&quot;</span>,</span>
-<span id="cb10-27"><a href></a>       <span class="at">y =</span> <span class="st">&quot;Proportion cumulée estimée du revenu&quot;</span>,</span>
-<span id="cb10-28"><a href></a>       <span class="at">color =</span> <span class="cn">NULL</span>) <span class="sc">+</span></span>
-<span id="cb10-29"><a href></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;bottom&quot;</span>)</span>
-<span id="cb10-30"><a href></a></span>
-<span id="cb10-31"><a href></a>plot_lorenz_B</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>plot_lorenz_B <span class="ot">&lt;-</span> </span>
+<span id="cb10-2"><a></a>data_lorenz <span class="sc">%&gt;%</span> </span>
+<span id="cb10-3"><a></a>  <span class="fu">add_row</span>(<span class="at">cumsumprop_n_1843 =</span> <span class="dv">0</span>, <span class="at">cumsumprop_revenu_pareto =</span> <span class="dv">0</span>, <span class="at">cumsumprop_revenu_mediane =</span> <span class="dv">0</span>, <span class="at">.before =</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb10-4"><a></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> cumsumprop_n_1843, <span class="at">y =</span> cumsumprop_revenu_pareto, <span class="at">color =</span> <span class="st">&quot;estimation Pareto&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb10-5"><a></a>  <span class="fu">geom_ribbon</span>(<span class="fu">aes</span>(<span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> cumsumprop_revenu_pareto),</span>
+<span id="cb10-6"><a></a>              <span class="at">fill =</span> <span class="st">&quot;coral&quot;</span>, <span class="at">alpha =</span> <span class="fl">0.2</span>, <span class="at">color =</span> <span class="cn">NA</span>) <span class="sc">+</span></span>
+<span id="cb10-7"><a></a><span class="fu">geom_ribbon</span>(<span class="fu">aes</span>(<span class="at">ymin =</span> cumsumprop_revenu_pareto, <span class="at">ymax =</span> cumsumprop_n_1843),</span>
+<span id="cb10-8"><a></a>            <span class="at">fill =</span> <span class="st">&quot;steelblue&quot;</span>, <span class="at">alpha =</span> <span class="fl">0.2</span>, <span class="at">color =</span> <span class="cn">NA</span>) <span class="sc">+</span></span>
+<span id="cb10-9"><a></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb10-10"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb10-11"><a></a>  <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">0</span>, <span class="at">y =</span> <span class="dv">0</span>, <span class="at">xend =</span> <span class="dv">1</span>, <span class="at">yend =</span> <span class="dv">1</span>, <span class="at">colour =</span> <span class="st">&quot;Courbe d&#39;égalité&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb10-12"><a></a>  <span class="fu">annotate</span>(<span class="st">&quot;text&quot;</span>, <span class="at">x =</span> <span class="fl">0.75</span>, <span class="at">y =</span> <span class="fl">0.2</span>,</span>
+<span id="cb10-13"><a></a>           <span class="at">label =</span> <span class="st">&quot;B = aire sous la</span><span class="sc">\n</span><span class="st">courbe de Lorenz&quot;</span>,</span>
+<span id="cb10-14"><a></a>           <span class="at">size =</span> <span class="fl">3.2</span>, <span class="at">color =</span> <span class="st">&quot;coral4&quot;</span>, <span class="at">hjust =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb10-15"><a></a>  <span class="fu">annotate</span>(<span class="st">&quot;text&quot;</span>, <span class="at">x =</span> <span class="fl">0.45</span>, <span class="at">y =</span> <span class="fl">0.75</span>,</span>
+<span id="cb10-16"><a></a>           <span class="at">label =</span> <span class="st">&quot;Gini = A/(A+B) = 1 - 2B&quot;</span>,</span>
+<span id="cb10-17"><a></a>           <span class="at">size =</span> <span class="fl">3.8</span>, <span class="at">fontface =</span> <span class="st">&quot;bold&quot;</span>, <span class="at">color =</span> <span class="st">&quot;black&quot;</span>) <span class="sc">+</span></span>
+<span id="cb10-18"><a></a>    <span class="fu">annotate</span>(<span class="st">&quot;text&quot;</span>, <span class="at">x =</span> <span class="fl">0.63</span>, <span class="at">y =</span> <span class="fl">0.50</span>,</span>
+<span id="cb10-19"><a></a>           <span class="at">label =</span> <span class="st">&quot;A = aire entre courbe </span><span class="sc">\n</span><span class="st">d&#39;égalité et de Lorenz&quot;</span>,</span>
+<span id="cb10-20"><a></a>           <span class="at">size =</span> <span class="fl">3.2</span>, <span class="at">color =</span> <span class="st">&quot;steelblue&quot;</span>, <span class="at">hjust =</span> <span class="dv">0</span>)<span class="sc">+</span></span>
+<span id="cb10-21"><a></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">&quot;estimation Pareto&quot;</span> <span class="ot">=</span> <span class="st">&quot;black&quot;</span>, <span class="st">&quot;Courbe d&#39;égalité&quot;</span> <span class="ot">=</span> <span class="st">&quot;grey50&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb10-22"><a></a>  <span class="fu">scale_x_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb10-23"><a></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb10-24"><a></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb10-25"><a></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;&quot;</span>,</span>
+<span id="cb10-26"><a></a>       <span class="at">x =</span> <span class="st">&quot;Proportion cumulée des contribuables&quot;</span>,</span>
+<span id="cb10-27"><a></a>       <span class="at">y =</span> <span class="st">&quot;Proportion cumulée estimée du revenu&quot;</span>,</span>
+<span id="cb10-28"><a></a>       <span class="at">color =</span> <span class="cn">NULL</span>) <span class="sc">+</span></span>
+<span id="cb10-29"><a></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;bottom&quot;</span>)</span>
+<span id="cb10-30"><a></a></span>
+<span id="cb10-31"><a></a>plot_lorenz_B</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 
 </div>
@@ -25641,15 +25641,15 @@ G &amp;= 2\left(\frac{1}{2} - B\right) \tag{5} \\
 <div class="cell">
 <details class="code-fold">
 <summary>Afficher le code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href></a>gini <span class="ot">&lt;-</span> data_lorenz <span class="sc">%&gt;%</span></span>
-<span id="cb11-2"><a href></a>  <span class="fu">add_row</span>(<span class="at">cumsumprop_n_1843 =</span> <span class="dv">0</span>, <span class="at">cumsumprop_revenu_pareto =</span> <span class="dv">0</span>, <span class="at">.before =</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb11-3"><a href></a>  <span class="fu">summarise</span>(</span>
-<span id="cb11-4"><a href></a>    <span class="at">B =</span> <span class="fu">sum</span>((cumsumprop_revenu_pareto <span class="sc">+</span> <span class="fu">lead</span>(cumsumprop_revenu_pareto)) <span class="sc">/</span> <span class="dv">2</span> <span class="sc">*</span></span>
-<span id="cb11-5"><a href></a>               (<span class="fu">lead</span>(cumsumprop_n_1843) <span class="sc">-</span> cumsumprop_n_1843), <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb11-6"><a href></a>    <span class="at">Gini =</span> <span class="dv">1-2</span><span class="sc">*</span>B</span>
-<span id="cb11-7"><a href></a>  )</span>
-<span id="cb11-8"><a href></a></span>
-<span id="cb11-9"><a href></a>gini</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>gini <span class="ot">&lt;-</span> data_lorenz <span class="sc">%&gt;%</span></span>
+<span id="cb11-2"><a></a>  <span class="fu">add_row</span>(<span class="at">cumsumprop_n_1843 =</span> <span class="dv">0</span>, <span class="at">cumsumprop_revenu_pareto =</span> <span class="dv">0</span>, <span class="at">.before =</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb11-3"><a></a>  <span class="fu">summarise</span>(</span>
+<span id="cb11-4"><a></a>    <span class="at">B =</span> <span class="fu">sum</span>((cumsumprop_revenu_pareto <span class="sc">+</span> <span class="fu">lead</span>(cumsumprop_revenu_pareto)) <span class="sc">/</span> <span class="dv">2</span> <span class="sc">*</span></span>
+<span id="cb11-5"><a></a>               (<span class="fu">lead</span>(cumsumprop_n_1843) <span class="sc">-</span> cumsumprop_n_1843), <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb11-6"><a></a>    <span class="at">Gini =</span> <span class="dv">1-2</span><span class="sc">*</span>B</span>
+<span id="cb11-7"><a></a>  )</span>
+<span id="cb11-8"><a></a></span>
+<span id="cb11-9"><a></a>gini</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>          B      Gini
@@ -25720,6 +25720,7 @@ G &amp;= 2\left(\frac{1}{2} - B\right) \tag{5} \\
 <li>Formule de l’interpolation linéaire pour trouver le <span class="math inline">\(x\)</span> :</li>
 </ul>
 <p><span class="math display">\[x = d + \frac{(e - d) \times (b - c)}{a - c}\]</span></p>
+
 
 <script type="ojs-module-contents">
 eyJjb250ZW50cyI6W119
@@ -26918,8 +26919,8 @@ window.QuartoSupport = function () {
     <script type="module">
     window._ojs.runtime.setLocalResolver({});
     if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
-    window._ojs.paths.runtimeToDoc = "../../..";
-    window._ojs.paths.runtimeToRoot = "../../..";
+    window._ojs.paths.runtimeToDoc = "../..";
+    window._ojs.paths.runtimeToRoot = "../..";
     window._ojs.paths.docToRoot = "";
     window._ojs.selfContained = true;
     window._ojs.runtime.interpretFromScriptTags();

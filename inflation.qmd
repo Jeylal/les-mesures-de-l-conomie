@@ -498,11 +498,23 @@ data %>%
   filter(year %in% c(1965:2025)) %>% 
   ggplot(aes(x = year, y = log(gdp_nominal), color = "PIB nominal"))+
   geom_line()+
-  geom_line(aes(x = year, y = log(gdp_nominal/ppp_chf_usd), color = "PIB nominal /PPP"))+
+  geom_line(aes(x = year, y = log(gdp_nominal/ppp_chf_usd[year == 2020]), color = "PIB PPP ($ US 2020)"))+
   theme_minimal()+
   labs(y = "échelle log", x = "",
-       title = "PIB nominal (en CHF) et PIB en PPP",
-       subtitle = "Suisse, 1965-2025")
+       title = "PIB nominal (en CHF) et PIB en PPP")
+
+
+
+
+
+data %>% 
+  filter(year %in% c(1965:2025)) %>% 
+  ggplot(aes(x = year, y = log(gdp_nominal), color = "PIB nominal"))+
+  geom_line()+
+  geom_line(aes(x = year, y = log(gdp_nominal/ppp_chf_usd[year == 2020]), color = "PIB PPP ($ US 2020)"))+
+  theme_minimal()+
+  labs(y = "échelle log", x = "",
+       title = "PIB nominal (en CHF) et PIB en PPP")
 ```
 
 -   On obtient un PIB suisse comparable avec celui des Etats-Unis (ainsi que celui des autres pays pour lesquels on a aussi diviser le PIB par la même PPA)
@@ -526,15 +538,15 @@ data = data %>%
 
 
 data = data %>% 
-  mutate(gdp_deflated = gdp_nominal/deflator_gdp2020, # obtenir le pib réel suisse en franc constant de 2020 ==> diviser le pib nominal par le déflateur du PIB
-         gdp_deflated_ppp = gdp_deflated/ppp_chf_usd[year == 2020]) # obtenir le PIB réel suisse en franc constant, corrigé de la PPA ==> diviser le PIB réel constant par la PPA
+  mutate(gdp_deflated = gdp_nominal/(deflator_gdp2020), # obtenir le pib réel suisse en franc constant de 2020 ==> diviser le pib nominal par le déflateur du PIB
+         gdp_deflated_ppp = gdp_deflated/(ppp_chf_usd)) # obtenir le PIB réel suisse en franc constant, corrigé de la PPA ==> diviser le PIB réel constant par la PPA
 
 
 data %>% 
   ggplot(aes(x = year, y = gdp_nominal, color = "PIB nominal"))+
   geom_line()+
   geom_line(aes(x = year, y = gdp_deflated, color = "PIB constant 2020"))+
-  geom_line(aes(x = year, y = gdp_deflated_ppp, color = "PIB constant 2020, PPA"))+
+  geom_line(aes(x = year, y = gdp_deflated/ppp_chf_usd[year == 2020], color = "PIB constant 2020, PPA"))+
   theme_minimal(base_size = 14)+
   labs(x = "", y = "")+
   theme(legend.position = "top")
@@ -558,4 +570,4 @@ data %>%
 -   Indices de Laspeyres et de Paasche
 -   Savoir utiliser les déflateurs et la PPA pour obtenir des séries macroéconomiques (par exemple PIB et ses composantes) en volume et comparables géographiquement.
 
-Les exercices auront le même style que les exercices effectués et vus en cours. Ils seront à réaliser sur excel et/ou R
+Les exercices auront le même style que les exercices effectués et vus en cours. Ils seront à réaliser sur R (idéalement avec un document Quarto).

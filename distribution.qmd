@@ -506,7 +506,7 @@ Le 1% se situe entre ces deux valeurs…
 :::
 
 | Proportion de contribuables ayant un revenu supérieure au seuil inférieur du groupe | Proportion du revenu total possédée |
-|----|----|
+|------------------------------------|------------------------------------|
 | 1,06% | 47,3% |
 | 0,87% | 44,4% |
 

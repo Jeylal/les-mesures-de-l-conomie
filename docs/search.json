@@ -354,7 +354,7 @@
     "href": "inflation.html#pib-en-ppa",
     "title": "Les mesures des prix",
     "section": "PIB en PPA",
-    "text": "PIB en PPA\n\n\nAfficher le code\ngdp = rdb(\"OECD/DSD_EO@DF_EO/CHE.GDP.A\") %&gt;% \n  select(value) %&gt;% \n  mutate(year = 1965:2027) %&gt;% \n  rename(gdp_nominal = value)\n\ndata = data %&gt;% \n  left_join(gdp, by = \"year\")\n\n\ndata %&gt;% \n  filter(year %in% c(1965:2025)) %&gt;% \n  ggplot(aes(x = year, y = log(gdp_nominal), color = \"PIB nominal\"))+\n  geom_line()+\n  geom_line(aes(x = year, y = log(gdp_nominal/ppp_chf_usd), color = \"PIB nominal /PPP\"))+\n  theme_minimal()+\n  labs(y = \"échelle log\", x = \"\",\n       title = \"PIB nominal (en CHF) et PIB en PPP\",\n       subtitle = \"Suisse, 1965-2025\")\n\n\n\n\nOn obtient un PIB suisse comparable avec celui des Etats-Unis (ainsi que celui des autres pays pour lesquels on a aussi diviser le PIB par la même PPA)\nAttention: cela corrige uniquement les différents niveaux de prix, pas de l’inflation à l’intérieur du pays",
+    "text": "PIB en PPA\n\n\nAfficher le code\ngdp = rdb(\"OECD/DSD_EO@DF_EO/CHE.GDP.A\") %&gt;% \n  select(value) %&gt;% \n  mutate(year = 1965:2027) %&gt;% \n  rename(gdp_nominal = value)\n\ndata = data %&gt;% \n  left_join(gdp, by = \"year\")\n\n\ndata %&gt;% \n  filter(year %in% c(1965:2025)) %&gt;% \n  ggplot(aes(x = year, y = log(gdp_nominal), color = \"PIB nominal\"))+\n  geom_line()+\n  geom_line(aes(x = year, y = log(gdp_nominal/ppp_chf_usd[year == 2020]), color = \"PIB PPP ($ US 2020)\"))+\n  theme_minimal()+\n  labs(y = \"échelle log\", x = \"\",\n       title = \"PIB nominal (en CHF) et PIB en PPP\")\n\n\n\n\n\n\n\n\n\nAfficher le code\ndata %&gt;% \n  filter(year %in% c(1965:2025)) %&gt;% \n  ggplot(aes(x = year, y = log(gdp_nominal), color = \"PIB nominal\"))+\n  geom_line()+\n  geom_line(aes(x = year, y = log(gdp_nominal/ppp_chf_usd[year == 2020]), color = \"PIB PPP ($ US 2020)\"))+\n  theme_minimal()+\n  labs(y = \"échelle log\", x = \"\",\n       title = \"PIB nominal (en CHF) et PIB en PPP\")\n\n\n\n\n\n\n\n\n\n\nOn obtient un PIB suisse comparable avec celui des Etats-Unis (ainsi que celui des autres pays pour lesquels on a aussi diviser le PIB par la même PPA)\nAttention: cela corrige uniquement les différents niveaux de prix, pas de l’inflation à l’intérieur du pays",
     "crumbs": [
       "Les mesures des prix"
     ]
@@ -364,7 +364,7 @@
     "href": "inflation.html#combiner-indice-des-prix-et-ppa",
     "title": "Les mesures des prix",
     "section": "Combiner indice des prix et PPA",
-    "text": "Combiner indice des prix et PPA\n\n\nAfficher le code\ndeflator_pib2020 = rdb(\"OECD/DSD_EO@DF_EO/CHE.PGDP.A\") %&gt;% \n  select(value) %&gt;% \n  mutate(year = 1965:2027) %&gt;% \n  rename(deflator_gdp2020 = value) # importation du déflateur du PIB suisse \n\ndata = data %&gt;% \n  left_join(deflator_pib2020, by = \"year\")\n\n\ndata = data %&gt;% \n  mutate(gdp_deflated = gdp_nominal/deflator_gdp2020, # obtenir le pib réel suisse en franc constant de 2020 ==&gt; diviser le pib nominal par le déflateur du PIB\n         gdp_deflated_ppp = gdp_deflated/ppp_chf_usd[year == 2020]) # obtenir le PIB réel suisse en franc constant, corrigé de la PPA ==&gt; diviser le PIB réel constant par la PPA\n\n\ndata %&gt;% \n  ggplot(aes(x = year, y = gdp_nominal, color = \"PIB nominal\"))+\n  geom_line()+\n  geom_line(aes(x = year, y = gdp_deflated, color = \"PIB constant 2020\"))+\n  geom_line(aes(x = year, y = gdp_deflated_ppp, color = \"PIB constant 2020, PPA\"))+\n  theme_minimal(base_size = 14)+\n  labs(x = \"\", y = \"\")+\n  theme(legend.position = \"top\")\n\n\n\n\nAfin d’obtenir une série en volume, le PIB par exemple, qui soit comparable entre pays/région il faut:\n\n\nDéflater le PIB par le déflateur du PIB (par exemple en franc constant de 2020) ==&gt; diviser par le déflateur\nDéflater par la PPA ==&gt; Diviser par la PPA, mais UNIQUEMENT à l’année de base du déflateur du PIB (donc 2020).\n\n==&gt; On obtient ainsi la série en volume, corrigée de la PPA",
+    "text": "Combiner indice des prix et PPA\n\n\nAfficher le code\ndeflator_pib2020 = rdb(\"OECD/DSD_EO@DF_EO/CHE.PGDP.A\") %&gt;% \n  select(value) %&gt;% \n  mutate(year = 1965:2027) %&gt;% \n  rename(deflator_gdp2020 = value) # importation du déflateur du PIB suisse \n\ndata = data %&gt;% \n  left_join(deflator_pib2020, by = \"year\")\n\n\ndata = data %&gt;% \n  mutate(gdp_deflated = gdp_nominal/(deflator_gdp2020), # obtenir le pib réel suisse en franc constant de 2020 ==&gt; diviser le pib nominal par le déflateur du PIB\n         gdp_deflated_ppp = gdp_deflated/(ppp_chf_usd)) # obtenir le PIB réel suisse en franc constant, corrigé de la PPA ==&gt; diviser le PIB réel constant par la PPA\n\n\ndata %&gt;% \n  ggplot(aes(x = year, y = gdp_nominal, color = \"PIB nominal\"))+\n  geom_line()+\n  geom_line(aes(x = year, y = gdp_deflated, color = \"PIB constant 2020\"))+\n  geom_line(aes(x = year, y = gdp_deflated/ppp_chf_usd[year == 2020], color = \"PIB constant 2020, PPA\"))+\n  theme_minimal(base_size = 14)+\n  labs(x = \"\", y = \"\")+\n  theme(legend.position = \"top\")\n\n\n\n\nAfin d’obtenir une série en volume, le PIB par exemple, qui soit comparable entre pays/région il faut:\n\n\nDéflater le PIB par le déflateur du PIB (par exemple en franc constant de 2020) ==&gt; diviser par le déflateur\nDéflater par la PPA ==&gt; Diviser par la PPA, mais UNIQUEMENT à l’année de base du déflateur du PIB (donc 2020).\n\n==&gt; On obtient ainsi la série en volume, corrigée de la PPA",
     "crumbs": [
       "Les mesures des prix"
     ]
@@ -374,7 +374,7 @@
     "href": "inflation.html#conclusion",
     "title": "Les mesures des prix",
     "section": "Conclusion",
-    "text": "Conclusion\nA retenir pour l’examen blanc\n\nCalculs des taux de croissance et la rétropolation de série à partir de leur taux de croissance\nLes trois approches du PIB\nCalcul des contributions à la croissance, de la part des salaires et profits dans la valeur ajoutée\nIndices de Laspeyres et de Paasche\nSavoir utiliser les déflateurs et la PPA pour obtenir des séries macroéconomiques (par exemple PIB et ses composantes) en volume et comparables géographiquement.\n\nLes exercices auront le même style que les exercices effectués et vus en cours. Ils seront à réaliser sur excel et/ou R",
+    "text": "Conclusion\nA retenir pour l’examen blanc\n\nCalculs des taux de croissance et la rétropolation de série à partir de leur taux de croissance\nLes trois approches du PIB\nCalcul des contributions à la croissance, de la part des salaires et profits dans la valeur ajoutée\nIndices de Laspeyres et de Paasche\nSavoir utiliser les déflateurs et la PPA pour obtenir des séries macroéconomiques (par exemple PIB et ses composantes) en volume et comparables géographiquement.\n\nLes exercices auront le même style que les exercices effectués et vus en cours. Ils seront à réaliser sur R (idéalement avec un document Quarto).",
     "crumbs": [
       "Les mesures des prix"
     ]
@@ -1677,6 +1677,306 @@
     "text": "PPA et taux de change\n\n\nAfficher le code\nlibrary(tidyverse)\nlibrary(rdbnomics)\n\nexch = rdb(\"OECD/DSD_EO@DF_EO/CHE.EXCH.A\") %&gt;% \n  select(original_period, value, REF_AREA) %&gt;% \n  rename(\n    year = original_period, \n  ) %&gt;% \n  mutate(\n    \"chf/usd\" = 1/value\n  ) %&gt;% \n  select(year, `chf/usd`) \n\nppp = rdb(\"OECD/DSD_EO@DF_EO/CHE.PPP.A\") %&gt;% \n  select(value) %&gt;% \n  rename(ppp_chf_usd = value)\n\ndata = cbind(exch, ppp)\ndata$year = as.numeric(data$year)\n\n\ndata %&gt;% \n  ggplot(aes(x = year, y = ppp_chf_usd, color = \"PPP= P_CH/P_US\"))+\n  geom_line()+\n  geom_line(aes(x = year, y = `chf/usd`, color = \"Taux de change: E = #CHF/USD\"))+\n  geom_line(aes(x = year, y = ppp_chf_usd/`chf/usd`, color = \"indice du niveau des prix en Suisse = PPP/E\"))+\n  theme_minimal()+\n  theme(legend.position = \"top\",\n        legend.title = element_blank())+\n  guides(\n    color = guide_legend(nrow = 2))+\n  labs(x = \"\", y = \"\")",
     "crumbs": [
       "Les mesures des prix"
+    ]
+  },
+  {
+    "objectID": "distribution.html#pourquoi-étudier-les-mesures-de-la-distribution-du-revenu-et-des-inégalités",
+    "href": "distribution.html#pourquoi-étudier-les-mesures-de-la-distribution-du-revenu-et-des-inégalités",
+    "title": "Distribution et inégalité",
+    "section": "Pourquoi étudier les mesures de la distribution du revenu et des inégalités ?",
+    "text": "Pourquoi étudier les mesures de la distribution du revenu et des inégalités ?\nLa distribution du revenu national et les mesures des inégalités de revenu et de richesse sont utilisées dans:\n\nLa modélisation économique ==&gt; étude des liens entre croissance et inégalité\nAnalyse de politiques publiques ==&gt; quels sont les effets redistributifs, l’impact sur les inégalités ?\nL’Éclairage des débats publics",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#distribution-et-inégalités-deux-grandes-approches",
+    "href": "distribution.html#distribution-et-inégalités-deux-grandes-approches",
+    "title": "Distribution et inégalité",
+    "section": "Distribution et inégalités: deux grandes approches",
+    "text": "Distribution et inégalités: deux grandes approches\n\n\nInégalités fonctionnelles\n\nÉconomie politique classique (Physiocrates, Smith, Ricardo, Marx)\ninégalités de revenu résultant des différents facteurs de production (capital, travail, terre)\nLes inégalités résultent donc de la stratification sociale dont, surtout, les classes sociales\nAppartenance à une classe selon la source de revenu résultant du type d’actif possédé (terre/rente, capital/profit, travail/salaire) ==&gt; rentiers, capitalistes, salariés.\nExecption: Physiocrates (Appartenance à une classe sociale définie légalement (Quesnay))\n\n\nInégalités inter-personnelles/approche gradationnelle\n\nPareto, Gini, Theil, Piketty…\nAnalyse de la distribution directement à partir des individus et leur revenu, sans recours nécessaire à l’analyse de classe\nAu lieu de l’analyse de classe, analyse en termes de déciles (part des 10% les plus riches, des 40% les plus pauvres…) ou en termes d’indicateurs englobants (coefficient de Pareto, indice de Gini, de Theil…)\n\n==&gt; En pratique, il faut tirer le meilleur parti de ces deux approches",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#pareto-1848-1923",
+    "href": "distribution.html#pareto-1848-1923",
+    "title": "Distribution et inégalité",
+    "section": "Pareto (1848-1923)",
+    "text": "Pareto (1848-1923)\n\nLes contributions de Pareto à l’étude de la distribution du revenu et des inégalités marquent le début de l’approche inter-personnelle (et en parallèle le déclin de l’analyse en termes de classes) et sont désormais fondamentales, notamment les outils suivants:\nLa loi de Pareto (loi de puissance)\nLe coefficient de Pareto\nL’interpolation de Pareto\n\nHistoriquement, Pareto a conduit la première analyse statistique de la distribution des revenus",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#les-origines-de-la-loi-de-pareto",
+    "href": "distribution.html#les-origines-de-la-loi-de-pareto",
+    "title": "Distribution et inégalité",
+    "section": "Les origines de la loi de Pareto",
+    "text": "Les origines de la loi de Pareto\n\nLa deuxième moitié du 19ème voit le développement de la fiscalité dans certaines régions européennes\nLe développement de ces système fiscaux ont permit aux économistes comme Pareto d’analyser pour la première fois la distribution du revenu à partir de données fiscales\nLes recherches de Pareto sur ces données lui amèneront à penser qu’il a identifié une “loi” valable pour chacune des régions et périodes étudiées, et qu’il est possible de considérer cette loi comme universelle (càd peu importe le contexte politique, historique, institutionnel, économique)\nCette trouvaille le confortera son idée que l’histoire se résume à la domination et succession d’élites",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#les-données-fiscales-de-pareto-exemple",
+    "href": "distribution.html#les-données-fiscales-de-pareto-exemple",
+    "title": "Distribution et inégalité",
+    "section": "Les données fiscales de Pareto: exemple",
+    "text": "Les données fiscales de Pareto: exemple\nDonnées en tranche: la norme pour les statistiques fiscales.\n\n\n\nAfficher le code\nlibrary(tidyverse)\n\ndata_pareto_angleterre &lt;- data.frame(\n  seuil_revenu = c(150, 200, 300, 400, 500, 600, 700, 800, 900,\n         1000, 2000, 3000, 4000, 5000, 10000, 50000),\n  N_1843 = c(106637, 67271, 38901, 25472, 18694, 13911, 11239,\n              9365, 7923, 7029, 2801, 1566, 1040, 701, 208, 8),\n  N_1879_80 = c(320162, 190061, 101616, 61720, 45219, 33902, 27008,\n                 22954, 19359, 17963, 7611, 4480, 3050, 2292, 853, 68)\n)\n\ndata_pareto_italie &lt;- data.frame(\n  seuil_revenu = c(1000, 2000, 4000, 7000, 10000, 15000, 25000),\n  N = c(59486, 26968, 9766, 4264, 2397, 1310, 645)\n)\n\ndata_pareto_angleterre \n\n\n\n   seuil_revenu N_1843 N_1879_80\n1           150 106637    320162\n2           200  67271    190061\n3           300  38901    101616\n4           400  25472     61720\n5           500  18694     45219\n6           600  13911     33902\n7           700  11239     27008\n8           800   9365     22954\n9           900   7923     19359\n10         1000   7029     17963\n11         2000   2801      7611\n12         3000   1566      4480\n13         4000   1040      3050\n14         5000    701      2292\n15        10000    208       853\n16        50000      8        68\n\n\nSource: “La courbe de répartition des richesses”, Pareto 1896.",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#loi-de-pareto",
+    "href": "distribution.html#loi-de-pareto",
+    "title": "Distribution et inégalité",
+    "section": "Loi de Pareto",
+    "text": "Loi de Pareto\nPareto estime le modèle suivant:\n\\[ ln(N) = ln(A) + \\alpha*ln(Y)\\]\nAvec N le nombre de personnes ayant un revenu égal ou supérieur au revenu (seuil) Y. Le paramètre clé du modèle est le coefficient alpha \\(\\alpha\\), désormais appelé la “constante” de Pareto.",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#section",
+    "href": "distribution.html#section",
+    "title": "Distribution et inégalité",
+    "section": "",
+    "text": "Afficher le code\n# Estimation des modèles\nlm_1843  &lt;- lm(log(N_1843) ~ log(seuil_revenu), data = data_pareto_angleterre)\nlm_1880  &lt;- lm(log(N_1879_80) ~ log(seuil_revenu), data = data_pareto_angleterre)\nlm_italie &lt;- lm(log(N) ~ log(seuil_revenu), data = data_pareto_italie)\n\n# Labels avec les coefficients estimés\nlabel_1843  &lt;- sprintf(\"Angleterre 1843\\nlog(N) = %.2f %+.2f·log(Y)\",\n                        coef(lm_1843)[1],  coef(lm_1843)[2])\nlabel_1880  &lt;- sprintf(\"Angleterre 1879-80\\nlog(N) = %.2f %+.2f·log(Y)\",\n                        coef(lm_1880)[1],  coef(lm_1880)[2])\nlabel_italie &lt;- sprintf(\"Villes italiennes\\nlog(N) = %.2f %+.2f·log(Y)\",\n                        coef(lm_italie)[1], coef(lm_italie)[2])\n\ndata_pareto_angleterre %&gt;%\n  ggplot(aes(x = log(seuil_revenu), y = log(N_1843))) +\n  geom_point(aes(color = label_1843), shape = 16, size = 2.5) +\n  geom_point(aes(y = log(N_1879_80), color = label_1880), shape = 17, size = 2.5) +\n  geom_point(data = data_pareto_italie,\n             aes(y = log(N), color = label_italie), shape = 15, size = 2.5) +\n\n  geom_smooth(aes(color = label_1843),\n              method = \"lm\", se = FALSE, linewidth = 0.8) +\n  geom_smooth(aes(y = log(N_1879_80), color = label_1880),\n              method = \"lm\", se = FALSE, linewidth = 0.8) +\n  geom_smooth(data = data_pareto_italie,\n              aes(y = log(N), color = label_italie),\n              method = \"lm\", se = FALSE, linewidth = 0.8) +\n\n  scale_color_manual(values = setNames(\n    c(\"#378ADD\", \"#1D9E75\", \"#D85A30\"),\n    c(label_1843, label_1880, label_italie)\n  )) +\n  labs(\n    x     = \"Seuil de revenu (log)\",\n    y     = \"Nombre de personnes au dessus du seuil (log)\",\n    color = NULL,\n    title = \"Les `courbes de répartition de richesse` selon Pareto\"\n  ) +\n  theme_minimal(base_size = 12) +\n  theme(\n    legend.position  = \"bottom\",\n    legend.text      = element_text(size = 9),\n    legend.key.width = unit(1.5, \"cm\")\n  )\n\n\n\nComment interpréter les coefficients alpha estimés (1.56, 1.40, 1.43 ?)",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#coefficient-de-pareto",
+    "href": "distribution.html#coefficient-de-pareto",
+    "title": "Distribution et inégalité",
+    "section": "Coefficient de Pareto",
+    "text": "Coefficient de Pareto\nPrenons le modèle estimé pour l’Angleterre en 1843: \\(log(N) = 19.55 - 1.56log(Y)\\)\n\nSi le seuil de revenu augmente de 10%, le nombre de personnes ayant un revenu au-dessus du seuil diminue de \\(-1.56*10 = -15.6\\%\\)\nPrenons l’Angleterre en 1879-80, si le seuil de revenu augmente de 10%, le nombre de personnes ayant un revenu au-dessus du seuil diminue de \\(-1.4*10 = -14 \\%\\) ==&gt; moins qu’en 1843\n\nCela implique que les revenus se sont davantage concentrés en haut de la distribution des revenus entre 1843 et 1879-80 ==&gt; les inégalités de revenu ont augmenté",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#coefficient-de-pareto-1",
+    "href": "distribution.html#coefficient-de-pareto-1",
+    "title": "Distribution et inégalité",
+    "section": "Coefficient de Pareto",
+    "text": "Coefficient de Pareto\n\\[ ln(N) = ln(A) + \\alpha*ln(Y)\\] Le coefficient de Pareto peut donc être considéré comme un indicateur d’inégalité (c’est d’ailleurs l’un des premiers) ==&gt; Si le coefficient augmente, les inégalités ont diminué et inversement.\nMilanovic propose de voir le coefficient de Pareto comme une “guillotine” qui coupe à un pourcentage constant le nombre de personnes vivant au dessus du seuil au fur et à mesure que l’on monte dans la distribution des revenus (que l’on augmente le seuil)",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#coefficient-de-pareto-2",
+    "href": "distribution.html#coefficient-de-pareto-2",
+    "title": "Distribution et inégalité",
+    "section": "Coefficient de Pareto",
+    "text": "Coefficient de Pareto\nLa tendance du coefficient \\(\\alpha\\) à rester dans un intervalle de 1.4 à 2 a amené Pareto à conclure que la distribution du revenu est condamnée à rester dans une forme déterminée par l’appartenance du coefficient à l’intervalle [1.4, 2]\n\nLa distribution du revenu serait donc fixe et impossible à influencer, peu importe les institutions politiques et économiques\nConforme à la vision du monde de Pareto, consistant à considérer que l’histoire se résume à la domination et succession d’élites",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#validité-de-la-loi",
+    "href": "distribution.html#validité-de-la-loi",
+    "title": "Distribution et inégalité",
+    "section": "Validité de la loi",
+    "text": "Validité de la loi\nEn vérité, la constante de Pareto tend à varier le long de la distribution, la loi en elle-même étant surtout valide pour le haut de la distribution\n\n\n\n\n\n\n\n\n\n\n\nMilanovic (2024, 176-7)",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#héritage-de-pareto",
+    "href": "distribution.html#héritage-de-pareto",
+    "title": "Distribution et inégalité",
+    "section": "Héritage de Pareto",
+    "text": "Héritage de Pareto\nLa courbe de Pareto présente le logarithme du nombre de personnes N au dessus du seuil de revenu Y. Son analyse était contrainte par le format de ses données dans lequel on a seulement les tranches de revenus et le nombre de personnes dans chaque tranche.\nDe nos jours, la distribution de Pareto est un outil très utile pour modéliser la distribution du revenu et estimer différents indicateurs d’inégalités.",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#courbe-de-lorenz",
+    "href": "distribution.html#courbe-de-lorenz",
+    "title": "Distribution et inégalité",
+    "section": "Courbe de Lorenz",
+    "text": "Courbe de Lorenz\nUne autre manière de représenter la distribution du revenu est la courbe de Lorenz:\n\nAxe X ==&gt; distribution cumulée du revenu (en proportion ou %)\nAxe Y ==&gt; Distribution cumulée de la population (en proportion ou %)\n\nLa courbe de Lorenz utilise les même données que pour la courbe de Pareto, sauf que l’on aussi besoin du revenu moyen (ou total) dans chaque tranche de revenu. Au lieu de représenter la fonction de survie de la répartition du revenu, la courbe de Lorenz utilise la distribution cumulée (fonction de répartition), qui est l’inverse de la fonction de survie.",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#courbe-de-lorenz-exemple",
+    "href": "distribution.html#courbe-de-lorenz-exemple",
+    "title": "Distribution et inégalité",
+    "section": "Courbe de Lorenz: exemple",
+    "text": "Courbe de Lorenz: exemple\nReprenons les données de Pareto pour l’Angleterre\n\n\n   seuil_revenu N_1843 N_1879_80\n1           150 106637    320162\n2           200  67271    190061\n3           300  38901    101616\n4           400  25472     61720\n5           500  18694     45219\n6           600  13911     33902\n7           700  11239     27008\n8           800   9365     22954\n9           900   7923     19359\n10         1000   7029     17963\n11         2000   2801      7611\n12         3000   1566      4480\n13         4000   1040      3050\n14         5000    701      2292\n15        10000    208       853\n16        50000      8        68",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#courbe-de-lorenz-exemple-1",
+    "href": "distribution.html#courbe-de-lorenz-exemple-1",
+    "title": "Distribution et inégalité",
+    "section": "Courbe de Lorenz: exemple",
+    "text": "Courbe de Lorenz: exemple\nPour passer de la fonction de survie à la fonction de répartition, il faut d’abord calculer la fréquence d’observation entre chaque tranche, puis prendre la proportion cumulée des contribuables au dessus de chaque seuil\n\n\nAfficher le code\n# calcule du nombre de contribuables entre chaque tranche\ndata_lorenz = data_pareto_angleterre %&gt;% \n  mutate(\n    freq_N_1843 = N_1843 - lead(N_1843),\n    freq_N_1879_80 = N_1879_80 - lead(N_1879_80)\n  )\n\n# Comme lead() retourne un NA pour les dernières valeurs, il faut la calculer manuellement et l'ajouter\n\ndata_lorenz$freq_N_1843[16] = 8\ndata_lorenz$freq_N_1879_80[16] = 785\n\n# Calcul des proportions cumulées des contribuables\n\ndata_lorenz = data_lorenz %&gt;% \n  mutate(\n    cumsumprop_n_1843 = cumsum(freq_N_1843/sum(freq_N_1843)),\n     cumsumprop_n_1879 = cumsum(freq_N_1879_80/sum(freq_N_1879_80))\n  )\n\n\ndata_lorenz %&gt;% \n  select(seuil_revenu, N_1843) \n\n\n   seuil_revenu N_1843\n1           150 106637\n2           200  67271\n3           300  38901\n4           400  25472\n5           500  18694\n6           600  13911\n7           700  11239\n8           800   9365\n9           900   7923\n10         1000   7029\n11         2000   2801\n12         3000   1566\n13         4000   1040\n14         5000    701\n15        10000    208\n16        50000      8",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#courbe-de-lorenz-exemple-2",
+    "href": "distribution.html#courbe-de-lorenz-exemple-2",
+    "title": "Distribution et inégalité",
+    "section": "Courbe de Lorenz: exemple",
+    "text": "Courbe de Lorenz: exemple\nLes données de Pareto ne contiennent aucune information sur le revenu moyen ou total entre chaque tranche, ce qui pose problème pour le calcul des fréquences relatives cumulées du revenu. Hormis pour les bases de données dédiées (données fiscales, LIS database), il est très courant de juste avoir les tranches et le nombre d’individus dans chaque tranche, sans le revenu moyen. Le revenu total ou moyen de chaque tranche doit donc être estimé, les méthodes le plus courantes sont:\n\nLe point médian: \\((x_i + x_{i+1})/2\\) avec \\(x_i\\) le seuil inférieur et \\(x_{i+1}\\) le seuil supérieur. Cela revient à faire l’hypothèse d’une distribution uniforme dans chaque tranche.\nFaire l’hypothèse que, dans chaque tranche, la distribution suit une distribution de Pareto ==&gt; on peut tirer parti des nos coefficients de Pareto estimés.",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#note-estimation-pareto-du-revenu-moyen-par-tranche",
+    "href": "distribution.html#note-estimation-pareto-du-revenu-moyen-par-tranche",
+    "title": "Distribution et inégalité",
+    "section": "Note: estimation Pareto du revenu moyen par tranche",
+    "text": "Note: estimation Pareto du revenu moyen par tranche\nPour une distribution de Pareto, le revenu moyen des individus au-dessus d’un seuil \\(x\\) est :\n\\[E[X \\mid X &gt; x] = \\frac{\\alpha}{\\alpha - 1} \\cdot x\\]\nLe revenu moyen dans la tranche \\([x_i, x_{i+1}]\\) s’obtient par la formule de l’espérance tronquée :\n\\[E[X \\mid x_i &lt; X \\leq x_{i+1}] = \\frac{\\alpha}{\\alpha-1} \\cdot x_i - \\frac{N_{i+1}}{N_i} \\cdot \\frac{\\alpha}{\\alpha-1} \\cdot x_{i+1}\\]\nce qui se simplifie en :\n\\[\\mu_i = \\frac{\\alpha}{\\alpha - 1} \\cdot \\frac{x_i \\cdot N_i - x_{i+1} \\cdot N_{i+1}}{N_i - N_{i+1}}\\]\nPour obtenir le revenu total, il suffit enfin simplement de multiplier cette estimation du revenu moyen par le nombre de contribuables dans la tranche.",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#code-r",
+    "href": "distribution.html#code-r",
+    "title": "Distribution et inégalité",
+    "section": "Code R",
+    "text": "Code R",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#résultats",
+    "href": "distribution.html#résultats",
+    "title": "Distribution et inégalité",
+    "section": "Résultats",
+    "text": "Résultats\n\n\nAfficher le code\ndata_lorenz %&gt;% \n  select(cumsumprop_n_1843, cumsumprop_revenu_pareto) %&gt;% \n  rename(\"proportion cumulée des contribuables\" = cumsumprop_n_1843,\n         \"proportion cumulée du revenu\" = cumsumprop_revenu_pareto)\n\n\n   proportion cumulée des contribuables proportion cumulée du revenu\n1                             0.3691589                    0.1588786\n2                             0.6352017                    0.2704033\n3                             0.7611336                    0.3630228\n4                             0.8246950                    0.4156500\n5                             0.8695481                    0.4781924\n6                             0.8946051                    0.5081570\n7                             0.9121787                    0.5316197\n8                             0.9257012                    0.5542073\n9                             0.9340848                    0.5605653\n10                            0.9737333                    0.6497776\n11                            0.9853147                    0.7062933\n12                            0.9902473                    0.7399277\n13                            0.9934263                    0.7808766\n14                            0.9980495                    0.8699638\n15                            0.9999250                    0.9749930\n16                            1.0000000                    1.0000000\n\n\nComment lire ce tableau ?",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#courbe-de-lorenz-exemple-3",
+    "href": "distribution.html#courbe-de-lorenz-exemple-3",
+    "title": "Distribution et inégalité",
+    "section": "Courbe de Lorenz: exemple",
+    "text": "Courbe de Lorenz: exemple\n\n\nAfficher le code\nplot_lorenz &lt;- \ndata_lorenz %&gt;% \n  add_row(cumsumprop_n_1843 = 0, cumsumprop_revenu_pareto = 0, cumsumprop_revenu_mediane = 0, .before = 1) %&gt;% \n  ggplot(aes(x = cumsumprop_n_1843, y = cumsumprop_revenu_pareto, color = \"estimation Pareto\"))+\n  geom_point()+\n  geom_line()+\n  geom_line(aes(x = cumsumprop_n_1843, y = cumsumprop_revenu_mediane, color = \"estimation médiane\"))+\n  geom_segment(aes(x = 0, y = 0, xend = 1, yend = 1, colour = \"Courbe d'égalité\"))+\n  theme_minimal()+\n  labs(title = \"Courbe de Lorenz (données Pareto 1896)\",\n       x = \"Proportion cumulée des contribuables\",\n       y = \"Proportion cumulée estimée du revenu\")+\n  theme(legend.position = \"bottom\")\n\nplot_lorenz",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#courbe-de-lorenz-et-coefficient-de-gini",
+    "href": "distribution.html#courbe-de-lorenz-et-coefficient-de-gini",
+    "title": "Distribution et inégalité",
+    "section": "Courbe de Lorenz et coefficient de Gini",
+    "text": "Courbe de Lorenz et coefficient de Gini\n\n\nAfficher le code\nplot_lorenz_B &lt;- \ndata_lorenz %&gt;% \n  add_row(cumsumprop_n_1843 = 0, cumsumprop_revenu_pareto = 0, cumsumprop_revenu_mediane = 0, .before = 1) %&gt;% \n  ggplot(aes(x = cumsumprop_n_1843, y = cumsumprop_revenu_pareto, color = \"estimation Pareto\")) +\n  geom_ribbon(aes(ymin = 0, ymax = cumsumprop_revenu_pareto),\n              fill = \"coral\", alpha = 0.2, color = NA) +\ngeom_ribbon(aes(ymin = cumsumprop_revenu_pareto, ymax = cumsumprop_n_1843),\n            fill = \"steelblue\", alpha = 0.2, color = NA) +\n  geom_line() +\n  geom_point() +\n  geom_segment(aes(x = 0, y = 0, xend = 1, yend = 1, colour = \"Courbe d'égalité\")) +\n  annotate(\"text\", x = 0.75, y = 0.2,\n           label = \"B = aire sous la\\ncourbe de Lorenz\",\n           size = 3.2, color = \"coral4\", hjust = 0) +\n  annotate(\"text\", x = 0.45, y = 0.75,\n           label = \"Gini = A/(A+B) = 1 - 2B\",\n           size = 3.8, fontface = \"bold\", color = \"black\") +\n    annotate(\"text\", x = 0.63, y = 0.50,\n           label = \"A = aire entre courbe \\nd'égalité et de Lorenz\",\n           size = 3.2, color = \"steelblue\", hjust = 0)+\n  scale_color_manual(values = c(\"estimation Pareto\" = \"black\", \"Courbe d'égalité\" = \"grey50\")) +\n  scale_x_continuous(limits = c(0, 1)) +\n  scale_y_continuous(limits = c(0, 1)) +\n  theme_minimal() +\n  labs(title = \"\",\n       x = \"Proportion cumulée des contribuables\",\n       y = \"Proportion cumulée estimée du revenu\",\n       color = NULL) +\n  theme(legend.position = \"bottom\")\n\nplot_lorenz_B",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#coefficient-de-gini",
+    "href": "distribution.html#coefficient-de-gini",
+    "title": "Distribution et inégalité",
+    "section": "Coefficient de Gini",
+    "text": "Coefficient de Gini\n\nGini = 1, société parfaitement inégalitaire, 1 personne possède toutes les richesses.\nGini = 0, société parfaitement égalitaire, tous les contribuables ont la même fortune.\nFormule du coefficient de Gini = aire entre la droite d’égalité parfaite et la courbe de Lorenz / (aire entre la droite d’égalité parfaite et la courbe de Lorenz + aire sous la courbe de Lorenz)",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#coefficient-de-gini-1",
+    "href": "distribution.html#coefficient-de-gini-1",
+    "title": "Distribution et inégalité",
+    "section": "Coefficient de Gini",
+    "text": "Coefficient de Gini\n\\[\n\\begin{align}\nG &= \\frac{A}{A+B} \\tag{1} \\\\\nA + B &= \\frac{1}{2} \\tag{2} \\\\\nG &= \\frac{A}{1/2} = 2A \\tag{3} \\\\\nA &= \\frac{1}{2} - B \\tag{4} \\\\\nG &= 2\\left(\\frac{1}{2} - B\\right) \\tag{5} \\\\\n\\mathbf{G} &= \\mathbf{1 - 2B} \\\n\\end{align}\n\\]",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#section-1",
+    "href": "distribution.html#section-1",
+    "title": "Distribution et inégalité",
+    "section": "",
+    "text": "On peut calculer B en faisant la somme de l’air des trapèzes sous la courbe:",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#calcul-des-trapèzes-rectangles",
+    "href": "distribution.html#calcul-des-trapèzes-rectangles",
+    "title": "Distribution et inégalité",
+    "section": "Calcul des trapèzes-rectangles",
+    "text": "Calcul des trapèzes-rectangles\n\nB = Somme de l’air des trapèzes",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#calcul-du-gini",
+    "href": "distribution.html#calcul-du-gini",
+    "title": "Distribution et inégalité",
+    "section": "Calcul du Gini",
+    "text": "Calcul du Gini\n\n\nAfficher le code\ngini &lt;- data_lorenz %&gt;%\n  add_row(cumsumprop_n_1843 = 0, cumsumprop_revenu_pareto = 0, .before = 1) %&gt;%\n  summarise(\n    B = sum((cumsumprop_revenu_pareto + lead(cumsumprop_revenu_pareto)) / 2 *\n               (lead(cumsumprop_n_1843) - cumsumprop_n_1843), na.rm = TRUE),\n    Gini = 1-2*B\n  )\n\ngini\n\n\n          B      Gini\n1 0.2480656 0.5038688",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#les-top-shares",
+    "href": "distribution.html#les-top-shares",
+    "title": "Distribution et inégalité",
+    "section": "Les top shares",
+    "text": "Les top shares\nLes travaux de Piketty et ses collaborateurs ont popularisé les mesures dites des “top shares” pour mesurer les inégalité\n\nPar exemple: la part du 10% ==&gt; la part du revenu que gagnent les personnes ayant un revenu supérieur au 10ème décile",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#calcul-des-top-shares",
+    "href": "distribution.html#calcul-des-top-shares",
+    "title": "Distribution et inégalité",
+    "section": "Calcul des top shares",
+    "text": "Calcul des top shares\nFormellement, ces parts sont définies comme suit, avec \\(y_i\\) le revenu de l’individu i (exemple pour la part des 10%):\n\\[\n\\text{part}_{10\\%} = \\frac{\\sum_{i \\in \\text{top } 10\\%} y_i}{\\sum_{i=1}^{N} y_i}\n\\]\nEn pratique, on n’observe pas exactement le revenu correspondant au décile de la part (le revenu définissant le 10ème décile, le 1er etc). Les données (fiscales, micro…) ne nous permettent pas de calculer exactement ces parts.\n==&gt; Il faut donc reconstruire ces parts en utilisant des méthodes d’interpolation",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#interpolation-linéaire",
+    "href": "distribution.html#interpolation-linéaire",
+    "title": "Distribution et inégalité",
+    "section": "Interpolation linéaire",
+    "text": "Interpolation linéaire\n\nLes statistiques ne donnent pas exactement ces parts, il faut les reconstruire.\nPar interpolation : procédure qui consiste à estimer les points inconnus à partir de valeurs connues.\n\n\n\nLe 1% se situe entre ces deux valeurs…\n\n\n\n\n\n\n\n\nProportion de contribuables ayant un revenu supérieure au seuil inférieur du groupe\nProportion du revenu total possédée\n\n\n\n\n1,06%\n47,3%\n\n\n0,87%\n44,4%\n\n\n\n\nLe top 1% possède entre 47,3 et 44,4% du revenu total Mais combien exactement ?\n\n\n\nIl existe plusieurs méthodes d’interpolation, à utiliser en fonction de la nature de la distribution des variables.\nDans le cadre du cours, on utilisera l’ interpolation linéaire. En pratique, l’interpolation de Pareto est la méthode la plus utilisée.",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#formule-dinterpolation-linéaire",
+    "href": "distribution.html#formule-dinterpolation-linéaire",
+    "title": "Distribution et inégalité",
+    "section": "Formule d’interpolation linéaire",
+    "text": "Formule d’interpolation linéaire\n\n\nFormule de l’interpolation linéaire pour trouver le \\(x\\) :\n\n\\[x = d + \\frac{(e - d) \\times (b - c)}{a - c}\\]",
+    "crumbs": [
+      "Distribution et inégalité"
     ]
   }
 ]
