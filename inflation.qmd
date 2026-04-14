@@ -437,13 +437,13 @@ $$
 Par exemple, disons que la PPA pour la Suisse par rapport aux USA est de 1\$ = 0.65chf et que le taux de change est de 1\$ = 0.55chf. Si un touriste en provenance des USA échange 10 dollars pour 5.5chf, il devrait dépenser 6.5chf pour acheter ce qui lui aurait coûté 10 dollars aux USA. Les prix en Suisses sont donc 18% plus élevé par rapport aux USA (0.65/0.55 = 1.18).
 
 
-
 ## PPA et taux de change {.smaller}
 
 ```{r}
 #| echo: true
 #| code-fold: true
 #| code-summary: "Afficher le code"
+
 library(tidyverse)
 library(rdbnomics)
 
@@ -503,18 +503,6 @@ data %>%
   labs(y = "échelle log", x = "",
        title = "PIB nominal (en CHF) et PIB en PPP")
 
-
-
-
-
-data %>% 
-  filter(year %in% c(1965:2025)) %>% 
-  ggplot(aes(x = year, y = log(gdp_nominal), color = "PIB nominal"))+
-  geom_line()+
-  geom_line(aes(x = year, y = log(gdp_nominal/ppp_chf_usd[year == 2020]), color = "PIB PPP ($ US 2020)"))+
-  theme_minimal()+
-  labs(y = "échelle log", x = "",
-       title = "PIB nominal (en CHF) et PIB en PPP")
 ```
 
 -   On obtient un PIB suisse comparable avec celui des Etats-Unis (ainsi que celui des autres pays pour lesquels on a aussi diviser le PIB par la même PPA)

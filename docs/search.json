@@ -354,7 +354,7 @@
     "href": "inflation.html#pib-en-ppa",
     "title": "Les mesures des prix",
     "section": "PIB en PPA",
-    "text": "PIB en PPA\n\n\nAfficher le code\ngdp = rdb(\"OECD/DSD_EO@DF_EO/CHE.GDP.A\") %&gt;% \n  select(value) %&gt;% \n  mutate(year = 1965:2027) %&gt;% \n  rename(gdp_nominal = value)\n\ndata = data %&gt;% \n  left_join(gdp, by = \"year\")\n\n\ndata %&gt;% \n  filter(year %in% c(1965:2025)) %&gt;% \n  ggplot(aes(x = year, y = log(gdp_nominal), color = \"PIB nominal\"))+\n  geom_line()+\n  geom_line(aes(x = year, y = log(gdp_nominal/ppp_chf_usd[year == 2020]), color = \"PIB PPP ($ US 2020)\"))+\n  theme_minimal()+\n  labs(y = \"échelle log\", x = \"\",\n       title = \"PIB nominal (en CHF) et PIB en PPP\")\n\n\n\n\n\n\n\n\n\nAfficher le code\ndata %&gt;% \n  filter(year %in% c(1965:2025)) %&gt;% \n  ggplot(aes(x = year, y = log(gdp_nominal), color = \"PIB nominal\"))+\n  geom_line()+\n  geom_line(aes(x = year, y = log(gdp_nominal/ppp_chf_usd[year == 2020]), color = \"PIB PPP ($ US 2020)\"))+\n  theme_minimal()+\n  labs(y = \"échelle log\", x = \"\",\n       title = \"PIB nominal (en CHF) et PIB en PPP\")\n\n\n\n\n\n\n\n\n\n\nOn obtient un PIB suisse comparable avec celui des Etats-Unis (ainsi que celui des autres pays pour lesquels on a aussi diviser le PIB par la même PPA)\nAttention: cela corrige uniquement les différents niveaux de prix, pas de l’inflation à l’intérieur du pays",
+    "text": "PIB en PPA\n\n\nAfficher le code\ngdp = rdb(\"OECD/DSD_EO@DF_EO/CHE.GDP.A\") %&gt;% \n  select(value) %&gt;% \n  mutate(year = 1965:2027) %&gt;% \n  rename(gdp_nominal = value)\n\ndata = data %&gt;% \n  left_join(gdp, by = \"year\")\n\n\ndata %&gt;% \n  filter(year %in% c(1965:2025)) %&gt;% \n  ggplot(aes(x = year, y = log(gdp_nominal), color = \"PIB nominal\"))+\n  geom_line()+\n  geom_line(aes(x = year, y = log(gdp_nominal/ppp_chf_usd[year == 2020]), color = \"PIB PPP ($ US 2020)\"))+\n  theme_minimal()+\n  labs(y = \"échelle log\", x = \"\",\n       title = \"PIB nominal (en CHF) et PIB en PPP\")\n\n\n\n\nOn obtient un PIB suisse comparable avec celui des Etats-Unis (ainsi que celui des autres pays pour lesquels on a aussi diviser le PIB par la même PPA)\nAttention: cela corrige uniquement les différents niveaux de prix, pas de l’inflation à l’intérieur du pays",
     "crumbs": [
       "Les mesures des prix"
     ]
@@ -1854,7 +1854,7 @@
     "href": "distribution.html#code-r",
     "title": "Distribution et inégalité",
     "section": "Code R",
-    "text": "Code R",
+    "text": "Code R\n\nalpha &lt;- 1.56\nk &lt;- alpha / (alpha - 1)\n\ndata_lorenz &lt;- data_lorenz %&gt;%\n  mutate(\n    revenu_moyen_pareto = if_else(\n      is.na(lead(seuil_revenu)),\n      k * seuil_revenu,  # dernière tranche : E[X | X &gt; x_last]\n      k * (seuil_revenu * N_1843 - lead(seuil_revenu) *  lead(N_1843)) / (N_1843 - replace_na(lead(N_1843), 0))\n    ),\n    \n    revenu_total_pareto = revenu_moyen_pareto*freq_N_1843,\n    \n    revenu_moyen_mediane = if_else(\n      is.na(lead(seuil_revenu)),\n      k * seuil_revenu, # dernière tranche : Pareto\n      (seuil_revenu + lead(seuil_revenu)) / 2\n    ),\n    \n    revenu_total_mediane = revenu_moyen_mediane*freq_N_1843,\n    \n    cumsumprop_revenu_pareto = cumsum(revenu_total_pareto/sum(revenu_total_pareto)),\n    cumsumprop_revenu_mediane = cumsum(revenu_total_mediane/sum(revenu_total_mediane))\n    \n  )",
     "crumbs": [
       "Distribution et inégalité"
     ]

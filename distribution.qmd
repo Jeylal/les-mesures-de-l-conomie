@@ -282,6 +282,7 @@ Pour obtenir le revenu total, il suffit enfin simplement de multiplier cette est
 ## Code R
 
 ```{r}
+#| echo: true
 alpha <- 1.56
 k <- alpha / (alpha - 1)
 
