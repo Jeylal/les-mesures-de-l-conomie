@@ -3,8 +3,8 @@
     "objectID": "inflation.html#linflation-dans-la-longue-durée",
     "href": "inflation.html#linflation-dans-la-longue-durée",
     "title": "Les mesures des prix",
-    "section": "L’inflation dans la longue durée",
-    "text": "L’inflation dans la longue durée\n\n\n\nshaikh (2016, p.62)",
+    "section": "",
+    "text": "shaikh (2016, p.62)",
     "crumbs": [
       "Les mesures des prix"
     ]
@@ -14,7 +14,7 @@
     "href": "inflation.html#linflation-un-phénomène-moderne",
     "title": "Les mesures des prix",
     "section": "L’inflation: un phénomène moderne ?",
-    "text": "L’inflation: un phénomène moderne ?\nChangement fondamental dans l’évolution des prix à partir de 1940\n\nSource: statistiques historiques de la Suisse",
+    "text": "L’inflation: un phénomène moderne ?\nChangement fondamental dans l’évolution des prix à partir de 1940\n\nlibrary(readxl)\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.2.0     ✔ readr     2.1.6\n✔ forcats   1.0.1     ✔ stringr   1.6.0\n✔ ggplot2   4.0.2     ✔ tibble    3.3.1\n✔ lubridate 1.9.5     ✔ tidyr     1.3.2\n✔ purrr     1.2.1     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nipc_stathistsuisse &lt;- read_excel(\"data/ipc_stathistsuisse.xlsx\")\n\nipc_stathistsuisse %&gt;% \n  ggplot(aes(x = year, y = log(ipc_1914)))+\n  geom_line()+\n  theme_minimal(base_size = 15)+\n  labs(title = \"Indice des prix à la consommation en Suisse 1814-1989\",\n       subtitle = \"1914 = 100\",\n       x = \"\", y = \"échelle log\")+\n  geom_vline(xintercept = 1940, linetype = 2)+\n  geom_hline(yintercept = log(100), linetype = 2)\n\n\n\n\nSource: statistiques historiques de la Suisse",
     "crumbs": [
       "Les mesures des prix"
     ]
@@ -24,7 +24,7 @@
     "href": "inflation.html#cycles-inflationdéflation",
     "title": "Les mesures des prix",
     "section": "Cycles inflation/déflation",
-    "text": "Cycles inflation/déflation\n\nshaikh (2016, p.62)",
+    "text": "Cycles inflation/déflation\n\n\n\nshaikh (2016, p.62)",
     "crumbs": [
       "Les mesures des prix"
     ]
@@ -74,7 +74,7 @@
     "href": "inflation.html#principes-généraux-des-indices",
     "title": "Les mesures des prix",
     "section": "Principes généraux des indices",
-    "text": "Principes généraux des indices\nIndices élémentaires\nTous les indices de prix sont fondés sur l’aggrégation des indices élémentaires de prix, qui prennent la forme suivante:\n\\[\nI_{t/0} = \\frac{p_{it}}{p_{i0}}\n\\]\nAvec \\(I(p_i)_{t/0}\\) L’indice élémentaire du bien \\(i\\), \\(p_{it}\\) le prix du bien \\(i\\) à la période \\(t\\) et \\(p_{i0}\\) le prix du bien \\(i\\) à la période dîte de “référence” \\(0\\). Le calcul des indices élémentaires permet de normaliser le prix de différents bien et services, permettant leur aggrégation à travers le calcul d’une moyenne.\nÉtant donné qu’en pratique il est impossible de récolter une liste exhaustive de tous les prix, sont récoltés les prix d’un “panier de biens” constitués de \\(k\\) biens et services représentatifs d’un ménage “moyen”.",
+    "text": "Principes généraux des indices\n\nIndices élémentaires\nTous les indices de prix sont fondés sur l’aggrégation des indices élémentaires de prix, qui prennent la forme suivante:\n\\[\nI_{t/0} = \\frac{p_{it}}{p_{i0}}\n\\]\nAvec \\(I(p_i)_{t/0}\\) L’indice élémentaire du bien \\(i\\), \\(p_{it}\\) le prix du bien \\(i\\) à la période \\(t\\) et \\(p_{i0}\\) le prix du bien \\(i\\) à la période dîte de “référence” \\(0\\). Le calcul des indices élémentaires permet de normaliser le prix de différents bien et services, permettant leur aggrégation à travers le calcul d’une moyenne.\nÉtant donné qu’en pratique il est impossible de récolter une liste exhaustive de tous les prix, sont récoltés les prix d’un “panier de biens” constitués de \\(k\\) biens et services représentatifs d’un ménage “moyen”.",
     "crumbs": [
       "Les mesures des prix"
     ]
@@ -354,7 +354,7 @@
     "href": "inflation.html#pib-en-ppa",
     "title": "Les mesures des prix",
     "section": "PIB en PPA",
-    "text": "PIB en PPA\n\n\nAfficher le code\ngdp = rdb(\"OECD/DSD_EO@DF_EO/CHE.GDP.A\") %&gt;% \n  select(value) %&gt;% \n  mutate(year = 1965:2027) %&gt;% \n  rename(gdp_nominal = value)\n\ndata = data %&gt;% \n  left_join(gdp, by = \"year\")\n\n\ndata %&gt;% \n  filter(year %in% c(1965:2025)) %&gt;% \n  ggplot(aes(x = year, y = log(gdp_nominal), color = \"PIB nominal\"))+\n  geom_line()+\n  geom_line(aes(x = year, y = log(gdp_nominal/ppp_chf_usd[year == 2020]), color = \"PIB PPP ($ US 2020)\"))+\n  theme_minimal()+\n  labs(y = \"échelle log\", x = \"\",\n       title = \"PIB nominal (en CHF) et PIB en PPP\")\n\n\n\n\nOn obtient un PIB suisse comparable avec celui des Etats-Unis (ainsi que celui des autres pays pour lesquels on a aussi diviser le PIB par la même PPA)\nAttention: cela corrige uniquement les différents niveaux de prix, pas de l’inflation à l’intérieur du pays",
+    "text": "PIB en PPA\n\n\nAfficher le code\ngdp = rdb(\"OECD/DSD_EO@DF_EO/CHE.GDP.A\") %&gt;% \n  select(value) %&gt;% \n  mutate(year = 1965:2027) %&gt;% \n  rename(gdp_nominal = value)\n\ndata = data %&gt;% \n  left_join(gdp, by = \"year\")\n\n\ndata %&gt;% \n  filter(year %in% c(1965:2025)) %&gt;% \n  ggplot(aes(x = year, y = log(gdp_nominal), color = \"PIB nominal\"))+\n  geom_line()+\n  geom_line(aes(x = year, y = log(gdp_nominal/ppp_chf_usd[year == 2020]), color = \"PIB PPP ($ US 2020)\"))+\n  theme_minimal()+\n  labs(y = \"échelle log\", x = \"\",\n       title = \"PIB nominal (en CHF) et PIB en PPP\")\n\n\n\n\n\n\n\n\n\n\nOn obtient un PIB suisse comparable avec celui des Etats-Unis (ainsi que celui des autres pays pour lesquels on a aussi diviser le PIB par la même PPA)\nAttention: cela corrige uniquement les différents niveaux de prix, pas de l’inflation à l’intérieur du pays",
     "crumbs": [
       "Les mesures des prix"
     ]
@@ -364,7 +364,7 @@
     "href": "inflation.html#combiner-indice-des-prix-et-ppa",
     "title": "Les mesures des prix",
     "section": "Combiner indice des prix et PPA",
-    "text": "Combiner indice des prix et PPA\n\n\nAfficher le code\ndeflator_pib2020 = rdb(\"OECD/DSD_EO@DF_EO/CHE.PGDP.A\") %&gt;% \n  select(value) %&gt;% \n  mutate(year = 1965:2027) %&gt;% \n  rename(deflator_gdp2020 = value) # importation du déflateur du PIB suisse \n\ndata = data %&gt;% \n  left_join(deflator_pib2020, by = \"year\")\n\n\ndata = data %&gt;% \n  mutate(gdp_deflated = gdp_nominal/(deflator_gdp2020), # obtenir le pib réel suisse en franc constant de 2020 ==&gt; diviser le pib nominal par le déflateur du PIB\n         gdp_deflated_ppp = gdp_deflated/(ppp_chf_usd)) # obtenir le PIB réel suisse en franc constant, corrigé de la PPA ==&gt; diviser le PIB réel constant par la PPA\n\n\ndata %&gt;% \n  ggplot(aes(x = year, y = gdp_nominal, color = \"PIB nominal\"))+\n  geom_line()+\n  geom_line(aes(x = year, y = gdp_deflated, color = \"PIB constant 2020\"))+\n  geom_line(aes(x = year, y = gdp_deflated/ppp_chf_usd[year == 2020], color = \"PIB constant 2020, PPA\"))+\n  theme_minimal(base_size = 14)+\n  labs(x = \"\", y = \"\")+\n  theme(legend.position = \"top\")\n\n\n\n\nAfin d’obtenir une série en volume, le PIB par exemple, qui soit comparable entre pays/région il faut:\n\n\nDéflater le PIB par le déflateur du PIB (par exemple en franc constant de 2020) ==&gt; diviser par le déflateur\nDéflater par la PPA ==&gt; Diviser par la PPA, mais UNIQUEMENT à l’année de base du déflateur du PIB (donc 2020).\n\n==&gt; On obtient ainsi la série en volume, corrigée de la PPA",
+    "text": "Combiner indice des prix et PPA\n\n\nAfficher le code\ndeflator_pib2020 = rdb(\"OECD/DSD_EO@DF_EO/CHE.PGDP.A\") %&gt;% \n  select(value) %&gt;% \n  mutate(year = 1965:2027) %&gt;% \n  rename(deflator_gdp2020 = value) # importation du déflateur du PIB suisse \n\ndata = data %&gt;% \n  left_join(deflator_pib2020, by = \"year\")\n\n\ndata = data %&gt;% \n  mutate(gdp_deflated = gdp_nominal/(deflator_gdp2020), # obtenir le pib réel suisse en franc constant de 2020 ==&gt; diviser le pib nominal par le déflateur du PIB\n         gdp_deflated_ppp = gdp_deflated/(ppp_chf_usd)) # obtenir le PIB réel suisse en franc constant, corrigé de la PPA ==&gt; diviser le PIB réel constant par la PPA\n\n\ndata %&gt;% \n  ggplot(aes(x = year, y = gdp_nominal, color = \"PIB nominal\"))+\n  geom_line()+\n  geom_line(aes(x = year, y = gdp_deflated, color = \"PIB constant 2020\"))+\n  geom_line(aes(x = year, y = gdp_deflated/ppp_chf_usd[year == 2020], color = \"PIB constant 2020, PPA\"))+\n  theme_minimal(base_size = 14)+\n  labs(x = \"\", y = \"\")+\n  theme(legend.position = \"top\")\n\n\nWarning: Removed 5 rows containing missing values or values outside the scale range\n(`geom_line()`).\nRemoved 5 rows containing missing values or values outside the scale range\n(`geom_line()`).\nRemoved 5 rows containing missing values or values outside the scale range\n(`geom_line()`).\n\n\n\n\n\n\n\n\n\n\nAfin d’obtenir une série en volume, le PIB par exemple, qui soit comparable entre pays/région il faut:\n\n\nDéflater le PIB par le déflateur du PIB (par exemple en franc constant de 2020) ==&gt; diviser par le déflateur\nDéflater par la PPA ==&gt; Diviser par la PPA, mais UNIQUEMENT à l’année de base du déflateur du PIB (donc 2020).\n\n==&gt; On obtient ainsi la série en volume, corrigée de la PPA",
     "crumbs": [
       "Les mesures des prix"
     ]
@@ -374,7 +374,7 @@
     "href": "inflation.html#conclusion",
     "title": "Les mesures des prix",
     "section": "Conclusion",
-    "text": "Conclusion\nA retenir pour l’examen blanc\n\nCalculs des taux de croissance et la rétropolation de série à partir de leur taux de croissance\nLes trois approches du PIB\nCalcul des contributions à la croissance, de la part des salaires et profits dans la valeur ajoutée\nIndices de Laspeyres et de Paasche\nSavoir utiliser les déflateurs et la PPA pour obtenir des séries macroéconomiques (par exemple PIB et ses composantes) en volume et comparables géographiquement.\n\nLes exercices auront le même style que les exercices effectués et vus en cours. Ils seront à réaliser sur R (idéalement avec un document Quarto).",
+    "text": "Conclusion\n\nA retenir pour l’examen blanc\n\nCalculs des taux de croissance et la rétropolation de série à partir de leur taux de croissance\nLes trois approches du PIB\nCalcul des contributions à la croissance, de la part des salaires et profits dans la valeur ajoutée\nIndices de Laspeyres et de Paasche\nSavoir utiliser les déflateurs et la PPA pour obtenir des séries macroéconomiques (par exemple PIB et ses composantes) en volume et comparables géographiquement.\n\nLes exercices auront le même style que les exercices effectués et vus en cours. Ils seront à réaliser sur R (idéalement avec un document Quarto).",
     "crumbs": [
       "Les mesures des prix"
     ]
@@ -944,7 +944,7 @@
     "href": "index.html#bases-de-données",
     "title": "Séminaire les mesures de l’économie T208001",
     "section": "Bases de données",
-    "text": "Bases de données\nBases de données internationales:\n\nDBnomics: la base mondiale de données économiques https://db.nomics.world/\n\nIl s’agit de la base de données la plus utile, car elle compile une série énorme de données provenant de toutes les organisations majeurs (OCDE, OIT, Banque Mondiale…). De plus, elle offre un package R (RDBnomics) permettant d’importer directement les données dans R: https://github.com/dbnomics/rdbnomics\n\nBase de données de l’OCDE: https://data-explorer.oecd.org/?lc=fr\nBanque mondiale: https://data.worldbank.org/\nMaddison historical statistics: https://www.rug.nl/ggdc/historicaldevelopment/maddison/\nIlostat (organisation internationale du travail): https://ilostat.ilo.org/fr/data/\nAmeco (base de données macroéconomiques pour la Commission européenne): https://economy-finance.ec.europa.eu/economic-research-and-databases/economic-databases/ameco-database_en\nGapminder https://www.gapminder.org/resources/\nOur World in Data: https://ourworldindata.org/\nPenn World Tables: https://www.rug.nl/ggdc/productivity/pwt/?lang=en\nWorld Inequality Database: https://wid.world/\nLuxembourg Income Study database (LIS): https://www.lisdatacenter.org/data-access/\n\nDartFrontend: https://dart.lisdatacenter.org/dar\nPour la Suisse:\n\nDonnées du PIB selon les trois approches: https://www.seco.admin.ch/seco/fr/home/wirtschaftslage—wirtschaftspolitik/Wirtschaftslage/bip-quartalsschaetzungen-/daten.htm\nStatistiques historiques de la Suisse: https://hsso.ch/fr\nOffice fédéral de la statistique: https://www.bfs.admin.ch/bfs/fr/home.html\nStatistiques fiscales de l’administration fédérale des contributions: https://www.estv.admin.ch/fr/statistiques-sur-limpot-federal-direct\nAtlas statistique de la Suisse: https://mapexplorer.bfs.admin.ch/#c=indicator&i=ch_11_02_02_001.ausgabenfrkantpolgstr&s=2023&view=map164",
+    "text": "Bases de données\nBases de données internationales:\n\nDBnomics: la base mondiale de données économiques https://db.nomics.world/\n\nIl s’agit de la base de données la plus utile, car elle compile une série énorme de données provenant de toutes les organisations majeurs (OCDE, OIT, Banque Mondiale…). De plus, elle offre un package R (RDBnomics) permettant d’importer directement les données dans R: https://github.com/dbnomics/rdbnomics\n\nBase de données de l’OCDE: https://data-explorer.oecd.org/?lc=fr\nBanque mondiale: https://data.worldbank.org/\nMaddison historical statistics: https://www.rug.nl/ggdc/historicaldevelopment/maddison/\nIlostat (organisation internationale du travail): https://ilostat.ilo.org/fr/data/\nAmeco (base de données macroéconomiques pour la Commission européenne): https://economy-finance.ec.europa.eu/economic-research-and-databases/economic-databases/ameco-database_en\nGapminder https://www.gapminder.org/resources/\nOur World in Data: https://ourworldindata.org/\nPenn World Tables: https://www.rug.nl/ggdc/productivity/pwt/?lang=en\nWorld Inequality Database: https://wid.world/\nLuxembourg Income Study database (LIS): https://www.lisdatacenter.org/data-access/\n\nDartFrontend: https://dart.lisdatacenter.org/dar\nPour la Suisse:\n\nDonnées du PIB selon les trois approches: https://www.seco.admin.ch/seco/fr/home/wirtschaftslage—wirtschaftspolitik/Wirtschaftslage/bip-quartalsschaetzungen-/daten.htm\nStatistiques historiques de la Suisse: https://hsso.ch/fr\nOffice fédéral de la statistique: https://www.bfs.admin.ch/bfs/fr/home.html\nStatistiques fiscales de l’administration fédérale des contributions: https://www.estv.admin.ch/fr/statistiques-sur-limpot-federal-direct\n\nStatistiques de la fortune imposée en Suisse: https://www.estv.admin.ch/fr/statistique-de-la-fortune-imposee-pour-lensemble-de-la-suisse\n\nAtlas statistique de la Suisse: https://mapexplorer.bfs.admin.ch/#c=indicator&i=ch_11_02_02_001.ausgabenfrkantpolgstr&s=2023&view=map164",
     "crumbs": [
       "Séminaire les mesures de l'économie T208001"
     ]
@@ -1674,7 +1674,7 @@
     "href": "inflation.html#ppa-et-taux-de-change-1",
     "title": "Les mesures des prix",
     "section": "PPA et taux de change",
-    "text": "PPA et taux de change\n\n\nAfficher le code\nlibrary(tidyverse)\nlibrary(rdbnomics)\n\nexch = rdb(\"OECD/DSD_EO@DF_EO/CHE.EXCH.A\") %&gt;% \n  select(original_period, value, REF_AREA) %&gt;% \n  rename(\n    year = original_period, \n  ) %&gt;% \n  mutate(\n    \"chf/usd\" = 1/value\n  ) %&gt;% \n  select(year, `chf/usd`) \n\nppp = rdb(\"OECD/DSD_EO@DF_EO/CHE.PPP.A\") %&gt;% \n  select(value) %&gt;% \n  rename(ppp_chf_usd = value)\n\ndata = cbind(exch, ppp)\ndata$year = as.numeric(data$year)\n\n\ndata %&gt;% \n  ggplot(aes(x = year, y = ppp_chf_usd, color = \"PPP= P_CH/P_US\"))+\n  geom_line()+\n  geom_line(aes(x = year, y = `chf/usd`, color = \"Taux de change: E = #CHF/USD\"))+\n  geom_line(aes(x = year, y = ppp_chf_usd/`chf/usd`, color = \"indice du niveau des prix en Suisse = PPP/E\"))+\n  theme_minimal()+\n  theme(legend.position = \"top\",\n        legend.title = element_blank())+\n  guides(\n    color = guide_legend(nrow = 2))+\n  labs(x = \"\", y = \"\")",
+    "text": "PPA et taux de change\n\n\nAfficher le code\nlibrary(tidyverse)\nlibrary(rdbnomics)\n\n\nVisit &lt;https://db.nomics.world&gt;.\n\n\nAfficher le code\nexch = rdb(\"OECD/DSD_EO@DF_EO/CHE.EXCH.A\") %&gt;% \n  select(original_period, value, REF_AREA) %&gt;% \n  rename(\n    year = original_period, \n  ) %&gt;% \n  mutate(\n    \"chf/usd\" = 1/value\n  ) %&gt;% \n  select(year, `chf/usd`) \n\nppp = rdb(\"OECD/DSD_EO@DF_EO/CHE.PPP.A\") %&gt;% \n  select(value) %&gt;% \n  rename(ppp_chf_usd = value)\n\ndata = cbind(exch, ppp)\ndata$year = as.numeric(data$year)\n\n\ndata %&gt;% \n  ggplot(aes(x = year, y = ppp_chf_usd, color = \"PPP= P_CH/P_US\"))+\n  geom_line()+\n  geom_line(aes(x = year, y = `chf/usd`, color = \"Taux de change: E = #CHF/USD\"))+\n  geom_line(aes(x = year, y = ppp_chf_usd/`chf/usd`, color = \"indice du niveau des prix en Suisse = PPP/E\"))+\n  theme_minimal()+\n  theme(legend.position = \"top\",\n        legend.title = element_blank())+\n  guides(\n    color = guide_legend(nrow = 2))+\n  labs(x = \"\", y = \"\")",
     "crumbs": [
       "Les mesures des prix"
     ]
@@ -1977,6 +1977,16 @@
     "text": "Formule d’interpolation linéaire\n\n\nFormule de l’interpolation linéaire pour trouver le \\(x\\) :\n\n\\[x = d + \\frac{(e - d) \\times (b - c)}{a - c}\\]",
     "crumbs": [
       "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "inflation.html",
+    "href": "inflation.html",
+    "title": "Les mesures des prix",
+    "section": "",
+    "text": "shaikh (2016, p.62)",
+    "crumbs": [
+      "Les mesures des prix"
     ]
   }
 ]

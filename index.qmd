@@ -161,7 +161,7 @@ Bases de données internationales:
 
     -   Il s'agit de la base de données la plus utile, car elle compile une série énorme de données provenant de toutes les organisations majeurs (OCDE, OIT, Banque Mondiale...). De plus, elle offre un package R (RDBnomics) permettant d'importer directement les données dans R: <https://github.com/dbnomics/rdbnomics>
 
--   Base de données de l'OCDE: <https://data-explorer.oecd.org/?lc=fr>
+-   Base de données de l'OCDE: <https://data-explorer.oecd.org/?lc=fr>
 
 -   Banque mondiale: <https://data.worldbank.org/>
 
@@ -192,6 +192,8 @@ Bases de données internationales:
 -   Office fédéral de la statistique: <https://www.bfs.admin.ch/bfs/fr/home.html>
 
 -   Statistiques fiscales de l'administration fédérale des contributions: <https://www.estv.admin.ch/fr/statistiques-sur-limpot-federal-direct>
+
+    - Statistiques de la fortune imposée en Suisse: <https://www.estv.admin.ch/fr/statistique-de-la-fortune-imposee-pour-lensemble-de-la-suisse>
 
 -   Atlas statistique de la Suisse: <https://mapexplorer.bfs.admin.ch/#c=indicator&i=ch_11_02_02_001.ausgabenfrkantpolgstr&s=2023&view=map164>
 
