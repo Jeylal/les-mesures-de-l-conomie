@@ -98,6 +98,10 @@ data_pareto_angleterre
 
 Source: "La courbe de répartition des richesses", Pareto 1896.
 
+## Exemple: données suisses
+
+[![](images/distribution/afc_donnees.png){fig-align="center" width="1025"}](https://www.estv.admin.ch/fr/statistiques-personnes-physiques-cantons-1983-a-aujourdhui)
+
 ## Loi de Pareto
 
 Pareto estime le modèle suivant:
@@ -196,7 +200,7 @@ En vérité, la constante de Pareto tend à varier le long de la distribution, l
 Milanovic (2024, 176-7)
 :::
 
-## Héritage de Pareto {.smaller}
+## Héritage de Pareto
 
 La courbe de Pareto présente le logarithme du nombre de personnes N au dessus du seuil de revenu Y. Son analyse était contrainte par le format de ses données dans lequel on a seulement les tranches de revenus et le nombre de personnes dans chaque tranche.
 
@@ -556,3 +560,53 @@ ggplot() +
 -   Formule de l'interpolation linéaire pour trouver le $x$ :
 
 $$x = d + \frac{(e - d) \times (b - c)}{a - c}$$
+
+## Indice de Theil {style="font-size: 1.4rem; line-height:1.6;"}
+
+L'indice de Theil est une mesure des inégalités servant à tirer le meilleur parti de la classification en groupe de nos données. Les groupes peuvent être les tranches de revenu, la classe sociale, les pays/régions, le genre ou tout autre groupe d'intérêt.
+
+L'indice de Theil mesure la proportion de la population dans chaque groupe, la proportion de revenu dans chaque groupe, et mesure l'écart entre les deux. L'idée est que, sous l'hypothèse d'égalité parfaite, chaque groupe devrait avoir une proportion de population égale à sa proportion de revenu
+
+$$
+Indice\ Theil\ du\ groupe = \\Prop\ revenu\ du \ groupe * [log(Prop\ revenu\ du \ groupe)-log(Prop\ population\ du \ groupe)]
+$$
+
+Il faut distinguer l'indice Theil du groupe et l'indice de Theil global qui est la somme de tous les indices de Theil pour chaque groupe.
+
+## Indice de Theil {.smaller}
+
+-   Plus l'écart de l'indice de Theil du groupe est positif ==\> plus le groupe a une part importante du revenu par rapport à ce qu'il aurait dans une société égalitaire.
+
+-   Plus l'écart de l'indice de Theil du groupe est négatif ==\> plus le groupe a une part faible du revenu par rapport à ce qu'il aurait dans une société égalitaire.
+
+-   Plus l'écart de l'indice de Theil du groupe est proche de zéro ==\> plus le groupe a une part du revenu proche que ce qu'il aurait dans une société égalitaire.
+
+Indice de Theil global ==\> plus ce dernier est élevé, plus les inégalités sont grandes. Contrairement au Gini, l'indice de Theil n'a pas de plafond, ce qui rend son niveau moins interpétable.
+
+# Exercice: analyse de la distribution du revenu national suisse
+
+## Objectifs
+
+- Calcul des indicateurs d'inégalité de revenu (Gini, courbe de Pareto, Theil, top shares...) avec des données fiscales suisses
+
+## Consignes {style="font-size: 1.4rem; line-height:1.6;"}
+
+-   Téléchargez le tableau excel "distribution_exercice_1" sur moodle
+-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

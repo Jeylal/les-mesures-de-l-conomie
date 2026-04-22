@@ -1988,5 +1988,45 @@
     "crumbs": [
       "Les mesures des prix"
     ]
+  },
+  {
+    "objectID": "distribution.html#exemple-données-suisses",
+    "href": "distribution.html#exemple-données-suisses",
+    "title": "Distribution et inégalité",
+    "section": "Exemple: données suisses",
+    "text": "Exemple: données suisses",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#indice-de-theil",
+    "href": "distribution.html#indice-de-theil",
+    "title": "Distribution et inégalité",
+    "section": "Indice de Theil",
+    "text": "Indice de Theil\nL’indice de Theil est une mesure des inégalités servant à tirer le meilleur parti de la classification en groupe de nos données. Les groupes peuvent être les tranches de revenu, la classe sociale, les pays/régions, le genre ou tout autre groupe d’intérêt.\nL’indice de Theil mesure la proportion de la population dans chaque groupe, la proportion de revenu dans chaque groupe, et mesure l’écart entre les deux. L’idée est que, sous l’hypothèse d’égalité parfaite, chaque groupe devrait avoir une proportion de population égale à sa proportion de revenu\n\\[\nIndice\\ Theil\\ du\\ groupe = \\\\Prop\\ revenu\\ du \\ groupe * [log(Prop\\ revenu\\ du \\ groupe)-log(Prop\\ population\\ du \\ groupe)]\n\\]\nIl faut distinguer l’indice Theil du groupe et l’indice de Theil global qui est la somme de tous les indices de Theil pour chaque groupe.",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#indice-de-theil-1",
+    "href": "distribution.html#indice-de-theil-1",
+    "title": "Distribution et inégalité",
+    "section": "Indice de Theil",
+    "text": "Indice de Theil\n\nPlus l’écart de l’indice de Theil du groupe est positif ==&gt; plus le groupe a une part importante du revenu par rapport à ce qu’il aurait dans une société égalitaire.\nPlus l’écart de l’indice de Theil du groupe est négatif ==&gt; plus le groupe a une part faible du revenu par rapport à ce qu’il aurait dans une société égalitaire.\nPlus l’écart de l’indice de Theil du groupe est proche de zéro ==&gt; plus le groupe a une part du revenu proche que ce qu’il aurait dans une société égalitaire.\n\nIndice de Theil global ==&gt; plus ce dernier est élevé, plus les inégalités sont grandes. Contrairement au Gini, l’indice de Theil n’a pas de plafond, ce qui rend son niveau moins interpétable.",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#consignes",
+    "href": "distribution.html#consignes",
+    "title": "Distribution et inégalité",
+    "section": "Consignes",
+    "text": "Consignes\n\nAllez sur le",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
   }
 ]
