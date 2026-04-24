@@ -1694,7 +1694,7 @@
     "href": "distribution.html#distribution-et-inégalités-deux-grandes-approches",
     "title": "Distribution et inégalité",
     "section": "Distribution et inégalités: deux grandes approches",
-    "text": "Distribution et inégalités: deux grandes approches\n\n\nInégalités fonctionnelles\n\nÉconomie politique classique (Physiocrates, Smith, Ricardo, Marx)\ninégalités de revenu résultant des différents facteurs de production (capital, travail, terre)\nLes inégalités résultent donc de la stratification sociale dont, surtout, les classes sociales\nAppartenance à une classe selon la source de revenu résultant du type d’actif possédé (terre/rente, capital/profit, travail/salaire) ==&gt; rentiers, capitalistes, salariés.\nExecption: Physiocrates (Appartenance à une classe sociale définie légalement (Quesnay))\n\n\nInégalités inter-personnelles/approche gradationnelle\n\nPareto, Gini, Theil, Piketty…\nAnalyse de la distribution directement à partir des individus et leur revenu, sans recours nécessaire à l’analyse de classe\nAu lieu de l’analyse de classe, analyse en termes de déciles (part des 10% les plus riches, des 40% les plus pauvres…) ou en termes d’indicateurs englobants (coefficient de Pareto, indice de Gini, de Theil…)\n\n==&gt; En pratique, il faut tirer le meilleur parti de ces deux approches",
+    "text": "Distribution et inégalités: deux grandes approches\n\n\nInégalités fonctionnelles\n\nÉconomie politique classique (Physiocrates, Smith, Ricardo, Marx)\ninégalités de revenu résultant des différents facteurs de production (capital, travail, terre)\nLes inégalités résultent donc de la stratification sociale dont, surtout, les classes sociales\nAppartenance à une classe selon la source de revenu résultant du type d’actif possédé (terre/rente, capital/profit, travail/salaire) ==&gt; rentiers, capitalistes, salariés.\nException: Physiocrates (Appartenance à une classe sociale définie légalement (Quesnay))\n\n\nInégalités inter-personnelles/approche gradationnelle\n\nPareto, Gini, Theil, Piketty…\nAnalyse de la distribution directement à partir des individus et leur revenu, sans recours nécessaire à l’analyse de classe\nAu lieu de l’analyse de classe, analyse en termes de déciles (part des 10% les plus riches, des 40% les plus pauvres…) ou en termes d’indicateurs englobants (coefficient de Pareto, indice de Gini, de Theil…)\n\n==&gt; En pratique, il faut tirer le meilleur parti de ces deux approches",
     "crumbs": [
       "Distribution et inégalité"
     ]
@@ -1714,7 +1714,7 @@
     "href": "distribution.html#les-origines-de-la-loi-de-pareto",
     "title": "Distribution et inégalité",
     "section": "Les origines de la loi de Pareto",
-    "text": "Les origines de la loi de Pareto\n\nLa deuxième moitié du 19ème voit le développement de la fiscalité dans certaines régions européennes\nLe développement de ces système fiscaux ont permit aux économistes comme Pareto d’analyser pour la première fois la distribution du revenu à partir de données fiscales\nLes recherches de Pareto sur ces données lui amèneront à penser qu’il a identifié une “loi” valable pour chacune des régions et périodes étudiées, et qu’il est possible de considérer cette loi comme universelle (càd peu importe le contexte politique, historique, institutionnel, économique)\nCette trouvaille le confortera son idée que l’histoire se résume à la domination et succession d’élites",
+    "text": "Les origines de la loi de Pareto\n\nLa deuxième moitié du 19ème voit le développement de la fiscalité dans certaines régions européennes\nLe développement de ces système fiscaux ont permis aux économistes comme Pareto d’analyser pour la première fois la distribution du revenu à partir de données fiscales\nLes recherches de Pareto sur ces données lui amèneront à penser qu’il a identifié une “loi” valable pour chacune des régions et périodes étudiées, et qu’il est possible de considérer cette loi comme universelle (càd peu importe le contexte politique, historique, institutionnel, économique)\nCette trouvaille le confortera son idée que l’histoire se résume à la domination et succession d’élites",
     "crumbs": [
       "Distribution et inégalité"
     ]
@@ -1744,7 +1744,7 @@
     "href": "distribution.html#section",
     "title": "Distribution et inégalité",
     "section": "",
-    "text": "Afficher le code\n# Estimation des modèles\nlm_1843  &lt;- lm(log(N_1843) ~ log(seuil_revenu), data = data_pareto_angleterre)\nlm_1880  &lt;- lm(log(N_1879_80) ~ log(seuil_revenu), data = data_pareto_angleterre)\nlm_italie &lt;- lm(log(N) ~ log(seuil_revenu), data = data_pareto_italie)\n\n# Labels avec les coefficients estimés\nlabel_1843  &lt;- sprintf(\"Angleterre 1843\\nlog(N) = %.2f %+.2f·log(Y)\",\n                        coef(lm_1843)[1],  coef(lm_1843)[2])\nlabel_1880  &lt;- sprintf(\"Angleterre 1879-80\\nlog(N) = %.2f %+.2f·log(Y)\",\n                        coef(lm_1880)[1],  coef(lm_1880)[2])\nlabel_italie &lt;- sprintf(\"Villes italiennes\\nlog(N) = %.2f %+.2f·log(Y)\",\n                        coef(lm_italie)[1], coef(lm_italie)[2])\n\ndata_pareto_angleterre %&gt;%\n  ggplot(aes(x = log(seuil_revenu), y = log(N_1843))) +\n  geom_point(aes(color = label_1843), shape = 16, size = 2.5) +\n  geom_point(aes(y = log(N_1879_80), color = label_1880), shape = 17, size = 2.5) +\n  geom_point(data = data_pareto_italie,\n             aes(y = log(N), color = label_italie), shape = 15, size = 2.5) +\n\n  geom_smooth(aes(color = label_1843),\n              method = \"lm\", se = FALSE, linewidth = 0.8) +\n  geom_smooth(aes(y = log(N_1879_80), color = label_1880),\n              method = \"lm\", se = FALSE, linewidth = 0.8) +\n  geom_smooth(data = data_pareto_italie,\n              aes(y = log(N), color = label_italie),\n              method = \"lm\", se = FALSE, linewidth = 0.8) +\n\n  scale_color_manual(values = setNames(\n    c(\"#378ADD\", \"#1D9E75\", \"#D85A30\"),\n    c(label_1843, label_1880, label_italie)\n  )) +\n  labs(\n    x     = \"Seuil de revenu (log)\",\n    y     = \"Nombre de personnes au dessus du seuil (log)\",\n    color = NULL,\n    title = \"Les `courbes de répartition de richesse` selon Pareto\"\n  ) +\n  theme_minimal(base_size = 12) +\n  theme(\n    legend.position  = \"bottom\",\n    legend.text      = element_text(size = 9),\n    legend.key.width = unit(1.5, \"cm\")\n  )\n\n\n\nComment interpréter les coefficients alpha estimés (1.56, 1.40, 1.43 ?)",
+    "text": "Afficher le code\n# Estimation des modèles\nlm_1843  &lt;- lm(log(N_1843) ~ log(seuil_revenu), data = data_pareto_angleterre)\nlm_1880  &lt;- lm(log(N_1879_80) ~ log(seuil_revenu), data = data_pareto_angleterre)\nlm_italie &lt;- lm(log(N) ~ log(seuil_revenu), data = data_pareto_italie)\n\n# Labels avec les coefficients estimés\nlabel_1843  &lt;- sprintf(\"Angleterre 1843\\nlog(N) = %.2f %+.2f·log(Y)\",\n                        coef(lm_1843)[1],  coef(lm_1843)[2])\nlabel_1880  &lt;- sprintf(\"Angleterre 1879-80\\nlog(N) = %.2f %+.2f·log(Y)\",\n                        coef(lm_1880)[1],  coef(lm_1880)[2])\nlabel_italie &lt;- sprintf(\"Villes italiennes\\nlog(N) = %.2f %+.2f·log(Y)\",\n                        coef(lm_italie)[1], coef(lm_italie)[2])\n\ndata_pareto_angleterre %&gt;%\n  ggplot(aes(x = log(seuil_revenu), y = log(N_1843))) +\n  geom_point(aes(color = label_1843), shape = 16, size = 2.5) +\n  geom_point(aes(y = log(N_1879_80), color = label_1880), shape = 17, size = 2.5) +\n  geom_point(data = data_pareto_italie,\n             aes(y = log(N), color = label_italie), shape = 15, size = 2.5) +\n\n  geom_smooth(aes(color = label_1843),\n              method = \"lm\", se = FALSE, linewidth = 0.8) +\n  geom_smooth(aes(y = log(N_1879_80), color = label_1880),\n              method = \"lm\", se = FALSE, linewidth = 0.8) +\n  geom_smooth(data = data_pareto_italie,\n              aes(y = log(N), color = label_italie),\n              method = \"lm\", se = FALSE, linewidth = 0.8) +\n\n  scale_color_manual(values = setNames(\n    c(\"#378ADD\", \"#1D9E75\", \"#D85A30\"),\n    c(label_1843, label_1880, label_italie)\n  )) +\n  labs(\n    x     = \"Seuil de revenu (log)\",\n    y     = \"Nombre de personnes au-dessus du seuil (log)\",\n    color = NULL,\n    title = \"Les `courbes de répartition de richesse` selon Pareto\"\n  ) +\n  theme_minimal(base_size = 12) +\n  theme(\n    legend.position  = \"bottom\",\n    legend.text      = element_text(size = 9),\n    legend.key.width = unit(1.5, \"cm\")\n  )\n\n\n\nComment interpréter les coefficients alpha estimés (1.56, 1.40, 1.43 ?)",
     "crumbs": [
       "Distribution et inégalité"
     ]
@@ -1804,7 +1804,7 @@
     "href": "distribution.html#courbe-de-lorenz",
     "title": "Distribution et inégalité",
     "section": "Courbe de Lorenz",
-    "text": "Courbe de Lorenz\nUne autre manière de représenter la distribution du revenu est la courbe de Lorenz:\n\nAxe X ==&gt; distribution cumulée du revenu (en proportion ou %)\nAxe Y ==&gt; Distribution cumulée de la population (en proportion ou %)\n\nLa courbe de Lorenz utilise les même données que pour la courbe de Pareto, sauf que l’on aussi besoin du revenu moyen (ou total) dans chaque tranche de revenu. Au lieu de représenter la fonction de survie de la répartition du revenu, la courbe de Lorenz utilise la distribution cumulée (fonction de répartition), qui est l’inverse de la fonction de survie.",
+    "text": "Courbe de Lorenz\nUne autre manière de représenter la distribution du revenu est la courbe de Lorenz:\n\nAxe X ==&gt; distribution cumulée du revenu (en proportion ou %)\nAxe Y ==&gt; Distribution cumulée de la population (en proportion ou %)\n\nLa courbe de Lorenz utilise les mêmes données que pour la courbe de Pareto, sauf que l’on aussi besoin du revenu moyen (ou total) dans chaque tranche de revenu. Au lieu de représenter la fonction de survie de la répartition du revenu, la courbe de Lorenz utilise la distribution cumulée (fonction de répartition), qui est l’inverse de la fonction de survie.",
     "crumbs": [
       "Distribution et inégalité"
     ]
@@ -1904,7 +1904,7 @@
     "href": "distribution.html#coefficient-de-gini-1",
     "title": "Distribution et inégalité",
     "section": "Coefficient de Gini",
-    "text": "Coefficient de Gini\n\\[\n\\begin{align}\nG &= \\frac{A}{A+B} \\tag{1} \\\\\nA + B &= \\frac{1}{2} \\tag{2} \\\\\nG &= \\frac{A}{1/2} = 2A \\tag{3} \\\\\nA &= \\frac{1}{2} - B \\tag{4} \\\\\nG &= 2\\left(\\frac{1}{2} - B\\right) \\tag{5} \\\\\n\\mathbf{G} &= \\mathbf{1 - 2B} \\\n\\end{align}\n\\]",
+    "text": "Coefficient de Gini\n\\[\\begin{align}\nG &= \\frac{A}{A+B} \\tag{1} \\\\\nA + B &= \\frac{1}{2} \\tag{2} \\\\\nG &= \\frac{A}{1/2} = 2A \\tag{3} \\\\\nA &= \\frac{1}{2} - B \\tag{4} \\\\\nG &= 2\\left(\\frac{1}{2} - B\\right) \\tag{5} \\\\\n\\mathbf{G} &= \\mathbf{1 - 2B} \\\n\\end{align}\\]",
     "crumbs": [
       "Distribution et inégalité"
     ]
@@ -1924,7 +1924,7 @@
     "href": "distribution.html#calcul-des-trapèzes-rectangles",
     "title": "Distribution et inégalité",
     "section": "Calcul des trapèzes-rectangles",
-    "text": "Calcul des trapèzes-rectangles\n\nB = Somme de l’air des trapèzes",
+    "text": "Calcul des trapèzes-rectangles\n\nB = Somme de l’aire des trapèzes",
     "crumbs": [
       "Distribution et inégalité"
     ]
@@ -1934,7 +1934,7 @@
     "href": "distribution.html#calcul-du-gini",
     "title": "Distribution et inégalité",
     "section": "Calcul du Gini",
-    "text": "Calcul du Gini\n\n\nAfficher le code\ngini &lt;- data_lorenz %&gt;%\n  add_row(cumsumprop_n_1843 = 0, cumsumprop_revenu_pareto = 0, .before = 1) %&gt;%\n  summarise(\n    B = sum((cumsumprop_revenu_pareto + lead(cumsumprop_revenu_pareto)) / 2 *\n               (lead(cumsumprop_n_1843) - cumsumprop_n_1843), na.rm = TRUE),\n    Gini = 1-2*B\n  )\n\ngini\n\n\n          B      Gini\n1 0.2480656 0.5038688",
+    "text": "Calcul du Gini\n\ngini &lt;- data_lorenz %&gt;%\n  add_row(cumsumprop_n_1843 = 0, cumsumprop_revenu_pareto = 0, .before = 1) %&gt;%\n  summarise(\n    B = sum((cumsumprop_revenu_pareto + lead(cumsumprop_revenu_pareto)) / 2 *\n               (lead(cumsumprop_n_1843) - cumsumprop_n_1843), na.rm = TRUE),\n    Gini = 1-2*B\n  )\n\ngini\n\n          B      Gini\n1 0.2480656 0.5038688",
     "crumbs": [
       "Distribution et inégalité"
     ]
@@ -1944,7 +1944,7 @@
     "href": "distribution.html#les-top-shares",
     "title": "Distribution et inégalité",
     "section": "Les top shares",
-    "text": "Les top shares\nLes travaux de Piketty et ses collaborateurs ont popularisé les mesures dites des “top shares” pour mesurer les inégalité\n\nPar exemple: la part du 10% ==&gt; la part du revenu que gagnent les personnes ayant un revenu supérieur au 10ème décile",
+    "text": "Les top shares\nLes travaux de Piketty et ses collaborateurs ont popularisé les mesures dites des “top shares” pour mesurer les inégalités\n\nPar exemple: la part du 10% ==&gt; la part du revenu que gagnent les personnes ayant un revenu supérieur au 10ème décile",
     "crumbs": [
       "Distribution et inégalité"
     ]
@@ -1954,7 +1954,7 @@
     "href": "distribution.html#calcul-des-top-shares",
     "title": "Distribution et inégalité",
     "section": "Calcul des top shares",
-    "text": "Calcul des top shares\nFormellement, ces parts sont définies comme suit, avec \\(y_i\\) le revenu de l’individu i (exemple pour la part des 10%):\n\\[\n\\text{part}_{10\\%} = \\frac{\\sum_{i \\in \\text{top } 10\\%} y_i}{\\sum_{i=1}^{N} y_i}\n\\]\nEn pratique, on n’observe pas exactement le revenu correspondant au décile de la part (le revenu définissant le 10ème décile, le 1er etc). Les données (fiscales, micro…) ne nous permettent pas de calculer exactement ces parts.\n==&gt; Il faut donc reconstruire ces parts en utilisant des méthodes d’interpolation",
+    "text": "Calcul des top shares\nFormellement, ces parts sont définies comme suit, avec \\(y_i\\) le revenu de l’individu i (exemple pour la part des 10%):\n\\[\\text{part}_{10\\%} = \\frac{\\sum_{i \\in \\text{top } 10\\%} y_i}{\\sum_{i=1}^{N} y_i}\\]\nEn pratique, on n’observe pas exactement le revenu correspondant au décile de la part (le revenu définissant le 10ème décile, le 1er etc). Les données (fiscales, micro…) ne nous permettent pas de calculer exactement ces parts.\n==&gt; Il faut donc reconstruire ces parts en utilisant des méthodes d’interpolation",
     "crumbs": [
       "Distribution et inégalité"
     ]
@@ -2004,7 +2004,7 @@
     "href": "distribution.html#indice-de-theil",
     "title": "Distribution et inégalité",
     "section": "Indice de Theil",
-    "text": "Indice de Theil\nL’indice de Theil est une mesure des inégalités servant à tirer le meilleur parti de la classification en groupe de nos données. Les groupes peuvent être les tranches de revenu, la classe sociale, les pays/régions, le genre ou tout autre groupe d’intérêt.\nL’indice de Theil mesure la proportion de la population dans chaque groupe, la proportion de revenu dans chaque groupe, et mesure l’écart entre les deux. L’idée est que, sous l’hypothèse d’égalité parfaite, chaque groupe devrait avoir une proportion de population égale à sa proportion de revenu\n\\[\nIndice\\ Theil\\ du\\ groupe = \\\\Prop\\ revenu\\ du \\ groupe * [log(Prop\\ revenu\\ du \\ groupe)-log(Prop\\ population\\ du \\ groupe)]\n\\]\nIl faut distinguer l’indice Theil du groupe et l’indice de Theil global qui est la somme de tous les indices de Theil pour chaque groupe.",
+    "text": "Indice de Theil\nL’indice de Theil est une mesure des inégalités servant à tirer le meilleur parti de la classification en groupe de nos données. Les groupes peuvent être les tranches de revenu, la classe sociale, les pays/régions, le genre ou tout autre groupe d’intérêt.\nL’indice de Theil mesure la proportion de la population dans chaque groupe, la proportion de revenu dans chaque groupe, et mesure l’écart entre les deux. L’idée est que, sous l’hypothèse d’égalité parfaite, chaque groupe devrait avoir une proportion de population égale à sa proportion de revenu\n\\[Indice\\ Theil\\ du\\ groupe = \\\\Prop\\ revenu\\ du \\ groupe * [log(Prop\\ revenu\\ du \\ groupe)-log(Prop\\ population\\ du \\ groupe)]\\]\nIl faut distinguer l’indice Theil du groupe et l’indice de Theil global qui est la somme de tous les indices de Theil pour chaque groupe.",
     "crumbs": [
       "Distribution et inégalité"
     ]
@@ -2014,7 +2014,7 @@
     "href": "distribution.html#indice-de-theil-1",
     "title": "Distribution et inégalité",
     "section": "Indice de Theil",
-    "text": "Indice de Theil\n\nPlus l’écart de l’indice de Theil du groupe est positif ==&gt; plus le groupe a une part importante du revenu par rapport à ce qu’il aurait dans une société égalitaire.\nPlus l’écart de l’indice de Theil du groupe est négatif ==&gt; plus le groupe a une part faible du revenu par rapport à ce qu’il aurait dans une société égalitaire.\nPlus l’écart de l’indice de Theil du groupe est proche de zéro ==&gt; plus le groupe a une part du revenu proche que ce qu’il aurait dans une société égalitaire.\n\nIndice de Theil global ==&gt; plus ce dernier est élevé, plus les inégalités sont grandes. Contrairement au Gini, l’indice de Theil n’a pas de plafond, ce qui rend son niveau moins interpétable.",
+    "text": "Indice de Theil\n\nPlus l’écart de l’indice de Theil du groupe est positif ==&gt; plus le groupe a une part importante du revenu par rapport à ce qu’il aurait dans une société égalitaire.\nPlus l’écart de l’indice de Theil du groupe est négatif ==&gt; plus le groupe a une part faible du revenu par rapport à ce qu’il aurait dans une société égalitaire.\nPlus l’écart de l’indice de Theil du groupe est proche de zéro ==&gt; plus le groupe a une part du revenu proche que ce qu’il aurait dans une société égalitaire.\n\nIndice de Theil global ==&gt; plus ce dernier est élevé, plus les inégalités sont grandes. Contrairement au Gini, l’indice de Theil n’a pas de plafond, ce qui rend son niveau moins interprétable.",
     "crumbs": [
       "Distribution et inégalité"
     ]
@@ -2024,7 +2024,137 @@
     "href": "distribution.html#consignes",
     "title": "Distribution et inégalité",
     "section": "Consignes",
-    "text": "Consignes\n\nAllez sur le",
+    "text": "Consignes",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#objectifs",
+    "href": "distribution.html#objectifs",
+    "title": "Distribution et inégalité",
+    "section": "Objectifs",
+    "text": "Objectifs\n\nCalcul des indicateurs d’inégalité de revenu (Gini, courbe de Pareto, Theil, top shares…) avec des données fiscales suisses",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#indice-de-theil-lintuition",
+    "href": "distribution.html#indice-de-theil-lintuition",
+    "title": "Distribution et inégalité",
+    "section": "Indice de Theil : l’intuition",
+    "text": "Indice de Theil : l’intuition\nIdée centrale : dans une société parfaitement égale, chaque groupe reçoit une part du revenu exactement proportionnelle à sa taille dans la population.\n\n\n\nGroupe\nPart population (\\(p_i\\))\nPart revenu (\\(s_i\\))\nStatut\n\n\n\n\n50% les plus pauvres\n50 %\n20 %\n↓ sous-représenté\n\n\n40% du milieu\n40 %\n40 %\n= équilibre\n\n\n10% les plus riches\n10 %\n40 %\n↑ sur-représenté\n\n\n\nL’indice de Theil quantifie l’écart de chaque groupe par rapport à l’égalité, pondéré par sa part de revenu :\n\\[T_i = s_i \\cdot \\ln\\!\\left(\\frac{s_i}{p_i}\\right) \\qquad T = \\sum_i T_i\\]",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#indice-de-theil-visualisation",
+    "href": "distribution.html#indice-de-theil-visualisation",
+    "title": "Distribution et inégalité",
+    "section": "Indice de Theil : visualisation",
+    "text": "Indice de Theil : visualisation\n\nLecture : chaque flèche mesure l’écart d’un groupe par rapport à la diagonale d’égalité. Plus la flèche est longue, plus la contribution \\(T_i\\) est grande. \\(T = 0\\) signifie égalité parfaite ; \\(T\\) n’a pas de maximum.",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#linéaire-vs.-pareto-exemple-visuel",
+    "href": "distribution.html#linéaire-vs.-pareto-exemple-visuel",
+    "title": "Distribution et inégalité",
+    "section": "Linéaire vs. Pareto : exemple visuel",
+    "text": "Linéaire vs. Pareto : exemple visuel\n\n\nInterpolation linéaire\nOn suppose que \\(N\\) varie proportionnellement entre deux seuils connus → droite en échelle normale. Simple, mais surestime fortement les hauts revenus.\n\nInterpolation de Pareto\nOn suppose que \\(\\log(N)\\) varie linéairement avec \\(\\log(Y)\\) → droite en log-log. Plus précise car elle respecte la forme empirique de la distribution des revenus.\n\n\nDonnées : Angleterre 1843 (Pareto 1896). ● points d’ancrage connus ; ◆ valeur réelle à estimer (seuil = 500 £). En log-log, les cercles vides (autres tranches connues) tombent sur la droite Pareto, validant l’interpolation.",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#autres-sources-de-données-pour-analyser-la-distribution-du-revenudes-richesses",
+    "href": "distribution.html#autres-sources-de-données-pour-analyser-la-distribution-du-revenudes-richesses",
+    "title": "Distribution et inégalité",
+    "section": "Autres sources de données pour analyser la distribution du revenu/des richesses",
+    "text": "Autres sources de données pour analyser la distribution du revenu/des richesses\nEnquêtes sur les ménages (micro-données longitudinales)\n\n\n\nBase\nCouverture\nContenu\n\n\n\n\nLuxembourg Income Study (LIS)\nDonnées internationales depuis 1970\nRevenu, richesse, démographie — données harmonisées cross-nationales\n\n\nSwiss Household Panel (SHP)\nSuisse, depuis 1990\nPanel annuel : revenus, conditions de vie, bien-être\n\n\nEU-SILC\nDonnées européennes depuis 2003\nRevenus, pauvreté, conditions de vie (Eurostat)\n\n\nPSID\nÉtats-Unis, depuis 1968\nLe plus ancien panel ménages au monde\n\n\n\nDonnées agrégées comparatives (macro)\n\n\n\nBase\nContenu\n\n\n\n\nWID.world\nParts de revenu/richesse par centile dans de nombreux pays\n\n\nHFCS\nRichesse des ménages de la zone euro (BCE)\n\n\nOCDE IDD\nIndicateurs d’inégalité harmonisés entre pays membres",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#exercice-1",
+    "href": "distribution.html#exercice-1",
+    "title": "Distribution et inégalité",
+    "section": "Exercice 1",
+    "text": "Exercice 1\n\nAllez sur le portail des statistiques de l’impôt fédéral direct de l’administration fédérale des contributions (AFC): https://www.estv.admin.ch/fr/statistiques-personnes-physiques-cantons-1983-a-aujourdhui. Téléchargez les données de l’impôt fédéral direct par classe de revenu pour l’année 2022: Contribuables avec versement d’un impôt fédéral direct, Cas normaux. Dans le cadre de cet exercice, nous allons calculer et comparer des mesures d’inégalité pour la Suisse et le canton de Genève.\nSur moodle, téléchargez le fichier excel “distribution_exercice_1”. Copiez-collez les données correspondantes, à savoir les seuils inférieurs et supérieurs de revenu pour chaque tranche, le nombre de contribuables dans chaque tranche, et le revenu net total de chaque tranche.\nRemplissez les cases afin de calculer la courbe de Lorenz, le coefficient de Gini et la part des 0,1% et 1% dans le revenu national pour la Suisse et Genève: que peut-on dire sur les inégalités à Genève par rapport à la Suisse dans son ensemble ?\nOptionnel: calculez l’indice de Theil pour la Suisse et Genève.",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#distribution-et-inégalités-fonctionnelles",
+    "href": "distribution.html#distribution-et-inégalités-fonctionnelles",
+    "title": "Distribution et inégalité",
+    "section": "Distribution et inégalités fonctionnelles",
+    "text": "Distribution et inégalités fonctionnelles\nLes approches et mesures vues jusqu’ici font abstraction de la dimension fonctionnelle des inégalités et de la distribution du revenu, qui peut être vue sous deux angles:\n\nL’inégalité compositionnelle, à savoir résultant des deux principales sources de revenu possible: du travail ou du capital\nL’inégalité de classe, résultant de la stratification de la structure sociale en classes.",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#inégalités-de-composition",
+    "href": "distribution.html#inégalités-de-composition",
+    "title": "Distribution et inégalité",
+    "section": "Inégalités de composition",
+    "text": "Inégalités de composition\n\nLe revenu de chaque individu peut être décomposé selon deux source: le travail (salaire) et le capital (intérêts, dividendes, rentes…).\nL’inégalité de composition mesure comment les parts de revenu provenant du capital et du travail diffèrent le long de la distribution du revenu. Un individu peut par exemple tirer tout son revenu du capital, du travail, ou d’un mixe des deux.\nLors des débuts du capitalisme au 19ème siècle, il y avait une séparation nette de ces parts: les plus pauvres tiraient uniquement leur revenu du travail et les plus riches du capital ==&gt; haute inégalité de composition\nDe nos jours, cette séparation est moins nette: les plus aisés gagnent par exemple aussi une partie non négligeable de leur revenu du travail en plus du capital (homoploutie).",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#inégalité-compositionnelle-et-types-de-capitalisme",
+    "href": "distribution.html#inégalité-compositionnelle-et-types-de-capitalisme",
+    "title": "Distribution et inégalité",
+    "section": "Inégalité compositionnelle et types de capitalisme",
+    "text": "Inégalité compositionnelle et types de capitalisme\n\\(\\kappa \\in [-1,\\, +1]\\) mesure la corrélation entre la part du revenu du capital et le rang dans la distribution du revenu total (Ranaldi & Milanovic, 2022).\n\n\n\n\n\n%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '15px', 'edgeLabelBackground': '#ffffff'}}}%%\ngraph LR\n    A[\"&lt;b&gt;Capitalisme classique&lt;/b&gt;&lt;br/&gt;κ = −1&lt;br/&gt;─────────────&lt;br/&gt;Capitalistes ≠ travailleurs&lt;br/&gt;Revenu du capital et du travail&lt;br/&gt;concentrés chez des individus distincts&lt;br/&gt;&lt;i&gt;Europe 19ème siècle&lt;/i&gt;\"]\n    --&gt;|\"── inégalité compositionnelle décroissante ──►\"| \n    B[\"&lt;b&gt;Homoploutie&lt;/b&gt;&lt;br/&gt;κ = +1&lt;br/&gt;─────────────&lt;br/&gt;Les mêmes individus dominent&lt;br/&gt;revenu du capital &lt;b&gt;ET&lt;/b&gt; du travail&lt;br/&gt;&lt;i&gt;États-Unis, Chine contemporains&lt;/i&gt;\"]\n\n    style A fill:#fde8e6,stroke:#c0392b,color:#7b241c\n    style B fill:#d6eaf8,stroke:#2980b9,color:#1a5276",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#income-factor-concentration-index-ifc",
+    "href": "distribution.html#income-factor-concentration-index-ifc",
+    "title": "Distribution et inégalité",
+    "section": "Income factor concentration index (IFC)",
+    "text": "Income factor concentration index (IFC)\n\n\nZero concentration curve\nCourbe de Lorenz du capital si tous les individus ont la même composition de revenu capital/travail. La concentration du capital reflète simplement celle du revenu total.\nActual concentration curve of capital\nCourbe de Lorenz du revenu du capital observée empiriquement dans les données.\nMaximum concentration curve\nCourbe de Lorenz du capital maximale : séparation parfaite des compositions. Les plus pauvres tirent uniquement leur revenu du travail, les plus riches uniquement du capital.",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#ifc-et-gini-ranaldi-et-milanovic-2021",
+    "href": "distribution.html#ifc-et-gini-ranaldi-et-milanovic-2021",
+    "title": "Distribution et inégalité",
+    "section": "IFC et Gini (Ranaldi et Milanovic, 2021)",
+    "text": "IFC et Gini (Ranaldi et Milanovic, 2021)",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#nomenclature-des-capitalismes",
+    "href": "distribution.html#nomenclature-des-capitalismes",
+    "title": "Distribution et inégalité",
+    "section": "Nomenclature des capitalismes",
+    "text": "Nomenclature des capitalismes\n\n\n\n(Ranaldi et Milanovic 2021, 11)",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#distribution-et-inégalité-fonctionnelle-1",
+    "href": "distribution.html#distribution-et-inégalité-fonctionnelle-1",
+    "title": "Distribution et inégalité",
+    "section": "Distribution et inégalité fonctionnelle",
+    "text": "Distribution et inégalité fonctionnelle\nLes approches et mesures vues jusqu’ici font abstraction de la dimension fonctionnelle des inégalités et de la distribution du revenu, qui peut être vue sous deux angles:\n\nL’inégalité compositionnelle, à savoir résultant des deux principales sources de revenu possible: du travail ou du capital\nL’inégalité de classe, résultant de la stratification de la structure sociale en classes.",
     "crumbs": [
       "Distribution et inégalité"
     ]

@@ -17,9 +17,9 @@ footer: <https://jeylal.github.io/les-mesures-de-l-conomie/>
 
 La distribution du revenu national et les mesures des inégalités de revenu et de richesse sont utilisées dans:
 
--   La modélisation économique ==\> étude des liens entre croissance et inégalité
--   Analyse de politiques publiques ==\> quels sont les effets redistributifs, l'impact sur les inégalités ?
--   L'Éclairage des débats publics
+- La modélisation économique ==\> étude des liens entre croissance et inégalité
+- Analyse de politiques publiques ==\> quels sont les effets redistributifs, l'impact sur les inégalités ?
+- L'Éclairage des débats publics
 
 ## Distribution et inégalités: deux grandes approches {style="font-size: 1.35rem"}
 
@@ -27,21 +27,21 @@ La distribution du revenu national et les mesures des inégalités de revenu et 
 ::: column
 Inégalités fonctionnelles
 
--   Économie politique classique (Physiocrates, Smith, Ricardo, Marx)
--   inégalités de revenu résultant des différents facteurs de production (capital, travail, terre)
--   Les inégalités résultent donc de la stratification sociale dont, surtout, les classes sociales
--   Appartenance à une classe selon la source de revenu résultant du type d'actif possédé (terre/rente, capital/profit, travail/salaire) ==\> rentiers, capitalistes, salariés.
--   Execption: Physiocrates (Appartenance à une classe sociale définie légalement (Quesnay))
+- Économie politique classique (Physiocrates, Smith, Ricardo, Marx)
+- inégalités de revenu résultant des différents facteurs de production (capital, travail, terre)
+- Les inégalités résultent donc de la stratification sociale dont, surtout, les classes sociales
+- Appartenance à une classe selon la source de revenu résultant du type d'actif possédé (terre/rente, capital/profit, travail/salaire) ==\> rentiers, capitalistes, salariés.
+- Exception: Physiocrates (Appartenance à une classe sociale définie légalement (Quesnay))
 :::
 
 ::: column
 Inégalités inter-personnelles/approche gradationnelle
 
--   Pareto, Gini, Theil, Piketty...
+- Pareto, Gini, Theil, Piketty...
 
--   Analyse de la distribution directement à partir des individus et leur revenu, sans recours nécessaire à l'analyse de classe
+- Analyse de la distribution directement à partir des individus et leur revenu, sans recours nécessaire à l'analyse de classe
 
--   Au lieu de l'analyse de classe, analyse en termes de déciles (part des 10% les plus riches, des 40% les plus pauvres...) ou en termes d'indicateurs englobants (coefficient de Pareto, indice de Gini, de Theil...)
+- Au lieu de l'analyse de classe, analyse en termes de déciles (part des 10% les plus riches, des 40% les plus pauvres...) ou en termes d'indicateurs englobants (coefficient de Pareto, indice de Gini, de Theil...)
 :::
 
 ==\> En pratique, il faut tirer le meilleur parti de ces deux approches
@@ -49,22 +49,22 @@ Inégalités inter-personnelles/approche gradationnelle
 
 ## Pareto (1848-1923) {.smaller}
 
--   Les contributions de Pareto à l'étude de la distribution du revenu et des inégalités marquent le début de l'approche inter-personnelle (et en parallèle le déclin de l'analyse en termes de classes) et sont désormais fondamentales, notamment les outils suivants:
+- Les contributions de Pareto à l'étude de la distribution du revenu et des inégalités marquent le début de l'approche inter-personnelle (et en parallèle le déclin de l'analyse en termes de classes) et sont désormais fondamentales, notamment les outils suivants:
 
--   La loi de Pareto (loi de puissance)
+- La loi de Pareto (loi de puissance)
 
--   Le coefficient de Pareto
+- Le coefficient de Pareto
 
--   L'interpolation de Pareto
+- L'interpolation de Pareto
 
 Historiquement, Pareto a conduit la première analyse statistique de la distribution des revenus
 
 ## Les origines de la loi de Pareto {.smaller}
 
--   La deuxième moitié du 19ème voit le développement de la fiscalité dans certaines régions européennes
--   Le développement de ces système fiscaux ont permit aux économistes comme Pareto d'analyser pour la première fois la distribution du revenu à partir de données fiscales
--   Les recherches de Pareto sur ces données lui amèneront à penser qu'il a identifié une "loi" valable pour chacune des régions et périodes étudiées, et qu'il est possible de considérer cette loi comme universelle (càd peu importe le contexte politique, historique, institutionnel, économique)
--   Cette trouvaille le confortera son idée que l'histoire se résume à la domination et succession d'élites
+- La deuxième moitié du 19ème voit le développement de la fiscalité dans certaines régions européennes
+- Le développement de ces système fiscaux ont permis aux économistes comme Pareto d'analyser pour la première fois la distribution du revenu à partir de données fiscales
+- Les recherches de Pareto sur ces données lui amèneront à penser qu'il a identifié une "loi" valable pour chacune des régions et périodes étudiées, et qu'il est possible de considérer cette loi comme universelle (càd peu importe le contexte politique, historique, institutionnel, économique)
+- Cette trouvaille le confortera son idée que l'histoire se résume à la domination et succession d'élites
 
 ## Les données fiscales de Pareto: exemple {.smaller}
 
@@ -101,6 +101,25 @@ Source: "La courbe de répartition des richesses", Pareto 1896.
 ## Exemple: données suisses
 
 [![](images/distribution/afc_donnees.png){fig-align="center" width="1025"}](https://www.estv.admin.ch/fr/statistiques-personnes-physiques-cantons-1983-a-aujourdhui)
+
+## Autres sources de données pour analyser la distribution du revenu/des richesses {style="font-size: 1.4rem; line-height:1.6;"}
+
+**Enquêtes sur les ménages (micro-données longitudinales)**
+
+| Base | Couverture | Contenu |
+|------------------------|------------------------|------------------------|
+| [Luxembourg Income Study (LIS)](https://www.lisdatacenter.org/) | Données internationales depuis 1970 | Revenu, richesse, démographie — données harmonisées cross-nationales |
+| [Swiss Household Panel (SHP)](https://www.swisspanel.ch/) | Suisse, depuis 1990 | Panel annuel : revenus, conditions de vie, bien-être |
+| [EU-SILC](https://ec.europa.eu/eurostat/web/microdata/european-union-statistics-on-income-and-living-conditions) | Données européennes depuis 2003 | Revenus, pauvreté, conditions de vie (Eurostat) |
+| [PSID](https://psidonline.isr.umich.edu/) | États-Unis, depuis 1968 | Le plus ancien panel ménages au monde |
+
+**Données agrégées comparatives (macro)**
+
+| Base | Contenu |
+|------------------------------------|------------------------------------|
+| [WID.world](https://wid.world/) | Parts de revenu/richesse par centile dans de nombreux pays |
+| [HFCS](https://www.ecb.europa.eu/stats/ecb_surveys/hfcs/html/index.en.html) | Richesse des ménages de la zone euro (BCE) |
+| [OCDE IDD](https://stats.oecd.org/Index.aspx?DataSetCode=IDD) | Indicateurs d'inégalité harmonisés entre pays membres |
 
 ## Loi de Pareto
 
@@ -150,7 +169,7 @@ data_pareto_angleterre %>%
   )) +
   labs(
     x     = "Seuil de revenu (log)",
-    y     = "Nombre de personnes au dessus du seuil (log)",
+    y     = "Nombre de personnes au-dessus du seuil (log)",
     color = NULL,
     title = "Les `courbes de répartition de richesse` selon Pareto"
   ) +
@@ -168,9 +187,9 @@ Comment interpréter les coefficients alpha estimés (1.56, 1.40, 1.43 ?)
 
 Prenons le modèle estimé pour l'Angleterre en 1843: $log(N) = 19.55 - 1.56log(Y)$
 
--   Si le seuil de revenu augmente de 10%, le nombre de personnes ayant un revenu au-dessus du seuil diminue de $-1.56*10 = -15.6\%$
+- Si le seuil de revenu augmente de 10%, le nombre de personnes ayant un revenu au-dessus du seuil diminue de $-1.56*10 = -15.6\%$
 
--   Prenons l'Angleterre en 1879-80, si le seuil de revenu augmente de 10%, le nombre de personnes ayant un revenu au-dessus du seuil diminue de $-1.4*10 = -14 \%$ ==\> moins qu'en 1843
+- Prenons l'Angleterre en 1879-80, si le seuil de revenu augmente de 10%, le nombre de personnes ayant un revenu au-dessus du seuil diminue de $-1.4*10 = -14 \%$ ==\> moins qu'en 1843
 
 Cela implique que les revenus se sont davantage concentrés en haut de la distribution des revenus entre 1843 et 1879-80 ==\> les inégalités de revenu ont augmenté
 
@@ -184,9 +203,9 @@ Milanovic propose de voir le coefficient de Pareto comme une "guillotine" qui co
 
 La tendance du coefficient $\alpha$ à rester dans un intervalle de 1.4 à 2 a amené Pareto à conclure que la distribution du revenu est condamnée à rester dans une forme déterminée par l'appartenance du coefficient à l'intervalle \[1.4, 2\]
 
--   La distribution du revenu serait donc fixe et impossible à influencer, peu importe les institutions politiques et économiques
+- La distribution du revenu serait donc fixe et impossible à influencer, peu importe les institutions politiques et économiques
 
--   Conforme à la vision du monde de Pareto, consistant à considérer que l'histoire se résume à la domination et succession d'élites
+- Conforme à la vision du monde de Pareto, consistant à considérer que l'histoire se résume à la domination et succession d'élites
 
 ## Validité de la loi {.smaller}
 
@@ -210,10 +229,10 @@ De nos jours, la distribution de Pareto est un outil très utile pour modéliser
 
 Une autre manière de représenter la distribution du revenu est la courbe de Lorenz:
 
--   Axe X ==\> distribution cumulée du revenu (en proportion ou %)
--   Axe Y ==\> Distribution cumulée de la population (en proportion ou %)
+- Axe X ==\> distribution cumulée du revenu (en proportion ou %)
+- Axe Y ==\> Distribution cumulée de la population (en proportion ou %)
 
-La courbe de Lorenz utilise les même données que pour la courbe de Pareto, sauf que l'on aussi besoin du revenu moyen (ou total) dans chaque tranche de revenu. Au lieu de représenter la *fonction de survie* de la répartition du revenu, la courbe de Lorenz utilise la distribution cumulée (fonction de répartition), qui est l'inverse de la fonction de survie.
+La courbe de Lorenz utilise les mêmes données que pour la courbe de Pareto, sauf que l'on aussi besoin du revenu moyen (ou total) dans chaque tranche de revenu. Au lieu de représenter la *fonction de survie* de la répartition du revenu, la courbe de Lorenz utilise la distribution cumulée (fonction de répartition), qui est l'inverse de la fonction de survie.
 
 ## Courbe de Lorenz: exemple
 
@@ -263,9 +282,9 @@ data_lorenz %>%
 
 Les données de Pareto ne contiennent aucune information sur le revenu moyen ou total entre chaque tranche, ce qui pose problème pour le calcul des fréquences relatives cumulées du revenu. Hormis pour les bases de données dédiées (données fiscales, LIS database), il est très courant de juste avoir les tranches et le nombre d'individus dans chaque tranche, sans le revenu moyen. Le revenu total ou moyen de chaque tranche doit donc être estimé, les méthodes le plus courantes sont:
 
--   Le point médian: $(x_i + x_{i+1})/2$ avec $x_i$ le seuil inférieur et $x_{i+1}$ le seuil supérieur. Cela revient à faire l'hypothèse d'une distribution uniforme dans chaque tranche.
+- Le point médian: $(x_i + x_{i+1})/2$ avec $x_i$ le seuil inférieur et $x_{i+1}$ le seuil supérieur. Cela revient à faire l'hypothèse d'une distribution uniforme dans chaque tranche.
 
--   Faire l'hypothèse que, dans chaque tranche, la distribution suit une distribution de Pareto ==\> on peut tirer parti des nos coefficients de Pareto estimés.
+- Faire l'hypothèse que, dans chaque tranche, la distribution suit une distribution de Pareto ==\> on peut tirer parti des nos coefficients de Pareto estimés.
 
 ## Note: estimation Pareto du revenu moyen par tranche {style="font-size: 1.4rem; line-height:1.6;"}
 
@@ -396,22 +415,20 @@ plot_lorenz_B
 
 ## Coefficient de Gini
 
--   Gini = 1, société parfaitement inégalitaire, 1 personne possède toutes les richesses.
--   Gini = 0, société parfaitement égalitaire, tous les contribuables ont la même fortune.
--   Formule du coefficient de Gini = aire entre la droite d’égalité parfaite et la courbe de Lorenz / (aire entre la droite d’égalité parfaite et la courbe de Lorenz + aire sous la courbe de Lorenz)
+- Gini = 1, société parfaitement inégalitaire, 1 personne possède toutes les richesses.
+- Gini = 0, société parfaitement égalitaire, tous les contribuables ont la même fortune.
+- Formule du coefficient de Gini = aire entre la droite d’égalité parfaite et la courbe de Lorenz / (aire entre la droite d’égalité parfaite et la courbe de Lorenz + aire sous la courbe de Lorenz)
 
 ## Coefficient de Gini
 
-$$
-\begin{align}
+$$\begin{align}
 G &= \frac{A}{A+B} \tag{1} \\
 A + B &= \frac{1}{2} \tag{2} \\
 G &= \frac{A}{1/2} = 2A \tag{3} \\
 A &= \frac{1}{2} - B \tag{4} \\
 G &= 2\left(\frac{1}{2} - B\right) \tag{5} \\
 \mathbf{G} &= \mathbf{1 - 2B} \
-\end{align}
-$$
+\end{align}$$
 
 ##  {.smaller}
 
@@ -461,14 +478,13 @@ On peut calculer B en faisant la somme de l'air des trapèzes sous la courbe:
 
 ![](images/distribution/trapeze.png){fig-align="center" width="625"}
 
-B = Somme de l'air des trapèzes
+B = Somme de l'aire des trapèzes
 
 ## Calcul du Gini
 
 ```{r}
 #| echo: true
-#| code-fold: true
-#| code-summary: "Afficher le code"
+
 gini <- data_lorenz %>%
   add_row(cumsumprop_n_1843 = 0, cumsumprop_revenu_pareto = 0, .before = 1) %>%
   summarise(
@@ -482,7 +498,7 @@ gini
 
 ## Les top shares {.smaller}
 
-Les travaux de Piketty et ses collaborateurs ont popularisé les mesures dites des "top shares" pour mesurer les inégalité
+Les travaux de Piketty et ses collaborateurs ont popularisé les mesures dites des "top shares" pour mesurer les inégalités
 
 [![](images/distribution/graph_dl.png){width="515"}](https://wid.world/fr/monde/#sptinc_p90p100_z/US;FR;DE;CN;ZA;GB;WO-PPP/last/eu/k/p/yearly/s/false/24.708000000000002/80/curve/false/country)
 
@@ -492,9 +508,7 @@ Par exemple: la part du 10% ==\> la part du revenu que gagnent les personnes aya
 
 Formellement, ces parts sont définies comme suit, avec $y_i$ le revenu de l'individu i (exemple pour la part des 10%):
 
-$$
-\text{part}_{10\%} = \frac{\sum_{i \in \text{top } 10\%} y_i}{\sum_{i=1}^{N} y_i}
-$$
+$$\text{part}_{10\%} = \frac{\sum_{i \in \text{top } 10\%} y_i}{\sum_{i=1}^{N} y_i}$$
 
 En pratique, on n'observe pas exactement le revenu correspondant au décile de la part (le revenu définissant le 10ème décile, le 1er etc). Les données (fiscales, micro...) ne nous permettent pas de calculer exactement ces parts.
 
@@ -502,8 +516,8 @@ En pratique, on n'observe pas exactement le revenu correspondant au décile de l
 
 ## Interpolation linéaire {style="font-size: 1.4rem; line-height:1.6;"}
 
--   Les statistiques ne donnent pas exactement ces parts, il faut les **reconstruire**.
--   Par **interpolation** : procédure qui consiste à estimer les points inconnus à partir de valeurs connues.
+- Les statistiques ne donnent pas exactement ces parts, il faut les **reconstruire**.
+- Par **interpolation** : procédure qui consiste à estimer les points inconnus à partir de valeurs connues.
 
 ::::: {style="display:flex; justify-content:center; align-items:center; gap:2em; margin:1em 0;"}
 ::: {style="text-align:right; font-size:0.75em; max-width:160px; color:#c0392b;"}
@@ -520,8 +534,8 @@ Le top 1% possède entre 47,3 et 44,4% du revenu total Mais combien exactement ?
 :::
 :::::
 
--   Il existe **plusieurs méthodes d'interpolation**, à utiliser en fonction de la nature de la distribution des variables.
--   Dans le cadre du cours, on utilisera l' **interpolation linéaire**. En pratique, **l'interpolation de Pareto** est la méthode la plus utilisée.
+- Il existe **plusieurs méthodes d'interpolation**, à utiliser en fonction de la nature de la distribution des variables.
+- Dans le cadre du cours, on utilisera l' **interpolation linéaire**. En pratique, **l'interpolation de Pareto** est la méthode la plus utilisée.
 
 ## Formule d'interpolation linéaire {.smaller}
 
@@ -557,7 +571,7 @@ ggplot() +
 
 ```
 
--   Formule de l'interpolation linéaire pour trouver le $x$ :
+- Formule de l'interpolation linéaire pour trouver le $x$ :
 
 $$x = d + \frac{(e - d) \times (b - c)}{a - c}$$
 
@@ -567,21 +581,94 @@ L'indice de Theil est une mesure des inégalités servant à tirer le meilleur p
 
 L'indice de Theil mesure la proportion de la population dans chaque groupe, la proportion de revenu dans chaque groupe, et mesure l'écart entre les deux. L'idée est que, sous l'hypothèse d'égalité parfaite, chaque groupe devrait avoir une proportion de population égale à sa proportion de revenu
 
-$$
-Indice\ Theil\ du\ groupe = \\Prop\ revenu\ du \ groupe * [log(Prop\ revenu\ du \ groupe)-log(Prop\ population\ du \ groupe)]
-$$
+$$Indice\ Theil\ du\ groupe = \\Prop\ revenu\ du \ groupe * [log(Prop\ revenu\ du \ groupe)-log(Prop\ population\ du \ groupe)]$$
 
 Il faut distinguer l'indice Theil du groupe et l'indice de Theil global qui est la somme de tous les indices de Theil pour chaque groupe.
 
 ## Indice de Theil {.smaller}
 
--   Plus l'écart de l'indice de Theil du groupe est positif ==\> plus le groupe a une part importante du revenu par rapport à ce qu'il aurait dans une société égalitaire.
+- Plus l'écart de l'indice de Theil du groupe est positif ==\> plus le groupe a une part importante du revenu par rapport à ce qu'il aurait dans une société égalitaire.
 
--   Plus l'écart de l'indice de Theil du groupe est négatif ==\> plus le groupe a une part faible du revenu par rapport à ce qu'il aurait dans une société égalitaire.
+- Plus l'écart de l'indice de Theil du groupe est négatif ==\> plus le groupe a une part faible du revenu par rapport à ce qu'il aurait dans une société égalitaire.
 
--   Plus l'écart de l'indice de Theil du groupe est proche de zéro ==\> plus le groupe a une part du revenu proche que ce qu'il aurait dans une société égalitaire.
+- Plus l'écart de l'indice de Theil du groupe est proche de zéro ==\> plus le groupe a une part du revenu proche que ce qu'il aurait dans une société égalitaire.
 
-Indice de Theil global ==\> plus ce dernier est élevé, plus les inégalités sont grandes. Contrairement au Gini, l'indice de Theil n'a pas de plafond, ce qui rend son niveau moins interpétable.
+Indice de Theil global ==\> plus ce dernier est élevé, plus les inégalités sont grandes. Contrairement au Gini, l'indice de Theil n'a pas de plafond, ce qui rend son niveau moins interprétable.
+
+## Indice de Theil : l'intuition {.smaller}
+
+**Idée centrale :** dans une société parfaitement égale, chaque groupe reçoit une part du revenu *exactement proportionnelle* à sa taille dans la population.
+
+| Groupe | Part population ($p_i$) | Part revenu ($s_i$) | Statut |
+|----|:--:|:--:|----|
+| 50% les plus pauvres | 50 % | 20 % | ↓ sous-représenté |
+| 40% du milieu | 40 % | 40 % | = équilibre |
+| 10% les plus riches | 10 % | 40 % | ↑ sur-représenté |
+
+L'indice de Theil quantifie l'écart de chaque groupe par rapport à l'égalité, pondéré par sa part de revenu :
+
+$$T_i = s_i \cdot \ln\!\left(\frac{s_i}{p_i}\right) \qquad T = \sum_i T_i$$
+
+## Indice de Theil : visualisation {.smaller}
+
+```{r}
+#| echo: false
+#| fig-height: 4.2
+
+library(tidyverse)
+
+groupes <- tibble(
+  groupe    = c("50% les plus\npauvres", "40% du\nmilieu", "10% les plus\nriches"),
+  pop       = c(0.50, 0.40, 0.10),
+  inc       = c(0.20, 0.40, 0.40)
+) |>
+  mutate(
+    theil     = round(inc * log(inc / pop), 3),
+    direction = case_when(
+      inc > pop ~ "Sur-représenté (revenu > pop.)",
+      inc < pop ~ "Sous-représenté (revenu < pop.)",
+      TRUE      ~ "Équilibre (revenu = pop.)"
+    )
+  )
+
+theil_global <- round(sum(groupes$theil), 3)
+
+ggplot(groupes, aes(x = pop, y = inc)) +
+  geom_abline(slope = 1, intercept = 0, linetype = "dashed",
+              color = "grey50", linewidth = 0.9) +
+  annotate("text", x = 0.53, y = 0.56,
+           label = "Égalité parfaite (s = p)",
+           color = "grey50", size = 3.2, angle = 38, hjust = 0) +
+  geom_segment(aes(x = pop, xend = pop, y = pop, yend = inc, color = direction),
+               linewidth = 1.8,
+               arrow = arrow(length = unit(0.28, "cm"), ends = "last")) +
+  geom_point(aes(color = direction), size = 5) +
+  geom_label(data = \(d) filter(d, groupe != "40% du\nmilieu"),
+             aes(label = paste0(groupe, "\nTᵢ = ", theil)),
+             size = 3, nudge_x = 0.13, label.size = 0.3) +
+  geom_label(data = \(d) filter(d, groupe == "40% du\nmilieu"),
+             aes(label = paste0(groupe, "\nTᵢ = ", theil)),
+             size = 3, nudge_y = 0.08, label.size = 0.3) +
+  annotate("label", x = 0.52, y = 0.09,
+           label = paste0("Indice de Theil global = ", theil_global),
+           size = 4, fontface = "bold", fill = "#f5f5f5", label.size = 0.4) +
+  scale_x_continuous(labels = scales::percent_format(),
+                     limits = c(0, 0.9),
+                     name = "Part dans la population (p)") +
+  scale_y_continuous(labels = scales::percent_format(),
+                     limits = c(0, 0.75),
+                     name = "Part dans le revenu total (s)") +
+  scale_color_manual(values = c(
+    "Sur-représenté (revenu > pop.)"  = "#e74c3c",
+    "Sous-représenté (revenu < pop.)" = "#3498db",
+    "Équilibre (revenu = pop.)"       = "#27ae60"
+  )) +
+  labs(color = NULL) +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "bottom")
+```
+
+**Lecture :** chaque flèche mesure l'écart d'un groupe par rapport à la diagonale d'égalité. Plus la flèche est longue, plus la contribution $T_i$ est grande. $T = 0$ signifie égalité parfaite ; $T$ n'a pas de maximum.
 
 # Exercice: analyse de la distribution du revenu national suisse
 
@@ -589,14 +676,116 @@ Indice de Theil global ==\> plus ce dernier est élevé, plus les inégalités s
 
 - Calcul des indicateurs d'inégalité de revenu (Gini, courbe de Pareto, Theil, top shares...) avec des données fiscales suisses
 
-## Consignes {style="font-size: 1.4rem; line-height:1.6;"}
+## Exercice 1 {style="font-size: 1.4rem; line-height:1.6;"}
 
--   Téléchargez le tableau excel "distribution_exercice_1" sur moodle
--  
+- Allez sur le portail des statistiques de l'impôt fédéral direct de l'administration fédérale des contributions (AFC): <https://www.estv.admin.ch/fr/statistiques-personnes-physiques-cantons-1983-a-aujourdhui>. Téléchargez les données de l'impôt fédéral direct par classe de revenu pour l'année 2022: **Contribuables avec versement d'un impôt fédéral direct, Cas normaux**. Dans le cadre de cet exercice, nous allons calculer et comparer des mesures d'inégalité pour la Suisse et le canton de Genève.
+
+- Sur moodle, téléchargez le fichier excel "distribution_exercice_1". Copiez-collez les données correspondantes, à savoir les seuils inférieurs et supérieurs de revenu pour chaque tranche, le nombre de contribuables dans chaque tranche, et le revenu net total de chaque tranche.
+
+- Remplissez les cases afin de calculer la courbe de Lorenz, le coefficient de Gini et la part des 0,1% et 1% dans le revenu national pour la Suisse et Genève: que peut-on dire sur les inégalités à Genève par rapport à la Suisse dans son ensemble ?
+
+- Optionnel: calculez l'indice de Theil pour la Suisse et Genève.
+
+# Distribution et inégalité fonctionnelle
+
+## Distribution et inégalité fonctionnelle
+
+Les approches et mesures vues jusqu'ici font abstraction de la dimension **fonctionnelle** des inégalités et de la distribution du revenu, qui peut être vue sous deux angles:
+
+- L'inégalité compositionnelle, à savoir résultant des deux principales sources de revenu possible: du travail ou du capital
+- L'inégalité de classe, résultant de la stratification de la structure sociale en classes.
+
+## Inégalités de composition {.smaller}
+
+- Le revenu de chaque individu peut être décomposé selon deux source: le travail (salaire) et le capital (intérêts, dividendes, rentes...).
+
+- L'inégalité de composition mesure comment les parts de revenu provenant du capital et du travail diffèrent le long de la distribution du revenu. Un individu peut par exemple tirer tout son revenu du capital, du travail, ou d'un mixe des deux.
+
+- Lors des débuts du capitalisme au 19ème siècle, il y avait une séparation nette de ces parts: les plus pauvres tiraient uniquement leur revenu du travail et les plus riches du capital ==\> haute inégalité de composition
+
+- De nos jours, cette séparation est moins nette: les plus aisés gagnent par exemple aussi une partie non négligeable de leur revenu du travail en plus du capital (homoploutie).
+
+## Income factor concentration index (IFC) {style="font-size: 1.35rem; line-height:1.6;"}
+
+::::: columns
+::: column
+[**Zero concentration curve**]{style="color:grey40"}\
+Courbe de Lorenz du capital si tous les individus ont la **même composition** de revenu capital/travail. La concentration du capital reflète simplement celle du revenu total.
+
+[**Actual concentration curve of capital**]{style="color:#c0392b"}\
+Courbe de Lorenz du revenu du capital **observée** empiriquement dans les données.
+
+[**Maximum concentration curve**]{style="color:#2980b9"}\
+Courbe de Lorenz du capital maximale : **séparation parfaite** des compositions. Les plus pauvres tirent uniquement leur revenu du travail, les plus riches uniquement du capital.
+:::
+
+::: column
+```{r}
+#| fig-height: 5
+#| fig-width: 5
+
+library(tidyverse)
+
+p <- seq(0, 1, length.out = 1000)
+
+df <- tibble(
+  p       = p,
+  zero    = p^1.5,
+  capital = p^3,
+  maximum = ifelse(p <= 0.99, 0, 1)
+)
+
+max_line <- tibble(
+  p = c(0,    0.99, 0.99),
+  y = c(0,    0,    1   )
+)
+
+ggplot(df, aes(x = p)) +
+  geom_ribbon(aes(ymin = capital, ymax = zero),
+              fill = "#e74c3c", alpha = 0.25) +
+  geom_ribbon(aes(ymin = pmin(maximum, capital), ymax = capital),
+              fill = "#3498db", alpha = 0.25) +
+  geom_line(aes(y = zero,    color = "Zero concentration curve"),
+            linewidth = 1.2, linetype = "dashed") +
+  geom_line(aes(y = capital, color = "Actual concentration curve of capital"),
+            linewidth = 1.4) +
+  geom_line(data = max_line, aes(x = p, y = y, color = "Maximum concentration curve"),
+            linewidth = 1.2) +
+  annotate("text", x = 0.42, y = 0.20,
+           label = "A", fontface = "bold", size = 10, color = "#c0392b") +
+  annotate("text", x = 0.50, y = 0.06,
+           label = "B", fontface = "bold", size = 10, color = "#2980b9") +
+  annotate("label", x = 0.03, y = 0.90,
+           label = "IFC = A / B",
+           size = 4, fontface = "bold", hjust = 0,
+           fill = "white", label.size = 0.3) +
+  scale_color_manual(values = c(
+    "Zero concentration curve"             = "grey40",
+    "Actual concentration curve of capital" = "#c0392b",
+    "Maximum concentration curve"          = "#2980b9"
+  )) +
+  scale_x_continuous(labels = scales::percent_format(),
+                     name = "Cumulative population share (poorest to richest)") +
+  scale_y_continuous(labels = scales::percent_format(),
+                     name = "Cumulative capital income share") +
+  labs(color = NULL) +
+  theme_minimal(base_size = 11) +
+  theme(legend.position = "bottom",
+        legend.text = element_text(size = 8))
+```
+:::
+:::::
+
+## IFC et Gini (Ranaldi et Milanovic, 2021)
+
+[![](images/distribution/ranaldi_milanovic_2021_7.png){fig-align="center" width="575"}](https://ideas.repec.org//a/eee/jcecon/v50y2022i1p20-32.html)
+
+## Nomenclature des capitalismes {.smaller}
+
+[![(Ranaldi et Milanovic 2021, 11)](images/distribution/ranaldi_milanovic_2021_11.png)](https://ideas.repec.org//a/eee/jcecon/v50y2022i1p20-32.html)
 
 
-
-
+# Classes sociales et inégalités
 
 
 
