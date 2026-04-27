@@ -223,14 +223,14 @@ Milanovic (2024, 176-7)
 
 La courbe de Pareto présente le logarithme du nombre de personnes N au dessus du seuil de revenu Y. Son analyse était contrainte par le format de ses données dans lequel on a seulement les tranches de revenus et le nombre de personnes dans chaque tranche.
 
-De nos jours, la distribution de Pareto est un outil très utile pour modéliser la distribution du revenu et estimer différents indicateurs d'inégalités.
+De nos jours, la loi de Pareto est un outil très utile pour modéliser la distribution du revenu et des richesses et estimer différents indicateurs des inégalités, par exemple les top shares grâce à l'interpolation de Pareto. 
 
 ## Courbe de Lorenz {.smaller}
 
 Une autre manière de représenter la distribution du revenu est la courbe de Lorenz:
 
-- Axe X ==\> distribution cumulée du revenu (en proportion ou %)
-- Axe Y ==\> Distribution cumulée de la population (en proportion ou %)
+- Axe X ==\> distribution cumulée de la population (en proportion ou %)
+- Axe Y ==\> Distribution cumulée du revenu (en proportion ou %)
 
 La courbe de Lorenz utilise les mêmes données que pour la courbe de Pareto, sauf que l'on aussi besoin du revenu moyen (ou total) dans chaque tranche de revenu. Au lieu de représenter la *fonction de survie* de la répartition du revenu, la courbe de Lorenz utilise la distribution cumulée (fonction de répartition), qui est l'inverse de la fonction de survie.
 
@@ -502,7 +502,7 @@ Les travaux de Piketty et ses collaborateurs ont popularisé les mesures dites d
 
 [![](images/distribution/graph_dl.png){width="515"}](https://wid.world/fr/monde/#sptinc_p90p100_z/US;FR;DE;CN;ZA;GB;WO-PPP/last/eu/k/p/yearly/s/false/24.708000000000002/80/curve/false/country)
 
-Par exemple: la part du 10% ==\> la part du revenu que gagnent les personnes ayant un revenu supérieur au 10ème décile
+Par exemple: la part du 10% ==\> la part du revenu que gagnent les personnes appartenant au 10ème décile
 
 ## Calcul des top shares {.smaller}
 
@@ -574,6 +574,41 @@ ggplot() +
 - Formule de l'interpolation linéaire pour trouver le $x$ :
 
 $$x = d + \frac{(e - d) \times (b - c)}{a - c}$$
+
+## Note: interpolation de Pareto (optionnel) {style="font-size: 1.3rem; line-height:1.7;"}
+
+**Principe :** Au lieu de faire l'hypothèse d'une distribution linéaire, on peut faire l'hypothèse que les hauts revenus suivent une distribution de Pareto, et ensuite estimer le revenu au-dessus d'un seuil donné. Cela est souvent préférable car, comme nous l'avons vu, les hauts revenus ont tendance à suivre une courbe de Pareto.
+
+1.  Calculer les paramètres de la distribution pour chaque tranche fiscale de seuil inférieur $s$:
+
+$$b_s = \frac{\bar{y}_s}{s}$$
+
+où $\bar{y}_s$ est le revenu moyen des unités fiscales **au-dessus** de $s$. Puis le coefficient de Pareto :
+
+$$a_s = \frac{b_s}{b_s - 1}$$
+
+Et le paramètre d'échelle $k_s$, où $p_s = 1 - F(s)$ est la fraction d'unités fiscales ayant un revenu $\geq s$ :
+
+$$k_s = s \cdot p_s^{1/a_s}$$
+
+2. Choisir la tranche de référence: on retient le seuil $s$ dont $p_s$ est **le plus proche** de la part de population visée $\rho$ (ex. 10 %).
+
+## Interpolation de Pareto: Calcul des parts {style="font-size: 1.3rem; line-height:1.7;"}
+
+Une fois les paramètres locaux $(b_s, k_s)$ de la tranche de référence identifiés :
+
+3.  Seuil de revenu pour appartenir au top $\rho$ :
+
+$$T_\rho = \frac{k_s}{\rho^{1/a_s}}$$
+
+4. Revenu moyen au-dessus de ce seuil :
+
+$$\bar{y}_\rho = T_\rho \cdot b_s$$
+
+5.  Revenu total du groupe et **part de revenu** :
+
+$$y_\rho = \bar{y}_\rho \cdot \rho \cdot N \qquad \Longrightarrow \qquad \text{part}_\rho = \frac{y_\rho}{\text{revenu total}}$$
+
 
 ## Indice de Theil {style="font-size: 1.4rem; line-height:1.6;"}
 
@@ -785,7 +820,13 @@ ggplot(df, aes(x = p)) +
 [![(Ranaldi et Milanovic 2021, 11)](images/distribution/ranaldi_milanovic_2021_11.png)](https://ideas.repec.org//a/eee/jcecon/v50y2022i1p20-32.html)
 
 
-# Classes sociales et inégalités
+
+
+
+
+
+
+
 
 
 

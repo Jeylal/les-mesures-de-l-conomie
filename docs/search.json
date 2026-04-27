@@ -1794,7 +1794,7 @@
     "href": "distribution.html#héritage-de-pareto",
     "title": "Distribution et inégalité",
     "section": "Héritage de Pareto",
-    "text": "Héritage de Pareto\nLa courbe de Pareto présente le logarithme du nombre de personnes N au dessus du seuil de revenu Y. Son analyse était contrainte par le format de ses données dans lequel on a seulement les tranches de revenus et le nombre de personnes dans chaque tranche.\nDe nos jours, la distribution de Pareto est un outil très utile pour modéliser la distribution du revenu et estimer différents indicateurs d’inégalités.",
+    "text": "Héritage de Pareto\nLa courbe de Pareto présente le logarithme du nombre de personnes N au dessus du seuil de revenu Y. Son analyse était contrainte par le format de ses données dans lequel on a seulement les tranches de revenus et le nombre de personnes dans chaque tranche.\nDe nos jours, la loi de Pareto est un outil très utile pour modéliser la distribution du revenu et des richesses et estimer différents indicateurs des inégalités, par exemple les top shares grâce à l’interpolation de Pareto.",
     "crumbs": [
       "Distribution et inégalité"
     ]
@@ -1804,7 +1804,7 @@
     "href": "distribution.html#courbe-de-lorenz",
     "title": "Distribution et inégalité",
     "section": "Courbe de Lorenz",
-    "text": "Courbe de Lorenz\nUne autre manière de représenter la distribution du revenu est la courbe de Lorenz:\n\nAxe X ==&gt; distribution cumulée du revenu (en proportion ou %)\nAxe Y ==&gt; Distribution cumulée de la population (en proportion ou %)\n\nLa courbe de Lorenz utilise les mêmes données que pour la courbe de Pareto, sauf que l’on aussi besoin du revenu moyen (ou total) dans chaque tranche de revenu. Au lieu de représenter la fonction de survie de la répartition du revenu, la courbe de Lorenz utilise la distribution cumulée (fonction de répartition), qui est l’inverse de la fonction de survie.",
+    "text": "Courbe de Lorenz\nUne autre manière de représenter la distribution du revenu est la courbe de Lorenz:\n\nAxe X ==&gt; distribution cumulée de la population (en proportion ou %)\nAxe Y ==&gt; Distribution cumulée du revenu (en proportion ou %)\n\nLa courbe de Lorenz utilise les mêmes données que pour la courbe de Pareto, sauf que l’on aussi besoin du revenu moyen (ou total) dans chaque tranche de revenu. Au lieu de représenter la fonction de survie de la répartition du revenu, la courbe de Lorenz utilise la distribution cumulée (fonction de répartition), qui est l’inverse de la fonction de survie.",
     "crumbs": [
       "Distribution et inégalité"
     ]
@@ -1944,7 +1944,7 @@
     "href": "distribution.html#les-top-shares",
     "title": "Distribution et inégalité",
     "section": "Les top shares",
-    "text": "Les top shares\nLes travaux de Piketty et ses collaborateurs ont popularisé les mesures dites des “top shares” pour mesurer les inégalités\n\nPar exemple: la part du 10% ==&gt; la part du revenu que gagnent les personnes ayant un revenu supérieur au 10ème décile",
+    "text": "Les top shares\nLes travaux de Piketty et ses collaborateurs ont popularisé les mesures dites des “top shares” pour mesurer les inégalités\n\nPar exemple: la part du 10% ==&gt; la part du revenu que gagnent les personnes appartenant au 10ème décile",
     "crumbs": [
       "Distribution et inégalité"
     ]
@@ -2155,6 +2155,36 @@
     "title": "Distribution et inégalité",
     "section": "Distribution et inégalité fonctionnelle",
     "text": "Distribution et inégalité fonctionnelle\nLes approches et mesures vues jusqu’ici font abstraction de la dimension fonctionnelle des inégalités et de la distribution du revenu, qui peut être vue sous deux angles:\n\nL’inégalité compositionnelle, à savoir résultant des deux principales sources de revenu possible: du travail ou du capital\nL’inégalité de classe, résultant de la stratification de la structure sociale en classes.",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#interpolation-de-pareto-paramètres-locaux",
+    "href": "distribution.html#interpolation-de-pareto-paramètres-locaux",
+    "title": "Distribution et inégalité",
+    "section": "Interpolation de Pareto — Paramètres locaux",
+    "text": "Interpolation de Pareto — Paramètres locaux\nPrincipe : les hauts revenus suivent une loi de Pareto. On exploite cette propriété pour interpoler précisément les seuils et parts.\nÉtape 1 — Calculer les paramètres locaux pour chaque tranche fiscale de seuil inférieur \\(s\\) :\n\\[b_s = \\frac{\\bar{y}_s}{s}\\]\noù \\(\\bar{y}_s\\) est le revenu moyen des unités fiscales au-dessus de \\(s\\). Puis le coefficient de Pareto :\n\\[a_s = \\frac{b_s}{b_s - 1}\\]\nEt le paramètre d’échelle \\(k_s\\), où \\(p_s = 1 - F(s)\\) est la fraction d’unités fiscales ayant un revenu \\(\\geq s\\) :\n\\[k_s = s \\cdot p_s^{1/a_s}\\]\nÉtape 2 — Choisir la tranche de référence : on retient le seuil \\(s\\) dont \\(p_s\\) est le plus proche de la part de population visée \\(\\rho\\) (ex. 10 %).",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#interpolation-de-pareto-calcul-des-parts",
+    "href": "distribution.html#interpolation-de-pareto-calcul-des-parts",
+    "title": "Distribution et inégalité",
+    "section": "Interpolation de Pareto: Calcul des parts",
+    "text": "Interpolation de Pareto: Calcul des parts\nUne fois les paramètres locaux \\((b_s, k_s)\\) de la tranche de référence identifiés :\n\nSeuil de revenu pour appartenir au top \\(\\rho\\) :\n\n\\[T_\\rho = \\frac{k_s}{\\rho^{1/a_s}}\\]\n\nRevenu moyen au-dessus de ce seuil :\n\n\\[\\bar{y}_\\rho = T_\\rho \\cdot b_s\\]\n\nRevenu total du groupe et part de revenu :\n\n\\[y_\\rho = \\bar{y}_\\rho \\cdot \\rho \\cdot N \\qquad \\Longrightarrow \\qquad \\text{part}_\\rho = \\frac{y_\\rho}{\\text{revenu total}}\\]",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#note-interpolation-de-pareto-optionnel",
+    "href": "distribution.html#note-interpolation-de-pareto-optionnel",
+    "title": "Distribution et inégalité",
+    "section": "Note: interpolation de Pareto (optionnel)",
+    "text": "Note: interpolation de Pareto (optionnel)\nPrincipe : Au lieu de faire l’hypothèse d’une distribution linéaire, on peut faire l’hypothèse que les hauts revenus suivent une distribution de Pareto, et ensuite estimer le revenu au-dessus d’un seuil donné. Cela est souvent préférable car, comme nous l’avons vu, les hauts revenus ont tendance à suivre une courbe de Pareto.\n\nCalculer les paramètres de la distribution pour chaque tranche fiscale de seuil inférieur \\(s\\):\n\n\\[b_s = \\frac{\\bar{y}_s}{s}\\]\noù \\(\\bar{y}_s\\) est le revenu moyen des unités fiscales au-dessus de \\(s\\). Puis le coefficient de Pareto :\n\\[a_s = \\frac{b_s}{b_s - 1}\\]\nEt le paramètre d’échelle \\(k_s\\), où \\(p_s = 1 - F(s)\\) est la fraction d’unités fiscales ayant un revenu \\(\\geq s\\) :\n\\[k_s = s \\cdot p_s^{1/a_s}\\]\n\nChoisir la tranche de référence: on retient le seuil \\(s\\) dont \\(p_s\\) est le plus proche de la part de population visée \\(\\rho\\) (ex. 10 %).",
     "crumbs": [
       "Distribution et inégalité"
     ]
