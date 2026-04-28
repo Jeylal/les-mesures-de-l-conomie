@@ -1694,7 +1694,7 @@
     "href": "distribution.html#distribution-et-inégalités-deux-grandes-approches",
     "title": "Distribution et inégalité",
     "section": "Distribution et inégalités: deux grandes approches",
-    "text": "Distribution et inégalités: deux grandes approches\n\n\nInégalités fonctionnelles\n\nÉconomie politique classique (Physiocrates, Smith, Ricardo, Marx)\ninégalités de revenu résultant des différents facteurs de production (capital, travail, terre)\nLes inégalités résultent donc de la stratification sociale dont, surtout, les classes sociales\nAppartenance à une classe selon la source de revenu résultant du type d’actif possédé (terre/rente, capital/profit, travail/salaire) ==&gt; rentiers, capitalistes, salariés.\nException: Physiocrates (Appartenance à une classe sociale définie légalement (Quesnay))\n\n\nInégalités inter-personnelles/approche gradationnelle\n\nPareto, Gini, Theil, Piketty…\nAnalyse de la distribution directement à partir des individus et leur revenu, sans recours nécessaire à l’analyse de classe\nAu lieu de l’analyse de classe, analyse en termes de déciles (part des 10% les plus riches, des 40% les plus pauvres…) ou en termes d’indicateurs englobants (coefficient de Pareto, indice de Gini, de Theil…)\n\n==&gt; En pratique, il faut tirer le meilleur parti de ces deux approches",
+    "text": "Distribution et inégalités: deux grandes approches\n\n\nInégalités fonctionnelles\n\nÉconomie politique classique (Physiocrates, Smith, Ricardo, Marx) et certains courants hétérodoxes contemporains\ninégalités de revenu résultant des différents facteurs de production (capital, travail, terre)\nLes inégalités résultent donc de la stratification sociale dont, surtout, les classes sociales\nAppartenance à une classe selon la source de revenu résultant du type d’actif possédé (terre/rente, capital/profit, travail/salaire) ==&gt; rentiers, capitalistes, salariés.\n\n\nInégalités inter-personnelles/approche gradationnelle\n\nPareto, Gini, Theil, Piketty…\nAnalyse de la distribution directement à partir des individus et leur revenu, sans recours nécessaire à l’analyse de classe\nAu lieu de l’analyse de classe, analyse en termes de déciles (part des 10% les plus riches, des 40% les plus pauvres…) ou en termes d’indicateurs englobants (coefficient de Pareto, indice de Gini, de Theil…)\n\n==&gt; En pratique, il faut tirer le meilleur parti de ces deux approches",
     "crumbs": [
       "Distribution et inégalité"
     ]
@@ -1704,7 +1704,7 @@
     "href": "distribution.html#pareto-1848-1923",
     "title": "Distribution et inégalité",
     "section": "Pareto (1848-1923)",
-    "text": "Pareto (1848-1923)\n\nLes contributions de Pareto à l’étude de la distribution du revenu et des inégalités marquent le début de l’approche inter-personnelle (et en parallèle le déclin de l’analyse en termes de classes) et sont désormais fondamentales, notamment les outils suivants:\nLa loi de Pareto (loi de puissance)\nLe coefficient de Pareto\nL’interpolation de Pareto\n\nHistoriquement, Pareto a conduit la première analyse statistique de la distribution des revenus",
+    "text": "Pareto (1848-1923)\n\nLes contributions de Pareto à l’étude de la distribution du revenu et des inégalités marquent le début de l’approche inter-personnelle et le déclin de l’analyse de classe.\nLa loi/distribution de Pareto: utilisée pour modeliser la distribution des revenus/richesses.\nLe coefficient de Pareto: un des premiers indicateurs englobant des inégalités.\nL’interpolation de Pareto: utilisé pour estimer la distribution des revenus/richesses, notamment le haut de la distribution (modéliser le revenu des plus aisés).\n\nHistoriquement, Pareto a conduit la première analyse statistique inter-personnelle de la distribution des revenus.",
     "crumbs": [
       "Distribution et inégalité"
     ]
@@ -1714,7 +1714,7 @@
     "href": "distribution.html#les-origines-de-la-loi-de-pareto",
     "title": "Distribution et inégalité",
     "section": "Les origines de la loi de Pareto",
-    "text": "Les origines de la loi de Pareto\n\nLa deuxième moitié du 19ème voit le développement de la fiscalité dans certaines régions européennes\nLe développement de ces système fiscaux ont permis aux économistes comme Pareto d’analyser pour la première fois la distribution du revenu à partir de données fiscales\nLes recherches de Pareto sur ces données lui amèneront à penser qu’il a identifié une “loi” valable pour chacune des régions et périodes étudiées, et qu’il est possible de considérer cette loi comme universelle (càd peu importe le contexte politique, historique, institutionnel, économique)\nCette trouvaille le confortera son idée que l’histoire se résume à la domination et succession d’élites",
+    "text": "Les origines de la loi de Pareto\n\nLa deuxième moitié du 19ème voit le développement de la fiscalité dans certaines régions européennes\nLe développement de ces système fiscaux ont permis aux économistes comme Pareto d’analyser pour la première fois la distribution du revenu à partir de données fiscales\nLes recherches de Pareto sur ces données l’amèneront à penser qu’il a identifié une “loi” valable pour chacune des régions et périodes étudiées, et qu’il est possible de considérer cette loi comme universelle (càd peu importe le contexte politique, historique, institutionnel, économique)\nCette trouvaille le confortera son idée que l’histoire se résume à la domination et succession d’élites",
     "crumbs": [
       "Distribution et inégalité"
     ]
@@ -1734,7 +1734,7 @@
     "href": "distribution.html#loi-de-pareto",
     "title": "Distribution et inégalité",
     "section": "Loi de Pareto",
-    "text": "Loi de Pareto\nPareto estime le modèle suivant:\n\\[ ln(N) = ln(A) + \\alpha*ln(Y)\\]\nAvec N le nombre de personnes ayant un revenu égal ou supérieur au revenu (seuil) Y. Le paramètre clé du modèle est le coefficient alpha \\(\\alpha\\), désormais appelé la “constante” de Pareto.",
+    "text": "Loi de Pareto\nPareto estime le modèle suivant:\n\\[ ln(N) = ln(A) - \\alpha*ln(X)\\]\nAvec N le nombre de personnes ayant un revenu égal ou supérieur au revenu (seuil) X. Le paramètre clé du modèle est le coefficient alpha \\(\\alpha\\), désormais appelé la “constante” de Pareto. Il s’agit de la forme logarithmique de la fonction de survie de la distribution du revenu.\n\n\n\n\n\n\nFonction de survie vs fonction de répartition\n\n\n\n\nPour une variable (aléatoire) \\(X\\) (ici, le revenu):\n\nLa fonction de répartition \\(F(x) = P(X \\leq x)\\) donne la probabilité (proportion) d’individus ayant un revenu inférieur ou égal à \\(x\\). Elle est croissante de 0 à 1.\nLa fonction de survie \\(S(x) = P(X \\geq x) = 1 - F(x)\\) donne la probabilité (proportion) d’individus ayant un revenu supérieur ou égal à \\(x\\). Elle est décroissante de 1 à 0.\n\nPareto travaillait avec la fonction de survie car ses données recensaient le nombre de contribuables au-dessus d’un seuil fiscal. La courbe de Lorenz, en revanche, fait l’exact inverse: elle prend la fonction de répartition de la distribution des revenus.",
     "crumbs": [
       "Distribution et inégalité"
     ]
@@ -1744,7 +1744,7 @@
     "href": "distribution.html#section",
     "title": "Distribution et inégalité",
     "section": "",
-    "text": "Afficher le code\n# Estimation des modèles\nlm_1843  &lt;- lm(log(N_1843) ~ log(seuil_revenu), data = data_pareto_angleterre)\nlm_1880  &lt;- lm(log(N_1879_80) ~ log(seuil_revenu), data = data_pareto_angleterre)\nlm_italie &lt;- lm(log(N) ~ log(seuil_revenu), data = data_pareto_italie)\n\n# Labels avec les coefficients estimés\nlabel_1843  &lt;- sprintf(\"Angleterre 1843\\nlog(N) = %.2f %+.2f·log(Y)\",\n                        coef(lm_1843)[1],  coef(lm_1843)[2])\nlabel_1880  &lt;- sprintf(\"Angleterre 1879-80\\nlog(N) = %.2f %+.2f·log(Y)\",\n                        coef(lm_1880)[1],  coef(lm_1880)[2])\nlabel_italie &lt;- sprintf(\"Villes italiennes\\nlog(N) = %.2f %+.2f·log(Y)\",\n                        coef(lm_italie)[1], coef(lm_italie)[2])\n\ndata_pareto_angleterre %&gt;%\n  ggplot(aes(x = log(seuil_revenu), y = log(N_1843))) +\n  geom_point(aes(color = label_1843), shape = 16, size = 2.5) +\n  geom_point(aes(y = log(N_1879_80), color = label_1880), shape = 17, size = 2.5) +\n  geom_point(data = data_pareto_italie,\n             aes(y = log(N), color = label_italie), shape = 15, size = 2.5) +\n\n  geom_smooth(aes(color = label_1843),\n              method = \"lm\", se = FALSE, linewidth = 0.8) +\n  geom_smooth(aes(y = log(N_1879_80), color = label_1880),\n              method = \"lm\", se = FALSE, linewidth = 0.8) +\n  geom_smooth(data = data_pareto_italie,\n              aes(y = log(N), color = label_italie),\n              method = \"lm\", se = FALSE, linewidth = 0.8) +\n\n  scale_color_manual(values = setNames(\n    c(\"#378ADD\", \"#1D9E75\", \"#D85A30\"),\n    c(label_1843, label_1880, label_italie)\n  )) +\n  labs(\n    x     = \"Seuil de revenu (log)\",\n    y     = \"Nombre de personnes au-dessus du seuil (log)\",\n    color = NULL,\n    title = \"Les `courbes de répartition de richesse` selon Pareto\"\n  ) +\n  theme_minimal(base_size = 12) +\n  theme(\n    legend.position  = \"bottom\",\n    legend.text      = element_text(size = 9),\n    legend.key.width = unit(1.5, \"cm\")\n  )\n\n\n\nComment interpréter les coefficients alpha estimés (1.56, 1.40, 1.43 ?)",
+    "text": "Afficher le code\n# Estimation des modèles\nlm_1843  &lt;- lm(log(N_1843) ~ log(seuil_revenu), data = data_pareto_angleterre)\nlm_1880  &lt;- lm(log(N_1879_80) ~ log(seuil_revenu), data = data_pareto_angleterre)\nlm_italie &lt;- lm(log(N) ~ log(seuil_revenu), data = data_pareto_italie)\n\n# Labels avec les coefficients estimés\nlabel_1843  &lt;- sprintf(\"Angleterre 1843\\nlog(N) = %.2f %+.2f·log(X)\",\n                        coef(lm_1843)[1],  coef(lm_1843)[2])\nlabel_1880  &lt;- sprintf(\"Angleterre 1879-80\\nlog(N) = %.2f %+.2f·log(X)\",\n                        coef(lm_1880)[1],  coef(lm_1880)[2])\nlabel_italie &lt;- sprintf(\"Villes italiennes\\nlog(N) = %.2f %+.2f·log(X)\",\n                        coef(lm_italie)[1], coef(lm_italie)[2])\n\ndata_pareto_angleterre %&gt;%\n  ggplot(aes(x = log(seuil_revenu), y = log(N_1843))) +\n  geom_point(aes(color = label_1843), shape = 16, size = 2.5) +\n  geom_point(aes(y = log(N_1879_80), color = label_1880), shape = 17, size = 2.5) +\n  geom_point(data = data_pareto_italie,\n             aes(y = log(N), color = label_italie), shape = 15, size = 2.5) +\n\n  geom_smooth(aes(color = label_1843),\n              method = \"lm\", se = FALSE, linewidth = 0.8) +\n  geom_smooth(aes(y = log(N_1879_80), color = label_1880),\n              method = \"lm\", se = FALSE, linewidth = 0.8) +\n  geom_smooth(data = data_pareto_italie,\n              aes(y = log(N), color = label_italie),\n              method = \"lm\", se = FALSE, linewidth = 0.8) +\n\n  scale_color_manual(values = setNames(\n    c(\"#378ADD\", \"#1D9E75\", \"#D85A30\"),\n    c(label_1843, label_1880, label_italie)\n  )) +\n  labs(\n    x     = \"Seuil de revenu (log)\",\n    y     = \"Nombre de personnes au-dessus du seuil (log)\",\n    color = NULL,\n    title = \"Les `courbes de répartition de richesse` selon Pareto\"\n  ) +\n  theme_minimal(base_size = 12) +\n  theme(\n    legend.position  = \"bottom\",\n    legend.text      = element_text(size = 9),\n    legend.key.width = unit(1.5, \"cm\")\n  )\n\n\n\nComment interpréter les coefficients alpha estimés (1.56, 1.40, 1.43 ?)",
     "crumbs": [
       "Distribution et inégalité"
     ]
@@ -1754,7 +1754,7 @@
     "href": "distribution.html#coefficient-de-pareto",
     "title": "Distribution et inégalité",
     "section": "Coefficient de Pareto",
-    "text": "Coefficient de Pareto\nPrenons le modèle estimé pour l’Angleterre en 1843: \\(log(N) = 19.55 - 1.56log(Y)\\)\n\nSi le seuil de revenu augmente de 10%, le nombre de personnes ayant un revenu au-dessus du seuil diminue de \\(-1.56*10 = -15.6\\%\\)\nPrenons l’Angleterre en 1879-80, si le seuil de revenu augmente de 10%, le nombre de personnes ayant un revenu au-dessus du seuil diminue de \\(-1.4*10 = -14 \\%\\) ==&gt; moins qu’en 1843\n\nCela implique que les revenus se sont davantage concentrés en haut de la distribution des revenus entre 1843 et 1879-80 ==&gt; les inégalités de revenu ont augmenté",
+    "text": "Coefficient de Pareto\nPrenons le modèle estimé pour l’Angleterre en 1843: \\(log(N) = 19.55 - 1.56log(X)\\)\n\nSi le seuil de revenu augmente de 10%, le nombre de personnes ayant un revenu au-dessus du seuil diminue de \\(-1.56*10 = -15.6\\%\\)\nPrenons l’Angleterre en 1879-80, si le seuil de revenu augmente de 10%, le nombre de personnes ayant un revenu au-dessus du seuil diminue de \\(-1.4*10 = -14 \\%\\) ==&gt; moins qu’en 1843\n\nCela implique que les revenus se sont davantage concentrés en haut de la distribution des revenus entre 1843 et 1879-80 ==&gt; les inégalités de revenu ont augmenté",
     "crumbs": [
       "Distribution et inégalité"
     ]
@@ -1764,7 +1764,7 @@
     "href": "distribution.html#coefficient-de-pareto-1",
     "title": "Distribution et inégalité",
     "section": "Coefficient de Pareto",
-    "text": "Coefficient de Pareto\n\\[ ln(N) = ln(A) + \\alpha*ln(Y)\\] Le coefficient de Pareto peut donc être considéré comme un indicateur d’inégalité (c’est d’ailleurs l’un des premiers) ==&gt; Si le coefficient augmente, les inégalités ont diminué et inversement.\nMilanovic propose de voir le coefficient de Pareto comme une “guillotine” qui coupe à un pourcentage constant le nombre de personnes vivant au dessus du seuil au fur et à mesure que l’on monte dans la distribution des revenus (que l’on augmente le seuil)",
+    "text": "Coefficient de Pareto\n\\[ ln(N) = ln(A) + \\alpha*ln(X)\\] Le coefficient de Pareto peut donc être considéré comme un indicateur d’inégalité (c’est d’ailleurs l’un des premiers) ==&gt; Si le coefficient augmente, les inégalités ont diminué et inversement.\nMilanovic propose de voir le coefficient de Pareto comme une “guillotine” qui coupe à un pourcentage constant le nombre de personnes vivant au dessus du seuil au fur et à mesure que l’on monte dans la distribution des revenus (que l’on augmente le seuil)",
     "crumbs": [
       "Distribution et inégalité"
     ]
@@ -1784,7 +1784,7 @@
     "href": "distribution.html#validité-de-la-loi",
     "title": "Distribution et inégalité",
     "section": "Validité de la loi",
-    "text": "Validité de la loi\nEn vérité, la constante de Pareto tend à varier le long de la distribution, la loi en elle-même étant surtout valide pour le haut de la distribution\n\n\n\n\n\n\n\n\n\n\n\nMilanovic (2024, 176-7)",
+    "text": "Validité de la loi\nEn vérité, la constante de Pareto tend à varier le long de la distribution, la loi en elle-même étant surtout valide pour le haut de la distribution.\n\n\n\n\n\n\n\n\n\n\n\nMilanovic (2024, 176-7)",
     "crumbs": [
       "Distribution et inégalité"
     ]
@@ -1794,7 +1794,7 @@
     "href": "distribution.html#héritage-de-pareto",
     "title": "Distribution et inégalité",
     "section": "Héritage de Pareto",
-    "text": "Héritage de Pareto\nLa courbe de Pareto présente le logarithme du nombre de personnes N au dessus du seuil de revenu Y. Son analyse était contrainte par le format de ses données dans lequel on a seulement les tranches de revenus et le nombre de personnes dans chaque tranche.\nDe nos jours, la loi de Pareto est un outil très utile pour modéliser la distribution du revenu et des richesses et estimer différents indicateurs des inégalités, par exemple les top shares grâce à l’interpolation de Pareto.",
+    "text": "Héritage de Pareto\nLa courbe de Pareto présente le logarithme du nombre de personnes N au dessus du seuil de revenu Y. Son analyse était contrainte par le format de ses données dans lequel on a seulement les tranches de revenus et le nombre de personnes dans chaque tranche.\nDe nos jours, la loi de Pareto est un outil très utile pour modéliser la distribution du revenu et des richesses et estimer différents indicateurs des inégalités, par exemple les top shares grâce à l’interpolation de Pareto (World Inequality Database).",
     "crumbs": [
       "Distribution et inégalité"
     ]
@@ -2034,7 +2034,7 @@
     "href": "distribution.html#objectifs",
     "title": "Distribution et inégalité",
     "section": "Objectifs",
-    "text": "Objectifs\n\nCalcul des indicateurs d’inégalité de revenu (Gini, courbe de Pareto, Theil, top shares…) avec des données fiscales suisses",
+    "text": "Objectifs\nCalcul des indicateurs d’inégalité de revenu pour la Suisse en utilisant les données fiscales:\n\nCourbe de Lorenz\nCoefficient de Gini\nPart des 1% et 10% dans le revenu fiscal total\nIndice de Theil\n\nLa base de données de l’administration fédérale des contributions que nous allons utiliser fournit des informations sur la distribution du revenu au niveau national et cantonal par tranche de revenu.",
     "crumbs": [
       "Distribution et inégalité"
     ]
@@ -2084,7 +2084,7 @@
     "href": "distribution.html#exercice-1",
     "title": "Distribution et inégalité",
     "section": "Exercice 1",
-    "text": "Exercice 1\n\nAllez sur le portail des statistiques de l’impôt fédéral direct de l’administration fédérale des contributions (AFC): https://www.estv.admin.ch/fr/statistiques-personnes-physiques-cantons-1983-a-aujourdhui. Téléchargez les données de l’impôt fédéral direct par classe de revenu pour l’année 2022: Contribuables avec versement d’un impôt fédéral direct, Cas normaux. Dans le cadre de cet exercice, nous allons calculer et comparer des mesures d’inégalité pour la Suisse et le canton de Genève.\nSur moodle, téléchargez le fichier excel “distribution_exercice_1”. Copiez-collez les données correspondantes, à savoir les seuils inférieurs et supérieurs de revenu pour chaque tranche, le nombre de contribuables dans chaque tranche, et le revenu net total de chaque tranche.\nRemplissez les cases afin de calculer la courbe de Lorenz, le coefficient de Gini et la part des 0,1% et 1% dans le revenu national pour la Suisse et Genève: que peut-on dire sur les inégalités à Genève par rapport à la Suisse dans son ensemble ?\nOptionnel: calculez l’indice de Theil pour la Suisse et Genève.",
+    "text": "Exercice 1\n\nAllez sur le portail des statistiques de l’impôt fédéral direct de l’administration fédérale des contributions (AFC): https://www.estv.admin.ch/fr/statistiques-personnes-physiques-cantons-1983-a-aujourdhui. Téléchargez les données de l’impôt fédéral direct par classe de revenu pour l’année 2022: Contribuables avec et sans versement d’un impôt fédéral direct, Cas normaux. Dans le cadre de cet exercice, nous allons calculer et comparer des mesures d’inégalité pour la Suisse et le canton de Genève.\nSur moodle, téléchargez le fichier excel “distribution_exercice_1”. Copiez-collez les données correspondantes, à savoir les seuils inférieurs et supérieurs de revenu pour chaque tranche, le nombre de contribuables dans chaque tranche, et le revenu net total de chaque tranche.\nRemplissez les cases afin de calculer la courbe de Lorenz, le coefficient de Gini et la part des 10% et 1% dans le revenu fiscal total pour la Suisse. Comparez vos résultats avec ceux de la World inequality database.\nRefaîtes ces mêmes calculs pour Genève. Astuce: pas besoin de refaire manuellement tous les calculs: copiez-collez juste vos nouvelles données de Genève et Excel calculera automatiquement le reste (sauf pour les top shares)\nComparez les courbes de Lorenz, les coefficients de Gini et les top shares entre la Suisse et Genève. A votre avis, qu’est-ce qui explique ces différents niveaux d’inégalités à Genève par rapport à la Suisse ?\nOptionnel: calculez l’indice de Theil pour la Suisse et Genève afin de voir la contribution aux inégalités de chaque tranche de revenu.",
     "crumbs": [
       "Distribution et inégalité"
     ]
@@ -2185,6 +2185,36 @@
     "title": "Distribution et inégalité",
     "section": "Note: interpolation de Pareto (optionnel)",
     "text": "Note: interpolation de Pareto (optionnel)\nPrincipe : Au lieu de faire l’hypothèse d’une distribution linéaire, on peut faire l’hypothèse que les hauts revenus suivent une distribution de Pareto, et ensuite estimer le revenu au-dessus d’un seuil donné. Cela est souvent préférable car, comme nous l’avons vu, les hauts revenus ont tendance à suivre une courbe de Pareto.\n\nCalculer les paramètres de la distribution pour chaque tranche fiscale de seuil inférieur \\(s\\):\n\n\\[b_s = \\frac{\\bar{y}_s}{s}\\]\noù \\(\\bar{y}_s\\) est le revenu moyen des unités fiscales au-dessus de \\(s\\). Puis le coefficient de Pareto :\n\\[a_s = \\frac{b_s}{b_s - 1}\\]\nEt le paramètre d’échelle \\(k_s\\), où \\(p_s = 1 - F(s)\\) est la fraction d’unités fiscales ayant un revenu \\(\\geq s\\) :\n\\[k_s = s \\cdot p_s^{1/a_s}\\]\n\nChoisir la tranche de référence: on retient le seuil \\(s\\) dont \\(p_s\\) est le plus proche de la part de population visée \\(\\rho\\) (ex. 10 %).",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#a-retenir",
+    "href": "distribution.html#a-retenir",
+    "title": "Distribution et inégalité",
+    "section": "A retenir",
+    "text": "A retenir\n\nDistribution/loi de Pareto et son coefficient\nCalcul de la courbe de Lorenz, du coefficient de Gini, des top shares avec l’interpolation linéaire (tout l’exercice avec les données fiscales) ==&gt; entrainez vous aussi à faire ces calculs avec R\nIncome factor concentration index",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html#programme",
+    "href": "distribution.html#programme",
+    "title": "Distribution et inégalité",
+    "section": "Programme",
+    "text": "Programme\n\nLes deux grandes approche de l’analyse de la distribution et des inégalités en économie\nLoi/distribution de Pareto\nCourbe de Lorenz, Gini, top shares, indice de Theil\nExercice sur la distribution du revenu en Suisse",
+    "crumbs": [
+      "Distribution et inégalité"
+    ]
+  },
+  {
+    "objectID": "distribution.html",
+    "href": "distribution.html",
+    "title": "Distribution et inégalité",
+    "section": "",
+    "text": "Les deux grandes approche de l’analyse de la distribution et des inégalités en économie\nLoi/distribution de Pareto\nCourbe de Lorenz, Gini, top shares, indice de Theil\nExercice sur la distribution du revenu en Suisse",
     "crumbs": [
       "Distribution et inégalité"
     ]
