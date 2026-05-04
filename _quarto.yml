@@ -8,6 +8,7 @@ project:
     - 10mars_cours3.qmd
     - inflation.qmd
     - distribution.qmd
+    - classe_sociale.qmd
 
 
 website:
@@ -22,6 +23,7 @@ website:
         - 10mars_cours3.qmd
         - inflation.qmd
         - distribution.qmd
+        - classe_sociale.qmd
 format:
   html:
     theme: flatly

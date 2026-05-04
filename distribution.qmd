@@ -891,7 +891,6 @@ ggplot(df, aes(x = p)) +
 
 - Distribution/loi de Pareto et son coefficient
 - Calcul de la courbe de Lorenz, du coefficient de Gini, des top shares avec l'interpolation linéaire (tout l'exercice avec les données fiscales) ==> [entrainez vous aussi à faire ces calculs avec R]{style="color:red"}
-- Income factor concentration index
 
 
 
