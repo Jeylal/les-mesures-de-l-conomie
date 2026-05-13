@@ -1,5 +1,6 @@
 ---
-title: "Exercice AFC 2022 R"
+title: "Courbe de Lorenz, Gini et top shares à partir de données fiscales suisses"
+subtitle: "Séminaire les mesures de l'économie"
 author: "Celâl Güney"
 format: html
 editor: visual
@@ -18,10 +19,16 @@ exercices_gini_afc2022_r <- read_excel("exercices_gini_afc2022_r.xlsx",
 
 ```
 
-Calcul des fréquences relatives cumulées des revenus et des contribuables
+Pour calculer la courbe de Lorenz, nous avons besoin de:
+
+- La fréquence relative cumulée des contribuables (le nombre cumulé de contribuables en proportion du total de contribuables au-dessus du seuil inférieur de chaque tranche).
+
+- La fréquence relative cumulée du revenu (le revenu cumulé en proportion du total au-dessus du seuil inférieur de chaque tranche).
+
+Dans R, la fonction `cumsum()` permet de calculer la somme cumulative et `sum()` de calculer la somme. Il faut utiliser ces deux fonctions afin de calculer les fréquences relatives cumulées. Une fois ces fréquences relatives cumulées calculées, il est important de rajouter une ligne contenant les points à l'origine (0,0) de la courbe de Lorenz. Cela se fait avec la fonction `add_row()`, dont l'argument `.before = T` précise que l'on veut ajouter une ligne contenant des 0 pour nos deux variables au tout début du dataframe:
 
 ```{r cumulative relative frequencies ch}
-#| echo: false
+#| echo: true
 #| message: false
 #| warning: false
 
@@ -29,88 +36,132 @@ data <- exercices_gini_afc2022_r %>%
   mutate(
     freq_rel_cumul_contr = cumsum(nombre_contribuables)/sum(nombre_contribuables),
     freq_rel_cumul_revenu = cumsum(revenu_net)/sum(revenu_net)
-  )
+  ) %>% 
+  add_row(freq_rel_cumul_contr = 0, freq_rel_cumul_revenu = 0, .before = T)
+
+
 
 ```
 
-
-Graphique de la courbe de Lorenz: fréquence relative cumulée du revenu et fréquence relative cumulée des contribuables
+Une fois les fréquences relatives calculées, on peut faire un graphique montrant la courbe de Lorenz par rapport à la ligne d'égalité parfaite:
 
 ```{r lorenz curve ch}
+#| echo: true
+#| message: false
+#| warning: false
 
 data %>% 
   ggplot(aes(x = freq_rel_cumul_contr, y = freq_rel_cumul_revenu))+
   geom_point()+
   geom_line()+
   geom_segment(aes(x = 0, y = 0, xend = 1, yend = 1))+
-  theme_minimal()
+  theme_minimal()+
+  labs(
+    x = "Fréquence relative cumulative des contribuables",
+    y = "Fréquence relative cumulative des revenus",
+    title = "Courbe de Lorenz",
+    subtitle = "Distribution du revenu en Suisse (2022)",
+    caption = "Source: Administration fédérale des contributions"
+  )
 ```
-
 
 Calcul du coefficient de Gini
 
 ```{r gini coefficient}
 
-# first triangle under the Lorenz curve
 
+data <- 
+  data %>% 
+  mutate(
+    aire_trapezes = ((freq_rel_cumul_revenu + lead(freq_rel_cumul_revenu))*(lead(freq_rel_cumul_contr) - freq_rel_cumul_contr))/2
+  )
 
-triangle = rep(NA, length(data$freq_rel_cumul_contr))
+Gini = 1-2*sum(data$aire_trapezes, na.rm = TRUE)
 
-triangle[1] = (data$freq_rel_cumul_contr[1]*data$freq_rel_cumul_revenu[1])/2
-
-
-for (i in 2:length(data$freq_rel_cumul_contr)) {
-  
-  triangle[i] = (data$freq_rel_cumul_contr[i]-data$freq_rel_cumul_contr[i-1])*(data$freq_rel_cumul_revenu[i]-data$freq_rel_cumul_revenu[i-1])/2
-  
-}
-
-square = rep(NA, length(data$freq_rel_cumul_contr[-1]))
-
-for (i in 1:length(data$freq_rel_cumul_contr)) {
-  
-  square[i] = (data$freq_rel_cumul_contr[i+1]-data$freq_rel_cumul_contr[i])*data$freq_rel_cumul_revenu[i]
-  
-  
-}
-
-# somme des aires des triangles et des carrés
-
-somme_aires = sum(square, na.rm = T)+sum(triangle)
-
-# Gini = 1 - 2*somme_aire
-
-gini = 1-2*somme_aires
+Gini
 
 ```
 
+Pour calculer les top shares, il faut tout d'abord calculer l'inverse des fréquences relatives cumulées des contribuables et du revenu, à savoir calculer les fonctions de survie empirique du revenu et des contribuables. Cela revient à:
 
-Relation de Pareto
+- Calculer la proportion cumulée de contribuables ayant un revenu supérieur au seuil inférieur de chaque tranche.
+- Calculer le revenu total gagné par les contribuables ayant un revenu supérieur au seuil inférieur du groupe pour chaque tranche de revenu.
+
+==> La logique est la même que pour la fonction de répartition empirique calculée pour estimer la courbe de Lorenz, sauf que l'on "part du haut" (100% de la distribution) au lieu de partir du bas (0% de la distribution), étant donné que la fonction de survie est l'inverse de la fonction de répartition.
+
+Pour calculer une fonction de survie empirique dans R, il faut donc simplement incluer la fonction `rev()` dans le calcul afin de prendre l'inverse de la distribution cumulée: 
 
 ```{r}
 
-plot(data$seuil_revenu_inférieur, 1-data$freq_rel_cumul_contr, type = "l")
-
-data3 <- data %>% 
+data2 <- 
+  data %>% 
+  drop_na(nombre_contribuables, revenu_net) %>% 
   mutate(
-    revenu_moyen_tranche = revenu_net/nombre_contribuables,
-    inv_freq_rel_cumul_contr = 0.999 - freq_rel_cumul_contr,
-    log_revenu_moyen_tranche = log(revenu_moyen_tranche),
-    log_inv_freq_rel_cumul_contr = log(inv_freq_rel_cumul_contr)
+    sf_contr  = rev(cumsum(rev(nombre_contribuables))) / sum(nombre_contribuables),
+    sf_revenu = rev(cumsum(rev(revenu_net))) / sum(revenu_net)
   )
 
-
-data3 %>% 
-  ggplot(aes(x = revenu_moyen_tranche, y = inv_freq_rel_cumul_contr))+
-  geom_point()+
-  geom_line()
+```
 
 
-summary(lm(data = data3,
-           log_inv_freq_rel_cumul_contr ~ log_revenu_moyen_tranche))  
-  
+
+Afin d'estimer les top shares, par exemple la part des 10% dans le revenu total, la manière la plus simple est d'utiliser la formule de l'interpolation linéaire. 
+
+La première étape est de trouver les valeurs de sf_contr et sf_revenu les plus proches des 1% des contribuables et du revenu
+
+```{r}
+
+i_low  <- max(which(data2$sf_contr > 0.01))
+i_high <- min(which(data2$sf_contr <= 0.01))
+
+i_low
+i_high
   
 ```
+
+Cela signifie que les 10% se situe entre les 22ème et 23ème observations de sf_contr et sf_revenu, et qu'il faut donc utiliser ces valeurs dans la formule de l'interpolation linéaire, qui est la suivante:
+
+
+$$
+x = d + \frac{(e - d) \times (b - c)}{a - c}
+$$
+
+
+Avec :
+
+- $x$ : la part des 1% les plus riches dans le revenu totale (l'inconnue)
+- $x$ : la part des 1% les plus riches dans le revenu total (l'inconnue)
+- $a$ : `sf_contr[i_high]`, valeur de sf_contr juste en-dessous de 1%
+- $b$ : 0.01, la valeur cible (les 1%)
+- $c$ : `sf_contr[i_low]`, valeur de sf_contr juste au-dessus de 1%
+- $d$ : `sf_revenu[i_low]`, valeur de sf_revenu correspondant à $c$
+- $e$ : `sf_revenu[i_high]`, valeur de sf_revenu correspondant à $a$
+
+```{r}
+
+a <- data2$sf_contr[i_high]
+b <- 0.01
+c <- data2$sf_contr[i_low]
+d <- data2$sf_revenu[i_low]
+e <- data2$sf_revenu[i_high]
+
+cat("sf_contr:", c, "→", a, "\n")
+cat("sf_revenu:", d, "→", e, "\n")
+
+x <- d + (e - d) * (b - c) / (a - c)
+x
+  
+```
+
+La part des 1% les plus riches dans le revenu totale en Suisse était donc de `r round(x * 100, 3)`% en 2022.
+
+
+
+
+
+
+
+
 
 
 
